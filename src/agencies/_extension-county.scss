@@ -1,0 +1,39 @@
+/* --- County Sites --- */
+.county-staff-list .staff-contact-details {
+	width: 45%;
+}
+
+@media all and (min-width: $breakpoint-biggest) {
+
+	body.extensioncounty #site-title,
+	body.extensioncountytce #site-title	 {
+		text-align: left;
+		margin: 0;
+		padding: 20px 0 0;		
+		height: 90px;	
+	}
+	body.extensioncounty #site-title a span,
+	body.extensioncountytce #site-title a span	{
+		width: 390px;			
+	}	
+	body.extensioncounty #site-title a,
+	body.extensioncountytce #site-title a	 {
+		background: url('images/tx.png') no-repeat left 7px;
+		font-size: 32px;
+		padding: 5px 0 60px 100px;	
+	}
+
+	body.extensioncounty #site-title a em,
+	body.extensioncountytce #site-title a em	 {
+		margin-left: 93px;
+		font-size: 1.5em;
+		font-style: normal;	
+		font-weight: 600;
+		position: relative;
+		z-index: 999;
+		padding-top: 5px;
+		
+	}
+}
+
+/* --- End County --- */	

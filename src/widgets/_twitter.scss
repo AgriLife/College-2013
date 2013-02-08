@@ -1,0 +1,60 @@
+.widget_twitter {
+	position: relative;
+}
+
+.widget_twitter_hash_tag ul.twitter-hash-tag-widget li,
+.widget_twitter ul li {
+	margin: 0;
+	padding: 20px 0 20px 65px;
+	border-bottom: 1px solid #e0dfd8;
+	border-top: 1px solid #fff;
+	position: relative;
+}
+
+.widget_twitter .twitter-avatar a {
+	position: absolute;
+	top: 65px;
+	left: 10px;
+	padding: 4px;
+	margin-bottom: 3%;
+	background: #f0eee3;
+	background: rgba(255,255,255,.55);
+	border: none;
+	border-top: 1px solid #fff;		
+	-webkit-box-shadow: 0 1px 2px #d8d3ae;
+	-moz-box-shadow: 0 1px 2px #d8d3ae;
+	box-shodow: 0 1px 2px #d8d3ae;	
+	width: 48px;
+	height: 48px;	
+}
+
+.widget_twitter ul li {
+	padding: 20px 0 20px 65px;
+}
+
+.follow-button {
+	margin: 20px 0;
+}
+
+.widget_twitter_hash_tag ul.twitter-hash-tag-widget > li:first-child,
+.widget_twitter ul > li:first-child,
+.agrilifetoday ul  > li:first-child {
+	border-top: none;
+}
+
+ul.twitter-hash-tag-widget li a img,
+.widget_twitter ul li a img {
+	left: 0;
+	top: 20px;
+	padding: 4px;
+	position: absolute;
+	background: #f0eee3;
+	background: rgba(255,255,255,.55);
+	margin-right: 3%;
+	border-top: 1px solid #fff;		
+	-webkit-box-shadow: 0 1px 2px #d8d3ae;
+	-moz-box-shadow: 0 1px 2px #d8d3ae;
+	box-shodow: 0 1px 2px #d8d3ae;	
+	width: 48px;
+	height: 48px;
+}

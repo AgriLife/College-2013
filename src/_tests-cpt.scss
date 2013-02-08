@@ -1,0 +1,105 @@
+/* Test pages (Custom Post Type) ---------------------- */
+
+.test-search-form {
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #edece4;
+	border-top: 1px solid #d5d1bf;
+	border-bottom: 1px solid #d5d1bf;
+	position: relative;
+}
+
+.test-search-form {
+	overflow: hidden;
+}
+
+.test-search-form .s {
+	float: right;
+	width: 35%;
+	margin-right: 5px;
+	margin-top: 3px;
+	padding-top: 6px;
+	padding-bottom: 6px;	
+}
+
+.test-search-form select {
+	padding: 0;
+	margin: 0 5px 5px 0;
+}
+
+.test-search-form input.test-submit {
+	display: block;
+	clear: both;
+	float: right;
+	margin-top: 0px;
+	margin-right: 5px;
+}
+
+.tax-options {
+	width: 45%;
+	float: left;
+	padding-top: 8px;
+}
+
+.test-search-form .searchform {
+	top: 8px;
+}
+
+.test-search-form label h4 {
+	margin-bottom: 5px;
+}
+
+.test-listing-ul,
+.test-listing-item {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.test-listing-link {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	overflow: hidden;
+	display: block;
+	background: #EAE6D2;
+	background: rgba(217, 208, 173, .30);
+	border-bottom: 1px solid #fafaf6;
+}
+
+.test-listing-item {
+	list-style-type: none;	
+}
+
+.test-listing-item:nth-child(even)  {
+	background: #EAE6D2;
+	background: rgba(217, 208, 173, .10);
+}
+
+a.test-listing-link:hover {
+	background: #f1efce;
+	border-bottom: 1px solid #9f9490;		
+}
+
+.test-title {
+	font: 90% $body-font;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#content .test-listing-dt {
+	float: left;
+	width: 55%;	
+	margin-bottom: 0;	
+}
+
+#content .test-listing-dd {
+	float: right;
+	width: 40%;	
+	margin-bottom: 0;
+}
+
+.test-listing-dd ul {
+	margin: 5px 0;	
+}

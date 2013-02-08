@@ -1,0 +1,128 @@
+#aside #books-bg {
+	overflow: hidden;	
+	margin-bottom: 20px;		
+}
+
+#aside ul.books {
+	padding-left: 0;
+	margin-left: 0;
+	padding-top: 25px;
+	position: relative;
+	display: block;	
+	overflow: hidden;	
+}
+
+#aside ul.books li {
+	position: relative;
+	display: block;		
+	width: 50%;
+	float: left;
+}
+
+#aside ul.books li dt.book-title {
+	float: right;
+	width: 55%;
+	padding-top: 25px;
+	line-height: 1em;
+}
+
+#aside ul.books li dd.price {
+	position: absolute;
+	background: url('images/price-circle.png') no-repeat 40% 50%;
+	z-index: 6;
+	top: -15px;
+	left: 30%;
+	padding: 13px 10px 16px 10px;
+	color: #8C2B17;
+	font: .95em georgia;
+}
+
+#aside ul.books li dd.price em {
+	font-size: .75em;
+	font-style: normal;
+}
+
+#aside ul.books li dd.price span {
+	font-size: .5em;
+	vertical-align:	super;	
+}
+				
+#aside ul.books li p.btn {
+	clear: both;
+	z-index: 5;
+}
+	
+#aside ul.books li p.btn a {
+	padding: 4px 12px;
+	font-size: 10px;
+	color: #806E38;
+	border: 1px solid #bba563;
+	background: #c7bc7f;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ded8b4), to(#c7bc7f));
+	background: -moz-linear-gradient(top, #ded8b4, #c7bc7f);		
+}
+
+#aside ul.books li p.btn a:hover {
+	cursor: pointer;
+	border: 1px solid #bba563;	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shodow: none;	
+	background: #c7bc7f;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cfc591), to(#c7bc7f));
+	background: -moz-linear-gradient(top, #cfc591, #c7bc7f);
+}
+
+#aside ul.books li p.btn a:active {
+	cursor: pointer;	
+	background: #c7bc7f;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c7bc7f), to(#cfc591));
+	background: -moz-linear-gradient(top, #c7bc7f, #cfc591);		
+}
+
+#aside ul.books li img.book {
+	width: 33%;		
+}
+
+
+#aside ul li.widget-container.Watch.Read.Listen {	
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 0 3px rgba(10,10,10,.0);	
+	-moz-box-shadow: 0 0 2px rgba(100,100,100,.0);	
+	box-shadow: 0 0 2px rgba(100,100,100,.0);		
+}
+
+#aside ul li.widget-container.Watch.Read.Listen .widget-wrap {	
+	position: relative;
+	padding: 0;	
+	background: transparent;
+	border-radius: 0px;		
+}
+
+.intent-meta a {
+	margin: 0 5px 10px 0;
+	padding: 2px 4px;
+	background: rgba(255,255,255,.3);
+	border-radius: 3px;
+	font-size: 11px;
+	border: none;
+}
+
+.intent-meta a:hover,
+.intent-meta a:active {
+	background: rgba(255,255,255,.7);
+}
+
+#secondary span.entry-meta {
+	margin: 10px 0;
+	font-size: 11px;
+}
+
+
+#aside #aside-widget-area-1 ul li.Watch {
+	padding: 0;
+	margin-bottom: 20px;	
+	background: none;
+}

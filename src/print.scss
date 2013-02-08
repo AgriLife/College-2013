@@ -1,0 +1,79 @@
+body {
+		background:none !important;
+	}
+	#wrapper {
+		float: none !important;
+		clear: both !important;
+		display: block !important;
+		position: relative !important;
+	}
+	#header {
+		border-bottom: 2pt solid #000;
+		padding-bottom: 18pt;
+	}
+	#colophon {
+		border-top: 2pt solid #000;
+	}
+	#site-title,
+	#site-description {
+		float: none;
+		margin: 0;
+		padding:0;
+	}
+	#site-title {
+		font-size: 13pt;
+	}
+	.entry-content {
+		font-size: 14pt;
+	}
+	.entry-title {
+		font-size: 21pt;
+	}
+	#access,
+	#branding img,
+	#respond,
+	.comment-edit-link,
+	.edit-link,
+	.navigation,
+	.page-link,
+	.widget-area {
+		display: none !important;
+	}
+	#container,
+	#header,
+	#footer {
+		width: 100%;
+		margin: 0;
+	}
+	#content,
+	.one-column #content {
+		width: 100%;
+		margin: 24pt 0 0;
+	}
+	.wp-caption p {
+		font-size: 11pt;
+	}
+	#site-info,
+	#site-generator {
+		float: none;
+		width: auto;
+	}
+	#colophon {
+		width: auto;
+	}
+	img#wpstats {
+		display:none
+	}
+	#site-generator a {
+		padding: 0;
+	margin: 0;
+	}
+	#entry-author-info {
+		border: 1px solid #e7e7e7;
+	}
+	#main {
+		display:inline;
+	}
+	.home .sticky {
+		border: none;
+	}

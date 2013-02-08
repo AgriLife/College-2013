@@ -1,0 +1,197 @@
+	/*=== Drop Down Site Navigation  =========*/
+
+	#access .sf-menu li {
+		font-size: 14px;	
+		line-height: 1.7em;	
+	}
+	
+	#access .sf-menu li:hover {
+		background-color: #e3e1d5;			
+	}
+	
+	#access .sf-menu li a {
+		line-height: 1.2em;
+		padding: 13px 17px 11px 19px;			
+	}
+	
+	#access .sf-menu li.current-menu-item,
+	#access .sf-menu li.current_page_parent {
+		border: 2px solid #e3e1d5;
+		border-bottom: none;
+		position: relative;
+		z-index: 2;
+		-webkit-box-shadow: 0 -2px 6px rgba(16,16,16,.075);
+		-moz-box-shadow: -4px -2px 6px rgba(16,16,16,.075);
+		box-shadow: 0 -2px 6px rgba(16,16,16,.075);		
+	}
+			
+	#access .sf-menu ul {
+		position:	absolute;
+		background-color: #e3e1d5;
+		top: -999em;
+		width: 13em; /* left offset of submenus need to match (see below) */	
+		-webkit-box-shadow: 0 2px 4px rgba(3, 3, 3,.2);	
+		-moz-box-shadow: 0 2px 4px rgba(3, 3, 3,.2);		
+		box-shadow: 0 2px 4px rgba(3, 3, 3,.2);						
+	}	
+	
+	#access .sf-menu li:hover {
+		visibility:		inherit; /* fixes IE7 'sticky bug' */
+		-webkit-transition: .3s background ease;
+		-moz-transition: .3s background ease;		
+		transition: .3s background ease;	
+	}
+
+	#access .sf-menu li a[title="home"] {
+		-webkit-transition: none;
+		-moz-transition: none;		
+		transition: none;
+	}
+		
+	#access .sf-menu li a {
+		border-top-right-radius: none;			
+	}	
+			
+	#access .sf-menu li:hover a {
+		position: relative;
+		z-index: 7;					
+	}	
+
+	#access .sf-menu ul li:hover {
+		visibility:		inherit; /* fixes IE7 'sticky bug' */
+		background: transparent;
+		border-top-right-radius: none;	
+	}	
+	#access .sf-menu ul li {
+		width:	100%;
+		position: relative;
+		z-index: 4;	
+		border: none;
+		font-size: 12px;
+		border-bottom: 1px solid #dcdace;	
+		background: transparent;					
+	}	
+	
+	#access .sf-menu a {
+		display: block;
+		position: relative;
+		background: transparent;
+	}
+	#access .sf-menu li:hover,
+	#access .sf-menu li.sfHover {
+		z-index: 7;
+		position: relative;					
+	}
+	#access .sf-menu li:hover ul,
+	#access .sf-menu li.sfHover ul {
+		left: 0;
+		margin-left: 1px;
+		top: 3.2em; /* match top ul list item height */
+		z-index: 6;
+		position: absolute;	
+	}
+		
+	#access ul.sf-menu li:hover li ul,
+	#access ul.sf-menu li.sfHover li ul {
+		top: -999em;		
+	}
+	#access ul.sf-menu li li:hover ul,
+	#access ul.sf-menu li li.sfHover ul {
+		left: 15.2em; /* match ul width */
+		top: 0;
+		margin-left: 0;
+		margin-top: 0;
+		padding-top: 0;				
+	}
+	#access ul.sf-menu li li:hover li ul,
+	#access ul.sf-menu li li.sfHover li ul {
+		top: -999em;
+	}
+	#access ul.sf-menu li li li:hover ul,
+	#access ul.sf-menu li li li.sfHover ul {
+		left: 13em; /* match ul width */
+		top: 0;
+		margin-left: 0px;	
+	}
+
+	body.collegeonly #access ul.menu a {
+		color:#8d0002;
+		border-color: #8d0002;
+	}
+
+	body.collegeonly #access ul.menu a:hover,
+	body.collegeonly #access ul.menu a:active {
+		color: #5b0125;
+		border-color: #5b0125;	
+	}	
+
+	body.extensiononly #access ul.menu a {
+		color:#00709e;
+		border-color: #00709e;
+	}
+
+	body.extensiononly #access ul.menu a:active,
+	body.extensiononly #access ul.menu a:hover {
+		color: #002838;
+		border-color: #002838;	
+	}
+
+	body.researchonly #access ul.menu a {
+		color:#4e792f;
+		border-color: #4e792f;
+	}
+
+	body.researchonly #access ul.menu a:active,
+	body.researchonly #access ul.menu a:hover {
+		color: #1f3013;
+		border-color: #1f3013;	
+	}
+
+	/*** arrows **/
+	#access .sf-menu li a.sf-with-ul {
+		min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+		background: url(images/down-arrow.png) no-repeat right 55%; 
+		padding-right: 28px;					
+	}
+		
+	#access .sf-menu li li a.sf-with-ul {
+		min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+		background: url(images/right-arrow.png) no-repeat left 58%;
+	}
+
+			
+	#access	.sf-sub-indicator {
+		position:		absolute;
+		display:		block;
+		right:			0;
+		top:			.55em; /* IE6 only */
+		width:			8px;
+		height:			11px;
+		text-indent: 	-999em;
+		overflow:		hidden;
+		
+	}
+	#access a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+		top:			.8em;
+		background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+	}
+	/* apply hovers to modern browsers */
+	#access a:focus > .sf-sub-indicator,
+	#access a:hover > .sf-sub-indicator,
+	#access a:active > .sf-sub-indicator,
+	#access li:hover > a > .sf-sub-indicator,
+	#access li.sfHover > a > .sf-sub-indicator {
+		background-position: -10px -100px; /* arrow hovers for modern browsers*/
+	}
+
+	/* point right for anchors in subs */
+	#access .sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+	#access .sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+	/* apply hovers to modern browsers */
+	#access .sf-menu ul a:focus > .sf-sub-indicator,
+	#access .sf-menu ul a:hover > .sf-sub-indicator,
+	#access .sf-menu ul a:active > .sf-sub-indicator,
+	#access .sf-menu ul li:hover > a > .sf-sub-indicator,
+	#access .sf-menu ul li.sfHover > a > .sf-sub-indicator {
+		background-position: -10px 0; /* arrow hovers for modern browsers*/
+	}
