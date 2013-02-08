@@ -1,0 +1,40 @@
+/**********************************************************
+
+jQuery Tabs
+
+**********************************************************/
+.ui-tabs { position: relative; zoom: 1; overflow: hidden;} /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding:0; overflow: hidden; }
+.ui-tabs .ui-tabs-nav li { font-family: "ff-dagny-web-pro-1","ff-dagny-web-pro-2", 'Lucida Grande','Lucida Sans Unicode', sans-serif; list-style: none; float: left; position: relative; top: 1px; margin: 0 .17em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { position: relative; z-index: 1; float: left; padding: .5em 1em; text-decoration: none; background: #e9e7db; border: none; border-top-right-radius: 5px; }
+.ui-tabs .ui-tabs-nav li a:hover { 	background: #e3e1d5; border: none;}
+.ui-tabs .ui-tabs-nav li.ui-state-active a { position: relative; z-index: 9999;	background: #e3e1d5; 	border: 1px solid #ceccb6; border-bottom: none;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+div#tabs-1, 
+div#tabs-2,
+div#tabs-3 {
+	background: #e3e1d5;
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #ceccb6;
+	margin-top: -2px;
+	position: relative; 
+	z-index: 2;
+}
+
+div#tabs-1 object {
+}
+
+div#tabs-3 ul {
+	overflow: hidden;
+}
+
+div#tabs-3 ul li {
+	overflow: hidden;
+	height: 30px;
+}

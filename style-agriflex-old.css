@@ -1,0 +1,6316 @@
+/*
+	Theme Name: 	College of Ag 2013
+	Theme URI:      http://aglifesciences.tamu.edu/
+    Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
+	Author: 		Travis Ward
+	Template:		AgriFlex
+    Version: 		1.0
+*/
+/* @import "compass/reset";*/
+/*@import "compass/utilities/general/clearfix";*/
+/* line 32, src/h5bp/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 39, src/h5bp/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 47, src/h5bp/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 55, src/h5bp/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 69, src/h5bp/_normalize.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 82, src/h5bp/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 88, src/h5bp/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 103, src/h5bp/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 109, src/h5bp/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 122, src/h5bp/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 127, src/h5bp/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 132, src/h5bp/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 137, src/h5bp/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 142, src/h5bp/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 147, src/h5bp/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 153, src/h5bp/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 159, src/h5bp/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 163, src/h5bp/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 168, src/h5bp/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 173, src/h5bp/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 180, src/h5bp/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* line 188, src/h5bp/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* line 195, src/h5bp/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 202, src/h5bp/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* line 208, src/h5bp/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 214, src/h5bp/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 220, src/h5bp/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 227, src/h5bp/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 231, src/h5bp/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 245, src/h5bp/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 249, src/h5bp/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 256, src/h5bp/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 268, src/h5bp/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/* line 274, src/h5bp/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 285, src/h5bp/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 296, src/h5bp/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/* line 301, src/h5bp/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 310, src/h5bp/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 323, src/h5bp/_normalize.scss */
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 333, src/h5bp/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 347, src/h5bp/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 355, src/h5bp/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 364, src/h5bp/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 374, src/h5bp/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 384, src/h5bp/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 390, src/h5bp/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 397, src/h5bp/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 409, src/h5bp/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 7, src/h5bp/_helpers.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+/* line 27, src/h5bp/_helpers.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 9, src/h5bp/_helpers.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 11, src/h5bp/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 67, src/h5bp/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 13, src/h5bp/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 93, src/h5bp/_helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 98, src/h5bp/_helpers.scss */
+.clearfix:after {
+  clear: both;
+}
+/* line 104, src/h5bp/_helpers.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 28, src/style-agriflex-old.scss */
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 2em;
+  border-right: 1px solid #e3e1d5;
+  border-top: 1px solid #e3e1d5;
+  font-family: verdana, clean, sans-serif;
+  font-size: 11px;
+}
+/* line 2, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
+table th {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 6, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
+table td,
+table th {
+  padding: 2px;
+}
+/* line 8, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
+table td.numeric,
+table th.numeric {
+  text-align: right;
+}
+/* line 14, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table th, table td {
+  border-right: 1px solid #233551;
+  border-bottom: 1px solid #233551;
+  border-left-width: 0px;
+  border-top-width: 0px;
+}
+/* line 21, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table th:last-child, table th.last, table td:last-child, table td.last {
+  border-right-width: 0px;
+}
+/* line 29, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table tbody tr:last-child th, table tbody tr:last-child td, table tfoot tr:last-child th, table tfoot tr:last-child td {
+  border-bottom-width: 0px;
+}
+/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table tbody tr.last th, table tbody tr.last td, table tfoot tr.last th, table tfoot tr.last td {
+  border-bottom-width: 0px;
+}
+/* line 4, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table thead th {
+  border-bottom: 2px solid black;
+}
+/* line 7, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table tfoot th, table tfoot td {
+  border-top: 2px solid black;
+}
+/* line 10, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+table th:first-child {
+  border-right: 2px solid black;
+}
+/* line 2, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table th {
+  background-color: white;
+}
+/* line 4, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table th.even, table th:nth-child(2n) {
+  background-color: #dddddd;
+}
+/* line 8, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table tr.odd td, table tr:nth-child(2n+1) td {
+  background-color: #98c67a;
+}
+/* line 10, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table tr.odd td.even, table tr.odd td:nth-child(2n), table tr:nth-child(2n+1) td.even, table tr:nth-child(2n+1) td:nth-child(2n) {
+  background-color: #76a458;
+}
+/* line 14, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table tr.even td {
+  background-color: #7a98c6;
+}
+/* line 16, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table tr.even td.even, table tr.even td:nth-child(2n) {
+  background-color: #5876a4;
+}
+/* line 19, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table tfoot th, table tfoot td {
+  background-color: white;
+}
+/* line 21, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+table tfoot th.even, table tfoot th:nth-child(2n), table tfoot td.even, table tfoot td:nth-child(2n) {
+  background-color: #dddddd;
+}
+
+/* line 43, src/style-agriflex-old.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 45, src/style-agriflex-old.scss */
+tr {
+  margin: 0;
+  border-bottom: 1px solid #e3e1d5;
+}
+
+/* line 50, src/style-agriflex-old.scss */
+td, th {
+  line-height: 1.3em;
+  text-align: left;
+  padding: 20px 8px;
+  border-left: 1px solid #e3e1d5;
+}
+
+/* line 57, src/style-agriflex-old.scss */
+th {
+  text-align: center;
+}
+
+/* line 61, src/style-agriflex-old.scss */
+tr:nth-child(odd) {
+  background: #f9f9f7;
+}
+
+/* line 65, src/style-agriflex-old.scss */
+tr:nth-child(even) {
+  background: #fff;
+}
+
+/* line 69, src/style-agriflex-old.scss */
+tr:first-child {
+  background: #f1f0e8;
+}
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 79, src/style-agriflex-old.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 81, src/style-agriflex-old.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 83, src/style-agriflex-old.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 84, src/style-agriflex-old.scss */
+::-moz-selection {
+  background: #f9fd87;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 85, src/style-agriflex-old.scss */
+::selection {
+  background: #f9fd87;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 88, src/style-agriflex-old.scss */
+body {
+  background: #f5f0e4;
+  font: 90% "minion-pro-1", "minion-pro-2", "Cambria", "Georgia", "Times New Roman", serif;
+  line-height: 1.2em;
+  color: #433c3a;
+}
+
+/*-- Target Modernizr.no-touch class  --*/
+/* line 95, src/style-agriflex-old.scss */
+.no-touch body {
+  text-rendering: optimizeLegibility;
+  /*-- Only target non touch based screens --*/
+}
+
+/* line 98, src/style-agriflex-old.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2em;
+  clear: both;
+}
+
+/* line 104, src/style-agriflex-old.scss */
+h1 {
+  font-size: 2em;
+  /* 32px / 16px */
+}
+
+/* line 108, src/style-agriflex-old.scss */
+h2 {
+  font-size: 1.75em;
+  /* 28px / 16px */
+}
+
+/* line 112, src/style-agriflex-old.scss */
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px */
+}
+
+/* line 116, src/style-agriflex-old.scss */
+h4 {
+  font-size: 1.25em;
+  /* 20px / 16px */
+}
+
+/* line 120, src/style-agriflex-old.scss */
+h5 {
+  font-size: 1.125em;
+  /* 18px / 16px */
+}
+
+/* line 124, src/style-agriflex-old.scss */
+h6 {
+  font-size: 1em;
+  /* 16px */
+}
+
+/* line 129, src/style-agriflex-old.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 133, src/style-agriflex-old.scss */
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+}
+
+/* line 140, src/style-agriflex-old.scss */
+.wrap:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 148, src/style-agriflex-old.scss */
+#wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* Text elements */
+/* line 154, src/style-agriflex-old.scss */
+p {
+  margin-top: 1.25em;
+  /* 20px / 16px */
+  margin-bottom: 1.25em;
+  /* 20px / 16px */
+  font-size: 1em;
+  /* 16px */
+  line-height: 1.25em;
+  /* 20px / 16px */
+}
+
+/* line 162, src/style-agriflex-old.scss */
+#content .post ul li,
+#content .page ul li {
+  margin: 0.5em 0;
+  font-family: verdana, clean, sans-serif;
+  font-size: 13px;
+}
+
+/* line 168, src/style-agriflex-old.scss */
+ul {
+  list-style: none;
+  margin: 1.2em 0 1.2em 4.5em;
+}
+
+/* line 172, src/style-agriflex-old.scss */
+ol {
+  list-style: decimal;
+  margin: 1.2em 0 1.2em 4.5em;
+}
+
+/* line 176, src/style-agriflex-old.scss */
+ol li {
+  margin: 0 0 0.6em 0;
+}
+
+/* line 180, src/style-agriflex-old.scss */
+ol ol {
+  list-style: upper-alpha;
+}
+
+/* line 183, src/style-agriflex-old.scss */
+ol ol ol {
+  list-style: lower-roman;
+}
+
+/* line 186, src/style-agriflex-old.scss */
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+/* line 192, src/style-agriflex-old.scss */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0px 0px 0px 1em;
+}
+
+/* line 199, src/style-agriflex-old.scss */
+ul ul ul li,
+ol ol ol li,
+ul ol ul li,
+ol ul ul li {
+  margin: 0.2em 1em;
+}
+
+/* line 203, src/style-agriflex-old.scss */
+#content dl, #content dd {
+  margin-bottom: .5em;
+}
+
+/* line 207, src/style-agriflex-old.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 212, src/style-agriflex-old.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 218, src/style-agriflex-old.scss */
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+/* line 222, src/style-agriflex-old.scss */
+ins {
+  background: #ffc;
+  text-decoration: none;
+}
+
+/* line 227, src/style-agriflex-old.scss */
+blockquote {
+  font-style: italic;
+  padding: 0 3em;
+}
+
+/* line 234, src/style-agriflex-old.scss */
+blockquote cite,
+blockquote em,
+blockquote i {
+  font-style: normal;
+}
+
+/* line 238, src/style-agriflex-old.scss */
+pre {
+  background: #222;
+  color: #fff;
+  margin-bottom: 1.8em;
+  padding: 1.5em;
+  overflow: scroll;
+  font-family: monospace;
+}
+
+/* line 247, src/style-agriflex-old.scss */
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 253, src/style-agriflex-old.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 254, src/style-agriflex-old.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 255, src/style-agriflex-old.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 257, src/style-agriflex-old.scss */
+audio {
+  width: 100%;
+  color: #999;
+}
+
+/* line 262, src/style-agriflex-old.scss */
+.entry-utility, .navigation {
+  line-height: 1.5em;
+}
+
+/* line 266, src/style-agriflex-old.scss */
+a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px dotted #111111;
+  -webkit-transition: 0.3s color ease, 0.3s border ease;
+  -moz-transition: 0.3s color ease, 0.3s border ease;
+}
+
+/* line 275, src/style-agriflex-old.scss */
+a:active,
+a:hover {
+  color: #332c2c;
+  text-decoration: none;
+  border-bottom: 1px solid #332c2c;
+}
+
+/* line 281, src/style-agriflex-old.scss */
+body.collegeonly a {
+  color: #8d0002;
+  border-color: #8d0002;
+}
+
+/* line 287, src/style-agriflex-old.scss */
+body.collegeonly a:active,
+body.collegeonly a:hover {
+  color: #5b0125;
+  border-color: #5b0125;
+}
+
+/* line 292, src/style-agriflex-old.scss */
+body.extensiononly a {
+  color: #00709e;
+  border-color: #00709e;
+}
+
+/* line 298, src/style-agriflex-old.scss */
+body.extensiononly a:active,
+body.extensiononly a:hover {
+  color: #002838;
+  border-color: #002838;
+}
+
+/* line 303, src/style-agriflex-old.scss */
+body.researchonly a {
+  color: #4e792f;
+  border-color: #4e792f;
+}
+
+/* line 309, src/style-agriflex-old.scss */
+body.researchonly a:active,
+body.researchonly a:hover {
+  color: #1f3013;
+  border-color: #1f3013;
+}
+
+/* line 314, src/style-agriflex-old.scss */
+#drop-section .btn a, button.btn {
+  -webkit-box-shadow: none;
+  -moz-box-shodow: none;
+  box-shodow: none;
+  border: 1px solid #00648d;
+}
+
+/* line 321, src/style-agriflex-old.scss */
+#drop-section .btn a:hover, button.btn:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0082b7), to(#0082b7));
+  border: 1px solid #66a9d3;
+}
+
+/* line 326, src/style-agriflex-old.scss */
+#drop-section .btn a:active, button.btn:active {
+  border: 1px solid #73beed;
+  -webkit-box-shadow: none;
+  -moz-box-shodow: none;
+  box-shodow: none;
+}
+
+/* Text meant only for screen readers */
+/* line 334, src/style-agriflex-old.scss */
+.screen-reader-text {
+  position: absolute;
+  left: -9000px;
+}
+
+/* Logout Button for Password-protected posts */
+/* line 341, src/style-agriflex-old.scss */
+a.logout_btn {
+  border-radius: 5px;
+  background: #fff;
+  padding: 12px 9px;
+  margin: 10px auto;
+  width: 80%;
+  display: block;
+  font-size: 18px;
+}
+
+/* line 351, src/style-agriflex-old.scss */
+a.logout_btn:hover {
+  background: #726B60;
+  color: #333;
+}
+
+/* =Dropdown Section Nav
+-------------------------------------------------------------- */
+/* line 4, src/_drop-section-nav.scss */
+#drop-section-nav {
+  position: relative;
+  z-index: 3;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  background: #341f1a url("images/verticle-texture.png");
+  color: #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(6, 6, 6, 0.3);
+  -moz-box-shadow: -4px 2px 5px rgba(6, 6, 6, 0.3);
+  box-shadow: 0 2px 5px rgba(6, 6, 6, 0.3);
+}
+
+/* line 19, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav {
+  position: relative;
+  margin: 0 auto 0;
+}
+
+/* line 24, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul {
+  padding: 4px 0;
+  margin: 0 0 0 10px;
+}
+
+/* line 29, src/_drop-section-nav.scss */
+body.extension.research #drop-section-nav #drop-nav ul {
+  min-height: 50px;
+}
+
+/* line 33, src/_drop-section-nav.scss */
+body.extension.research #drop-section-nav #drop-nav ul:hover {
+  background-position: -250px 80%;
+}
+
+/* line 37, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li {
+  float: left;
+  padding: 0 0 2px 0;
+  line-height: .6em;
+}
+
+/* line 42, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li.fazd-item {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #938683;
+  line-height: 1.2em;
+}
+
+/* line 48, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li.custom-header {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #938683;
+  line-height: 1.2em;
+}
+
+/* line 58, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li.ask,
+#drop-section-nav #drop-nav ul li.explore,
+#drop-section-nav #drop-nav ul li.tx-ext-item,
+#drop-section-nav #drop-nav ul li.college-item {
+  padding: 0;
+}
+
+/* line 62, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li a {
+  position: relative;
+  z-index: 2;
+  font: 12px "minion-pro-1", "minion-pro-2", "Cambria", "Georgia", "Times New Roman", serif;
+  color: #fff;
+  border: none;
+  padding: 5px 5px 0;
+  margin-right: 5px;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+}
+
+/* line 73, src/_drop-section-nav.scss */
+body.research.extension #drop-section-nav #drop-nav ul li {
+  width: 20%;
+  margin-top: -9px;
+  margin-bottom: -8px;
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+}
+
+/* line 82, src/_drop-section-nav.scss */
+body.research.extension #drop-section-nav #drop-nav ul li a {
+  padding: 0;
+  margin-right: 0;
+}
+
+/* line 90, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li a[href*='ask'] {
+  position: relative;
+  z-index: 2;
+  font-size: 1.3em;
+}
+
+/* line 96, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li a[href*='ask']:hover {
+  background-color: #00709d;
+}
+
+/* line 100, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li .explore {
+  position: relative;
+  z-index: 2;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* line 107, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li a {
+  display: none;
+}
+
+/* line 115, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li a[href*='aglifesciences'] {
+  display: block;
+  background: url("images/college-logo.png?v=100") no-repeat left top;
+  margin-top: 5px;
+  height: 38px;
+  width: 180px;
+  text-indent: -999em;
+}
+
+/* line 123, src/_drop-section-nav.scss */
+body.research.extension #drop-section-nav #drop-nav ul li a[href*='aglifesciences'] {
+  background: none;
+}
+
+/* line 140, src/_drop-section-nav.scss */
+#drop-section-nav #drop-nav ul li.align-right {
+  display: none;
+}
+
+/* line 144, src/_drop-section-nav.scss */
+body.collegeonly #drop-section-nav #drop-nav ul li a.college-explore-link {
+  background: rgba(0, 0, 0, 0.1) url("images/explore-button.png?v=100") no-repeat 90% -34px;
+  display: block;
+  text-indent: 0;
+  border-radius: 3px;
+  padding: 5px 20px 5px 10px;
+  margin: 12px 0 0;
+  height: auto;
+  width: auto;
+  color: #cbb7a3;
+  font-family: verdana, clean, sans-serif;
+  font-size: 14px;
+}
+
+/* line 157, src/_drop-section-nav.scss */
+body.collegeonly #drop-section-nav #drop-nav ul li a.college-explore-link:hover {
+  background-position: 90% 7px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #e2dec7;
+}
+
+/* line 167, src/_drop-section-nav.scss */
+.collegeonly #drop-section-nav #drop-nav ul li a,
+.extensiononly #drop-section-nav #drop-nav ul li a,
+.researchonly #drop-section-nav #drop-nav ul li a,
+.tvmdlonly #drop-section-nav #drop-nav ul li a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  text-indent: -999em;
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 190px;
+  height: 46px;
+  margin-top: 2px;
+}
+
+/* line 178, src/_drop-section-nav.scss */
+.extensionmn #drop-section-nav #drop-nav ul .txmn-item a {
+  width: 50px;
+}
+
+/* line 181, src/_drop-section-nav.scss */
+.tvmdlonly #drop-section-nav #drop-nav ul li a {
+  height: 40px;
+}
+
+/* line 185, src/_drop-section-nav.scss */
+.extensiononly #drop-section-nav #drop-nav ul li a[href*='extension'] {
+  background-image: url("images/ext-system-logo.png?v=100");
+}
+
+/* line 188, src/_drop-section-nav.scss */
+.extensionmn #drop-section-nav #drop-nav ul li a[href*='tpwd'] {
+  background-image: url("images/tpwd.png?v=100");
+}
+
+/* line 192, src/_drop-section-nav.scss */
+.extensioncountytce #drop-section-nav #drop-nav ul li a[href*='pvcep'] {
+  background-image: url("images/cep-logo.png?v=100");
+  width: 204px;
+  margin-top: 0px;
+}
+
+/* line 198, src/_drop-section-nav.scss */
+.collegeonly #drop-section-nav #drop-nav ul li a[href*='aglifesciences'] {
+  background-image: url("images/college-logo.png?v=100");
+  margin-top: 8px;
+  height: 39px;
+}
+
+/* line 204, src/_drop-section-nav.scss */
+.tvmdlonly #drop-section-nav #drop-nav ul li a[href*='tvmdl'] {
+  background-image: url("images/tvmdl-logo.png?v=100");
+  width: 90px;
+  margin-bottom: -4px;
+}
+
+/* line 210, src/_drop-section-nav.scss */
+.researchonly #drop-section-nav #drop-nav ul li a[href*='research'] {
+  background-image: url("images/research-logo.png?v=100");
+}
+
+/* line 214, src/_drop-section-nav.scss */
+.tvmdlonly #drop-section-nav #drop-nav ul li a.client-login {
+  display: none;
+}
+
+/* line 218, src/_drop-section-nav.scss */
+.tvmdlonly #drop-section-nav #drop-nav ul li a.client-login:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 222, src/_drop-section-nav.scss */
+.tvmdlonly #drop-section-nav #drop-nav .client-login-li {
+  margin-top: 8px;
+}
+
+/* line 226, src/_drop-section-nav.scss */
+#drop-section {
+  background: #eae8d9;
+  border-bottom: 2px solid white;
+  color: #fff;
+  padding-top: 30px;
+}
+
+/* line 233, src/_drop-section-nav.scss */
+#drop-section .flow {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* line 239, src/_drop-section-nav.scss */
+#drop-section .hidden {
+  display: none;
+}
+
+/* line 243, src/_drop-section-nav.scss */
+#drop-section .flow .contents {
+  bottom: 0px;
+  position: absolute;
+  padding: 0 10px;
+}
+
+/* line 249, src/_drop-section-nav.scss */
+#drop-section .flow .contents a {
+  color: #eee;
+}
+
+/* line 253, src/_drop-section-nav.scss */
+#drop-section .flow .contents a:hover {
+  color: #fff;
+}
+
+/* line 257, src/_drop-section-nav.scss */
+#drop-section .flow .contents .gform_wrapper {
+  position: relative;
+  padding: 23px 5px 5px 5px;
+  float: left;
+  width: 164px;
+  background: #0084b9;
+}
+
+/* line 265, src/_drop-section-nav.scss */
+#drop-section .flow .contents form label {
+  display: block;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+/* line 271, src/_drop-section-nav.scss */
+#drop-section .flow .contents form input {
+  margin-bottom: 8px;
+}
+
+/* line 275, src/_drop-section-nav.scss */
+#drop-section .flow .contents form button[type=reset] {
+  border: 1px solid #1073a0;
+  color: #ccc;
+  background: #1073a0;
+  padding: 2px 5px;
+}
+
+/* line 282, src/_drop-section-nav.scss */
+#drop-section .flow .contents form button[type=submit] {
+  padding: 2px 12px;
+}
+
+/* line 287, src/_drop-section-nav.scss */
+#drop-section .flow .contents form input,
+#drop-section .flow .contents form textarea {
+  background: #003950;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid #034b6b;
+  padding: 2px 3px;
+  width: 154px;
+  -moz-transition: background-color 0.15s linear;
+  -webkit-transition: background-color 0.15s linear;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 301, src/_drop-section-nav.scss */
+#drop-section .flow .contents form textarea {
+  background: #003950;
+  color: #fff;
+  border: 1px solid #034b6b;
+  padding: 2px 3px;
+  -moz-transition: background-color 0.15s linear;
+  -webkit-transition: background-color 0.15s linear;
+}
+
+/* line 311, src/_drop-section-nav.scss */
+#drop-section .flow .contents form input:hover,
+#drop-section .flow .contents form textarea:hover {
+  background: #002736;
+}
+
+/* line 316, src/_drop-section-nav.scss */
+#drop-section .flow .contents form input:focus,
+#drop-section .flow .contents form textarea:focus {
+  background: #00151d;
+  -webkit-box-shadow: 0 0 10px #12a6ed;
+  -moz-box-shadow: 0 0 10px #12a6ed;
+  box-shadow: 0 0 10px #12a6ed;
+}
+
+/* line 323, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav {
+  float: right;
+  width: 760px;
+  padding: 0 0 0 20px;
+  border-top: 16px solid #f2a90f;
+}
+
+/* line 330, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav #ext-intro {
+  background: #f7d898;
+  margin: 0 0 20px 0;
+  padding: 15px 0;
+}
+
+/* line 336, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav #ext-intro p {
+  line-height: 16px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  color: #815a08;
+}
+
+/* line 343, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav #ext-intro p a {
+  background: rgba(3, 3, 3, 0.1);
+  padding: 3px 5px;
+  color: #815a08;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* line 352, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav #ext-intro p a:hover {
+  background: rgba(3, 3, 3, 0.2);
+}
+
+/* line 356, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav {
+  float: left;
+  width: 169px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  padding: 2px;
+  border: 1px dashed #d9d1ae;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+}
+
+/* line 366, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover {
+  -webkit-box-shadow: 0 0 5px rgba(177, 168, 117, 0.9);
+  -moz-box-shadow: 0 0 5px rgba(177, 168, 117, 0.9);
+  box-shadow: 0 0 5px rgba(177, 168, 117, 0.9);
+  border: 1px solid #d9d1ae;
+}
+
+/* line 373, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav h2 {
+  font: 12px "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  text-transform: uppercase;
+  padding: 7px 0 7px 38px;
+  color: #815a08;
+  background: #d0c69b url(images/top-level-arrow.png?v=100) no-repeat left -31px;
+  border-bottom: 1px solid #c6c097;
+  -webkit-transition: border 0.3s ease-in;
+}
+
+/* line 383, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover h2 {
+  background-position: left top;
+  border-bottom: 1px solid #d7960d;
+}
+
+/* line 388, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .business-nav {
+  margin-left: 0;
+}
+
+/* line 392, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav .tags ul {
+  margin: 5px 0;
+}
+
+/* line 396, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav .tags ul li {
+  display: inline;
+  font-size: 11px;
+  margin: 0;
+}
+
+/* line 402, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav .tags ul li a {
+  display: inline;
+  float: left;
+  font-size: 12px;
+  padding: 2px 7px;
+  color: #0082B6;
+  margin: 0 3px 3px 0;
+  background: #efede2;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  -webkit-transition: background 0.1s ease-in;
+}
+
+/* line 415, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover .tags ul li a {
+  background: #efede2;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* line 420, src/_drop-section-nav.scss */
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover .tags ul li a:hover {
+  background: #f8f7f2;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  text-decoration: underline;
+}
+
+/* line 426, src/_drop-section-nav.scss */
+#top-level-nav ul {
+  margin: 1.2em 0;
+  overflow: hidden;
+}
+
+/* line 431, src/_drop-section-nav.scss */
+#top-level-nav li {
+  font: 13px "Verdana", clean, sans-serif;
+  padding: 2px 0;
+}
+
+/* line 435, src/_drop-section-nav.scss */
+#top-level-nav li a {
+  text-decoration: none;
+  border: none;
+}
+
+/* line 439, src/_drop-section-nav.scss */
+#top-level-nav li a:hover {
+  text-decoration: underline;
+}
+
+/* line 442, src/_drop-section-nav.scss */
+.top-level-li {
+  font-size: 13px;
+}
+
+/* line 445, src/_drop-section-nav.scss */
+#top-level-nav li.sub {
+  font: 18px "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  text-shadow: 0 1px 1px #40001a;
+}
+
+/* line 450, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .btn a, button.btn {
+  border: 1px solid #d00031;
+}
+
+/* line 454, src/_drop-section-nav.scss */
+body.collegeonly #drop-section-nav {
+  background-color: #5b0125;
+  border-bottom: 1px solid #5b0125;
+}
+
+/* line 459, src/_drop-section-nav.scss */
+body.tvmdlonly #drop-section-nav {
+  background-color: #8c5933;
+  border-bottom: 1px solid #8c5933;
+}
+
+/* line 464, src/_drop-section-nav.scss */
+body.tvmdlonly.fazd #drop-section-nav {
+  background-color: #f5f5ee;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: none;
+  display: none;
+}
+
+/* line 471, src/_drop-section-nav.scss */
+body.extensiononly #drop-section-nav {
+  background-color: #004C6B;
+  border-bottom: 1px solid #004c6b;
+}
+
+/* line 476, src/_drop-section-nav.scss */
+body.researchonly #drop-section-nav {
+  background-color: #5a8c37;
+  border-bottom: 1px solid #5a8c37;
+}
+
+/* line 481, src/_drop-section-nav.scss */
+body.collegeonly #drop-section-nav #drop-nav ul li.tx-uni-item a {
+  padding: 1px 20px;
+  margin-left: 10px;
+  text-indent: -999em;
+  height: 32px;
+  width: 194px;
+  display: block;
+  background: url("images/college-logo.png?v=100") no-repeat left center;
+}
+
+/* line 491, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .flow .contents #ext-intro {
+  border-color: #fff;
+  background: #ece5c2;
+}
+
+/* line 496, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .flow .contents #ext-intro p {
+  color: #5a0024;
+}
+
+/* line 500, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .flow .contents #ext-intro p a {
+  background: #d5c380;
+  color: #815a08;
+}
+
+/* line 505, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .flow .contents #ext-intro p a:hover {
+  background: #b19e56;
+}
+
+/* line 509, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .flow .contents #ext-intro p.ask-text {
+  color: #5a0024;
+}
+
+/* line 513, src/_drop-section-nav.scss */
+body.collegeonly #drop-section .flow .contents #top-level-nav .top-level-nav {
+  border-color: #d9d1ae;
+}
+
+/* line 517, src/_drop-section-nav.scss */
+body.collegeonly #access li a[title='home'] {
+  background-image: url("images/home-college.png?v=100");
+}
+
+/* line 521, src/_drop-section-nav.scss */
+#college-top-level-section, .ask, .explore {
+  display: none;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+/* line 361, src/style-agriflex-old.scss */
+#header {
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 366, src/style-agriflex-old.scss */
+#site-title {
+  text-align: center;
+  margin-top: .3em;
+  margin-bottom: .3em;
+  line-height: .875em;
+  /* 14px / 16px */
+}
+
+/* line 373, src/style-agriflex-old.scss */
+#site-title a {
+  border: none;
+  color: #443d3a;
+  padding: 0;
+  font-size: .75em;
+  /* 12px / 16px */
+}
+
+/* line 380, src/style-agriflex-old.scss */
+#site-title a img {
+  display: none;
+}
+
+/* line 388, src/style-agriflex-old.scss */
+body.collegeonly #site-title a {
+  color: #5d0025;
+}
+
+/* line 392, src/style-agriflex-old.scss */
+#site-title a em {
+  display: block;
+  overflow: hidden;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+
+/* line 405, src/style-agriflex-old.scss */
+#site-description {
+  display: none;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+/* line 411, src/style-agriflex-old.scss */
+.menu-button {
+  position: absolute;
+  z-index: 999;
+  top: -.75em;
+  right: 0;
+  padding: 1.5em 1.25em 1em;
+  border-radius: .75em;
+  color: white;
+  background: #444;
+  background: rgba(1, 1, 1, 0.3);
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+/* line 425, src/style-agriflex-old.scss */
+.clear {
+  clear: both;
+}
+
+/* line 429, src/style-agriflex-old.scss */
+#access {
+  position: relative;
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 437, src/style-agriflex-old.scss */
+.js #branding .searchform,
+.js #access {
+  display: none;
+}
+
+/* line 441, src/style-agriflex-old.scss */
+.searchform .s {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 448, src/style-agriflex-old.scss */
+#access .menu-header,
+ul.menu {
+  display: block;
+  margin: 0.5em 0 0;
+}
+
+/* line 456, src/style-agriflex-old.scss */
+#access .menu-header:before,
+ul.menu:before,
+#access .menu-header:after,
+ul.menu:after {
+  content: "";
+  display: table;
+}
+
+/* line 461, src/style-agriflex-old.scss */
+#access .menu-header:after,
+ul.menu:after {
+  clear: both;
+}
+
+/* line 465, src/style-agriflex-old.scss */
+#access .menu-header,
+ul.menu {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 470, src/style-agriflex-old.scss */
+#access .menu-header li,
+div.menu li {
+  font-family: "Verdana", clean, sans-serif;
+  float: left;
+  list-style: none;
+  border-bottom: none;
+  position: relative;
+}
+
+/* line 478, src/style-agriflex-old.scss */
+#access ul.menu a {
+  font-size: 1.15em;
+  border: none;
+  line-height: 1.2em;
+  overflow: hidden;
+  margin: 0 0 0.1em 0;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* line 488, src/style-agriflex-old.scss */
+#access ul.menu li a[title='home'] {
+  display: block;
+  text-indent: -999em;
+  background: url("images/home-gold.png?v=100") no-repeat 50% 12px;
+  width: 20px;
+}
+
+/* line 495, src/style-agriflex-old.scss */
+#access li a[title='home']:hover {
+  background-position: 50% -35px;
+}
+
+/* line 499, src/style-agriflex-old.scss */
+#access #menu-main-navigation {
+  width: 100%;
+}
+
+/* line 504, src/style-agriflex-old.scss */
+#access .menu-header li,
+div.menu li {
+  float: none;
+  margin: 0;
+  border-bottom: 1px solid #e7e2cb;
+}
+
+/* line 510, src/style-agriflex-old.scss */
+#access {
+  float: none;
+}
+
+/* line 514, src/style-agriflex-old.scss */
+body.no-touch #access ul.menu a {
+  font-size: 1.6em;
+  text-shadow: 0 1px 0 white;
+  display: block;
+  text-shadow: none;
+}
+
+/* line 521, src/style-agriflex-old.scss */
+body.mobile #access .menu-header li ul.sub-menu {
+  display: none;
+}
+
+/* line 525, src/style-agriflex-old.scss */
+body.touch #access .menu-header li ul.sub-menu {
+  display: none;
+}
+
+/* line 529, src/style-agriflex-old.scss */
+.searchform {
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+}
+
+/* line 535, src/style-agriflex-old.scss */
+.s {
+  width: 100%;
+  padding: 8px 5px 8px 30px;
+  background: white url("images/search.png?v=100") no-repeat left 45%;
+  border-radius: 10px;
+  color: #999;
+  border: 1px solid #cccccc;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 547, src/style-agriflex-old.scss */
+.searchsubmit {
+  display: none;
+}
+
+/***** Search Page Template ********************/
+/* line 554, src/style-agriflex-old.scss */
+body.search div.entry-meta,
+body.search div.entry-utility {
+  display: none;
+}
+
+/* line 558, src/style-agriflex-old.scss */
+body.search h1.page-title {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/***** Home Top ********************/
+/* line 566, src/style-agriflex-old.scss */
+body.home #content {
+  width: 100%;
+}
+
+/* line 570, src/style-agriflex-old.scss */
+#home-top {
+  display: block;
+  position: relative;
+  width: 574px;
+  float: none;
+  margin: 0 auto 25px;
+  overflow: hidden;
+}
+
+/* line 579, src/style-agriflex-old.scss */
+.flex-container {
+  margin-top: 5%;
+}
+
+/* line 584, src/style-agriflex-old.scss */
+#home-top #big-feature {
+  margin-left: 10px;
+  width: 100%;
+  height: 368px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+/* line 593, src/style-agriflex-old.scss */
+#home-top #big-feature img {
+  max-height: 368px;
+  max-width: 100%;
+}
+
+/* line 598, src/style-agriflex-old.scss */
+#home-top #big-feature a {
+  border: none;
+}
+
+/* line 602, src/style-agriflex-old.scss */
+#home-top #big-feature .feature-detail {
+  display: block;
+}
+
+/* line 606, src/style-agriflex-old.scss */
+#home-top #big-feature .feature-detail h2 a {
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  background: #343434;
+  background: rgba(33, 33, 33, 0.65);
+  top: 282px;
+  padding: 15px 60px 50px 20px;
+  display: block;
+  line-height: 1.1em;
+  width: 100%;
+}
+
+/* line 619, src/style-agriflex-old.scss */
+#home-top #slideshow-nav {
+  position: relative;
+  z-index: 8;
+  margin-top: 1em;
+  float: right;
+}
+
+/* line 627, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slideNext,
+#home-top #slideshow-nav a.slidePrev {
+  background-image: url(images/arrows.png?v=100);
+  background-repeat: no-repeat;
+  top: 0;
+  height: 31px;
+  width: 34px;
+  display: block;
+  border: none;
+  float: left;
+}
+
+/* line 638, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slideNext {
+  background-position: right top;
+}
+
+/* line 642, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slidePrev {
+  background-position: left top;
+}
+
+/* line 646, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slideNext:hover {
+  background-position: right -45px;
+}
+
+/* line 650, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slidePrev:hover {
+  background-position: left -45px;
+}
+
+/* line 654, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slideNext:active {
+  background-position: right -44px;
+}
+
+/* line 658, src/style-agriflex-old.scss */
+#home-top #slideshow-nav a.slidePrev:active {
+  background-position: left -44px;
+}
+
+/* line 662, src/style-agriflex-old.scss */
+#home-top #slidePager {
+  position: relative;
+  margin-right: 1em;
+  margin-top: 1.8em;
+  float: right;
+}
+
+/* line 669, src/style-agriflex-old.scss */
+#home-top #slidePager a {
+  background-image: url(images/dots.png?v=100);
+  background-repeat: no-repeat;
+  background-position: center -33px;
+  text-indent: -9999px;
+  display: block;
+  float: left;
+  width: 20px;
+  height: 15px;
+  border: none;
+}
+
+/* line 681, src/style-agriflex-old.scss */
+#home-top #slidePager a.activeSlide {
+  background-position: center top;
+}
+
+/* line 685, src/style-agriflex-old.scss */
+.entry-title, body.home h3.widget-title a.rsswidget, body.home #content h3, body.home #content h4, #home-middle .home-middle-features h3 a {
+  color: #a0915d;
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: 600;
+  text-shadow: white 0px 1px 0px;
+  border-color: transparent;
+  line-height: 1.4em;
+}
+
+/* line 695, src/style-agriflex-old.scss */
+#home-middle .home-middle-features h3 a,
+#content h2.entry-title a {
+  color: #ad995a;
+}
+
+/* line 700, src/style-agriflex-old.scss */
+body.collegeonly .entry-title,
+body.collegeonly.home h3.widget-title a.rsswidget {
+  color: #a0915d;
+}
+
+/***** Home Middle ********************/
+/* line 708, src/style-agriflex-old.scss */
+body.home #container,
+body.home #content {
+  margin: 0;
+  float: none;
+}
+
+/* line 713, src/style-agriflex-old.scss */
+#home-middle-bg {
+  float: left;
+}
+
+/* line 717, src/style-agriflex-old.scss */
+#home-middle {
+  margin: 0 auto;
+  padding: 0;
+  float: left;
+  clear: left;
+}
+
+/* line 724, src/style-agriflex-old.scss */
+body.home #content p:first-child {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* line 729, src/style-agriflex-old.scss */
+#home-middle h2, body.home .page .entry-title {
+  margin: 0 0 5px 0;
+  text-decoration: none;
+}
+
+/* line 734, src/style-agriflex-old.scss */
+#home-middle h2 a, #home-middle h2 a:visited {
+  text-decoration: none;
+}
+
+/* line 738, src/style-agriflex-old.scss */
+#home-middle h4 {
+  margin: 20px 0 15px 0;
+  padding: 10px 0;
+  padding-left: 5px;
+}
+
+/* line 744, src/style-agriflex-old.scss */
+#home-middle ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 750, src/style-agriflex-old.scss */
+#home-middle ul li {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+/* line 755, src/style-agriflex-old.scss */
+.widget_rss ul li {
+  margin: 0 0 7px 0;
+  padding: 0 0 7px 0;
+}
+
+/* line 760, src/style-agriflex-old.scss */
+#home-middle ul ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+/* line 766, src/style-agriflex-old.scss */
+#home-middle ul li ul li {
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+/* line 771, src/style-agriflex-old.scss */
+#home-middle .widget {
+  margin: 0;
+}
+
+/* line 775, src/style-agriflex-old.scss */
+#home-middle .widget-container {
+  padding-top: 2em;
+  margin-top: 2em;
+  border-top: 1px dashed #d2ca9c;
+  width: 100%;
+}
+
+/* line 782, src/style-agriflex-old.scss */
+#home-middle .textwidget {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 787, src/style-agriflex-old.scss */
+#home-middle .featuredpost .post, #home-middle .featuredpage .page {
+  clear: both;
+}
+
+/* line 791, src/style-agriflex-old.scss */
+#home-middle .featuredpost, #home-middle .featuredpage {
+  clear: both;
+}
+
+/* line 795, src/style-agriflex-old.scss */
+#home-middle .featuredpost img {
+  background: #FFFFFF;
+  margin: 0;
+  padding: 4px;
+}
+
+/* line 801, src/style-agriflex-old.scss */
+#home-middle .user-profile .avatar {
+  background: #FFFFFF;
+  margin: 0 0 -5px 0;
+  padding: 1px;
+  border: 4px solid #eeeeee;
+}
+
+/* line 808, src/style-agriflex-old.scss */
+.home-middle-1 {
+  float: left;
+  margin: 0;
+  padding: 0 0 20px 10px;
+}
+
+/* line 814, src/style-agriflex-old.scss */
+body.home .page p:first-child {
+  text-shadow: 0 1px 0 white;
+}
+
+/* line 818, src/style-agriflex-old.scss */
+.featured-wrap p {
+  position: relative;
+}
+
+/* line 822, src/style-agriflex-old.scss */
+.featured-wrap a {
+  border: none;
+}
+
+/* line 826, src/style-agriflex-old.scss */
+body.page .featured-wrap .entry-title a {
+  color: #A0915D;
+}
+
+/* line 830, src/style-agriflex-old.scss */
+.cat-posts-title {
+  padding-top: 10px;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  border-top: 2px solid #111111;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 838, src/style-agriflex-old.scss */
+body.home.collegeonly #home-middle .home-middle-features a.feature-img-date {
+  color: #fff;
+}
+
+/* line 842, src/style-agriflex-old.scss */
+.featured-wrap a .date {
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: .8em;
+  background: #726b60;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 2px 5px 1px;
+  -webkit-box-shadow: 0 0 4px white;
+  -moz-box-shadow: 0 0 4px white;
+  box-shadow: 0 0 4px white;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+  z-index: 999;
+  margin: 1px;
+}
+
+/* line 860, src/style-agriflex-old.scss */
+body.home.collegeonly #home-middle .home-middle-features a .date {
+  background: #5d0025;
+  color: #fff;
+}
+
+/* line 865, src/style-agriflex-old.scss */
+body.home.extensiononly #home-middle .home-middle-features a .date {
+  background: #004c6b;
+  color: #fff;
+}
+
+/* line 872, src/style-agriflex-old.scss */
+body.home.researchonly #home-middle .home-middle-features a .date {
+  background: #5a8c37;
+  color: #fff;
+}
+
+/* line 877, src/style-agriflex-old.scss */
+.featured-wrap img {
+  width: 175px;
+  float: left;
+  margin: 5px 1.2em 1.2em 0;
+  opacity: .95;
+  position: relative;
+  z-index: 998;
+}
+
+/* line 886, src/style-agriflex-old.scss */
+.featured-wrap img:hover {
+  opacity: 1;
+}
+
+/* line 890, src/style-agriflex-old.scss */
+body.home #home-middle .home-middle-features h3 {
+  line-height: 36px;
+}
+
+/* line 895, src/style-agriflex-old.scss */
+body.home #home-middle .home-middle-features h3 a,
+#content h2.entry-title a {
+  border-bottom: 1px dotted #b19e56;
+}
+
+/* line 899, src/style-agriflex-old.scss */
+body.home #home-middle a.rsswidget {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/* line 906, src/style-agriflex-old.scss */
+body.home #home-middle .rss-date {
+  display: block;
+  margin: 5px 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 915, src/style-agriflex-old.scss */
+.featured-wrap h3 a:hover,
+#content h2.entry-title a:hover {
+  color: #a2904b;
+  border-bottom: 1px solid #a2904b;
+}
+
+/* line 920, src/style-agriflex-old.scss */
+.featured-wrap span.read-more {
+  display: block;
+  clear: left;
+  overflow: hidden;
+  margin-left: -2px;
+  margin-bottom: -5px;
+}
+
+/* line 930, src/style-agriflex-old.scss */
+span.read-more a,
+body .flickr-gallery-next a,
+body .flickr-gallery-prev a {
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  padding: 0.2em 1em;
+  background: #e8e7d5;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #dddddd;
+  -moz-box-shadow: 0 1px 2px #dddddd;
+  box-shadow: 0 1px 2px #dddddd;
+  border: none;
+  float: left;
+  margin: 20px 0 20px 2px;
+}
+
+/* line 943, src/style-agriflex-old.scss */
+.single-staff span.read-more a {
+  margin-top: 0;
+  float: none;
+  padding-top: .3em;
+}
+
+/* line 951, src/style-agriflex-old.scss */
+span.read-more a:hover,
+body .flickr-gallery-next a:hover,
+body .flickr-gallery-prev a:hover {
+  background: #e2dbbf;
+  -webkit-box-shadow: 0 1px 1px white;
+  -moz-box-shadow: 0 1px 1px white;
+  box-shadow: 0 1px 1px white;
+}
+
+/* line 960, src/style-agriflex-old.scss */
+body.home.researchonly #content span.read-more a,
+body.researchonly #content .flickr-gallery-next a,
+body.researchonly #content .flickr-gallery-prev a {
+  color: #fff;
+  background: #4e792f;
+}
+
+/* line 967, src/style-agriflex-old.scss */
+body.home.researchonly #content span.read-more a:hover,
+body.researchonly #content .flickr-gallery-next a:hover,
+body.researchonly #content .flickr-gallery-prev a:hover {
+  background: #1f2f12;
+}
+
+/* line 971, src/style-agriflex-old.scss */
+body.home #home-middle .featuredpost img {
+  background: #FFFFFF;
+  margin: 0;
+  padding: 4px;
+}
+
+/* line 977, src/style-agriflex-old.scss */
+body.home #home-middle .user-profile .avatar {
+  background: #FFFFFF;
+  margin: 0 0 -5px 0;
+  padding: 1px;
+  border: 4px solid #eeeeee;
+}
+
+/* line 984, src/style-agriflex-old.scss */
+body.home .home-middle-1 {
+  float: left;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+/* =Content
+-------------------------------------------------------------- */
+/* line 994, src/style-agriflex-old.scss */
+#content-wrap {
+  position: relative;
+  z-index: 2;
+  border-top: 2px solid #e7e2cb;
+  margin-top: -2px;
+  width: 100%;
+}
+
+/* line 1003, src/style-agriflex-old.scss */
+#content-wrap:before,
+#content-wrap:after {
+  content: "";
+  display: table;
+}
+
+/* line 1007, src/style-agriflex-old.scss */
+#content-wrap:after {
+  clear: both;
+}
+
+/* line 1010, src/style-agriflex-old.scss */
+#content-wrap {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 1014, src/style-agriflex-old.scss */
+#breadcrumbs {
+  margin-bottom: 1.6em;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 0.8em 0;
+  line-height: 1.4em;
+}
+
+/* line 1023, src/style-agriflex-old.scss */
+#breadcrumbs a {
+  border: none;
+}
+
+/* line 1027, src/style-agriflex-old.scss */
+#content {
+  padding-right: 10px;
+}
+
+/* line 1031, src/style-agriflex-old.scss */
+body.home #breadcrumbs {
+  display: none;
+}
+
+/* line 1035, src/style-agriflex-old.scss */
+.hentry {
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+}
+
+/* line 1040, src/style-agriflex-old.scss */
+body.home .hentry {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  clear: both;
+}
+
+/* line 1046, src/style-agriflex-old.scss */
+body.home.blog .hentry {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+/* line 1050, src/style-agriflex-old.scss */
+.entry-meta {
+  margin: 15px 0 25px;
+}
+
+/* line 1054, src/style-agriflex-old.scss */
+#content .hentry .entry-meta {
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* line 1059, src/style-agriflex-old.scss */
+#content ul {
+  list-style: circle;
+}
+
+/* line 1063, src/style-agriflex-old.scss */
+#content dl {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 1070, src/style-agriflex-old.scss */
+#content dd,
+#content dt {
+  margin-bottom: .5em;
+}
+
+/* line 1074, src/style-agriflex-old.scss */
+#content dt {
+  font-size: 1.2em;
+  margin-top: .2em;
+}
+
+/* line 1079, src/style-agriflex-old.scss */
+#content dl.attachments-large {
+  border: none;
+  border-bottom: 1px dashed #d2ca9c;
+}
+
+/* line 1087, src/style-agriflex-old.scss */
+#content .hentry footer.entry-meta,
+#content .hentry footer.entry-meta h2,
+#content .hentry footer.entry-meta #entry-author-info,
+#content .hentry footer.entry-meta .entry-utility {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 1093, src/style-agriflex-old.scss */
+#content .hentry footer.entry-meta h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 1099, src/style-agriflex-old.scss */
+.page-title {
+  margin-bottom: 1em;
+}
+
+/* County Styles
+-------------------------------------------------------------- */
+/* line 1109, src/style-agriflex-old.scss */
+.county-staff-list .staff-contact-details {
+  width: 45%;
+}
+
+/* Aside
+-------------------------------------------------------------- */
+/* line 1116, src/style-agriflex-old.scss */
+#aside {
+  clear: both;
+}
+
+/* line 1120, src/style-agriflex-old.scss */
+#aside img.left {
+  float: left;
+}
+
+/* line 1124, src/style-agriflex-old.scss */
+#aside img.right {
+  float: right;
+}
+
+/* line 1128, src/style-agriflex-old.scss */
+#aside h3.widget-title, #aside h3 {
+  padding: 5px 5px 5px 0;
+  font-size: 16px;
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+/* line 1137, src/style-agriflex-old.scss */
+#aside h4 {
+  font-size: 1.1em;
+  margin-bottom: .6em;
+}
+
+/* line 1142, src/style-agriflex-old.scss */
+#aside h4 a {
+  border: none;
+  color: #444;
+}
+
+/* line 1148, src/style-agriflex-old.scss */
+#aside .menu,
+#aside .blogroll {
+  margin: 0;
+}
+
+/* line 1152, src/style-agriflex-old.scss */
+#aside .sidebar-widget-navigation {
+  margin: 0;
+}
+
+/* line 1156, src/style-agriflex-old.scss */
+#aside #sidebar-navigation-widgets {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+/* line 1163, src/style-agriflex-old.scss */
+#aside #sidebar-navigation-widgets .widget_nav_menu,
+#aside #sidebar-navigation-widgets .widget_links {
+  background: #f1f0ec;
+  border-radius: 3px;
+}
+
+/* line 1168, src/style-agriflex-old.scss */
+#aside #sidebar-navigation-widgets h3 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+}
+
+/* line 1175, src/style-agriflex-old.scss */
+#aside #sidebar-navigation-widgets h3 a {
+  display: block;
+  margin: 0;
+  background: url("images/navigation-arrow.png?v=100") no-repeat -1px 6px;
+  background-color: #edece4;
+  padding: 10px 10px 10px 27px;
+  border-bottom: 1px solid #e0dcbc;
+  border-top: 1px solid #f0eede;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+}
+
+/* line 1190, src/style-agriflex-old.scss */
+#aside #sidebar-navigation-widgets h3 a:hover {
+  background-color: #d9d6c6;
+}
+
+/* line 1194, src/style-agriflex-old.scss */
+#aside #sidebar-navigation-widgets h3.ui-state-active a {
+  background-position: -2px -26px;
+  background-color: #e3e1d5;
+}
+
+/* line 1200, src/style-agriflex-old.scss */
+#aside .menu li a,
+#aside .blogroll li a {
+  display: block;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+}
+
+/* line 1208, src/style-agriflex-old.scss */
+#aside .menu li ul li a,
+#aside .blogroll li ul li a {
+  display: block;
+  padding: 5px 0;
+  border: none;
+}
+
+/* line 1214, src/style-agriflex-old.scss */
+#aside .menu li ul.sub-menu {
+  margin: 0 0 0 15px;
+  list-style: circle;
+}
+
+/* line 1219, src/style-agriflex-old.scss */
+#aside li embed {
+  width: 100%;
+}
+
+/* line 1223, src/style-agriflex-old.scss */
+#aside #books-bg {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* line 1228, src/style-agriflex-old.scss */
+#aside ul.books {
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: 25px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 1237, src/style-agriflex-old.scss */
+#aside ul.books li {
+  position: relative;
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+/* line 1244, src/style-agriflex-old.scss */
+#aside ul.books li dt.book-title {
+  float: right;
+  width: 55%;
+  padding-top: 25px;
+  line-height: 1em;
+}
+
+/* line 1251, src/style-agriflex-old.scss */
+#aside ul.books li dd.price {
+  position: absolute;
+  background: url("images/price-circle.png?v=100") no-repeat 40% 50%;
+  z-index: 6;
+  top: -15px;
+  left: 30%;
+  padding: 13px 10px 16px 10px;
+  color: #8C2B17;
+  font: 0.95em georgia;
+}
+
+/* line 1262, src/style-agriflex-old.scss */
+#aside ul.books li dd.price em {
+  font-size: .75em;
+  font-style: normal;
+}
+
+/* line 1267, src/style-agriflex-old.scss */
+#aside ul.books li dd.price span {
+  font-size: .5em;
+  vertical-align: super;
+}
+
+/* line 1272, src/style-agriflex-old.scss */
+#aside ul.books li p.btn {
+  clear: both;
+  z-index: 5;
+}
+
+/* line 1277, src/style-agriflex-old.scss */
+#aside ul.books li p.btn a {
+  padding: 4px 12px;
+  font-size: 10px;
+  color: #806E38;
+  border: 1px solid #bba563;
+  background: #c7bc7f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ded8b4), to(#c7bc7f));
+  background: -moz-linear-gradient(top, #ded8b4, #c7bc7f);
+}
+
+/* line 1287, src/style-agriflex-old.scss */
+#aside ul.books li p.btn a:hover {
+  cursor: pointer;
+  border: 1px solid #bba563;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shodow: none;
+  background: #c7bc7f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cfc591), to(#c7bc7f));
+  background: -moz-linear-gradient(top, #cfc591, #c7bc7f);
+}
+
+/* line 1298, src/style-agriflex-old.scss */
+#aside ul.books li p.btn a:active {
+  cursor: pointer;
+  background: #c7bc7f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c7bc7f), to(#cfc591));
+  background: -moz-linear-gradient(top, #c7bc7f, #cfc591);
+}
+
+/* line 1305, src/style-agriflex-old.scss */
+#aside ul.books li img.book {
+  width: 33%;
+}
+
+/* line 1309, src/style-agriflex-old.scss */
+#aside #event-bg {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #e5e0c5;
+  background: rgba(217, 208, 173, 0.5);
+  overflow: hidden;
+}
+
+/* line 1317, src/style-agriflex-old.scss */
+#aside #aside-widget-area-1 ul {
+  margin: 0;
+}
+
+/* line 1321, src/style-agriflex-old.scss */
+#aside ul li.widget-container {
+  position: relative;
+  padding: 5px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #e3e1d5;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+}
+
+/* line 1336, src/style-agriflex-old.scss */
+#aside ul li.widget-container.agrilifetoday ul li,
+#aside ul li.widget-container.widget_rss ul li,
+#aside ul li.widget-container.widget_twitter ul li {
+  font-family: verdana, clean, sans-serif;
+  font-size: 13px;
+}
+
+/* line 1343, src/style-agriflex-old.scss */
+#aside ul li.widget-container .widget-wrap {
+  position: relative;
+  padding: 10px;
+  background: #edece4;
+  border-radius: 2px;
+}
+
+/* line 1350, src/style-agriflex-old.scss */
+#aside ul li.widget-container.Watch.Read.Listen {
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0);
+}
+
+/* line 1359, src/style-agriflex-old.scss */
+#aside ul li.widget-container.Watch.Read.Listen .widget-wrap {
+  position: relative;
+  padding: 0;
+  background: transparent;
+  border-radius: 0px;
+}
+
+/* line 1366, src/style-agriflex-old.scss */
+.intent-meta a {
+  margin: 0 5px 10px 0;
+  padding: 2px 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  font-size: 11px;
+  border: none;
+}
+
+/* line 1376, src/style-agriflex-old.scss */
+.intent-meta a:hover,
+.intent-meta a:active {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* line 1380, src/style-agriflex-old.scss */
+#secondary span.entry-meta {
+  margin: 10px 0;
+  font-size: 11px;
+}
+
+/* line 1386, src/style-agriflex-old.scss */
+#aside #aside-widget-area-1 ul li.Watch {
+  padding: 0;
+  margin-bottom: 20px;
+  background: none;
+}
+
+/* Events page
+-------------------------------------------------------------- */
+/* line 1398, src/style-agriflex-old.scss */
+body.page h1.entry-title {
+  margin-bottom: .8em;
+}
+
+/* line 1, src/widgets/_tag-cloud.scss */
+.tagcloud a {
+  line-height: 1.625em;
+  /* 26px / 16px */
+  border: none;
+  font-family: verdana, clean, sans-serif;
+}
+
+/* line 6, src/widgets/_tag-cloud.scss */
+.tagcloud a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, src/widgets/_agrilife-today.scss */
+.agrilifetoday ul li {
+  margin: 0;
+  padding: 20px 0 20px 65px;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+  position: relative;
+}
+
+/* line 9, src/widgets/_agrilife-today.scss */
+.agrilifetoday ul li img {
+  left: 0;
+  top: 20px;
+  padding: 4px;
+  position: absolute;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  margin-right: 3%;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0 1px 2px #d8d3ae;
+  -moz-box-shadow: 0 1px 2px #d8d3ae;
+  box-shodow: 0 1px 2px #d8d3ae;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 25, src/widgets/_agrilife-today.scss */
+.widget_twitter ul li .entry-meta {
+  font-size: .9em;
+  display: block;
+}
+
+/* line 30, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+  overflow: visible;
+  position: relative;
+}
+
+/* line 38, src/widgets/_agrilife-today.scss */
+#aside .agrilifetoday ul li {
+  padding: 20px 0 20px 65px;
+}
+
+/* line 41, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li img {
+  width: 150px;
+  height: 150px;
+  left: 0;
+  top: 0;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  -webkit-box-shadow: 0 2px 5px #cccccc;
+  -moz-box-shadow: 0 2px 5px #cccccc;
+  box-shodow: 0 2px 5px #cccccc;
+}
+
+/* line 55, src/widgets/_agrilife-today.scss */
+#aside .agrilifetoday ul li img {
+  width: 48px;
+  height: 48px;
+}
+
+/* line 59, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li a.rss-title-link {
+  font-size: 22px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+/* line 65, src/widgets/_agrilife-today.scss */
+.agrilifetoday ul li span.rss-date {
+  display: block;
+  padding-top: 7px;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  font-family: "minion-pro-1", "minion-pro-2", "Cambria", "Georgia", "Times New Roman", serif;
+}
+
+/* line 73, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li .rss-content {
+  position: relative;
+}
+
+/* line 77, src/widgets/_agrilife-today.scss */
+body.home #home-middle .agrilifetoday ul li span.rss-date {
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: .8em;
+  background: #726b60;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 2px 5px 1px;
+  -webkit-box-shadow: 0 0 4px white;
+  -moz-box-shadow: 0 0 4px white;
+  box-shadow: 0 0 4px white;
+  position: absolute;
+  left: -5px;
+  top: 30px;
+  z-index: 999;
+  margin: 1px;
+  font-style: normal;
+}
+
+/* line 96, src/widgets/_agrilife-today.scss */
+body.home.research #home-middle .agrilifetoday ul li span.rss-date {
+  background: #5A8C37;
+}
+
+/* line 99, src/widgets/_agrilife-today.scss */
+body.home.extension #home-middle .agrilifetoday ul li span.rss-date {
+  background: #004C6B;
+}
+
+/* line 102, src/widgets/_agrilife-today.scss */
+body.home.college #home-middle .agrilifetoday ul li span.rss-date {
+  background: #5D0025;
+}
+
+/* line 106, src/widgets/_agrilife-today.scss */
+#aside .agrilifetoday ul li p.rss-excerpt {
+  font-size: 11px;
+}
+
+/* line 109, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li .rss-title {
+  display: block;
+}
+
+/* Attachment pages -------------- */
+/* line 12, src/wordpress/_attachment-pages.scss */
+.attachment .entry-content .nav-next a:after {
+  content: '\00a0\2192';
+}
+
+/* Images ------------- */
+/* line 10, src/wordpress/_images.scss */
+#content .alignleft,
+#content img.alignleft {
+  display: inline;
+  float: left;
+  margin-top: 4px;
+}
+
+/* line 16, src/wordpress/_images.scss */
+#content .alignright,
+#content img.alignright {
+  display: inline;
+  float: right;
+  margin-top: 4px;
+}
+
+/* line 22, src/wordpress/_images.scss */
+#content .aligncenter,
+#content img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 30, src/wordpress/_images.scss */
+#content img.alignleft,
+#content img.alignright,
+#content img.aligncenter {
+  margin-bottom: 20px;
+}
+
+/* line 34, src/wordpress/_images.scss */
+#content img.alignleft {
+  margin-right: 20px;
+}
+
+/* line 38, src/wordpress/_images.scss */
+#content img.alignright {
+  margin-left: 20px;
+}
+
+/* line 42, src/wordpress/_images.scss */
+#content .wp-caption {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* line 50, src/wordpress/_images.scss */
+#content .wp-caption.alignleft {
+  text-align: center;
+  margin: 5px 20px 10px 6px;
+}
+
+/* line 55, src/wordpress/_images.scss */
+#content .wp-caption a {
+  border: none;
+}
+
+/* line 59, src/wordpress/_images.scss */
+#content .wp-caption img {
+  max-width: 100%;
+  margin: 5px 5px 0;
+  height: auto;
+}
+
+/* line 64, src/wordpress/_images.scss */
+#content .wp-caption p.wp-caption-text {
+  margin: 5px;
+  color: #888;
+  font-size: 13px;
+}
+
+/* line 69, src/wordpress/_images.scss */
+#content .wp-smiley {
+  margin: 0;
+}
+
+/* line 72, src/wordpress/_images.scss */
+#content .gallery {
+  margin: auto;
+}
+
+/* line 75, src/wordpress/_images.scss */
+#content .gallery .gallery-item {
+  float: left;
+  margin-top: 0;
+  text-align: center;
+  width: 33%;
+}
+
+/* line 81, src/wordpress/_images.scss */
+#content .gallery img {
+  border: 2px solid #cfcfcf;
+}
+
+/* line 84, src/wordpress/_images.scss */
+#content .gallery .gallery-caption {
+  color: #888;
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+/* line 89, src/wordpress/_images.scss */
+#content .gallery dl {
+  margin: 0;
+}
+
+/* line 93, src/wordpress/_images.scss */
+#content .gallery br + br {
+  display: none;
+}
+
+/* line 97, src/wordpress/_images.scss */
+img, video, object, iframe {
+  max-width: 100%;
+}
+
+/* line 101, src/wordpress/_images.scss */
+img {
+  height: auto;
+}
+
+/* line 105, src/wordpress/_images.scss */
+.feature-img-excerpt {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+/* line 113, src/wordpress/_images.scss */
+.feature-img-excerpt:hover {
+  opacity: .9;
+  border: none;
+}
+
+/* =Navigation -------------------------- */
+/* line 14, src/wordpress/_navigation.scss */
+.nav-previous {
+  float: left;
+}
+
+/* line 17, src/wordpress/_navigation.scss */
+.nav-next {
+  float: right;
+}
+
+/* line 21, src/wordpress/_navigation.scss */
+#nav-above,
+#nav-below {
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+
+/*  =Comments ----- */
+/* line 2, src/wordpress/_comments.scss */
+#comments {
+  clear: both;
+}
+
+/* line 5, src/wordpress/_comments.scss */
+#comments .navigation {
+  padding: 0 0 18px 0;
+}
+
+/* line 9, src/wordpress/_comments.scss */
+h3#comments-title,
+h3#reply-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* line 15, src/wordpress/_comments.scss */
+h3#comments-title {
+  padding: 24px 0;
+}
+
+/* line 18, src/wordpress/_comments.scss */
+.commentlist {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 22, src/wordpress/_comments.scss */
+.commentlist li.odd {
+  background: #f4f3ea;
+}
+
+/* line 25, src/wordpress/_comments.scss */
+.commentlist li.comment {
+  border-bottom: 1px solid #e7e7e7;
+  margin: 0;
+  padding: 24px 56px;
+  position: relative;
+}
+
+/* line 31, src/wordpress/_comments.scss */
+.commentlist li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* line 36, src/wordpress/_comments.scss */
+#comments .comment-body ul,
+#comments .comment-body ol {
+  margin-bottom: 18px;
+}
+
+/* line 39, src/wordpress/_comments.scss */
+#comments .comment-body p:last-child {
+  margin-bottom: 6px;
+}
+
+/* line 42, src/wordpress/_comments.scss */
+#comments .comment-body blockquote p:last-child {
+  margin-bottom: 24px;
+}
+
+/* line 45, src/wordpress/_comments.scss */
+.commentlist ol {
+  list-style: decimal;
+}
+
+/* line 48, src/wordpress/_comments.scss */
+.commentlist .avatar {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+/* line 55, src/wordpress/_comments.scss */
+.comment-author cite {
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 60, src/wordpress/_comments.scss */
+.comment-author .says {
+  font-style: italic;
+}
+
+/* line 63, src/wordpress/_comments.scss */
+.comment-meta {
+  font-size: 12px;
+  margin: 0 0 18px 0;
+}
+
+/* line 68, src/wordpress/_comments.scss */
+.comment-meta a:link,
+.comment-meta a:visited {
+  color: #888;
+  text-decoration: none;
+}
+
+/* line 73, src/wordpress/_comments.scss */
+.comment-meta a:active,
+.comment-meta a:hover {
+  color: #FF4B33;
+}
+
+/* line 80, src/wordpress/_comments.scss */
+.reply {
+  font-size: 12px;
+  padding: 0 0 24px 0;
+}
+
+/* line 85, src/wordpress/_comments.scss */
+.reply a,
+a.comment-edit-link {
+  color: #888;
+}
+
+/* line 89, src/wordpress/_comments.scss */
+.reply a:hover,
+a.comment-edit-link:hover {
+  color: #FF4B33;
+}
+
+/* line 92, src/wordpress/_comments.scss */
+.commentlist .children {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 96, src/wordpress/_comments.scss */
+.commentlist .children li {
+  border: none;
+  margin: 0;
+}
+
+/* line 101, src/wordpress/_comments.scss */
+.nopassword,
+.nocomments {
+  display: none;
+}
+
+/* line 104, src/wordpress/_comments.scss */
+#comments .pingback {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 109, src/wordpress/_comments.scss */
+.commentlist li.comment + li.pingback {
+  margin-top: -6px;
+}
+
+/* line 112, src/wordpress/_comments.scss */
+#comments .pingback p {
+  color: #888;
+  font-size: 12px;
+  display: block;
+  margin: 0;
+}
+
+/* line 118, src/wordpress/_comments.scss */
+#comments .pingback .url {
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* Comments form */
+/* line 126, src/wordpress/_comments.scss */
+input[type=submit] {
+  color: #333;
+}
+
+/* line 129, src/wordpress/_comments.scss */
+#respond {
+  margin: 24px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 134, src/wordpress/_comments.scss */
+#respond p {
+  margin: 0;
+}
+
+/* line 137, src/wordpress/_comments.scss */
+#respond .comment-notes {
+  margin-bottom: 1em;
+}
+
+/* line 142, src/wordpress/_comments.scss */
+.children #respond {
+  margin: 0 48px 0 0;
+}
+
+/* line 145, src/wordpress/_comments.scss */
+h3#reply-title {
+  margin: 18px 0;
+}
+
+/* line 148, src/wordpress/_comments.scss */
+#comments-list #respond {
+  margin: 0 0 18px 0;
+}
+
+/* line 151, src/wordpress/_comments.scss */
+#comments-list ul #respond {
+  margin: 0;
+}
+
+/* line 154, src/wordpress/_comments.scss */
+#cancel-comment-reply-link {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 158, src/wordpress/_comments.scss */
+#respond .required {
+  color: #FF4B33;
+  font-weight: bold;
+}
+
+/* line 162, src/wordpress/_comments.scss */
+#respond label {
+  color: #888;
+  font-size: 12px;
+}
+
+/* line 166, src/wordpress/_comments.scss */
+#respond input {
+  margin: 0 0 9px;
+  width: 98%;
+}
+
+/* line 170, src/wordpress/_comments.scss */
+#respond textarea {
+  width: 98%;
+}
+
+/* line 173, src/wordpress/_comments.scss */
+#respond .form-allowed-tags {
+  color: #888;
+  font-size: 12px;
+}
+
+/* line 177, src/wordpress/_comments.scss */
+#respond .form-allowed-tags code {
+  font-size: 11px;
+}
+
+/* line 180, src/wordpress/_comments.scss */
+#respond .form-submit {
+  margin: 12px 0;
+}
+
+/* line 183, src/wordpress/_comments.scss */
+#respond .form-submit input {
+  width: auto;
+  font-size: 14px;
+}
+
+/* Main sidebars */
+/* line 1412, src/style-agriflex-old.scss */
+#main .widget-area ul {
+  margin-left: 0;
+  padding: 0 20px 0 0;
+}
+
+/* line 1416, src/style-agriflex-old.scss */
+#main .widget-area ul ul {
+  border: none;
+  margin-left: 1.3em;
+  padding: 0;
+}
+
+/* line 1423, src/style-agriflex-old.scss */
+#secondary ul {
+  margin: 0;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+/* line 1431, src/style-agriflex-old.scss */
+#footer {
+  clear: both;
+}
+
+/* line 1435, src/style-agriflex-old.scss */
+#footer .wrap {
+  margin: 0 auto;
+  padding: 80px 5% 60px 5%;
+  overflow: hidden;
+}
+
+/* line 1441, src/style-agriflex-old.scss */
+#footer .wrap ul {
+  margin-left: 0;
+}
+
+/* line 1445, src/style-agriflex-old.scss */
+#footer .wrap ul li a {
+  display: block;
+  padding: 0.5em 0;
+}
+
+@media print {
+  /* line 1, src/print.scss */
+  body {
+    background: none !important;
+  }
+
+  /* line 4, src/print.scss */
+  #wrapper {
+    float: none !important;
+    clear: both !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  /* line 10, src/print.scss */
+  #header {
+    border-bottom: 2pt solid black;
+    padding-bottom: 18pt;
+  }
+
+  /* line 14, src/print.scss */
+  #colophon {
+    border-top: 2pt solid black;
+  }
+
+  /* line 18, src/print.scss */
+  #site-title,
+  #site-description {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 23, src/print.scss */
+  #site-title {
+    font-size: 13pt;
+  }
+
+  /* line 26, src/print.scss */
+  .entry-content {
+    font-size: 14pt;
+  }
+
+  /* line 29, src/print.scss */
+  .entry-title {
+    font-size: 21pt;
+  }
+
+  /* line 39, src/print.scss */
+  #access,
+  #branding img,
+  #respond,
+  .comment-edit-link,
+  .edit-link,
+  .navigation,
+  .page-link,
+  .widget-area {
+    display: none !important;
+  }
+
+  /* line 44, src/print.scss */
+  #container,
+  #header,
+  #footer {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 49, src/print.scss */
+  #content,
+  .one-column #content {
+    width: 100%;
+    margin: 24pt 0 0;
+  }
+
+  /* line 53, src/print.scss */
+  .wp-caption p {
+    font-size: 11pt;
+  }
+
+  /* line 57, src/print.scss */
+  #site-info,
+  #site-generator {
+    float: none;
+    width: auto;
+  }
+
+  /* line 61, src/print.scss */
+  #colophon {
+    width: auto;
+  }
+
+  /* line 64, src/print.scss */
+  img#wpstats {
+    display: none;
+  }
+
+  /* line 67, src/print.scss */
+  #site-generator a {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 71, src/print.scss */
+  #entry-author-info {
+    border: 1px solid #e7e7e7;
+  }
+
+  /* line 74, src/print.scss */
+  #main {
+    display: inline;
+  }
+
+  /* line 77, src/print.scss */
+  .home .sticky {
+    border: none;
+  }
+}
+@media all and (min-width: 640px) {
+  	/*
+  	body {
+  		font-size: 100%;
+  	}
+  	#site-title {
+  		margin: 20px 0;	
+  	}
+  	#site-title a {
+  		font-size: 1em;		
+  		line-height: 1.125em;
+  	}
+  	
+  	#about,
+  	#popular-links,
+  	#texas-a-m,
+  	#contact,
+  	#agrilife-bookstore {
+  		float: left;
+  		width: 18.324607329843%; 
+  		margin: 0 1.047120418848%;		
+  	}
+  	
+  	#about {
+  		margin-left: 0;				
+  	}	
+  	#agrilife-bookstore {
+  		margin-right: 0;				
+  	}	
+  	#breadcrumbs {
+  		width: 100%;
+  		margin-right: 25px;
+  		border-top: 2px solid #dcdace;
+  		border-bottom: 2px solid #dcdace;	
+  		background: #fff;	
+  		padding: .8em 10px;		
+  	}
+  	
+  	#content-wrap {
+  		position: relative;
+  		z-index: 2;
+  		border-top: 2px solid #e7e2cb;
+  		margin-top: -2px;
+  		width: 100%;
+  		-webkit-box-shadow: 0 -2px 6px rgba(16,16,16,.075);
+  		-moz-box-shadow: -4px -2px 6px rgba(16,16,16,.075);
+  		box-shadow: 0 -2px 6px rgba(16,16,16,.075);	
+  		background: #fff url(images/gradient.png) repeat-x left -100px;			
+  	}
+  
+  	#wrap, #container {
+  		width: 100%;	
+  	}
+  	#footer {
+  		background: #fff url(images/gradient.png) repeat-x left top;
+  	}
+  	
+  	#footer .wrap h4 {
+  		margin-bottom: 2.5em;
+  		font-size: 1em;
+  	}
+  
+  	#footer .wrap a {
+  		border: none;
+  	}
+  
+  	#footer .wrap a img:hover {
+  		opacity: .75;
+  	}
+  
+  	#footer .wrap ul {
+  		margin-left: 0;
+  		margin-top: 15px;
+  	}
+  
+  	#footer .wrap p {
+  		font-size: 1.1em;
+  		line-height: 20px;
+  		margin-top: 19px;
+  	}
+  
+  	#footer .wrap ul li {
+  		margin-right: 1px;
+  		font-size: 1.1em;	
+  	}
+  	
+  	#footer .wrap ul li a:hover {
+  		text-decoration: underline;
+  	}
+  
+  	#footer .wrap .contact ul li {
+  		margin-bottom: 12px;
+  	}	
+  	*/
+}
+@media all and (min-width: 840px) {
+  /* line 1554, src/style-agriflex-old.scss */
+  .js #branding .searchform,
+  .js #access {
+    display: block;
+  }
+
+  /* line 1558, src/style-agriflex-old.scss */
+  #access ul.menu li {
+    margin: 0 2px 0 0;
+    border-top-right-radius: 6px;
+    background-color: #f5f5ee;
+    background-color: rgba(245, 245, 238, 0.9);
+    float: left;
+  }
+
+  /* line 1565, src/style-agriflex-old.scss */
+  #access ul.menu li li {
+    border-radius: 0;
+  }
+
+  /* line 1569, src/style-agriflex-old.scss */
+  #access ul.menu li.current-menu-item,
+  #access ul.menu li.current_page_parent {
+    background: #f1f0e7;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* line 1575, src/style-agriflex-old.scss */
+  #access ul.menu li.current-menu-item:hover,
+  #access ul.menu li.current_page_parent:hover {
+    background: #e3e1d5;
+  }
+
+  /* line 1578, src/style-agriflex-old.scss */
+  #access ul.menu li.current-menu-item:first-child:hover {
+    background: #f1f0e7;
+  }
+
+  /* line 1581, src/style-agriflex-old.scss */
+  #access ul.menu li a[title='home'] {
+    background-position: 50% 14px;
+    width: 20px;
+  }
+
+  /* line 1586, src/style-agriflex-old.scss */
+  #access ul.menu li a[title='home']:hover {
+    background-position: 50% -26px;
+  }
+
+  /* line 1590, src/style-agriflex-old.scss */
+  #access ul.menu li a {
+    background: transparent;
+    color: #666;
+  }
+
+  /* line 1595, src/style-agriflex-old.scss */
+  #access ul.menu li a:hover {
+    color: #332c2c;
+  }
+
+  /* line 1599, src/style-agriflex-old.scss */
+  .menu-button {
+    display: none;
+  }
+
+  /*=== Drop Down Site Navigation  =========*/
+  /* line 3, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  /* line 8, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li:hover {
+    background-color: #e3e1d5;
+  }
+
+  /* line 12, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li a {
+    line-height: 1.2em;
+    padding: 13px 17px 11px 19px;
+  }
+
+  /* line 18, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li.current-menu-item,
+  #access .sf-menu li.current_page_parent {
+    border: 2px solid #e3e1d5;
+    border-bottom: none;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0 -2px 6px rgba(16, 16, 16, 0.075);
+    -moz-box-shadow: -4px -2px 6px rgba(16, 16, 16, 0.075);
+    box-shadow: 0 -2px 6px rgba(16, 16, 16, 0.075);
+  }
+
+  /* line 28, src/menus/_sf-menu-big.scss */
+  #access .sf-menu ul {
+    position: absolute;
+    background-color: #e3e1d5;
+    top: -999em;
+    width: 13em;
+    /* left offset of submenus need to match (see below) */
+    -webkit-box-shadow: 0 2px 4px rgba(3, 3, 3, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(3, 3, 3, 0.2);
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.2);
+  }
+
+  /* line 38, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li:hover {
+    visibility: inherit;
+    /* fixes IE7 'sticky bug' */
+    -webkit-transition: 0.3s background ease;
+    -moz-transition: 0.3s background ease;
+    transition: 0.3s background ease;
+  }
+
+  /* line 45, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li a[title="home"] {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+
+  /* line 51, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li a {
+    border-top-right-radius: none;
+  }
+
+  /* line 55, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li:hover a {
+    position: relative;
+    z-index: 7;
+  }
+
+  /* line 60, src/menus/_sf-menu-big.scss */
+  #access .sf-menu ul li:hover {
+    visibility: inherit;
+    /* fixes IE7 'sticky bug' */
+    background: transparent;
+    border-top-right-radius: none;
+  }
+
+  /* line 65, src/menus/_sf-menu-big.scss */
+  #access .sf-menu ul li {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid #dcdace;
+    background: transparent;
+  }
+
+  /* line 75, src/menus/_sf-menu-big.scss */
+  #access .sf-menu a {
+    display: block;
+    position: relative;
+    background: transparent;
+  }
+
+  /* line 81, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li:hover,
+  #access .sf-menu li.sfHover {
+    z-index: 7;
+    position: relative;
+  }
+
+  /* line 86, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li:hover ul,
+  #access .sf-menu li.sfHover ul {
+    left: 0;
+    margin-left: 1px;
+    top: 3.2em;
+    /* match top ul list item height */
+    z-index: 6;
+    position: absolute;
+  }
+
+  /* line 95, src/menus/_sf-menu-big.scss */
+  #access ul.sf-menu li:hover li ul,
+  #access ul.sf-menu li.sfHover li ul {
+    top: -999em;
+  }
+
+  /* line 99, src/menus/_sf-menu-big.scss */
+  #access ul.sf-menu li li:hover ul,
+  #access ul.sf-menu li li.sfHover ul {
+    left: 15.2em;
+    /* match ul width */
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* line 107, src/menus/_sf-menu-big.scss */
+  #access ul.sf-menu li li:hover li ul,
+  #access ul.sf-menu li li.sfHover li ul {
+    top: -999em;
+  }
+
+  /* line 111, src/menus/_sf-menu-big.scss */
+  #access ul.sf-menu li li li:hover ul,
+  #access ul.sf-menu li li li.sfHover ul {
+    left: 13em;
+    /* match ul width */
+    top: 0;
+    margin-left: 0px;
+  }
+
+  /* line 117, src/menus/_sf-menu-big.scss */
+  body.collegeonly #access ul.menu a {
+    color: #8d0002;
+    border-color: #8d0002;
+  }
+
+  /* line 123, src/menus/_sf-menu-big.scss */
+  body.collegeonly #access ul.menu a:hover,
+  body.collegeonly #access ul.menu a:active {
+    color: #5b0125;
+    border-color: #5b0125;
+  }
+
+  /* line 128, src/menus/_sf-menu-big.scss */
+  body.extensiononly #access ul.menu a {
+    color: #00709e;
+    border-color: #00709e;
+  }
+
+  /* line 134, src/menus/_sf-menu-big.scss */
+  body.extensiononly #access ul.menu a:active,
+  body.extensiononly #access ul.menu a:hover {
+    color: #002838;
+    border-color: #002838;
+  }
+
+  /* line 139, src/menus/_sf-menu-big.scss */
+  body.researchonly #access ul.menu a {
+    color: #4e792f;
+    border-color: #4e792f;
+  }
+
+  /* line 145, src/menus/_sf-menu-big.scss */
+  body.researchonly #access ul.menu a:active,
+  body.researchonly #access ul.menu a:hover {
+    color: #1f3013;
+    border-color: #1f3013;
+  }
+
+  /*** arrows **/
+  /* line 151, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li a.sf-with-ul {
+    min-width: 1px;
+    /* trigger IE7 hasLayout so spans position accurately */
+    background: url(images/down-arrow.png) no-repeat right 55%;
+    padding-right: 28px;
+  }
+
+  /* line 157, src/menus/_sf-menu-big.scss */
+  #access .sf-menu li li a.sf-with-ul {
+    min-width: 1px;
+    /* trigger IE7 hasLayout so spans position accurately */
+    background: url(images/right-arrow.png) no-repeat left 58%;
+  }
+
+  /* line 163, src/menus/_sf-menu-big.scss */
+  #access .sf-sub-indicator {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: .55em;
+    /* IE6 only */
+    width: 8px;
+    height: 11px;
+    text-indent: -999em;
+    overflow: hidden;
+  }
+
+  /* line 174, src/menus/_sf-menu-big.scss */
+  #access a > .sf-sub-indicator {
+    /* give all except IE6 the correct values */
+    top: .8em;
+    background-position: 0 -100px;
+    /* use translucent arrow for modern browsers*/
+  }
+
+  /* apply hovers to modern browsers */
+  /* line 183, src/menus/_sf-menu-big.scss */
+  #access a:focus > .sf-sub-indicator,
+  #access a:hover > .sf-sub-indicator,
+  #access a:active > .sf-sub-indicator,
+  #access li:hover > a > .sf-sub-indicator,
+  #access li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px -100px;
+    /* arrow hovers for modern browsers*/
+  }
+
+  /* point right for anchors in subs */
+  /* line 188, src/menus/_sf-menu-big.scss */
+  #access .sf-menu ul .sf-sub-indicator {
+    background-position: -10px 0;
+  }
+
+  /* line 189, src/menus/_sf-menu-big.scss */
+  #access .sf-menu ul a > .sf-sub-indicator {
+    background-position: 0 0;
+  }
+
+  /* apply hovers to modern browsers */
+  /* line 195, src/menus/_sf-menu-big.scss */
+  #access .sf-menu ul a:focus > .sf-sub-indicator,
+  #access .sf-menu ul a:hover > .sf-sub-indicator,
+  #access .sf-menu ul a:active > .sf-sub-indicator,
+  #access .sf-menu ul li:hover > a > .sf-sub-indicator,
+  #access .sf-menu ul li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px 0;
+    /* arrow hovers for modern browsers*/
+  }
+
+  /* line 1605, src/style-agriflex-old.scss */
+  #content p {
+    line-height: 1.5em;
+    font-size: 17px;
+  }
+
+  /* line 1610, src/style-agriflex-old.scss */
+  #wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* line 1616, src/style-agriflex-old.scss */
+  p, li {
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  /**********************************************************
+  
+  	Styles Users Might Use
+  
+  	**********************************************************/
+  /* line 7, src/_user-styles.scss */
+  .topics-list-ul li {
+    font-family: verdana, clean, sans-serif;
+    font-size: 13px;
+    margin-left: 0;
+    padding: 1px 0;
+  }
+
+  /* line 13, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li {
+    padding: 20px 0 20px 65px;
+    font: 20px "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    border-bottom: 1px solid #e0dfd8;
+    border-top: 1px solid white;
+    position: relative;
+  }
+
+  /* line 21, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li img {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    padding: 4px;
+    margin-bottom: 3%;
+    background: #f0eee3;
+    background: rgba(255, 255, 255, 0.55);
+    border: none;
+    border-top: 1px solid white;
+    -webkit-box-shadow: 0 1px 2px #d8d3ae;
+    -moz-box-shadow: 0 1px 2px #d8d3ae;
+    box-shodow: 0 1px 2px #d8d3ae;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* line 37, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li img:hover {
+    background: #ecece3;
+  }
+
+  /* line 41, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li.first {
+    border-top: none;
+  }
+
+  /* line 45, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li.last {
+    border-bottom: none;
+  }
+
+  /* line 49, src/_user-styles.scss */
+  .topics-list-ul .topics-top-level-link {
+    margin: 0 0 10px;
+    display: block;
+    border: none;
+  }
+
+  /* line 54, src/_user-styles.scss */
+  .topics-list-ul a.topics-top-level-link:hover {
+    text-decoration: underline;
+  }
+
+  /* line 57, src/_user-styles.scss */
+  .topics-sub-li {
+    display: inline;
+    margin: 3px;
+  }
+
+  /* line 61, src/_user-styles.scss */
+  .one-of-2 {
+    width: 48%;
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 68, src/_user-styles.scss */
+  .two-of-2 {
+    width: 48%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 75, src/_user-styles.scss */
+  .two-of-2 ul, .one-of-2 ul,
+  .one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
+    margin-left: 1em;
+  }
+
+  /* line 78, src/_user-styles.scss */
+  .one-of-3 {
+    width: 30%;
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 86, src/_user-styles.scss */
+  .two-of-3 {
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 93, src/_user-styles.scss */
+  .three-of-3 {
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  	/**********************************************************
+  
+  	END - Styles Users Might Use
+  
+  	**********************************************************/
+}
+/* Agency Specific Styles */
+/* @import "agencies/tvmdl"; */
+/* @import "agencies/fazd"; */
+/* @import "agencies/extension-county"; */
+/* @import "jquery-tabs"; */
+/*----- Job Postings single page ------ */
+/* line 3, src/plugins/_job-postings-cpt.scss */
+.job-posting-dl {
+  padding: 20px 0 50px;
+}
+
+/* line 7, src/plugins/_job-postings-cpt.scss */
+.job-posting-dt {
+  padding: 0.5em 0 1em 0;
+}
+
+/* line 11, src/plugins/_job-postings-cpt.scss */
+.job-posting-dd {
+  border-bottom: 1px solid #d0ca9b;
+  margin: -3em 0 0 0;
+  padding: 0 0 0.75em 195px;
+}
+
+/* line 17, src/plugins/_job-postings-cpt.scss */
+.staff-search-form {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #edece4;
+  border-top: 1px solid #d5d1bf;
+  border-bottom: 1px solid #d5d1bf;
+  position: relative;
+}
+
+/* line 26, src/plugins/_job-postings-cpt.scss */
+.staff-search-form .searchform {
+  top: 8px;
+}
+
+/* line 30, src/plugins/_job-postings-cpt.scss */
+.staff-search-form label h4 {
+  margin-bottom: 5px;
+}
+
+/* line 34, src/plugins/_job-postings-cpt.scss */
+.staff-listing-ul {
+  border-top: double #d5d1bf;
+}
+
+/* line 39, src/plugins/_job-postings-cpt.scss */
+.staff-listing-ul,
+.staff-listing-item {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 45, src/plugins/_job-postings-cpt.scss */
+.staff-listing-item {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  overflow: hidden;
+  display: block;
+  background: #EAE6D2;
+  background: rgba(217, 208, 173, 0.3);
+  border-bottom: 1px solid #fafaf6;
+}
+
+/* line 56, src/plugins/_job-postings-cpt.scss */
+.staff-listing-item:nth-child(even) {
+  background: #EAE6D2;
+  background: rgba(217, 208, 173, 0.1);
+}
+
+/* line 61, src/plugins/_job-postings-cpt.scss */
+.staff-container {
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #d5d1c3;
+}
+
+/* line 69, src/plugins/_job-postings-cpt.scss */
+.staff-container img {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 75, src/plugins/_job-postings-cpt.scss */
+.staff-listing-item:hover,
+a.staff-listing-link:hover {
+  background: #f1efce;
+  border-bottom: 1px solid #9f9490;
+}
+
+/* line 79, src/plugins/_job-postings-cpt.scss */
+.staff-title {
+  font: 90% "minion-pro-1", "minion-pro-2", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 87, src/plugins/_job-postings-cpt.scss */
+.staff-phone,
+.staff-email,
+.staff-position {
+  font-size: 14px;
+  color: #433C3A;
+}
+
+/* line 92, src/plugins/_job-postings-cpt.scss */
+.staff-position {
+  font-weight: bold;
+}
+
+/* line 96, src/plugins/_job-postings-cpt.scss */
+.staff-head {
+  width: 45%;
+  float: left;
+}
+
+/* line 101, src/plugins/_job-postings-cpt.scss */
+.staff-contact-details {
+  font-size: 14px;
+  color: #433C3A;
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+/* line 109, src/plugins/_job-postings-cpt.scss */
+.staff-contact-details p {
+  margin: 7px 0;
+}
+
+/* line 113, src/plugins/_job-postings-cpt.scss */
+#content p.job-location {
+  font-size: 12px;
+  color: #9f9490;
+  width: 30%;
+  margin: 0 0 0 65%;
+  padding-left: 20px;
+  background: transparent url("images/map-marker.png?v=100") no-repeat left top;
+}
+
+/* line 121, src/plugins/_job-postings-cpt.scss */
+#content .stafftable ul {
+  margin: 0;
+  list-style: none;
+}
+
+/* line 125, src/plugins/_job-postings-cpt.scss */
+#content .stafftable ul ul {
+  margin: 0 0 0 2em;
+  list-style: circle;
+}
+
+/* @import "plugins/tests-cpt"; */
+/* add this */
+/* line 2, src/plugins/_addthis.scss */
+.addthis_toolbox a {
+  border: none;
+}
+
+/**********************************************************
+
+Flickr Gallery
+
+**********************************************************/
+/* line 8, src/plugins/_flickr-gallery.scss */
+body .flickr-gallery-next a,
+body .flickr-gallery-prev a {
+  font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  padding: 0.2em 1em;
+  background: #e8e7d5;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #dddddd;
+  -moz-box-shadow: 0 1px 2px #dddddd;
+  box-shadow: 0 1px 2px #dddddd;
+  border: none;
+  float: left;
+  margin: 20px 0 20px 2px;
+}
+
+/* line 22, src/plugins/_flickr-gallery.scss */
+body .flickr-gallery-next a:hover,
+body .flickr-gallery-prev a:hover {
+  background: #e2dbbf;
+  -webkit-box-shadow: 0 1px 1px white;
+  -moz-box-shadow: 0 1px 1px white;
+  box-shadow: 0 1px 1px white;
+}
+
+/* line 30, src/plugins/_flickr-gallery.scss */
+body.researchonly #content .flickr-gallery-next a,
+body.researchonly #content .flickr-gallery-prev a {
+  color: #fff;
+  background: #4e792f;
+}
+
+/* line 36, src/plugins/_flickr-gallery.scss */
+body.researchonly #content .flickr-gallery-next a:hover,
+body.researchonly #content .flickr-gallery-prev a:hover {
+  background: #1f2f12;
+}
+
+/* line 42, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery {
+  margin-top: 1em;
+}
+
+/* line 50, src/plugins/_flickr-gallery.scss */
+div.flickr-thumb {
+  float: left;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  margin: 3px;
+  height: 75px;
+  width: 75px;
+}
+
+/* line 59, src/plugins/_flickr-gallery.scss */
+div.fg-clear {
+  clear: both;
+}
+
+/* line 63, src/plugins/_flickr-gallery.scss */
+div.flickr-set-meta {
+  margin-left: 80px;
+}
+
+/* line 67, src/plugins/_flickr-gallery.scss */
+div.flickr-collection-meta {
+  margin-left: 191px;
+}
+
+/* line 71, src/plugins/_flickr-gallery.scss */
+div.flickr-set-thumb, div.flickr-collection-thumb {
+  float: left;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  margin: 3px;
+}
+
+/* line 78, src/plugins/_flickr-gallery.scss */
+div.flickr-set, div.flickr-collection {
+  margin-bottom: .5em;
+}
+
+/* line 82, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery.image.none {
+  padding: 1em 0px;
+}
+
+/* line 86, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery.image.left, div.flickr-gallery.video.left {
+  padding: 0px 0.5em 0.5em 0px;
+  float: left;
+}
+
+/* line 91, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery.image.right, div.flickr-gallery.video.right {
+  padding: 0px 0px 0.5em 0.5em;
+  float: right;
+}
+
+/* line 96, src/plugins/_flickr-gallery.scss */
+div.flickr-set-display {
+  display: none;
+  clear: both;
+}
+
+/* line 101, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery-next {
+  margin-right: 50px;
+}
+
+/* line 106, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery-next a,
+div.flickr-gallery-prev a {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+/* line 111, src/plugins/_flickr-gallery.scss */
+.ui-tabs .fg-credit {
+  margin-top: 4px;
+}
+
+/* line 115, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery ul.ui-tabs-nav li {
+  list-style-type: none;
+}
+
+/* line 119, src/plugins/_flickr-gallery.scss */
+#content ul.ui-tabs-nav {
+  margin-bottom: 0px;
+}
+
+/* line 123, src/plugins/_flickr-gallery.scss */
+div.ui-widget {
+  font-size: 1em;
+}
+
+/* Styles for Gravity Forms */
+/* line 3, src/plugins/_gravityforms.scss */
+div.gform_wrapper {
+  margin: 10px 0;
+  max-width: 960px;
+}
+
+/* line 10, src/plugins/_gravityforms.scss */
+.gform_wrapper h1,
+.gform_wrapper h2,
+.gform_wrapper h3 {
+  font-weight: normal;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* line 17, src/plugins/_gravityforms.scss */
+.gform_wrapper:focus {
+  outline: none;
+}
+
+/* line 21, src/plugins/_gravityforms.scss */
+.gform_wrapper form {
+  text-align: left;
+}
+
+/* line 25, src/plugins/_gravityforms.scss */
+.gform_wrapper label.gfield_label {
+  color: #5c0124;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* line 32, src/plugins/_gravityforms.scss */
+div.gform_wrapper input,
+div.gform_wrapper textarea {
+  font-size: 14px;
+  padding: 7px 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+  outline-style: none;
+  letter-spacing: normal;
+  resize: none;
+  /* doesn't validate but added for Safari field resizing */
+}
+
+/* line 44, src/plugins/_gravityforms.scss */
+div.gform_wrapper input:hover,
+div.gform_wrapper textarea:hover {
+  border: 1px solid #777777;
+}
+
+/* line 49, src/plugins/_gravityforms.scss */
+div.gform_wrapper input:focus,
+div.gform_wrapper textarea:focus {
+  border: 1px solid #6ea2b6;
+}
+
+/* line 53, src/plugins/_gravityforms.scss */
+div.gform_wrapper input.button {
+  color: #fff;
+}
+
+/* line 58, src/plugins/_gravityforms.scss */
+.gform_wrapper ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 63, src/plugins/_gravityforms.scss */
+html > body .entry ul, .gform_wrapper ul {
+  text-indent: 0px;
+}
+
+/* line 67, src/plugins/_gravityforms.scss */
+.gform_wrapper li, .gform_wrapper form li, .ginput_left {
+  list-style-type: none !important;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* line 74, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gfield_radio li,
+.gform_wrapper ul.gfield_checkbox li {
+  overflow: visible;
+}
+
+/* line 81, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.right_label li,
+.gform_wrapper form ul.right_label li,
+.gform_wrapper ul.left_label li,
+.gform_wrapper form ul.left_label li {
+  margin-bottom: 14px;
+}
+
+/* line 88, src/plugins/_gravityforms.scss */
+.gform_wrapper ul li:before,
+.gform_wrapper ul li:after,
+.entry ul li:before,
+.entry ul li:after {
+  content: "";
+  /* for safari */
+}
+
+/* line 94, src/plugins/_gravityforms.scss */
+.gform_wrapper ul li:before,
+.gform_wrapper ul li:after,
+.entry ul li:before, .entry ul li:after {
+  content: none;
+  /* for other browsers */
+}
+
+/* line 98, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gform_fields {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 103, src/plugins/_gravityforms.scss */
+.gform_wrapper select {
+  padding: 3px 0 3px 0;
+  letter-spacing: normal;
+}
+
+/* line 108, src/plugins/_gravityforms.scss */
+.gform_wrapper .inline {
+  display: inline !important;
+}
+
+/* line 112, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_heading {
+  width: 98%;
+  margin-bottom: 18px;
+}
+
+/* line 120, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour,
+.gform_wrapper .gfield_time_minute,
+.gform_wrapper .gfield_date_month,
+.gform_wrapper .gfield_date_day, .gform_wrapper .gfield_date_year {
+  width: 70px;
+  float: left;
+}
+
+/* line 127, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_date_month,
+.gform_wrapper .gfield_date_day,
+.gform_wrapper .gfield_date_year {
+  margin-right: 12px;
+}
+
+/* line 131, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_ampm select {
+  width: 60px !important;
+}
+
+/* line 139, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour input,
+.gform_wrapper .gfield_time_minute input,
+.gform_wrapper .gfield_date_month input,
+.gform_wrapper .gfield_date_day input,
+.gform_wrapper .gfield_date_year input {
+  width: 70% !important;
+}
+
+/* line 145, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_date_month,
+.gform_wrapper .gfield_date_day,
+.gform_wrapper .gfield_date_year {
+  width: 50px;
+  float: left;
+}
+
+/* line 150, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_date_month input, .gform_wrapper .gfield_date_day input, .gform_wrapper .gfield_date_year input {
+  width: 85%!important;
+}
+
+/* line 151, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_hover {
+  border: 1px dashed #2175a9 !important;
+  cursor: pointer;
+}
+
+/* line 152, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_selected {
+  background-color: #DFEFFF;
+  border: 1px solid #c2d7ef !important;
+}
+
+/* line 153, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_name_first, .gform_wrapper .field_name_last {
+  width: 50%;
+  float: left;
+}
+
+/* line 154, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex {
+  overflow: hidden;
+}
+
+/* line 155, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_name_first input, .gform_wrapper .ginput_complex .ginput_left input {
+  width: 90%!important;
+}
+
+/* line 156, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_name_last input {
+  width: 93%!important;
+}
+
+/* line 157, src/plugins/_gravityforms.scss */
+.gform_wrapper .datepicker {
+  width: 100px!important;
+}
+
+/* line 158, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left, .gform_wrapper .ginput_complex .ginput_right {
+  width: 48%;
+  float: left;
+}
+
+/* line 159, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .ginput_complex .ginput_left, .gform_wrapper .gfield_error .ginput_complex .ginput_right {
+  width: 50%;
+}
+
+/* line 160, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .ginput_complex .ginput_left input {
+  width: 90%!important;
+}
+
+/* line 161, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .ginput_complex .ginput_right input {
+  width: 100%!important;
+}
+
+/* line 162, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex input, .gform_wrapper .ginput_complex select {
+  width: 92%!important;
+}
+
+/* line 163, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex label, .gform_wrapper .gfield_time_hour label, .gform_wrapper .gfield_time_minute label, .gform_wrapper .gfield_date_month label, .gform_wrapper .gfield_date_day label, .gform_wrapper .gfield_date_year label, .gform_wrapper .instruction {
+  color: #666;
+  display: block;
+  margin: 3px 0 8px 0;
+  font-size: 14px;
+}
+
+/* line 164, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .name_prefix {
+  float: left;
+  width: 30px!important;
+  margin-right: 14px;
+}
+
+/* line 165, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .name_suffix {
+  float: left;
+  width: 30px!important;
+}
+
+/* line 166, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .name_first, .gform_wrapper .ginput_complex .name_last {
+  float: left;
+  width: 100px;
+  margin-right: 8px;
+}
+
+/* line 167, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_label {
+  margin: 10px 0 4px 0;
+  font-weight: bold;
+  display: -moz-inline-stack;
+  display: inline-block;
+  line-height: 130%;
+  clear: both;
+}
+
+/* line 168, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .gfield_label {
+  float: left;
+  margin: 2px 15px 0 0;
+  width: 29%;
+  font-weight: bold;
+}
+
+/* line 169, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label .gfield_label {
+  float: left;
+  margin: 2px 15px 0 0;
+  width: 29%;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 170, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label ul.gfield_checkbox, .gform_wrapper .right_label ul.gfield_checkbox, .gform_wrapper .left_label ul.gfield_radio, .gform_wrapper .right_label ul.gfield_radio {
+  margin-left: 32%;
+}
+
+/* line 171, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label input.small, .gform_wrapper .top_label select.small {
+  width: 25%;
+}
+
+/* line 172, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+  width: 50%;
+}
+
+/* line 173, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large, .gform_wrapper .top_label textarea.textarea {
+  width: 92%;
+}
+
+/* line 174, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label input.small, .gform_wrapper .right_label select.small, .gform_wrapper .left_label input.small, .gform_wrapper .left_label select.small {
+  width: 15%;
+}
+
+/* line 175, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label input.medium, .gform_wrapper .right_label select.medium, .gform_wrapper .left_label input.medium, .gform_wrapper .left_label select.medium {
+  width: 35%;
+}
+
+/* line 176, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label input.large, .gform_wrapper .right_label select.large, .gform_wrapper .left_label input.large, .gform_wrapper .left_label select.large, .gform_wrapper textarea.textarea {
+  width: 59%;
+}
+
+/* line 177, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label div.ginput_complex, .gform_wrapper .left_label div.ginput_complex {
+  width: 64%;
+  float: left;
+}
+
+/* line 178, src/plugins/_gravityforms.scss */
+.gform_wrapper h2.gsection_title {
+  margin: 0!important;
+  padding: 0!important;
+  letter-spacing: normal!important;
+}
+
+/* line 179, src/plugins/_gravityforms.scss */
+.gform_wrapper .gsection .gfield_label, .gform_wrapper h2.gsection_title, .gform_wrapper h3.gform_title {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 180, src/plugins/_gravityforms.scss */
+.gform_wrapper h3.gform_title {
+  letter-spacing: normal!important;
+  margin: 10px 0 6px 0;
+}
+
+/* line 181, src/plugins/_gravityforms.scss */
+.gform_wrapper span.gform_description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 182, src/plugins/_gravityforms.scss */
+.gform_wrapper h2.gsection_title, .gform_wrapper .gsection_description, .gform_wrapper h3.gform_title {
+  width: 98%;
+}
+
+/* line 183, src/plugins/_gravityforms.scss */
+.gform_wrapper .gsection {
+  border-bottom: 1px dotted #cccccc !important;
+  padding: 0 0 8px 0;
+  margin: 8px 0 16px 0;
+}
+
+/* updated radio and checkbox styling - justifies lenghty labels ----------------------------------- */
+/* line 187, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+  position: relative;
+}
+
+/* line 188, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gfield_checkbox, .gform_wrapper ul.gfield_radio {
+  margin: 6px 0;
+  padding: 0;
+}
+
+/* line 189, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+  display: block;
+  margin: 0 0 0 24px;
+  padding: 0;
+  width: auto;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+/* line 190, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li input[type=checkbox], .gform_wrapper .gfield_radio li input[type=radio], .gform_wrapper .gfield_checkbox li input {
+  float: left;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* some built in styles to use for quick radio/checkbox columns ----------------------------------- */
+/* line 194, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_2col ul.gfield_checkbox li, .gform_wrapper .gf_2col ul.gfield_radio li {
+  width: 50%;
+  float: left;
+  margin: 0;
+  min-height: 1.8em;
+}
+
+/* line 195, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_3col ul.gfield_checkbox li, .gform_wrapper .gf_3col ul.gfield_radio li {
+  width: 33%;
+  float: left;
+  margin: 0;
+  min-height: 1.8em;
+}
+
+/* line 196, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_4col ul.gfield_checkbox li, .gform_wrapper .gf_4col ul.gfield_radio li {
+  width: 25%;
+  float: left;
+  margin: 0;
+  min-height: 1.8em;
+}
+
+/* line 197, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_2col ul.gfield_checkbox, .gform_wrapper .gf_2col ul.gfield_radio, .gform_wrapper .gf_3col ul.gfield_checkbox, .gform_wrapper .gf_3col ul.gfield_radio, .gform_wrapper .gf_4col ul.gfield_checkbox, .gform_wrapper .gf_4col ul.gfield_radio {
+  overflow: hidden;
+}
+
+/* line 198, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height25 ul.gfield_checkbox li, .gform_wrapper .gf_height25 ul.gfield_radio li {
+  height: 25px;
+}
+
+/* line 199, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height50 ul.gfield_checkbox li, .gform_wrapper .gf_height50 ul.gfield_radio li {
+  height: 50px;
+}
+
+/* line 200, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height75 ul.gfield_checkbox li, .gform_wrapper .gf_height75 ul.gfield_radio li {
+  height: 75px;
+}
+
+/* line 201, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height100 ul.gfield_checkbox li, .gform_wrapper .gf_height100 ul.gfield_radio li {
+  height: 100px;
+}
+
+/* line 202, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height125 ul.gfield_checkbox li, .gform_wrapper .gf_height125 ul.gfield_radio li {
+  height: 125px;
+}
+
+/* line 203, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height150 ul.gfield_checkbox li, .gform_wrapper .gf_height150 ul.gfield_radio li {
+  height: 150px;
+}
+
+/* line 205, src/plugins/_gravityforms.scss */
+.gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description, .gform_wrapper .instruction {
+  font-size: 10px;
+  line-height: 150%;
+  clear: both;
+  font-family: verdana, sans-serif;
+  letter-spacing: normal;
+}
+
+/* line 206, src/plugins/_gravityforms.scss */
+.gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description {
+  padding: 4px 0 8px 0;
+}
+
+/* line 207, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_description {
+  padding: 10px 0 8px 0;
+  font-style: italic;
+}
+
+/* line 208, src/plugins/_gravityforms.scss */
+.gfield_date_year + .gfield_description {
+  padding: 0 0 8px 0;
+}
+
+/* line 209, src/plugins/_gravityforms.scss */
+.gform_wrapper .gsection_description {
+  font-style: italic;
+}
+
+/* line 210, src/plugins/_gravityforms.scss */
+.ginput_complex + .gfield_description {
+  padding-top: 0!important;
+}
+
+/* line 211, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label .gfield_description, .gform_wrapper .left_label .gfield_description, .gform_wrapper .left_label .instruction, .gform_wrapper .right_label .instruction {
+  margin-left: 29%;
+  padding-left: 15px;
+}
+
+/* line 212, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .gsection .gsection_description, .gform_wrapper .right_label .gsection .gsection_description {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 4px;
+  line-height: 150%;
+}
+
+/* line 213, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_required {
+  color: #790000;
+  margin-left: 4px;
+}
+
+/* line 214, src/plugins/_gravityforms.scss */
+.gform_wrapper textarea.small {
+  height: 80px;
+}
+
+/* line 215, src/plugins/_gravityforms.scss */
+.gform_wrapper textarea.medium {
+  height: 150px;
+}
+
+/* line 216, src/plugins/_gravityforms.scss */
+.gform_wrapper textarea.large {
+  height: 250px;
+}
+
+/* line 217, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error {
+  background-color: #FFDFDF!important;
+  margin-top: 4px!important;
+  margin-bottom: 6px;
+  padding: 6px 6px 4px 6px !important;
+  border: 1px dotted #c89797;
+}
+
+/* line 218, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_error .ginput_container {
+  max-width: 99%;
+}
+
+/* line 219, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_error {
+  width: 92%;
+}
+
+/* line 220, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_error input.large, .gform_wrapper .top_label .gfield_error select.large, .gform_wrapper .top_label .gfield_error textarea.textarea {
+  width: 100%;
+}
+
+/* line 221, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label .gfield_error input.large, .gform_wrapper .right_label .gfield_error select.large, .gform_wrapper .right_label .gfield_error textarea.textarea, .gform_wrapper .left_label .gfield_error input.large, .gform_wrapper .left_label .gfield_error select.large, .gform_wrapper .left_label .gfield_error textarea.textarea {
+  width: 66%;
+}
+
+/* line 222, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .gfield_label {
+  color: #790000;
+}
+
+/* line 223, src/plugins/_gravityforms.scss */
+.gform_wrapper .validation_error {
+  color: #790000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 16px;
+}
+
+/* line 224, src/plugins/_gravityforms.scss */
+.gform_wrapper .validation_message {
+  color: #790000!important;
+  font-size: 11px;
+  font-family: verdana, sans-serif;
+  letter-spacing: normal;
+}
+
+/* line 225, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_footer {
+  padding: 16px 0 10px 0;
+  margin: 16px 0 0 0;
+}
+
+/* line 226, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_footer.right_label, .gform_wrapper .gform_footer.left_label {
+  padding: 16px 0 10px 31%;
+}
+
+/* line 227, src/plugins/_gravityforms.scss */
+.gform_wrapper input.button {
+  font-size: 100%;
+  background: #5c0124;
+  color: #fff;
+  padding: 7px 12px;
+}
+
+/* line 228, src/plugins/_gravityforms.scss */
+.gform_wrapper input.button:hover {
+  color: #5c0124;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* line 229, src/plugins/_gravityforms.scss */
+#gforms_confirmation_message {
+  background-color: #fffac6;
+  border: 1px solid #feda70;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #252525;
+  text-align: center;
+}
+
+/* line 230, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_edit_link {
+  margin: 20px 0;
+  font-family: verdana, sans-serif;
+  font-size: 12px;
+}
+
+/* line 231, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left, .gform_wrapper .ginput_complex .ginput_right, .gform_wrapper .ginput_complex .ginput_full {
+  min-height: 43px;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 232, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+  margin: 0 0 4px 0;
+  line-height: 130%!important;
+}
+
+/* improve spacing and prevent descenders from getting cut off in IE */
+/* jQuery UI date picker ---------------------------------------------------------------------------------------*/
+/* line 236, src/plugins/_gravityforms.scss */
+.ui-datepicker-div, .ui-datepicker-inline, #ui-datepicker-div {
+  /*resets*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+  font-family: "lucida sans", "lucida grande", lucida, sans-serif;
+  background: #fff;
+  font-size: 1.0em;
+  border: 4px solid #c1c1c1;
+  width: 15.5em;
+  padding: 2.5em 0.5em 0.5em 0.5em;
+  position: relative;
+}
+
+/* line 237, src/plugins/_gravityforms.scss */
+.ui-datepicker-div, #ui-datepicker-div {
+  z-index: 9999;
+  /*must have*/
+  display: none;
+}
+
+/* line 238, src/plugins/_gravityforms.scss */
+.ui-datepicker-inline {
+  float: left;
+  display: block;
+}
+
+/* line 239, src/plugins/_gravityforms.scss */
+.ui-datepicker-control {
+  display: none;
+}
+
+/* line 240, src/plugins/_gravityforms.scss */
+.ui-datepicker-current {
+  display: none;
+}
+
+/* line 241, src/plugins/_gravityforms.scss */
+.ui-datepicker-next, .ui-datepicker-prev {
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  background: #eee;
+}
+
+/* line 242, src/plugins/_gravityforms.scss */
+.ui-datepicker-next {
+  left: 14.6em;
+}
+
+/* line 243, src/plugins/_gravityforms.scss */
+.ui-datepicker-next:hover, .ui-datepicker-prev:hover {
+  background: #dadada;
+}
+
+/* line 244, src/plugins/_gravityforms.scss */
+.ui-datepicker-next a, .ui-datepicker-prev a {
+  text-indent: -999999px;
+  width: 1.3em;
+  height: 1.4em;
+  display: block;
+  font-size: 1em;
+  background: url(../images/datepicker_arrow_left.gif) 50% 50% no-repeat;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+/* line 245, src/plugins/_gravityforms.scss */
+.ui-datepicker-next a {
+  background: url(../images/datepicker_arrow_right.gif) 50% 50% no-repeat;
+}
+
+/* line 246, src/plugins/_gravityforms.scss */
+.ui-datepicker-header select {
+  border: 1px solid lightgrey;
+  color: #555;
+  background: #e6e6e6;
+  font-size: 1em;
+  line-height: 1.4em;
+  position: absolute;
+  top: .5em;
+  margin: 0 !important;
+}
+
+/* line 247, src/plugins/_gravityforms.scss */
+.ui-datepicker-header option:focus, .ui-datepicker-header option:hover {
+  background: #dadada;
+}
+
+/* line 248, src/plugins/_gravityforms.scss */
+.ui-datepicker-header select.ui-datepicker-new-month {
+  width: 7em;
+  left: 2.2em;
+}
+
+/* line 249, src/plugins/_gravityforms.scss */
+.ui-datepicker-header select.ui-datepicker-new-year {
+  width: 5em;
+  left: 9.4em;
+}
+
+/* line 250, src/plugins/_gravityforms.scss */
+table.ui-datepicker {
+  width: 15.5em;
+  text-align: right;
+}
+
+/* line 251, src/plugins/_gravityforms.scss */
+table.ui-datepicker td a {
+  padding: .1em;
+  display: block;
+  color: #555;
+  background: #e6e6e6;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+}
+
+/* line 252, src/plugins/_gravityforms.scss */
+table.ui-datepicker td a:hover {
+  border: 1px solid white;
+  color: #212121;
+  background: #dadada;
+  text-decoration: none;
+}
+
+/* line 253, src/plugins/_gravityforms.scss */
+table.ui-datepicker td a:active {
+  border: 1px solid #aaaaaa;
+  color: #212121;
+  background: #fff;
+  text-decoration: none;
+}
+
+/* line 254, src/plugins/_gravityforms.scss */
+table.ui-datepicker .ui-datepicker-title-row td {
+  padding: 0.2em 0;
+  text-align: center;
+  font-size: .9em;
+  color: #222;
+  text-transform: uppercase;
+}
+
+/* line 255, src/plugins/_gravityforms.scss */
+table.ui-datepicker .ui-datepicker-title-row td a {
+  color: #222;
+  padding: 0.3em 0;
+}
+
+/* line 256, src/plugins/_gravityforms.scss */
+.ui-datepicker-cover {
+  display: none;
+  display/**/: block;
+  position: absolute;
+  z-index: -1;
+  filter: mask();
+  top: -4px;
+  left: -4px;
+  width: 193px;
+  height: 200px;
+}
+
+/* line 257, src/plugins/_gravityforms.scss */
+img.ui-datepicker-trigger {
+  position: relative;
+  top: 3px;
+  left: 4px;
+}
+
+/* tame those pesky hidden fields --------------------------------------------------------------------*/
+/* line 261, src/plugins/_gravityforms.scss */
+.gform_wrapper input[type="hidden"], .gform_wrapper input.gform_hidden, .gform_hidden {
+  display: none;
+}
+
+/* line 262, src/plugins/_gravityforms.scss */
+.ginput_full br, .ginput_left br, .ginput_right br {
+  display: none;
+}
+
+/* fix captcha alignment for IE8 ---------------------------------------------------------------------*/
+/* line 266, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label #recaptcha_area #recaptcha_table, .gform_wrapper .right_label #recaptcha_area #recaptcha_table {
+  margin-left: 32%;
+}
+
+/* additional spacing and padding tweaks --------------------------------------------*/
+/* line 270, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .ginput_complex .ginput_right label, .gform_wrapper .left_label .ginput_complex .ginput_left label, .gform_wrapper .right_label .ginput_complex .ginput_right label, .gform_wrapper .right_label .ginput_complex .ginput_left label {
+  word-spacing: -.4em;
+}
+
+/* line 271, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  padding: 0!important;
+}
+
+/* line 272, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .ginput_complex + .gfield_description {
+  padding-bottom: 0!important;
+}
+
+/* line 273, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_description.validation_message, .gfield_description.validation_message {
+  padding: 10px 0 10px 0;
+}
+
+/* Twentyten theme specific styles updated 08.23.2010 -----------------------------------------------------*/
+/* pretty specific inheritance but if your theme is structured just like the 2010 theme it may affect yours as well */
+/* line 278, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, .entry-content .gform_wrapper input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
+  margin: 0!important;
+}
+
+/* line 279, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
+  font-size: 16px;
+  padding: 1px 2px !important;
+  background-color: #F9F9F9;
+  border: 1px solid #cccccc;
+  color: #444;
+}
+
+/* line 280, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input[type=checkbox], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input {
+  margin-top: 2px!important;
+}
+
+/* line 281, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input[type=radio], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input {
+  margin-top: 1px!important;
+}
+
+/* line 282, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gf_2col ul.gfield_checkbox li, #wrapper.hfeed #main #container #content .entry-content .gf_2col ul.gfield_radio li {
+  min-height: 1.5em;
+}
+
+/* line 283, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gf_3col ul.gfield_checkbox li, #wrapper.hfeed #main #container #content .entry-content .gf_3col ul.gfield_radio li {
+  min-height: 1.5em;
+}
+
+/* line 284, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gf_4col ul.gfield_checkbox li, #wrapper.hfeed #main #container #content .entry-content .gf_4col ul.gfield_radio li {
+  min-height: 1.5em;
+}
+
+/* line 285, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li label, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li label {
+  *display: inline-block!important;
+  *margin: 2px 0 0 6px;
+}
+
+/* for IE7 */
+/* Thesis theme specific styles updated 08.23.2010 -----------------------------------------------------*/
+/* pretty specific inheritance but if your theme is structured identical to the Thesis theme it will affect yours as well */
+/* line 290, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text ul.gfield_radio li input, body.custom #container #page #content_box .post_box .format_text ul.gfield_checkbox li input {
+  width: auto!important;
+  border: none!important;
+  border-color: none!important;
+  background-color: none!important;
+  background: none!important;
+}
+
+/* line 291, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_footer input[type=image] {
+  border: none!important;
+  border-color: none!important;
+  background-color: none!important;
+}
+
+/* line 292, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_footer input.button {
+  border-color: #cccccc #999999 #999999 #cccccc;
+  border-right: 3px double #999999;
+  border-style: double;
+  border-width: 3px;
+  color: #111111;
+  background-color: #E3E3E3;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: visible;
+  width: auto !important;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.143em;
+  padding: 0.313em 0.25em;
+}
+
+/* line 293, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .left_label ul.gfield_checkbox, body.custom #container #page #content_box .post_box .format_text .left_label ul.gfield_radio, body.custom #container #page #content_box .post_box .format_text .right_label ul.gfield_checkbox, body.custom #container #page #content_box .post_box .format_text .right_label ul.gfield_radio {
+  margin-top: -.2em!important;
+}
+
+/* line 294, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text input, body.custom #container #page #content_box .post_box .format_text select {
+  font-size: 1em;
+  padding: 0.214em;
+}
+
+/* line 295, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text select {
+  background-color: #eee;
+  border-color: #aaaaaa #dddddd #dddddd #aaaaaa;
+  border-style: solid;
+  border-width: 1px;
+  color: #444;
+  font-size: 1em;
+}
+
+/* line 296, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_checkbox li input[type=checkbox], body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_radio li input[type=radio], body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_checkbox li input {
+  float: left;
+  margin-top: 4px;
+}
+
+/* line 297, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_checkbox li label, body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_radio li label {
+  display: inline-block\9;
+  margin: 2px 0 0 6px \9;
+}
+
+/* another hack for IE */
+/* HTML field default margins -----------------------------------------------------*/
+/* line 301, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label li.gfield_html_formatted, .gform_wrapper .right_label li.gfield_html_formatted {
+  margin-left: 32%;
+}
+
+/* line 302, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_html.gfield_no_follows_desc {
+  margin-top: 10px;
+}
+
+/* ajax forms ------------------------------------------------------*/
+/* line 306, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_ajax_spinner {
+  padding-left: 10px;
+}
+
+/* line 307, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_validation_container {
+  display: none!important;
+}
+
+/* Simple Captcha ------------------------------------------------------*/
+/* line 311, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_captcha_input_container {
+  padding-top: 3px;
+}
+
+/* line 313, src/plugins/_gravityforms.scss */
+.gform_wrapper .simple_captcha_small input {
+  width: 100px;
+}
+
+/* line 314, src/plugins/_gravityforms.scss */
+.gform_wrapper .simple_captcha_medium input {
+  width: 150px;
+}
+
+/* line 315, src/plugins/_gravityforms.scss */
+.gform_wrapper .simple_captcha_large input {
+  width: 200px;
+}
+
+/* line 316, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_wrapper .left_label .simple_captcha_small, .gform_wrapper .right_label .simple_captcha_small, .gform_wrapper .left_label .simple_captcha_medium, .gform_wrapper .right_label .simple_captcha_medium, .gform_wrapper .left_label .simple_captcha_large, .gform_wrapper .right_label .simple_captcha_large {
+  margin-left: 32%;
+}
+
+/* line 317, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_captcha_container img.gfield_captcha {
+  border: none!important;
+  background: none!important;
+  float: none!important;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+/* Math Challenge ------------------------------------------------------*/
+/* line 321, src/plugins/_gravityforms.scss */
+.gform_wrapper .math_small input {
+  width: 69px;
+}
+
+/* line 322, src/plugins/_gravityforms.scss */
+.gform_wrapper .math_medium input {
+  width: 90px;
+}
+
+/* line 323, src/plugins/_gravityforms.scss */
+.gform_wrapper .math_large input {
+  width: 108px;
+}
+
+/* line 324, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .math_small, .gform_wrapper .right_label .math_small, .gform_wrapper .left_label .math_medium, .gform_wrapper .right_label .math_medium, .gform_wrapper .left_label .math_large, .gform_wrapper .right_label .math_large {
+  margin-left: 32%;
+}
+
+/* a few IE specific hacks ------------------------------------------------------------------------- */
+/* line 328, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour {
+  *width: 80px;
+}
+
+/* line 329, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_minute {
+  *width: 70px;
+}
+
+/* line 330, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_ampm {
+  *padding-top: 2px;
+}
+
+/* line 331, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour input, .gform_wrapper .gfield_time_minute input {
+  *margin-left: 0;
+}
+
+/* line 332, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left label, .gform_wrapper .ginput_complex .ginput_right label {
+  *margin: 3px 0 5px 0;
+}
+
+/* line 333, src/plugins/_gravityforms.scss */
+.gform_footer input.button {
+  *padding: 3px;
+}
+
+/* line 334, src/plugins/_gravityforms.scss */
+ul.top_label .clear-multi {
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 335, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li input[type=checkbox], .gform_wrapper .gfield_radio li input[type=radio], .gform_wrapper .gfield_checkbox li input {
+  *margin-top: 0;
+}
+
+/* line 336, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left select, .gform_wrapper .ginput_complex .ginput_right select {
+  padding: 2px 0 2px 0 \9 ;
+}
+
+/* line 337, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+  display: inline-block\9;
+  margin: 2px 0 0 6px \9;
+}
+
+/*===========================
+GigPress
+---------------------------------------------------------------------------*/
+/* line 5, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-status a, .btn a, button.btn, a.gigpress-tickets-link {
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px #d8d3ae;
+  -moz-box-shodow: 1px 1px 1px #d8d3ae;
+  box-shodow: 1px 1px 1px #d8d3ae;
+  border: 1px solid #726b60;
+  padding: 0.5em 0.6em;
+  font-size: 1.3em;
+  color: #fff;
+  background: #0094d0;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#958f85), to(#726b60));
+  background: -moz-linear-gradient(top, #958f85, #726b60);
+}
+
+/* line 19, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-status a, .btn a:hover, button.btn:hover, a.gigpress-tickets-link:hover {
+  cursor: pointer;
+  background: #0082b7;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#726b60), to(#958f85));
+  background: -moz-linear-gradient(top, #726b60, #958f85);
+}
+
+/* line 26, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-status a, .btn a:active, button.btn:active, a.gigpress-tickets-link:active {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 0 #e9e6d1;
+  -moz-box-shodow: 1px 1px 0 #e9e6d1;
+  box-shodow: 1px 1px 0 #e9e6d1;
+  background: #0082b7;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#726b60), to(#645e54));
+  background: -moz-linear-gradient(top, #726b60, #645e54);
+}
+
+/* line 36, src/plugins/_gigpress.scss */
+.collegeonly .gigpress-tickets-link {
+  border: 1px solid #860125;
+  color: #fff;
+  background: #860125;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ba012c), to(#860125));
+  background: -moz-linear-gradient(top, #ba012c, #860125);
+}
+
+/* line 44, src/plugins/_gigpress.scss */
+.collegeonly .gigpress-tickets-link, body.collegeonly .btn a:hover, body.collegeonly button.btn:hover, body.collegeonly a.gigpress-tickets-link:hover {
+  color: #fff;
+  background: #ba012c;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#860125), to(#ba012c));
+  background: -moz-linear-gradient(top, #860125, #ba012c);
+}
+
+/* line 51, src/plugins/_gigpress.scss */
+.collegeonly .gigpress-tickets-link, body.collegeonly .btn a:active, body.collegeonly button.btn:active, body.collegeonly a.gigpress-tickets-link:active {
+  background: #0082b7;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ba012c), to(#860125));
+  background: -moz-linear-gradient(top, #ba012c, #860125);
+}
+
+/* line 58, src/plugins/_gigpress.scss */
+body.tvmdlonly span.gigpress-sidebar-status a, body.tvmdlonly .btn a, body.tvmdlonly button.btn, body.tvmdlonly a.gigpress-tickets-link {
+  border: 1px solid #8c5933;
+  color: #fff;
+  background: #8c5933;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c5933), to(#794d2c));
+  background: -moz-linear-gradient(top, #8c5933, #794d2c);
+}
+
+/* line 66, src/plugins/_gigpress.scss */
+body.tvmdlonly span.gigpress-sidebar-status a, body.tvmdlonly .btn a:hover, body.tvmdlonly button.btn:hover, body.tvmdlonly a.gigpress-tickets-link:hover {
+  background: #794d2c;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#794d2c), to(#8c5933));
+  background: -moz-linear-gradient(top, #794d2c, #8c5933);
+}
+
+/* line 72, src/plugins/_gigpress.scss */
+body.tvmdlonly span.gigpress-sidebar-status a, body.tvmdlonly .btn a:active, body.tvmdlonly button.btn:active, body.tvmdlonly a.gigpress-tickets-link:active {
+  background: #664125;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#664125), to(#53351e));
+  background: -moz-linear-gradient(top, #664125, #53351e);
+}
+
+/* line 78, src/plugins/_gigpress.scss */
+body.extensiononly span.gigpress-sidebar-status a, body.extensiononly .btn a, body.extensiononly button.btn, body.extensiononly a.gigpress-tickets-link {
+  border: 1px solid #004c6b;
+  color: #fff;
+  background: #004c6b;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00709e), to(#004c6b));
+  background: -moz-linear-gradient(top, #00709e, #004c6b);
+}
+
+/* line 86, src/plugins/_gigpress.scss */
+body.extensiononly span.gigpress-sidebar-status a, body.extensiononly .btn a:hover, body.extensiononly button.btn:hover, body.extensiononly a.gigpress-tickets-link:hover {
+  background: #00709e;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#004c6b), to(#00709e));
+  background: -moz-linear-gradient(top, #004c6b, #00709e);
+}
+
+/* line 92, src/plugins/_gigpress.scss */
+body.extensiononly span.gigpress-sidebar-status a, body.extensiononly .btn a:active, body.extensiononly button.btn:active, body.tvmdlonly a.gigpress-tickets-link:active {
+  background: #003a52;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#004c6b), to(#003a52));
+  background: -moz-linear-gradient(top, #004c6b, #003a52);
+}
+
+/* line 98, src/plugins/_gigpress.scss */
+body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a, body.researchonly button.btn, body.researchonly a.gigpress-tickets-link {
+  border: 1px solid #5a8c37;
+  color: #fff;
+  background: #5a8c37;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#72b145), to(#5a8c37));
+  background: -moz-linear-gradient(top, #72b145, #5a8c37);
+}
+
+/* line 106, src/plugins/_gigpress.scss */
+body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a:hover, body.researchonly button.btn:hover, body.researchonly a.gigpress-tickets-link:hover {
+  background: #72b145;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a8c37), to(#72b145));
+  background: -moz-linear-gradient(top, #5a8c37, #72b145);
+}
+
+/* line 112, src/plugins/_gigpress.scss */
+body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a:active, body.researchonly button.btn:active, body.researchonly a.gigpress-tickets-link:active {
+  background: #4e7a30;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a8c37), to(#4e7a30));
+  background: -moz-linear-gradient(top, #5a8c37, #4e7a30);
+}
+
+/* line 119, src/plugins/_gigpress.scss */
+div.event dl,
+.gigpress-listing dl {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 25px 0 5px 0;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+}
+
+/* line 129, src/plugins/_gigpress.scss */
+div.event dl:last-child,
+.gigpress-listing dl:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+/* line 134, src/plugins/_gigpress.scss */
+div.event dt.date,
+span.gigpress-sidebar-date {
+  position: relative;
+  font: 0.75em georgia, serif;
+  color: #b19e56;
+  text-shadow: 0 1px 0 white;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 1.3em 0;
+  margin-right: 3%;
+  width: 5em;
+  letter-spacing: 1px;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0 1px 2px #d8d3ae;
+  -moz-box-shadow: 0 1px 2px #d8d3ae;
+  box-shodow: 0 1px 2px #d8d3ae;
+  float: left;
+  text-align: center;
+}
+
+/* line 153, src/plugins/_gigpress.scss */
+dd.title-loc {
+  margin-right: .5em;
+  margin-bottom: 1em;
+  float: left;
+  width: 60%;
+}
+
+/* line 160, src/plugins/_gigpress.scss */
+dl dd.title-loc h4 {
+  font-size: 1.5em;
+}
+
+/* line 166, src/plugins/_gigpress.scss */
+div.event dl dd.title-loc h4,
+div.event dl dd.title-loc p,
+.gigpress-sidebar-notes {
+  padding-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* line 172, src/plugins/_gigpress.scss */
+#aside div.event dl dt.date strong,
+#aside span.word2 {
+  font-weight: bold;
+  display: block;
+  font-size: 2em;
+  margin-top: -.1em;
+}
+
+/* line 179, src/plugins/_gigpress.scss */
+#aside span.word3 {
+  display: none;
+}
+
+/* line 183, src/plugins/_gigpress.scss */
+dd.sign-up a {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  font-size: .7em;
+}
+
+/* line 191, src/plugins/_gigpress.scss */
+div.event dl.first,
+.gigpress-listing dl:first-child {
+  border-top: none;
+  margin-top: -15px;
+}
+
+/* line 196, src/plugins/_gigpress.scss */
+div.event.last dl {
+  border-bottom: none;
+}
+
+/* line 202, src/plugins/_gigpress.scss */
+body.page .gigpress-table th,
+body.page tr.gigpress-info td,
+body.page .gigpress-table th {
+  border: none;
+}
+
+/* line 208, src/plugins/_gigpress.scss */
+body.page .gigpress-table th a,
+body.page tr.gigpress-info td a,
+body.page .gigpress-table th a {
+  border: none;
+}
+
+/* line 212, src/plugins/_gigpress.scss */
+body.page #content tr.gigpress-info td.description {
+  padding: 10px;
+  width: 98%;
+}
+
+/* line 218, src/plugins/_gigpress.scss */
+.gigpress-subscribe a,
+.gigpress-artist-subscriptions a {
+  border: none;
+}
+
+/* line 222, src/plugins/_gigpress.scss */
+body.page #content tr.gigpress-info {
+  position: relative;
+  padding: 1em 1em 1em 0.5em;
+  overflow: hidden;
+}
+
+/* line 228, src/plugins/_gigpress.scss */
+body.page #content a.gigpress-tickets-link {
+  font-size: 1.1em;
+  position: relative;
+  z-index: 999;
+  float: right;
+  padding: 0.7em 0.8em;
+  margin: 15px;
+}
+
+/* line 242, src/plugins/_gigpress.scss */
+body.page tr.gigpress-tour td,
+body.page th.gigpress-heading {
+  background: none;
+}
+
+/* line 246, src/plugins/_gigpress.scss */
+body.page .gigpress-table {
+  margin: 0.5em 0px 5em;
+}
+
+/* By default this is an h3 that appears above each artist's list of shows */
+/* This span contains the RSS and iCal links for the artist */
+/* line 256, src/plugins/_gigpress.scss */
+span.gigpress-artist-subscriptions {
+  margin-left: 5px;
+  float: right;
+}
+
+/* Default wrapper for the year/month menu */
+/* line 262, src/plugins/_gigpress.scss */
+.gigpress-menu-container {
+  padding: 5px 0;
+  text-align: right;
+}
+
+/* Meet the table that displays our shows */
+/* line 268, src/plugins/_gigpress.scss */
+.gigpress-table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-top: 1px solid #cccccc;
+  margin: 0.5em 0 1em 0;
+}
+
+/* This is for the main header cells containing the column labels */
+/* line 277, src/plugins/_gigpress.scss */
+tr.gigpress-header th {
+  font-weight: bold;
+}
+
+/* Generic class for the table header cells */
+/* line 282, src/plugins/_gigpress.scss */
+.gigpress-table th {
+  padding: 6px 8px;
+  vertical-align: middle;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* This is for the tour name header cells */
+/* line 290, src/plugins/_gigpress.scss */
+th.gigpress-heading {
+  background-color: #EEE;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* This is for the tour name headings, whichever one you're using */
+/* line 296, src/plugins/_gigpress.scss */
+th.gigpress-heading h1, th.gigpress-heading h2, th.gigpress-heading h3, th.gigpress-heading h4, th.gigpress-heading h5 {
+  margin: 0;
+}
+
+/* Applies to all cells in the table */
+/* Applies to the first row of each show listing */
+/* line 306, src/plugins/_gigpress.scss */
+.gigpress-row td {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* Style for rows within a tour */
+/* line 311, src/plugins/_gigpress.scss */
+tr.gigpress-tour td {
+  background-color: #F6F6F6;
+}
+
+/* Style for the first row after a tour ends in the list */
+/* line 316, src/plugins/_gigpress.scss */
+tr.divider.gigpress-row td {
+  border-top: 2px solid #cccccc;
+}
+
+/* The secondary row for each show, contains time, admission, etc */
+/* line 321, src/plugins/_gigpress.scss */
+tr.gigpress-info td {
+  font-size: 90%;
+  color: #333;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Fix for themes that hide .description */
+/* line 328, src/plugins/_gigpress.scss */
+tr.gigpress-info td.description {
+  visibility: visible;
+}
+
+/* Greys-out cancelled shows */
+/* line 333, src/plugins/_gigpress.scss */
+tr.gigpress-row.cancelled, tr.gigpress-info.cancelled, tr.cancelled span.gigpress-info-label, tr.cancelled span.gigpress-info-item {
+  color: #999;
+}
+
+/* This wraps each of the bits of info in the "info" cell */
+/* For the labels for address, admission, etc in the "info" cell */
+/* line 342, src/plugins/_gigpress.scss */
+span.gigpress-info-label {
+  color: #666;
+}
+
+/* In case you want to style the "Buy Tickets" link */
+/* line 347, src/plugins/_gigpress.scss */
+a.gigpress-tickets-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Notices for Cancelled or Sold Out shows */
+/* line 353, src/plugins/_gigpress.scss */
+strong.gigpress-cancelled, strong.gigpress-soldout {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1px;
+  color: #111;
+  background: #fffdeb;
+  border: 1px solid #eeeeee;
+  background: #111;
+  color: #FFF;
+  border: none;
+}
+
+/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
+/* line 366, src/plugins/_gigpress.scss */
+td.gigpress-links-cell {
+  vertical-align: top;
+}
+
+/* line 370, src/plugins/_gigpress.scss */
+.gigpress-calendar-add {
+  position: relative;
+}
+
+/* line 374, src/plugins/_gigpress.scss */
+a.gigpress-links-toggle {
+  display: block;
+  text-indent: -9999px;
+  width: 11px;
+  height: 11px;
+  background: transparent url(/images/calendar-toggle.png?v=100) no-repeat left top;
+  cursor: pointer;
+}
+
+/* line 383, src/plugins/_gigpress.scss */
+a.gigpress-links-toggle:hover {
+  background-position: -11px 0px;
+}
+
+/* line 387, src/plugins/_gigpress.scss */
+a.gigpress-link-active {
+  background-position: -33px;
+}
+
+/* line 391, src/plugins/_gigpress.scss */
+a.gigpress-link-active:hover {
+  background-position: -22px;
+}
+
+/* line 395, src/plugins/_gigpress.scss */
+div.gigpress-calendar-links {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: -1.2em;
+  width: 15em;
+  padding-left: 7px;
+  background: transparent url("/images/calendar-links-bg.png?v=100") no-repeat left center;
+}
+
+/* line 405, src/plugins/_gigpress.scss */
+.gigpress-calendar-links-inner {
+  background-color: #F3F3F3;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 16px;
+  border: 1px solid #cccccc;
+  border-width: 1px 1px 1px 0;
+}
+
+/* line 414, src/plugins/_gigpress.scss */
+div.gigpress-calendar-links span {
+  display: block;
+}
+
+/* These are for the RSS/iCal subscribe links */
+/* line 419, src/plugins/_gigpress.scss */
+p.gigpress-subscribe {
+  text-align: left;
+  color: #999;
+}
+
+/* line 424, src/plugins/_gigpress.scss */
+p.gigpress-subscribe a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 12px;
+  margin: 0 3px;
+}
+
+/* line 431, src/plugins/_gigpress.scss */
+a.gigpress-rss, a.gigpress-rss:hover {
+  background: transparent url(/images/feed-icon-12x12.png?v=100) no-repeat left center;
+}
+
+/* line 435, src/plugins/_gigpress.scss */
+a.gigpress-ical, a.gigpress-ical:hover {
+  background: transparent url(/images/icalendar-icon.gif) no-repeat left center;
+}
+
+/* For tour headings in the sidebar */
+/* line 440, src/plugins/_gigpress.scss */
+span.gigpress-list-tour-heading {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+/* So if you like you can style the date differently */
+/* line 446, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-date {
+  font-weight: bold;
+  display: block;
+}
+
+/* Sold Out shows in the sidebar */
+/* line 452, src/plugins/_gigpress.scss */
+ul.gigpress-listing strong.gigpress-soldout {
+  display: block;
+}
+
+/* These styles control the Related Show list that appears in the body of Related Posts */
+/* line 457, src/plugins/_gigpress.scss */
+ul.gigpress-related-show {
+  margin-bottom: 2em;
+}
+
+/* line 461, src/plugins/_gigpress.scss */
+.gigpress-related-label {
+  font-weight: bold;
+}
+
+/* This is just to include data for hcalendar support, but hide it from view */
+/* line 466, src/plugins/_gigpress.scss */
+.hide {
+  display: none;
+}
+
+/* Stop Firefox from underlining our abbreviated dates */
+/* line 471, src/plugins/_gigpress.scss */
+abbr {
+  border: none;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+/* old browsers */
+/* line 479, src/plugins/_gigpress.scss */
+.oldie .menu-item {
+  font-family: "lucida Sans Unicode", verdana, clean;
+}
+
+/* Social Media Icons
+******************************/
+/* line 4, src/plugins/_socialmedia.scss */
+.social_media_widget ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0 0.5em;
+}
+
+/* line 10, src/plugins/_socialmedia.scss */
+.social-media-item {
+  float: left;
+  width: 16.666666666666667%;
+}
+
+/* line 15, src/plugins/_socialmedia.scss */
+.social-media-item a {
+  display: block;
+  height: 36px;
+  width: 36px;
+  text-indent: -999em;
+  text-decoration: none;
+  border-bottom: none;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url("images/social-icons.png?v=100");
+  margin: auto;
+}
+
+/* line 28, src/plugins/_socialmedia.scss */
+.social-media-item a:hover {
+  background-position: left bottom;
+}
+
+/* line 31, src/plugins/_socialmedia.scss */
+a.googleplus {
+  background-position: left top;
+}
+
+/* line 34, src/plugins/_socialmedia.scss */
+a.facebook {
+  background-position: -43px top;
+}
+
+/* line 37, src/plugins/_socialmedia.scss */
+a.facebook:hover {
+  background-position: -43px bottom;
+}
+
+/* line 40, src/plugins/_socialmedia.scss */
+a.twitter {
+  background-position: -86px top;
+}
+
+/* line 43, src/plugins/_socialmedia.scss */
+a.twitter:hover {
+  background-position: -86px bottom;
+}
+
+/* line 46, src/plugins/_socialmedia.scss */
+a.flickr {
+  background-position: -129px top;
+}
+
+/* line 49, src/plugins/_socialmedia.scss */
+a.flickr:hover {
+  background-position: -129px bottom;
+}
+
+/* line 52, src/plugins/_socialmedia.scss */
+a.youtube {
+  background-position: -172px top;
+}
+
+/* line 55, src/plugins/_socialmedia.scss */
+a.youtube:hover {
+  background-position: -172px bottom;
+}
+
+/* line 58, src/plugins/_socialmedia.scss */
+a.rss {
+  background-position: -215px top;
+}
+
+/* line 61, src/plugins/_socialmedia.scss */
+a.rss:hover {
+  background-position: -215px bottom;
+}
+
+/*
+ * jQuery FlexSlider v1.6
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 12, src/plugins/_flexslider.scss */
+.flex-container.fullwidth {
+  margin-top: 0;
+}
+
+/* line 13, src/plugins/_flexslider.scss */
+.flexslider {
+  width: 100%;
+}
+
+/* line 14, src/plugins/_flexslider.scss */
+body.page-template-page-home-slideshow-2-php .flex-container {
+  max-width: 585px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, src/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 17, src/plugins/_flexslider.scss */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Browser Resets */
+/* line 20, src/plugins/_flexslider.scss */
+.flexslider a {
+  outline: none;
+}
+
+/* line 23, src/plugins/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load
+ */
+/* line 29, src/plugins/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider
+*********************************/
+/* line 34, src/plugins/_flexslider.scss */
+.flexslider {
+  background: transparent;
+  position: relative;
+}
+
+/* line 35, src/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  position: relative;
+}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+/* line 37, src/plugins/_flexslider.scss */
+.flex-container {
+  zoom: 1;
+  position: relative;
+  padding: 6px;
+  background: #F0EEE3;
+  background: rgba(255, 255, 255, 0.55);
+  margin-bottom: 50px;
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.3);
+  border-radius: 3px;
+  border: #e3e1d5;
+}
+
+/* line 38, src/plugins/_flexslider.scss */
+li.flex-slider-item {
+  list-style-type: none;
+}
+
+/* Caption style */
+/* line 40, src/plugins/_flexslider.scss */
+p.flex-caption {
+  width: 96%;
+  padding: 3% 2%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 41, src/plugins/_flexslider.scss */
+p.flex-caption a {
+  font-size: 18px;
+  color: #ddd;
+  border: none;
+}
+
+/* line 42, src/plugins/_flexslider.scss */
+p.flex-caption a:hover {
+  color: #fff;
+  border: none;
+}
+
+/* Direction Nav */
+/* line 44, src/plugins/_flexslider.scss */
+#content ul.flex-direction-nav {
+  list-style: none;
+}
+
+/* line 45, src/plugins/_flexslider.scss */
+.flex-direction-nav li a {
+  border: none;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0;
+  display: block;
+  background: url(images/arrows-white.png?v=100) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+/* line 46, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.next {
+  background-position: -40px 0;
+  right: -12px;
+}
+
+/* line 47, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.prev {
+  background-position: 0 0;
+  left: -12px;
+}
+
+/* line 48, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.next:hover {
+  background-position: -40px -43px;
+}
+
+/* line 49, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.prev:hover {
+  background-position: 0 -43px;
+}
+
+/* line 50, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.next:active {
+  background-position: -40px -42px;
+}
+
+/* line 51, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.prev:active {
+  background-position: 0 -42px;
+}
+
+/* Control Nav */
+/* line 54, src/plugins/_flexslider.scss */
+#content ol.flex-control-nav {
+  list-style: none;
+}
+
+/* line 55, src/plugins/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+}
+
+/* line 56, src/plugins/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 0 0 5px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 57, src/plugins/_flexslider.scss */
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+
+/* line 58, src/plugins/_flexslider.scss */
+.flex-control-nav li a {
+  border: none;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url(images/bg_control_nav.png?v=100) no-repeat 0 0;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 59, src/plugins/_flexslider.scss */
+.flex-control-nav li a:hover {
+  background-position: 0 -13px;
+}
+
+/* line 60, src/plugins/_flexslider.scss */
+.flex-control-nav li a.active {
+  background-position: 0 -26px;
+  cursor: default;
+}
+
+/* Columns CPT Events */
+/* line 1644, src/style-agriflex-old.scss */
+#tf_col_ev_date, th#tf_col_ev_cat {
+  width: 150px;
+}
+
+/* line 1645, src/style-agriflex-old.scss */
+td.tf_col_ev_date em {
+  color: gray;
+}
+
+/* line 1646, src/style-agriflex-old.scss */
+th#tf_col_ev_times {
+  width: 150px;
+}
+
+/* line 1647, src/style-agriflex-old.scss */
+th#tf_col_ev_thumb {
+  width: 100px;
+}
+
+/* Metabox */
+/* line 1652, src/style-agriflex-old.scss */
+body.wp-admin .tf-meta ul li {
+  height: 20px;
+  clear: both;
+  margin: 0 0 15px 0;
+}
+
+/* line 1653, src/style-agriflex-old.scss */
+body.wp-admin .tf-meta ul li label {
+  width: 100px;
+  display: block;
+  float: left;
+  padding-top: 4px;
+}
+
+/* line 1654, src/style-agriflex-old.scss */
+body.wp-admin .tf-meta ul li input {
+  width: 125px;
+  display: block;
+  float: left;
+}
+
+/* line 1655, src/style-agriflex-old.scss */
+body.wp-admin .tf-meta ul li em {
+  width: 200px;
+  display: block;
+  float: left;
+  color: gray;
+  margin-left: 10px;
+  padding-top: 4px;
+}

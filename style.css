@@ -1,0 +1,6377 @@
+/*
+	Theme Name: 	College of Ag 2013
+	Theme URI:      http://aglifesciences.tamu.edu/
+    Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
+	Author: 		Travis Ward
+	Template:		AgriFlex
+    Version: 		1.0
+*/
+/* @import "compass/reset";*/
+/*@import "compass/utilities/general/clearfix";*/
+/* line 32, src/h5bp/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 39, src/h5bp/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 47, src/h5bp/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 55, src/h5bp/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 69, src/h5bp/_normalize.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 82, src/h5bp/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 88, src/h5bp/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 103, src/h5bp/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 109, src/h5bp/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 122, src/h5bp/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 127, src/h5bp/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 132, src/h5bp/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 137, src/h5bp/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 142, src/h5bp/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 147, src/h5bp/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 153, src/h5bp/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 159, src/h5bp/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 163, src/h5bp/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 168, src/h5bp/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 173, src/h5bp/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 180, src/h5bp/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* line 188, src/h5bp/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* line 195, src/h5bp/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 202, src/h5bp/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* line 208, src/h5bp/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 214, src/h5bp/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 220, src/h5bp/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 227, src/h5bp/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 231, src/h5bp/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 245, src/h5bp/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 249, src/h5bp/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 256, src/h5bp/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 268, src/h5bp/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/* line 274, src/h5bp/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 285, src/h5bp/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 296, src/h5bp/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/* line 301, src/h5bp/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 310, src/h5bp/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 323, src/h5bp/_normalize.scss */
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 333, src/h5bp/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 347, src/h5bp/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 355, src/h5bp/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 364, src/h5bp/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 374, src/h5bp/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 384, src/h5bp/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 390, src/h5bp/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 397, src/h5bp/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 409, src/h5bp/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 7, src/h5bp/_helpers.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+/* line 27, src/h5bp/_helpers.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 9, src/h5bp/_helpers.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 11, src/h5bp/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 67, src/h5bp/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 13, src/h5bp/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 93, src/h5bp/_helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 98, src/h5bp/_helpers.scss */
+.clearfix:after {
+  clear: both;
+}
+/* line 104, src/h5bp/_helpers.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Layout */
+/* line 4, src/_off-canvas.scss */
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 9, src/_off-canvas.scss */
+#header {
+  display: block;
+  padding: 2.5em 3%;
+  overflow: hidden;
+  /* Clearing float so you can see background color */
+}
+
+/* line 14, src/_off-canvas.scss */
+[role="document"]:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 26, src/_off-canvas.scss */
+[role="navigation"],
+[role="document"],
+#header {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 32, src/_off-canvas.scss */
+[role="navigation"],
+[role="document"] {
+  width: 90%;
+  padding: 5%;
+  display: block;
+  position: relative;
+}
+
+/* line 38, src/_off-canvas.scss */
+[role="complementary"] {
+  width: 100%;
+  padding: 0%;
+  display: block;
+  position: relative;
+}
+
+/* line 44, src/_off-canvas.scss */
+[role="document"] {
+  width: 90.2%;
+  /* webkit browsers act weird with % */
+}
+
+/* line 47, src/_off-canvas.scss */
+.js [role="navigation"] {
+  margin-left: -100%;
+  width: 70%;
+  float: left;
+  padding-bottom: 25em;
+  z-index: 2;
+}
+
+/* line 54, src/_off-canvas.scss */
+.js [role="document"] {
+  margin-left: 0;
+  background: #fff;
+  float: right;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 61, src/_off-canvas.scss */
+.js [role="complementary"] {
+  margin: 0;
+  clear: both;
+  z-index: 2;
+}
+
+/* line 66, src/_off-canvas.scss */
+.active-sidebar [role="navigation"] {
+  margin-left: 0;
+  width: 69%;
+}
+
+/* line 70, src/_off-canvas.scss */
+.active-sidebar [role="document"] {
+  margin-right: -80%;
+}
+
+/* Header */
+/* line 75, src/_off-canvas.scss */
+#site-title {
+  position: relative;
+  float: left;
+  width: 31%;
+  margin-left: 3%;
+}
+
+/* line 81, src/_off-canvas.scss */
+#site-title a {
+  font-size: 0;
+  display: block;
+  width: 170px;
+  height: 42px;
+  color: transparent;
+  background: transparent url("logo.png") no-repeat left top;
+}
+
+/* Off Canvas/footer Anchor Navigation */
+/* line 90, src/_off-canvas.scss */
+.off-canvas-nav-links ul {
+  list-style: none;
+}
+
+/* line 94, src/_off-canvas.scss */
+.sidebar-button {
+  padding: 1em;
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  background: #7da12a;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 105, src/_off-canvas.scss */
+.sidebar-button {
+  top: 50px;
+  right: 3%;
+}
+
+/* Site Menu */
+/*
+[role="navigation"] li {
+	list-style: none;
+	font-size: 18px;
+	width: 100%;	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;		
+}*/
+/* line 119, src/_off-canvas.scss */
+[role="navigation"] li a {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+}
+
+/*
+.site-footer {
+	overflow: hidden;
+	padding: 5%;
+	width: 90%;
+	clear: both;
+	margin: 0 auto;
+	border-top: solid 1px #C9C9C9;
+	background: -moz-linear-gradient(top, rgba(235, 236, 234, 1) 0%, rgba(255, 255, 255, 1) 80%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235, 236, 234, 1)), color-stop(80%,rgba(255, 255, 255, 1)));
+	background: -webkit-linear-gradient(top, rgba(235, 236, 234, 1) 0%,rgba(255, 255, 255, 1) 80%);
+	background: linear-gradient(top, rgba(235, 236, 234, 1) 0%,rgba(255, 255, 255, 1) 80%);	
+}
+.site-footer ul {
+	list-style: none;
+}
+.site-footer li a {
+	margin: .5em .5em .5em 0;
+}
+*/
+@media all and (min-width: 640px) {
+  /*
+  #site-title { 	
+  	font-size: 56px;
+  	margin-left: 0;
+  }
+  #wrapper {
+  	margin-bottom: 100px;
+  }				
+  .js .off-canvas-nav-links, .sidebar-button {
+  	display: none;
+  } 				
+  .js [role="complementary"] {
+  	position: relative;
+  	width: 28%;	
+  	margin-left: 0;
+  	float: left;
+  	padding: 3%
+  }
+  .js [role="document"] {
+  	width: 60%;
+  	padding: 3%;
+  }
+  [role="document"]:before {		
+  }	
+  .js [role="navigation"] {
+  	width: 100%;	
+  	margin: .75em 0 0 0;	
+  	padding: 0;
+  	margin-right: 0;
+  	clear: both;
+  	position: fixed;
+  	bottom: 0;		
+  	left: 0;
+  }	
+  .js [role="navigation"] li {	
+  	width: 20%;
+  	background: rgba(255,255,255,.95);
+  	box-shadow: 0 0 5px rgba(0,0,0,.3);		
+  }	
+  .js [role="navigation"] li.first {
+  	position: relative;
+  	z-index: 2;				
+  }		
+  .js [role="navigation"] li.second {		
+  }
+  .js [role="navigation"] li.third {
+  	position: absolute;
+  	right: 0;
+  	bottom: 50px;
+  	z-index: 2;				
+  }		
+  .js [role="navigation"] li.last {	
+  	position: absolute;
+  	right: 0;
+  	bottom: 0;			
+  }	
+  .js [role="navigation"] li.third a,
+  .js [role="navigation"] li.last a {
+  	border-left: none;
+  	border-right: solid 8px #9FB84C;		
+  }
+  .site-footer {
+  	margin: 0 auto 100px;	
+  }	
+  */
+}
+@media all and (min-width: 840px) {
+  /* line 214, src/_off-canvas.scss */
+  .js .menu-button {
+    display: none;
+  }
+
+  /* line 219, src/_off-canvas.scss */
+  .js [role="document"],
+  .js [role="navigation"],
+  .js [role="contentinfo"] {
+    width: 1024px;
+    margin: 0 auto;
+    float: none;
+    padding: 0;
+  }
+
+  /* line 226, src/_off-canvas.scss */
+  .js [role="navigation"] {
+    padding: 0;
+  }
+}
+/*
+table {
+    $table-color: #7a98c6;
+    @include table-scaffolding;
+    @include inner-table-borders(1px, darken($table-color, 40%));
+    @include outer-table-borders(2px);
+    @include alternating-rows-and-columns($table-color, adjust-hue($table-color, -120deg), #222222);
+
+    border-collapse: collapse; 
+    border-spacing: 0; 
+    margin-top: 2em;	
+    border-right: 1px solid #E3E1D5; 	
+    border-top: 1px solid #E3E1D5; 
+    font-family: verdana, clean, sans-serif; 
+    font-size: 11px;
+}
+td { vertical-align: top; }
+
+tr {
+	margin: 0;
+	border-bottom: 1px solid #E3E1D5;
+}
+
+td,th {
+	line-height: 1.3em;
+	text-align: left;
+	padding: 20px 8px;
+	border-left: 1px solid #E3E1D5;
+}
+
+th {
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+	background: #f9f9f7;
+}
+
+tr:nth-child(even) {
+	background: #fff;
+}
+
+tr:first-child {
+	background: #f1f0e8;
+}
+*/
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 93, src/style.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 95, src/style.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 97, src/style.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 98, src/style.scss */
+::-moz-selection {
+  background: #f9fd87;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 99, src/style.scss */
+::selection {
+  background: #f9fd87;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 102, src/style.scss */
+body {
+  background: #f5f0e4;
+  font: 100% "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  line-height: 1.2em;
+  color: #433c3a;
+}
+
+/*-- Target Modernizr.no-touch class  --*/
+/* line 109, src/style.scss */
+.no-touch body {
+  text-rendering: optimizeLegibility;
+  /*-- Only target non touch based screens --*/
+}
+
+/* line 112, src/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2em;
+  clear: both;
+}
+
+/* line 118, src/style.scss */
+h1 {
+  font-size: 2em;
+  /* 32px / 16px */
+}
+
+/* line 122, src/style.scss */
+h2 {
+  font-size: 1.75em;
+  /* 28px / 16px */
+}
+
+/* line 126, src/style.scss */
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px */
+}
+
+/* line 130, src/style.scss */
+h4 {
+  font-size: 1.25em;
+  /* 20px / 16px */
+}
+
+/* line 134, src/style.scss */
+h5 {
+  font-size: 1.125em;
+  /* 18px / 16px */
+}
+
+/* line 138, src/style.scss */
+h6 {
+  font-size: 1em;
+  /* 16px */
+}
+
+/* line 143, src/style.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 147, src/style.scss */
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+}
+
+/* line 154, src/style.scss */
+.wrap:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 162, src/style.scss */
+#wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* Text elements */
+/* line 168, src/style.scss */
+p {
+  margin-top: 1.25em;
+  /* 20px / 16px */
+  margin-bottom: 1.25em;
+  /* 20px / 16px */
+  font-size: 1em;
+  /* 16px */
+  line-height: 1.25em;
+  /* 20px / 16px */
+}
+
+/* line 175, src/style.scss */
+#content ul li {
+  margin: 0.5em 0;
+  font-family: verdana, clean, sans-serif;
+  font-size: 13px;
+}
+
+/* line 182, src/style.scss */
+#content-wrap ul, #content-wrap ol {
+  list-style: none;
+  margin: 1.2em 0 1.2em 4.5em;
+  padding: 0;
+}
+/* line 187, src/style.scss */
+#content-wrap ol {
+  list-style: decimal;
+}
+/* line 189, src/style.scss */
+#content-wrap ol ol {
+  list-style: upper-alpha;
+}
+/* line 191, src/style.scss */
+#content-wrap ol ol ol {
+  list-style: lower-roman;
+}
+/* line 193, src/style.scss */
+#content-wrap ol ol ol ol {
+  list-style: lower-alpha;
+}
+/* line 199, src/style.scss */
+#content-wrap li {
+  margin: 0 0 0.6em 0;
+}
+/* line 205, src/style.scss */
+#content-wrap ul ul,
+#content-wrap ol ol,
+#content-wrap ul ol,
+#content-wrap ol ul {
+  margin: 0px 0px 0px 1em;
+}
+/* line 212, src/style.scss */
+#content-wrap ul ul ul li,
+#content-wrap ol ol ol li,
+#content-wrap ul ol ul li,
+#content-wrap ol ul ul li {
+  margin: 0.2em 0 0.2em 1em;
+}
+
+/* line 219, src/style.scss */
+#content dl, #content dd {
+  margin-bottom: .5em;
+}
+
+/* line 223, src/style.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 228, src/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 234, src/style.scss */
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+/* line 238, src/style.scss */
+ins {
+  background: #ffc;
+  text-decoration: none;
+}
+
+/* line 243, src/style.scss */
+blockquote {
+  font-style: italic;
+  padding: 0 3em;
+}
+
+/* line 250, src/style.scss */
+blockquote cite,
+blockquote em,
+blockquote i {
+  font-style: normal;
+}
+
+/* line 254, src/style.scss */
+pre {
+  background: #222;
+  color: #fff;
+  margin-bottom: 1.8em;
+  padding: 1.5em;
+  overflow: scroll;
+  font-family: monospace;
+}
+
+/* line 263, src/style.scss */
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 269, src/style.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 270, src/style.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 271, src/style.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 273, src/style.scss */
+audio {
+  width: 100%;
+  color: #999;
+}
+
+/* line 278, src/style.scss */
+.entry-utility, .navigation {
+  line-height: 1.5em;
+}
+
+/* line 282, src/style.scss */
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+/* line 288, src/style.scss */
+a:active,
+a:hover {
+  color: #332c2c;
+  text-decoration: none;
+}
+
+/* line 293, src/style.scss */
+body a {
+  color: #8d0002;
+  border-color: #8d0002;
+}
+
+/* line 299, src/style.scss */
+body a:active,
+body a:hover {
+  color: #5b0125;
+  border-color: #5b0125;
+}
+
+/* Text meant only for screen readers */
+/* line 305, src/style.scss */
+.screen-reader-text {
+  position: absolute;
+  left: -9000px;
+}
+
+/* Logout Button for Password-protected posts */
+/* line 312, src/style.scss */
+a.logout_btn {
+  border-radius: 5px;
+  background: #fff;
+  padding: 12px 9px;
+  margin: 10px auto;
+  width: 80%;
+  display: block;
+  font-size: 18px;
+}
+
+/* line 322, src/style.scss */
+a.logout_btn:hover {
+  background: #726B60;
+  color: #333;
+}
+
+/* line 330, src/style.scss */
+.site-title {
+  margin: 0;
+}
+/* line 332, src/style.scss */
+.site-title a {
+  color: #500000;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+  display: block;
+  background: url("images/logo-w@2x.png") no-repeat center;
+  background-size: 183px 34px;
+  position: relative;
+  width: 183px;
+  height: 34px;
+  z-index: 99;
+}
+/* line 27, src/h5bp/_helpers.scss */
+.site-title a:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+/* line 342, src/style.scss */
+.site-title a:hover {
+  color: #500000;
+}
+
+/* line 348, src/style.scss */
+#drop-section-nav {
+  background: white;
+  background: #500000;
+  padding: 1em 0;
+}
+/* line 352, src/style.scss */
+#drop-section-nav ul {
+  margin: 0;
+  padding: 0 0 0 3%;
+}
+
+/* line 360, src/style.scss */
+#header {
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 365, src/style.scss */
+#site-title {
+  text-align: center;
+  margin-top: .3em;
+  margin-bottom: .3em;
+  line-height: .875em;
+  /* 14px / 16px */
+}
+
+/* line 372, src/style.scss */
+#site-title a {
+  border: none;
+  color: #443d3a;
+  padding: 0;
+  font-size: .75em;
+  /* 12px / 16px */
+}
+
+/* line 379, src/style.scss */
+#site-title a img {
+  display: none;
+}
+
+/* line 383, src/style.scss */
+#site-title a em {
+  display: block;
+  overflow: hidden;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+
+/* line 393, src/style.scss */
+#site-description {
+  display: none;
+}
+
+/* =============================================================================
+   Search Form
+   ========================================================================== */
+/* line 401, src/style.scss */
+.s {
+  width: 100%;
+  padding: 8px 0px;
+  background: white url("http://agrilife.org/wp-content/themes/AgriLife-Beta/images/search.png") no-repeat left 45%;
+  border-radius: 10px;
+  color: #999;
+  border: 1px solid #cccccc;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 413, src/style.scss */
+.searchsubmit {
+  display: none;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+/* line 421, src/style.scss */
+.menu-button {
+  position: absolute;
+  z-index: 999;
+  top: .75em;
+  right: 0;
+  padding: 1.5em 1.25em 1em 1.25em;
+  padding: 0 0 0 1.25em;
+  color: white;
+  margin-right: 5%;
+  cursor: pointer;
+}
+/* line 436, src/style.scss */
+.menu-button:before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double white;
+  border-bottom: 0.125em solid white;
+}
+
+/* line 449, src/style.scss */
+[role="navigation"] li a {
+  padding: 0.7em 2em;
+  border-top-color: #f9f9f9;
+  border-bottom-color: #dfdfdf;
+  border-width: 1px 0;
+  border-style: solid none;
+}
+
+/* line 458, src/style.scss */
+#menu-primary-navigation {
+  padding: 0;
+}
+/* line 460, src/style.scss */
+#menu-primary-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+            /*
+.clear {
+	clear: both;
+}
+
+#access {
+	position: relative;
+	display: block;	
+	padding-left: 5%;
+	padding-right: 5%;	
+}
+
+
+
+#access .menu-header,
+ul.menu {
+	display: block;
+	margin: .5em 0 0;		
+}
+
+#access .menu-header:before,
+ul.menu:before,
+#access .menu-header:after,
+ul.menu:after {
+    content:"";
+    display:table;
+}
+#access .menu-header:after,
+ul.menu:after {
+    clear:both;
+}
+#access .menu-header,
+ul.menu {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+    /*
+}
+
+#access .menu-header li,
+div.menu li {
+	font-family: 'Verdana',clean, sans-serif;
+	float: left;
+	list-style: none;
+	border-bottom: none;
+	position: relative;	
+}
+
+#access ul.menu a {
+	font-size: 1.15em;
+	border: none;	
+	line-height: 1.2em;
+	overflow: hidden;
+	margin: 0 0 .1em 0;		
+	padding: 10px 15px;	
+	display: block;
+}
+
+#access ul.menu li a[title='home'] {
+	display: block;
+	text-indent: -999em;
+	background: url('images/home-gold.png') no-repeat 50% 12px;
+	width: 20px;
+}
+
+#access li a[title='home']:hover {
+	background-position: 50% -35px;
+}
+
+#access #menu-main-navigation {
+	width: 100%;
+}
+		
+#access .menu-header li,
+div.menu li {
+	float: none;
+	margin: 0;
+	border-bottom: 1px solid #E7E2CB;
+}
+
+#access  {
+	float: none;
+}
+*/
+/* line 553, src/style.scss */
+body.no-touch #access ul.menu a {
+  font-size: 1.6em;
+  text-shadow: 0 1px 0 white;
+  display: block;
+  text-shadow: none;
+}
+
+/* line 560, src/style.scss */
+body.mobile #access .menu-header li ul.sub-menu {
+  display: none;
+}
+
+/* line 564, src/style.scss */
+body.touch #access .menu-header li ul.sub-menu {
+  display: none;
+}
+
+/*
+.searchform {
+	margin: 0 auto;	
+	display: block;
+	background: transparent;
+}
+
+.s {
+	width: 100%;
+	padding: 8px 5px 8px 30px;
+	background: #fff url('images/search.png?v=100') no-repeat left 45%;
+	border-radius: 10px; 
+	color: #999;
+	border: 1px solid #ccc;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.searchsubmit {
+	display: none;	
+}
+
+*/
+/***** Search Page Template ********************/
+/* line 596, src/style.scss */
+body.search div.entry-meta,
+body.search div.entry-utility {
+  display: none;
+}
+
+/* line 600, src/style.scss */
+body.search h1.page-title {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/***** Home Top ********************/
+/*
+body.home #content {
+	width: 100%;
+}
+
+#home-top {
+	display: block;
+	position: relative;
+	width: 574px;	
+	float: none;
+	margin: 0 auto 25px;
+	overflow: hidden;
+}
+
+.flex-container {
+	margin-top: 5%;
+} 
+
+
+#home-top #big-feature {
+	margin-left: 10px;
+	width: 100%;
+	height: 368px;	
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+
+#home-top #big-feature img {
+	max-height: 368px;
+	max-width: 100%;
+}
+
+#home-top #big-feature a {
+	border: none;
+}
+
+#home-top #big-feature .feature-detail {
+	display: block;	
+}
+
+#home-top #big-feature .feature-detail h2 a {
+	color: #fff;
+	font-size: 26px;
+	position: absolute;
+	background: #343434;
+	background: rgba(33,33,33,.65);	
+	top: 282px;
+	padding: 15px 60px 50px 20px;
+	display: block;	
+	line-height: 1.1em;
+	width: 100%;
+}
+	
+#home-top #slideshow-nav {
+	position: relative;
+	z-index: 8;
+	margin-top: 1em;
+	float: right;
+}
+
+#home-top #slideshow-nav a.slideNext,
+#home-top #slideshow-nav a.slidePrev {
+	background-image: url(images/arrows.png?v=100);
+	background-repeat: no-repeat;
+	top: 0;
+	height: 31px;
+	width: 34px;
+	display: block;
+	border: none;
+	float: left;
+}
+
+#home-top #slideshow-nav a.slideNext {
+	background-position: right top;
+}
+
+#home-top #slideshow-nav a.slidePrev {
+	background-position: left top;
+}
+
+#home-top #slideshow-nav a.slideNext:hover {
+	background-position: right -45px;
+}
+
+#home-top #slideshow-nav a.slidePrev:hover {
+	background-position: left -45px;
+}
+
+#home-top #slideshow-nav a.slideNext:active {
+	background-position: right -44px;
+}
+
+#home-top #slideshow-nav a.slidePrev:active {
+	background-position: left -44px;
+}
+
+#home-top #slidePager {
+	position: relative;
+	margin-right: 1em;
+	margin-top: 1.8em;
+	float: right;
+}
+
+#home-top #slidePager a {
+	background-image: url(images/dots.png);
+	background-repeat: no-repeat;
+	background-position: center -33px;
+	text-indent: -9999px;	
+	display: block;
+	float: left;
+	width: 20px;
+	height: 15px;
+	border: none;
+}
+
+#home-top #slidePager a.activeSlide {
+	background-position: center top;
+}
+
+.entry-title, body.home h3.widget-title a.rsswidget, body.home #content h3, body.home #content h4, #home-middle .home-middle-features h3 a {
+	color: #a0915d;
+	font-family: $sans-font;
+	font-weight: 600;
+	text-shadow: white 0px 1px 0px;
+	border-color: transparent;
+	line-height: 1.4em;
+}
+
+#home-middle .home-middle-features h3 a,
+#content h2.entry-title a {
+	color: #ad995a;
+}
+
+body.collegeonly .entry-title,
+body.collegeonly.home h3.widget-title a.rsswidget {
+	color: #a0915d;
+}
+*/
+/***** Home Middle ********************/
+/*
+body.home #container,
+body.home #content {
+	margin: 0;
+	float: none;
+	}
+
+#home-middle-bg {
+	float: left;	
+	}
+
+#home-middle {
+	margin: 0 auto;
+	padding: 0;
+	float: left;
+	clear: left;
+	}
+		
+body.home #content p:first-child {
+	font-size: 20px;
+	line-height: 28px;
+	}
+			
+#home-middle h2, body.home .page .entry-title {
+	margin: 0 0 5px 0;
+	text-decoration: none;
+	}
+	
+#home-middle h2 a, #home-middle h2 a:visited {
+	text-decoration: none;
+	}
+	
+#home-middle h4 {	
+	margin: 20px 0 15px 0;
+	padding: 10px 0;
+	padding-left: 5px;
+	}
+	
+#home-middle ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+#home-middle ul li {
+	list-style-type: none;
+	margin-bottom: 1em;
+	}
+	
+.widget_rss ul li {
+	margin: 0 0 7px 0;
+	padding: 0 0 7px 0;	
+	}
+	
+#home-middle ul ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 10px 0;
+	}
+
+#home-middle ul li ul li {
+	margin: 0;
+	padding: 5px 0 0 0;
+	}
+	
+#home-middle .widget {
+	margin: 0;
+	}
+	
+#home-middle .widget-container {
+	padding-top: 2em;
+	margin-top: 2em;
+	border-top: 1px dashed #d2ca9c;	
+	width: 100%;			
+	}
+		
+#home-middle .textwidget {
+	margin: 0;
+	padding: 0;
+	}	
+	
+#home-middle .featuredpost .post, #home-middle .featuredpage .page {
+	clear: both;
+	}
+	
+#home-middle .featuredpost, #home-middle .featuredpage {
+	clear: both;
+	}
+	
+#home-middle .featuredpost img {
+	background: #FFFFFF;
+	margin: 0;
+	padding: 4px;
+	}
+	
+#home-middle .user-profile .avatar {
+	background: #FFFFFF;
+	margin: 0 0 -5px 0;
+	padding: 1px;
+	border: 4px solid #EEEEEE;
+	}
+
+.home-middle-1 {
+	float: left;
+	margin: 0;
+	padding: 0 0 20px 10px;
+	}
+
+body.home .page p:first-child {
+	text-shadow: 0 1px 0 #fff;		
+}
+
+.featured-wrap p {
+	position: relative;
+}
+
+.featured-wrap a,  {
+	border: none;
+}
+
+body.page .featured-wrap .entry-title a,  {
+	color: #A0915D;
+}
+
+.cat-posts-title  {
+	padding-top: 10px;
+	margin-bottom: 2%;
+	padding-bottom: 2%;
+	border-top: 2px solid #111;
+	border-bottom: 1px solid #ddd;
+}
+
+body.home.collegeonly #home-middle .home-middle-features a.feature-img-date {
+	color: #fff;
+}
+
+.featured-wrap a .date {
+	font-family: $sans-font;	
+	font-size: .8em;
+	background: #726b60;
+	color: #fff;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;		
+	padding: 2px 5px 1px;
+	-webkit-box-shadow: 0 0 4px #fff;
+	-moz-box-shadow: 0 0 4px #fff;	
+	box-shadow: 0 0 4px #fff;
+	position: absolute;
+	left: -5px;
+	top: 20px;	
+	z-index: 999;
+	margin: 1px;
+}
+
+body.home.collegeonly #home-middle .home-middle-features a .date {
+	background: #5d0025;
+	color: #fff;
+}
+
+body.home.extensiononly #home-middle .home-middle-features a .date {
+	background: #004c6b;
+	color: #fff;	
+}
+
+body.home.researchonly #home-middle .home-middle-features a .date {
+	background: #5a8c37;
+	color: #fff;	
+}
+
+.featured-wrap img {
+	width: 175px;
+	float: left;
+	margin: 5px 1.2em 1.2em 0;
+	opacity: .95;
+	position: relative;
+	z-index: 998;	
+}
+
+.featured-wrap img:hover {
+	opacity: 1;
+}
+
+body.home #home-middle .home-middle-features h3 {
+	line-height: 36px;
+}
+	
+body.home  #home-middle .home-middle-features h3 a,
+#content h2.entry-title a {
+	border-bottom: 1px dotted #b19e56;	
+}
+
+body.home  #home-middle a.rsswidget {
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: bold;
+		
+}
+
+body.home  #home-middle .rss-date {
+	display: block;
+	margin: 5px 0;
+	font-style: italic;
+	font-weight: bold;
+		
+}
+			
+.featured-wrap h3 a:hover,
+#content h2.entry-title a:hover {
+	color: #a2904b;
+	border-bottom: 1px solid #a2904b;
+}
+
+.featured-wrap span.read-more {
+	display: block;
+	clear: left;
+	overflow: hidden;
+	margin-left: -2px;	
+	margin-bottom: -5px;
+	}
+	
+span.read-more a {
+	font-family: $sans-font;		
+	padding: .2em 1em;
+	background: #e8e7d5;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px #ddd;	
+	-moz-box-shadow: 0 1px 2px #ddd;	
+	box-shadow: 0 1px 2px #ddd;
+	border: none;
+	float: left;
+	margin: 20px 0 20px 2px;
+	}
+
+.single-staff span.read-more a {
+	margin-top: 0;
+	float: none;
+	padding-top: .3em;
+}
+
+span.read-more a:hover {
+	background: #e2dbbf;
+	-webkit-box-shadow: 0 1px 1px #fff;	
+	-moz-box-shadow: 0 1px 1px #fff;	
+	box-shadow: 0 1px 1px #fff;	
+	}
+	
+body.home.researchonly #content span.read-more a {
+	color: #fff;
+	background: #4e792f;
+	}
+
+body.home.researchonly #content span.read-more a:hover {
+	background: #1f2f12;	
+	}	
+
+body.home  #home-middle .featuredpost img {
+	background: #FFFFFF;
+	margin: 0;
+	padding: 4px;
+	}
+	
+body.home #home-middle .user-profile .avatar {
+	background: #FFFFFF;
+	margin: 0 0 -5px 0;
+	padding: 1px;
+	border: 4px solid #EEEEEE;
+	}
+
+body.home .home-middle-1 {
+	float: left;
+	margin: 0;
+	padding: 0 0 20px 0;
+	}
+	*/
+/* =Content
+-------------------------------------------------------------- */
+/*
+#content-wrap {
+	position: relative;
+	z-index: 2;
+	border-top: 2px solid #e7e2cb;
+	margin-top: -2px;
+	width: 100%;	
+}
+
+#content-wrap:before,
+#content-wrap:after {
+    content:"";
+    display:table;
+}
+#content-wrap:after {
+    clear:both;
+}
+*/
+/* line 1045, src/style.scss */
+#content-wrap {
+  -webkit-box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+/* line 1048, src/style.scss */
+#content-wrap a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px dotted #111111;
+  -webkit-transition: 0.3s color ease, 0.3s border ease;
+  -moz-transition: 0.3s color ease, 0.3s border ease;
+}
+/* line 1057, src/style.scss */
+#content-wrap a:active,
+#content-wrap a:hover {
+  color: #332c2c;
+  text-decoration: none;
+  border-bottom: 1px solid #332c2c;
+}
+
+/* line 1064, src/style.scss */
+#breadcrumbs {
+  margin-bottom: 1.6em;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 0.8em 0;
+  line-height: 1.4em;
+}
+
+/* line 1073, src/style.scss */
+#breadcrumbs a {
+  border: none;
+}
+
+/*
+#content {
+	padding-right: 10px;
+}
+*/
+/* line 1081, src/style.scss */
+body.home #breadcrumbs {
+  display: none;
+}
+
+/* line 1085, src/style.scss */
+.hentry {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 1090, src/style.scss */
+body.home .hentry {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  clear: both;
+}
+
+/* line 1096, src/style.scss */
+body.home.blog .hentry {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+/* line 1100, src/style.scss */
+.entry-meta {
+  margin: 15px 0 25px;
+}
+
+/* line 1104, src/style.scss */
+#content .hentry .entry-meta {
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* line 1109, src/style.scss */
+#content ul {
+  list-style: circle;
+}
+
+/* line 1113, src/style.scss */
+#content dl {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 1120, src/style.scss */
+#content dd,
+#content dt {
+  margin-bottom: .5em;
+}
+
+/* line 1124, src/style.scss */
+#content dt {
+  font-size: 1.2em;
+  margin-top: .2em;
+}
+
+/* line 1129, src/style.scss */
+#content dl.attachments-large {
+  border: none;
+  border-bottom: 1px dashed #d2ca9c;
+}
+
+/* line 1137, src/style.scss */
+#content .hentry footer.entry-meta,
+#content .hentry footer.entry-meta h2,
+#content .hentry footer.entry-meta #entry-author-info,
+#content .hentry footer.entry-meta .entry-utility {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 1143, src/style.scss */
+#content .hentry footer.entry-meta h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 1149, src/style.scss */
+.page-title {
+  margin-bottom: 1em;
+}
+
+/* Aside
+-------------------------------------------------------------- */
+/* line 1158, src/style.scss */
+#aside {
+  clear: both;
+}
+/* line 1160, src/style.scss */
+#aside ol, #aside ul {
+  padding: 0;
+}
+/* line 1163, src/style.scss */
+#aside .left {
+  float: left;
+}
+/* line 1166, src/style.scss */
+#aside .right {
+  float: right;
+}
+/* line 1169, src/style.scss */
+#aside h3.widget-title, #aside h3 {
+  padding: 5px 5px 5px 0;
+  font-size: 16px;
+  font-family: "rosewood-std-fill", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+/* line 1177, src/style.scss */
+#aside h4 {
+  font-size: 1.1em;
+  margin-bottom: .6em;
+}
+/* line 1180, src/style.scss */
+#aside h4 a {
+  border: none;
+  color: #444;
+}
+/* line 1185, src/style.scss */
+#aside .menu, #aside .blogroll, #aside .sidebar-widget-navigation {
+  margin: 0;
+}
+/* line 1188, src/style.scss */
+#aside #sidebar-navigation-widgets {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+/* line 1193, src/style.scss */
+#aside #sidebar-navigation-widgets .widget_nav_menu,
+#aside #sidebar-navigation-widgets .widget_links {
+  background: #f1f0ec;
+}
+/* line 1196, src/style.scss */
+#aside #sidebar-navigation-widgets h3 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+}
+/* line 1201, src/style.scss */
+#aside #sidebar-navigation-widgets h3 a {
+  display: block;
+  margin: 0;
+  background-color: #edece4;
+  padding: 10px 10px 10px 27px;
+  border-bottom: 1px solid #e0dcbc;
+  border-top: 1px solid #f0eede;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+}
+/* line 1214, src/style.scss */
+#aside #sidebar-navigation-widgets h3 a:hover {
+  background-color: #d9d6c6;
+}
+/* line 1218, src/style.scss */
+#aside #sidebar-navigation-widgets h3 .ui-state-active a {
+  background-position: -2px -26px;
+  background-color: #e3e1d5;
+}
+
+/*
+#aside .menu li a,
+#aside .blogroll li a {
+	display: block;
+	padding: 5px 10px;
+	
+	border-top: 1px solid #fff;
+}
+
+#aside .menu li ul li a,
+#aside .blogroll li ul li a {
+	display: block;
+	padding: 5px 0;
+	border: none;
+}
+*/
+/* line 1248, src/style.scss */
+#aside li embed {
+  width: 100%;
+}
+
+/* line 1254, src/style.scss */
+#aside #event-bg {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #e5e0c5;
+  background: rgba(217, 208, 173, 0.5);
+  overflow: hidden;
+}
+
+/* line 1262, src/style.scss */
+#aside #aside-widget-area-1 ul {
+  margin: 0;
+}
+
+/* line 1271, src/style.scss */
+body.page h1.entry-title {
+  margin: 0 0 0.8em 0;
+  font-family: "rosewood-std-fill", serif;
+  color: #500000;
+}
+
+/* line 1279, src/style.scss */
+#aside .widget-container {
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
+  background: #fff;
+}
+/* line 1285, src/style.scss */
+#aside .widget-container .widget-wrap {
+  padding: 0;
+}
+/* line 1289, src/style.scss */
+#aside .widget-container h3.widget-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 3% 3% 3% 5%;
+  margin-bottom: 0;
+  -webkit-box-shadow: #666666 0 20px 30px -8px;
+  -moz-box-shadow: #666666 0 20px 30px -8px;
+  box-shadow: #666666 0 20px 30px -8px;
+  background: url("http://agrilife.org/wp-content/themes/AgriLife-Beta/images/widgets2.png") top right no-repeat transparent;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 1304, src/style.scss */
+#aside .widget-container.agrilifetoday ul li, #aside .widget-container.widget_rss ul li, #aside .widget-container.widget_twitter ul li {
+  font-family: verdana, clean, sans-serif;
+  font-size: 13px;
+}
+
+/* line 1310, src/style.scss */
+#content-wrap .widget_nav_menu {
+  font-size: .8em;
+}
+/* line 1313, src/style.scss */
+#content-wrap .widget_nav_menu h3.widget-title {
+  background: transparent;
+  color: #500000;
+  font-family: sans-serif;
+  text-transform: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+}
+/* line 1322, src/style.scss */
+#content-wrap .widget_nav_menu li {
+  background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px 0.8em;
+  border-top: 0;
+  text-indent: 25px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  margin: 0;
+}
+/* line 1334, src/style.scss */
+#content-wrap .widget_nav_menu li a {
+  border-bottom: 1px dashed #dad6c7;
+  padding: 0;
+  padding: 0.4em 0;
+  font-style: italic;
+  display: block;
+  text-decoration: none;
+}
+/* line 1341, src/style.scss */
+#content-wrap .widget_nav_menu li a:hover {
+  text-decoration: underline;
+}
+/* line 1346, src/style.scss */
+#content-wrap .widget_nav_menu li ul {
+  list-style: none;
+  padding: 0 0 3% 0;
+}
+/* line 1349, src/style.scss */
+#content-wrap .widget_nav_menu li ul a {
+  border-bottom: 0;
+  padding: 0;
+}
+/* line 1354, src/style.scss */
+#content-wrap .widget_nav_menu li li {
+  border: none;
+  overflow: hidden;
+  background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px 0.4em;
+  text-indent: 15px;
+}
+/* line 1364, src/style.scss */
+#content-wrap .widget_nav_menu li.down {
+  background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 6px 0.8em;
+}
+/* line 1366, src/style.scss */
+#content-wrap .widget_nav_menu li.down li.down {
+  background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 16px 0.8em;
+}
+/* line 1368, src/style.scss */
+#content-wrap .widget_nav_menu li.down li.down li.down {
+  background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 26px 0.8em;
+}
+/* line 1374, src/style.scss */
+#content-wrap .widget_nav_menu ul.sub-menu li {
+  margin-left: 1em;
+}
+
+/* line 1379, src/style.scss */
+.widget_social_media.widget-container h3.widget-title {
+  background-position: right -60px;
+}
+
+/* line 1383, src/style.scss */
+.widget_social_media.widget-container h3.widget-title {
+  background-position: right -60px;
+}
+
+/* line 1386, src/style.scss */
+.widget_twitter h3.widget-title {
+  background-position: right -180px;
+}
+
+/* line 1390, src/style.scss */
+.agrilife_today_twitter h3.widget-title,
+.home-widgets-lower .widget:first-child h3.widget-title {
+  background-position: right -120px;
+}
+
+/* line 1393, src/style.scss */
+.widget_twitter .widget-wrap ul {
+  padding: 0;
+  margin: 0 0 0.5em;
+}
+
+/* line 1397, src/style.scss */
+.widget_twitter li {
+  padding: 0.5em 6% 1em;
+  border-bottom: 1px dashed #999999;
+}
+
+/* line 1401, src/style.scss */
+.widget-container h3.widget-title a {
+  color: white;
+}
+
+/* line 1404, src/style.scss */
+.home .widget h3.widget-title .rsswidget img {
+  display: none;
+}
+
+/* line 1407, src/style.scss */
+.widget li.social-media-item {
+  margin-bottom: 0;
+}
+
+/* line 1410, src/style.scss */
+.search-widget {
+  border: none;
+  margin: 0 0 0.5em;
+  padding: 3.333333333%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 1, src/widgets/_tag-cloud.scss */
+.tagcloud a {
+  line-height: 1.625em;
+  /* 26px / 16px */
+  border: none;
+  font-family: verdana, clean, sans-serif;
+}
+
+/* line 6, src/widgets/_tag-cloud.scss */
+.tagcloud a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, src/widgets/_agrilife-today.scss */
+.agrilifetoday ul li {
+  margin: 0;
+  padding: 20px 0 20px 65px;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+  position: relative;
+}
+
+/* line 9, src/widgets/_agrilife-today.scss */
+.agrilifetoday ul li img {
+  left: 0;
+  top: 20px;
+  padding: 4px;
+  position: absolute;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  margin-right: 3%;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0 1px 2px #d8d3ae;
+  -moz-box-shadow: 0 1px 2px #d8d3ae;
+  box-shodow: 0 1px 2px #d8d3ae;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 25, src/widgets/_agrilife-today.scss */
+.widget_twitter ul li .entry-meta {
+  font-size: .9em;
+  display: block;
+}
+
+/* line 30, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+  overflow: visible;
+  position: relative;
+}
+
+/* line 38, src/widgets/_agrilife-today.scss */
+#aside .agrilifetoday ul li {
+  padding: 20px 0 20px 65px;
+}
+
+/* line 41, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li img {
+  width: 150px;
+  height: 150px;
+  left: 0;
+  top: 0;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  -webkit-box-shadow: 0 2px 5px #cccccc;
+  -moz-box-shadow: 0 2px 5px #cccccc;
+  box-shodow: 0 2px 5px #cccccc;
+}
+
+/* line 55, src/widgets/_agrilife-today.scss */
+#aside .agrilifetoday ul li img {
+  width: 48px;
+  height: 48px;
+}
+
+/* line 59, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li a.rss-title-link {
+  font-size: 22px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+/* line 65, src/widgets/_agrilife-today.scss */
+.agrilifetoday ul li span.rss-date {
+  display: block;
+  padding-top: 7px;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+/* line 73, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li .rss-content {
+  position: relative;
+}
+
+/* line 77, src/widgets/_agrilife-today.scss */
+body.home #home-middle .agrilifetoday ul li span.rss-date {
+  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: .8em;
+  background: #726b60;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 2px 5px 1px;
+  -webkit-box-shadow: 0 0 4px white;
+  -moz-box-shadow: 0 0 4px white;
+  box-shadow: 0 0 4px white;
+  position: absolute;
+  left: -5px;
+  top: 30px;
+  z-index: 999;
+  margin: 1px;
+  font-style: normal;
+}
+
+/* line 96, src/widgets/_agrilife-today.scss */
+body.home.research #home-middle .agrilifetoday ul li span.rss-date {
+  background: #5A8C37;
+}
+
+/* line 99, src/widgets/_agrilife-today.scss */
+body.home.extension #home-middle .agrilifetoday ul li span.rss-date {
+  background: #004C6B;
+}
+
+/* line 102, src/widgets/_agrilife-today.scss */
+body.home.college #home-middle .agrilifetoday ul li span.rss-date {
+  background: #5D0025;
+}
+
+/* line 106, src/widgets/_agrilife-today.scss */
+#aside .agrilifetoday ul li p.rss-excerpt {
+  font-size: 11px;
+}
+
+/* line 109, src/widgets/_agrilife-today.scss */
+#home-middle .agrilifetoday ul li .rss-title {
+  display: block;
+}
+
+/* line 1, src/widgets/_agrilife-watch_read_listen.scss */
+#aside #books-bg {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* line 6, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books {
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: 25px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 15, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li {
+  position: relative;
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+/* line 22, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li dt.book-title {
+  float: right;
+  width: 55%;
+  padding-top: 25px;
+  line-height: 1em;
+}
+
+/* line 29, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li dd.price {
+  position: absolute;
+  background: url("images/price-circle.png") no-repeat 40% 50%;
+  z-index: 6;
+  top: -15px;
+  left: 30%;
+  padding: 13px 10px 16px 10px;
+  color: #8C2B17;
+  font: 0.95em georgia;
+}
+
+/* line 40, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li dd.price em {
+  font-size: .75em;
+  font-style: normal;
+}
+
+/* line 45, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li dd.price span {
+  font-size: .5em;
+  vertical-align: super;
+}
+
+/* line 50, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li p.btn {
+  clear: both;
+  z-index: 5;
+}
+
+/* line 55, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li p.btn a {
+  padding: 4px 12px;
+  font-size: 10px;
+  color: #806E38;
+  border: 1px solid #bba563;
+  background: #c7bc7f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ded8b4), to(#c7bc7f));
+  background: -moz-linear-gradient(top, #ded8b4, #c7bc7f);
+}
+
+/* line 65, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li p.btn a:hover {
+  cursor: pointer;
+  border: 1px solid #bba563;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shodow: none;
+  background: #c7bc7f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cfc591), to(#c7bc7f));
+  background: -moz-linear-gradient(top, #cfc591, #c7bc7f);
+}
+
+/* line 76, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li p.btn a:active {
+  cursor: pointer;
+  background: #c7bc7f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c7bc7f), to(#cfc591));
+  background: -moz-linear-gradient(top, #c7bc7f, #cfc591);
+}
+
+/* line 83, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul.books li img.book {
+  width: 33%;
+}
+
+/* line 88, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul li.widget-container.Watch.Read.Listen {
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0);
+}
+
+/* line 97, src/widgets/_agrilife-watch_read_listen.scss */
+#aside ul li.widget-container.Watch.Read.Listen .widget-wrap {
+  position: relative;
+  padding: 0;
+  background: transparent;
+  border-radius: 0px;
+}
+
+/* line 104, src/widgets/_agrilife-watch_read_listen.scss */
+.intent-meta a {
+  margin: 0 5px 10px 0;
+  padding: 2px 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  font-size: 11px;
+  border: none;
+}
+
+/* line 114, src/widgets/_agrilife-watch_read_listen.scss */
+.intent-meta a:hover,
+.intent-meta a:active {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* line 118, src/widgets/_agrilife-watch_read_listen.scss */
+#secondary span.entry-meta {
+  margin: 10px 0;
+  font-size: 11px;
+}
+
+/* line 124, src/widgets/_agrilife-watch_read_listen.scss */
+#aside #aside-widget-area-1 ul li.Watch {
+  padding: 0;
+  margin-bottom: 20px;
+  background: none;
+}
+
+/* line 1, src/widgets/_twitter.scss */
+.widget_twitter {
+  position: relative;
+}
+
+/* line 6, src/widgets/_twitter.scss */
+.widget_twitter_hash_tag ul.twitter-hash-tag-widget li,
+.widget_twitter ul li {
+  margin: 0;
+  padding: 20px 0 20px 65px;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+  position: relative;
+}
+
+/* line 14, src/widgets/_twitter.scss */
+.widget_twitter .twitter-avatar a {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  padding: 4px;
+  margin-bottom: 3%;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  border: none;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0 1px 2px #d8d3ae;
+  -moz-box-shadow: 0 1px 2px #d8d3ae;
+  box-shodow: 0 1px 2px #d8d3ae;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 31, src/widgets/_twitter.scss */
+.widget_twitter ul li {
+  padding: 20px 0 20px 65px;
+}
+
+/* line 35, src/widgets/_twitter.scss */
+.follow-button {
+  margin: 20px 0;
+}
+
+/* line 41, src/widgets/_twitter.scss */
+.widget_twitter_hash_tag ul.twitter-hash-tag-widget > li:first-child,
+.widget_twitter ul > li:first-child,
+.agrilifetoday ul > li:first-child {
+  border-top: none;
+}
+
+/* line 46, src/widgets/_twitter.scss */
+ul.twitter-hash-tag-widget li a img,
+.widget_twitter ul li a img {
+  left: 0;
+  top: 20px;
+  padding: 4px;
+  position: absolute;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  margin-right: 3%;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0 1px 2px #d8d3ae;
+  -moz-box-shadow: 0 1px 2px #d8d3ae;
+  box-shodow: 0 1px 2px #d8d3ae;
+  width: 48px;
+  height: 48px;
+}
+
+/* Attachment pages -------------- */
+/* line 12, src/wordpress/_attachment-pages.scss */
+.attachment .entry-content .nav-next a:after {
+  content: '\00a0\2192';
+}
+
+/*  =Comments ----- */
+/* line 2, src/wordpress/_comments.scss */
+#comments {
+  clear: both;
+}
+
+/* line 5, src/wordpress/_comments.scss */
+#comments .navigation {
+  padding: 0 0 18px 0;
+}
+
+/* line 9, src/wordpress/_comments.scss */
+h3#comments-title,
+h3#reply-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* line 15, src/wordpress/_comments.scss */
+h3#comments-title {
+  padding: 24px 0;
+}
+
+/* line 18, src/wordpress/_comments.scss */
+#content-wrap ol.commentlist {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 22, src/wordpress/_comments.scss */
+.commentlist li.odd {
+  background: #f4f3ea;
+}
+
+/* line 25, src/wordpress/_comments.scss */
+.commentlist li.comment {
+  border-bottom: 1px solid #e7e7e7;
+  margin: 0;
+  padding: 24px 0 24px 56px;
+  position: relative;
+}
+
+/* line 31, src/wordpress/_comments.scss */
+.commentlist li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* line 36, src/wordpress/_comments.scss */
+#comments .comment-body ul,
+#comments .comment-body ol {
+  margin-bottom: 18px;
+}
+
+/* line 39, src/wordpress/_comments.scss */
+#comments .comment-body p:last-child {
+  margin-bottom: 6px;
+}
+
+/* line 42, src/wordpress/_comments.scss */
+#comments .comment-body blockquote p:last-child {
+  margin-bottom: 24px;
+}
+
+/* line 45, src/wordpress/_comments.scss */
+.commentlist ol {
+  list-style: decimal;
+}
+
+/* line 48, src/wordpress/_comments.scss */
+.commentlist .avatar {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+/* line 55, src/wordpress/_comments.scss */
+.comment-author cite {
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 60, src/wordpress/_comments.scss */
+.comment-author .says {
+  font-style: italic;
+}
+
+/* line 63, src/wordpress/_comments.scss */
+.comment-meta {
+  font-size: 12px;
+  margin: 0 0 18px 0;
+}
+
+/* line 68, src/wordpress/_comments.scss */
+.comment-meta a:link,
+.comment-meta a:visited {
+  color: #888;
+  text-decoration: none;
+}
+
+/* line 73, src/wordpress/_comments.scss */
+.comment-meta a:active,
+.comment-meta a:hover {
+  color: #FF4B33;
+}
+
+/* line 80, src/wordpress/_comments.scss */
+.reply {
+  font-size: 12px;
+  padding: 0 0 24px 0;
+}
+
+/* line 85, src/wordpress/_comments.scss */
+.reply a,
+a.comment-edit-link {
+  color: #888;
+}
+
+/* line 89, src/wordpress/_comments.scss */
+.reply a:hover,
+a.comment-edit-link:hover {
+  color: #FF4B33;
+}
+
+/* line 92, src/wordpress/_comments.scss */
+.commentlist .children {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 96, src/wordpress/_comments.scss */
+.commentlist .children li {
+  border: none;
+  margin: 0;
+}
+
+/* line 101, src/wordpress/_comments.scss */
+.nopassword,
+.nocomments {
+  display: none;
+}
+
+/* line 104, src/wordpress/_comments.scss */
+#comments .pingback {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 109, src/wordpress/_comments.scss */
+.commentlist li.comment + li.pingback {
+  margin-top: -6px;
+}
+
+/* line 112, src/wordpress/_comments.scss */
+#comments .pingback p {
+  color: #888;
+  font-size: 12px;
+  display: block;
+  margin: 0;
+}
+
+/* line 118, src/wordpress/_comments.scss */
+#comments .pingback .url {
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* Comments form */
+/* line 126, src/wordpress/_comments.scss */
+input[type=submit] {
+  color: #333;
+}
+
+/* line 129, src/wordpress/_comments.scss */
+#respond {
+  margin: 24px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 134, src/wordpress/_comments.scss */
+#respond p {
+  margin: 0;
+}
+
+/* line 137, src/wordpress/_comments.scss */
+#respond .comment-notes {
+  margin-bottom: 1em;
+}
+
+/* line 142, src/wordpress/_comments.scss */
+.children #respond {
+  margin: 0 48px 0 0;
+}
+
+/* line 145, src/wordpress/_comments.scss */
+h3#reply-title {
+  margin: 18px 0;
+}
+
+/* line 148, src/wordpress/_comments.scss */
+#comments-list #respond {
+  margin: 0 0 18px 0;
+}
+
+/* line 151, src/wordpress/_comments.scss */
+#comments-list ul #respond {
+  margin: 0;
+}
+
+/* line 154, src/wordpress/_comments.scss */
+#cancel-comment-reply-link {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 158, src/wordpress/_comments.scss */
+#respond .required {
+  color: #FF4B33;
+  font-weight: bold;
+}
+
+/* line 162, src/wordpress/_comments.scss */
+#respond label {
+  color: #888;
+  font-size: 12px;
+}
+
+/* line 166, src/wordpress/_comments.scss */
+#respond input {
+  margin: 0 0 9px;
+  width: 98%;
+}
+
+/* line 170, src/wordpress/_comments.scss */
+#respond textarea {
+  width: 98%;
+}
+
+/* line 173, src/wordpress/_comments.scss */
+#respond .form-allowed-tags {
+  color: #888;
+  font-size: 12px;
+}
+
+/* line 177, src/wordpress/_comments.scss */
+#respond .form-allowed-tags code {
+  font-size: 11px;
+}
+
+/* line 180, src/wordpress/_comments.scss */
+#respond .form-submit {
+  margin: 12px 0;
+}
+
+/* line 183, src/wordpress/_comments.scss */
+#respond .form-submit input {
+  width: auto;
+  font-size: 14px;
+}
+
+/* Images ------------- */
+/* line 10, src/wordpress/_images.scss */
+#content .alignleft,
+#content img.alignleft {
+  display: inline;
+  float: left;
+  margin-top: 4px;
+}
+
+/* line 16, src/wordpress/_images.scss */
+#content .alignright,
+#content img.alignright {
+  display: inline;
+  float: right;
+  margin-top: 4px;
+}
+
+/* line 22, src/wordpress/_images.scss */
+#content .aligncenter,
+#content img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 30, src/wordpress/_images.scss */
+#content img.alignleft,
+#content img.alignright,
+#content img.aligncenter {
+  margin-bottom: 20px;
+}
+
+/* line 34, src/wordpress/_images.scss */
+#content img.alignleft {
+  margin-right: 20px;
+}
+
+/* line 38, src/wordpress/_images.scss */
+#content img.alignright {
+  margin-left: 20px;
+}
+
+/* line 42, src/wordpress/_images.scss */
+#content .wp-caption {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* line 50, src/wordpress/_images.scss */
+#content .wp-caption.alignleft {
+  text-align: center;
+  margin: 5px 20px 10px 6px;
+}
+
+/* line 55, src/wordpress/_images.scss */
+#content .wp-caption a {
+  border: none;
+}
+
+/* line 59, src/wordpress/_images.scss */
+#content .wp-caption img {
+  max-width: 100%;
+  margin: 5px 5px 0;
+  height: auto;
+}
+
+/* line 64, src/wordpress/_images.scss */
+#content .wp-caption p.wp-caption-text {
+  margin: 5px;
+  color: #888;
+  font-size: 13px;
+}
+
+/* line 69, src/wordpress/_images.scss */
+#content .wp-smiley {
+  margin: 0;
+}
+
+/* line 72, src/wordpress/_images.scss */
+#content .gallery {
+  margin: auto;
+}
+
+/* line 75, src/wordpress/_images.scss */
+#content .gallery .gallery-item {
+  float: left;
+  margin-top: 0;
+  text-align: center;
+  width: 33%;
+}
+
+/* line 81, src/wordpress/_images.scss */
+#content .gallery img {
+  border: 2px solid #cfcfcf;
+}
+
+/* line 84, src/wordpress/_images.scss */
+#content .gallery .gallery-caption {
+  color: #888;
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+/* line 89, src/wordpress/_images.scss */
+#content .gallery dl {
+  margin: 0;
+}
+
+/* line 93, src/wordpress/_images.scss */
+#content .gallery br + br {
+  display: none;
+}
+
+/* line 97, src/wordpress/_images.scss */
+img, video, object, iframe {
+  max-width: 100%;
+}
+
+/* line 101, src/wordpress/_images.scss */
+img {
+  height: auto;
+}
+
+/* line 105, src/wordpress/_images.scss */
+.feature-img-excerpt {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+/* line 113, src/wordpress/_images.scss */
+.feature-img-excerpt:hover {
+  opacity: .9;
+  border: none;
+}
+
+/* =Navigation -------------------------- */
+/* line 14, src/wordpress/_navigation.scss */
+.nav-previous {
+  float: left;
+}
+
+/* line 17, src/wordpress/_navigation.scss */
+.nav-next {
+  float: right;
+}
+
+/* line 21, src/wordpress/_navigation.scss */
+#nav-above,
+#nav-below {
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+
+/* Main sidebars */
+/* line 1436, src/style.scss */
+#main .widget-area ul {
+  margin-left: 0;
+  padding: 0 20px 0 0;
+}
+
+/* line 1440, src/style.scss */
+#main .widget-area ul ul {
+  border: none;
+  margin-left: 1.3em;
+  padding: 0;
+}
+
+/* line 1447, src/style.scss */
+#secondary ul {
+  margin: 0;
+}
+
+@media print {
+  /* line 1, src/print.scss */
+  body {
+    background: none !important;
+  }
+
+  /* line 4, src/print.scss */
+  #wrapper {
+    float: none !important;
+    clear: both !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  /* line 10, src/print.scss */
+  #header {
+    border-bottom: 2pt solid black;
+    padding-bottom: 18pt;
+  }
+
+  /* line 14, src/print.scss */
+  #colophon {
+    border-top: 2pt solid black;
+  }
+
+  /* line 18, src/print.scss */
+  #site-title,
+  #site-description {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 23, src/print.scss */
+  #site-title {
+    font-size: 13pt;
+  }
+
+  /* line 26, src/print.scss */
+  .entry-content {
+    font-size: 14pt;
+  }
+
+  /* line 29, src/print.scss */
+  .entry-title {
+    font-size: 21pt;
+  }
+
+  /* line 39, src/print.scss */
+  #access,
+  #branding img,
+  #respond,
+  .comment-edit-link,
+  .edit-link,
+  .navigation,
+  .page-link,
+  .widget-area {
+    display: none !important;
+  }
+
+  /* line 44, src/print.scss */
+  #container,
+  #header,
+  #footer {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 49, src/print.scss */
+  #content,
+  .one-column #content {
+    width: 100%;
+    margin: 24pt 0 0;
+  }
+
+  /* line 53, src/print.scss */
+  .wp-caption p {
+    font-size: 11pt;
+  }
+
+  /* line 57, src/print.scss */
+  #site-info,
+  #site-generator {
+    float: none;
+    width: auto;
+  }
+
+  /* line 61, src/print.scss */
+  #colophon {
+    width: auto;
+  }
+
+  /* line 64, src/print.scss */
+  img#wpstats {
+    display: none;
+  }
+
+  /* line 67, src/print.scss */
+  #site-generator a {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 71, src/print.scss */
+  #entry-author-info {
+    border: 1px solid #e7e7e7;
+  }
+
+  /* line 74, src/print.scss */
+  #main {
+    display: inline;
+  }
+
+  /* line 77, src/print.scss */
+  .home .sticky {
+    border: none;
+  }
+}
+@media all and (min-width: 640px) {
+  /* line 1458, src/style.scss */
+  .js [role="document"] {
+    /* For Dev */
+  }
+
+  /* line 1462, src/style.scss */
+  body {
+    font-size: 110%;
+  }
+
+  /* line 1465, src/style.scss */
+  #site-title {
+    margin: 20px 0;
+  }
+
+  /* line 1468, src/style.scss */
+  #site-title a {
+    font-size: 1em;
+    line-height: 1.125em;
+    /* 18px / 16px */
+  }
+
+  /* line 1473, src/style.scss */
+  #breadcrumbs {
+    width: 100%;
+    margin-right: 25px;
+    border-top: 2px solid #dcdace;
+    border-bottom: 2px solid #dcdace;
+    background: #fff;
+    padding: 0.8em 10px;
+  }
+
+  /* line 1482, src/style.scss */
+  #content-wrap {
+    /*position: relative;
+    z-index: 2;
+    border-top: 2px solid #e7e2cb;
+    margin-top: -2px;
+    width: 100%;
+    -webkit-box-shadow: 0 -2px 6px rgba(16,16,16,.075);
+    -moz-box-shadow: -4px -2px 6px rgba(16,16,16,.075);
+    box-shadow: 0 -2px 6px rgba(16,16,16,.075);	
+    background: #fff url(images/gradient.png?v=100) repeat-x left -100px;	
+    */
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 1497, src/style.scss */
+  .wrap {
+    padding: 0;
+  }
+  /* line 1499, src/style.scss */
+  .wrap #wrap {
+    width: 100%;
+  }
+}
+@media all and (min-width: 840px) {
+  /* line 1507, src/style.scss */
+  #wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding-top: 108px;
+    background: url("images/background2.gif") no-repeat 50% -1px;
+  }
+
+  /* line 1514, src/style.scss */
+  .js [role="document"] {
+    /* For Dev */
+  }
+
+  /* line 1519, src/style.scss */
+  .js #access {
+    display: block;
+  }
+
+  /* line 1523, src/style.scss */
+  body {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 1100, color-stop(70.90909%, #9c7d0d), color-stop(100%, #f5f0e4));
+    background-image: -webkit-linear-gradient(#9c7d0d 780px, #f5f0e4 1100px);
+    background-image: -moz-linear-gradient(#9c7d0d 780px, #f5f0e4 1100px);
+    background-image: -o-linear-gradient(#9c7d0d 780px, #f5f0e4 1100px);
+    background-image: linear-gradient(#9c7d0d 780px, #f5f0e4 1100px);
+  }
+
+  /* line 1528, src/style.scss */
+  #drop-section-nav {
+    width: 100%;
+    background: url(images/header-bar-bg.png) repeat-x transparent;
+    padding: 0;
+    height: 42px;
+    position: absolute;
+    z-index: 3;
+  }
+  /* line 1535, src/style.scss */
+  #drop-section-nav ul {
+    padding: 0;
+  }
+  /* line 1538, src/style.scss */
+  #drop-section-nav #drop-nav {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  /* line 1544, src/style.scss */
+  .site-title {
+    height: 42px;
+  }
+  /* line 1546, src/style.scss */
+  .site-title a {
+    border-bottom: white 10px solid;
+    border-right: white 13px solid;
+    border-left: white 13px solid;
+    padding: 27px 20px 37px 20px;
+    position: absolute;
+    background: url("images/logo-w@2x.png") no-repeat center #500000;
+    background-size: 200px 37px;
+    width: 200px;
+    height: 37px;
+    text-indent: -9999em;
+  }
+  /* line 1557, src/style.scss */
+  .site-title a:hover {
+    color: #500000;
+    border-color: #fff;
+  }
+
+  /* =============================================================================
+     Search Box
+     ========================================================================== */
+  /* line 1567, src/style.scss */
+  .js .searchform {
+    width: 100px;
+    overflow: hidden;
+    top: -130px;
+    right: 0;
+    position: absolute;
+    z-index: 200;
+  }
+  /* line 1574, src/style.scss */
+  .js .searchform input.s {
+    padding: 8px 5px 8px 30px;
+    width: 0px;
+    float: right;
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    -o-transition-property: width;
+    transition-property: width;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    background: white url("http://agrilife.org/wp-content/themes/AgriLife-Beta/images/search.png") no-repeat 2px 45%;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-left-radius: 0;
+  }
+  /* line 1591, src/style.scss */
+  .js .searchform input.s:hover {
+    background-color: #f7f7f7;
+  }
+  /* line 1594, src/style.scss */
+  .js .searchform input.s:focus {
+    width: 60px;
+    background-color: #fafafa;
+    outline: none;
+    border-color: #2783e6;
+    -webkit-box-shadow: 0 0 5px #2783e6;
+    -moz-box-shadow: 0 0 5px #2783e6;
+    box-shadow: 0 0 5px #2783e6;
+  }
+
+  /* line 1612, src/style.scss */
+  .js #access {
+    display: block;
+    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    z-index: 99;
+    width: 1024px;
+    padding: 0 59px;
+  }
+
+  /* main menu */
+  /* line 1622, src/style.scss */
+  #access ul.menu li {
+    margin: 0;
+    padding: 0 18px 0 0;
+    float: left;
+  }
+
+  /* line 1628, src/style.scss */
+  #access .menu-header ul.sub-menu li {
+    margin-left: 0;
+  }
+
+  /* line 1629, src/style.scss */
+  #access ul.menu li li {
+    border-radius: 0;
+  }
+
+  /* line 1633, src/style.scss */
+  #access ul.menu li.current-menu-item,
+  #access ul.menu li.current_page_parent {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* line 1638, src/style.scss */
+  #access ul.menu li.current-menu-item:hover,
+  #access ul.menu li.current_page_parent:hover {
+    /* background: #e3e1d5; */
+  }
+
+  /* line 1641, src/style.scss */
+  #access ul.menu li.current-menu-item:first-child:hover {
+    /* background: #f1f0e7;	*/
+  }
+
+  /* line 1644, src/style.scss */
+  #access ul.menu li a[title='home'] {
+    background-position: 10px 12px;
+    width: 20px;
+    padding: 1em 1em;
+  }
+
+  /* line 1650, src/style.scss */
+  #access ul.menu li a[title='home']:hover {
+    background-position: 10px -18px;
+  }
+
+  /* line 1654, src/style.scss */
+  #access ul.menu li a {
+    background: transparent;
+    color: #fff;
+    border: 0;
+    padding: 0 0.5em;
+    letter-spacing: 2px;
+  }
+
+  /* line 1662, src/style.scss */
+  #access ul.menu li a:hover {
+    color: #E5DABB;
+    text-decoration: none;
+  }
+
+    /* =============================================================================
+	   Dropdown Navigation Styles
+	   ========================================================================== */
+  /* line 1672, src/style.scss */
+  #access .sf-menu li {
+    font: sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    line-height: 2.8em;
+  }
+  /* line 1677, src/style.scss */
+  #access .sf-menu li:hover a {
+    position: relative;
+    z-index: 7;
+  }
+  /* line 1682, src/style.scss */
+  #access .sf-menu li a {
+    padding: 0;
+    border-top-right-radius: none;
+  }
+  /* line 1687, src/style.scss */
+  #access .sf-menu li.current-menu-item,
+  #access .sf-menu li.current_page_parent {
+    position: relative;
+    z-index: 2;
+  }
+  /* line 1691, src/style.scss */
+  #access .sf-menu ul {
+    position: absolute;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: -999em;
+    width: 26em;
+  }
+  /* line 1699, src/style.scss */
+  #access .sf-menu li:hover ul,
+  #access .sf-menu li.sfHover ul {
+    left: 0;
+    margin-left: 1px;
+    margin-top: -1px;
+    top: 2.9em;
+    z-index: 6;
+    position: absolute;
+  }
+
+  /* line 1711, src/style.scss */
+  #access .sf-menu li:hover {
+    visibility: inherit;
+    /* fixes IE7 'sticky bug' */
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+  }
+
+  /* line 1718, src/style.scss */
+  #access .sf-menu li a[title='home'] {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+
+  /* line 1724, src/style.scss */
+  #access .sf-menu ul li:hover {
+    visibility: inherit;
+    /* fixes IE7 'sticky bug' */
+    background: transparent;
+    border-top-right-radius: none;
+  }
+
+  /* line 1729, src/style.scss */
+  #access .sf-menu ul li {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px dashed black;
+    background: transparent;
+    padding: 0;
+  }
+
+  /* line 1740, src/style.scss */
+  #access .sf-menu a {
+    display: block;
+    position: relative;
+    background: transparent;
+  }
+
+  /* line 1746, src/style.scss */
+  #access .sf-menu li:hover,
+  #access .sf-menu li.sfHover {
+    z-index: 7;
+    position: relative;
+  }
+
+  /* line 1750, src/style.scss */
+  #access ul.menu li li a {
+    font-family: "camingodos-web",sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: normal;
+    border: none;
+    overflow: hidden;
+    margin: 0 0 -1px 0;
+    padding: 1em 15px;
+  }
+
+  /* line 1765, src/style.scss */
+  #access ul.sf-menu li:hover li ul,
+  #access ul.sf-menu li.sfHover li ul {
+    top: -999em;
+  }
+
+  /* line 1769, src/style.scss */
+  #access ul.sf-menu li li:hover ul,
+  #access ul.sf-menu li li.sfHover ul {
+    left: 15.2em;
+    /* match ul width */
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* line 1777, src/style.scss */
+  #access ul.sf-menu li li:hover li ul,
+  #access ul.sf-menu li li.sfHover li ul {
+    top: -999em;
+  }
+
+  /* line 1781, src/style.scss */
+  #access ul.sf-menu li li li:hover ul,
+  #access ul.sf-menu li li li.sfHover ul {
+    left: 13em;
+    /* match ul width */
+    top: 0;
+    margin-left: 0px;
+  }
+
+  /*** arrows **/
+  /* line 1788, src/style.scss */
+  #access .sf-menu li a.sf-with-ul {
+    min-width: 1px;
+    /* trigger IE7 hasLayout so spans position accurately */
+    background: url(images/down-arrow4.png) no-repeat right 13px transparent;
+    padding: 1em 2em 1em 2em;
+  }
+
+  /* line 1793, src/style.scss */
+  #access .sf-menu li a.sf-with-ul:hover {
+    background-position: right -103px;
+  }
+
+  /* line 1797, src/style.scss */
+  #access .sf-menu li li a.sf-with-ul {
+    min-width: 1px;
+    /* trigger IE7 hasLayout so spans position accurately */
+    background: url(images/right-arrow.png) no-repeat left 58% transparent;
+    padding: 1em 2em 1em 1.3em;
+  }
+
+  /* line 1802, src/style.scss */
+  #access .sf-menu li li a.sf-with-ul:hover {
+    background-position: left 58%;
+  }
+
+  /* line 1807, src/style.scss */
+  #access .sf-sub-indicator {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: .55em;
+    /* IE6 only */
+    width: 8px;
+    height: 11px;
+    text-indent: -999em;
+    overflow: hidden;
+  }
+
+  /* line 1818, src/style.scss */
+  #access a > .sf-sub-indicator {
+    /* give all except IE6 the correct values */
+    top: .8em;
+    background-position: 0 -100px;
+    /* use translucent arrow for modern browsers*/
+  }
+
+  /* apply hovers to modern browsers */
+  /* line 1827, src/style.scss */
+  #access a:focus > .sf-sub-indicator,
+  #access a:hover > .sf-sub-indicator,
+  #access a:active > .sf-sub-indicator,
+  #access li:hover > a > .sf-sub-indicator,
+  #access li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px -100px;
+    /* arrow hovers for modern browsers*/
+  }
+
+  /* point right for anchors in subs */
+  /* line 1832, src/style.scss */
+  #access .sf-menu ul .sf-sub-indicator {
+    background-position: -10px 0;
+  }
+
+  /* line 1833, src/style.scss */
+  #access .sf-menu ul a > .sf-sub-indicator {
+    background-position: 0 0;
+  }
+
+  /* apply hovers to modern browsers */
+  /* line 1839, src/style.scss */
+  #access .sf-menu ul a:focus > .sf-sub-indicator,
+  #access .sf-menu ul a:hover > .sf-sub-indicator,
+  #access .sf-menu ul a:active > .sf-sub-indicator,
+  #access .sf-menu ul li:hover > a > .sf-sub-indicator,
+  #access .sf-menu ul li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px 0;
+    /* arrow hovers for modern browsers*/
+  }
+
+  /* End main menu */
+  /* line 1846, src/style.scss */
+  #aside {
+    clear: none;
+    float: left;
+    margin: 2.5% 2% 2% 3%;
+    background-color: #f0f0f0;
+    width: 33%;
+    padding: 1%;
+  }
+
+  /* line 1856, src/style.scss */
+  .wrap #wrap {
+    float: right;
+    overflow: hidden;
+    clear: both;
+    width: 55%;
+    margin: 2.5% 3% 2% 0;
+    padding: 0 1% 1% 1%;
+  }
+
+  /* line 1866, src/style.scss */
+  [role="document"] {
+    font-size: .9em;
+  }
+
+  /* line 1874, src/style.scss */
+  .menu-secondary {
+    position: absolute;
+    top: 67px;
+    margin-left: 287px;
+  }
+  /* line 1878, src/style.scss */
+  .menu-secondary ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 1882, src/style.scss */
+  .menu-secondary li {
+    float: left;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  /* line 1885, src/style.scss */
+  .menu-secondary li ~ li {
+    margin-left: 20px;
+  }
+  /* line 1888, src/style.scss */
+  .menu-secondary li:hover {
+    border: 1px solid white;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    -moz-transition-duration: 0.15s;
+    -o-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  /* line 1896, src/style.scss */
+  .menu-secondary a {
+    font-size: .9em;
+    line-height: 1.9em;
+    text-align: center;
+    color: #000;
+    padding: 3px 2px;
+    display: block;
+    margin: 3px 4px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 28px;
+    width: 155px;
+  }
+  /* line 1907, src/style.scss */
+  .menu-secondary a:hover {
+    background: #fff;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    -moz-transition-duration: 0.15s;
+    -o-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+
+  /* line 1919, src/style.scss */
+  #aside .widget-container {
+    padding: 0 4%;
+    position: relative;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 0;
+  }
+  /* line 1926, src/style.scss */
+  #aside .widget-container .widget-wrap ul,
+  #aside .widget-container .textwidget {
+    padding: 3%;
+  }
+
+  /* Agency Specific Styles */
+  /* @import "agencies/tvmdl"; */
+  /* @import "agencies/extension-county"; */
+  /* @import "agencies/fazd"; */
+  /* line 2, src/_agency-logorama.scss */
+  #agency-nav {
+    top: -42px;
+    left: 265px;
+  }
+  /* line 9, src/_agency-logorama.scss */
+  #agency-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 12, src/_agency-logorama.scss */
+  #agency-nav ul li {
+    display: block;
+    list-style: none;
+    position: absolute;
+    float: none;
+  }
+  /* line 17, src/_agency-logorama.scss */
+  #agency-nav ul li a {
+    height: 42px;
+    background: url("images/agency-nav.png");
+    text-indent: -9999em;
+    display: block;
+    position: absolute;
+    border-bottom: none;
+  }
+  /* line 25, src/_agency-logorama.scss */
+  #agency-nav ul li.tfs-item a {
+    width: 167px;
+    z-index: 5;
+  }
+  /* line 28, src/_agency-logorama.scss */
+  #agency-nav ul li.tfs-item a:hover {
+    background-position: -167px 0;
+  }
+  /* line 32, src/_agency-logorama.scss */
+  #agency-nav ul li.tvmdl-item {
+    left: 125px;
+    z-index: 4;
+  }
+  /* line 35, src/_agency-logorama.scss */
+  #agency-nav ul li.tvmdl-item a {
+    width: 167px;
+    background-position: 0 -42px;
+  }
+  /* line 38, src/_agency-logorama.scss */
+  #agency-nav ul li.tvmdl-item a:hover {
+    background-position: -167px -42px;
+  }
+  /* line 43, src/_agency-logorama.scss */
+  #agency-nav ul li.ext-item {
+    left: 256px;
+    z-index: 3;
+  }
+  /* line 46, src/_agency-logorama.scss */
+  #agency-nav ul li.ext-item a {
+    width: 167px;
+    background-position: 0 -84px;
+  }
+  /* line 49, src/_agency-logorama.scss */
+  #agency-nav ul li.ext-item a:hover {
+    background-position: -167px -84px;
+  }
+  /* line 54, src/_agency-logorama.scss */
+  #agency-nav ul li.res-item {
+    left: 385px;
+    z-index: 2;
+  }
+  /* line 57, src/_agency-logorama.scss */
+  #agency-nav ul li.res-item a {
+    width: 167px;
+    background-position: 0 -126px;
+  }
+  /* line 60, src/_agency-logorama.scss */
+  #agency-nav ul li.res-item a:hover {
+    background-position: -167px -126px;
+  }
+  /* line 65, src/_agency-logorama.scss */
+  #agency-nav ul li.agrilife-item {
+    left: 513px;
+    z-index: 1;
+  }
+  /* line 68, src/_agency-logorama.scss */
+  #agency-nav ul li.agrilife-item a {
+    width: 167px;
+    background-position: 0 -168px;
+  }
+  /* line 71, src/_agency-logorama.scss */
+  #agency-nav ul li.agrilife-item a:hover {
+    background-position: -167px -168px;
+  }
+
+  /**********************************************************
+  
+  	Styles Users Might Use
+  
+  	**********************************************************/
+  /* line 7, src/_user-styles.scss */
+  .topics-list-ul li {
+    font-family: verdana, clean, sans-serif;
+    font-size: 13px;
+    margin-left: 0;
+    padding: 1px 0;
+  }
+
+  /* line 13, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li {
+    padding: 20px 0 20px 65px;
+    font: 20px "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    border-bottom: 1px solid #e0dfd8;
+    border-top: 1px solid white;
+    position: relative;
+  }
+
+  /* line 21, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li img {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    padding: 4px;
+    margin-bottom: 3%;
+    background: #f0eee3;
+    background: rgba(255, 255, 255, 0.55);
+    border: none;
+    border-top: 1px solid white;
+    -webkit-box-shadow: 0 1px 2px #d8d3ae;
+    -moz-box-shadow: 0 1px 2px #d8d3ae;
+    box-shodow: 0 1px 2px #d8d3ae;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* line 37, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li img:hover {
+    background: #ecece3;
+  }
+
+  /* line 41, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li.first {
+    border-top: none;
+  }
+
+  /* line 45, src/_user-styles.scss */
+  .topics-list-ul li.topics-top-level-li.last {
+    border-bottom: none;
+  }
+
+  /* line 49, src/_user-styles.scss */
+  .topics-list-ul .topics-top-level-link {
+    margin: 0 0 10px;
+    display: block;
+    border: none;
+  }
+
+  /* line 54, src/_user-styles.scss */
+  .topics-list-ul a.topics-top-level-link:hover {
+    text-decoration: underline;
+  }
+
+  /* line 57, src/_user-styles.scss */
+  .topics-sub-li {
+    display: inline;
+    margin: 3px;
+  }
+
+  /* line 63, src/_user-styles.scss */
+  .one-of-2 {
+    width: 48%;
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 70, src/_user-styles.scss */
+  .two-of-2 {
+    width: 48%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 77, src/_user-styles.scss */
+  .two-of-2 ul, .one-of-2 ul,
+  .one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
+    margin-left: 1em;
+  }
+
+  /* line 80, src/_user-styles.scss */
+  .one-of-3 {
+    width: 30%;
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 88, src/_user-styles.scss */
+  .two-of-3 {
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 95, src/_user-styles.scss */
+  .three-of-3 {
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+  }
+
+  /* line 102, src/_user-styles.scss */
+  .callout {
+    background-color: #f5f0e4;
+    clear: both;
+    width: 100%;
+  }
+  /* line 106, src/_user-styles.scss */
+  .callout.right {
+    float: right;
+  }
+  /* line 109, src/_user-styles.scss */
+  .callout.left {
+    float: left;
+  }
+
+  /* line 114, src/_user-styles.scss */
+  .button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: .9em;
+    line-height: 1.9em;
+    text-align: center;
+    color: #000;
+    padding: 3px 2px;
+    display: block;
+    margin: 3px 4px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 28px;
+    width: 155px;
+  }
+  /* line 127, src/_user-styles.scss */
+  .button.grey {
+    background: #5f574f;
+    border-color: #5f574f;
+  }
+
+  	/**********************************************************
+  
+  	END - Styles Users Might Use
+  
+  	**********************************************************/
+}
+/* line 2, src/_footer.scss */
+#footer {
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto 3.33333% auto;
+  background: #500000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  padding: 0;
+}
+/* line 10, src/_footer.scss */
+#footer .wrap {
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 14, src/_footer.scss */
+#footer .wrap ul {
+  margin-left: 0;
+  padding: 5%;
+}
+/* line 17, src/_footer.scss */
+#footer .wrap ul li a {
+  display: block;
+  padding: 0.5em 0;
+  color: #EDECE4;
+}
+
+@media all and (min-width: 640px) {
+  /* line 28, src/_footer.scss */
+  #footer .wrap {
+    background: #fff;
+  }
+  /* line 31, src/_footer.scss */
+  #footer .wrap h4 {
+    margin-bottom: 2.5em;
+    font-size: 1em;
+  }
+  /* line 36, src/_footer.scss */
+  #footer .wrap a img:hover {
+    opacity: .75;
+  }
+  /* line 40, src/_footer.scss */
+  #footer .wrap ul {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  /* line 46, src/_footer.scss */
+  #footer .wrap ul li {
+    margin-right: 1px;
+    font-size: 1.1em;
+  }
+  /* line 51, src/_footer.scss */
+  #footer .wrap ul li a:hover {
+    text-decoration: underline;
+  }
+  /* line 55, src/_footer.scss */
+  #footer .wrap .contact ul li {
+    margin-bottom: 12px;
+  }
+}
+/* line 61, src/_footer.scss */
+#footer {
+  overflow: hidden;
+  padding: 0;
+}
+/* line 64, src/_footer.scss */
+#footer .wrap {
+  background: #500000;
+  padding: 1.5%;
+}
+/* line 67, src/_footer.scss */
+#footer .wrap ul {
+  list-style: none;
+  width: 94%;
+  margin: 0;
+  padding: 0 3%;
+}
+/* line 72, src/_footer.scss */
+#footer .wrap ul li {
+  font-size: .8em;
+  list-style: none;
+  float: left;
+  padding-right: 1em;
+  margin: 0.3em 1em 0.3em 0;
+  line-height: .6em;
+}
+/* line 79, src/_footer.scss */
+#footer .wrap ul li a {
+  font-size: .6em;
+  color: #9F6D56;
+}
+
+/* @import "jquery-tabs"; */
+/*----- Job Postings single page ------ */
+/* line 3, src/plugins/_job-postings-cpt.scss */
+.job-posting-dl {
+  padding: 20px 0 50px;
+}
+
+/* line 7, src/plugins/_job-postings-cpt.scss */
+.job-posting-dt {
+  padding: 0.5em 0 1em 0;
+}
+
+/* line 11, src/plugins/_job-postings-cpt.scss */
+.job-posting-dd {
+  border-bottom: 1px solid #d0ca9b;
+  margin: -3em 0 0 0;
+  padding: 0 0 0.75em 195px;
+}
+
+/* line 17, src/plugins/_job-postings-cpt.scss */
+.staff-search-form {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #edece4;
+  border-top: 1px solid #d5d1bf;
+  border-bottom: 1px solid #d5d1bf;
+  position: relative;
+}
+
+/* line 26, src/plugins/_job-postings-cpt.scss */
+.staff-search-form .searchform {
+  top: 8px;
+}
+
+/* line 30, src/plugins/_job-postings-cpt.scss */
+.staff-search-form label h4 {
+  margin-bottom: 5px;
+}
+
+/* line 34, src/plugins/_job-postings-cpt.scss */
+.staff-listing-ul {
+  border-top: double #d5d1bf;
+}
+
+/* line 39, src/plugins/_job-postings-cpt.scss */
+.staff-listing-ul,
+.staff-listing-item {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 45, src/plugins/_job-postings-cpt.scss */
+.staff-listing-item {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  overflow: hidden;
+  display: block;
+  background: #EAE6D2;
+  background: rgba(217, 208, 173, 0.3);
+  border-bottom: 1px solid #fafaf6;
+}
+
+/* line 56, src/plugins/_job-postings-cpt.scss */
+.staff-listing-item:nth-child(even) {
+  background: #EAE6D2;
+  background: rgba(217, 208, 173, 0.1);
+}
+
+/* line 61, src/plugins/_job-postings-cpt.scss */
+.staff-container {
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #d5d1c3;
+}
+
+/* line 69, src/plugins/_job-postings-cpt.scss */
+.staff-container img {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 75, src/plugins/_job-postings-cpt.scss */
+.staff-listing-item:hover,
+a.staff-listing-link:hover {
+  background: #f1efce;
+  border-bottom: 1px solid #9f9490;
+}
+
+/* line 79, src/plugins/_job-postings-cpt.scss */
+.staff-title {
+  font: 90% "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 87, src/plugins/_job-postings-cpt.scss */
+.staff-phone,
+.staff-email,
+.staff-position {
+  font-size: 14px;
+  color: #433C3A;
+}
+
+/* line 92, src/plugins/_job-postings-cpt.scss */
+.staff-position {
+  font-weight: bold;
+}
+
+/* line 96, src/plugins/_job-postings-cpt.scss */
+.staff-head {
+  width: 45%;
+  float: left;
+}
+
+/* line 101, src/plugins/_job-postings-cpt.scss */
+.staff-contact-details {
+  font-size: 14px;
+  color: #433C3A;
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+/* line 109, src/plugins/_job-postings-cpt.scss */
+.staff-contact-details p {
+  margin: 7px 0;
+}
+
+/* line 113, src/plugins/_job-postings-cpt.scss */
+#content p.job-location {
+  font-size: 12px;
+  color: #9f9490;
+  width: 30%;
+  margin: 0 0 0 65%;
+  padding-left: 20px;
+  background: transparent url("images/map-marker.png?v=100") no-repeat left top;
+}
+
+/* line 121, src/plugins/_job-postings-cpt.scss */
+#content .stafftable ul {
+  margin: 0;
+  list-style: none;
+}
+
+/* line 125, src/plugins/_job-postings-cpt.scss */
+#content .stafftable ul ul {
+  margin: 0 0 0 2em;
+  list-style: circle;
+}
+
+/* @import "plugins/tests-cpt"; */
+/* add this */
+/* line 2, src/plugins/_addthis.scss */
+.addthis_toolbox a {
+  border: none;
+}
+
+/**********************************************************
+
+Flickr Gallery
+
+**********************************************************/
+/* line 8, src/plugins/_flickr-gallery.scss */
+body .flickr-gallery-next a,
+body .flickr-gallery-prev a {
+  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  padding: 0.2em 1em;
+  background: #e8e7d5;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #dddddd;
+  -moz-box-shadow: 0 1px 2px #dddddd;
+  box-shadow: 0 1px 2px #dddddd;
+  border: none;
+  float: left;
+  margin: 20px 0 20px 2px;
+}
+
+/* line 22, src/plugins/_flickr-gallery.scss */
+body .flickr-gallery-next a:hover,
+body .flickr-gallery-prev a:hover {
+  background: #e2dbbf;
+  -webkit-box-shadow: 0 1px 1px white;
+  -moz-box-shadow: 0 1px 1px white;
+  box-shadow: 0 1px 1px white;
+}
+
+/* line 30, src/plugins/_flickr-gallery.scss */
+body.researchonly #content .flickr-gallery-next a,
+body.researchonly #content .flickr-gallery-prev a {
+  color: #fff;
+  background: #4e792f;
+}
+
+/* line 36, src/plugins/_flickr-gallery.scss */
+body.researchonly #content .flickr-gallery-next a:hover,
+body.researchonly #content .flickr-gallery-prev a:hover {
+  background: #1f2f12;
+}
+
+/* line 42, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery {
+  margin-top: 1em;
+}
+
+/* line 50, src/plugins/_flickr-gallery.scss */
+div.flickr-thumb {
+  float: left;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  margin: 3px;
+  height: 75px;
+  width: 75px;
+}
+
+/* line 59, src/plugins/_flickr-gallery.scss */
+div.fg-clear {
+  clear: both;
+}
+
+/* line 63, src/plugins/_flickr-gallery.scss */
+div.flickr-set-meta {
+  margin-left: 80px;
+}
+
+/* line 67, src/plugins/_flickr-gallery.scss */
+div.flickr-collection-meta {
+  margin-left: 191px;
+}
+
+/* line 71, src/plugins/_flickr-gallery.scss */
+div.flickr-set-thumb, div.flickr-collection-thumb {
+  float: left;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  margin: 3px;
+}
+
+/* line 78, src/plugins/_flickr-gallery.scss */
+div.flickr-set, div.flickr-collection {
+  margin-bottom: .5em;
+}
+
+/* line 82, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery.image.none {
+  padding: 1em 0px;
+}
+
+/* line 86, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery.image.left, div.flickr-gallery.video.left {
+  padding: 0px 0.5em 0.5em 0px;
+  float: left;
+}
+
+/* line 91, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery.image.right, div.flickr-gallery.video.right {
+  padding: 0px 0px 0.5em 0.5em;
+  float: right;
+}
+
+/* line 96, src/plugins/_flickr-gallery.scss */
+div.flickr-set-display {
+  display: none;
+  clear: both;
+}
+
+/* line 101, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery-next {
+  margin-right: 50px;
+}
+
+/* line 106, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery-next a,
+div.flickr-gallery-prev a {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+/* line 111, src/plugins/_flickr-gallery.scss */
+.ui-tabs .fg-credit {
+  margin-top: 4px;
+}
+
+/* line 115, src/plugins/_flickr-gallery.scss */
+div.flickr-gallery ul.ui-tabs-nav li {
+  list-style-type: none;
+}
+
+/* line 119, src/plugins/_flickr-gallery.scss */
+#content ul.ui-tabs-nav {
+  margin-bottom: 0px;
+}
+
+/* line 123, src/plugins/_flickr-gallery.scss */
+div.ui-widget {
+  font-size: 1em;
+}
+
+/* Styles for Gravity Forms */
+/* line 3, src/plugins/_gravityforms.scss */
+div.gform_wrapper {
+  margin: 10px 0;
+  max-width: 960px;
+}
+
+/* line 10, src/plugins/_gravityforms.scss */
+.gform_wrapper h1,
+.gform_wrapper h2,
+.gform_wrapper h3 {
+  font-weight: normal;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* line 17, src/plugins/_gravityforms.scss */
+.gform_wrapper:focus {
+  outline: none;
+}
+
+/* line 21, src/plugins/_gravityforms.scss */
+.gform_wrapper form {
+  text-align: left;
+}
+
+/* line 25, src/plugins/_gravityforms.scss */
+.gform_wrapper label.gfield_label {
+  color: #5c0124;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* line 32, src/plugins/_gravityforms.scss */
+div.gform_wrapper input,
+div.gform_wrapper textarea {
+  font-size: 14px;
+  padding: 7px 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+  outline-style: none;
+  letter-spacing: normal;
+  resize: none;
+  /* doesn't validate but added for Safari field resizing */
+}
+
+/* line 44, src/plugins/_gravityforms.scss */
+div.gform_wrapper input:hover,
+div.gform_wrapper textarea:hover {
+  border: 1px solid #777777;
+}
+
+/* line 49, src/plugins/_gravityforms.scss */
+div.gform_wrapper input:focus,
+div.gform_wrapper textarea:focus {
+  border: 1px solid #6ea2b6;
+}
+
+/* line 53, src/plugins/_gravityforms.scss */
+div.gform_wrapper input.button {
+  color: #fff;
+}
+
+/* line 58, src/plugins/_gravityforms.scss */
+.gform_wrapper ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 63, src/plugins/_gravityforms.scss */
+html > body .entry ul, .gform_wrapper ul {
+  text-indent: 0px;
+}
+
+/* line 67, src/plugins/_gravityforms.scss */
+.gform_wrapper li, .gform_wrapper form li, .ginput_left {
+  list-style-type: none !important;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* line 74, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gfield_radio li,
+.gform_wrapper ul.gfield_checkbox li {
+  overflow: visible;
+}
+
+/* line 81, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.right_label li,
+.gform_wrapper form ul.right_label li,
+.gform_wrapper ul.left_label li,
+.gform_wrapper form ul.left_label li {
+  margin-bottom: 14px;
+}
+
+/* line 88, src/plugins/_gravityforms.scss */
+.gform_wrapper ul li:before,
+.gform_wrapper ul li:after,
+.entry ul li:before,
+.entry ul li:after {
+  content: "";
+  /* for safari */
+}
+
+/* line 94, src/plugins/_gravityforms.scss */
+.gform_wrapper ul li:before,
+.gform_wrapper ul li:after,
+.entry ul li:before, .entry ul li:after {
+  content: none;
+  /* for other browsers */
+}
+
+/* line 98, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gform_fields {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 103, src/plugins/_gravityforms.scss */
+.gform_wrapper select {
+  padding: 3px 0 3px 0;
+  letter-spacing: normal;
+}
+
+/* line 108, src/plugins/_gravityforms.scss */
+.gform_wrapper .inline {
+  display: inline !important;
+}
+
+/* line 112, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_heading {
+  width: 98%;
+  margin-bottom: 18px;
+}
+
+/* line 120, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour,
+.gform_wrapper .gfield_time_minute,
+.gform_wrapper .gfield_date_month,
+.gform_wrapper .gfield_date_day, .gform_wrapper .gfield_date_year {
+  width: 70px;
+  float: left;
+}
+
+/* line 127, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_date_month,
+.gform_wrapper .gfield_date_day,
+.gform_wrapper .gfield_date_year {
+  margin-right: 12px;
+}
+
+/* line 131, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_ampm select {
+  width: 60px !important;
+}
+
+/* line 139, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour input,
+.gform_wrapper .gfield_time_minute input,
+.gform_wrapper .gfield_date_month input,
+.gform_wrapper .gfield_date_day input,
+.gform_wrapper .gfield_date_year input {
+  width: 70% !important;
+}
+
+/* line 145, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_date_month,
+.gform_wrapper .gfield_date_day,
+.gform_wrapper .gfield_date_year {
+  width: 50px;
+  float: left;
+}
+
+/* line 150, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_date_month input, .gform_wrapper .gfield_date_day input, .gform_wrapper .gfield_date_year input {
+  width: 85%!important;
+}
+
+/* line 151, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_hover {
+  border: 1px dashed #2175a9 !important;
+  cursor: pointer;
+}
+
+/* line 152, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_selected {
+  background-color: #DFEFFF;
+  border: 1px solid #c2d7ef !important;
+}
+
+/* line 153, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_name_first, .gform_wrapper .field_name_last {
+  width: 50%;
+  float: left;
+}
+
+/* line 154, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex {
+  overflow: hidden;
+}
+
+/* line 155, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_name_first input, .gform_wrapper .ginput_complex .ginput_left input {
+  width: 90%!important;
+}
+
+/* line 156, src/plugins/_gravityforms.scss */
+.gform_wrapper .field_name_last input {
+  width: 93%!important;
+}
+
+/* line 157, src/plugins/_gravityforms.scss */
+.gform_wrapper .datepicker {
+  width: 100px!important;
+}
+
+/* line 158, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left, .gform_wrapper .ginput_complex .ginput_right {
+  width: 48%;
+  float: left;
+}
+
+/* line 159, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .ginput_complex .ginput_left, .gform_wrapper .gfield_error .ginput_complex .ginput_right {
+  width: 50%;
+}
+
+/* line 160, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .ginput_complex .ginput_left input {
+  width: 90%!important;
+}
+
+/* line 161, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .ginput_complex .ginput_right input {
+  width: 100%!important;
+}
+
+/* line 162, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex input, .gform_wrapper .ginput_complex select {
+  width: 92%!important;
+}
+
+/* line 163, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex label, .gform_wrapper .gfield_time_hour label, .gform_wrapper .gfield_time_minute label, .gform_wrapper .gfield_date_month label, .gform_wrapper .gfield_date_day label, .gform_wrapper .gfield_date_year label, .gform_wrapper .instruction {
+  color: #666;
+  display: block;
+  margin: 3px 0 8px 0;
+  font-size: 14px;
+}
+
+/* line 164, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .name_prefix {
+  float: left;
+  width: 30px!important;
+  margin-right: 14px;
+}
+
+/* line 165, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .name_suffix {
+  float: left;
+  width: 30px!important;
+}
+
+/* line 166, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .name_first, .gform_wrapper .ginput_complex .name_last {
+  float: left;
+  width: 100px;
+  margin-right: 8px;
+}
+
+/* line 167, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_label {
+  margin: 10px 0 4px 0;
+  font-weight: bold;
+  display: -moz-inline-stack;
+  display: inline-block;
+  line-height: 130%;
+  clear: both;
+}
+
+/* line 168, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .gfield_label {
+  float: left;
+  margin: 2px 15px 0 0;
+  width: 29%;
+  font-weight: bold;
+}
+
+/* line 169, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label .gfield_label {
+  float: left;
+  margin: 2px 15px 0 0;
+  width: 29%;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 170, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label ul.gfield_checkbox, .gform_wrapper .right_label ul.gfield_checkbox, .gform_wrapper .left_label ul.gfield_radio, .gform_wrapper .right_label ul.gfield_radio {
+  margin-left: 32%;
+}
+
+/* line 171, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label input.small, .gform_wrapper .top_label select.small {
+  width: 25%;
+}
+
+/* line 172, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+  width: 50%;
+}
+
+/* line 173, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large, .gform_wrapper .top_label textarea.textarea {
+  width: 92%;
+}
+
+/* line 174, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label input.small, .gform_wrapper .right_label select.small, .gform_wrapper .left_label input.small, .gform_wrapper .left_label select.small {
+  width: 15%;
+}
+
+/* line 175, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label input.medium, .gform_wrapper .right_label select.medium, .gform_wrapper .left_label input.medium, .gform_wrapper .left_label select.medium {
+  width: 35%;
+}
+
+/* line 176, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label input.large, .gform_wrapper .right_label select.large, .gform_wrapper .left_label input.large, .gform_wrapper .left_label select.large, .gform_wrapper textarea.textarea {
+  width: 59%;
+}
+
+/* line 177, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label div.ginput_complex, .gform_wrapper .left_label div.ginput_complex {
+  width: 64%;
+  float: left;
+}
+
+/* line 178, src/plugins/_gravityforms.scss */
+.gform_wrapper h2.gsection_title {
+  margin: 0!important;
+  padding: 0!important;
+  letter-spacing: normal!important;
+}
+
+/* line 179, src/plugins/_gravityforms.scss */
+.gform_wrapper .gsection .gfield_label, .gform_wrapper h2.gsection_title, .gform_wrapper h3.gform_title {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 180, src/plugins/_gravityforms.scss */
+.gform_wrapper h3.gform_title {
+  letter-spacing: normal!important;
+  margin: 10px 0 6px 0;
+}
+
+/* line 181, src/plugins/_gravityforms.scss */
+.gform_wrapper span.gform_description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 182, src/plugins/_gravityforms.scss */
+.gform_wrapper h2.gsection_title, .gform_wrapper .gsection_description, .gform_wrapper h3.gform_title {
+  width: 98%;
+}
+
+/* line 183, src/plugins/_gravityforms.scss */
+.gform_wrapper .gsection {
+  border-bottom: 1px dotted #cccccc !important;
+  padding: 0 0 8px 0;
+  margin: 8px 0 16px 0;
+}
+
+/* updated radio and checkbox styling - justifies lenghty labels ----------------------------------- */
+/* line 187, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+  position: relative;
+}
+
+/* line 188, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gfield_checkbox, .gform_wrapper ul.gfield_radio {
+  margin: 6px 0;
+  padding: 0;
+}
+
+/* line 189, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+  display: block;
+  margin: 0 0 0 24px;
+  padding: 0;
+  width: auto;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+/* line 190, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li input[type=checkbox], .gform_wrapper .gfield_radio li input[type=radio], .gform_wrapper .gfield_checkbox li input {
+  float: left;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* some built in styles to use for quick radio/checkbox columns ----------------------------------- */
+/* line 194, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_2col ul.gfield_checkbox li, .gform_wrapper .gf_2col ul.gfield_radio li {
+  width: 50%;
+  float: left;
+  margin: 0;
+  min-height: 1.8em;
+}
+
+/* line 195, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_3col ul.gfield_checkbox li, .gform_wrapper .gf_3col ul.gfield_radio li {
+  width: 33%;
+  float: left;
+  margin: 0;
+  min-height: 1.8em;
+}
+
+/* line 196, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_4col ul.gfield_checkbox li, .gform_wrapper .gf_4col ul.gfield_radio li {
+  width: 25%;
+  float: left;
+  margin: 0;
+  min-height: 1.8em;
+}
+
+/* line 197, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_2col ul.gfield_checkbox, .gform_wrapper .gf_2col ul.gfield_radio, .gform_wrapper .gf_3col ul.gfield_checkbox, .gform_wrapper .gf_3col ul.gfield_radio, .gform_wrapper .gf_4col ul.gfield_checkbox, .gform_wrapper .gf_4col ul.gfield_radio {
+  overflow: hidden;
+}
+
+/* line 198, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height25 ul.gfield_checkbox li, .gform_wrapper .gf_height25 ul.gfield_radio li {
+  height: 25px;
+}
+
+/* line 199, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height50 ul.gfield_checkbox li, .gform_wrapper .gf_height50 ul.gfield_radio li {
+  height: 50px;
+}
+
+/* line 200, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height75 ul.gfield_checkbox li, .gform_wrapper .gf_height75 ul.gfield_radio li {
+  height: 75px;
+}
+
+/* line 201, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height100 ul.gfield_checkbox li, .gform_wrapper .gf_height100 ul.gfield_radio li {
+  height: 100px;
+}
+
+/* line 202, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height125 ul.gfield_checkbox li, .gform_wrapper .gf_height125 ul.gfield_radio li {
+  height: 125px;
+}
+
+/* line 203, src/plugins/_gravityforms.scss */
+.gform_wrapper .gf_height150 ul.gfield_checkbox li, .gform_wrapper .gf_height150 ul.gfield_radio li {
+  height: 150px;
+}
+
+/* line 205, src/plugins/_gravityforms.scss */
+.gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description, .gform_wrapper .instruction {
+  font-size: 10px;
+  line-height: 150%;
+  clear: both;
+  font-family: verdana, sans-serif;
+  letter-spacing: normal;
+}
+
+/* line 206, src/plugins/_gravityforms.scss */
+.gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description {
+  padding: 4px 0 8px 0;
+}
+
+/* line 207, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_description {
+  padding: 10px 0 8px 0;
+  font-style: italic;
+}
+
+/* line 208, src/plugins/_gravityforms.scss */
+.gfield_date_year + .gfield_description {
+  padding: 0 0 8px 0;
+}
+
+/* line 209, src/plugins/_gravityforms.scss */
+.gform_wrapper .gsection_description {
+  font-style: italic;
+}
+
+/* line 210, src/plugins/_gravityforms.scss */
+.ginput_complex + .gfield_description {
+  padding-top: 0!important;
+}
+
+/* line 211, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label .gfield_description, .gform_wrapper .left_label .gfield_description, .gform_wrapper .left_label .instruction, .gform_wrapper .right_label .instruction {
+  margin-left: 29%;
+  padding-left: 15px;
+}
+
+/* line 212, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .gsection .gsection_description, .gform_wrapper .right_label .gsection .gsection_description {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 4px;
+  line-height: 150%;
+}
+
+/* line 213, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_required {
+  color: #790000;
+  margin-left: 4px;
+}
+
+/* line 214, src/plugins/_gravityforms.scss */
+.gform_wrapper textarea.small {
+  height: 80px;
+}
+
+/* line 215, src/plugins/_gravityforms.scss */
+.gform_wrapper textarea.medium {
+  height: 150px;
+}
+
+/* line 216, src/plugins/_gravityforms.scss */
+.gform_wrapper textarea.large {
+  height: 250px;
+}
+
+/* line 217, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error {
+  background-color: #FFDFDF!important;
+  margin-top: 4px!important;
+  margin-bottom: 6px;
+  padding: 6px 6px 4px 6px !important;
+  border: 1px dotted #c89797;
+}
+
+/* line 218, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_error .ginput_container {
+  max-width: 99%;
+}
+
+/* line 219, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_error {
+  width: 92%;
+}
+
+/* line 220, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_error input.large, .gform_wrapper .top_label .gfield_error select.large, .gform_wrapper .top_label .gfield_error textarea.textarea {
+  width: 100%;
+}
+
+/* line 221, src/plugins/_gravityforms.scss */
+.gform_wrapper .right_label .gfield_error input.large, .gform_wrapper .right_label .gfield_error select.large, .gform_wrapper .right_label .gfield_error textarea.textarea, .gform_wrapper .left_label .gfield_error input.large, .gform_wrapper .left_label .gfield_error select.large, .gform_wrapper .left_label .gfield_error textarea.textarea {
+  width: 66%;
+}
+
+/* line 222, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_error .gfield_label {
+  color: #790000;
+}
+
+/* line 223, src/plugins/_gravityforms.scss */
+.gform_wrapper .validation_error {
+  color: #790000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 16px;
+}
+
+/* line 224, src/plugins/_gravityforms.scss */
+.gform_wrapper .validation_message {
+  color: #790000!important;
+  font-size: 11px;
+  font-family: verdana, sans-serif;
+  letter-spacing: normal;
+}
+
+/* line 225, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_footer {
+  padding: 16px 0 10px 0;
+  margin: 16px 0 0 0;
+}
+
+/* line 226, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_footer.right_label, .gform_wrapper .gform_footer.left_label {
+  padding: 16px 0 10px 31%;
+}
+
+/* line 227, src/plugins/_gravityforms.scss */
+.gform_wrapper input.button {
+  font-size: 100%;
+  background: #5c0124;
+  color: #fff;
+  padding: 7px 12px;
+}
+
+/* line 228, src/plugins/_gravityforms.scss */
+.gform_wrapper input.button:hover {
+  color: #5c0124;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* line 229, src/plugins/_gravityforms.scss */
+#gforms_confirmation_message {
+  background-color: #fffac6;
+  border: 1px solid #feda70;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #252525;
+  text-align: center;
+}
+
+/* line 230, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_edit_link {
+  margin: 20px 0;
+  font-family: verdana, sans-serif;
+  font-size: 12px;
+}
+
+/* line 231, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left, .gform_wrapper .ginput_complex .ginput_right, .gform_wrapper .ginput_complex .ginput_full {
+  min-height: 43px;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 232, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+  margin: 0 0 4px 0;
+  line-height: 130%!important;
+}
+
+/* improve spacing and prevent descenders from getting cut off in IE */
+/* jQuery UI date picker ---------------------------------------------------------------------------------------*/
+/* line 236, src/plugins/_gravityforms.scss */
+.ui-datepicker-div, .ui-datepicker-inline, #ui-datepicker-div {
+  /*resets*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+  font-family: "lucida sans", "lucida grande", lucida, sans-serif;
+  background: #fff;
+  font-size: 1.0em;
+  border: 4px solid #c1c1c1;
+  width: 15.5em;
+  padding: 2.5em 0.5em 0.5em 0.5em;
+  position: relative;
+}
+
+/* line 237, src/plugins/_gravityforms.scss */
+.ui-datepicker-div, #ui-datepicker-div {
+  z-index: 9999;
+  /*must have*/
+  display: none;
+}
+
+/* line 238, src/plugins/_gravityforms.scss */
+.ui-datepicker-inline {
+  float: left;
+  display: block;
+}
+
+/* line 239, src/plugins/_gravityforms.scss */
+.ui-datepicker-control {
+  display: none;
+}
+
+/* line 240, src/plugins/_gravityforms.scss */
+.ui-datepicker-current {
+  display: none;
+}
+
+/* line 241, src/plugins/_gravityforms.scss */
+.ui-datepicker-next, .ui-datepicker-prev {
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  background: #eee;
+}
+
+/* line 242, src/plugins/_gravityforms.scss */
+.ui-datepicker-next {
+  left: 14.6em;
+}
+
+/* line 243, src/plugins/_gravityforms.scss */
+.ui-datepicker-next:hover, .ui-datepicker-prev:hover {
+  background: #dadada;
+}
+
+/* line 244, src/plugins/_gravityforms.scss */
+.ui-datepicker-next a, .ui-datepicker-prev a {
+  text-indent: -999999px;
+  width: 1.3em;
+  height: 1.4em;
+  display: block;
+  font-size: 1em;
+  background: url(../images/datepicker_arrow_left.gif) 50% 50% no-repeat;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+/* line 245, src/plugins/_gravityforms.scss */
+.ui-datepicker-next a {
+  background: url(../images/datepicker_arrow_right.gif) 50% 50% no-repeat;
+}
+
+/* line 246, src/plugins/_gravityforms.scss */
+.ui-datepicker-header select {
+  border: 1px solid lightgrey;
+  color: #555;
+  background: #e6e6e6;
+  font-size: 1em;
+  line-height: 1.4em;
+  position: absolute;
+  top: .5em;
+  margin: 0 !important;
+}
+
+/* line 247, src/plugins/_gravityforms.scss */
+.ui-datepicker-header option:focus, .ui-datepicker-header option:hover {
+  background: #dadada;
+}
+
+/* line 248, src/plugins/_gravityforms.scss */
+.ui-datepicker-header select.ui-datepicker-new-month {
+  width: 7em;
+  left: 2.2em;
+}
+
+/* line 249, src/plugins/_gravityforms.scss */
+.ui-datepicker-header select.ui-datepicker-new-year {
+  width: 5em;
+  left: 9.4em;
+}
+
+/* line 250, src/plugins/_gravityforms.scss */
+table.ui-datepicker {
+  width: 15.5em;
+  text-align: right;
+}
+
+/* line 251, src/plugins/_gravityforms.scss */
+table.ui-datepicker td a {
+  padding: .1em;
+  display: block;
+  color: #555;
+  background: #e6e6e6;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+}
+
+/* line 252, src/plugins/_gravityforms.scss */
+table.ui-datepicker td a:hover {
+  border: 1px solid white;
+  color: #212121;
+  background: #dadada;
+  text-decoration: none;
+}
+
+/* line 253, src/plugins/_gravityforms.scss */
+table.ui-datepicker td a:active {
+  border: 1px solid #aaaaaa;
+  color: #212121;
+  background: #fff;
+  text-decoration: none;
+}
+
+/* line 254, src/plugins/_gravityforms.scss */
+table.ui-datepicker .ui-datepicker-title-row td {
+  padding: 0.2em 0;
+  text-align: center;
+  font-size: .9em;
+  color: #222;
+  text-transform: uppercase;
+}
+
+/* line 255, src/plugins/_gravityforms.scss */
+table.ui-datepicker .ui-datepicker-title-row td a {
+  color: #222;
+  padding: 0.3em 0;
+}
+
+/* line 256, src/plugins/_gravityforms.scss */
+.ui-datepicker-cover {
+  display: none;
+  display/**/: block;
+  position: absolute;
+  z-index: -1;
+  filter: mask();
+  top: -4px;
+  left: -4px;
+  width: 193px;
+  height: 200px;
+}
+
+/* line 257, src/plugins/_gravityforms.scss */
+img.ui-datepicker-trigger {
+  position: relative;
+  top: 3px;
+  left: 4px;
+}
+
+/* tame those pesky hidden fields --------------------------------------------------------------------*/
+/* line 261, src/plugins/_gravityforms.scss */
+.gform_wrapper input[type="hidden"], .gform_wrapper input.gform_hidden, .gform_hidden {
+  display: none;
+}
+
+/* line 262, src/plugins/_gravityforms.scss */
+.ginput_full br, .ginput_left br, .ginput_right br {
+  display: none;
+}
+
+/* fix captcha alignment for IE8 ---------------------------------------------------------------------*/
+/* line 266, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label #recaptcha_area #recaptcha_table, .gform_wrapper .right_label #recaptcha_area #recaptcha_table {
+  margin-left: 32%;
+}
+
+/* additional spacing and padding tweaks --------------------------------------------*/
+/* line 270, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .ginput_complex .ginput_right label, .gform_wrapper .left_label .ginput_complex .ginput_left label, .gform_wrapper .right_label .ginput_complex .ginput_right label, .gform_wrapper .right_label .ginput_complex .ginput_left label {
+  word-spacing: -.4em;
+}
+
+/* line 271, src/plugins/_gravityforms.scss */
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  padding: 0!important;
+}
+
+/* line 272, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .ginput_complex + .gfield_description {
+  padding-bottom: 0!important;
+}
+
+/* line 273, src/plugins/_gravityforms.scss */
+.gform_wrapper .top_label .gfield_description.validation_message, .gfield_description.validation_message {
+  padding: 10px 0 10px 0;
+}
+
+/* Twentyten theme specific styles updated 08.23.2010 -----------------------------------------------------*/
+/* pretty specific inheritance but if your theme is structured just like the 2010 theme it may affect yours as well */
+/* line 278, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, .entry-content .gform_wrapper input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
+  margin: 0!important;
+}
+
+/* line 279, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
+  font-size: 16px;
+  padding: 1px 2px !important;
+  background-color: #F9F9F9;
+  border: 1px solid #cccccc;
+  color: #444;
+}
+
+/* line 280, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input[type=checkbox], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input {
+  margin-top: 2px!important;
+}
+
+/* line 281, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input[type=radio], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input {
+  margin-top: 1px!important;
+}
+
+/* line 282, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gf_2col ul.gfield_checkbox li, #wrapper.hfeed #main #container #content .entry-content .gf_2col ul.gfield_radio li {
+  min-height: 1.5em;
+}
+
+/* line 283, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gf_3col ul.gfield_checkbox li, #wrapper.hfeed #main #container #content .entry-content .gf_3col ul.gfield_radio li {
+  min-height: 1.5em;
+}
+
+/* line 284, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gf_4col ul.gfield_checkbox li, #wrapper.hfeed #main #container #content .entry-content .gf_4col ul.gfield_radio li {
+  min-height: 1.5em;
+}
+
+/* line 285, src/plugins/_gravityforms.scss */
+#wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li label, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li label {
+  *display: inline-block!important;
+  *margin: 2px 0 0 6px;
+}
+
+/* for IE7 */
+/* Thesis theme specific styles updated 08.23.2010 -----------------------------------------------------*/
+/* pretty specific inheritance but if your theme is structured identical to the Thesis theme it will affect yours as well */
+/* line 290, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text ul.gfield_radio li input, body.custom #container #page #content_box .post_box .format_text ul.gfield_checkbox li input {
+  width: auto!important;
+  border: none!important;
+  border-color: none!important;
+  background-color: none!important;
+  background: none!important;
+}
+
+/* line 291, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_footer input[type=image] {
+  border: none!important;
+  border-color: none!important;
+  background-color: none!important;
+}
+
+/* line 292, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_footer input.button {
+  border-color: #cccccc #999999 #999999 #cccccc;
+  border-right: 3px double #999999;
+  border-style: double;
+  border-width: 3px;
+  color: #111111;
+  background-color: #E3E3E3;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: visible;
+  width: auto !important;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.143em;
+  padding: 0.313em 0.25em;
+}
+
+/* line 293, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .left_label ul.gfield_checkbox, body.custom #container #page #content_box .post_box .format_text .left_label ul.gfield_radio, body.custom #container #page #content_box .post_box .format_text .right_label ul.gfield_checkbox, body.custom #container #page #content_box .post_box .format_text .right_label ul.gfield_radio {
+  margin-top: -.2em!important;
+}
+
+/* line 294, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text input, body.custom #container #page #content_box .post_box .format_text select {
+  font-size: 1em;
+  padding: 0.214em;
+}
+
+/* line 295, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text select {
+  background-color: #eee;
+  border-color: #aaaaaa #dddddd #dddddd #aaaaaa;
+  border-style: solid;
+  border-width: 1px;
+  color: #444;
+  font-size: 1em;
+}
+
+/* line 296, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_checkbox li input[type=checkbox], body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_radio li input[type=radio], body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_checkbox li input {
+  float: left;
+  margin-top: 4px;
+}
+
+/* line 297, src/plugins/_gravityforms.scss */
+body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_checkbox li label, body.custom #container #page #content_box .post_box .format_text .gform_wrapper .gfield_radio li label {
+  display: inline-block\9;
+  margin: 2px 0 0 6px \9;
+}
+
+/* another hack for IE */
+/* HTML field default margins -----------------------------------------------------*/
+/* line 301, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label li.gfield_html_formatted, .gform_wrapper .right_label li.gfield_html_formatted {
+  margin-left: 32%;
+}
+
+/* line 302, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_html.gfield_no_follows_desc {
+  margin-top: 10px;
+}
+
+/* ajax forms ------------------------------------------------------*/
+/* line 306, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_ajax_spinner {
+  padding-left: 10px;
+}
+
+/* line 307, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_validation_container {
+  display: none!important;
+}
+
+/* Simple Captcha ------------------------------------------------------*/
+/* line 311, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_captcha_input_container {
+  padding-top: 3px;
+}
+
+/* line 313, src/plugins/_gravityforms.scss */
+.gform_wrapper .simple_captcha_small input {
+  width: 100px;
+}
+
+/* line 314, src/plugins/_gravityforms.scss */
+.gform_wrapper .simple_captcha_medium input {
+  width: 150px;
+}
+
+/* line 315, src/plugins/_gravityforms.scss */
+.gform_wrapper .simple_captcha_large input {
+  width: 200px;
+}
+
+/* line 316, src/plugins/_gravityforms.scss */
+.gform_wrapper .gform_wrapper .left_label .simple_captcha_small, .gform_wrapper .right_label .simple_captcha_small, .gform_wrapper .left_label .simple_captcha_medium, .gform_wrapper .right_label .simple_captcha_medium, .gform_wrapper .left_label .simple_captcha_large, .gform_wrapper .right_label .simple_captcha_large {
+  margin-left: 32%;
+}
+
+/* line 317, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_captcha_container img.gfield_captcha {
+  border: none!important;
+  background: none!important;
+  float: none!important;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+/* Math Challenge ------------------------------------------------------*/
+/* line 321, src/plugins/_gravityforms.scss */
+.gform_wrapper .math_small input {
+  width: 69px;
+}
+
+/* line 322, src/plugins/_gravityforms.scss */
+.gform_wrapper .math_medium input {
+  width: 90px;
+}
+
+/* line 323, src/plugins/_gravityforms.scss */
+.gform_wrapper .math_large input {
+  width: 108px;
+}
+
+/* line 324, src/plugins/_gravityforms.scss */
+.gform_wrapper .left_label .math_small, .gform_wrapper .right_label .math_small, .gform_wrapper .left_label .math_medium, .gform_wrapper .right_label .math_medium, .gform_wrapper .left_label .math_large, .gform_wrapper .right_label .math_large {
+  margin-left: 32%;
+}
+
+/* a few IE specific hacks ------------------------------------------------------------------------- */
+/* line 328, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour {
+  *width: 80px;
+}
+
+/* line 329, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_minute {
+  *width: 70px;
+}
+
+/* line 330, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_ampm {
+  *padding-top: 2px;
+}
+
+/* line 331, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_time_hour input, .gform_wrapper .gfield_time_minute input {
+  *margin-left: 0;
+}
+
+/* line 332, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left label, .gform_wrapper .ginput_complex .ginput_right label {
+  *margin: 3px 0 5px 0;
+}
+
+/* line 333, src/plugins/_gravityforms.scss */
+.gform_footer input.button {
+  *padding: 3px;
+}
+
+/* line 334, src/plugins/_gravityforms.scss */
+ul.top_label .clear-multi {
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 335, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li input[type=checkbox], .gform_wrapper .gfield_radio li input[type=radio], .gform_wrapper .gfield_checkbox li input {
+  *margin-top: 0;
+}
+
+/* line 336, src/plugins/_gravityforms.scss */
+.gform_wrapper .ginput_complex .ginput_left select, .gform_wrapper .ginput_complex .ginput_right select {
+  padding: 2px 0 2px 0 \9 ;
+}
+
+/* line 337, src/plugins/_gravityforms.scss */
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+  display: inline-block\9;
+  margin: 2px 0 0 6px \9;
+}
+
+/*===========================
+GigPress
+---------------------------------------------------------------------------*/
+/* line 5, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-status a, .btn a, button.btn, a.gigpress-tickets-link {
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px #d8d3ae;
+  -moz-box-shodow: 1px 1px 1px #d8d3ae;
+  box-shodow: 1px 1px 1px #d8d3ae;
+  border: 1px solid #726b60;
+  padding: 0.5em 0.6em;
+  font-size: 1.3em;
+  color: #fff;
+  background: #0094d0;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#958f85), to(#726b60));
+  background: -moz-linear-gradient(top, #958f85, #726b60);
+}
+
+/* line 19, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-status a, .btn a:hover, button.btn:hover, a.gigpress-tickets-link:hover {
+  cursor: pointer;
+  background: #0082b7;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#726b60), to(#958f85));
+  background: -moz-linear-gradient(top, #726b60, #958f85);
+}
+
+/* line 26, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-status a, .btn a:active, button.btn:active, a.gigpress-tickets-link:active {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 0 #e9e6d1;
+  -moz-box-shodow: 1px 1px 0 #e9e6d1;
+  box-shodow: 1px 1px 0 #e9e6d1;
+  background: #0082b7;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#726b60), to(#645e54));
+  background: -moz-linear-gradient(top, #726b60, #645e54);
+}
+
+/* line 36, src/plugins/_gigpress.scss */
+.collegeonly .gigpress-tickets-link {
+  border: 1px solid #860125;
+  color: #fff;
+  background: #860125;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ba012c), to(#860125));
+  background: -moz-linear-gradient(top, #ba012c, #860125);
+}
+
+/* line 44, src/plugins/_gigpress.scss */
+.collegeonly .gigpress-tickets-link, body.collegeonly .btn a:hover, body.collegeonly button.btn:hover, body.collegeonly a.gigpress-tickets-link:hover {
+  color: #fff;
+  background: #ba012c;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#860125), to(#ba012c));
+  background: -moz-linear-gradient(top, #860125, #ba012c);
+}
+
+/* line 51, src/plugins/_gigpress.scss */
+.collegeonly .gigpress-tickets-link, body.collegeonly .btn a:active, body.collegeonly button.btn:active, body.collegeonly a.gigpress-tickets-link:active {
+  background: #0082b7;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ba012c), to(#860125));
+  background: -moz-linear-gradient(top, #ba012c, #860125);
+}
+
+/* line 58, src/plugins/_gigpress.scss */
+body.tvmdlonly span.gigpress-sidebar-status a, body.tvmdlonly .btn a, body.tvmdlonly button.btn, body.tvmdlonly a.gigpress-tickets-link {
+  border: 1px solid #8c5933;
+  color: #fff;
+  background: #8c5933;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c5933), to(#794d2c));
+  background: -moz-linear-gradient(top, #8c5933, #794d2c);
+}
+
+/* line 66, src/plugins/_gigpress.scss */
+body.tvmdlonly span.gigpress-sidebar-status a, body.tvmdlonly .btn a:hover, body.tvmdlonly button.btn:hover, body.tvmdlonly a.gigpress-tickets-link:hover {
+  background: #794d2c;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#794d2c), to(#8c5933));
+  background: -moz-linear-gradient(top, #794d2c, #8c5933);
+}
+
+/* line 72, src/plugins/_gigpress.scss */
+body.tvmdlonly span.gigpress-sidebar-status a, body.tvmdlonly .btn a:active, body.tvmdlonly button.btn:active, body.tvmdlonly a.gigpress-tickets-link:active {
+  background: #664125;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#664125), to(#53351e));
+  background: -moz-linear-gradient(top, #664125, #53351e);
+}
+
+/* line 78, src/plugins/_gigpress.scss */
+body.extensiononly span.gigpress-sidebar-status a, body.extensiononly .btn a, body.extensiononly button.btn, body.extensiononly a.gigpress-tickets-link {
+  border: 1px solid #004c6b;
+  color: #fff;
+  background: #004c6b;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00709e), to(#004c6b));
+  background: -moz-linear-gradient(top, #00709e, #004c6b);
+}
+
+/* line 86, src/plugins/_gigpress.scss */
+body.extensiononly span.gigpress-sidebar-status a, body.extensiononly .btn a:hover, body.extensiononly button.btn:hover, body.extensiononly a.gigpress-tickets-link:hover {
+  background: #00709e;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#004c6b), to(#00709e));
+  background: -moz-linear-gradient(top, #004c6b, #00709e);
+}
+
+/* line 92, src/plugins/_gigpress.scss */
+body.extensiononly span.gigpress-sidebar-status a, body.extensiononly .btn a:active, body.extensiononly button.btn:active, body.tvmdlonly a.gigpress-tickets-link:active {
+  background: #003a52;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#004c6b), to(#003a52));
+  background: -moz-linear-gradient(top, #004c6b, #003a52);
+}
+
+/* line 98, src/plugins/_gigpress.scss */
+body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a, body.researchonly button.btn, body.researchonly a.gigpress-tickets-link {
+  border: 1px solid #5a8c37;
+  color: #fff;
+  background: #5a8c37;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#72b145), to(#5a8c37));
+  background: -moz-linear-gradient(top, #72b145, #5a8c37);
+}
+
+/* line 106, src/plugins/_gigpress.scss */
+body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a:hover, body.researchonly button.btn:hover, body.researchonly a.gigpress-tickets-link:hover {
+  background: #72b145;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a8c37), to(#72b145));
+  background: -moz-linear-gradient(top, #5a8c37, #72b145);
+}
+
+/* line 112, src/plugins/_gigpress.scss */
+body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a:active, body.researchonly button.btn:active, body.researchonly a.gigpress-tickets-link:active {
+  background: #4e7a30;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a8c37), to(#4e7a30));
+  background: -moz-linear-gradient(top, #5a8c37, #4e7a30);
+}
+
+/* line 119, src/plugins/_gigpress.scss */
+div.event dl,
+.gigpress-listing dl {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 25px 0 5px 0;
+  border-bottom: 1px solid #e0dfd8;
+  border-top: 1px solid white;
+}
+
+/* line 129, src/plugins/_gigpress.scss */
+div.event dl:last-child,
+.gigpress-listing dl:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+/* line 134, src/plugins/_gigpress.scss */
+div.event dt.date,
+span.gigpress-sidebar-date {
+  position: relative;
+  font: 0.75em georgia, serif;
+  color: #b19e56;
+  text-shadow: 0 1px 0 white;
+  background: #f0eee3;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 1.3em 0;
+  margin-right: 3%;
+  width: 5em;
+  letter-spacing: 1px;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0 1px 2px #d8d3ae;
+  -moz-box-shadow: 0 1px 2px #d8d3ae;
+  box-shodow: 0 1px 2px #d8d3ae;
+  float: left;
+  text-align: center;
+}
+
+/* line 153, src/plugins/_gigpress.scss */
+dd.title-loc {
+  margin-right: .5em;
+  margin-bottom: 1em;
+  float: left;
+  width: 60%;
+}
+
+/* line 160, src/plugins/_gigpress.scss */
+dl dd.title-loc h4 {
+  font-size: 1.5em;
+}
+
+/* line 166, src/plugins/_gigpress.scss */
+div.event dl dd.title-loc h4,
+div.event dl dd.title-loc p,
+.gigpress-sidebar-notes {
+  padding-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* line 172, src/plugins/_gigpress.scss */
+#aside div.event dl dt.date strong,
+#aside span.word2 {
+  font-weight: bold;
+  display: block;
+  font-size: 2em;
+  margin-top: -.1em;
+}
+
+/* line 179, src/plugins/_gigpress.scss */
+#aside span.word3 {
+  display: none;
+}
+
+/* line 183, src/plugins/_gigpress.scss */
+dd.sign-up a {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  font-size: .7em;
+}
+
+/* line 191, src/plugins/_gigpress.scss */
+div.event dl.first,
+.gigpress-listing dl:first-child {
+  border-top: none;
+  margin-top: -15px;
+}
+
+/* line 196, src/plugins/_gigpress.scss */
+div.event.last dl {
+  border-bottom: none;
+}
+
+/* line 202, src/plugins/_gigpress.scss */
+body.page .gigpress-table th,
+body.page tr.gigpress-info td,
+body.page .gigpress-table th {
+  border: none;
+}
+
+/* line 208, src/plugins/_gigpress.scss */
+body.page .gigpress-table th a,
+body.page tr.gigpress-info td a,
+body.page .gigpress-table th a {
+  border: none;
+}
+
+/* line 212, src/plugins/_gigpress.scss */
+body.page #content tr.gigpress-info td.description {
+  padding: 10px;
+  width: 98%;
+}
+
+/* line 218, src/plugins/_gigpress.scss */
+.gigpress-subscribe a,
+.gigpress-artist-subscriptions a {
+  border: none;
+}
+
+/* line 222, src/plugins/_gigpress.scss */
+body.page #content tr.gigpress-info {
+  position: relative;
+  padding: 1em 1em 1em 0.5em;
+  overflow: hidden;
+}
+
+/* line 228, src/plugins/_gigpress.scss */
+body.page #content a.gigpress-tickets-link {
+  font-size: 1.1em;
+  position: relative;
+  z-index: 999;
+  float: right;
+  padding: 0.7em 0.8em;
+  margin: 15px;
+}
+
+/* line 242, src/plugins/_gigpress.scss */
+body.page tr.gigpress-tour td,
+body.page th.gigpress-heading {
+  background: none;
+}
+
+/* line 246, src/plugins/_gigpress.scss */
+body.page .gigpress-table {
+  margin: 0.5em 0px 5em;
+}
+
+/* By default this is an h3 that appears above each artist's list of shows */
+/* This span contains the RSS and iCal links for the artist */
+/* line 256, src/plugins/_gigpress.scss */
+span.gigpress-artist-subscriptions {
+  margin-left: 5px;
+  float: right;
+}
+
+/* Default wrapper for the year/month menu */
+/* line 262, src/plugins/_gigpress.scss */
+.gigpress-menu-container {
+  padding: 5px 0;
+  text-align: right;
+}
+
+/* Meet the table that displays our shows */
+/* line 268, src/plugins/_gigpress.scss */
+.gigpress-table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-top: 1px solid #cccccc;
+  margin: 0.5em 0 1em 0;
+}
+
+/* This is for the main header cells containing the column labels */
+/* line 277, src/plugins/_gigpress.scss */
+tr.gigpress-header th {
+  font-weight: bold;
+}
+
+/* Generic class for the table header cells */
+/* line 282, src/plugins/_gigpress.scss */
+.gigpress-table th {
+  padding: 6px 8px;
+  vertical-align: middle;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* This is for the tour name header cells */
+/* line 290, src/plugins/_gigpress.scss */
+th.gigpress-heading {
+  background-color: #EEE;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* This is for the tour name headings, whichever one you're using */
+/* line 296, src/plugins/_gigpress.scss */
+th.gigpress-heading h1, th.gigpress-heading h2, th.gigpress-heading h3, th.gigpress-heading h4, th.gigpress-heading h5 {
+  margin: 0;
+}
+
+/* Applies to all cells in the table */
+/* Applies to the first row of each show listing */
+/* line 306, src/plugins/_gigpress.scss */
+.gigpress-row td {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* Style for rows within a tour */
+/* line 311, src/plugins/_gigpress.scss */
+tr.gigpress-tour td {
+  background-color: #F6F6F6;
+}
+
+/* Style for the first row after a tour ends in the list */
+/* line 316, src/plugins/_gigpress.scss */
+tr.divider.gigpress-row td {
+  border-top: 2px solid #cccccc;
+}
+
+/* The secondary row for each show, contains time, admission, etc */
+/* line 321, src/plugins/_gigpress.scss */
+tr.gigpress-info td {
+  font-size: 90%;
+  color: #333;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Fix for themes that hide .description */
+/* line 328, src/plugins/_gigpress.scss */
+tr.gigpress-info td.description {
+  visibility: visible;
+}
+
+/* Greys-out cancelled shows */
+/* line 333, src/plugins/_gigpress.scss */
+tr.gigpress-row.cancelled, tr.gigpress-info.cancelled, tr.cancelled span.gigpress-info-label, tr.cancelled span.gigpress-info-item {
+  color: #999;
+}
+
+/* This wraps each of the bits of info in the "info" cell */
+/* For the labels for address, admission, etc in the "info" cell */
+/* line 342, src/plugins/_gigpress.scss */
+span.gigpress-info-label {
+  color: #666;
+}
+
+/* In case you want to style the "Buy Tickets" link */
+/* line 347, src/plugins/_gigpress.scss */
+a.gigpress-tickets-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Notices for Cancelled or Sold Out shows */
+/* line 353, src/plugins/_gigpress.scss */
+strong.gigpress-cancelled, strong.gigpress-soldout {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1px;
+  color: #111;
+  background: #fffdeb;
+  border: 1px solid #eeeeee;
+  background: #111;
+  color: #FFF;
+  border: none;
+}
+
+/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
+/* line 366, src/plugins/_gigpress.scss */
+td.gigpress-links-cell {
+  vertical-align: top;
+}
+
+/* line 370, src/plugins/_gigpress.scss */
+.gigpress-calendar-add {
+  position: relative;
+}
+
+/* line 374, src/plugins/_gigpress.scss */
+a.gigpress-links-toggle {
+  display: block;
+  text-indent: -9999px;
+  width: 11px;
+  height: 11px;
+  background: transparent url(/images/calendar-toggle.png?v=100) no-repeat left top;
+  cursor: pointer;
+}
+
+/* line 383, src/plugins/_gigpress.scss */
+a.gigpress-links-toggle:hover {
+  background-position: -11px 0px;
+}
+
+/* line 387, src/plugins/_gigpress.scss */
+a.gigpress-link-active {
+  background-position: -33px;
+}
+
+/* line 391, src/plugins/_gigpress.scss */
+a.gigpress-link-active:hover {
+  background-position: -22px;
+}
+
+/* line 395, src/plugins/_gigpress.scss */
+div.gigpress-calendar-links {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: -1.2em;
+  width: 15em;
+  padding-left: 7px;
+  background: transparent url("/images/calendar-links-bg.png?v=100") no-repeat left center;
+}
+
+/* line 405, src/plugins/_gigpress.scss */
+.gigpress-calendar-links-inner {
+  background-color: #F3F3F3;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 16px;
+  border: 1px solid #cccccc;
+  border-width: 1px 1px 1px 0;
+}
+
+/* line 414, src/plugins/_gigpress.scss */
+div.gigpress-calendar-links span {
+  display: block;
+}
+
+/* These are for the RSS/iCal subscribe links */
+/* line 419, src/plugins/_gigpress.scss */
+p.gigpress-subscribe {
+  text-align: left;
+  color: #999;
+}
+
+/* line 424, src/plugins/_gigpress.scss */
+p.gigpress-subscribe a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 12px;
+  margin: 0 3px;
+}
+
+/* line 431, src/plugins/_gigpress.scss */
+a.gigpress-rss, a.gigpress-rss:hover {
+  background: transparent url(/images/feed-icon-12x12.png?v=100) no-repeat left center;
+}
+
+/* line 435, src/plugins/_gigpress.scss */
+a.gigpress-ical, a.gigpress-ical:hover {
+  background: transparent url(/images/icalendar-icon.gif) no-repeat left center;
+}
+
+/* For tour headings in the sidebar */
+/* line 440, src/plugins/_gigpress.scss */
+span.gigpress-list-tour-heading {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+/* So if you like you can style the date differently */
+/* line 446, src/plugins/_gigpress.scss */
+span.gigpress-sidebar-date {
+  font-weight: bold;
+  display: block;
+}
+
+/* Sold Out shows in the sidebar */
+/* line 452, src/plugins/_gigpress.scss */
+ul.gigpress-listing strong.gigpress-soldout {
+  display: block;
+}
+
+/* These styles control the Related Show list that appears in the body of Related Posts */
+/* line 457, src/plugins/_gigpress.scss */
+ul.gigpress-related-show {
+  margin-bottom: 2em;
+}
+
+/* line 461, src/plugins/_gigpress.scss */
+.gigpress-related-label {
+  font-weight: bold;
+}
+
+/* This is just to include data for hcalendar support, but hide it from view */
+/* line 466, src/plugins/_gigpress.scss */
+.hide {
+  display: none;
+}
+
+/* Stop Firefox from underlining our abbreviated dates */
+/* line 471, src/plugins/_gigpress.scss */
+abbr {
+  border: none;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+/* old browsers */
+/* line 479, src/plugins/_gigpress.scss */
+.oldie .menu-item {
+  font-family: "lucida Sans Unicode", verdana, clean;
+}
+
+/* Social Media Icons
+******************************/
+/* line 4, src/plugins/_socialmedia.scss */
+.social_media_widget ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0 0.5em;
+}
+
+/* line 10, src/plugins/_socialmedia.scss */
+.social-media-item {
+  float: left;
+  width: 16.666666666666667%;
+}
+
+/* line 15, src/plugins/_socialmedia.scss */
+.social-media-item a {
+  display: block;
+  height: 36px;
+  width: 36px;
+  text-indent: -999em;
+  text-decoration: none;
+  border-bottom: none;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url("images/social-icons.png?v=100");
+  margin: auto;
+}
+
+/* line 28, src/plugins/_socialmedia.scss */
+.social-media-item a:hover {
+  background-position: left bottom;
+}
+
+/* line 31, src/plugins/_socialmedia.scss */
+a.googleplus {
+  background-position: left top;
+}
+
+/* line 34, src/plugins/_socialmedia.scss */
+a.facebook {
+  background-position: -43px top;
+}
+
+/* line 37, src/plugins/_socialmedia.scss */
+a.facebook:hover {
+  background-position: -43px bottom;
+}
+
+/* line 40, src/plugins/_socialmedia.scss */
+a.twitter {
+  background-position: -86px top;
+}
+
+/* line 43, src/plugins/_socialmedia.scss */
+a.twitter:hover {
+  background-position: -86px bottom;
+}
+
+/* line 46, src/plugins/_socialmedia.scss */
+a.flickr {
+  background-position: -129px top;
+}
+
+/* line 49, src/plugins/_socialmedia.scss */
+a.flickr:hover {
+  background-position: -129px bottom;
+}
+
+/* line 52, src/plugins/_socialmedia.scss */
+a.youtube {
+  background-position: -172px top;
+}
+
+/* line 55, src/plugins/_socialmedia.scss */
+a.youtube:hover {
+  background-position: -172px bottom;
+}
+
+/* line 58, src/plugins/_socialmedia.scss */
+a.rss {
+  background-position: -215px top;
+}
+
+/* line 61, src/plugins/_socialmedia.scss */
+a.rss:hover {
+  background-position: -215px bottom;
+}
+
+/*
+ * jQuery FlexSlider v1.6
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 12, src/plugins/_flexslider.scss */
+.flex-container.fullwidth {
+  margin-top: 0;
+}
+
+/* line 13, src/plugins/_flexslider.scss */
+.flexslider {
+  width: 100%;
+}
+
+/* line 14, src/plugins/_flexslider.scss */
+body.page-template-page-home-slideshow-2-php .flex-container {
+  max-width: 585px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, src/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 17, src/plugins/_flexslider.scss */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Browser Resets */
+/* line 20, src/plugins/_flexslider.scss */
+.flexslider a {
+  outline: none;
+}
+
+/* line 23, src/plugins/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load
+ */
+/* line 29, src/plugins/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider
+*********************************/
+/* line 34, src/plugins/_flexslider.scss */
+.flexslider {
+  background: transparent;
+  position: relative;
+}
+
+/* line 35, src/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  position: relative;
+}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+/* line 37, src/plugins/_flexslider.scss */
+.flex-container {
+  zoom: 1;
+  position: relative;
+  padding: 6px;
+  background: #F0EEE3;
+  background: rgba(255, 255, 255, 0.55);
+  margin-bottom: 50px;
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.3);
+  border-radius: 3px;
+  border: #e3e1d5;
+}
+
+/* line 38, src/plugins/_flexslider.scss */
+li.flex-slider-item {
+  list-style-type: none;
+}
+
+/* Caption style */
+/* line 40, src/plugins/_flexslider.scss */
+p.flex-caption {
+  width: 96%;
+  padding: 3% 2%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 41, src/plugins/_flexslider.scss */
+p.flex-caption a {
+  font-size: 18px;
+  color: #ddd;
+  border: none;
+}
+
+/* line 42, src/plugins/_flexslider.scss */
+p.flex-caption a:hover {
+  color: #fff;
+  border: none;
+}
+
+/* Direction Nav */
+/* line 44, src/plugins/_flexslider.scss */
+#content ul.flex-direction-nav {
+  list-style: none;
+}
+
+/* line 45, src/plugins/_flexslider.scss */
+.flex-direction-nav li a {
+  border: none;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0;
+  display: block;
+  background: url(images/arrows-white.png?v=100) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+/* line 46, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.next {
+  background-position: -40px 0;
+  right: -12px;
+}
+
+/* line 47, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.prev {
+  background-position: 0 0;
+  left: -12px;
+}
+
+/* line 48, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.next:hover {
+  background-position: -40px -43px;
+}
+
+/* line 49, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.prev:hover {
+  background-position: 0 -43px;
+}
+
+/* line 50, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.next:active {
+  background-position: -40px -42px;
+}
+
+/* line 51, src/plugins/_flexslider.scss */
+.flex-direction-nav li a.prev:active {
+  background-position: 0 -42px;
+}
+
+/* Control Nav */
+/* line 54, src/plugins/_flexslider.scss */
+#content ol.flex-control-nav {
+  list-style: none;
+}
+
+/* line 55, src/plugins/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+}
+
+/* line 56, src/plugins/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 0 0 5px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 57, src/plugins/_flexslider.scss */
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+
+/* line 58, src/plugins/_flexslider.scss */
+.flex-control-nav li a {
+  border: none;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url(images/bg_control_nav.png?v=100) no-repeat 0 0;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 59, src/plugins/_flexslider.scss */
+.flex-control-nav li a:hover {
+  background-position: 0 -13px;
+}
+
+/* line 60, src/plugins/_flexslider.scss */
+.flex-control-nav li a.active {
+  background-position: 0 -26px;
+  cursor: default;
+}
+
+/* Columns CPT Events */
+/* line 1960, src/style.scss */
+#tf_col_ev_date, th#tf_col_ev_cat {
+  width: 150px;
+}
+
+/* line 1961, src/style.scss */
+td.tf_col_ev_date em {
+  color: gray;
+}
+
+/* line 1962, src/style.scss */
+th#tf_col_ev_times {
+  width: 150px;
+}
+
+/* line 1963, src/style.scss */
+th#tf_col_ev_thumb {
+  width: 100px;
+}
+
+/* Metabox */
+/* line 1968, src/style.scss */
+body.wp-admin .tf-meta ul li {
+  height: 20px;
+  clear: both;
+  margin: 0 0 15px 0;
+}
+
+/* line 1969, src/style.scss */
+body.wp-admin .tf-meta ul li label {
+  width: 100px;
+  display: block;
+  float: left;
+  padding-top: 4px;
+}
+
+/* line 1970, src/style.scss */
+body.wp-admin .tf-meta ul li input {
+  width: 125px;
+  display: block;
+  float: left;
+}
+
+/* line 1971, src/style.scss */
+body.wp-admin .tf-meta ul li em {
+  width: 200px;
+  display: block;
+  float: left;
+  color: gray;
+  margin-left: 10px;
+  padding-top: 4px;
+}

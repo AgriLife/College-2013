@@ -1,0 +1,29 @@
+/* =Navigation -------------------------- */
+
+.navigation {
+
+}
+.navigation a:link,
+.navigation a:visited {
+
+}
+.navigation a:active,
+.navigation a:hover {
+
+}
+.nav-previous {
+	float: left;
+}
+.nav-next {
+	float: right;
+}
+#nav-above,
+#nav-below {
+	margin-bottom: 1.5em;
+	overflow: hidden;
+}
+
+.paged #nav-above,
+.single #nav-above {
+
+}

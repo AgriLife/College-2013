@@ -1,0 +1,523 @@
+/* =Dropdown Section Nav
+-------------------------------------------------------------- */
+
+#drop-section-nav {
+	position: relative;
+	z-index: 3;	
+	padding-left: 5%;
+	padding-right: 5%;	
+	margin: 0 auto;
+	overflow: hidden;
+	width: 90%;
+	background: #341f1a url('images/verticle-texture.png');
+	color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(6,6,6,.3);
+	-moz-box-shadow: -4px 2px 5px rgba(6,6,6,.3);
+	box-shadow: 0 2px 5px rgba(6,6,6,.3);	
+}
+
+#drop-section-nav #drop-nav {
+	position: relative;
+	margin: 0 auto 0;
+}
+
+#drop-section-nav #drop-nav ul {
+	padding: 4px 0;
+	margin: 0 0 0 10px;	
+}
+
+body.extension.research #drop-section-nav #drop-nav ul {
+	min-height: 50px;
+}
+
+body.extension.research #drop-section-nav #drop-nav ul:hover {
+	background-position: -250px 80%;
+}
+
+#drop-section-nav #drop-nav ul li {
+	float: left;
+	padding: 0 0 2px 0;
+	line-height: .6em;
+}
+#drop-section-nav #drop-nav ul li.fazd-item {
+	padding: 10px 0;
+	font-size: 16px;
+	color: #938683;
+	line-height: 1.2em;	
+}
+#drop-section-nav #drop-nav ul li.custom-header {
+	padding: 10px 0;
+	font-size: 16px;
+	color: #938683;
+	line-height: 1.2em;	
+}
+
+#drop-section-nav #drop-nav ul li.ask,
+#drop-section-nav #drop-nav ul li.explore,
+#drop-section-nav #drop-nav ul li.tx-ext-item,
+#drop-section-nav #drop-nav ul li.college-item {
+	padding: 0;
+}
+
+#drop-section-nav #drop-nav ul li a {
+	position: relative;
+	z-index: 2;	
+	font: 12px $body-font;
+	color: #fff;
+	border: none;
+	padding: 5px 5px 0;
+	margin-right: 5px;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;	
+}
+body.research.extension #drop-section-nav #drop-nav ul li {
+	width: 20%;	
+	margin-top: -9px;
+	margin-bottom: -8px;
+	-webkit-transition: margin .3s ease;
+	-moz-transition: margin .3s ease;		
+}
+body.research.extension #drop-section-nav #drop-nav ul li:hover {	
+}
+body.research.extension #drop-section-nav #drop-nav ul li a {
+	padding: 0;
+	margin-right: 0;	
+}
+body.research.extension #drop-section-nav #drop-nav ul li a img {
+						
+}
+
+#drop-section-nav #drop-nav ul li a[href*='ask'] {
+	position: relative;
+	z-index: 2;
+	font-size: 1.3em;					
+}
+
+#drop-section-nav #drop-nav ul li a[href*='ask']:hover {
+	background-color: #00709d;		
+}
+
+#drop-section-nav #drop-nav ul li .explore {
+	position: relative;
+	z-index: 2;
+	font-size: 1.3em;
+	color: 	#fff;			
+}
+
+#drop-section-nav #drop-nav ul li a {
+	display: none;
+}
+
+#drop-section-nav #drop-nav ul li a[href*='extension'] {
+	
+}
+
+#drop-section-nav #drop-nav ul li a[href*='aglifesciences'] {
+	display: block;
+	background: url('images/college-logo.png?v=100') no-repeat left top;
+	margin-top: 5px;
+	height: 38px;
+	width: 180px;
+	text-indent: -999em;		
+}
+body.research.extension #drop-section-nav #drop-nav ul li a[href*='aglifesciences'] {
+	background: none;		
+}
+
+
+#drop-section-nav #drop-nav ul li a[href*='tvmdl'] {
+
+}
+
+#drop-section-nav #drop-nav ul li a[href*='research'] {
+
+}
+
+#drop-section-nav #drop-nav ul li a[href*='txforestservice'] {
+	
+}
+
+#drop-section-nav #drop-nav ul li.align-right {
+	display: none;
+}
+
+body.collegeonly #drop-section-nav #drop-nav ul li a.college-explore-link {
+	background: rgba(0,0,0,.1) url('images/explore-button.png?v=100') no-repeat 90% -34px;
+	display: block;
+	text-indent: 0;
+	border-radius: 3px;
+	padding: 5px 20px 5px 10px;
+	margin: 12px 0 0;
+	height: auto;
+	width: auto;
+	color: #cbb7a3;
+	font-family: verdana, clean, sans-serif;
+	font-size: 14px;
+}
+body.collegeonly #drop-section-nav #drop-nav ul li a.college-explore-link:hover {
+	background-position: 90% 7px;
+	background-color: rgba(0,0,0,.2);	
+	color: #e2dec7;
+}
+
+
+.collegeonly #drop-section-nav #drop-nav ul li a,
+.extensiononly #drop-section-nav #drop-nav ul li a,
+.researchonly #drop-section-nav #drop-nav ul li a,
+.tvmdlonly #drop-section-nav #drop-nav ul li a {
+	position: relative;
+	z-index: 2;
+	display: block;
+	text-indent: -999em;
+	background-repeat: no-repeat;
+	background-position: left top;	
+	width: 190px;
+	height: 46px;
+	margin-top: 2px;
+}	
+.extensionmn #drop-section-nav #drop-nav ul .txmn-item a {
+  width: 50px;
+}
+.tvmdlonly #drop-section-nav #drop-nav ul li a {
+	height: 40px;
+}
+
+.extensiononly #drop-section-nav #drop-nav ul li a[href*='extension'] {
+	background-image: url('images/ext-system-logo.png?v=100');
+}
+.extensionmn #drop-section-nav #drop-nav ul li a[href*='tpwd'] {
+  background-image: url('images/tpwd.png?v=100');
+}
+
+.extensioncountytce #drop-section-nav #drop-nav ul li a[href*='pvcep'] {
+	background-image: url('images/cep-logo.png?v=100');
+	width: 204px;
+	margin-top: 0px;
+}
+
+.collegeonly #drop-section-nav #drop-nav ul li a[href*='aglifesciences'] {
+	background-image: url('images/college-logo.png?v=100');
+	margin-top: 8px;
+	height: 39px;
+}
+
+.tvmdlonly #drop-section-nav #drop-nav ul li a[href*='tvmdl'] {
+	background-image: url('images/tvmdl-logo.png?v=100');
+	width: 90px;
+	margin-bottom: -4px;
+}
+
+.researchonly #drop-section-nav #drop-nav ul li a[href*='research'] {
+	background-image: url('images/research-logo.png?v=100');
+}
+
+.tvmdlonly #drop-section-nav #drop-nav ul li a.client-login {
+	display: none;
+}
+
+.tvmdlonly #drop-section-nav #drop-nav ul li a.client-login:hover {
+	background: rgba(0,0,0,.5);
+}
+
+.tvmdlonly #drop-section-nav #drop-nav .client-login-li {
+	margin-top: 8px;
+}
+
+#drop-section  {
+	background: #EAE8D9 ;
+	border-bottom: 2px solid #fff;	
+	color: #fff;
+	padding-top: 30px;
+}
+
+#drop-section .flow {
+	position: relative;	 
+	overflow: hidden;
+	margin: 0 auto;	
+}
+
+#drop-section .hidden {
+	display: none;	
+}
+
+#drop-section .flow .contents {
+	bottom: 0px;
+	position: absolute;
+	padding: 0 10px;		
+}
+
+#drop-section .flow .contents a {
+	color: #eee;		
+}
+
+#drop-section .flow .contents a:hover {
+	color: #fff;		
+}
+
+#drop-section .flow .contents .gform_wrapper {
+	position: relative;
+	padding: 23px 5px 5px 5px;
+	float: left;
+	width: 164px;
+	background: #0084b9;		
+}
+
+#drop-section .flow .contents form label {
+	display: block;	
+	padding-left: 5px;	
+	font-size: 14px;
+}
+
+#drop-section .flow .contents form input {
+	margin-bottom: 8px;	
+}
+
+#drop-section .flow .contents form button[type=reset] {	
+	border: 1px solid #1073a0;
+	color: #ccc;
+	background: #1073a0;
+	padding: 2px 5px;	
+}
+
+#drop-section .flow .contents form button[type=submit] {	
+	padding: 2px 12px;	
+}
+
+#drop-section .flow .contents form input,
+#drop-section .flow .contents form textarea {
+	background: #003950;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid #034b6b;	
+	padding: 2px 3px;
+	width: 154px;	
+	-moz-transition: background-color .15s linear;	
+	-webkit-transition: background-color .15s linear;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;	
+}
+
+#drop-section .flow .contents form textarea {
+	background: #003950;
+	color: #fff;
+	border: 1px solid #034b6b;	
+	padding: 2px 3px;
+	-moz-transition: background-color .15s linear;	
+	-webkit-transition: background-color .15s linear;
+}
+
+#drop-section .flow .contents form input:hover,
+#drop-section .flow .contents form textarea:hover {
+	background: #002736;			
+}
+
+#drop-section .flow .contents form input:focus,
+#drop-section .flow .contents form textarea:focus {
+	background: #00151d;
+	-webkit-box-shadow: 0 0 10px #12a6ed;
+	-moz-box-shadow: 0 0 10px #12a6ed;
+	box-shadow: 0 0 10px #12a6ed;			
+}
+
+#drop-section .flow .contents #top-level-nav {
+	float: right;
+	width: 760px;
+	padding: 0 0 0 20px;
+	border-top: 16px solid #f2a90f;	
+}
+
+#drop-section .flow .contents #top-level-nav #ext-intro {
+	background: #f7d898;
+	margin: 0 0 20px 0;
+	padding: 15px 0;	
+}
+
+#drop-section .flow .contents #top-level-nav #ext-intro p {
+	line-height: 16px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	color: #815a08;	
+}
+
+#drop-section .flow .contents #top-level-nav #ext-intro p a {
+	background: rgba(3,3,3,.1);
+	padding: 3px 5px;
+	color: #815a08;	
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: none;		
+}
+
+#drop-section .flow .contents #top-level-nav #ext-intro p a:hover {
+	background: rgba(3,3,3,.2);
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav {
+	float: left;
+	width: 169px;
+	margin-left: 20px;
+	margin-bottom: 25px;
+	padding: 2px;
+	border: 1px dashed #d9d1ae;
+	-webkit-transition: -webkit-box-shadow .2s ease-in;	
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover {
+	-webkit-box-shadow: 0 0 5px rgba(177, 168, 117,.9);
+	-moz-box-shadow: 0 0 5px rgba(177, 168, 117,.9);
+	box-shadow: 0 0 5px rgba(177, 168, 117,.9);	
+	border: 1px solid #d9d1ae;		
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav h2 {
+	font: 12px "ff-dagny-web-pro-1","ff-dagny-web-pro-2", 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	text-transform: uppercase;
+	padding: 7px 0 7px 38px;
+	color: #815a08;
+	background: #d0c69b url(images/top-level-arrow.png?v=100) no-repeat left -31px;	
+	border-bottom: 1px solid #c6c097;
+	-webkit-transition: border .3s ease-in;	
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover h2 {
+	background-position: left top;
+	border-bottom: 1px solid #d7960d;	
+}
+
+#drop-section .flow .contents #top-level-nav .business-nav {
+	margin-left: 0; 
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav .tags ul {
+	margin: 5px 0;
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav .tags ul li {
+	display: inline;
+	font-size: 11px;
+	margin: 0;
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav .tags ul li a {
+	display: inline;
+	float: left;
+	font-size: 12px;
+	padding: 2px 7px;
+	color: #0082B6;
+	margin: 0 3px 3px 0;
+	background: #efede2;
+	background: rgba(255,255,255,.25);
+	border: none;
+	-webkit-transition: background .1s ease-in;	
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover .tags ul li a {
+	background: #efede2;
+	background: rgba(255,255,255,.4);	
+}
+
+#drop-section .flow .contents #top-level-nav .top-level-nav:hover .tags ul li a:hover {
+	background: #f8f7f2;
+	background: rgba(255,255,255,.75);		
+	border: none;	
+	text-decoration: underline;
+}
+#top-level-nav ul {
+	margin: 1.2em 0;
+	overflow: hidden;
+} 
+
+#top-level-nav li {
+	font: 13px "Verdana", clean, sans-serif;
+	padding: 2px 0;	
+} 
+#top-level-nav li a {
+	text-decoration: none;
+	border: none;
+} 
+#top-level-nav li a:hover {
+	text-decoration: underline;
+} 
+.top-level-li {
+	font-size: 13px;	
+}
+#top-level-nav li.sub {
+	font: 18px "ff-dagny-web-pro-1","ff-dagny-web-pro-2", 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	text-shadow: 0 1px 1px #40001a;
+} 
+
+body.collegeonly #drop-section .btn a, button.btn {	
+	border: 1px solid #d00031;			
+}
+
+body.collegeonly #drop-section-nav {
+	background-color: #5b0125;
+	border-bottom: 1px solid #5b0125;	
+}
+
+body.tvmdlonly #drop-section-nav {
+	background-color: #8c5933;
+	border-bottom: 1px solid #8c5933;	
+}
+
+body.tvmdlonly.fazd #drop-section-nav {
+	background-color: #f5f5ee;
+	border-bottom: 1px solid #ddd;
+	box-shadow: none;
+	display: none;	
+}
+
+body.extensiononly #drop-section-nav {
+	background-color: #004C6B;
+	border-bottom: 1px solid #004C6B;	
+}
+
+body.researchonly #drop-section-nav {
+	background-color: #5a8c37;
+	border-bottom: 1px solid #5a8c37;	
+}
+
+body.collegeonly #drop-section-nav #drop-nav ul li.tx-uni-item a {
+	padding: 1px 20px;
+	margin-left: 10px;
+	text-indent: -999em;
+	height: 32px;
+	width: 194px;
+	display: block;
+	background: url('images/college-logo.png?v=100') no-repeat left center;
+}
+
+body.collegeonly #drop-section .flow .contents #ext-intro {	
+	border-color: #fff;			
+	background: #ece5c2;		
+}
+
+body.collegeonly #drop-section .flow .contents #ext-intro p {	
+	color: #5a0024;	
+}
+
+body.collegeonly #drop-section .flow .contents #ext-intro p a {
+	background: #d5c380;
+	color: #815a08;		
+}
+
+body.collegeonly #drop-section .flow .contents #ext-intro p a:hover {
+	background: #b19e56;
+}
+
+body.collegeonly #drop-section .flow .contents #ext-intro p.ask-text {	
+	color: #5a0024;	
+}
+
+body.collegeonly #drop-section .flow .contents #top-level-nav .top-level-nav {
+	border-color: #d9d1ae;
+}
+
+body.collegeonly #access li a[title='home'] {
+	background-image: url('images/home-college.png?v=100');
+}
+
+#college-top-level-section, .ask, .explore  {
+	display: none;
+}
