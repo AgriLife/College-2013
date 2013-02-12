@@ -1,0 +1,46 @@
+.blog {
+	.entry-meta { 
+		width: 10%;
+		display: inline-block;
+		float: left;
+		margin: 5px 0 0 0;
+		font-family: $ornate-title-font;
+		font-weight: $ornate-title-font-weight;
+		font-size: .9em;
+		font-style: normal;
+		color: #500000;
+		text-align: center;
+		.college-day {
+			font-size: 1.8em;
+		}
+		.college-month {
+			text-transform: uppercase;
+		}
+	}
+	.entry-content,
+	.entry-summary { 
+		width: 87%;
+		margin-left: 13%;
+	}
+
+}
+@media all and (min-width: $breakpoint-medium) {
+	.blog {
+		.entry-meta { 
+			font-size: 1.1em;
+		}
+	}
+
+}
+@media all and (min-width: $breakpoint-biggest) {
+	.blog {
+		.entry-meta { 
+			width: 8%;
+		}
+		.entry-content,
+		.entry-summary { 
+			width: 89%;
+			margin-left: 11%;
+		}
+	}
+}
