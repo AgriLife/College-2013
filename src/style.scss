@@ -15,11 +15,13 @@
 @include h5bp-helpers;
 
 @import "compass/utilities/tables";
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
 $sans-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 $body-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 
-$ornate-title-font: 'rosewood-std-fill',serif;
+$ornate-title-font: 		'Alfa Slab One',serif;
+$ornate-title-font-weight:	400;
 
 $body-background-color: #F5F0E4;
 $mustard-background-color: #9C7D0D;
@@ -405,9 +407,7 @@ a.logout_btn {
 	border-radius: 10px; 
 	color: #999;
 	border: 1px solid #ccc;
-	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	@include box-shadow(inset 1px 1px 1px rgba(0,0,0,0.1));
 }
 
 .searchsubmit {
@@ -1045,21 +1045,20 @@ body.home .home-middle-1 {
 #content-wrap {
 	@include single-box-shadow(rgba(0,0,0,0.4), -2px, 0, 15px);
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
-    a {
-		color:#111;
-		text-decoration: none;
-		border-bottom: 1px dotted #111;
-		-webkit-transition: .3s color ease, .3s border ease;
-		-moz-transition: .3s color ease, .3s border ease;	 
-	}
-
-	a:active,
-	a:hover {
-		color: #332c2c;
-		text-decoration: none;
-		border-bottom: 1px solid #332c2c;	
-	}
 }
+
+//#content {
+	a {
+		color:#111;
+		text-decoration: underline;
+		&:active,
+		&:hover {
+			color: #500000;
+			text-decoration: underline;	
+		}
+	}
+//}
+
 
 #breadcrumbs {
 	margin-bottom: 1.6em;
@@ -1099,12 +1098,27 @@ body.home.blog .hentry {
 }
 .entry-meta {
 	margin: 15px 0 25px;
-}
-
-#content .hentry .entry-meta {
-	font-weight: 600;
+	font-weight: 400;
 	font-style: italic;
 }
+
+// post Styles
+#content {
+	.post h2,
+	.post h2 a {
+		color: #B7A66D;
+		clear: right;
+		font-size: 1.1em;
+		text-decoration: none;
+	}
+	.post h2 a:hover {
+		text-decoration: underline;
+	}
+}
+
+@import "news-page";
+
+
 
 #content ul {
 	list-style: circle;	
@@ -1170,6 +1184,7 @@ body.home.blog .hentry {
 		padding: 5px 5px 5px 0;
 		font-size: 16px;
 		font-family: $ornate-title-font;
+		font-weight: $ornate-title-font-weight;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		line-height: 1.6em;
@@ -1269,9 +1284,11 @@ body.home.blog .hentry {
 // Events 		------------------------------------------------------------
 
 body.page h1.entry-title {
-	margin: 0 0 .8em 0;
+	margin: 0 0 .6em 0;
 	font-family: $ornate-title-font;
+	font-weight: $ornate-title-font-weight;
 	color: #500000;
+	text-transform: uppercase;
 }
 
 // Widgets 		------------------------------------------------------------
@@ -1288,12 +1305,12 @@ body.page h1.entry-title {
 
 	h3.widget-title {
 		font-size: 1.2em;
-		font-weight: bold;
-		padding: 3% 3% 3% 5%;
+		font-weight: $ornate-title-font-weight;
+		padding: 5% 3% 5% 5%;
 		margin-bottom: 0;
 		@include box-shadow(#666 0 20px 30px -8px);
-
-		background: url('http://agrilife.org/wp-content/themes/AgriLife-Beta/images/widgets2.png') top right no-repeat transparent;
+		line-height: 1em;
+		background: url('images/bg-titles.png') top right no-repeat transparent;
 		color: #fff;
 		text-align: left;
 		text-transform: uppercase;
@@ -1567,38 +1584,31 @@ body.page h1.entry-title {
 	.js .searchform {
 		width: 100px;
 		overflow: hidden;
-		top: -130px;
+		top: -124px;
 		right: 0;
 		position: absolute;
 		z-index: 200;
 		input.s {
-			padding: 8px 5px 8px 30px;
+			padding: 8px 5px 8px 90px;
 			width: 0px;
 			float: right;
-				
 			@include transition-property(width);
   			@include transition-duration(.5s);
   			@include transition-timing-function(ease);
-
-			background: #fff url('http://agrilife.org/wp-content/themes/AgriLife-Beta/images/search.png') no-repeat 2px 45%;
-			-webkit-border-top-right-radius: 0;
-			-moz-border-radius-topright: 0;
-			border-top-right-radius:0;
-			-webkit-border-top-left-radius: 0;
-			-moz-border-radius-topleft: 0;
-			border-top-left-radius:0;
+			background: transparent url('images/search2.png') no-repeat 10px 45%;
+			border-radius: 0; 
+			color: #999;
+			border: 0;
+			@include box-shadow(none);
 		}
 		input.s:hover {
-			background-color: #f7f7f7;			
+			background-color: #666;			
 		}
 		input.s:focus {
 			width: 60px;
+			background: transparent url('images/search2.png') no-repeat 5px 45%;
 			background-color: #fafafa;	
-			outline: none;
-			border-color: #2783e6;	
-			-webkit-box-shadow: 0 0 5px #2783e6;
-			-moz-box-shadow: 0 0 5px #2783e6;
-			box-shadow: 0 0 5px #2783e6;					
+			border-color: #2783e6;						
 		}
 	}
 
@@ -1653,6 +1663,7 @@ body.page h1.entry-title {
 
 	#access ul.menu li a {
 		background: transparent;
+		text-decoration: none;
 		color: #fff;
 		border: 0;
 		padding: 0 .5em;
@@ -1904,6 +1915,7 @@ body.page h1.entry-title {
 			background: $translucent-white;
 			height: 28px;
 			width: 155px;
+			text-decoration: none;
 			&:hover {
 				background: #fff;
 				@include transition-property(all);
@@ -1939,6 +1951,10 @@ body.page h1.entry-title {
 	@import "user-styles";
 
 }
+
+
+
+
 
 
 @import "footer";

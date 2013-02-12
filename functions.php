@@ -249,5 +249,41 @@ function agriflex_college_footer() {
 
 
 
+/**
+ * Prints HTML with meta information for the current post—date/time and author.
+ *
+ * @author Travis Ward <travis@travisward.com>
+ * @since College 2013
+ */
+function agriflex__college_posted_on() {
+     printf( __( '<time class="entry-date" datetime="%1$s"><div class="college-day">%2$s</div><div class="college-month">%3$s</div></time>', 'agriflex' ),
+          esc_attr( get_the_date( 'c' ) ),
+          esc_html( get_the_date( 'j' ) ),
+          esc_html( get_the_date( 'M' ) )
+     );
+}
+
+
+/**
+ * Prints HTML with meta information for the current post—date/time and author.
+ *
+ * @author Travis Ward <travis@travisward.com>
+ * @since College 2013
+ */
+function agriflex_college_post_thumbnail( $size = 'featured-mediabox' ) {
+
+  global $post;
+
+  if ( has_post_thumbnail( $post->ID ) ) {
+  	// Show the post thumbnail
+  	$html = '<a class="feature-img-excerpt" href="' . get_permalink( $post->ID ) . '">';
+    $html .= get_the_post_thumbnail( $post->ID, $size ); 
+    $html .= '</a>';
+  } 
+  
+  echo $html;
+
+} // agriflex_post_thumbnail
+
 
 ?>
