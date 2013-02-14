@@ -279,9 +279,10 @@ function agriflex_college_post_thumbnail( $size = 'featured-mediabox' ) {
   	$html = '<a class="feature-img-excerpt" href="' . get_permalink( $post->ID ) . '">';
     $html .= get_the_post_thumbnail( $post->ID, $size ); 
     $html .= '</a>';
+    
+	  echo $html;
   } 
   
-  echo $html;
 
 } // agriflex_post_thumbnail
 
