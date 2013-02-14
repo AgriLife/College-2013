@@ -1,0 +1,39 @@
+
+.srp-widget-singlepost {
+	margin: 7% 5%;
+
+}
+.srp-thumbnail-box {
+	float: left;
+	width: 15%;
+}
+
+.srp-widget-date {
+	margin: 0;
+	display: inline-block;
+	font-family: "Alfa Slab One", serif;
+	font-weight: 400;
+	font-size: 1em;
+	font-style: normal;
+	color: #500000;
+	text-align: center;
+}
+
+#aside .srp-content-box {
+	float: right;
+	width: 75%;
+	h4 {
+		margin: 0;
+		font-size: .8em;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.srp-widget-thmb {
+	border: 5px solid #fff;
+	@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+}
