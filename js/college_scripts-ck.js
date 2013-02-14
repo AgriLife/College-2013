@@ -173,6 +173,9 @@ jQuery(document).ready(function($) {
 		},300);
 	});
 
+	// Add a border to buttons
+	$('.button').wrap('<div class="button-wrap" />');
+
 });
 
 /* **********************************************
