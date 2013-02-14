@@ -1,25 +1,51 @@
-.agrilifetoday ul li {
-	margin: 0;
-	padding: 20px 0 20px 65px;
-	border-bottom: 1px solid #e0dfd8;
-	border-top: 1px solid #fff;
-	position: relative;
+// positioning
+
+.agrilifetoday {
+	.rss-title,
+	.rss-date {
+		width: 75%;
+		float: right;
+	}
+	.rss-img-link {
+		width: 15%;
+		position: relative;
+	}
 }
 
-.agrilifetoday ul li img {
-	left: 0;
-	top: 20px;
-	padding: 4px;
-	position: absolute;
-	background: #f0eee3;
-	background: rgba(255,255,255,.55);
-	margin-right: 3%;
-	border-top: 1px solid #fff;		
-	-webkit-box-shadow: 0 1px 2px #d8d3ae;
-	-moz-box-shadow: 0 1px 2px #d8d3ae;
-	box-shodow: 0 1px 2px #d8d3ae;	
-	width: 48px;
-	height: 48px;
+// styles
+
+#aside .widget-container.agrilifetoday .widget-wrap ul {
+	padding: 0;
+}
+#content-wrap .agrilifetoday ul li {
+	margin: 7% 5%;
+}
+
+.agrilifetoday { 
+	.rss-title {
+		margin-bottom: 2px;
+	}
+	.rss-title,
+	.rss-content {
+		margin: 0;
+		font-size: .8em;
+		line-height: 1.2em;
+		a {
+			text-decoration: none;
+			color: #111;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+}
+
+
+.agrilifetoday img {
+	width: 50px;
+	border: 5px solid #fff;
+	@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .widget_twitter ul li .entry-meta {
@@ -27,16 +53,28 @@
 	display: block;
 }
 
+
+.agrilifetoday ul li span.rss-date {
+	margin: 0;
+	display: inline-block;
+	font-family: "Alfa Slab One", serif;
+	font-weight: 400;
+	font-size: 1.3em;
+	font-style: normal;
+	color: #500000;
+}
+
+#aside .agrilifetoday ul li p.rss-excerpt {
+	font-size: 11px;	
+}
+
+/*
 #home-middle .agrilifetoday ul li {
 	padding: 20px 0 20px 0;
 	border-bottom: 1px solid #e0dfd8;
 	border-top: 1px solid #fff;
 	overflow: visible;
 	position: relative;
-}
-
-#aside .agrilifetoday ul li {
-	padding: 20px 0 20px 65px;
 }
 #home-middle .agrilifetoday ul li img {
 	width: 150px;
@@ -52,24 +90,11 @@
 	-moz-box-shadow: 0 2px 5px #ccc;
 	box-shodow: 0 2px 5px #ccc;			
 }
-#aside .agrilifetoday ul li img {
-	width: 48px;
-	height: 48px;	
-}
 #home-middle .agrilifetoday ul li a.rss-title-link {
 	font-size: 22px;
 	line-height: 1.5em;
 	font-weight: bold;
 }
-
-.agrilifetoday ul li span.rss-date {
-	display: block;
-	padding-top: 7px;
-	margin-bottom: -10px;
-	text-transform: uppercase;
-	font-family: $body-font;	
-}
-
 #home-middle .agrilifetoday ul li .rss-content {
 	position: relative;
 }
@@ -102,10 +127,7 @@ body.home.extension #home-middle .agrilifetoday ul li span.rss-date {
 body.home.college #home-middle .agrilifetoday ul li span.rss-date {
 	background: #5D0025;
 }
-
-#aside .agrilifetoday ul li p.rss-excerpt {
-	font-size: 11px;	
-}
 #home-middle .agrilifetoday ul li .rss-title {
 	display: block;	
 }
+*/
