@@ -4162,6 +4162,56 @@ img {
   color: #9F6D56;
 }
 
+/* line 2, src/widgets/_srp-widget.scss */
+.srp-widget-singlepost {
+  margin: 7% 5%;
+}
+
+/* line 6, src/widgets/_srp-widget.scss */
+.srp-thumbnail-box {
+  float: left;
+  width: 15%;
+}
+
+/* line 11, src/widgets/_srp-widget.scss */
+.srp-widget-date {
+  margin: 0;
+  display: inline-block;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  color: #500000;
+  text-align: center;
+}
+
+/* line 22, src/widgets/_srp-widget.scss */
+#aside .srp-content-box {
+  float: right;
+  width: 75%;
+}
+/* line 25, src/widgets/_srp-widget.scss */
+#aside .srp-content-box h4 {
+  margin: 0;
+  font-size: .8em;
+}
+/* line 28, src/widgets/_srp-widget.scss */
+#aside .srp-content-box h4 a {
+  text-decoration: none;
+}
+/* line 30, src/widgets/_srp-widget.scss */
+#aside .srp-content-box h4 a:hover {
+  text-decoration: underline;
+}
+
+/* line 36, src/widgets/_srp-widget.scss */
+.srp-widget-thmb {
+  border: 5px solid white;
+  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* @import "jquery-tabs"; */
 /*----- Job Postings single page ------ */
 /* line 3, src/plugins/_job-postings-cpt.scss */
@@ -6428,35 +6478,35 @@ p.flex-caption a:hover {
 }
 
 /* Columns CPT Events */
-/* line 1976, src/style.scss */
+/* line 1977, src/style.scss */
 #tf_col_ev_date, th#tf_col_ev_cat {
   width: 150px;
 }
 
-/* line 1977, src/style.scss */
+/* line 1978, src/style.scss */
 td.tf_col_ev_date em {
   color: gray;
 }
 
-/* line 1978, src/style.scss */
+/* line 1979, src/style.scss */
 th#tf_col_ev_times {
   width: 150px;
 }
 
-/* line 1979, src/style.scss */
+/* line 1980, src/style.scss */
 th#tf_col_ev_thumb {
   width: 100px;
 }
 
 /* Metabox */
-/* line 1984, src/style.scss */
+/* line 1985, src/style.scss */
 body.wp-admin .tf-meta ul li {
   height: 20px;
   clear: both;
   margin: 0 0 15px 0;
 }
 
-/* line 1985, src/style.scss */
+/* line 1986, src/style.scss */
 body.wp-admin .tf-meta ul li label {
   width: 100px;
   display: block;
@@ -6464,14 +6514,14 @@ body.wp-admin .tf-meta ul li label {
   padding-top: 4px;
 }
 
-/* line 1986, src/style.scss */
+/* line 1987, src/style.scss */
 body.wp-admin .tf-meta ul li input {
   width: 125px;
   display: block;
   float: left;
 }
 
-/* line 1987, src/style.scss */
+/* line 1988, src/style.scss */
 body.wp-admin .tf-meta ul li em {
   width: 200px;
   display: block;
