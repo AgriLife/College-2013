@@ -30,9 +30,7 @@ function agriflex_college_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// Add new image sizes
-	add_image_size( 'featured', 965, 475, true );
-	add_image_size( 'featured-2', 585, 305, true );
-	add_image_size( 'featured-mediabox', 175, 124, true );    
+	add_image_size( 'home-ss', 748, 494, true );  
 
 	// Register the menus
 	register_nav_menus( array(
@@ -44,10 +42,10 @@ function agriflex_college_setup() {
 	register_sidebar( array(
 		'name' => 'Home right sidebar',
 		'id' => 'home_right_1',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="home-widget widget-container">',
 		'after_widget' => '</div>',
-		'before_title' => '<h2 class="rounded">',
-		'after_title' => '</h2>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 
 	// register Category_Widget widget

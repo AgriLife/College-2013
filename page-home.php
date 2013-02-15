@@ -61,13 +61,17 @@ get_header(); ?>
 	<div class="home-content">
 		<section id="content" role="main">
 
-				<?php the_post(); ?>
+				<?php if (!dynamic_sidebar('Home Page Bottom')) : ?>	
+				
+				
+				<?php endif; ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<h2>SM Dir</h2>
+
 
 		</section><!-- /end #content -->
 
-		<section id="sidebar" role="main">
+		<section id="aside" role="main">
 			<?php if ( ! dynamic_sidebar( 'home_right_1' ) ) : ?>		
 				
 				

@@ -20,12 +20,21 @@
 }
 
 #aside .srp-content-box {
+	h4,
+	.srp-widget-excerpt {
+		font-size: .8em;
+		margin: 0;
+	}
+}
+
+.srp-content-box {
 	float: right;
 	width: 75%;
 	h4 {
 		margin: 0;
 		font-size: .8em;
 		a {
+			color: #111;
 			text-decoration: none;
 			&:hover {
 				text-decoration: underline;
@@ -36,4 +45,16 @@
 .srp-widget-thmb {
 	border: 5px solid #fff;
 	@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.home #content {
+	.srp-thumbnail-box {
+		width: 80px;
+	}
+	.srp-content-box {
+		width: 475px;
+	}
+	.srp-widget-singlepost {
+		margin: 3%;
+	}
 }
