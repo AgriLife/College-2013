@@ -176,4 +176,24 @@ jQuery(document).ready(function($) {
 	// Add a border to buttons
 	$('.button').wrap('<div class="button-wrap" />');
 
+
+
+
+	// Style Homepage Buttons
+
+	jQuery("#challenge-high1").fitText(0.6);//, { minFontSize: '20px', maxFontSize: '24px' }); //20px
+	jQuery("#challenge-high2").fitText(0.45);//, { minFontSize: '26px', maxFontSize: '29px' }); //26px
+	
+	jQuery("#challenge-stem1").fitText(1.01);
+	jQuery("#challenge-stem2").fitText(0.90);
+
+	jQuery("#challenge-grand1").fitText(0.3);
+	jQuery("#challenge-grand2").fitText(0.56);
+
+	jQuery("#challenge-diversity").fitText(0.49);
+
+	jQuery("#challenge-accountability").fitText(0.8);
+
+	jQuery("#challenge-international1").fitText(0.73);
+	jQuery("#challenge-international2").fitText(0.48);
 });

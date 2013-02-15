@@ -181,6 +181,10 @@ p {
 }
 
 #content-wrap {
+	background: #fff;
+	@include single-box-shadow(rgba(0,0,0,0.4), -2px, 0, 15px);
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+
 	ul, ol {	
 		list-style: none;
 		margin: 1.2em 0 1.2em 4.5em;
@@ -1041,11 +1045,6 @@ body.home .home-middle-1 {
     clear:both;
 }
 */
-
-#content-wrap {
-	@include single-box-shadow(rgba(0,0,0,0.4), -2px, 0, 15px);
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
 
 //#content {
 	a {
@@ -1954,7 +1953,7 @@ body.page h1.entry-title {
 
 
 
-
+@import "home";
 
 @import "footer";
 
