@@ -40,6 +40,16 @@ function agriflex_college_setup() {
 		'secondary' => __( 'Secodary Navigation', 'agriflex' )
 	) );
 
+
+	register_sidebar( array(
+		'name' => 'Home right sidebar',
+		'id' => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+
 	// register Category_Widget widget
 	add_action( 'widgets_init',
 	create_function( '', 'register_widget( "category_widget" );' ) );
@@ -286,5 +296,12 @@ function agriflex_college_post_thumbnail( $size = 'featured-mediabox' ) {
 
 } // agriflex_post_thumbnail
 
+
+function remove_some_widgets(){
+	// Remove unused AgriFlex Widget Areas
+	unregister_sidebar( 'sidebar-widget-navigation' );
+	unregister_sidebar( 'right-column-bottom-widget-area' );
+}
+add_action( 'widgets_init', 'remove_some_widgets', 20 );
 
 ?>
