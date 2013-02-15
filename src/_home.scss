@@ -67,6 +67,16 @@
 		
 	}
 
+	#content {
+		h3.widget-title {
+			font-size: 1.2em;
+			font-weight: $ornate-title-font-weight;
+			padding: 3% 2% 3% 3%;
+			font-family: $ornate-title-font;
+			letter-spacing: 1px;
+		}
+	}
+
 
 }
 
@@ -111,12 +121,9 @@
 			float: left;
 		}
 		#content {
-			width: 60%;
+			width: 58%;
 			float: left;
-		}
-		#sidebar {
-			width: 30%;
-			float: right;
+			padding: 0 0 0 2%;
 		}
 		#content-wrap .featured-content .featured-stories li {
 				margin: 10px auto;
@@ -140,6 +147,29 @@
 				line-height: 0.9em;
 			}	
 
+		}
+
+		#aside {
+			clear: none;
+			float: right;
+			margin: 0;
+			background-color: transparent;
+			width: 33%;
+			padding: 0 2% 0 0;
+/*
+			h3.widget-title {
+				font-size: 1.2em;
+				font-weight: $ornate-title-font-weight;
+				padding: 5% 3% 5% 5%;
+				margin-bottom: 0;
+				@include box-shadow(#666 0 20px 30px -8px);
+				line-height: 1em;
+				background: url('images/bg-titles.png') top right no-repeat transparent;
+				color: #fff;
+				text-align: left;
+				text-transform: uppercase;
+			}
+*/
 		}
 		
 	}

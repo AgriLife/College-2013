@@ -1179,15 +1179,6 @@ body.home.blog .hentry {
 	.right {
 		float: right;
 	}
-	h3.widget-title, h3 {
-		padding: 5px 5px 5px 0;
-		font-size: 16px;
-		font-family: $ornate-title-font;
-		font-weight: $ornate-title-font-weight;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		line-height: 1.6em;
-	}
 	h4 {
 		font-size: 1.1em;
 		margin-bottom: .6em;
@@ -1292,7 +1283,7 @@ body.page h1.entry-title {
 
 // Widgets 		------------------------------------------------------------
 
-#aside .widget-container {
+.widget-container {
 	padding: 0;
 	position: relative;
 	margin-bottom: 20px;	
@@ -1304,10 +1295,13 @@ body.page h1.entry-title {
 
 	h3.widget-title {
 		font-size: 1.2em;
+		font-family: $ornate-title-font;
 		font-weight: $ornate-title-font-weight;
-		padding: 5% 3% 5% 5%;
+		//padding: 5% 3% 5% 5%;
+		padding: 4% 4% 4% 5%;
 		margin-bottom: 0;
 		@include box-shadow(#666 0 20px 30px -8px);
+		letter-spacing: 1px;
 		line-height: 1em;
 		background: url('images/bg-titles.png') top right no-repeat transparent;
 		color: #fff;
