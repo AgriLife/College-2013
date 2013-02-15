@@ -1,0 +1,146 @@
+.home {
+	
+	#content-wrap {
+		background: transparent;
+		
+		.featured-content {
+			
+			ul, li {
+				margin: 0;
+			}
+			.featured-stories li {
+				margin: 10px auto;
+				width: 100%;
+			}
+		}
+	}
+
+	.challenge {
+		width: 100%;
+		
+
+		h2 {
+
+			font-family: "rosewood-std-fill",sans-serif; //$ornate-title-font;
+			font-size: 1.2em;
+			text-transform: uppercase;
+
+			width : 80%;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+		}	
+		a {
+			color: #CBB677;
+			text-decoration: none;
+			&:hover {
+				color: #fff;
+			}
+		}
+
+	}
+
+	.featured-content {
+		background: #fff;
+		padding: 10px;
+		
+		h3 {
+			font-size: .8em;
+			color: #fff;
+			text-align: center;
+			font-family: $body-font;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+	.featured-stories-container {
+		background: #500000;
+	}
+	.one-of-3 {
+		margin-bottom: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.home-content {
+		background: #fff;
+		
+	}
+
+
+}
+
+.home .soliloquy-container {
+	float: right;
+	width: 748px;
+}
+
+.home #content-wrap .soliloquy-container .soliloquy-control-nav {
+	margin: 10px;
+	float: right;
+	position: relative;
+	bottom: 35px;
+}
+.home .soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+	ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	display: block;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+	padding: 10px;
+	text-align: left;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	zoom: 1;
+}
+
+@media all and (min-width: $breakpoint-biggest) {
+	.home {
+		.one-of-3 {
+			margin-bottom: 0;
+			padding: 0;
+			width: 243px;
+			height: 494px;
+		}
+
+		.home-content {
+			margin-top: 32px;
+			width: 100%;
+			float: left;
+		}
+		#content {
+			width: 60%;
+			float: left;
+		}
+		#sidebar {
+			width: 30%;
+			float: right;
+		}
+		#content-wrap .featured-content .featured-stories li {
+				margin: 10px auto;
+				width: 165px;
+				border-bottom: 3px solid #7D3351;
+				padding: 5px 0 14px 0;
+
+				&.challenge-international {
+					border-bottom: none;
+				}
+
+		}
+		.challenge {
+			width: 195px;
+			//background: #666;
+
+			h2 {
+				font-size: 16px;
+				width : 100%;
+				
+				line-height: 0.9em;
+			}	
+
+		}
+		
+	}
+}
