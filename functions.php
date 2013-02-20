@@ -42,7 +42,7 @@ function agriflex_college_setup() {
 	register_sidebar( array(
 		'name' => 'Home right sidebar',
 		'id' => 'home_right_1',
-		'before_widget' => '<div class="home-widget widget-container">',
+		'before_widget' => '<div id="%1$s" class="widget home-widget widget-container %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
