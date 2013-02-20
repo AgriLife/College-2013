@@ -1,6 +1,18 @@
 
 /* Social Media Icons
 ******************************/
+.widget_social_media.widget-container h3.widget-title {
+  background-position: right -240px;
+}
+
+.search-widget {
+  border: none;
+  margin: 0 0 .5em;
+  padding: 3.333333333%;  
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; 
+}
+
 .social_media_widget ul {
   width: 100%;
   margin: 0 auto;
