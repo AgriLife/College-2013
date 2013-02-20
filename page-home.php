@@ -23,30 +23,30 @@ get_header(); ?>
 							-->	
 				</li>				
 				<li class="challenge-stem challenge">
-					<a href="<?php echo site_url('/grand-challenges/research-home/') ?>" id="l2" class="challenge-link">
+					<a href="<?php echo site_url('/about/stem/') ?>" id="l2" class="challenge-link">
 						<h2 id="challenge-stem1">Science &bull; Technology</h2>
 						<h2 id="challenge-stem2">Engineering &bull; Math</h2>
 					</a>		
 				</li>				
 				<li class="challenge-grand challenge">
-						<a href="<?php echo site_url('/grand-challenges/college-home/') ?>" id="l3" class="challenge-link">
+						<a href="<?php echo site_url('/about/grand-challenges/') ?>" id="l3" class="challenge-link">
 							<h2 id="challenge-grand1">Grand</h2> 
 							<h2 id="challenge-grand2">Challenges</h2>
 						</a>		
 				</li>				
 				<li class="challenge-diversity challenge">
 					
-						<a href="<?php echo site_url('/grand-challenges/tfs-home/') ?>" id="l4" class="challenge-link">
+						<a href="<?php echo site_url('/about/diversity/') ?>" id="l4" class="challenge-link">
 							<h2 id="challenge-diversity">Diversity</h2>
 						</a>		
 				</li>				
 				<li class="challenge-accountability challenge">
-						<a href="<?php echo site_url('/grand-challenges/tvmdl-home/') ?>" id="l5" class="challenge-link">
+						<a href="<?php echo site_url('/about/accountability/') ?>" id="l5" class="challenge-link">
 							<h2 id="challenge-accountability">Accountability</h2>
 						</a>		
 				</li>
 				<li class="challenge-international challenge">
-						<a href="<?php echo site_url('/grand-challenges/international-programs/') ?>" id="l6" class="challenge-link">
+						<a href="<?php echo site_url('/academics/international-programs/') ?>" id="l6" class="challenge-link">
 							<h2 id="challenge-international1">International</h2>
 							<h2 id="challenge-international2">Programs</h2>
 						</a>		
