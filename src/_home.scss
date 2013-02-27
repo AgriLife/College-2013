@@ -1,5 +1,8 @@
 .home {
 	
+	.wrap {
+		margin-top: 0;
+	}
 	#content-wrap {
 		background: transparent;
 		
@@ -24,6 +27,7 @@
 			font-family: "rosewood-std-fill",sans-serif; //$ornate-title-font;
 			font-size: 1.2em;
 			text-transform: uppercase;
+			line-height: .8em;
 
 			width : 80%;
 			display: block;
@@ -63,9 +67,16 @@
 	}
 
 	.home-content {
-		background: #fff;
+		background: transparent;
+		background: rgb(249, 249, 249);
 		
 	}
+
+	.widget-container {
+		background: transparent;
+		background: rgb(249, 249, 249);
+	}
+
 
 	#content {
 		h3.widget-title {
@@ -75,15 +86,67 @@
 			font-family: $ornate-title-font;
 			letter-spacing: 1px;
 		}
+		.srp-thumbnail-box {
+				width: 25%;
+			}
+			.srp-content-box {
+				width: 75%;
+			}
+			.srp-widget-singlepost {
+				margin: 2%;
+			}
+		}
+		.social-accounts {
+			h3 {
+				margin: 0;
+				font-size: 1em;
+				//font-weight: bold;
+				background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px 0.8em;
+				padding: .5em 0;
+				text-indent: 25px;
+			}
+			.social-media-item {
+				background: none;
+				text-indent: 0;
+				width: 18px;
+				margin-right: .25em;
+				a {
+					display: block;
+					height: 18px;
+					width: 18px;
+					text-indent: -999em;
+					text-decoration: none;
+					border-bottom: none;
+					background-repeat: no-repeat;
+					background-position: left top;
+					background-image: url("images/social-icons.png");
+					margin: auto;
+					background-size: 125px 47px;
+					&.facebook {
+						background-position: -43px top;
+					}
+				}
+			}
+	}
+	.soliloquy-container {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	#content-wrap .social-accounts {
+		ul {
+			list-style: none;
+			margin: 0;
+			ul {
+				margin-left: 3em;
+				background-color: #f5f0e4;
+			}
+		}
 	}
 
 
 }
 
-.home .soliloquy-container {
-	float: right;
-	width: 748px;
-}
 
 .home #content-wrap .soliloquy-container .soliloquy-control-nav {
 	margin: 10px;
@@ -106,6 +169,8 @@
 	zoom: 1;
 }
 
+@import "home/simpletabs";
+
 @media all and (min-width: $breakpoint-biggest) {
 	.home {
 		.one-of-3 {
@@ -116,15 +181,51 @@
 		}
 
 		.home-content {
-			margin-top: 32px;
+			//margin-top: 32px;
 			width: 100%;
 			float: left;
+			background: #fff;
+			background: rgb(249, 249, 249);
 		}
 		#content {
-			width: 58%;
+			width: 71.5%; // must be 678px to fit Postano
 			float: left;
-			padding: 0 0 0 2%;
+			padding: 0 0 0 0;
+
+			h3.widget-title {
+				padding: 2% 2% 2% 3%;
+			}
+
+			.srp-thumbnail-box {
+				width: 80px;
+			}
+			.srp-content-box {
+				width: 475px;
+			}
+			.srp-widget-singlepost {
+				margin: 3%;
+			}
+			.widget-container {
+				padding: 0 1.5%;
+			}
 		}
+		.widget-container {
+			background: #fff;
+			background: rgb(249, 249, 249);
+		}
+		// postano
+		#postano {
+			margin-top: 2%;
+			background: rgb(249, 249, 249);
+		}
+		#pst_isotopediv {
+			background: #f00;
+		}
+		.fspreviewout {
+			background: #f00;
+		}
+
+
 		#content-wrap .featured-content .featured-stories li {
 				margin: 10px auto;
 				width: 165px;
@@ -143,10 +244,15 @@
 			h2 {
 				font-size: 16px;
 				width : 100%;
-				
 				line-height: 0.9em;
 			}	
 
+		}
+
+		.soliloquy-container {
+			float: right;
+			width: 748px;
+			margin-top: 0;
 		}
 
 		#aside {
@@ -154,23 +260,13 @@
 			float: right;
 			margin: 0;
 			background-color: transparent;
-			width: 33%;
-			padding: 0 2% 0 0;
-/*
-			h3.widget-title {
-				font-size: 1.2em;
-				font-weight: $ornate-title-font-weight;
-				padding: 5% 3% 5% 5%;
-				margin-bottom: 0;
-				@include box-shadow(#666 0 20px 30px -8px);
-				line-height: 1em;
-				background: url('images/bg-titles.png') top right no-repeat transparent;
-				color: #fff;
-				text-align: left;
-				text-transform: uppercase;
+			width: 26%;
+			padding: 0 1.5% 0 0;
+			.widget-container {
+				padding: 0;
 			}
-*/
 		}
 		
 	}
+	
 }
