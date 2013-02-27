@@ -60,44 +60,7 @@
 	}
 
 
-	.one-of-2 {
-		width: 48%;
-		clear: both;
-		float: left;
-		margin-bottom: 10px;
-		padding-right: 2%;		
-	}		
-	.two-of-2 {
-		width: 48%;
-		float: left;	
-		margin-bottom: 10px;
-		padding-right: 2%;					
-	}
-	.two-of-2 ul, .one-of-2 ul,
-	.one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
-		margin-left: 1em;		
-	} 	
-	.one-of-3 {
-		width: 30%;
-		clear: both;
-		float: left;
-		margin-bottom: 10px;
-		padding-right: 2%;						
-	}
-		
-	.two-of-3 {
-		width: 30%;
-		float: left;
-		margin-bottom: 10px;
-		padding-right: 2%;						
-	}
 	
-	.three-of-3 {
-		width: 30%;
-		float: left;
-		margin-bottom: 10px;
-		padding-right: 2%;				
-	}
 
 	.button-wrap {
 		border: 1px solid #752645;
@@ -175,6 +138,70 @@
 			border: 5px solid #fff;
 			@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
 		}
+	}
+
+
+	// For Tableau Embeds
+	// http://amobil.se/2011/11/responsive-embeds/
+	.embed-container {
+	    position: relative;
+	    padding-bottom: 80%; /* 16/9 ratio */
+	    padding-top: 30px; /* IE6 workaround*/
+	    height: 0;
+	    //overflow: hidden;
+	    overflow: scroll;
+	}
+	.embed-container iframe,
+	.embed-container object,
+	.embed-container embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	@media all and (min-width: $breakpoint-biggest) {
+		
+		.one-of-2 {
+			width: 48%;
+			clear: both;
+			float: left;
+			margin-bottom: 10px;
+			padding-right: 2%;		
+		}		
+		.two-of-2 {
+			width: 48%;
+			float: left;	
+			margin-bottom: 10px;
+			padding-right: 2%;					
+		}
+		.two-of-2 ul, .one-of-2 ul,
+		.one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
+			margin-left: 1em;		
+		} 	
+		.one-of-3 {
+			width: 30%;
+			clear: both;
+			float: left;
+			margin-bottom: 10px;
+			padding-right: 2%;						
+		}
+			
+		.two-of-3 {
+			width: 30%;
+			float: left;
+			margin-bottom: 10px;
+			padding-right: 2%;						
+		}
+		
+		.three-of-3 {
+			width: 30%;
+			float: left;
+			margin-bottom: 10px;
+			padding-right: 2%;				
+		}
+
 	}
 
 	

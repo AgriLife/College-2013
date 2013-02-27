@@ -30,7 +30,7 @@ $header-bar-grey: #5F574F;
 $widget-font: verdana, clean, sans-serif;
 $widget-font-size: 13px;
 
-$breakpoint-medium:		640px;
+$breakpoint-medium:		590px;
 $breakpoint-biggest:	840px;
 
 $desktop-stage-width:	1024px;
@@ -1036,14 +1036,7 @@ body.home .home-middle-1 {
 	width: 100%;	
 }
 
-#content-wrap:before,
-#content-wrap:after {
-    content:"";
-    display:table;
-}
-#content-wrap:after {
-    clear:both;
-}
+
 */
 
 //#content {
@@ -1385,44 +1378,6 @@ body.page h1.entry-title {
 
 
 
-.widget_social_media.widget-container h3.widget-title {
-	background-position: right -60px;
-}
-
-.widget_social_media.widget-container h3.widget-title {
-	background-position: right -60px;
-}
-.widget_twitter h3.widget-title {
-	background-position: right -180px;
-}
-.agrilife_today_twitter h3.widget-title,
-.home-widgets-lower .widget:first-child h3.widget-title {
-	background-position: right -120px;
-}
-.widget_twitter .widget-wrap ul {
-	padding: 0;
-	margin: 0 0 .5em;
-}
-.widget_twitter li {
-	padding: .5em 6% 1em;
-	border-bottom: 1px dashed #999;
-}
-.widget-container h3.widget-title a {
-	color: white;
-}
-.home .widget h3.widget-title .rsswidget img {
-	display: none;
-}
-.widget li.social-media-item {
-	margin-bottom: 0;
-}
-.search-widget {
-	border: none;
-	margin: 0 0 .5em;
-	padding: 3.333333333%; 	
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;	
-}
 
 
 
@@ -1430,7 +1385,7 @@ body.page h1.entry-title {
 // END Widgets 		--------------------------------------------------------
 
 
-
+@import "widgets/widgets";
 @import "widgets/tag-cloud";
 @import "widgets/agrilife-today";
 @import "widgets/agrilife-watch_read_listen";
@@ -1470,6 +1425,7 @@ body.page h1.entry-title {
 	}
 	body {
 		font-size: 110%;
+		//color: #f00;
 	}
 	#site-title {
 		margin: 20px 0;	
@@ -1499,7 +1455,7 @@ body.page h1.entry-title {
 		box-shadow: 0 -2px 6px rgba(16,16,16,.075);	
 		background: #fff url(images/gradient.png?v=100) repeat-x left -100px;	
 		*/
-		// margin-top: 50px;		
+		// margin-top: 50px;
 		@include box-shadow(none);
 	}
 
@@ -1533,6 +1489,20 @@ body.page h1.entry-title {
 		@include background-image(linear-gradient($mustard-background-color 780px, $body-background-color 1100px));
 	}
 
+	#content-wrap {
+		background: url("images/bg-titles.png") top right no-repeat transparent;
+		background-size: 2048px;
+		padding-top: 1px;
+		margin-top: 15px;
+		&:before,
+		&:after {
+    		content:"";
+    		display:table;
+		}
+		#content-wrap:after {
+    		clear:both;
+		}
+	}
 	
 	#drop-section-nav {
 		width: 100%;
@@ -1856,6 +1826,10 @@ body.page h1.entry-title {
 		padding: 1%;
 	}
 
+	.wrap {
+		background: #fff;
+	}
+
 	.wrap #wrap {
 		float: right;
 		overflow: hidden;
@@ -1864,6 +1838,13 @@ body.page h1.entry-title {
 		margin: 2.5% 3% 2% 0;
 		padding: 0 1% 1% 1%;
 
+	}
+
+	.wrap #wrap.one-column {
+		width: 100% - 10%;
+		margin: 2.5% 0% 2% 0%;
+		padding: 0 2% 1% 2%;
+		float: left;
 	}
 
   	[role="document"] {
@@ -1940,16 +1921,13 @@ body.page h1.entry-title {
 	
 	
 	@import "agency-logorama";
-	@import "user-styles";
+	
 
 }
 
-
-
-
 @import "home";
-
 @import "footer";
+@import "user-styles";
 
 @import "widgets/srp-widget";
 
@@ -1962,6 +1940,7 @@ body.page h1.entry-title {
 @import "plugins/gigpress";
 @import "plugins/socialmedia";
 @import "plugins/flexslider";
+@import "plugins/ai1ec-calendar";
 
 
 /* Columns CPT Events */

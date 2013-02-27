@@ -43,18 +43,7 @@
 	}
 }
 .srp-widget-thmb {
-	border: 5px solid #fff;
+	//border: 5px solid #fff;
 	@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.home #content {
-	.srp-thumbnail-box {
-		width: 80px;
-	}
-	.srp-content-box {
-		width: 475px;
-	}
-	.srp-widget-singlepost {
-		margin: 3%;
-	}
-}

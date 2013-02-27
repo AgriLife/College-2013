@@ -61,12 +61,54 @@ get_header(); ?>
 	<div class="home-content">
 		<section id="content" role="main">
 
+				<div id="postano"></div>
+				<!-- OLD <script type="text/javascript" src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500&scrolling=no&border=no"></script>-->
+				<!-- <script type="text/javascript" src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500"></script> -->
+
+				<div class="simpleTabs" class="widget-container">
+			        <ul class="simpleTabsNavigation">
+			            <li class="l1"><a href="#">Tab 1</a></li>
+			            <li class="l2"><a href="#">Tab 2</a></li>
+			            <li class="l3"><a href="#">Tab3 (and so on)</a></li>
+			        </ul>
+			        <div class="simpleTabsContent">
+						<div class="social-accounts student-groups">
+							<ul>
+								<li>
+									<h3 class="dept-name">College of Agriculture and Life Sciences Student Council</h3>
+									<ul>
+										<li class="social-media-item"><a class="facebook" href="http://www.facebook.com/COALSCouncil">Facebook</a></li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="dept-name">International Association of Agricultural Students &amp; Related Sciences</h3>
+									<ul>
+										<li class="social-media-item"><a class="facebook" href="http://www.facebook.com/IAAS.TAMU">Facebook</a></li>
+										<li class="social-media-item"><a class="twitter" href="http://www.twitter.com/IAAS.TAMU">Twitter</a></li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="dept-name">Yo Mamma</h3>
+									<ul>
+										<li class="social-media-item"><a class="facebook" href="http://today.agrilife.org/agrilife-facebook/">Facebook</a></li>
+										<li class="social-media-item"><a class="google" href="http://today.agrilife.org/agrilife-google-plus/">Google Plus</a></li>
+										<li class="social-media-item"><a class="twitter" href="http://twitter.com/#!/agrilifetoday">Twitter</a></li>
+										<li class="social-media-item"><a class="flickr" href="http://www.flickr.com/photos/agrilifetoday/">Flickr</a></li>
+										<li class="social-media-item"><a class="youtube" href="http://www.youtube.com/user/agrilifetoday">YouTube</a></li>
+										<li class="social-media-item"><a class="rss" href="http://feeds.feedburner.com/AgrilifeToday/">RSS</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+			        </div>
+			        <div class="simpleTabsContent">Content here to be called when "Tab 2" is clicked.</div>
+			        <div class="simpleTabsContent">Content here to be called when "Tab 3" is clicked.</div>
+			    </div>
+
+
 				<?php if (!dynamic_sidebar('Home Page Bottom')) : ?>	
 				
-				
 				<?php endif; ?>
-
-				<h2>SM Dir</h2>
 
 
 		</section><!-- /end #content -->
