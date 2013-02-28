@@ -1,0 +1,27 @@
+// All In One CAlendar Styles
+
+.ai1ec-date-title {
+
+	margin: 0;
+	display: inline-block;
+	font-family: "Alfa Slab One", serif;
+	font-weight: 400;
+	font-size: 1em;
+	font-style: normal;
+	color: #500000;
+	text-align: center;
+
+	.ai1ec-agenda-widget-view {
+		.ai1ec-weekday {
+			display: none;
+		}
+		.ai1ec-month {
+			background: transparent;
+			padding: 0;
+
+		}
+		.ai1ec-day {
+
+		}
+	}
+}

@@ -6,13 +6,14 @@
  * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
  */
  
-div.simpleTabs { padding:10px; }
+div.simpleTabs { padding: 1.5em 10px;}
 #content-wrap ul.simpleTabsNavigation { margin: 0 10px 0 30px;; padding:0; text-align:left; }
 ul.simpleTabsNavigation li { 
 	list-style:none; 
 	display:inline; 
 	margin:0; 
 	padding:0;
+	line-height: 2.9em;
 	@include box-shadow(#666 10px 0 30px -8px true);
 
 	&.l1 a { z-index: 99; }
@@ -30,8 +31,6 @@ ul.simpleTabsNavigation li {
 		font-family:Georgia, "Times New Roman", Times, serif;
 		position: relative;
 		
-
-
 		&:hover,
 		&.current:hover { 
 			background-position-y: 0px;
