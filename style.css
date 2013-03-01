@@ -4676,7 +4676,7 @@ div.srp-widget-singlepost {
 }
 
 /* line 54, src/widgets/_srp-widget.scss */
-.featured-story.widget-container h3.widget-title {
+.featured-story.widget-container h4.widget-title {
   display: none;
 }
 /* line 57, src/widgets/_srp-widget.scss */
