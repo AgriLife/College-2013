@@ -48,6 +48,17 @@ function agriflex_college_setup() {
 		'after_title' => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name' => 'Featured Story Sidebar (top of sidebar)',
+		'id' => 'sidebar_top_featured',
+		'before_widget' => '<div id="%1$s" class="widget featured-story widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+
+
 	// register Category_Widget widget
 	add_action( 'widgets_init',
 	create_function( '', 'register_widget( "category_widget" );' ) );
@@ -72,6 +83,20 @@ function load_new_js() {
 		wp_enqueue_script( 'college_scripts' );
 	}                
 }
+
+// Add Featured Story Sidebar to top of Sidebar
+add_action( 'agriflex_before_sidebar', 'agriflex_college_featured_sidebar', 10 );
+/**
+ * Displays the 'Featured Story Sidebar (top of sidebar)' Widget area
+ *
+ * @since College 2013
+ * @author Travis Ward <travis@travisward.com>
+ */
+function agriflex_college_featured_sidebar() {
+
+  dynamic_sidebar( 'sidebar_top_featured' );
+
+} // agriflex_college_featured_sidebar
 
 
 
