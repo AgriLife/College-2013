@@ -101,7 +101,7 @@
 	
 	.soliloquy-container {
 		width: 100%;
-		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	#content-wrap .social-accounts {
@@ -143,19 +143,60 @@
 	zoom: 1;
 }
 
-@import "home/simpletabs";
+@media all and (min-width: $breakpoint-medium) {
+	.home {
+		.featured-content {
+			padding: 10px;
+			
+			h3 {
+				font-size: .7em;
+				letter-spacing: normal;
+				margin: .7em 0;
+			}
+		}
+		#content-wrap .featured-content .featured-stories li {
+				margin: 10px auto;
+				width: 90%;
+				border-bottom: 1px solid #7D3351;
+				padding: .2em 0 .5em 0;
+				&.challenge-international {
+					border-bottom: none;
+				}
+		}
+		.one-of-3 {
+			margin-bottom: 0;
+			padding: 0;
+			width: 25%;
+			float: left;
+			//height: 90%;
+		}
+		.soliloquy-container {
+			float: right;
+			width: 74%;
+			margin-top: 0;
+		}
+	}
+
+}
 
 @media all and (min-width: $breakpoint-biggest) {
 	.home {
 		.one-of-3 {
-			margin-bottom: 0;
-			padding: 0;
 			width: 243px;
 			height: 494px;
 		}
+		.featured-content {
+			background: #fff;
+			padding: 10px;
+			
+			h3 {
+				font-size: .8em;
+				letter-spacing: 2px;
+				margin: 1em 0;
+			}
+		}
 
 		.home-content {
-			//margin-top: 32px;
 			width: 100%;
 			float: left;
 			background: #fff;
@@ -201,15 +242,9 @@
 
 
 		#content-wrap .featured-content .featured-stories li {
-				margin: 10px auto;
 				width: 165px;
 				border-bottom: 3px solid #7D3351;
 				padding: 5px 0 14px 0;
-
-				&.challenge-international {
-					border-bottom: none;
-				}
-
 		}
 		.challenge {
 			width: 195px;
@@ -224,9 +259,7 @@
 		}
 
 		.soliloquy-container {
-			float: right;
 			width: 748px;
-			margin-top: 0;
 		}
 
 		#aside {
@@ -245,6 +278,7 @@
 	
 }
 
+@import "home/simpletabs";
 // Social Tabs
 #content {
 	.social-accounts {

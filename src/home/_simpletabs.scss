@@ -30,6 +30,7 @@ ul.simpleTabsNavigation li {
 		text-decoration:none; 
 		font-family:Georgia, "Times New Roman", Times, serif;
 		position: relative;
+		white-space: nowrap;
 		
 		&:hover,
 		&.current:hover { 
