@@ -4675,6 +4675,46 @@ div.srp-widget-singlepost {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* line 54, src/widgets/_srp-widget.scss */
+.featured-story.widget-container h3.widget-title {
+  display: none;
+}
+/* line 57, src/widgets/_srp-widget.scss */
+.featured-story .srp-thumbnail-box {
+  float: none;
+  width: 100%;
+}
+/* line 61, src/widgets/_srp-widget.scss */
+.featured-story .srp-content-box {
+  float: none;
+  width: 100%;
+}
+/* line 65, src/widgets/_srp-widget.scss */
+.featured-story .srp-widget-date {
+  display: none;
+}
+/* line 68, src/widgets/_srp-widget.scss */
+.featured-story .srp-widget-thmb {
+  border: 5px solid white;
+}
+
+/* line 72, src/widgets/_srp-widget.scss */
+#aside .featured-story .srp-content-box h4 {
+  margin-bottom: .2em;
+}
+/* line 74, src/widgets/_srp-widget.scss */
+#aside .featured-story .srp-content-box h4 a {
+  background: transparent;
+  color: #8d0002;
+  font-family: sans-serif;
+  text-transform: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 1.5em;
+}
+
 /* @import "jquery-tabs"; */
 /*----- Job Postings single page ------ */
 /* line 3, src/plugins/_job-postings-cpt.scss */

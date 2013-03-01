@@ -47,3 +47,42 @@ div.srp-widget-singlepost {
 	@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
+
+
+// Overrides for 'Featured Stories'
+.featured-story {
+	&.widget-container h3.widget-title {
+		display: none;
+	}
+	.srp-thumbnail-box {
+		float: none;
+		width: 100%;
+	}
+	.srp-content-box {
+		float: none;
+		width: 100%;
+	}
+	.srp-widget-date {
+		display: none;
+	}
+	.srp-widget-thmb {
+		border: 5px solid #fff;
+	}
+}
+#aside .featured-story .srp-content-box h4 {
+	margin-bottom: .2em;
+	a {
+		background: transparent;
+		color: #8d0002;
+		font-family: sans-serif;
+		text-transform: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 0;
+		font-size: 1.5em;
+		//position: absolute;
+		//top: 0;
+	}
+}
+
