@@ -1,23 +1,25 @@
 
 #footer {
-	clear: both;
 	overflow: hidden;
 	margin: 0 auto 3.33333333% auto;
 	background: #500000;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
 	padding: 0;
-
 	.wrap {	
+		clear: left;
 		margin: 0 auto;	
-		
 		overflow: hidden;
 		ul {
 			margin-left: 0;
 			padding: 5%;	
 			li a {
 				display: block;
+				text-decoration: none;
 				padding: .5em 0;
 				color: #EDECE4;
+				&:hover {
+					text-decoration: underline;
+				}
 			} 
 		} 
 	}
