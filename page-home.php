@@ -62,58 +62,10 @@ get_header(); ?>
 			            <li class="l2"><a href="#">Student Groups</a></li>
 			            <li class="l3"><a href="#">Institutes &amp; Centers</a></li>
 			        </ul>
-			        <div class="simpleTabsContent">
-			        	<?php echo do_shortcode( ' [smc_display org="Department"] ' ); ?>
-						
-			        </div>
+			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Department"] ' ); ?></div>
 			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Student Group"] ' ); ?></div>
-			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Institute/Center"] ' ); ?>
-
-<div class="social-accounts student-groups">
-							<ul>
-								<li>
-									<h3 class="dept-name">Mathemetics</h3>
-						<ul>
-							<li class="social-media-item"><a class="facebook" href="http://today.agrilife.org/agrilife-facebook/">Facebook</a></li>
-							<li class="social-media-item"><a class="googleplus" href="http://today.agrilife.org/agrilife-google-plus/">Google Plus</a></li>
-							<li class="social-media-item"><a class="twitter" href="http://twitter.com/#!/agrilifetoday">Twitter</a></li>
-							<li class="social-media-item"><a class="flickr" href="http://www.flickr.com/photos/agrilifetoday/">Flickr</a></li>
-							<li class="social-media-item"><a class="youtube" href="http://www.youtube.com/user/agrilifetoday">YouTube</a></li>
-							<li class="social-media-item"><a class="rss" href="http://feeds.feedburner.com/AgrilifeToday/">RSS</a></li>
-						</ul>
-									
-								</li>
-								<li>
-									<h3 class="dept-name">Education</h3>
-						<ul>
-							<li class="social-media-item"><a class="facebook" href="http://today.agrilife.org/agrilife-facebook/">Facebook</a></li>
-							<li class="social-media-item"><a class="googleplus" href="http://today.agrilife.org/agrilife-google-plus/">Google Plus</a></li>
-							<li class="social-media-item"><a class="twitter" href="http://twitter.com/#!/agrilifetoday">Twitter</a></li>
-							<li class="social-media-item"><a class="flickr" href="http://www.flickr.com/photos/agrilifetoday/">Flickr</a></li>
-							<li class="social-media-item"><a class="youtube" href="http://www.youtube.com/user/agrilifetoday">YouTube</a></li>
-							<li class="social-media-item"><a class="rss" href="http://feeds.feedburner.com/AgrilifeToday/">RSS</a></li>
-						</ul>
-									
-								</li>
-								<li>
-									<h3 class="dept-name">Engineering</h3>
-						<ul>
-							<li class="social-media-item"><a class="facebook" href="http://today.agrilife.org/agrilife-facebook/">Facebook</a></li>
-							<li class="social-media-item"><a class="googleplus" href="http://today.agrilife.org/agrilife-google-plus/">Google Plus</a></li>
-							<li class="social-media-item"><a class="twitter" href="http://twitter.com/#!/agrilifetoday">Twitter</a></li>
-							<li class="social-media-item"><a class="flickr" href="http://www.flickr.com/photos/agrilifetoday/">Flickr</a></li>
-							<li class="social-media-item"><a class="youtube" href="http://www.youtube.com/user/agrilifetoday">YouTube</a></li>
-							<li class="social-media-item"><a class="rss" href="http://feeds.feedburner.com/AgrilifeToday/">RSS</a></li>
-						</ul>
-									
-									
-								</li>
-							</ul>
-						</div>
-
-			        </div>
+			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Institute/Center"] ' ); ?></div>
 			    </div>
-
 
 				<?php if (!dynamic_sidebar('Home Page Bottom')) : ?>	
 				
