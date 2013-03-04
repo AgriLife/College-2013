@@ -3724,10 +3724,6 @@ div.simpleTabsContent.currentTab {
 }
 
 @media all and (min-width: 636px) {
-  /* line 30, src/_footer.scss */
-  #footer .wrap {
-    background: #fff;
-  }
   /* line 33, src/_footer.scss */
   #footer .wrap h4 {
     margin-bottom: 2.5em;
