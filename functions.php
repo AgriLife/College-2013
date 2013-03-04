@@ -327,4 +327,83 @@ function remove_some_widgets(){
 }
 add_action( 'widgets_init', 'remove_some_widgets', 20 );
 
+
+
+/**
+ * This Conditional Tag checks if the main Blog page is being displayed.
+ * 
+ * @link https://gist.github.com/wesbos/1189639
+ */
+function is_blog () {
+	global  $post;
+	$posttype = get_post_type($post );
+	return ( ((is_archive()) || (is_author()) || (is_category()) || (is_home()) || (is_single()) || (is_tag())) && ( $posttype == 'post')  ) ? true : false ;
+}
+
+/**
+ * Display navigation to next/previous pages/posts when applicable
+ * Works on single entries and loops and main blog page
+ * 
+ * @since College 2013
+ * @author Travis Ward <travis@travisward.com>
+ * @global $wp_query
+ * @global $post
+ * @param string $nav_id Unique identifier to be used as ID
+ */
+function agriflex_content_nav( $nav_id ) {
+
+  global $wp_query, $post;
+
+  // Don't print the nav at the top.
+  if( 'nav-above' == $nav_id )
+  	return;
+
+  // Don't print empty markup on single pages if there's nowhere to navigate
+  if ( is_single() ) {
+    $previous = ( is_attachment() ) ? get_post( $post->post_parent ) :
+      get_adjacent_post( false, '', true );
+    $next = get_adjacent_post( false, '', false );
+
+    if ( ! $next && ! $previous )
+      return;
+  }
+
+  // Dont' print empty markup in archives if there's only one page
+  if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) )
+    return;
+
+  $nav_class = 'navigation paging-navigation';
+  if ( is_single() )
+    $nav_class = 'navigation post-navigation';
+  ?>
+  <nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
+    <h1 class="assistive-text screen-reader-text"><?php _e ( 'Post navigation', 'agriflex' ); ?></h1>
+    <?php if ( is_single() ) : // navigation links for single posts ?>
+
+      <?php previous_post_link( '<div class="nav-previous">%link</div>',
+        '<span class="meta-nav">' .
+        _x( '&larr;', 'Previous post', 'agriflex' ) . 
+        '</span> %title' ); ?>
+
+      <?php next_post_link( '<div class="nav-next">%link</div>',
+        '%title <span class="meta-nav">' .
+        _x( '&rarr;', 'Newer posts', 'agriflex' ) . 
+        '</span>' ); ?>
+
+    <?php elseif ( $wp_query->max_num_pages > 1 && ( is_archive() || is_search() || is_blog() ) ) : ?>
+
+      <?php if ( get_next_posts_link() ) : ?>
+        <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older news', '_s' ) ); ?></div>
+        <?php endif; ?>
+
+        <?php if ( get_previous_posts_link() ) : ?>
+        <div class="nav-next"><?php previous_posts_link( __( 'Newer news <span class="meta-nav">&rarr;</span>', '_s' ) ); ?></div>
+        <?php endif; ?>
+
+    <?php endif; ?>
+
+  </nav><!-- #<?php echo $nav_id; ?> -->
+<?php
+}
+
 ?>
