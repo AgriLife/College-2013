@@ -23,8 +23,8 @@ $body-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-seri
 $ornate-title-font: 		'Alfa Slab One',serif;
 $ornate-title-font-weight:	400;
 
-$body-background-color: #F5F0E4;
-$mustard-background-color: #9C7D0D;
+$body-background-color:  #87817B;
+$upper-background-color: #D6D6D6;
 $header-bar-grey: #5F574F;
 
 $widget-font: verdana, clean, sans-serif;
@@ -102,7 +102,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 
 body {
-	background: $body-background-color;
+	background: #f5f0e4;
 	font: 100% $body-font;
 	line-height: 1.2em;
 	color: #433c3a;	
@@ -151,7 +151,6 @@ ul {
 	margin: 0 auto;	
 	padding-left: 5%;
 	padding-right: 5%;
-	margin-top: 5%;	
 }
 .wrap:after { 
 	visibility: hidden;
@@ -887,6 +886,9 @@ body.page h1.entry-title {
 		font-size: 110%;
 		//color: #f00;
 	}
+	.wrap {
+		margin-top: 5%;
+	}
 	#site-title {
 		margin: 20px 0;	
 	}
@@ -929,16 +931,31 @@ body.page h1.entry-title {
 }		
 
 @media all and (min-width: $breakpoint-biggest) {
+	body {
+		background: $body-background-color;
+	}
+	#bg-image-container {
+		background: url("images/background8.png") no-repeat center 42px; // 1142 px × 764 px
+		width: 100%;
+		top: 0;
+		position: absolute;
+		z-index: -1;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 0;
+		padding-bottom: 25%;
+		min-height: 400px;
+	}
+
 	#wrapper {
 		max-width: 100%;
 		margin: 0;
 		padding-top: 108px;
-		background: url("images/background2.gif") no-repeat 50% -1px; // 1142 px × 764 px
 	}
 
 	.js [role="document"] {
 		/* For Dev */
-		//background: #000;
 	}
 
 	.js #access {
@@ -946,7 +963,7 @@ body.page h1.entry-title {
 	}
 
 	body {
-		@include background-image(linear-gradient($mustard-background-color 780px, $body-background-color 1100px));
+		@include background-image(linear-gradient($upper-background-color 1000px, $body-background-color 1600px));
 	}
 
 	#content-wrap {
@@ -966,7 +983,7 @@ body.page h1.entry-title {
 	
 	#drop-section-nav {
 		width: 100%;
-		background: url(images/header-bar-bg.png) repeat-x transparent;
+		background: #5E564E;
 		padding: 0;
 		height: 42px;
 		position: absolute;
@@ -1006,8 +1023,8 @@ body.page h1.entry-title {
 	.js .searchform {
 		width: 100px;
 		overflow: hidden;
-		top: -124px;
-		right: 0;
+		top: -121px;
+		right: 0px;
 		position: absolute;
 		z-index: 200;
 		input.s {
@@ -1047,8 +1064,8 @@ body.page h1.entry-title {
 		background-color: rgba(0,0,0,0.6);
 		height: 40px;
 		z-index: 99;
-		width: 1024px;
-		padding: 0 (1142px - 1024px)/2;
+		width: 1004px;
+		padding: 0 10px;
 	}
 	/* main menu */
 	#access ul.menu li {
@@ -1339,6 +1356,7 @@ body.page h1.entry-title {
 @import "home";
 @import "footer";
 @import "secondary-menu";
+@import "floating-menu";
 @import "user-styles";
 
 @import "widgets/srp-widget";

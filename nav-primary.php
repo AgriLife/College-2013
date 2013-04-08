@@ -33,5 +33,8 @@ $nav_menu = wp_nav_menu( array(
     lowest ID is used. -->
 
   <?php echo $nav_menu; ?>  
+  
+  <!-- Action hook for placing more navigation with the main nav -->
+  <?php agriflex_college_after_primary_nav(); ?>
 
 </nav><!-- .access -->
