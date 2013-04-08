@@ -35,7 +35,8 @@ function agriflex_college_setup() {
 	// Register the menus
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation', 'agriflex' ),
-		'secondary' => __( 'Secodary Navigation', 'agriflex' )
+		'secondary' => __( 'Audience Navigation (bottom bar)', 'agriflex' ),
+    'third-general' => __( 'Tertiary General Navigation (bottom bar)', 'agriflex' )
 	) );
 
 
@@ -70,6 +71,9 @@ add_action( 'after_setup_theme', 'agriflex_college_setup' );
 // Load New .js for College
 add_action(	'wp_enqueue_scripts', 'load_new_js' );    
 function load_new_js() {
+  
+  // drop fitvids
+  wp_deregister_script( 'fitvids' );
 
 	if ( !is_admin() ) {
 		wp_deregister_script( 'my_scripts' );
@@ -125,6 +129,35 @@ function remove_agriflex_college_logo() {
 	remove_action( 'agriflex_before_header', 'agriflex_college_logo');
 }
 add_action('init','remove_agriflex_college_logo');
+
+// Add Floating Audience Menu
+add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+function agriflex_college_add_floating_menu() {
+
+  $html = '<nav class="utility-nav">';
+  $html .= '<div class="wrap">';
+
+  $nav_audience = wp_nav_menu( array(
+    'container_class' => 'menu-audience-nav',
+    'theme_location'  => 'secondary',
+    'echo'            => false,
+    'fallback_cb'   => false,
+    'items_wrap'      => '<ul id="%1$s" class="nav-audience">%3$s</ul>',
+  ));
+
+  $nav_general = wp_nav_menu( array(
+    'container_class' => 'menu-general-nav',
+    'theme_location'  => 'third-general',
+    'echo'            => false,
+    'fallback_cb'   => false,
+    'items_wrap'      => '<ul id="%1$s" class="nav-general">%3$s</ul>',
+  ));
+
+  $html .= $nav_audience.$nav_general;
+  $html .= '</div>';
+  $html .= '</nav>';
+  echo $html;
+}
 
 // Add a new logo
 add_action( 'agriflex_before_header', 'agriflex_college_logo_retina', 10 );
@@ -210,18 +243,13 @@ function typekit_js_college() {
 } // typekit_js
 add_action('wp_head','typekit_js_college');
 
-
+/*
 // Add secondary (audience) navigation
 add_action( 'agriflex_before_footer', 'agriflex_college_second_nav' );
-/**
- * Displays the college logo when selected.
- *
- * @since College 2013
- * @author Travis Ward <travis@travisward.com>
- */
+
 function agriflex_college_second_nav() {
 
-  // Primary nav menu
+  // Secondary nav menu
 	$nav_menu = wp_nav_menu( array(
               'container_class' => 'menu-secondary',
               'theme_location'  => 'secondary',
@@ -235,7 +263,7 @@ function agriflex_college_second_nav() {
 	echo $html;
 
 } // agriflex_college_second_nav
-
+*/
 
 
 
@@ -405,5 +433,20 @@ function agriflex_content_nav( $nav_id ) {
   </nav><!-- #<?php echo $nav_id; ?> -->
 <?php
 }
+
+
+/**
+ * Register action hook: agriflex_college_after_primary_nav
+ *
+ * Located in nav-primary.php within the <nav> section
+ *
+ * @since College-2013 1.0
+ */
+function agriflex_college_after_primary_nav() {
+
+  do_action( 'agriflex_college_after_primary_nav' );
+
+}
+
 
 ?>

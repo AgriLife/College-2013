@@ -52,20 +52,11 @@ get_header(); ?>
 	<div class="home-content">
 		<section id="content" role="main">
 
-				<div id="postano" class="widget-container"><a href="<?php echo site_url('/social/') ?>">Connect with the College on Social Media</a>.</div>
-				<!-- OLD <script type="text/javascript" src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500&scrolling=no&border=no"></script>-->
-				<script type="text/javascript" src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500"></script>
-
-				<div class="simpleTabs" class="widget-container">
-			        <ul class="simpleTabsNavigation">
-			            <li class="l1"><a href="#">Departments</a></li>
-			            <li class="l2"><a href="#">Student Groups</a></li>
-			            <li class="l3"><a href="#">Institutes &amp; Centers</a></li>
-			        </ul>
-			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Department"] ' ); ?></div>
-			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Student Group"] ' ); ?></div>
-			        <div class="simpleTabsContent"><?php echo do_shortcode( ' [smc_display org="Institute/Center"] ' ); ?></div>
-			    </div>
+				<div class="widget-container">
+					<h3 class="widget-title social-directory">Social Headlines</h3>
+					<div id="postano"><!-- <a href="<?php echo site_url('/social/') ?>">Connect with the College on Social Media</a>.--></div>
+					<script type="text/javascript" src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500"></script>
+				</div> <!-- .widget-container -->
 
 				<?php if (!dynamic_sidebar('Home Page Bottom')) : ?>	
 				

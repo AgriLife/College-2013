@@ -19,6 +19,8 @@ ul.simpleTabsNavigation li {
 	&.l1 a { z-index: 99; }
 	&.l2 a { z-index: 98; @include box-shadow(#333 68px 0px 44px -50px inset);}
 	&.l3 a { z-index: 97; @include box-shadow(#333 68px 0px 44px -50px inset);}
+	&.l4 a { z-index: 96; @include box-shadow(#333 68px 0px 44px -50px inset);}
+	&.l5 a { z-index: 95; @include box-shadow(#333 68px 0px 44px -50px inset);}
 
 	a { 
 		padding: 10px 30px 10px 30px;

@@ -107,7 +107,7 @@
 	#content-wrap .social-accounts {
 		ul {
 			list-style: none;
-			margin: 0;
+			margin: 0 0 0 25px;
 			ul {
 				margin-left: 3em;
 				background-color: #f5f0e4;
@@ -117,6 +117,11 @@
 				padding: .1em 1em;
 			}
 		}
+	}
+
+	.widget-title.social-directory {
+		@include box-shadow(transparent 0 0px 0px 0px);
+		background-position-y: -240px;
 	}
 }
 
@@ -279,70 +284,5 @@
 }
 
 @import "home/simpletabs";
-// Social Tabs
-#content {
-	.social-accounts {
-		h3 {
-			margin: 0;
-			font-size: 1em;
-			background: url(images/arrow-right-2.png) no-repeat 6px 0.8em;
-			padding: .5em 0;
-			text-indent: 25px;
-		}
-		.social-media-item {
-			background: none;
-			text-indent: 0;
-			width: 18px;
-			margin-right: .25em;
-			a {
-				display: block;
-				height: 18px;
-				width: 18px;
-				text-indent: -999em;
-				text-decoration: none;
-				border-bottom: none;
-				background-repeat: no-repeat;
-				background-position: left top;
-				background-image: url("images/social-icons.png");
-				margin: auto;
-				background-size: 125px 47px;
-				&.googleplus {
-					background-position: left top;
-					&:hover {
-						background-position-y: bottom;
-					}
-				}
-				&.facebook {
-					background-position: -21px top;
-					&:hover {
-						background-position-y: bottom;
-					}
-				}
-				&.twitter {
-					background-position: -43px top;
-					&:hover {
-						background-position-y: bottom;
-					}
-				}
-				&.flickr {
-					background-position: -64px top;
-					&:hover {
-						background-position-y: bottom;
-					}
-				}
-				&.youtube {
-					background-position: -85px top;
-					&:hover {
-						background-position-y: bottom;
-					}
-				}
-				&.rss {
-					background-position: -107px top;
-					&:hover {
-						background-position-y: bottom;
-					}
-				}
-			}
-		}
-	}
-}
+@import "home/socialtabs";
+

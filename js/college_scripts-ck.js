@@ -34,18 +34,18 @@ window.onresize = function() {
 jQuery(document).ready(function($) {
 
     //set the initial values
-    
+
     var detector = jQuery('.js');
     var compareWidth = detector.width();
 	var smallScreen = '840';
 	var bigScreen = '1000';
 	var logoRama = '<div id="agency-nav" class="two-of-3" role="complementary">';
 	logoRama	+= '<ul>';
-	logoRama	+= '<li class="top-agency tfs-item"><a href="http://agrilife.org/agrilife-agencies/tfs-home/"><span class="state-agency-name">Texas A&amp;M Forest Service</span></a></li>';
-	logoRama	+= '<li class="top-agency tvmdl-item"><a href="http://agrilife.org/agrilife-agencies/tvmdl-home/"><span class="state-agency-name">Texas A&amp;M Veterinary Medical Diagnostics Laboratory</span></a></li>';
-	logoRama	+= '<li class="top-agency ext-item"><a href="http://agrilife.org/agrilife-agencies/extension-home/"><span class="state-agency-name">Texas A&amp;M AgriLife Extension Service</span></a></li>';
-	logoRama	+= '<li class="top-agency res-item"><a href="http://agrilife.org/agrilife-agencies/research-home/"><span class="state-agency-name">Texas A&amp;M AgriLife Research</span></a></li>';
-	logoRama	+= '<li class="top-agency agrilife-item"><a href="http://agrilife.org/agrilife-agencies/college-home/"><span class="state-agency-name">Texas A&amp;M College of Agriculture and Life Sciences</span></a></li>';
+	logoRama	+= '<li class="top-agency tfs-item"><a href="http://texasforestservice.tamu.edu/"><span class="state-agency-name">Texas A&amp;M Forest Service</span></a></li>';
+	logoRama	+= '<li class="top-agency tvmdl-item"><a href="http://tvmdl.tamu.edu/"><span class="state-agency-name">Texas A&amp;M Veterinary Medical Diagnostics Laboratory</span></a></li>';
+	logoRama	+= '<li class="top-agency ext-item"><a href="http://agrilifeextension.tamu.edu/"><span class="state-agency-name">Texas A&amp;M AgriLife Extension Service</span></a></li>';
+	logoRama	+= '<li class="top-agency res-item"><a href="http://agriliferesearch.tamu.edu/""><span class="state-agency-name">Texas A&amp;M AgriLife Research</span></a></li>';
+	logoRama	+= '<li class="top-agency agrilife-item"><a href="http://aglifesciences.tamu.edu/"><span class="state-agency-name">Texas A&amp;M College of Agriculture and Life Sciences</span></a></li>';
 	logoRama	+= '</ul>';
 	logoRama	+= '</div><!-- #agency-nav -->';
 
@@ -53,6 +53,7 @@ jQuery(document).ready(function($) {
 
 	if ($(window).width() > bigScreen) {
 		$("#drop-nav").append(logoRama);
+		$(".utility-nav").addClass("show-nav");
 	}
 
 	if ($(window).width() < bigScreen) {
@@ -104,9 +105,7 @@ jQuery(document).ready(function($) {
 		$("body").addClass("two-column");
 	}
 	*/
-	
 
-	
 
 	// Credit: http://webdeveloper2.com/2011/06/trigger-javascript-on-css3-media-query-change/
     jQuery(window).resize(function(){
@@ -127,7 +126,7 @@ jQuery(document).ready(function($) {
 				$('#agency-nav').show();
 				// @todo: If #agency-nav does not exist append
 			}
-			
+
 			if (compareWidth >= smallScreen) {
 				//$('#access, .searchform').show();
 				$('#agency-nav').show();
@@ -145,7 +144,7 @@ jQuery(document).ready(function($) {
 	}
 */
 
-  
+
 
 /*
     //  Patch for Mobile Safari's orientation change bug
@@ -165,7 +164,7 @@ jQuery(document).ready(function($) {
     };
 */
 
-	
+
 	// Toggle click for sub-menus on touch screens
 	$('.touch .sf-with-ul').click(function() {
 		$(this).find('.sub-menu').hide.slideToggle('medium');
@@ -174,7 +173,7 @@ jQuery(document).ready(function($) {
 	/*
      * Set up the superfish arguments for non-touch screens
      */
-     
+
     $( '.no-touch .menu-header .sf-menu' ).superfish( {
         delay: 200,   // 0.05 second delay on mouseout
         animation:   { opacity: 'show', height: 'show' },   // fade-in and slide-down animation
@@ -216,7 +215,7 @@ jQuery(document).ready(function($) {
 
 	jQuery("#challenge-high1").fitText(0.6);//, { minFontSize: '20px', maxFontSize: '24px' }); //20px
 	jQuery("#challenge-high2").fitText(0.45);//, { minFontSize: '26px', maxFontSize: '29px' }); //26px
-	
+
 	jQuery("#challenge-stem1").fitText(1.01);
 	jQuery("#challenge-stem2").fitText(0.90);
 
@@ -229,6 +228,35 @@ jQuery(document).ready(function($) {
 
 	jQuery("#challenge-international1").fitText(0.73);
 	jQuery("#challenge-international2").fitText(0.48);
+
+	// Social Media Directory: Collapse sections
+	// @todo: Load only on /social page
+	// jQuery(".social-accounts").accordion();
+
+
+	// Collapse Side Menus
+	var timer = null;
+
+	$('.widget_nav_menu.widget-container .sub-menu').hide();
+
+	$('.widget_nav_menu.widget-container .menu-item').hover(
+		function() {
+			var theElement = this;
+			timer = setTimeout(function() {
+				timer = null;
+				$(theElement).has('ul').addClass('down');
+				$(theElement).children('ul').delay(50).slideDown('medium', function() {});
+			}, 500);
+		},
+		function() {
+			if (timer) {
+				clearTimeout(timer);
+				timer = null;
+			}
+			$(this).has('ul').removeClass('down');
+			$(this).children('ul').delay(50).slideUp('medium', function() {});
+		}
+    );
 });
 
 /* **********************************************
