@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 	logoRama	+= '</div><!-- #agency-nav -->';
 
 	var agencyNavContainer = '<div id="agency-nav-container"></div>';
-	//alert($(window).width());
+	var bgImageContainer = '<div id="bg-image-container"></div>';
 
 	if ($(window).width() > bigScreen) {
 
@@ -28,6 +28,10 @@ jQuery(document).ready(function($) {
 		// 'reveal' the footer toolbar
 		$(".utility-nav").addClass("show-nav");
 		$(".utility-nav").appendTo("#wrapper");
+
+		// Add background image 
+		// @todo: load for screen size draggers
+		$("#wrapper").append(bgImageContainer);
 	}
 
 	if ($(window).width() < bigScreen) {
