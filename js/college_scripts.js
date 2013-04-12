@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 	logoRama	+= '<li class="top-agency tvmdl-item"><a href="http://tvmdl.tamu.edu/"><span class="state-agency-name">Texas A&amp;M Veterinary Medical Diagnostics Laboratory</span></a></li>';
 	logoRama	+= '<li class="top-agency ext-item"><a href="http://agrilifeextension.tamu.edu/"><span class="state-agency-name">Texas A&amp;M AgriLife Extension Service</span></a></li>';
 	logoRama	+= '<li class="top-agency res-item"><a href="http://agriliferesearch.tamu.edu/""><span class="state-agency-name">Texas A&amp;M AgriLife Research</span></a></li>';
-	logoRama	+= '<li class="top-agency agrilife-item"><a href="http://aglifesciences.tamu.edu/"><span class="state-agency-name">Texas A&amp;M College of Agriculture and Life Sciences</span></a></li>';
+	logoRama	+= '<li class="top-agency agrilife-item"><a href="http://agrilife.org/"><span class="state-agency-name">Texas A&amp;M AgriLife</span></a></li>';
 	logoRama	+= '</ul>';
 	logoRama	+= '</div><!-- #agency-nav -->';
 

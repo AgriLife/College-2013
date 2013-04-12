@@ -296,7 +296,7 @@ function agriflex_college_footer() {
 		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
 		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
 		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
-		<li><a href="http://www.texashomelandscurity.com/" target="_blank">Texas Homeland Security</a></li>
+		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
 		<li><a href="http://aghr.tamu.edu/education-civil-rights.htm" target="_blank">Equal Opportunity for Educational Programs Statement</a></li>
 		<li class="last"><a href="http://agrilife.org/required-links/orpi/">Open Records/Public Information</a></li>
 	</ul>
