@@ -49,11 +49,18 @@ jQuery(document).ready(function($) {
 	logoRama	+= '</ul>';
 	logoRama	+= '</div><!-- #agency-nav -->';
 
+	var agencyNavContainer = '<div id="agency-nav-container"></div>';
 	//alert($(window).width());
 
 	if ($(window).width() > bigScreen) {
-		$("#drop-nav").append(logoRama);
+
+		// Add the agency nav up top
+		$("#drop-nav").append(agencyNavContainer);
+		$("#agency-nav-container").append(logoRama);
+
+		// 'reveal' the footer toolbar
 		$(".utility-nav").addClass("show-nav");
+		$(".utility-nav").appendTo("#wrapper");
 	}
 
 	if ($(window).width() < bigScreen) {
@@ -62,50 +69,6 @@ jQuery(document).ready(function($) {
 	else {
 		$("body").addClass("desktop");
 	}
-
-	// Typekit
-	/*
-	(function() {
-		var Typekit;
-		var config = {
-			kitId: 'bbz1kzh',
-			scriptTimeout: 3000
-		};
-		var h=document.getElementsByTagName("html")[0];
-		h.className+=" wf-loading";
-		var t=setTimeout(function(){
-			h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
-			h.className+=" wf-inactive";},config.scriptTimeout);
-		var tk=document.createElement("script"),d=false;
-		tk.src='//use.typekit.net/'+config.kitId+'.js';
-		tk.type="text/javascript";tk.async="true";
-		tk.onload=tk.onreadystatechange=function(){
-			var a=this.readyState;
-			if(d||a&&a!=="complete"&&a!=="loaded") {
-				return;
-			}
-			d=true;
-			clearTimeout(t);
-			try{
-				Typekit.load(config);
-			} catch(b){
-
-			}
-		};
-		var s=document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(tk,s);
-	})();
-*/
-
-	/*
-	if ($(window).width() < smallScreen) {
-		$("body").addClass("one-column");
-	}
-	else {
-		$("body").addClass("two-column");
-	}
-	*/
-
 
 	// Credit: http://webdeveloper2.com/2011/06/trigger-javascript-on-css3-media-query-change/
     jQuery(window).resize(function(){
@@ -116,35 +79,36 @@ jQuery(document).ready(function($) {
             compareWidth = detector.width();
 
 			if (compareWidth < smallScreen) {
-				//$("body").removeClass("two-column").addClass("one-column");
-				//$('#access, .searchform').hide();
-				$('#agency-nav').hide();
+
+				$("body").addClass("mobile");
+				$("#agency-nav-container").remove();
+
+				$(".utility-nav").appendTo("#access");
+
 			}
 			else {
-				//$("body").removeClass("one-column").addClass("two-column");
-				//$('#access, .searchform').show();
-				$('#agency-nav').show();
-				// @todo: If #agency-nav does not exist append
-			}
 
-			if (compareWidth >= smallScreen) {
-				//$('#access, .searchform').show();
 				$('#agency-nav').show();
+				$("body").addClass("desktop");
+
+				// Clear Agency Nav and Replace
+				$("#agency-nav-container").remove();
+				$("#drop-nav").append(agencyNavContainer);
+				$("#agency-nav-container").append(logoRama);
+
+				// 'reveal' the footer toolbar
+				$(".utility-nav").addClass("show-nav");
+				$(".utility-nav").appendTo("#wrapper");
+
+				//$("#drop-nav").append(logoRama);
+
+				//$(".utility-nav").addClass("show-nav");
+				//$(".utility-nav").appendTo("#wrapper");
 				// @todo: If #agency-nav does not exist append
 			}
         }
 
     });
-/*
-	if ($(window).width() < 1024) {
-		$("body").addClass("mobile");
-	}
-	else {
-		$("body").addClass("desktop");
-	}
-*/
-
-
 
 /*
     //  Patch for Mobile Safari's orientation change bug
@@ -204,6 +168,42 @@ jQuery(document).ready(function($) {
 			easing:"easeInExpo"
 		},300);
 	});
+
+// Typekit
+/*
+	(function() {
+		var Typekit;
+		var config = {
+			kitId: 'bbz1kzh',
+			scriptTimeout: 3000
+		};
+		var h=document.getElementsByTagName("html")[0];
+		h.className+=" wf-loading";
+		var t=setTimeout(function(){
+			h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
+			h.className+=" wf-inactive";},config.scriptTimeout);
+		var tk=document.createElement("script"),d=false;
+		tk.src='//use.typekit.net/'+config.kitId+'.js';
+		tk.type="text/javascript";tk.async="true";
+		tk.onload=tk.onreadystatechange=function(){
+			var a=this.readyState;
+			if(d||a&&a!=="complete"&&a!=="loaded") {
+				return;
+			}
+			d=true;
+			clearTimeout(t);
+			try{
+				Typekit.load(config);
+			} catch(b){
+
+			}
+		};
+		var s=document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(tk,s);
+	})();
+*/
+
+
 
 	// Add a border to buttons
 	$('.button').wrap('<div class="button-wrap" />');
