@@ -134,11 +134,11 @@ add_action('init','remove_agriflex_college_logo');
 add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
 function agriflex_college_add_floating_menu() {
 
-  $html = '<nav class="utility-nav">';
+  $html = '<div class="utility-nav">';
   $html .= '<div class="wrap">';
 
   $nav_audience = wp_nav_menu( array(
-    'container_class' => 'menu-audience-nav',
+    'container_class' => 'menu-nav-audience',
     'theme_location'  => 'secondary',
     'echo'            => false,
     'fallback_cb'   => false,
@@ -146,7 +146,7 @@ function agriflex_college_add_floating_menu() {
   ));
 
   $nav_general = wp_nav_menu( array(
-    'container_class' => 'menu-general-nav',
+    'container_class' => 'menu-nav-general',
     'theme_location'  => 'third-general',
     'echo'            => false,
     'fallback_cb'   => false,
@@ -155,7 +155,7 @@ function agriflex_college_add_floating_menu() {
 
   $html .= $nav_audience.$nav_general;
   $html .= '</div>';
-  $html .= '</nav>';
+  $html .= '</div>';
   echo $html;
 }
 
@@ -242,30 +242,6 @@ function typekit_js_college() {
 
 } // typekit_js
 add_action('wp_head','typekit_js_college');
-
-/*
-// Add secondary (audience) navigation
-add_action( 'agriflex_before_footer', 'agriflex_college_second_nav' );
-
-function agriflex_college_second_nav() {
-
-  // Secondary nav menu
-	$nav_menu = wp_nav_menu( array(
-              'container_class' => 'menu-secondary',
-              'theme_location'  => 'secondary',
-              'echo'            => false,
-              'fallback_cb'		=> false,
-              'items_wrap'      => '<ul id="%1$s" class="secondary-nav">%3$s</ul>',
-            ));
-
-	$html =  	$nav_menu;
-
-	echo $html;
-
-} // agriflex_college_second_nav
-*/
-
-
 
 
 function remove_agriflex_footer() {

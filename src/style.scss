@@ -886,9 +886,6 @@ body.page h1.entry-title {
 		font-size: 110%;
 		//color: #f00;
 	}
-	.wrap {
-		margin-top: 5%;
-	}
 	#site-title {
 		margin: 20px 0;	
 	}
@@ -946,6 +943,9 @@ body.page h1.entry-title {
 		height: 0;
 		padding-bottom: 25%;
 		min-height: 400px;
+	}
+	.wrap {
+		margin-top: 5%;
 	}
 
 	#wrapper {

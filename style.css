@@ -2616,23 +2616,18 @@ img {
   }
 
   /* line 889, src/style.scss */
-  .wrap {
-    margin-top: 5%;
-  }
-
-  /* line 892, src/style.scss */
   #site-title {
     margin: 20px 0;
   }
 
-  /* line 895, src/style.scss */
+  /* line 892, src/style.scss */
   #site-title a {
     font-size: 1em;
     line-height: 1.125em;
     /* 18px / 16px */
   }
 
-  /* line 900, src/style.scss */
+  /* line 897, src/style.scss */
   #breadcrumbs {
     width: 100%;
     margin-right: 25px;
@@ -2642,7 +2637,7 @@ img {
     padding: 0.8em 10px;
   }
 
-  /* line 909, src/style.scss */
+  /* line 906, src/style.scss */
   #content-wrap {
     /*position: relative;
     z-index: 2;
@@ -2659,22 +2654,22 @@ img {
     box-shadow: none;
   }
 
-  /* line 924, src/style.scss */
+  /* line 921, src/style.scss */
   .wrap {
     padding: 0;
   }
-  /* line 926, src/style.scss */
+  /* line 923, src/style.scss */
   .wrap #wrap {
     width: 100%;
   }
 }
 @media all and (min-width: 840px) {
-  /* line 934, src/style.scss */
+  /* line 931, src/style.scss */
   body {
     background: #87817b;
   }
 
-  /* line 937, src/style.scss */
+  /* line 934, src/style.scss */
   #bg-image-container {
     background: url("images/background8.png") no-repeat center 42px;
     width: 100%;
@@ -2687,6 +2682,11 @@ img {
     height: 0;
     padding-bottom: 25%;
     min-height: 400px;
+  }
+
+  /* line 947, src/style.scss */
+  .wrap {
+    margin-top: 5%;
   }
 
   /* line 951, src/style.scss */
@@ -3924,8 +3924,18 @@ div.simpleTabsContent.currentTab {
     transition-timing-function: ease-in;
   }
 }
+/* line 4, src/_floating-menu.scss */
+.utility-nav .wrap {
+  padding: 0;
+  margin-top: 0;
+}
+/* line 8, src/_floating-menu.scss */
+.utility-nav ul {
+  padding: 0;
+}
+
 @media all and (min-width: 840px) {
-  /* line 9, src/_floating-menu.scss */
+  /* line 19, src/_floating-menu.scss */
   .utility-nav {
     position: fixed;
     bottom: -60px;
@@ -3933,6 +3943,8 @@ div.simpleTabsContent.currentTab {
     width: 100%;
     padding-bottom: 10px;
     z-index: 2000;
+    font-size: .8em;
+    color: #818181;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -3949,13 +3961,12 @@ div.simpleTabsContent.currentTab {
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
-    font-size: .8em;
   }
-  /* line 26, src/_floating-menu.scss */
+  /* line 35, src/_floating-menu.scss */
   .utility-nav.show-nav {
-    bottom: -10px;
+    bottom: -15px;
   }
-  /* line 30, src/_floating-menu.scss */
+  /* line 39, src/_floating-menu.scss */
   .utility-nav a {
     color: #fff;
     text-decoration: none;
@@ -3963,65 +3974,67 @@ div.simpleTabsContent.currentTab {
     padding: 15px 0.5em;
     display: block;
   }
-  /* line 38, src/_floating-menu.scss */
+  /* line 47, src/_floating-menu.scss */
   .utility-nav a:hover {
     color: #fff;
     background: #5E564E;
   }
-  /* line 44, src/_floating-menu.scss */
+  /* line 53, src/_floating-menu.scss */
   .utility-nav .wrap {
     max-width: 1024px;
     margin: 0 auto;
     background: transparent;
+    padding: 0;
   }
-  /* line 51, src/_floating-menu.scss */
-  .utility-nav .nav-audience,
-  .utility-nav .nav-general {
+  /* line 61, src/_floating-menu.scss */
+  .utility-nav .menu-nav-audience,
+  .utility-nav .menu-nav-general {
     position: relative;
     overflow: hidden;
+    display: inline-block;
   }
-  /* line 54, src/_floating-menu.scss */
-  .utility-nav .nav-audience:after,
-  .utility-nav .nav-general:after {
+  /* line 65, src/_floating-menu.scss */
+  .utility-nav .menu-nav-audience:after,
+  .utility-nav .menu-nav-general:after {
     font-size: 1.5em;
     content: '⋮';
     position: absolute;
     right: 0;
     top: .6em;
   }
-  /* line 61, src/_floating-menu.scss */
-  .utility-nav .nav-audience li,
-  .utility-nav .nav-general li {
+  /* line 72, src/_floating-menu.scss */
+  .utility-nav .menu-nav-audience li,
+  .utility-nav .menu-nav-general li {
     position: relative;
   }
-  /* line 63, src/_floating-menu.scss */
-  .utility-nav .nav-audience li:first-child,
-  .utility-nav .nav-general li:first-child {
+  /* line 74, src/_floating-menu.scss */
+  .utility-nav .menu-nav-audience li:first-child,
+  .utility-nav .menu-nav-general li:first-child {
     margin-left: 0;
   }
-  /* line 68, src/_floating-menu.scss */
-  .utility-nav .nav-general:after {
+  /* line 79, src/_floating-menu.scss */
+  .utility-nav .menu-nav-general:after {
     content: '';
   }
-  /* line 71, src/_floating-menu.scss */
+  /* line 82, src/_floating-menu.scss */
   .utility-nav ul {
     float: left;
     margin: 0;
     padding: 0;
     color: #818181;
   }
-  /* line 77, src/_floating-menu.scss */
+  /* line 88, src/_floating-menu.scss */
   .utility-nav li {
     float: left;
     margin-right: 1em;
     list-style: none;
     position: relative;
   }
-  /* line 83, src/_floating-menu.scss */
+  /* line 94, src/_floating-menu.scss */
   .utility-nav li:first-child {
     margin-left: 0;
   }
-  /* line 86, src/_floating-menu.scss */
+  /* line 97, src/_floating-menu.scss */
   .utility-nav li:before {
     content: '•';
     position: absolute;
