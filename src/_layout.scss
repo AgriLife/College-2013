@@ -1,0 +1,106 @@
+.wrap {
+	position: relative;
+	margin: 0 auto;	
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.wrap:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+#wrapper {
+	margin: 0 auto;	
+	max-width: 1024px;	
+}
+
+#aside {
+	clear: both;
+	ol, ul {
+		padding: 0;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+}
+
+@media all and (min-width: $breakpoint-medium) {
+	.wrap {
+		padding: 0;
+		#wrap {
+			width: 100%;
+		}
+	}
+}
+
+@media all and (min-width: $breakpoint-biggest) {
+
+	#aside {
+		clear: none;
+		float: left;
+		margin: 2.5% 2% 2% 3%;
+		//background-color: #dfdddc;
+		background-color: #f0f0f0;
+		width: 40% - 7%;
+		padding: 1%;
+	}
+
+	.wrap {
+		background: #fff;
+	}
+
+	.wrap #wrap {
+		float: right;
+		overflow: hidden;
+		clear: both;
+		width: 60% - 5%;
+		margin: 2.5% 3% 2% 0;
+		padding: 0 1% 1% 1%;
+
+	}
+
+	// For reversed default page layout (aka content-sidebar vs. sidebar-content)
+	.content-sidebar {
+		.wrap #wrap {
+			float: left;
+			margin: 2.5% 0 2% 3%;
+		}
+		#aside {
+			float: right;
+			margin: 2.5% 3% 2% 2%;
+		}
+	}
+
+
+	// For full-width layout
+	.wrap #wrap.one-column {
+		width: 100% - 10%;
+		margin: 2.5% 0% 2% 0%;
+		padding: 0 2% 1% 2%;
+		float: left;
+	}
+
+
+  	[role="document"] {
+		font-size: .9em; 
+	}
+
+
+	#aside .widget-container {
+		padding: 0 4%;
+		position: relative;
+		margin-bottom: 20px;	
+		background: transparent;
+		border: 0;
+		.widget-wrap ul,
+		.textwidget {
+			padding: 3%;
+		}
+	}
+}

@@ -1,4 +1,5 @@
-body {
+@media print {
+	body {
 		background:none !important;
 	}
 	#wrapper {
@@ -77,3 +78,4 @@ body {
 	.home .sticky {
 		border: none;
 	}
+}
