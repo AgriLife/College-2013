@@ -88,6 +88,16 @@ function load_new_js() {
 	}                
 }
 
+// Add specific CSS class by filter
+add_filter('body_class','add_swap_sidebar_body_class');
+function add_swap_sidebar_body_class($classes) {
+  // add 'content-sidebar' to the $classes array
+  $classes[] = 'content-sidebar';
+  // return the $classes array
+  return $classes;
+}
+
+
 // Add Featured Story Sidebar to top of Sidebar
 add_action( 'agriflex_before_sidebar', 'agriflex_college_featured_sidebar', 10 );
 /**
