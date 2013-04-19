@@ -1,0 +1,27 @@
+@import "widgets/tag-cloud";
+@import "widgets/agrilife-today";
+@import "widgets/agrilife-watch_read_listen";
+@import "widgets/twitter";
+@import "widgets/srp-widget";
+
+.widget_twitter h3.widget-title {
+	background-position: right -180px;
+}
+.agrilife_today_twitter h3.widget-title,
+.home-widgets-lower .widget:first-child h3.widget-title {
+	background-position: right -120px;
+}
+.widget_twitter .widget-wrap ul {
+	padding: 0;
+	margin: 0 0 .5em;
+}
+.widget_twitter li {
+	padding: .5em 6% 1em;
+	border-bottom: 1px dashed #999;
+}
+.widget-container h3.widget-title a {
+	color: white;
+}
+.home .widget h3.widget-title .rsswidget img {
+	display: none;
+}
