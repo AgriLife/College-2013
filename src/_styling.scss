@@ -284,7 +284,8 @@ body.page h1.entry-title {
 		@include box-shadow(#666 0 20px 30px -8px);
 		letter-spacing: 1px;
 		line-height: 1em;
-		background: url('images/bg-titles.png') top right no-repeat transparent;
+		background: url('images/bg-titles2.png') top right no-repeat transparent;
+		background-size: 1024px 240px; 
 		color: #fff;
 		text-align: left;
 		text-transform: uppercase;
@@ -444,7 +445,7 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 	}
 
 	#content-wrap {
-		background: url("images/bg-titles.png") top right no-repeat transparent;
+		background: url("images/bg-titles2.png") top right no-repeat transparent;
 		background-size: 2048px;
 		padding-top: 1px;
 		margin-top: 15px;
