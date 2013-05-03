@@ -445,7 +445,7 @@ function college_get_background_images() {
   $image_path = dirname( __FILE__ ) . '/images/backgrounds/samples/';
   $image_uri = get_stylesheet_directory_uri() . '/images/backgrounds/samples/';
 
-  $images = glob( $image_path . '*.png' );
+  $images = glob( $image_path . '*.jpg' );
 
   $return = array();
 
@@ -478,7 +478,7 @@ function college_add_options( $options ) {
     'name' => 'Background Image',
     'desc' => 'Select a background image',
     'id' => 'college-background-image',
-    'std' => 'background8.png',
+    'std' => 'algae-lab.jpg',
     'type' => 'images',
     'options' => $images,
   );
