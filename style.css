@@ -2833,9 +2833,9 @@ body.wp-admin .tf-meta ul li em {
 
   /* line 416, src/_styling.scss */
   #bg-image-container {
-    background: url("images/background8.png") no-repeat center 42px;
+    background: url("images/backgrounds/algae-lab.png") no-repeat center 0;
     width: 100%;
-    top: 0;
+    top: 42px;
     position: absolute;
     z-index: -1;
     background-color: transparent;
@@ -2865,11 +2865,11 @@ body.wp-admin .tf-meta ul li em {
 
   /* line 443, src/_styling.scss */
   body {
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 1600, color-stop(62.5%, #d6d6d6), color-stop(100%, #87817b));
-    background-image: -webkit-linear-gradient(#d6d6d6 1000px, #87817b 1600px);
-    background-image: -moz-linear-gradient(#d6d6d6 1000px, #87817b 1600px);
-    background-image: -o-linear-gradient(#d6d6d6 1000px, #87817b 1600px);
-    background-image: linear-gradient(#d6d6d6 1000px, #87817b 1600px);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 1700, color-stop(70.58824%, #d6d6d6), color-stop(100%, #87817b));
+    background-image: -webkit-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
+    background-image: -moz-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
+    background-image: -o-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
+    background-image: linear-gradient(#d6d6d6 1200px, #87817b 1700px);
   }
 
   /* line 447, src/_styling.scss */
