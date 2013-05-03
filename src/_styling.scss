@@ -286,6 +286,12 @@ body.page h1.entry-title {
 		line-height: 1em;
 		background: url('images/bg-titles2.png') top right no-repeat transparent;
 		background-size: 1024px 240px; 
+		@media all and (min-width: $breakpoint-medium) {
+			background-size: 2048px 480px; 
+		}
+		@media all and (min-width: $breakpoint-biggest) {
+			background-size: 1024px 240px; 
+		}
 		color: #fff;
 		text-align: left;
 		text-transform: uppercase;
