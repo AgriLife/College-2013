@@ -487,17 +487,19 @@ function college_add_options( $options ) {
 
 }
 
-add_action( 'wp_head', 'college_background_image', 9 );
+add_action( 'wp_footer', 'college_background_image', 50 );
 /**
  * Sets the background-image css rule based on the theme option
  * @since 1.0
  */
 function college_background_image() {
 
-  $image_path = '/images/backgrounds/' . of_get_option('college-background-image');
+  $image_path = get_stylesheet_directory_uri() . '/images/backgrounds/' . of_get_option('college-background-image');
 
   $script = '<script type="text/javascript">';
+  $script .= '$(document).ready( function() {';
   $script .= '$("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
+  $script .= '});';
   $script .= '</script>';
 
   echo $script;
