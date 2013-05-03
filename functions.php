@@ -434,5 +434,74 @@ function agriflex_college_after_primary_nav() {
 
 }
 
+/**
+ * Retrieves all sample images from the backgrounds folder
+ * @since 1.0
+ * @return array Array of image files
+ * 
+ */
+function college_get_background_images() {
+
+  $image_path = dirname( __FILE__ ) . '/images/backgrounds/samples/';
+  $image_uri = get_stylesheet_directory_uri() . '/images/backgrounds/samples/';
+
+  $images = glob( $image_path . '*.png' );
+
+  $return = array();
+
+  foreach ($images as $image) {
+    $image = basename( $image );
+    $return[$image] = $image_uri . $image;
+  }
+
+  return $return;
+
+}
+
+add_filter( 'agriflex_add_options', 'college_add_options', 1 );
+/**
+ * Adds a background selector to the theme options
+ * @since 1.0
+ * @param  array $options The existing theme options array
+ * @return array          The amended theme options array
+ */
+function college_add_options( $options ) {
+
+  $images = college_get_background_images();
+
+  $options[] = array(
+    'name' => __( 'College', 'agriflex' ),
+    'type' => 'heading',
+  );
+
+  $options[] = array(
+    'name' => 'Background Image',
+    'desc' => 'Select a background image',
+    'id' => 'college-background-image',
+    'std' => 'background8.png',
+    'type' => 'images',
+    'options' => $images,
+  );
+
+  return $options;
+
+}
+
+add_action( 'wp_head', 'college_background_image', 9 );
+/**
+ * Sets the background-image css rule based on the theme option
+ * @since 1.0
+ */
+function college_background_image() {
+
+  $image_path = '/images/backgrounds/' . of_get_option('college-background-image');
+
+  $script = '<script type="text/javascript">';
+  $script .= '$("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
+  $script .= '</script>';
+
+  echo $script;
+
+}
 
 ?>
