@@ -938,49 +938,45 @@ table {
     position: relative;
     overflow: hidden;
     display: inline-block;
+    margin-left: 1em;
   }
-  /* line 65, src/_floating-menu.scss */
-  .utility-nav .menu-nav-audience:after,
-  .utility-nav .menu-nav-general:after {
-    font-size: 1.5em;
-    content: '⋮';
-    position: absolute;
-    right: 0;
-    top: .6em;
-  }
-  /* line 72, src/_floating-menu.scss */
+  /* line 66, src/_floating-menu.scss */
   .utility-nav .menu-nav-audience li,
   .utility-nav .menu-nav-general li {
     position: relative;
   }
-  /* line 74, src/_floating-menu.scss */
+  /* line 68, src/_floating-menu.scss */
   .utility-nav .menu-nav-audience li:first-child,
   .utility-nav .menu-nav-general li:first-child {
     margin-left: 0;
   }
-  /* line 79, src/_floating-menu.scss */
+  /* line 73, src/_floating-menu.scss */
+  .utility-nav .menu-nav-general {
+    float: right;
+  }
+  /* line 75, src/_floating-menu.scss */
   .utility-nav .menu-nav-general:after {
     content: '';
   }
-  /* line 82, src/_floating-menu.scss */
+  /* line 79, src/_floating-menu.scss */
   .utility-nav ul {
     float: left;
     margin: 0;
     padding: 0;
     color: #818181;
   }
-  /* line 88, src/_floating-menu.scss */
+  /* line 85, src/_floating-menu.scss */
   .utility-nav li {
     float: left;
     margin-right: 1em;
     list-style: none;
     position: relative;
   }
-  /* line 94, src/_floating-menu.scss */
+  /* line 91, src/_floating-menu.scss */
   .utility-nav li:first-child {
     margin-left: 0;
   }
-  /* line 97, src/_floating-menu.scss */
+  /* line 94, src/_floating-menu.scss */
   .utility-nav li:before {
     content: '•';
     position: absolute;
@@ -2194,7 +2190,7 @@ div.simpleTabsContent.currentTab {
 /* line 81, src/_footer.scss */
 #footer .wrap ul li a {
   font-size: .6em;
-  color: #9F6D56;
+  color: #9f6d56;
 }
 
 /* Text meant only for screen readers */

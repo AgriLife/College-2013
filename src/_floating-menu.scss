@@ -62,13 +62,7 @@
 			position: relative;
 			overflow: hidden;
 			display: inline-block;
-			&:after {
-				font-size: 1.5em;
-				content: '⋮';
-				position: absolute;
-				right: 0;
-				top: .6em;
-			}
+			margin-left: 1em;
 			li { 
 				position: relative;
 				&:first-child {
@@ -76,8 +70,11 @@
 				}
 			}
 		}
-		.menu-nav-general:after {
-			content: '';
+		.menu-nav-general {
+			float: right;
+			&:after {
+				content: '';
+			}
 		}
 		ul {
 			float: left;
