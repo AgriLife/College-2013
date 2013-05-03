@@ -414,9 +414,9 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 		background: $body-background-color;
 	}
 	#bg-image-container {
-		background: url("images/background8.png") no-repeat center 42px; // 1142 px × 764 px
+		background: url("images/backgrounds/algae-lab.png") no-repeat center 0; // 1142 px × 764 px
 		width: 100%;
-		top: 0;
+		top: 42px;
 		position: absolute;
 		z-index: -1;
 		background-color: transparent;
@@ -441,7 +441,7 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 	}
 
 	body {
-		@include background-image(linear-gradient($upper-background-color 1000px, $body-background-color 1600px));
+		@include background-image(linear-gradient($upper-background-color 1200px, $body-background-color 1700px));
 	}
 
 	#content-wrap {
