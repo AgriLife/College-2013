@@ -82,9 +82,9 @@
 	#content {
 		h3.widget-title {
 			font-size: 1.2em;
-			font-weight: $ornate-title-font-weight;
+			font-weight: $ornate-title-font-weight-widgets;
 			padding: 3% 2% 3% 3%;
-			font-family: $ornate-title-font;
+			font-family: $ornate-title-font-widgets;
 			letter-spacing: 1px;
 		}
 		.srp-thumbnail-box {
@@ -120,8 +120,10 @@
 	}
 
 	.widget-title.social-directory {
-		@include box-shadow(transparent 0 0px 0px 0px);
-		background-position-y: -240px;
+		background-position-y: -120px;
+	}
+	#content .widget-title.srp-widget-title {
+		background-position-y: -180px;
 	}
 }
 
