@@ -2642,17 +2642,29 @@ body.page h1.entry-title {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 295, src/_styling.scss */
+@media all and (min-width: 636px) {
+  /* line 277, src/_styling.scss */
+  .widget-container h3.widget-title {
+    background-size: 2048px 480px;
+  }
+}
+@media all and (min-width: 840px) {
+  /* line 277, src/_styling.scss */
+  .widget-container h3.widget-title {
+    background-size: 1024px 240px;
+  }
+}
+/* line 301, src/_styling.scss */
 .widget-container.widget_rss ul li, .widget-container.widget_twitter ul li {
   font-family: verdana, clean, sans-serif;
   font-size: 13px;
 }
 
-/* line 301, src/_styling.scss */
+/* line 307, src/_styling.scss */
 #content-wrap .widget_nav_menu {
   font-size: .8em;
 }
-/* line 304, src/_styling.scss */
+/* line 310, src/_styling.scss */
 #content-wrap .widget_nav_menu h3.widget-title {
   background: transparent;
   color: #500000;
@@ -2663,7 +2675,7 @@ body.page h1.entry-title {
   box-shadow: none;
   padding: 0;
 }
-/* line 313, src/_styling.scss */
+/* line 319, src/_styling.scss */
 #content-wrap .widget_nav_menu li {
   background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px 0.8em;
   border-top: 0;
@@ -2682,7 +2694,7 @@ body.page h1.entry-title {
   transition-timing-function: ease;
   margin: 0;
 }
-/* line 325, src/_styling.scss */
+/* line 331, src/_styling.scss */
 #content-wrap .widget_nav_menu li a {
   border-bottom: 1px dashed #dad6c7;
   padding: 0;
@@ -2691,74 +2703,74 @@ body.page h1.entry-title {
   display: block;
   text-decoration: none;
 }
-/* line 332, src/_styling.scss */
+/* line 338, src/_styling.scss */
 #content-wrap .widget_nav_menu li a:hover {
   text-decoration: underline;
 }
-/* line 337, src/_styling.scss */
+/* line 343, src/_styling.scss */
 #content-wrap .widget_nav_menu li ul {
   list-style: none;
   padding: 0 0 3% 0;
 }
-/* line 340, src/_styling.scss */
+/* line 346, src/_styling.scss */
 #content-wrap .widget_nav_menu li ul a {
   border-bottom: 0;
   padding: 0;
 }
-/* line 345, src/_styling.scss */
+/* line 351, src/_styling.scss */
 #content-wrap .widget_nav_menu li li {
   border: none;
   overflow: hidden;
   background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px 0.4em;
   text-indent: 15px;
 }
-/* line 355, src/_styling.scss */
+/* line 361, src/_styling.scss */
 #content-wrap .widget_nav_menu li.down {
   background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 6px 0.8em;
 }
-/* line 357, src/_styling.scss */
+/* line 363, src/_styling.scss */
 #content-wrap .widget_nav_menu li.down li.down {
   background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 16px 0.8em;
 }
-/* line 359, src/_styling.scss */
+/* line 365, src/_styling.scss */
 #content-wrap .widget_nav_menu li.down li.down li.down {
   background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 26px 0.8em;
 }
-/* line 365, src/_styling.scss */
+/* line 371, src/_styling.scss */
 #content-wrap .widget_nav_menu ul.sub-menu li {
   margin-left: 1em;
 }
 
 /* Columns CPT Events */
-/* line 372, src/_styling.scss */
+/* line 378, src/_styling.scss */
 #tf_col_ev_date, th#tf_col_ev_cat {
   width: 150px;
 }
 
-/* line 373, src/_styling.scss */
+/* line 379, src/_styling.scss */
 td.tf_col_ev_date em {
   color: gray;
 }
 
-/* line 374, src/_styling.scss */
+/* line 380, src/_styling.scss */
 th#tf_col_ev_times {
   width: 150px;
 }
 
-/* line 375, src/_styling.scss */
+/* line 381, src/_styling.scss */
 th#tf_col_ev_thumb {
   width: 100px;
 }
 
 /* Metabox */
-/* line 380, src/_styling.scss */
+/* line 386, src/_styling.scss */
 body.wp-admin .tf-meta ul li {
   height: 20px;
   clear: both;
   margin: 0 0 15px 0;
 }
 
-/* line 381, src/_styling.scss */
+/* line 387, src/_styling.scss */
 body.wp-admin .tf-meta ul li label {
   width: 100px;
   display: block;
@@ -2766,14 +2778,14 @@ body.wp-admin .tf-meta ul li label {
   padding-top: 4px;
 }
 
-/* line 382, src/_styling.scss */
+/* line 388, src/_styling.scss */
 body.wp-admin .tf-meta ul li input {
   width: 125px;
   display: block;
   float: left;
 }
 
-/* line 383, src/_styling.scss */
+/* line 389, src/_styling.scss */
 body.wp-admin .tf-meta ul li em {
   width: 200px;
   display: block;
@@ -2784,24 +2796,24 @@ body.wp-admin .tf-meta ul li em {
 }
 
 @media all and (min-width: 636px) {
-  /* line 388, src/_styling.scss */
+  /* line 394, src/_styling.scss */
   body {
     font-size: 110%;
   }
 
-  /* line 391, src/_styling.scss */
+  /* line 397, src/_styling.scss */
   #site-title {
     margin: 20px 0;
   }
 
-  /* line 394, src/_styling.scss */
+  /* line 400, src/_styling.scss */
   #site-title a {
     font-size: 1em;
     line-height: 1.125em;
     /* 18px / 16px */
   }
 
-  /* line 398, src/_styling.scss */
+  /* line 404, src/_styling.scss */
   #breadcrumbs {
     width: 100%;
     margin-right: 25px;
@@ -2811,7 +2823,7 @@ body.wp-admin .tf-meta ul li em {
     padding: 0.8em 10px;
   }
 
-  /* line 407, src/_styling.scss */
+  /* line 413, src/_styling.scss */
   #content-wrap {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -2819,12 +2831,12 @@ body.wp-admin .tf-meta ul li em {
   }
 }
 @media all and (min-width: 840px) {
-  /* line 413, src/_styling.scss */
+  /* line 419, src/_styling.scss */
   body {
     background: #87817b;
   }
 
-  /* line 416, src/_styling.scss */
+  /* line 422, src/_styling.scss */
   #bg-image-container {
     background: url("images/backgrounds/algae-lab.png") no-repeat center 0;
     width: 100%;
@@ -2839,24 +2851,24 @@ body.wp-admin .tf-meta ul li em {
     min-height: 400px;
   }
 
-  /* line 429, src/_styling.scss */
+  /* line 435, src/_styling.scss */
   .wrap {
     margin-top: 5%;
   }
 
-  /* line 433, src/_styling.scss */
+  /* line 439, src/_styling.scss */
   #wrapper {
     max-width: 100%;
     margin: 0;
     padding-top: 108px;
   }
 
-  /* line 439, src/_styling.scss */
+  /* line 445, src/_styling.scss */
   .js #access {
     display: block;
   }
 
-  /* line 443, src/_styling.scss */
+  /* line 449, src/_styling.scss */
   body {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 1700, color-stop(70.58824%, #d6d6d6), color-stop(100%, #87817b));
     background-image: -webkit-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
@@ -2865,24 +2877,24 @@ body.wp-admin .tf-meta ul li em {
     background-image: linear-gradient(#d6d6d6 1200px, #87817b 1700px);
   }
 
-  /* line 447, src/_styling.scss */
+  /* line 453, src/_styling.scss */
   #content-wrap {
     background: url("images/bg-titles2.png") top right no-repeat transparent;
     background-size: 2048px;
     padding-top: 1px;
     margin-top: 15px;
   }
-  /* line 453, src/_styling.scss */
+  /* line 459, src/_styling.scss */
   #content-wrap:before, #content-wrap:after {
     content: "";
     display: table;
   }
-  /* line 457, src/_styling.scss */
+  /* line 463, src/_styling.scss */
   #content-wrap #content-wrap:after {
     clear: both;
   }
 
-  /* line 462, src/_styling.scss */
+  /* line 468, src/_styling.scss */
   #drop-section-nav {
     width: 100%;
     background: #5E564E;
@@ -2891,21 +2903,21 @@ body.wp-admin .tf-meta ul li em {
     position: absolute;
     z-index: 3;
   }
-  /* line 469, src/_styling.scss */
+  /* line 475, src/_styling.scss */
   #drop-section-nav ul {
     padding: 0;
   }
-  /* line 472, src/_styling.scss */
+  /* line 478, src/_styling.scss */
   #drop-section-nav #drop-nav {
     width: 1024px;
     margin: 0 auto;
   }
 
-  /* line 478, src/_styling.scss */
+  /* line 484, src/_styling.scss */
   .site-title {
     height: 42px;
   }
-  /* line 480, src/_styling.scss */
+  /* line 486, src/_styling.scss */
   .site-title a {
     background-color: transparent;
     border: 0;
@@ -2928,7 +2940,7 @@ body.wp-admin .tf-meta ul li em {
     width: 0;
     height: 100%;
   }
-  /* line 491, src/_styling.scss */
+  /* line 497, src/_styling.scss */
   .site-title a:hover {
     color: #500000;
     border-color: #fff;
@@ -2937,7 +2949,7 @@ body.wp-admin .tf-meta ul li em {
   /* =============================================================================
      Search Box
      ========================================================================== */
-  /* line 501, src/_styling.scss */
+  /* line 507, src/_styling.scss */
   .js .searchform {
     width: 100px;
     overflow: hidden;
@@ -2946,7 +2958,7 @@ body.wp-admin .tf-meta ul li em {
     position: absolute;
     z-index: 200;
   }
-  /* line 508, src/_styling.scss */
+  /* line 514, src/_styling.scss */
   .js .searchform input.s {
     padding: 8px 5px 8px 90px;
     width: 0px;
@@ -2971,11 +2983,11 @@ body.wp-admin .tf-meta ul li em {
     -moz-box-shadow: none;
     box-shadow: none;
   }
-  /* line 521, src/_styling.scss */
+  /* line 527, src/_styling.scss */
   .js .searchform input.s:hover {
     background-color: #666;
   }
-  /* line 524, src/_styling.scss */
+  /* line 530, src/_styling.scss */
   .js .searchform input.s:focus {
     width: 60px;
     background: transparent url("images/search2.png") no-repeat 5px 45%;
