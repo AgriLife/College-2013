@@ -276,12 +276,12 @@ body.page h1.entry-title {
 
 	h3.widget-title {
 		font-size: 1.2em;
-		font-family: $ornate-title-font;
-		font-weight: $ornate-title-font-weight;
+		font-family: $ornate-title-font-widgets;
+		font-weight: $ornate-title-font-weight-widgets;
 		//padding: 5% 3% 5% 5%;
 		padding: 4% 4% 4% 5%;
 		margin-bottom: 0;
-		@include box-shadow(#666 0 20px 30px -8px);
+		//@include box-shadow(#666 0 20px 30px -8px);
 		letter-spacing: 1px;
 		line-height: 1em;
 		background: url('images/bg-titles2.png') top right no-repeat transparent;

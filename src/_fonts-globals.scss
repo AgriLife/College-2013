@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
 $sans-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 $body-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 
-$ornate-title-font: 		'Alfa Slab One',serif;
-$ornate-title-font-weight:	400;
+$ornate-title-font: 				"quatro-slab", serif;
+$ornate-title-font-weight:			900;
+$ornate-title-font-widgets:			"quatro-slab", serif;
+$ornate-title-font-weight-widgets:	700;
 
 $body-background-color:  #87817B;
 $upper-background-color: #D6D6D6;
