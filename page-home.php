@@ -53,9 +53,9 @@ get_header(); ?>
 		<section id="content" role="main">
 
 				<div class="widget-container">
-					<h3 class="widget-title social-directory">Social Headlines</h3>
-					<div id="postano"><!-- <a href="<?php echo site_url('/social/') ?>">Connect with the College on Social Media</a>.--></div>
-					<script type="text/javascript" src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500"></script>
+					<div id="postano" class="embed" data-src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500">
+						<a href="<?php echo site_url('/social/') ?>">Connect with the College on Social Media</a>
+					</div>
 				</div> <!-- .widget-container -->
 
 				<?php if (!dynamic_sidebar('Home Page Bottom')) : ?>	

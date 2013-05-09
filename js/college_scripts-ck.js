@@ -65,6 +65,10 @@ jQuery(document).ready(function($) {
 		// Add background image 
 		// @todo: load for screen size draggers
 		$("#wrapper").append(bgImageContainer);
+
+		// activate embed class areas
+        var src = $('.embed').attr('data-src');
+        $('.embed').html('<script type="text/javascript" src="'+src+'"></script>');
 	}
 
 	if ($(window).width() < bigScreen) {
