@@ -6552,6 +6552,26 @@ p.flex-caption a:hover {
   padding: 0;
 }
 
+/* line 1, src/plugins/_content-accordion.scss */
+a.accordion-title {
+  padding: 15px 0 15px 40px;
+  background: url("images/arrow-right.png") no-repeat 15px 20px;
+  background-color: #f0f0f0;
+}
+/* line 6, src/plugins/_content-accordion.scss */
+a.accordion-title:hover {
+  background-color: #e4e4e4;
+}
+/* line 10, src/plugins/_content-accordion.scss */
+a.accordion-title.down {
+  background: url("images/arrow-down.png") no-repeat 15px 20px;
+  background-color: #f0f0f0;
+}
+/* line 14, src/plugins/_content-accordion.scss */
+a.accordion-title.down:hover {
+  background-color: #e4e4e4;
+}
+
 @media print {
   /* line 2, src/print.scss */
   body {
