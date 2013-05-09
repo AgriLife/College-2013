@@ -89,6 +89,11 @@ jQuery(document).ready(function($) {
 
 				$(".utility-nav").appendTo("#access");
 
+				// Hide Submenus for smaller screens
+				$('.touch .sf-with-ul').click(function() {
+					$(this).find('.sub-menu').hide.slideToggle('medium');
+				});
+
 			}
 			else {
 
@@ -173,46 +178,8 @@ jQuery(document).ready(function($) {
 		},300);
 	});
 
-// Typekit
-/*
-	(function() {
-		var Typekit;
-		var config = {
-			kitId: 'bbz1kzh',
-			scriptTimeout: 3000
-		};
-		var h=document.getElementsByTagName("html")[0];
-		h.className+=" wf-loading";
-		var t=setTimeout(function(){
-			h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
-			h.className+=" wf-inactive";},config.scriptTimeout);
-		var tk=document.createElement("script"),d=false;
-		tk.src='//use.typekit.net/'+config.kitId+'.js';
-		tk.type="text/javascript";tk.async="true";
-		tk.onload=tk.onreadystatechange=function(){
-			var a=this.readyState;
-			if(d||a&&a!=="complete"&&a!=="loaded") {
-				return;
-			}
-			d=true;
-			clearTimeout(t);
-			try{
-				Typekit.load(config);
-			} catch(b){
-
-			}
-		};
-		var s=document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(tk,s);
-	})();
-*/
-
-
-
 	// Add a border to buttons
 	$('.button').wrap('<div class="button-wrap" />');
-
-
 
 
 	// Style Homepage Buttons

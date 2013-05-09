@@ -1486,39 +1486,33 @@ p {
   /* For IE 6/7 (trigger hasLayout) */
 }
 /* line 79, src/_styling-initial.scss */
-#content-wrap ul, #content-wrap ol {
-  list-style: none;
-  margin: 1.2em 0 1.2em 4.5em;
-  padding: 0;
-}
-/* line 84, src/_styling-initial.scss */
 #content-wrap ol {
   list-style: decimal;
 }
-/* line 86, src/_styling-initial.scss */
+/* line 81, src/_styling-initial.scss */
 #content-wrap ol ol {
   list-style: upper-alpha;
 }
-/* line 88, src/_styling-initial.scss */
+/* line 83, src/_styling-initial.scss */
 #content-wrap ol ol ol {
   list-style: lower-roman;
 }
-/* line 90, src/_styling-initial.scss */
+/* line 85, src/_styling-initial.scss */
 #content-wrap ol ol ol ol {
   list-style: lower-alpha;
 }
-/* line 96, src/_styling-initial.scss */
+/* line 91, src/_styling-initial.scss */
 #content-wrap li {
   margin: 0 0 0.6em 0;
 }
-/* line 102, src/_styling-initial.scss */
+/* line 97, src/_styling-initial.scss */
 #content-wrap ul ul,
 #content-wrap ol ol,
 #content-wrap ul ol,
 #content-wrap ol ul {
   margin: 0px 0px 0px 1em;
 }
-/* line 109, src/_styling-initial.scss */
+/* line 104, src/_styling-initial.scss */
 #content-wrap ul ul ul li,
 #content-wrap ol ol ol li,
 #content-wrap ul ol ul li,
@@ -1526,48 +1520,48 @@ p {
   margin: 0.2em 0 0.2em 1em;
 }
 
-/* line 116, src/_styling-initial.scss */
+/* line 111, src/_styling-initial.scss */
 #content dl, #content dd {
   margin-bottom: .5em;
 }
 
-/* line 120, src/_styling-initial.scss */
+/* line 115, src/_styling-initial.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 125, src/_styling-initial.scss */
+/* line 120, src/_styling-initial.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 131, src/_styling-initial.scss */
+/* line 126, src/_styling-initial.scss */
 cite,
 em,
 i {
   font-style: italic;
 }
 
-/* line 135, src/_styling-initial.scss */
+/* line 130, src/_styling-initial.scss */
 ins {
   background: #ffc;
   text-decoration: none;
 }
 
-/* line 140, src/_styling-initial.scss */
+/* line 135, src/_styling-initial.scss */
 blockquote {
   font-style: italic;
   padding: 0 3em;
 }
 
-/* line 147, src/_styling-initial.scss */
+/* line 142, src/_styling-initial.scss */
 blockquote cite,
 blockquote em,
 blockquote i {
   font-style: normal;
 }
 
-/* line 151, src/_styling-initial.scss */
+/* line 146, src/_styling-initial.scss */
 pre {
   background: #222;
   color: #fff;
@@ -1577,14 +1571,14 @@ pre {
   font-family: monospace;
 }
 
-/* line 160, src/_styling-initial.scss */
+/* line 155, src/_styling-initial.scss */
 abbr {
   border-bottom: 1px dotted #666666;
   cursor: help;
 }
 
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-/* line 166, src/_styling-initial.scss */
+/* line 161, src/_styling-initial.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -1592,47 +1586,47 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 167, src/_styling-initial.scss */
+/* line 162, src/_styling-initial.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 168, src/_styling-initial.scss */
+/* line 163, src/_styling-initial.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 170, src/_styling-initial.scss */
+/* line 165, src/_styling-initial.scss */
 audio {
   width: 100%;
   color: #999;
 }
 
-/* line 175, src/_styling-initial.scss */
+/* line 170, src/_styling-initial.scss */
 .entry-utility, .navigation {
   line-height: 1.5em;
 }
 
-/* line 179, src/_styling-initial.scss */
+/* line 174, src/_styling-initial.scss */
 a {
   color: #111;
   text-decoration: none;
 }
 
-/* line 185, src/_styling-initial.scss */
+/* line 180, src/_styling-initial.scss */
 a:active,
 a:hover {
   color: #332c2c;
   text-decoration: none;
 }
 
-/* line 190, src/_styling-initial.scss */
+/* line 185, src/_styling-initial.scss */
 body a {
   color: #8d0002;
   border-color: #8d0002;
 }
 
-/* line 196, src/_styling-initial.scss */
+/* line 191, src/_styling-initial.scss */
 body a:active,
 body a:hover {
   color: #5b0125;
@@ -1682,11 +1676,15 @@ body a:hover {
   color: #fff;
 }
 /* line 47, src/_home.scss */
+.home ul.featured-stories {
+  padding: 0 0 0 7px;
+}
+/* line 51, src/_home.scss */
 .home .featured-content {
   background: #fff;
   padding: 10px;
 }
-/* line 51, src/_home.scss */
+/* line 55, src/_home.scss */
 .home .featured-content h3 {
   font-size: .8em;
   color: #fff;
@@ -1695,28 +1693,28 @@ body a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 60, src/_home.scss */
+/* line 64, src/_home.scss */
 .home .featured-stories-container {
   background: #500000;
   clear: left;
 }
-/* line 64, src/_home.scss */
+/* line 68, src/_home.scss */
 .home .one-of-3 {
   margin-bottom: 0;
   padding: 0;
   width: 100%;
 }
-/* line 70, src/_home.scss */
+/* line 74, src/_home.scss */
 .home .home-content {
   background: transparent;
   background: #f9f9f9;
 }
-/* line 76, src/_home.scss */
+/* line 80, src/_home.scss */
 .home .widget-container {
   background: transparent;
   background: #f9f9f9;
 }
-/* line 83, src/_home.scss */
+/* line 87, src/_home.scss */
 .home #content h3.widget-title {
   font-size: 1.2em;
   font-weight: 700;
@@ -1724,29 +1722,29 @@ body a:hover {
   font-family: "quatro-slab", serif;
   letter-spacing: 1px;
 }
-/* line 90, src/_home.scss */
+/* line 94, src/_home.scss */
 .home #content .srp-thumbnail-box {
   width: 25%;
 }
-/* line 93, src/_home.scss */
+/* line 97, src/_home.scss */
 .home #content .srp-content-box {
   width: 75%;
 }
-/* line 96, src/_home.scss */
+/* line 100, src/_home.scss */
 .home #content .srp-widget-singlepost {
   margin: 2%;
 }
-/* line 102, src/_home.scss */
+/* line 106, src/_home.scss */
 .home .soliloquy-container {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 108, src/_home.scss */
+/* line 112, src/_home.scss */
 .home #content-wrap .social-accounts ul {
   list-style: none;
   margin: 0 0 0 25px;
 }
-/* line 111, src/_home.scss */
+/* line 115, src/_home.scss */
 .home #content-wrap .social-accounts ul ul {
   margin-left: 3em;
   background-color: #f5f0e4;
@@ -1755,16 +1753,16 @@ body a:hover {
   width: 80%;
   padding: 0.1em 1em;
 }
-/* line 122, src/_home.scss */
+/* line 126, src/_home.scss */
 .home .widget-title.social-directory {
   background-position-y: -120px;
 }
-/* line 125, src/_home.scss */
+/* line 129, src/_home.scss */
 .home #content .widget-title.srp-widget-title {
   background-position-y: -180px;
 }
 
-/* line 132, src/_home.scss */
+/* line 136, src/_home.scss */
 .home #content-wrap .soliloquy-container .soliloquy-control-nav {
   margin: 10px;
   float: right;
@@ -1772,7 +1770,7 @@ body a:hover {
   bottom: 35px;
 }
 
-/* line 138, src/_home.scss */
+/* line 142, src/_home.scss */
 .home .soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
   ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
   background: rgba(0, 0, 0, 0.5);
@@ -1789,35 +1787,35 @@ body a:hover {
 }
 
 @media all and (min-width: 636px) {
-  /* line 155, src/_home.scss */
+  /* line 159, src/_home.scss */
   .home .featured-content {
     padding: 10px;
   }
-  /* line 158, src/_home.scss */
+  /* line 162, src/_home.scss */
   .home .featured-content h3 {
     font-size: .7em;
     letter-spacing: normal;
     margin: 0.7em 0;
   }
-  /* line 164, src/_home.scss */
+  /* line 168, src/_home.scss */
   .home #content-wrap .featured-content .featured-stories li {
     margin: 10px auto;
     width: 90%;
     border-bottom: 1px solid #7d3351;
     padding: 0.2em 0 0.5em 0;
   }
-  /* line 169, src/_home.scss */
+  /* line 173, src/_home.scss */
   .home #content-wrap .featured-content .featured-stories li.challenge-international {
     border-bottom: none;
   }
-  /* line 173, src/_home.scss */
+  /* line 177, src/_home.scss */
   .home .one-of-3 {
     margin-bottom: 0;
     padding: 0;
     width: 25%;
     float: left;
   }
-  /* line 180, src/_home.scss */
+  /* line 184, src/_home.scss */
   .home .soliloquy-container {
     float: right;
     width: 74%;
@@ -1825,94 +1823,94 @@ body a:hover {
   }
 }
 @media all and (min-width: 840px) {
-  /* line 191, src/_home.scss */
+  /* line 195, src/_home.scss */
   .home .one-of-3 {
     width: 243px;
     height: 494px;
   }
-  /* line 195, src/_home.scss */
+  /* line 199, src/_home.scss */
   .home .featured-content {
     background: #fff;
     padding: 10px;
   }
-  /* line 199, src/_home.scss */
+  /* line 203, src/_home.scss */
   .home .featured-content h3 {
     font-size: .8em;
     letter-spacing: 2px;
     margin: 1em 0;
   }
-  /* line 206, src/_home.scss */
+  /* line 210, src/_home.scss */
   .home .home-content {
     width: 100%;
     float: left;
     background: #fff;
     background: #f9f9f9;
   }
-  /* line 212, src/_home.scss */
+  /* line 216, src/_home.scss */
   .home #content {
     width: 71.5%;
     float: left;
     padding: 0 0 0 0;
   }
-  /* line 217, src/_home.scss */
+  /* line 221, src/_home.scss */
   .home #content h3.widget-title {
     padding: 2% 2% 2% 3%;
   }
-  /* line 221, src/_home.scss */
+  /* line 225, src/_home.scss */
   .home #content .srp-thumbnail-box {
     width: 80px;
   }
-  /* line 224, src/_home.scss */
+  /* line 228, src/_home.scss */
   .home #content .srp-content-box {
     width: 475px;
   }
-  /* line 227, src/_home.scss */
+  /* line 231, src/_home.scss */
   .home #content .srp-widget-singlepost {
     margin: 3%;
   }
-  /* line 230, src/_home.scss */
+  /* line 234, src/_home.scss */
   .home #content .widget-container {
     padding: 0 1.5%;
   }
-  /* line 234, src/_home.scss */
+  /* line 238, src/_home.scss */
   .home .widget-container {
     background: #fff;
     background: #f9f9f9;
   }
-  /* line 239, src/_home.scss */
+  /* line 243, src/_home.scss */
   .home #postano {
     margin-top: 2%;
     background: #f9f9f9;
   }
-  /* line 243, src/_home.scss */
+  /* line 247, src/_home.scss */
   .home #pst_isotopediv {
     background: #f00;
   }
-  /* line 246, src/_home.scss */
+  /* line 250, src/_home.scss */
   .home .fspreviewout {
     background: #f00;
   }
-  /* line 251, src/_home.scss */
+  /* line 255, src/_home.scss */
   .home #content-wrap .featured-content .featured-stories li {
     width: 165px;
     border-bottom: 3px solid #7d3351;
     padding: 5px 0 14px 0;
   }
-  /* line 256, src/_home.scss */
+  /* line 260, src/_home.scss */
   .home .challenge {
     width: 195px;
   }
-  /* line 260, src/_home.scss */
+  /* line 264, src/_home.scss */
   .home .challenge h2 {
     font-size: 16px;
     width: 100%;
     line-height: 0.9em;
   }
-  /* line 268, src/_home.scss */
+  /* line 272, src/_home.scss */
   .home .soliloquy-container {
     width: 748px;
   }
-  /* line 272, src/_home.scss */
+  /* line 276, src/_home.scss */
   .home #aside {
     clear: none;
     float: right;
@@ -1921,7 +1919,7 @@ body a:hover {
     width: 26%;
     padding: 0 1.5% 0 0;
   }
-  /* line 279, src/_home.scss */
+  /* line 283, src/_home.scss */
   .home #aside .widget-container {
     padding: 0;
   }
@@ -6550,26 +6548,6 @@ p.flex-caption a:hover {
 .ai1ec-date-title .ai1ec-agenda-widget-view .ai1ec-month {
   background: transparent;
   padding: 0;
-}
-
-/* line 1, src/plugins/_content-accordion.scss */
-a.accordion-title {
-  padding: 15px 0 15px 40px;
-  background: url("images/arrow-right.png") no-repeat 15px 20px;
-  background-color: #f0f0f0;
-}
-/* line 6, src/plugins/_content-accordion.scss */
-a.accordion-title:hover {
-  background-color: #e4e4e4;
-}
-/* line 10, src/plugins/_content-accordion.scss */
-a.accordion-title.down {
-  background: url("images/arrow-down.png") no-repeat 15px 20px;
-  background-color: #f0f0f0;
-}
-/* line 14, src/plugins/_content-accordion.scss */
-a.accordion-title.down:hover {
-  background-color: #e4e4e4;
 }
 
 @media print {
