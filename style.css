@@ -6570,6 +6570,12 @@ p.flex-caption a:hover {
   padding: 0;
 }
 
+/* line 2, src/plugins/_soliloquy.scss */
+#aside .widget-container .widget-wrap ul.soliloquy-slides {
+  padding: 0;
+  margin: 0;
+}
+
 @media print {
   /* line 2, src/print.scss */
   body {
