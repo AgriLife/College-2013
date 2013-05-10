@@ -54,7 +54,7 @@ get_header(); ?>
 
 				<div class="widget-container">
 					<div id="postano" class="embed" data-src="http://www.postano.com/php/embed.2.php?id=54296&width=694&height=500">
-						<a href="<?php echo site_url('/social/') ?>">Connect with the College on Social Media</a>
+						<a href="<?php echo site_url('/social/') ?>">Connect with the College</a> and see more of what's happening via social media.
 					</div>
 				</div> <!-- .widget-container -->
 
