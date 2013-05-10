@@ -6576,6 +6576,16 @@ p.flex-caption a:hover {
   margin: 0;
 }
 
+/* line 1, src/plugins/_randomtext.scss */
+#aside .widget-container.randomtext {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+/* line 4, src/plugins/_randomtext.scss */
+#aside .widget-container.randomtext h3.widget-title {
+  margin-bottom: 0.5em;
+}
+
 @media print {
   /* line 2, src/print.scss */
   body {
