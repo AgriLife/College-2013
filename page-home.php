@@ -8,7 +8,7 @@ get_header(); ?>
 		<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( 'home-page-ss' ); ?>
 
 		<div class="one-of-3 clearfix featured-stories-container">
-			<h3>Click to Learn More</h3>
+			<h3>College Priorities</h3>
 			<ul class="featured-stories">
 				<li class="challenge-hign challenge">						
 					<a href="<?php echo site_url('/academics/high-impact-learning/') ?>" id="l1" class="challenge-link">
