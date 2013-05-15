@@ -461,11 +461,10 @@ table {
   margin-left: -100%;
   width: 70%;
   float: left;
-  padding-bottom: 25em;
   z-index: 2;
 }
 
-/* line 54, src/_off-canvas.scss */
+/* line 53, src/_off-canvas.scss */
 .js [role="document"] {
   margin-left: 0;
   float: right;
@@ -473,26 +472,26 @@ table {
   position: relative;
 }
 
-/* line 60, src/_off-canvas.scss */
+/* line 59, src/_off-canvas.scss */
 .js [role="complementary"] {
   margin: 0;
   clear: both;
   z-index: 2;
 }
 
-/* line 65, src/_off-canvas.scss */
+/* line 64, src/_off-canvas.scss */
 .active-sidebar [role="navigation"] {
   margin-left: 0;
   width: 69%;
 }
 
-/* line 69, src/_off-canvas.scss */
+/* line 68, src/_off-canvas.scss */
 .active-sidebar [role="document"] {
   margin-right: -80%;
 }
 
 /* Header */
-/* line 74, src/_off-canvas.scss */
+/* line 73, src/_off-canvas.scss */
 #site-title {
   position: relative;
   float: left;
@@ -500,7 +499,7 @@ table {
   margin-left: 3%;
 }
 
-/* line 80, src/_off-canvas.scss */
+/* line 79, src/_off-canvas.scss */
 #site-title a {
   font-size: 0;
   display: block;
@@ -511,12 +510,12 @@ table {
 }
 
 /* Off Canvas/footer Anchor Navigation */
-/* line 89, src/_off-canvas.scss */
+/* line 88, src/_off-canvas.scss */
 .off-canvas-nav-links ul {
   list-style: none;
 }
 
-/* line 93, src/_off-canvas.scss */
+/* line 92, src/_off-canvas.scss */
 .sidebar-button {
   padding: 1em;
   font-size: 14px;
@@ -528,7 +527,7 @@ table {
   color: #fff;
 }
 
-/* line 104, src/_off-canvas.scss */
+/* line 103, src/_off-canvas.scss */
 .sidebar-button {
   top: 50px;
   right: 3%;
@@ -544,7 +543,7 @@ table {
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;		
 }*/
-/* line 118, src/_off-canvas.scss */
+/* line 117, src/_off-canvas.scss */
 [role="navigation"] li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -640,12 +639,12 @@ table {
   */
 }
 @media all and (min-width: 840px) {
-  /* line 213, src/_off-canvas.scss */
+  /* line 212, src/_off-canvas.scss */
   .js .menu-button {
     display: none;
   }
 
-  /* line 218, src/_off-canvas.scss */
+  /* line 217, src/_off-canvas.scss */
   .js [role="document"],
   .js [role="navigation"],
   .js [role="contentinfo"] {
@@ -655,7 +654,7 @@ table {
     padding: 0;
   }
 
-  /* line 225, src/_off-canvas.scss */
+  /* line 224, src/_off-canvas.scss */
   .js [role="navigation"] {
     padding: 0;
   }
