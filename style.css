@@ -3646,7 +3646,7 @@ img {
 #content-wrap .callout {
   background-color: #f5f0e4;
   clear: both;
-  width: 100%;
+  width: 94%;
   padding: 3%;
   float: left;
   margin: 1.25em 0;
@@ -3664,13 +3664,18 @@ img {
 /* line 129, src/_user-styles.scss */
 #content-wrap .callout .button-wrap {
   border-color: #5f574f;
-  float: left;
 }
-/* line 133, src/_user-styles.scss */
+@media all and (min-width: 840px) {
+  /* line 129, src/_user-styles.scss */
+  #content-wrap .callout .button-wrap {
+    float: left;
+  }
+}
+/* line 135, src/_user-styles.scss */
 #content-wrap .callout .button {
   float: left;
 }
-/* line 137, src/_user-styles.scss */
+/* line 139, src/_user-styles.scss */
 #content-wrap .callout img {
   border: 5px solid white;
   -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
@@ -3678,7 +3683,7 @@ img {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* line 146, src/_user-styles.scss */
+/* line 148, src/_user-styles.scss */
 .embed-container {
   position: relative;
   padding-bottom: 80%;
@@ -3689,7 +3694,7 @@ img {
   overflow: scroll;
 }
 
-/* line 156, src/_user-styles.scss */
+/* line 158, src/_user-styles.scss */
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -3701,7 +3706,7 @@ img {
 }
 
 @media all and (min-width: 840px) {
-  /* line 166, src/_user-styles.scss */
+  /* line 168, src/_user-styles.scss */
   .one-of-2 {
     width: 48%;
     clear: both;
@@ -3710,7 +3715,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 173, src/_user-styles.scss */
+  /* line 175, src/_user-styles.scss */
   .two-of-2 {
     width: 48%;
     float: left;
@@ -3718,13 +3723,13 @@ img {
     padding-right: 2%;
   }
 
-  /* line 180, src/_user-styles.scss */
+  /* line 182, src/_user-styles.scss */
   .two-of-2 ul, .one-of-2 ul,
   .one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
     margin-left: 1em;
   }
 
-  /* line 183, src/_user-styles.scss */
+  /* line 185, src/_user-styles.scss */
   .one-of-3 {
     width: 30%;
     clear: both;
@@ -3733,7 +3738,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 191, src/_user-styles.scss */
+  /* line 193, src/_user-styles.scss */
   .two-of-3 {
     width: 30%;
     float: left;
@@ -3741,7 +3746,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 198, src/_user-styles.scss */
+  /* line 200, src/_user-styles.scss */
   .three-of-3 {
     width: 30%;
     float: left;
