@@ -1,0 +1,25 @@
+/* line 3, src/iefix.scss */
+.oldie .site-title a {
+  background-image: url("images/logo-w.png");
+}
+/* line 7, src/iefix.scss */
+.oldie #agency-nav {
+  top: -67px;
+  left: 265px;
+}
+/* line 12, src/iefix.scss */
+.oldie #access .sf-menu li a.sf-with-ul {
+  padding: 0;
+}
+/* line 17, src/iefix.scss */
+.oldie .utility-nav a,
+.oldie .nav-general a {
+  padding-left: .1em;
+  padding-right: .1em;
+}
+/* line 23, src/iefix.scss */
+.oldie .menu-nav-audience,
+.oldie .menu-nav-general {
+  margin-left: 0;
+  margin-right: 0;
+}
