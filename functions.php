@@ -97,14 +97,13 @@ function add_swap_sidebar_body_class($classes) {
   return $classes;
 }
 
-add_action( 'wp_head', 'agriflex_add_ie_styles', 120 );
+add_action( 'wp_head', 'agriflex_add_ie_styles', -10 );
 /**
- * Add Respond.js and old IE styles
+ * Add old IE styles early
  *
  * @author Travis Ward <travis@travisward.com>
  * @since College 2013
  * @return void
- * @todo combine and minify js for old ie
  */
 function agriflex_add_ie_styles() {
 
@@ -112,13 +111,32 @@ function agriflex_add_ie_styles() {
 
   $html =   "\n<!--[if lt IE 9]>\n";
   $html .=  ' <link rel="stylesheet" type="text/css" media="all" href="'.get_stylesheet_directory_uri().'/iefix.css" />'."\n";
-  $html .=  ' <script src="'.get_stylesheet_directory_uri().'/js/respond/respond.min.js"></script>';
+  $html .=  "\n<![endif]-->\n";
+
+  echo $html;
+
+} // agriflex_add_ie_styles
+
+add_action( 'wp_head', 'agriflex_add_ie_scripts', 10 );
+/**
+ * Add Respond.js and old IE scripts after other .js
+ *
+ * @author Travis Ward <travis@travisward.com>
+ * @since College 2013
+ * @return void
+ */
+function agriflex_add_ie_scripts() {
+
+  $html =   "\n<!--[if lt IE 9]>\n";
   $html .=  ' <script src="'.get_stylesheet_directory_uri().'/js/oldie.js"></script>';
+  $html .=  "\n<![endif]-->\n";
+  $html .=   "\n<!--[if IE 8]>\n";
+  $html .=  ' <script src="'.get_stylesheet_directory_uri().'/js/respond/respond.min.js"></script>';
   $html .=  "\n<![endif]-->\n";
     
   echo $html;
 
-} // agriflex_add_js_class
+} // agriflex_add_ie_scripts
 
 
 // Add Featured Story Sidebar to top of Sidebar
