@@ -75,9 +75,6 @@ function load_new_js() {
   // drop fitvids
   wp_deregister_script( 'fitvids' );
 
-  // drop Modernizr
-  wp_deregister_script( 'modernizr' );
-
 	if ( !is_admin() ) {
 		wp_deregister_script( 'my_scripts' );
 
