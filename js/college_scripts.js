@@ -1,4 +1,8 @@
-jQuery(document).ready(function($) {
+
+
+function appInit() {
+
+jQuery(document).ready(function() {
 
     //set the initial values
 
@@ -153,24 +157,6 @@ jQuery(document).ready(function($) {
 	$('.button').wrap('<div class="button-wrap" />');
 
 
-	// Style Homepage Buttons
-
-	jQuery("#challenge-high1").fitText(0.6);//, { minFontSize: '20px', maxFontSize: '24px' }); //20px
-	jQuery("#challenge-high2").fitText(0.45);//, { minFontSize: '26px', maxFontSize: '29px' }); //26px
-
-	jQuery("#challenge-stem1").fitText(1.01);
-	jQuery("#challenge-stem2").fitText(0.90);
-
-	jQuery("#challenge-grand1").fitText(0.3);
-	jQuery("#challenge-grand2").fitText(0.56);
-
-	jQuery("#challenge-diversity").fitText(0.49);
-
-	jQuery("#challenge-accountability").fitText(0.8);
-
-	jQuery("#challenge-international1").fitText(0.73);
-	jQuery("#challenge-international2").fitText(0.48);
-
 	// Social Media Directory: Collapse sections
 	// @todo: Load only on /social page
 	// jQuery(".social-accounts").accordion();
@@ -200,3 +186,55 @@ jQuery(document).ready(function($) {
 		}
     );
 });
+
+} // appInit
+
+
+function homepageInit() {
+	// Style Homepage Buttons
+
+	jQuery("#challenge-high1").fitText(0.6);//, { minFontSize: '20px', maxFontSize: '24px' }); //20px
+	jQuery("#challenge-high2").fitText(0.45);//, { minFontSize: '26px', maxFontSize: '29px' }); //26px
+
+	jQuery("#challenge-stem1").fitText(1.01);
+	jQuery("#challenge-stem2").fitText(0.90);
+
+	jQuery("#challenge-grand1").fitText(0.3);
+	jQuery("#challenge-grand2").fitText(0.56);
+
+	jQuery("#challenge-diversity").fitText(0.49);
+
+	jQuery("#challenge-accountability").fitText(0.8);
+
+	jQuery("#challenge-international1").fitText(0.73);
+	jQuery("#challenge-international2").fitText(0.48);
+
+	// @todo Load Soliloquy .js here
+
+}
+
+
+var Modernizr;
+
+// path to WordPress theme
+var path = "/wp-content/themes/college-2013/";
+
+// Give Modernizr.load a string, an object, or an array of strings and objects
+Modernizr.load([
+	{
+    load: [ path + 'js/presentational-ck.js'],
+
+    complete: function () {
+        // Load a local jQuery if needed
+        if ( !window.jQuery ) {
+            Modernizr.load(path + 'js/libs/jquery-1.7.2.min.js');
+        }
+        //jQuery.noConflict();
+        appInit();
+        homepageInit();
+    }
+  },
+  // Run your analytics after you've already kicked off all the rest
+  // of your app.
+  // 'post-analytics.js'
+]);
