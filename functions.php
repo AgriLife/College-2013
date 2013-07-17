@@ -518,9 +518,43 @@ function college_add_options( $options ) {
 
   $images = college_get_background_images();
 
+  $departments = array(
+    '----',
+    'Agricultural Economics',
+    'Agricultural Leadership, Education and Communities',
+    'Animal Science',
+    'Biochemistry and Biophysics',
+    'Biological and Agricultural Engineering',
+    'Ecosystem Science and Management',
+    'Entomology',
+    'Horticultural Sciences',
+    'Nutrition and Food Science',
+    'Plant Pathology and Microbiology',
+    'Poultry Science',
+    'Recreation, Park and Tourism Sciences',
+    'Soil and Crop Sciences',
+    'Wildlife and Fisheries Sciences',
+  );
+
   $options[] = array(
     'name' => __( 'College', 'agriflex' ),
     'type' => 'heading',
+  );
+
+  $options[] = array(
+    'name' => __( 'Department Site', 'agriflex' ),
+    'desc' => __( 'This is a department site', 'agriflex' ),
+    'type' => 'checkbox',
+    'id' => 'college-department',
+    'std' => false,
+  );
+
+  $options[] = array(
+    'name' => __( 'Department Name', 'agriflex' ),
+    'desc' => __( 'Select the department name', 'agriflex' ),
+    'type' => 'select',
+    'id' => 'college-department-name',
+    'options' => $departments,
   );
 
   $options[] = array(
