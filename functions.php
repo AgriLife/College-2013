@@ -35,7 +35,8 @@ function agriflex_college_setup() {
 	// Register the menus
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation', 'agriflex' ),
-		'secondary' => __( 'Secodary Navigation', 'agriflex' )
+		'secondary' => __( 'Audience Navigation (bottom bar)', 'agriflex' ),
+    'third-general' => __( 'Tertiary General Navigation (bottom bar)', 'agriflex' )
 	) );
 
 
@@ -70,6 +71,9 @@ add_action( 'after_setup_theme', 'agriflex_college_setup' );
 // Load New .js for College
 add_action(	'wp_enqueue_scripts', 'load_new_js' );    
 function load_new_js() {
+  
+  // drop fitvids
+  wp_deregister_script( 'fitvids' );
 
 	if ( !is_admin() ) {
 		wp_deregister_script( 'my_scripts' );
@@ -83,6 +87,57 @@ function load_new_js() {
 		wp_enqueue_script( 'college_scripts' );
 	}                
 }
+
+// Add specific CSS class by filter
+add_filter('body_class','add_swap_sidebar_body_class');
+function add_swap_sidebar_body_class($classes) {
+  // add 'content-sidebar' to the $classes array
+  $classes[] = 'content-sidebar';
+  // return the $classes array
+  return $classes;
+}
+
+add_action( 'wp_head', 'agriflex_add_ie_styles', -10 );
+/**
+ * Add old IE styles early
+ *
+ * @author Travis Ward <travis@travisward.com>
+ * @since College 2013
+ * @return void
+ */
+function agriflex_add_ie_styles() {
+
+  remove_action( 'wp_enqueue_scripts', 'agriflex_load_ie_styles' );
+
+  $html =   "\n<!--[if lt IE 9]>\n";
+  $html .=  ' <link rel="stylesheet" type="text/css" media="all" href="'.get_stylesheet_directory_uri().'/iefix.css" />'."\n";
+  $html .=  "\n<![endif]-->\n";
+
+  echo $html;
+
+} // agriflex_add_ie_styles
+
+add_action( 'wp_head', 'agriflex_add_ie_scripts', 10 );
+/**
+ * Add Respond.js and old IE scripts after other .js
+ *
+ * @author Travis Ward <travis@travisward.com>
+ * @since College 2013
+ * @return void
+ */
+function agriflex_add_ie_scripts() {
+
+  $html =   "\n<!--[if lt IE 9]>\n";
+  $html .=  ' <script src="'.get_stylesheet_directory_uri().'/js/oldie.js"></script>';
+  $html .=  "\n<![endif]-->\n";
+  $html .=   "\n<!--[if IE 8]>\n";
+  $html .=  ' <script src="'.get_stylesheet_directory_uri().'/js/respond/respond.min.js"></script>';
+  $html .=  "\n<![endif]-->\n";
+    
+  echo $html;
+
+} // agriflex_add_ie_scripts
+
 
 // Add Featured Story Sidebar to top of Sidebar
 add_action( 'agriflex_before_sidebar', 'agriflex_college_featured_sidebar', 10 );
@@ -125,6 +180,35 @@ function remove_agriflex_college_logo() {
 	remove_action( 'agriflex_before_header', 'agriflex_college_logo');
 }
 add_action('init','remove_agriflex_college_logo');
+
+// Add Floating Audience Menu
+add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+function agriflex_college_add_floating_menu() {
+
+  $html = '<div class="utility-nav">';
+  $html .= '<div class="wrap">';
+
+  $nav_audience = wp_nav_menu( array(
+    'container_class' => 'menu-nav-audience',
+    'theme_location'  => 'secondary',
+    'echo'            => false,
+    'fallback_cb'   => false,
+    'items_wrap'      => '<ul id="%1$s" class="nav-audience">%3$s</ul>',
+  ));
+
+  $nav_general = wp_nav_menu( array(
+    'container_class' => 'menu-nav-general',
+    'theme_location'  => 'third-general',
+    'echo'            => false,
+    'fallback_cb'   => false,
+    'items_wrap'      => '<ul id="%1$s" class="nav-general">%3$s</ul>',
+  ));
+
+  $html .= $nav_audience.$nav_general;
+  $html .= '</div>';
+  $html .= '</div>';
+  echo $html;
+}
 
 // Add a new logo
 add_action( 'agriflex_before_header', 'agriflex_college_logo_retina', 10 );
@@ -211,35 +295,6 @@ function typekit_js_college() {
 add_action('wp_head','typekit_js_college');
 
 
-// Add secondary (audience) navigation
-add_action( 'agriflex_before_footer', 'agriflex_college_second_nav' );
-/**
- * Displays the college logo when selected.
- *
- * @since College 2013
- * @author Travis Ward <travis@travisward.com>
- */
-function agriflex_college_second_nav() {
-
-  // Primary nav menu
-	$nav_menu = wp_nav_menu( array(
-              'container_class' => 'menu-secondary',
-              'theme_location'  => 'secondary',
-              'echo'            => false,
-              'fallback_cb'		=> false,
-              'items_wrap'      => '<ul id="%1$s" class="secondary-nav">%3$s</ul>',
-            ));
-
-	$html =  	$nav_menu;
-
-	echo $html;
-
-} // agriflex_college_second_nav
-
-
-
-
-
 function remove_agriflex_footer() {
 	remove_action( 'agriflex_footer', 'agriflex_show_footer' );
 }
@@ -268,7 +323,7 @@ function agriflex_college_footer() {
 		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
 		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
 		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
-		<li><a href="http://www.texashomelandscurity.com/" target="_blank">Texas Homeland Security</a></li>
+		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
 		<li><a href="http://aghr.tamu.edu/education-civil-rights.htm" target="_blank">Equal Opportunity for Educational Programs Statement</a></li>
 		<li class="last"><a href="http://agrilife.org/required-links/orpi/">Open Records/Public Information</a></li>
 	</ul>
@@ -404,6 +459,92 @@ function agriflex_content_nav( $nav_id ) {
 
   </nav><!-- #<?php echo $nav_id; ?> -->
 <?php
+}
+
+
+/**
+ * Register action hook: agriflex_college_after_primary_nav
+ *
+ * Located in nav-primary.php within the <nav> section
+ *
+ * @since College-2013 1.0
+ */
+function agriflex_college_after_primary_nav() {
+
+  do_action( 'agriflex_college_after_primary_nav' );
+
+}
+
+/**
+ * Retrieves all sample images from the backgrounds folder
+ * @since 1.0
+ * @return array Array of image files
+ * 
+ */
+function college_get_background_images() {
+
+  $image_path = dirname( __FILE__ ) . '/images/backgrounds/samples/';
+  $image_uri = get_stylesheet_directory_uri() . '/images/backgrounds/samples/';
+
+  $images = glob( $image_path . '*.jpg' );
+
+  $return = array();
+
+  foreach ($images as $image) {
+    $image = basename( $image );
+    $return[$image] = $image_uri . $image;
+  }
+
+  return $return;
+
+}
+
+add_filter( 'agriflex_add_options', 'college_add_options', 1 );
+/**
+ * Adds a background selector to the theme options
+ * @since 1.0
+ * @param  array $options The existing theme options array
+ * @return array          The amended theme options array
+ */
+function college_add_options( $options ) {
+
+  $images = college_get_background_images();
+
+  $options[] = array(
+    'name' => __( 'College', 'agriflex' ),
+    'type' => 'heading',
+  );
+
+  $options[] = array(
+    'name' => 'Background Image',
+    'desc' => 'Select a background image',
+    'id' => 'college-background-image',
+    'std' => 'algae-lab.jpg',
+    'type' => 'images',
+    'options' => $images,
+  );
+
+  return $options;
+
+}
+
+add_action( 'wp_footer', 'college_background_image', 50 );
+/**
+ * Sets the background-image css rule based on the theme option
+ * @since 1.0
+ */
+function college_background_image() {
+
+  $image_path = get_stylesheet_directory_uri() . '/images/backgrounds/' . of_get_option('college-background-image');
+
+  $script = '<script type="text/javascript">';
+  $script .= '$(document).ready( function() {';
+  $script .= '$("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
+  $script .= '});';
+  $script .= '</script>';
+
+  echo $script;
+
 }
 
 ?>

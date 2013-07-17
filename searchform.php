@@ -5,7 +5,7 @@
     </div>
 </form>
 -->
-<form method="get" class="searchform" action="http://agrilife.org/" >
+<form method="get" class="searchform" action="<?php echo home_url( '/' ); ?>" >
      <input type="text" value="" name="s" class="s" onfocus="" onblur="" />
      <input type="submit" class="searchsubmit" value="Go" />
 </form>
