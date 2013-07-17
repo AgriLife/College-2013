@@ -605,4 +605,19 @@ function college_department_name() {
 
 }
 
+add_filter( 'body_class', 'college_department_body_class' );
+function college_department_body_class( $classes ) {
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    $department_name = of_get_option( 'college-department-name' );
+    $classes[] = 'college-department';
+    $classes[] = sanitize_title( $department_name );
+  }
+
+  return $classes;
+
+}
+
 ?>
