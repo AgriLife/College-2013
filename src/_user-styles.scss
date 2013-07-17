@@ -110,7 +110,7 @@
 	#content-wrap .callout {
 		background-color: #f5f0e4;
 		clear: both;
-		width: 100%;
+		width: 94%;
 		padding: 3%;
 		float: left;
 		margin: 1.25em 0;
@@ -128,7 +128,9 @@
 		// callout buttons are always grey
 		.button-wrap {
 			border-color: #5f574f;
-			float: left;
+			@media all and (min-width: $breakpoint-biggest) {
+				float: left;
+			}
 		}
 		.button {
 			float: left;

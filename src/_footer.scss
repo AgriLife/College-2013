@@ -1,7 +1,7 @@
 
 #footer {
 	overflow: hidden;
-	margin: 0 auto 3.33333333% auto;
+	margin: 0 auto 50px auto;
 	background: #500000;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
 	padding: 0;
@@ -80,7 +80,7 @@
 					line-height: .6em;
 					a {
 						font-size: .6em;
-						color: #9F6D56;
+						color: $footer-link-alternate;
 					}
 				}
 			}

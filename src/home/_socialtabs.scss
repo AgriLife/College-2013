@@ -1,0 +1,67 @@
+#content {
+	.social-accounts {
+		h3 {
+			margin: 0;
+			font-size: 1em;
+			background: url(images/arrow-right-2.png) no-repeat 6px 0.8em;
+			padding: .5em 0;
+			text-indent: 25px;
+			outline: none;
+		}
+		.social-media-item {
+			background: none;
+			text-indent: 0;
+			width: 18px;
+			margin-right: .25em;
+			a {
+				display: block;
+				height: 18px;
+				width: 18px;
+				text-indent: -999em;
+				text-decoration: none;
+				border-bottom: none;
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-image: url("images/social-icons.png");
+				margin: auto;
+				background-size: 125px 47px;
+				&.googleplus {
+					background-position: left top;
+					&:hover {
+						background-position-y: bottom;
+					}
+				}
+				&.facebook {
+					background-position: -21px top;
+					&:hover {
+						background-position-y: bottom;
+					}
+				}
+				&.twitter {
+					background-position: -43px top;
+					&:hover {
+						background-position-y: bottom;
+					}
+				}
+				&.flickr {
+					background-position: -64px top;
+					&:hover {
+						background-position-y: bottom;
+					}
+				}
+				&.youtube {
+					background-position: -85px top;
+					&:hover {
+						background-position-y: bottom;
+					}
+				}
+				&.rss {
+					background-position: -107px top;
+					&:hover {
+						background-position-y: bottom;
+					}
+				}
+			}
+		}
+	}
+}

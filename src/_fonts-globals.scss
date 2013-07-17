@@ -1,0 +1,24 @@
+
+$sans-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+$body-font: 'ff-meta-web-pro', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+
+$ornate-title-font: 				"quatro-slab", serif;
+$ornate-title-font-weight:			900;
+$ornate-title-font-widgets:			"quatro-slab", serif;
+$ornate-title-font-weight-widgets:	700;
+
+$body-background-color:  #87817B;
+$upper-background-color: #D6D6D6;
+$header-bar-grey: #5F574F;
+$footer-link-alternate: #9F6D56;
+
+$widget-font: verdana, clean, sans-serif;
+$widget-font-size: 13px;
+
+$breakpoint-medium:		636px;
+$breakpoint-biggest:	840px;
+
+$desktop-stage-width:	1024px;
+
+@import "compass/css3";
+@import "compass/css3/box-shadow";

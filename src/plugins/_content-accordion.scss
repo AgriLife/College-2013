@@ -1,0 +1,18 @@
+a.accordion-title {
+	padding: 15px 0 15px 40px;
+	background: url('images/arrow-right.png') no-repeat 15px 20px;
+	background-color: #f0f0f0;
+
+	&:hover {
+		background-color: shade( #f0f0f0, 5% );
+	}
+
+	&.down {
+		background: url('images/arrow-down.png') no-repeat 15px 20px;
+		background-color: #f0f0f0;
+
+		&:hover {
+			background-color: shade( #f0f0f0, 5% );
+		}
+	}
+}

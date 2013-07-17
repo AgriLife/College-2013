@@ -1,0 +1,194 @@
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+::-moz-selection { background: #f9fd87; color: #000; text-shadow: none; }
+::selection { background: #f9fd87; color: #000; text-shadow: none; }
+
+body {
+	background: #f5f0e4;
+	font: 100% $body-font;
+	line-height: 1.2em;
+	color: #433c3a;	
+}
+/*-- Target Modernizr.no-touch class  --*/
+.no-touch body {
+    text-rendering: optimizeLegibility;	/*-- Only target non touch based screens --*/
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	line-height: 1.2em;
+	clear: both;
+}
+
+h1 {
+	font-size: 2em;  /* 32px / 16px */
+}
+
+h2 {
+	font-size: 1.75em;  /* 28px / 16px */
+}
+
+h3 {
+	font-size: 1.5em;  /* 24px / 16px */
+}
+
+h4 {
+	font-size: 1.25em;  /* 20px / 16px */
+}
+
+h5 {
+	font-size: 1.125em;  /* 18px / 16px */
+}
+
+h6 {
+	font-size: 1em;  /* 16px */
+}
+
+ol, 
+ul {
+	list-style: none;
+}						
+
+/* Text elements */
+p {
+	margin-top: 1.25em; /* 20px / 16px */
+	margin-bottom: 1.25em; /* 20px / 16px */
+	font-size: 1em; /* 16px */
+	line-height: 1.25em;  /* 20px / 16px */
+}
+
+#content ul li {
+	margin: .5em 0;
+	font-family: verdana, clean, sans-serif;
+	font-size: 13px;			
+}
+
+#content-wrap {
+	background: #fff;
+	@include single-box-shadow(rgba(0,0,0,0.4), -2px, 0, 15px);
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+
+	ol {
+		list-style: decimal;
+		ol {
+			list-style:upper-alpha;
+			ol {
+				list-style: lower-roman;
+				ol {
+					list-style: lower-alpha;
+				}
+			}
+		}
+	}
+	li {
+		margin: 0 0 .6em 0;
+	}
+	ul ul,
+	ol ol,
+	ul ol,
+	ol ul {
+		margin: 0px 0px 0px 1em;
+	}
+
+	ul ul ul li,
+	ol ol ol li,
+	ul ol ul li,
+	ol ul ul li {
+		margin: 0.2em 0 0.2em 1em;
+	}
+}
+
+
+
+#content dl, #content dd {
+	margin-bottom: .5em;
+}
+
+dt {
+	font-weight: bold;
+	
+}
+
+strong {
+	font-weight: bold;
+}
+
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+ins {
+	background: #ffc;
+	text-decoration: none;
+}
+
+blockquote {
+	font-style: italic;
+	padding: 0 3em;
+}
+
+blockquote cite,
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+
+pre {
+	background: #222;
+	color: #fff;
+	margin-bottom: 1.8em;
+	padding: 1.5em;
+	overflow: scroll;
+	font-family: monospace;
+}
+
+abbr {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+audio {
+	width: 100%;
+	color: #999;
+}
+
+.entry-utility, .navigation {
+	line-height: 1.5em;
+}
+
+a {
+	color:#111;
+	text-decoration: none;	 
+}
+
+a:active,
+a:hover {
+	color: #332c2c;
+	text-decoration: none;	
+}
+
+body a {
+	color:#8d0002;
+	border-color: #8d0002;
+}
+
+body a:active,
+body a:hover {
+	color: #5b0125;
+	border-color: #5b0125;	
+}
