@@ -541,21 +541,23 @@ function college_add_options( $options ) {
     'type' => 'heading',
   );
 
-  $options[] = array(
-    'name' => __( 'Department Site', 'agriflex' ),
-    'desc' => __( 'This is a department site', 'agriflex' ),
-    'type' => 'checkbox',
-    'id' => 'college-department',
-    'std' => false,
-  );
+  if ( current_user_can( 'manage_network' ) ) {
+    $options[] = array(
+      'name' => __( 'Department Site', 'agriflex' ),
+      'desc' => __( 'This is a department site', 'agriflex' ),
+      'type' => 'checkbox',
+      'id' => 'college-department',
+      'std' => false,
+    );
 
-  $options[] = array(
-    'name' => __( 'Department Name', 'agriflex' ),
-    'desc' => __( 'Select the department name', 'agriflex' ),
-    'type' => 'select',
-    'id' => 'college-department-name',
-    'options' => $departments,
-  );
+    $options[] = array(
+      'name' => __( 'Department Name', 'agriflex' ),
+      'desc' => __( 'Select the department name', 'agriflex' ),
+      'type' => 'select',
+      'id' => 'college-department-name',
+      'options' => $departments,
+    );
+  }
 
   $options[] = array(
     'name' => 'Background Image',
