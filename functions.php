@@ -57,13 +57,10 @@ function agriflex_college_setup() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
-
-
-	// register Category_Widget widget
-	add_action( 'widgets_init',
-	create_function( '', 'register_widget( "category_widget" );' ) );
 }
+
+
+// register Category_Widget widget
 // Now add the new theme setup
 add_action( 'after_setup_theme', 'agriflex_college_setup' );
 
