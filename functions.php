@@ -70,10 +70,10 @@ add_action(	'wp_enqueue_scripts', 'load_new_js' );
 function load_new_js() {
   
   // drop fitvids
-  wp_deregister_script( 'fitvids' );
+  // wp_deregister_script( 'fitvids' );
 
 	if ( !is_admin() ) {
-		wp_deregister_script( 'my_scripts' );
+		// wp_deregister_script( 'my_scripts' );
 
 		// enqueue the custom jquery js
 		wp_register_script( 'college_scripts',
