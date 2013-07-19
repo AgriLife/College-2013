@@ -591,16 +591,18 @@ function college_background_image() {
 
 }
 
-add_action( 'agriflex_header', 'college_department_name', 12 );
+add_action( 'agriflex_header', 'college_department_name', 2 );
 function college_department_name() {
 
   $is_department = of_get_option( 'college-department' );
 
   if ( $is_department ) {
     $department_name = of_get_option( 'college-department-name' );
-    echo '<h1 class="site-name">';
-    echo $department_name;
+    echo '<div id="department-title">';
+    echo '<h1 class="department-name">';
+    echo 'Department of ' . $department_name;
     echo '</h1>';
+    echo '</div>';
   }
 
 }
@@ -619,5 +621,6 @@ function college_department_body_class( $classes ) {
   return $classes;
 
 }
+
 
 ?>
