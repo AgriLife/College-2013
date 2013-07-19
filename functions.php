@@ -531,7 +531,7 @@ function college_add_options( $options ) {
     'Nutrition and Food Science' => 'Nutrition and Food Science',
     'Plant Pathology and Microbiology' => 'Plant Pathology and Microbiology',
     'Poultry Science' => 'Poultry Science',
-    'Recreation =>  Park and Tourism Sciences','Recreation, Park and Tourism Sciences',
+    'Recreation, Park and Tourism Sciences' => 'Recreation, Park and Tourism Sciences',
     'Soil and Crop Sciences' => 'Soil and Crop Sciences',
     'Wildlife and Fisheries Sciences' => 'Wildlife and Fisheries Sciences',
   );
