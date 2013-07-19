@@ -57,13 +57,10 @@ function agriflex_college_setup() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
-
-
-	// register Category_Widget widget
-	add_action( 'widgets_init',
-	create_function( '', 'register_widget( "category_widget" );' ) );
 }
+
+
+// register Category_Widget widget
 // Now add the new theme setup
 add_action( 'after_setup_theme', 'agriflex_college_setup' );
 
@@ -73,10 +70,10 @@ add_action(	'wp_enqueue_scripts', 'load_new_js' );
 function load_new_js() {
   
   // drop fitvids
-  wp_deregister_script( 'fitvids' );
+  // wp_deregister_script( 'fitvids' );
 
 	if ( !is_admin() ) {
-		wp_deregister_script( 'my_scripts' );
+		// wp_deregister_script( 'my_scripts' );
 
 		// enqueue the custom jquery js
 		wp_register_script( 'college_scripts',
@@ -521,10 +518,46 @@ function college_add_options( $options ) {
 
   $images = college_get_background_images();
 
+  $departments = array(
+    '----',
+    'Agricultural Economics' => 'Agricultural Economics',
+    'Agricultural Leadership, Education and Communities' => 'Agricultural Leadership, Education and Communities',
+    'Animal Science' => 'Animal Science',
+    'Biochemistry and Biophysics' => 'Biochemistry and Biophysics',
+    'Biological and Agricultural Engineering' => 'Biological and Agricultural Engineering',
+    'Ecosystem Science and Management' => 'Ecosystem Science and Management',
+    'Entomology' => 'Entomology',
+    'Horticultural Sciences' => 'Horticultural Sciences',
+    'Nutrition and Food Science' => 'Nutrition and Food Science',
+    'Plant Pathology and Microbiology' => 'Plant Pathology and Microbiology',
+    'Poultry Science' => 'Poultry Science',
+    'Recreation, Park and Tourism Sciences' => 'Recreation, Park and Tourism Sciences',
+    'Soil and Crop Sciences' => 'Soil and Crop Sciences',
+    'Wildlife and Fisheries Sciences' => 'Wildlife and Fisheries Sciences',
+  );
+
   $options[] = array(
     'name' => __( 'College', 'agriflex' ),
     'type' => 'heading',
   );
+
+  if ( current_user_can( 'manage_network' ) ) {
+    $options[] = array(
+      'name' => __( 'Department Site', 'agriflex' ),
+      'desc' => __( 'This is a department site', 'agriflex' ),
+      'type' => 'checkbox',
+      'id' => 'college-department',
+      'std' => false,
+    );
+
+    $options[] = array(
+      'name' => __( 'Department Name', 'agriflex' ),
+      'desc' => __( 'Select the department name', 'agriflex' ),
+      'type' => 'select',
+      'id' => 'college-department-name',
+      'options' => $departments,
+    );
+  }
 
   $options[] = array(
     'name' => 'Background Image',
@@ -557,5 +590,37 @@ function college_background_image() {
   echo $script;
 
 }
+
+add_action( 'agriflex_header', 'college_department_name', 2 );
+function college_department_name() {
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    $department_name = of_get_option( 'college-department-name' );
+    echo '<div id="department-title">';
+    echo '<h1 class="department-name">';
+    echo 'Department of ' . $department_name;
+    echo '</h1>';
+    echo '</div>';
+  }
+
+}
+
+add_filter( 'body_class', 'college_department_body_class' );
+function college_department_body_class( $classes ) {
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    $department_name = of_get_option( 'college-department-name' );
+    $classes[] = 'college-department';
+    $classes[] = sanitize_title( $department_name );
+  }
+
+  return $classes;
+
+}
+
 
 ?>
