@@ -174,12 +174,30 @@ function agriflex_add_js_class() {
 
 // Drop the old logo
 function remove_agriflex_college_logo() {
-	remove_action( 'agriflex_before_header', 'agriflex_college_logo');
+  remove_action( 'agriflex_before_header', 'agriflex_college_logo');
 }
 add_action('init','remove_agriflex_college_logo');
 
+
+
+// @todo refactor this
+// Pic the right menu based on department
+
+add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_pick_menu');
+function agriflex_college_pick_menu() {
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    add_action( 'agriflex_before_footer', 'agriflex_college_second_nav' );
+  } else {
+    add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+  }
+  
+}
+
+
 // Add Floating Audience Menu
-add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+// For the Main College Site Only
 function agriflex_college_add_floating_menu() {
 
   $html = '<div class="utility-nav">';
@@ -206,6 +224,25 @@ function agriflex_college_add_floating_menu() {
   $html .= '</div>';
   echo $html;
 }
+
+// Add secondary (audience) navigation
+// For Departments Only
+function agriflex_college_second_nav() {
+
+  // Secondary nav menu
+  $nav_menu = wp_nav_menu( array(
+              'container_class' => 'menu-secondary',
+              'theme_location'  => 'secondary',
+              'echo'            => false,
+              'fallback_cb'    => false,
+              'items_wrap'      => '<ul id="%1$s" class="secondary-nav">%3$s</ul>',
+            ));
+
+  $html =    $nav_menu;
+
+  echo $html;
+
+} // agriflex_college_second_nav
 
 // Add a new logo
 add_action( 'agriflex_before_header', 'agriflex_college_logo_retina', 10 );
@@ -600,7 +637,7 @@ function college_department_name() {
     $department_name = of_get_option( 'college-department-name' );
     echo '<div id="department-title">';
     echo '<h1 class="department-name">';
-    echo 'Department of ' . $department_name;
+    echo $department_name;
     echo '</h1>';
     echo '</div>';
   }
