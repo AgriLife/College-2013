@@ -237,17 +237,44 @@ function agriflex_college_add_floating_menu() {
 // For Departments Only
 function agriflex_college_second_nav() {
 
-  // Secondary nav menu
-  $nav_menu = wp_nav_menu( array(
-              'container_class' => 'menu-secondary',
-              'theme_location'  => 'secondary',
-              'echo'            => false,
-              'fallback_cb'    => false,
-              'items_wrap'      => '<ul id="%1$s" class="secondary-nav">%3$s</ul>',
-            ));
+  $urls = array(
+    'college-former-students-url' => array(
+      'label' => 'Former Students',
+      'url' => 'http://aglifesciences.tamu.edu/future-students/',
+    ),
+    'college-current-students-url' => array(
+      'label' => 'Current Students',
+      'url' => 'http://aglifesciences.tamu.edu/students/',
+    ),
+    'college-future-students-url' => array(
+      'label' => 'Future Students',
+      'url' => 'http://aglifesciences.tamu.edu/former-students/',
+    ),
+    'college-faculty-staff-url' => array(
+      'label' => 'Faculty/Staff',
+      'url' => 'http://aglifesciences.tamu.edu/faculty-staff/',
+    ),
+  );
 
-  $html =    $nav_menu;
+  foreach ( $urls as $key => $value ) {
+    $option = of_get_option( $key );
+    $urls[$key]['url'] = ( ! empty( $option ) ) ? $option : $value['url'];
+  }
 
+  ob_start();
+  ?>
+  <div class="menu-secondary">
+    <ul id="menu-secondary" class="secondary-nav">
+      <?php foreach ( $urls as $item => $info ) : ?>
+      <li class="menu-item">
+        <a href="<?php echo $info['url']; ?>"><?php echo $info['label']; ?></a>
+      </li>
+    </ul>
+  <?php endforeach; ?>
+  </div>
+  <?php
+  $html = ob_get_contents();
+  ob_clean();
   echo $html;
 
 } // agriflex_college_second_nav
