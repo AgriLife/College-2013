@@ -613,6 +613,41 @@ function college_add_options( $options ) {
     'options' => $images,
   );
 
+  $options[] = array(
+    'name' => 'Former Students Page',
+    'desc' => 'URL to your Former Students page',
+    'id' => 'college-former-students-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Current Students Page',
+    'desc' => 'URL to your Current Students page',
+    'id' => 'college-current-students-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Future Students Page',
+    'desc' => 'URL to your Future Students page',
+    'id' => 'college-future-students-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Faculty/Staff Page',
+    'desc' => 'URL to your Faculty/Staff page',
+    'id' => 'college-faculty-staff-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Giving Page',
+    'desc' => 'URL to your Giving page',
+    'id' => 'college-giving-url',
+    'type' => 'text',
+  );
+
   return $options;
 
 }
