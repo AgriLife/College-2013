@@ -33,11 +33,19 @@ function agriflex_college_setup() {
 	add_image_size( 'home-ss', 748, 494, true );  
 
 	// Register the menus
-	register_nav_menus( array(
-		'primary' => __( 'Primary Navigation', 'agriflex' ),
-		'secondary' => __( 'Audience Navigation (bottom bar)', 'agriflex' ),
-    'third-general' => __( 'Tertiary General Navigation (bottom bar)', 'agriflex' )
-	) );
+  $is_department = of_get_option( 'college-department' );
+
+  $menus = array(
+    'primary' => __( 'Primary Navigation', 'agriflex' ),
+    'secondary' => __( 'Audience Navigation', 'agriflex' ),
+  );
+
+  // Register page-bottom menus if not a college department
+  if ( ! $is_department ) {
+    $menus['third-general'] = __( 'Tertiary General Navigation (bottom bar)', 'agriflex' );
+  }
+
+	register_nav_menus( $menus );
 
 
 	register_sidebar( array(
@@ -181,7 +189,7 @@ add_action('init','remove_agriflex_college_logo');
 
 
 // @todo refactor this
-// Pic the right menu based on department
+// Pick the right menu based on department
 
 add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_pick_menu');
 function agriflex_college_pick_menu() {
