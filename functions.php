@@ -197,6 +197,7 @@ function agriflex_college_pick_menu() {
 
   if ( $is_department ) {
     add_action( 'agriflex_before_footer', 'agriflex_college_second_nav' );
+    add_filter( 'agriflex_filter_home_links', 'agriflex_home_links' );
   } else {
     add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
   }
@@ -278,6 +279,48 @@ function agriflex_college_second_nav() {
   echo $html;
 
 } // agriflex_college_second_nav
+
+function agriflex_home_links() {
+
+  $urls = array(
+    'college-former-students-url' => array(
+      'label' => 'Former Students',
+      'url' => 'http://aglifesciences.tamu.edu/future-students/',
+    ),
+    'college-current-students-url' => array(
+      'label' => 'Current Students',
+      'url' => 'http://aglifesciences.tamu.edu/students/',
+    ),
+    'college-future-students-url' => array(
+      'label' => 'Future Students',
+      'url' => 'http://aglifesciences.tamu.edu/former-students/',
+    ),
+    'college-faculty-staff-url' => array(
+      'label' => 'Faculty/Staff',
+      'url' => 'http://aglifesciences.tamu.edu/faculty-staff/',
+    ),
+    'college-giving-url' => array(
+      'label' => 'Giving',
+      'url' => 'http://aglifesciences.tamu.edu/giving/',
+    ),
+  );
+
+  foreach ( $urls as $key => $value ) {
+    $option = of_get_option( $key );
+    $urls[$key]['url'] = ( ! empty( $option ) ) ? $option : $value['url'];
+  }
+
+  ob_start();
+  ?>
+  <ul>
+    <?php foreach ( $urls as $key => $value ) : ?>
+    <li><a href="<?php echo $value['url']; ?>"><?php echo $value['label']; ?></a></li>
+    <?php endforeach; ?>
+  </ul>
+  <?php $html = ob_get_contents();
+  ob_clean();
+  return $html;
+}
 
 // Add a new logo
 add_action( 'agriflex_before_header', 'agriflex_college_logo_retina', 10 );
