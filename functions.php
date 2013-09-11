@@ -12,6 +12,12 @@ function remove_parent_theme_setup() {
 }
 add_action('after_setup_theme','remove_parent_theme_setup');
 
+// Add the meta fields
+function agriflex_add_meta_fields() {
+  include( 'inc/acf-fields.php' );
+}
+add_action( 'init', 'agriflex_add_meta_fields' );
+
 
 function agriflex_college_setup() {
 	// Remove things that get stuck up in the doc head that we don't need

@@ -286,8 +286,45 @@
 		}
 		
 	}
+
+	.welcome, .programs {
+		float: left;
+		width: 98%;
+		padding-left: 1.5%;
+	}
+
+	.program-row {
+		float: left;
+		width: 100%;
+		margin-bottom: 10px;
+
+		.single-program {
+			float: left;
+			width: 30%;
+			padding: 0 1.5%;
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			h3 {
+				margin-top: 0;
+				margin-bottom: 8px;
+				font-size: 1.3em;
+			}
+
+			.program-desc {
+				margin-top: 0;
+			}
+		}
+	}
 	
 }
+
 
 @import "home/simpletabs";
 @import "home/socialtabs";
