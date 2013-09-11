@@ -67,10 +67,15 @@ get_header(); ?>
 				}
 				?>
 
-				<?php if (!dynamic_sidebar('Home Page Bottom')) : ?>	
-				
-				<?php endif; ?>
+				<div class="home-widgets">
+					<div class="home-widget-left">
+						<?php dynamic_sidebar( 'Home Page Bottom Left' ); ?>
+					</div>
 
+					<div class="home-widget-right">
+						<?php dynamic_sidebar( 'Home Page Bottom Right' ); ?>
+					</div>
+				</div>
 
 		</section><!-- /end #content -->
 

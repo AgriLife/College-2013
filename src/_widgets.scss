@@ -25,3 +25,13 @@
 .home .widget h3.widget-title .rsswidget img {
 	display: none;
 }
+
+.home-widgets {
+	width: 100%;
+	padding: 1.5%;
+}
+.home-widget-left, .home-widget-right {
+	float: left;
+	width: 47%;
+	margin: 0 1.5%;
+}

@@ -71,6 +71,26 @@ function agriflex_college_setup() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+  register_sidebar( array(
+    'name' => 'Home Page Bottom Left',
+    'id' => 'sidebar_home_bottom_left',
+    'before_widget' => '<div id="%1$s" class="widget widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+
+  register_sidebar( array(
+    'name' => 'Home Page Bottom Right',
+    'id' => 'sidebar_home_bottom_right',
+    'before_widget' => '<div id="%1$s" class="widget widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+
+  unregister_sidebar( 'Home Page Bottom' );
 }
 
 
