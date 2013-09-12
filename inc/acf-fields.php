@@ -35,10 +35,32 @@ if(function_exists("register_field_group"))
 		'title' => 'Programs',
 		'fields' => array (
 			array (
-				'key' => 'field_5232113f2b460',
+				'key' => 'field_52322002f9adc',
+				'label' => 'Show Slider',
+				'name' => 'show_slider',
+				'type' => 'checkbox',
+				'choices' => array (
+					1 => 'Yes',
+				),
+				'default_value' => 1,
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_52322018f9add',
 				'label' => 'Select Slider',
 				'name' => 'select_slider',
 				'type' => 'post_object',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_52322002f9adc',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+					'allorany' => 'all',
+				),
 				'post_type' => array (
 					0 => 'soliloquy',
 				),
