@@ -5,7 +5,8 @@ get_header(); ?>
 
 	<section class="featured-content clearfix">
 
-		<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( 'home-page-ss' ); ?>
+		<?php $slider_object = get_field( 'select_slider' ); $slider = $slider_object->post_name; ?>
+		<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( $slider ); ?>
 
 		<div class="one-of-3 clearfix featured-stories-container">
 		<?php ob_start(); ?>

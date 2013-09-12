@@ -35,6 +35,20 @@ if(function_exists("register_field_group"))
 		'title' => 'Programs',
 		'fields' => array (
 			array (
+				'key' => 'field_5232113f2b460',
+				'label' => 'Select Slider',
+				'name' => 'select_slider',
+				'type' => 'post_object',
+				'post_type' => array (
+					0 => 'soliloquy',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
 				'key' => 'field_52320a509485a',
 				'label' => 'Show Page Title',
 				'name' => 'show_page_title',
