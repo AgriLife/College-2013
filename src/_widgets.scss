@@ -30,8 +30,19 @@
 	width: 100%;
 	padding: 1.5%;
 }
+
 .home-widget-left, .home-widget-right {
 	float: left;
-	width: 47%;
+	width: 100%;
 	margin: 0 1.5%;
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+
+	.home-widget-left, .home-widget-right {
+		float: left;
+		width: 47%;
+		margin: 0 1.5%;
+	}
+
 }
