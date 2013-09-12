@@ -296,8 +296,8 @@ function agriflex_college_second_nav() {
       <li class="menu-item">
         <a href="<?php echo $info['url']; ?>"><?php echo $info['label']; ?></a>
       </li>
-    </ul>
   <?php endforeach; ?>
+    </ul>
   </div>
   <?php
   $html = ob_get_contents();
