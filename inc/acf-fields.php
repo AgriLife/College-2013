@@ -35,6 +35,17 @@ if(function_exists("register_field_group"))
 		'title' => 'Programs',
 		'fields' => array (
 			array (
+				'key' => 'field_52320a509485a',
+				'label' => 'Show Page Title',
+				'name' => 'show_page_title',
+				'type' => 'checkbox',
+				'choices' => array (
+					1 => 'Yes',
+				),
+				'default_value' => 1,
+				'layout' => 'vertical',
+			),
+			array (
 				'key' => 'field_522f398e2859a',
 				'label' => 'Welcome Text',
 				'name' => 'welcome_text',
