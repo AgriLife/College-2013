@@ -26,11 +26,15 @@ $translucent-white: rgba(255,255,255,.5);
 
 @media all and (min-width: $breakpoint-biggest) {
 	
+	body.admin-bar .menu-secondary {
+		top: 85px;
+	}
+	
 	.menu-secondary {
 		background-color: transparent;
 		float: none;
 		position: absolute;
-		top: 82px;
+		top: 60px;
 		margin-left: 287px;
 		width: 750px;
 		ul {
