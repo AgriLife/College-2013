@@ -322,7 +322,7 @@ function agriflex_home_links() {
       'url' => 'http://aglifesciences.tamu.edu/former-students/',
     ),
     'college-faculty-staff-url' => array(
-      'label' => 'Faculty/Staff',
+      'label' => 'Faculty Staff',
       'url' => 'http://aglifesciences.tamu.edu/faculty-staff/',
     ),
     'college-giving-url' => array(
