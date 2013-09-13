@@ -8,9 +8,9 @@ get_header(); ?>
 		<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( 'home-page-ss' ); ?>
 
 		<div class="one-of-3 clearfix featured-stories-container">
-		<?php ob_start(); ?>
 			<h3>College Priorities</h3>
 			<ul class="featured-stories">
+				<?php ob_start(); ?>
 				<li class="challenge-hign challenge">						
 					<a href="<?php echo site_url('/academics/high-impact-learning/') ?>" id="l1" class="challenge-link">
 						<h2 id="challenge-high1">High-Impact</h2>
@@ -45,11 +45,11 @@ get_header(); ?>
 						<h2 id="challenge-international2">Programs</h2>
 					</a>		
 				</li>		
+				<?php $html = ob_get_contents(); ?>
+				<?php ob_clean(); ?>
+				<?php $html = apply_filters( 'agriflex_filter_home_links', $html ); ?>
+				<?php echo $html; ?>
 			</ul>
-			<?php $html = ob_get_contents(); ?>
-			<?php ob_clean(); ?>
-			<?php $html = apply_filters( 'agriflex_filter_home_links', $html ); ?>
-			<?php echo $html; ?>
 		</div>
 
 	</section> 

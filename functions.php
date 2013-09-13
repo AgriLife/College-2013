@@ -338,11 +338,9 @@ function agriflex_home_links() {
 
   ob_start();
   ?>
-  <ul>
     <?php foreach ( $urls as $key => $value ) : ?>
     <li><a href="<?php echo $value['url']; ?>"><?php echo $value['label']; ?></a></li>
     <?php endforeach; ?>
-  </ul>
   <?php $html = ob_get_contents();
   ob_clean();
   return $html;
