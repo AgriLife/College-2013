@@ -334,12 +334,13 @@ function agriflex_home_links() {
   foreach ( $urls as $key => $value ) {
     $option = of_get_option( $key );
     $urls[$key]['url'] = ( ! empty( $option ) ) ? $option : $value['url'];
+    $urls[$key]['slug'] = sanitize_title( $value['label'] );
   }
 
   ob_start();
   ?>
     <?php foreach ( $urls as $key => $value ) : ?>
-    <li><a href="<?php echo $value['url']; ?>"><?php echo $value['label']; ?></a></li>
+    <li class="audience <?php echo $value['slug']; ?>"><a href="<?php echo $value['url']; ?>"><?php echo $value['label']; ?></a></li>
     <?php endforeach; ?>
   <?php $html = ob_get_contents();
   ob_clean();
