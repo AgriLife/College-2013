@@ -15,11 +15,17 @@
 			.featured-stories li {
 				margin: 10px auto;
 				width: 100%;
+
+
 			}
 		}
 	}
 
-	.challenge {
+	&.college-department .featured-content .featured-stories-container > h3 {
+		display: none;
+	}
+
+	.challenge, .audience {
 		width: 100%;
 
 		h2 {
@@ -44,8 +50,16 @@
 
 	}
 
+	.audience h2 {
+		margin-left: 0;
+	}
+
 	ul.featured-stories {
 		padding: 0 0 0 7px;
+	}
+
+	&.college-department ul.featured-stories {
+		padding: 10px 0 0;
 	}
 
 	.featured-content {
@@ -170,7 +184,7 @@
 				width: 90%;
 				border-bottom: 1px solid #7D3351;
 				padding: .2em 0 .5em 0;
-				&.challenge-international {
+				&:last-child {
 					border-bottom: none;
 				}
 		}
