@@ -21,7 +21,7 @@ function agriflex_display_programs( $chunk ) {
 	foreach ( $chunk as $program ) : ?>
 
 		<div class="single-program">
-			<a href="<?php $program['program_page']; ?>">
+			<a href="<?php echo $program['program_page']; ?>">
 				<?php	$image = $program['program_image']; ?>
 				<img src="<?php echo $image['sizes']['program-img']; ?>" alt="<?php echo $image['alt']; ?>" class="program-image" />
 				<h3 class="program-name">
