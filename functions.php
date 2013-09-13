@@ -37,6 +37,7 @@ function agriflex_college_setup() {
 
 	// Add new image sizes
 	add_image_size( 'home-ss', 748, 494, true );  
+  add_image_size( 'program-img', 215, 115, true );
 
 	// Register the menus
   $is_department = of_get_option( 'college-department' );

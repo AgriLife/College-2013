@@ -23,7 +23,7 @@ function agriflex_display_programs( $chunk ) {
 		<div class="single-program">
 			<a href="<?php $program['program_page']; ?>">
 				<?php	$image = $program['program_image']; ?>
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="program-image" />
+				<img src="<?php echo $image['sizes']['program-img']; ?>" alt="<?php echo $image['alt']; ?>" class="program-image" />
 				<h3 class="program-name">
 					<?php echo $program['program_name']; ?>
 				</h3>
