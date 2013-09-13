@@ -340,7 +340,16 @@ function agriflex_home_links() {
   ob_start();
   ?>
     <?php foreach ( $urls as $key => $value ) : ?>
-    <li class="audience <?php echo $value['slug']; ?>"><a href="<?php echo $value['url']; ?>"><?php echo $value['label']; ?></a></li>
+    <li class="audience <?php echo $value['slug']; ?>">
+      <a href="<?php echo $value['url']; ?>">
+        <?php $words = explode( ' ', $value['label'] ); ?>
+        <?php $count = 1; ?>
+        <?php foreach ( $words as $word ) : ?>
+          <h2 id="<?php echo $value['slug'] . $count; ?>"><?php echo $word; ?></h2>
+          <?php $count++; ?>
+        <?php endforeach; ?>
+      </a>
+    </li>
     <?php endforeach; ?>
   <?php $html = ob_get_contents();
   ob_clean();
