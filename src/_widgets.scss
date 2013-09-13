@@ -28,21 +28,24 @@
 
 .home-widgets {
 	width: 100%;
-	padding: 1.5%;
+	// padding: 1.5%;
 }
 
 .home-widget-left, .home-widget-right {
 	float: left;
 	width: 100%;
-	margin: 0 1.5%;
 }
 
 @media screen and (min-width: $breakpoint-medium) {
 
+	.home-widgets {
+		padding-right: 3%;
+	}
+
 	.home-widget-left, .home-widget-right {
 		float: left;
 		width: 47%;
-		margin: 0 1.5%;
+		margin: 0 1%;
 	}
 
 }
