@@ -150,12 +150,42 @@
 		}
 	}
 
-	.widget-title.social-directory {
-		background-position-y: -120px;
+	#aside {
+		div:nth-child(4n+1) h3.widget-title {
+			background-position: right -120px;
+		}
+		div:nth-child(4n+2) h3.widget-title {
+			background-position: right -60px;
+		}
+		div:nth-child(4n+3) h3.widget-title{
+			background-position: right -180px;
+		}
 	}
 }
 
+.home-widget-left {
+	div:nth-child(4n+1) h3.widget-title {
+		background-position: right -120px;
+	}
+	div:nth-child(4n+2) h3.widget-title {
+		background-position: right -60px;
+	}
+	div:nth-child(4n+3) h3.widget-title{
+		background-position: right -180px;
+	}
+}
 
+.home-widget-right {
+	div:nth-child(4n+2) h3.widget-title {
+		background-position: right -180px;
+	}
+	div:nth-child(4n+3) h3.widget-title {
+		background-position: right -60px;
+	}
+	div:nth-child(4n+4) h3.widget-title{
+		background-position: right -120px;
+	}
+}
 
 .home #content-wrap .soliloquy-container .soliloquy-control-nav {
 	margin: 10px;
@@ -209,6 +239,10 @@
 			float: right;
 			width: 74%;
 			margin-top: 0;
+		}
+		#aside .widget-container h3.widget-title {
+		    background-size: 1024px 240px;
+		    padding: 1.5% 2%;
 		}
 	}
 
@@ -307,6 +341,10 @@
 			.widget-container {
 				padding: 0;
 			}
+		}
+
+		#aside .widget-container h3.widget-title {
+		    padding: 3% 4% 3% 5%;
 		}
 		
 		.welcome, .programs {
