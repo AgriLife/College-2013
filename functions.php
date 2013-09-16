@@ -472,19 +472,25 @@ function agriflex_college_footer() {
    ob_start(); ?>
 
   	<ul class="req-links">
-		<li><a href="http://agrilife.org/required-links/compact/">Compact with Texans</a></li>
-		<li><a href="http://agrilife.org/required-links/privacy/">Privacy and Security</a></li>
-		<li><a href="http://itaccessibility.tamu.edu/" target="_blank">Accessibility Policy</a></li>
-		<li><a href="http://www2.dir.state.tx.us/pubs/Pages/weblink-privacy.aspx" target="_blank">State Link Policy</a></li>
-		<li><a href="http://www.tsl.state.tx.us/trail" target="_blank">Statewide Search</a></li>
-		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
-		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
-		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
-		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
-    <li><a href="http://veterans.portal.texas.gov/">Texas Veteran&apos;s Portal</a></li>
-		<li><a href="http://aghr.tamu.edu/education-civil-rights.htm" target="_blank">Equal Opportunity for Educational Programs Statement</a></li>
-		<li class="last"><a href="http://agrilife.org/required-links/orpi/">Open Records/Public Information</a></li>
-	</ul>
+  		<li><a href="http://agrilife.org/required-links/compact/">Compact with Texans</a></li>
+  		<li><a href="http://agrilife.org/required-links/privacy/">Privacy and Security</a></li>
+  		<li><a href="http://itaccessibility.tamu.edu/" target="_blank">Accessibility Policy</a></li>
+  		<li><a href="http://www2.dir.state.tx.us/pubs/Pages/weblink-privacy.aspx" target="_blank">State Link Policy</a></li>
+  		<li><a href="http://www.tsl.state.tx.us/trail" target="_blank">Statewide Search</a></li>
+  		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
+  		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
+  		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
+  		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
+      <li><a href="http://veterans.portal.texas.gov/">Texas Veteran&apos;s Portal</a></li>
+  		<li><a href="http://aghr.tamu.edu/education-civil-rights.htm" target="_blank">Equal Opportunity for Educational Programs Statement</a></li>
+  		<li class="last"><a href="http://agrilife.org/required-links/orpi/">Open Records/Public Information</a></li>
+  	</ul>
+
+    <div class="tamu-lockup">
+      <a href="http://tamu.edu">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/images/tamu-white.png' ?>" alt="TAMU Logo" />
+      </a>
+    </div>
 	
 	<?php
 	
