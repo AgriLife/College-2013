@@ -167,7 +167,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'page-home-alt.php',
+					'value' => 'page-home.php',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
