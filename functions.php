@@ -773,8 +773,8 @@ function college_background_image() {
   $image_path = get_stylesheet_directory_uri() . '/images/backgrounds/' . of_get_option('college-background-image');
 
   $script = '<script type="text/javascript">';
-  $script .= '$(document).ready( function() {';
-  $script .= '$("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
+  $script .= 'jQuery(window).load( function() {';
+  $script .= 'jQuery("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
   $script .= '});';
   $script .= '</script>';
 
