@@ -92,6 +92,18 @@ if(function_exists("register_field_group"))
 				'formatting' => 'br',
 			),
 			array (
+				'key' => 'field_524066c71d79e',
+				'label' => 'Program Header',
+				'name' => 'program_header',
+				'type' => 'text',
+				'default_value' => 'Our Programs',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
 				'key' => 'field_522f38e328596',
 				'label' => 'Program Units',
 				'name' => 'coals_program_units',

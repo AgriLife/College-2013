@@ -1,5 +1,5 @@
 <div class="programs">
-	<h2 class="program-header">Our Programs</h2>
+	<h2 class="program-header"><?php the_field( 'program_header' ); ?></h2>
 
 	<div class="program-list">
 		<?php $i = 1; ?>
