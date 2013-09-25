@@ -18,7 +18,15 @@
 @import "off-canvas";
 @import "layout";
 @import "menus";
+@import "styling-initial";
+@import "compass/utilities/tables";
+@import "home";
+@import "footer";
+
+@import "search";
 @import "styling";
+
+@import "college-departments";
 
 // Styling WordPress Elements
 @import "wordpress";

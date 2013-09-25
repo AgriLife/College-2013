@@ -232,6 +232,7 @@ var Modernizr;
 
 // path to WordPress theme
 var path = "/wp-content/themes/college-2013/";
+var path = "/~travis/wordpress/wp-content/themes/college-2013/";
 
 // Give Modernizr.load a string, an object, or an array of strings and objects
 Modernizr.load([

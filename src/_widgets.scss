@@ -10,6 +10,106 @@
 	position: relative;
 	margin-bottom: 20px;	
 	background: #fff;
+	.widget-wrap {
+		padding: 0;
+	}
+
+	h3.widget-title {
+		font-size: 1.2em;
+		font-family: $ornate-title-font-widgets;
+		font-weight: $ornate-title-font-weight-widgets;
+		//padding: 5% 3% 5% 5%;
+		padding: 4% 4% 4% 5%;
+		margin-bottom: 0;
+		//@include box-shadow(#666 0 20px 30px -8px);
+		letter-spacing: 1px;
+		line-height: 1em;
+		background: url('images/bg-titles2.png') top right no-repeat transparent;
+		background-size: 1024px 240px; 
+		@media all and (min-width: $breakpoint-medium) {
+			background-size: 2048px 480px; 
+		}
+		@media all and (min-width: $breakpoint-biggest) {
+			background-size: 1024px 240px; 
+		}
+		color: #fff;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	&.widget_rss ul li,
+	&.widget_twitter ul li {
+		font-family: $widget-font;
+		font-size: $widget-font-size;	
+	}
+}
+
+#content-wrap .widget_nav_menu {
+	font-size: .8em;
+
+	h3.widget-title {
+		background: transparent;
+		color: #500000;
+		font-family: sans-serif;
+		text-transform: none;
+		@include box-shadow(none);
+		padding: 0;
+	}
+
+	li {
+		background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px .8em;
+		border-top: 0;
+		text-indent: 25px;
+		@include transition-property(all);
+  		@include transition-duration(.3s);
+  		@include transition-timing-function(ease);
+		margin: 0;
+		a {
+			border-bottom: 1px dashed #DAD6C7;
+			padding: 0;
+			padding: .4em 0;
+			font-style: italic;
+			display: block;
+			text-decoration: none;
+			&:hover {
+				//border-bottom: 1px dashed #666;
+				text-decoration: underline;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0 0 3% 0;
+			a {
+				border-bottom: 0;
+				padding: 0;
+			}
+		}
+		li {
+			border: none;
+			overflow: hidden;
+			background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px .4em;
+			text-indent: 15px;
+		}
+		&.down {	
+			background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 6px .8em; 
+			li.down { 
+				background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 16px .8em; 
+				li.down { 
+					background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 26px .8em; 
+				}
+			}
+		}
+	}
+	ul.sub-menu li { margin-left: 1em;}
+}
+
+
+
+.widget-container {
+	padding: 0;
+	position: relative;
+	margin-bottom: 20px;	
+	background: #fff;
 
 	.widget-wrap {
 		padding: 0;

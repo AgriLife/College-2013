@@ -1,0 +1,21 @@
+
+@media all and (min-width: $breakpoint-biggest) {
+
+	.college-department #department-title {
+		h1 {
+			text-align: left;
+		}
+		color: #500000;
+		font-family: $ornate-title-font;
+		font-weight: $ornate-title-font-weight;
+	}
+
+	.biochemistry-and-biophysics {
+		&.college-department #wrapper {
+			padding-top: 150px;
+		}
+		#department-title h1 {
+			font-size: 3em;
+		}
+	}
+}

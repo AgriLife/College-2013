@@ -173,13 +173,12 @@ audio {
 
 a {
 	color:#111;
-	text-decoration: none;	 
-}
-
-a:active,
-a:hover {
-	color: #332c2c;
-	text-decoration: none;	
+	text-decoration: underline;
+	&:active,
+	&:hover {
+		color: #500000;
+		text-decoration: underline;	
+	}
 }
 
 body a {
@@ -192,3 +191,5 @@ body a:hover {
 	color: #5b0125;
 	border-color: #5b0125;	
 }
+
+
