@@ -15,6 +15,9 @@
 // Fonts and global variables 
 @import "fonts-globals";
 
+@import "compass/css3";
+@import "compass/css3/box-shadow";
+
 @import "off-canvas";
 @import "layout";
 @import "secondary-menu";
@@ -31,12 +34,33 @@
 @import "college-departments";
 
 // Styling WordPress Elements
-@import "wordpress";
+@import "wordpress/attachment-pages";
+@import "wordpress/comments";
+@import "wordpress/images";
+@import "wordpress/navigation";
 
 // Styles intended for users
 @import "user-styles";
 
 /* @import "jquery-tabs"; */
 @import "widgets";
-@import "plugins";
+	@import "widgets/tag-cloud";
+	@import "widgets/agrilife-today";
+	@import "widgets/agrilife-watch_read_listen";
+	@import "widgets/twitter";
+	@import "widgets/srp-widget";
+	@import "widgets/the-events-calendar";
+/* Plugins */
+	@import "plugins/job-postings-cpt";
+	/* @import "plugins/tests-cpt"; */
+	@import "plugins/addthis";
+	@import "plugins/content-accordion";
+	@import "plugins/flickr-gallery";
+	@import "plugins/gravityforms";
+	@import "plugins/gigpress";
+	@import "plugins/socialmedia";
+	@import "plugins/flexslider";
+	@import "plugins/ai1ec-calendar";
+	@import "plugins/soliloquy";
+	@import "plugins/randomtext";
 @import "print";

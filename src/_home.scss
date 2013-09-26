@@ -30,9 +30,9 @@
 
 		h2 {
 
-			font-family: "rosewood-std-fill",sans-serif; //$ornate-title-font;
+			font-family: $ornate-title-font-alt;
 			font-size: 1.2em;
-			text-transform: uppercase;
+			text-transform: $ornate-title-font-alt-transform;
 			line-height: .8em;
 
 			width : 80%;
