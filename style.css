@@ -2366,7 +2366,7 @@ body.search h1.page-title {
 .s {
   width: 90%;
   padding: 8px 0px 8px 30px;
-  background: white url("images/search.png") no-repeat left 45%;
+  background: white url("images/search.png") no-repeat 5px 45%;
   border-radius: 10px;
   color: #999;
   border: 1px solid #ccc;
