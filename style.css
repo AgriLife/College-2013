@@ -1829,7 +1829,7 @@ body a:hover {
 }
 /* line 157, src/_home.scss */
 .home #aside div:nth-child(4n+2) h3.widget-title {
-  background-position: right -60px;
+  background-position: right -61px;
 }
 /* line 160, src/_home.scss */
 .home #aside div:nth-child(4n+3) h3.widget-title {
@@ -1842,7 +1842,7 @@ body a:hover {
 }
 /* line 170, src/_home.scss */
 .home-widget-left div:nth-child(4n+2) h3.widget-title {
-  background-position: right -60px;
+  background-position: right -61px;
 }
 /* line 173, src/_home.scss */
 .home-widget-left div:nth-child(4n+3) h3.widget-title {
@@ -1855,7 +1855,7 @@ body a:hover {
 }
 /* line 182, src/_home.scss */
 .home-widget-right div:nth-child(4n+3) h3.widget-title {
-  background-position: right -60px;
+  background-position: right -61px;
 }
 /* line 185, src/_home.scss */
 .home-widget-right div:nth-child(4n+4) h3.widget-title {
@@ -4095,7 +4095,7 @@ img {
 }
 /* line 233, src/_widgets.scss */
 #aside li:nth-child(4n+2) h3.widget-title {
-  background-position: right -60px;
+  background-position: right -61px;
 }
 /* line 236, src/_widgets.scss */
 #aside li:nth-child(4n+3) h3.widget-title {
