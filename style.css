@@ -803,65 +803,65 @@ table {
 }
 /* line 4, src/_secondary-menu.scss */
 .menu-secondary {
-  background-color: #9c7d0d;
-  width: 100%;
-  float: left;
+  display: none;
 }
-/* line 11, src/_secondary-menu.scss */
-.menu-secondary ul, .menu-secondary li {
-  float: left;
-}
-/* line 14, src/_secondary-menu.scss */
-.menu-secondary a {
-  color: #fff;
-  padding: 0.2em 0.3em;
-  text-decoration: none;
-}
-/* line 18, src/_secondary-menu.scss */
-.menu-secondary a:hover {
-  color: #fff;
-  text-decoration: underline;
+
+/* line 7, src/_secondary-menu.scss */
+#wrapper #access .menu-secondary {
+  display: block;
 }
 
 @media all and (min-width: 840px) {
-  /* line 29, src/_secondary-menu.scss */
+  /* line 13, src/_secondary-menu.scss */
   body.admin-bar .menu-secondary {
     top: 85px;
   }
 
-  /* line 33, src/_secondary-menu.scss */
-  .menu-secondary {
-    background-color: transparent;
-    float: none;
-    position: absolute;
-    top: 60px;
-    margin-left: 287px;
-    width: 750px;
+  /* line 16, src/_secondary-menu.scss */
+  [role="navigation"] .menu-secondary li a {
+    padding: 0px;
   }
-  /* line 40, src/_secondary-menu.scss */
-  .menu-secondary ul {
+
+  /* line 19, src/_secondary-menu.scss */
+  #wrapper #access .menu-secondary {
+    display: none;
+  }
+
+  /* line 22, src/_secondary-menu.scss */
+  .college-department #department-title {
+    margin: 1.8em auto;
+  }
+
+  /* line 25, src/_secondary-menu.scss */
+  .menu-secondary {
+    display: block;
+    width: 1024px;
     margin: 0 auto;
+  }
+  /* line 29, src/_secondary-menu.scss */
+  .menu-secondary ul {
+    margin: 0 0 0 285px;
     padding: 0;
     text-align: center;
     display: table;
     overflow: hidden;
   }
-  /* line 47, src/_secondary-menu.scss */
+  /* line 36, src/_secondary-menu.scss */
   .menu-secondary li {
     float: left;
     margin: 0 auto;
     padding: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     list-style: none;
-    width: 22%;
+    width: inherit;
   }
-  /* line 54, src/_secondary-menu.scss */
+  /* line 43, src/_secondary-menu.scss */
   .menu-secondary li ~ li {
-    margin-left: 20px;
+    margin-left: 16px;
   }
-  /* line 57, src/_secondary-menu.scss */
+  /* line 46, src/_secondary-menu.scss */
   .menu-secondary li:hover {
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -875,23 +875,25 @@ table {
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
-  /* line 65, src/_secondary-menu.scss */
+  /* line 54, src/_secondary-menu.scss */
   .menu-secondary a {
-    font-size: .9em;
-    line-height: 1.9em;
+    font-size: 1em;
+    font-family: "rosewood-std-fill", sans-serif;
+    text-transform: "uppercase";
+    line-height: 2em;
     text-align: center;
-    color: white;
-    padding: 3px;
+    color: rgba(0, 0, 0, 0.6);
     display: block;
     margin-right: 1px;
-    background: rgba(0, 0, 0, 0.4);
-    height: 28px;
-    width: 155px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 35px;
+    width: 165px;
     text-decoration: none;
   }
-  /* line 77, src/_secondary-menu.scss */
+  /* line 67, src/_secondary-menu.scss */
   .menu-secondary a:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: white;
+    color: #000;
     text-decoration: none;
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -1062,11 +1064,11 @@ body.admin-bar .menu-button {
 }
 
 /* line 39, src/_menus.scss */
-#menu-primary-navigation {
+#access .menu {
   padding: 0;
 }
 /* line 41, src/_menus.scss */
-#menu-primary-navigation ul {
+#access .menu ul {
   padding: 0;
   margin: 0;
 }
@@ -2385,7 +2387,7 @@ body.search h1.page-title {
   .js .searchform {
     width: 100px;
     overflow: hidden;
-    top: -250px;
+    top: -124px;
     right: 0px;
     position: absolute;
     z-index: 200;
@@ -3121,11 +3123,16 @@ body.wp-admin .tf-meta ul li em {
     text-align: left;
   }
 
-  /* line 14, src/_college-departments.scss */
-  .biochemistry-and-biophysics.college-department #wrapper {
-    padding-top: 150px;
+  /* line 13, src/_college-departments.scss */
+  .js .college-department .searchform {
+    top: -232px;
   }
-  /* line 17, src/_college-departments.scss */
+
+  /* line 18, src/_college-departments.scss */
+  .biochemistry-and-biophysics.college-department #wrapper {
+    padding-top: 67px;
+  }
+  /* line 21, src/_college-departments.scss */
   .biochemistry-and-biophysics #department-title h1 {
     font-size: 3em;
   }

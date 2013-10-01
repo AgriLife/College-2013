@@ -92,6 +92,19 @@ function agriflex_college_setup() {
   ) );
 
   unregister_sidebar( 'Home Page Bottom' );
+
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    // Add audience menu to top of page
+    add_action( 'agriflex_header', 'agriflex_college_second_nav', 1 );
+    // Add audience menu to main navigation for small screen
+    add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_second_nav',100);
+    add_filter( 'agriflex_filter_home_links', 'agriflex_home_links' );
+  } else {
+    add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+  }
 }
 
 
@@ -212,25 +225,6 @@ function remove_agriflex_college_logo() {
   remove_action( 'agriflex_before_header', 'agriflex_college_logo');
 }
 add_action('init','remove_agriflex_college_logo');
-
-
-
-// @todo refactor this
-// Pick the right menu based on department
-
-add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_pick_menu');
-function agriflex_college_pick_menu() {
-  $is_department = of_get_option( 'college-department' );
-
-  if ( $is_department ) {
-    add_action( 'agriflex_before_footer', 'agriflex_college_second_nav' );
-    add_filter( 'agriflex_filter_home_links', 'agriflex_home_links' );
-  } else {
-    add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
-  }
-  
-}
-
 
 // Add Floating Audience Menu
 // For the Main College Site Only

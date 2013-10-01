@@ -10,9 +10,13 @@
 		font-weight: $ornate-title-font-weight;
 	}
 
+	.js .college-department .searchform {
+		top: -232px;
+	}
+
 	.biochemistry-and-biophysics {
 		&.college-department #wrapper {
-			padding-top: 150px;
+			padding-top: 67px;
 		}
 		#department-title h1 {
 			font-size: 3em;
