@@ -6,6 +6,9 @@ $translucent-white: rgba(255,255,255,.5);
 }
 #wrapper #access .menu-secondary {
 	display: block;
+	ul {
+		padding: 0;
+	}
 }
 
 @media all and (min-width: $breakpoint-biggest) {
