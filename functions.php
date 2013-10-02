@@ -91,7 +91,6 @@ function agriflex_college_setup() {
     'after_title' => '</h3>',
   ) );
 
-  unregister_sidebar( 'Home Page Bottom' );
 
 
   $is_department = of_get_option( 'college-department' );
@@ -107,6 +106,12 @@ function agriflex_college_setup() {
   }
 }
 
+add_action( 'widgets_init', 'agriflex_remove_home_bottom_sidebar', 11 );
+function agriflex_remove_home_bottom_sidebar() {
+
+  unregister_sidebar( 'home-middle-1' );
+  
+}
 
 // register Category_Widget widget
 // Now add the new theme setup
