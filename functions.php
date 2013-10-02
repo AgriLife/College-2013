@@ -785,6 +785,7 @@ function college_department_name() {
     $department_name = of_get_option( 'college-department-name' );
     echo '<div id="department-title">';
     echo '<h1 class="department-name">';
+    echo '<span class="dept-of">Department of </span>';
     echo $department_name;
     echo '</h1>';
     echo '</div>';
