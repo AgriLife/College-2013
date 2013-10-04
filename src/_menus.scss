@@ -1,20 +1,22 @@
 .menu-button {
-	font-size: 1.5em;
+	font-size: 2em;
 	position: absolute;
 	z-index: 999;
-	top: 0;
+	top: .7em;
 	right: 0;
-	padding: .7em 3% .7em .9em;
+	padding: 1.5em 1.25em 1em 1.25em;
+	padding: 0 0 0 .7em;
 	color: white;
+	margin-right: 3%;
 	cursor: pointer;
-	letter-spacing: -2px;
+	letter-spacing: -3px;
 
 	&:before {
 	  content: "";
 	  position: absolute;
-	  top: 0.8em;
+	  top: 0;
 	  left: 0;
-	  width: .7em;
+	  width: .6em;
 	  height: 0.125em;
 	  border-top: 0.375em double #fff;
 	  border-bottom: 0.125em solid #fff;
