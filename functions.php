@@ -12,6 +12,12 @@ function remove_parent_theme_setup() {
 }
 add_action('after_setup_theme','remove_parent_theme_setup');
 
+// Add the meta fields
+function agriflex_add_meta_fields() {
+  include( 'inc/acf-fields.php' );
+}
+add_action( 'init', 'agriflex_add_meta_fields' );
+
 
 function agriflex_college_setup() {
 	// Remove things that get stuck up in the doc head that we don't need
@@ -31,13 +37,22 @@ function agriflex_college_setup() {
 
 	// Add new image sizes
 	add_image_size( 'home-ss', 748, 494, true );  
+  add_image_size( 'program-img', 215, 115, true );
 
 	// Register the menus
-	register_nav_menus( array(
-		'primary' => __( 'Primary Navigation', 'agriflex' ),
-		'secondary' => __( 'Audience Navigation (bottom bar)', 'agriflex' ),
-    'third-general' => __( 'Tertiary General Navigation (bottom bar)', 'agriflex' )
-	) );
+  $is_department = of_get_option( 'college-department' );
+
+  $menus = array(
+    'primary' => __( 'Primary Navigation', 'agriflex' ),
+    'secondary' => __( 'Audience Navigation', 'agriflex' ),
+  );
+
+  // Register page-bottom menus if not a college department
+  if ( ! $is_department ) {
+    $menus['third-general'] = __( 'Tertiary General Navigation (bottom bar)', 'agriflex' );
+  }
+
+	register_nav_menus( $menus );
 
 
 	register_sidebar( array(
@@ -58,12 +73,47 @@ function agriflex_college_setup() {
 		'after_title' => '</h3>',
 	) );
 
+  register_sidebar( array(
+    'name' => 'Home Page Bottom Left',
+    'id' => 'sidebar_home_bottom_left',
+    'before_widget' => '<div id="%1$s" class="widget widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+
+  register_sidebar( array(
+    'name' => 'Home Page Bottom Right',
+    'id' => 'sidebar_home_bottom_right',
+    'before_widget' => '<div id="%1$s" class="widget widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
 
-	// register Category_Widget widget
-	add_action( 'widgets_init',
-	create_function( '', 'register_widget( "category_widget" );' ) );
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    // Add audience menu to top of page
+    add_action( 'agriflex_header', 'agriflex_college_second_nav', 1 );
+    // Add audience menu to main navigation for small screen
+    add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_second_nav',100);
+    add_filter( 'agriflex_filter_home_links', 'agriflex_home_links' );
+  } else {
+    add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+  }
 }
+
+add_action( 'widgets_init', 'agriflex_remove_home_bottom_sidebar', 11 );
+function agriflex_remove_home_bottom_sidebar() {
+
+  unregister_sidebar( 'home-middle-1' );
+  
+}
+
+// register Category_Widget widget
 // Now add the new theme setup
 add_action( 'after_setup_theme', 'agriflex_college_setup' );
 
@@ -177,12 +227,12 @@ function agriflex_add_js_class() {
 
 // Drop the old logo
 function remove_agriflex_college_logo() {
-	remove_action( 'agriflex_before_header', 'agriflex_college_logo');
+  remove_action( 'agriflex_before_header', 'agriflex_college_logo');
 }
 add_action('init','remove_agriflex_college_logo');
 
 // Add Floating Audience Menu
-add_action( 'agriflex_college_after_primary_nav', 'agriflex_college_add_floating_menu', 100);
+// For the Main College Site Only
 function agriflex_college_add_floating_menu() {
 
   $html = '<div class="utility-nav">';
@@ -208,6 +258,102 @@ function agriflex_college_add_floating_menu() {
   $html .= '</div>';
   $html .= '</div>';
   echo $html;
+}
+
+// Add secondary (audience) navigation
+// For Departments Only
+function agriflex_college_second_nav() {
+
+  $urls = array(
+    'college-former-students-url' => array(
+      'label' => 'Former Students',
+      'url' => 'http://aglifesciences.tamu.edu/future-students/',
+    ),
+    'college-current-students-url' => array(
+      'label' => 'Current Students',
+      'url' => 'http://aglifesciences.tamu.edu/students/',
+    ),
+    'college-future-students-url' => array(
+      'label' => 'Future Students',
+      'url' => 'http://aglifesciences.tamu.edu/former-students/',
+    ),
+    'college-faculty-staff-url' => array(
+      'label' => 'Faculty/Staff',
+      'url' => 'http://aglifesciences.tamu.edu/faculty-staff/',
+    ),
+  );
+
+  foreach ( $urls as $key => $value ) {
+    $option = of_get_option( $key );
+    $urls[$key]['url'] = ( ! empty( $option ) ) ? $option : $value['url'];
+  }
+
+  ob_start();
+  ?>
+  <div class="menu-secondary">
+    <ul id="menu-secondary" class="secondary-nav">
+      <?php foreach ( $urls as $item => $info ) : ?>
+      <li class="menu-item">
+        <a href="<?php echo $info['url']; ?>"><?php echo $info['label']; ?></a>
+      </li>
+  <?php endforeach; ?>
+    </ul>
+  </div>
+  <?php
+  $html = ob_get_contents();
+  ob_clean();
+  echo $html;
+
+} // agriflex_college_second_nav
+
+function agriflex_home_links() {
+
+  $urls = array(
+    'college-former-students-url' => array(
+      'label' => 'Former Students',
+      'url' => 'http://aglifesciences.tamu.edu/former-students/',
+    ),
+    'college-current-students-url' => array(
+      'label' => 'Current Students',
+      'url' => 'http://aglifesciences.tamu.edu/students/',
+    ),
+    'college-future-students-url' => array(
+      'label' => 'Future Students',
+      'url' => 'http://aglifesciences.tamu.edu/future-students/',
+    ),
+    'college-faculty-staff-url' => array(
+      'label' => 'Faculty Staff',
+      'url' => 'http://aglifesciences.tamu.edu/faculty-staff/',
+    ),
+    'college-giving-url' => array(
+      'label' => 'Giving',
+      'url' => 'http://aglifesciences.tamu.edu/giving/',
+    ),
+  );
+
+  foreach ( $urls as $key => $value ) {
+    $option = of_get_option( $key );
+    $urls[$key]['url'] = ( ! empty( $option ) ) ? $option : $value['url'];
+    $urls[$key]['slug'] = sanitize_title( $value['label'] );
+  }
+
+  ob_start();
+  ?>
+    <?php foreach ( $urls as $key => $value ) : ?>
+    <li class="audience <?php echo $value['slug']; ?>">
+      <a href="<?php echo $value['url']; ?>">
+        <?php $words = explode( ' ', $value['label'] ); ?>
+        <?php $count = 1; ?>
+        <?php foreach ( $words as $word ) : ?>
+          <h2 id="<?php echo $value['slug'] . $count; ?>"><?php echo $word; ?></h2>
+          <?php $count++; ?>
+        <?php endforeach; ?>
+      </a>
+    </li>
+    <?php endforeach; ?>
+  <?php $html = ob_get_contents();
+  ob_clean();
+  return $html;
 }
 
 // Add a new logo
@@ -253,6 +399,16 @@ function remove_agriflex_header() {
 	remove_action( 'wp_head', 'typekit_js');
 } // remove_agriflex_header
 add_action('init','remove_agriflex_header');
+
+/*
+// Consolidate Plugin Styles
+function remove_plugin_styles() {
+  wp_dequeue_style( 'ag_social_media' );
+} // remove_agriflex_header
+add_action('widgets_init','remove_plugin_styles', 20);
+*/
+
+
 
 /**
  * Includes the main navigation
@@ -315,18 +471,25 @@ function agriflex_college_footer() {
    ob_start(); ?>
 
   	<ul class="req-links">
-		<li><a href="http://agrilife.org/required-links/compact/">Compact with Texans</a></li>
-		<li><a href="http://agrilife.org/required-links/privacy/">Privacy and Security</a></li>
-		<li><a href="http://itaccessibility.tamu.edu/" target="_blank">Accessibility Policy</a></li>
-		<li><a href="http://www2.dir.state.tx.us/pubs/Pages/weblink-privacy.aspx" target="_blank">State Link Policy</a></li>
-		<li><a href="http://www.tsl.state.tx.us/trail" target="_blank">Statewide Search</a></li>
-		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
-		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
-		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
-		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
-		<li><a href="http://aghr.tamu.edu/education-civil-rights.htm" target="_blank">Equal Opportunity for Educational Programs Statement</a></li>
-		<li class="last"><a href="http://agrilife.org/required-links/orpi/">Open Records/Public Information</a></li>
-	</ul>
+  		<li><a href="http://agrilife.org/required-links/compact/">Compact with Texans</a></li>
+  		<li><a href="http://agrilife.org/required-links/privacy/">Privacy and Security</a></li>
+  		<li><a href="http://itaccessibility.tamu.edu/" target="_blank">Accessibility Policy</a></li>
+  		<li><a href="http://www2.dir.state.tx.us/pubs/Pages/weblink-privacy.aspx" target="_blank">State Link Policy</a></li>
+  		<li><a href="http://www.tsl.state.tx.us/trail" target="_blank">Statewide Search</a></li>
+  		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
+  		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
+  		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
+  		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
+      <li><a href="http://veterans.portal.texas.gov/">Texas Veteran&apos;s Portal</a></li>
+  		<li><a href="http://aghr.tamu.edu/education-civil-rights.htm" target="_blank">Equal Opportunity for Educational Programs Statement</a></li>
+  		<li class="last"><a href="http://agrilife.org/required-links/orpi/">Open Records/Public Information</a></li>
+  	</ul>
+
+    <div class="tamu-lockup">
+      <a href="http://tamu.edu">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/images/tamu-white.png' ?>" alt="TAMU Logo" />
+      </a>
+    </div>
 	
 	<?php
 	
@@ -510,10 +673,46 @@ function college_add_options( $options ) {
 
   $images = college_get_background_images();
 
+  $departments = array(
+    '----',
+    'Agricultural Economics' => 'Agricultural Economics',
+    'Agricultural Leadership, Education and Communities' => 'Agricultural Leadership, Education and Communities',
+    'Animal Science' => 'Animal Science',
+    'Biochemistry and Biophysics' => 'Biochemistry and Biophysics',
+    'Biological and Agricultural Engineering' => 'Biological and Agricultural Engineering',
+    'Ecosystem Science and Management' => 'Ecosystem Science and Management',
+    'Entomology' => 'Entomology',
+    'Horticultural Sciences' => 'Horticultural Sciences',
+    'Nutrition and Food Science' => 'Nutrition and Food Science',
+    'Plant Pathology and Microbiology' => 'Plant Pathology and Microbiology',
+    'Poultry Science' => 'Poultry Science',
+    'Recreation, Park and Tourism Sciences' => 'Recreation, Park and Tourism Sciences',
+    'Soil and Crop Sciences' => 'Soil and Crop Sciences',
+    'Wildlife and Fisheries Sciences' => 'Wildlife and Fisheries Sciences',
+  );
+
   $options[] = array(
     'name' => __( 'College', 'agriflex' ),
     'type' => 'heading',
   );
+
+  if ( current_user_can( 'manage_network' ) ) {
+    $options[] = array(
+      'name' => __( 'Department Site', 'agriflex' ),
+      'desc' => __( 'This is a department site', 'agriflex' ),
+      'type' => 'checkbox',
+      'id' => 'college-department',
+      'std' => false,
+    );
+
+    $options[] = array(
+      'name' => __( 'Department Name', 'agriflex' ),
+      'desc' => __( 'Select the department name', 'agriflex' ),
+      'type' => 'select',
+      'id' => 'college-department-name',
+      'options' => $departments,
+    );
+  }
 
   $options[] = array(
     'name' => 'Background Image',
@@ -522,6 +721,41 @@ function college_add_options( $options ) {
     'std' => 'algae-lab.jpg',
     'type' => 'images',
     'options' => $images,
+  );
+
+  $options[] = array(
+    'name' => 'Former Students Page',
+    'desc' => 'URL to your Former Students page',
+    'id' => 'college-former-students-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Current Students Page',
+    'desc' => 'URL to your Current Students page',
+    'id' => 'college-current-students-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Future Students Page',
+    'desc' => 'URL to your Future Students page',
+    'id' => 'college-future-students-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Faculty/Staff Page',
+    'desc' => 'URL to your Faculty/Staff page',
+    'id' => 'college-faculty-staff-url',
+    'type' => 'text',
+  );
+
+  $options[] = array(
+    'name' => 'Giving Page',
+    'desc' => 'URL to your Giving page',
+    'id' => 'college-giving-url',
+    'type' => 'text',
   );
 
   return $options;
@@ -538,13 +772,46 @@ function college_background_image() {
   $image_path = get_stylesheet_directory_uri() . '/images/backgrounds/' . of_get_option('college-background-image');
 
   $script = '<script type="text/javascript">';
-  $script .= '$(document).ready( function() {';
-  $script .= '$("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
+  $script .= 'jQuery(window).load( function() {';
+  $script .= 'jQuery("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
   $script .= '});';
   $script .= '</script>';
 
   echo $script;
 
 }
+
+add_action( 'agriflex_header', 'college_department_name', 2 );
+function college_department_name() {
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    $department_name = of_get_option( 'college-department-name' );
+    echo '<div id="department-title">';
+    echo '<h1 class="department-name">';
+    echo '<span class="dept-of">Department of </span>';
+    echo $department_name;
+    echo '</h1>';
+    echo '</div>';
+  }
+
+}
+
+add_filter( 'body_class', 'college_department_body_class' );
+function college_department_body_class( $classes ) {
+
+  $is_department = of_get_option( 'college-department' );
+
+  if ( $is_department ) {
+    $department_name = of_get_option( 'college-department-name' );
+    $classes[] = 'college-department';
+    $classes[] = sanitize_title( $department_name );
+  }
+
+  return $classes;
+
+}
+
 
 ?>

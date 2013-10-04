@@ -1,0 +1,48 @@
+.college-department #department-title {
+	background: #500000;
+	h1 {
+		font-size: 1.3em;
+		padding: 0 2% 2% 0;
+		color: white;
+		margin: 0;
+	}
+}
+
+@media all and (min-width: $breakpoint-medium) {
+	.college-department #department-title h1 {
+			font-size: 1.5em;
+		}
+}
+
+@media all and (min-width: $breakpoint-biggest) {
+
+	.college-department #department-title {
+		h1 {
+			text-align: left;
+			color: #500000;
+			padding: 0;
+			span {
+				font-size: .5em;
+				display: block;
+				line-height: .5em;
+			}
+		}
+		background: transparent;
+		margin: 1.8em auto 0 auto;
+		font-family: $ornate-title-font;
+		font-weight: $ornate-title-font-weight;
+	}
+
+	.js .college-department .searchform {
+		top: -232px;
+	}
+
+	.biochemistry-and-biophysics {
+		&.college-department #wrapper {
+			padding-top: 67px;
+		}
+		#department-title h1 {
+			font-size: 3em;
+		}
+	}
+}

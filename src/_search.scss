@@ -1,0 +1,66 @@
+/* =============================================================================
+   Search Page
+   ========================================================================== */
+
+
+body.search div.entry-meta,
+body.search div.entry-utility {
+	display: none;
+}
+
+body.search h1.page-title{
+	margin-bottom: 20px;
+	font-style: italic;
+	font-weight: 600;
+}
+
+
+/* =============================================================================
+   Search Form
+   ========================================================================== */
+
+.s {
+	width: 90%;
+	padding: 8px 0px 8px 30px;
+	background: #fff url('images/search.png') no-repeat 5px 45%;
+	border-radius: 10px; 
+	color: #999;
+	border: 1px solid #ccc;
+	@include box-shadow(inset 1px 1px 1px rgba(0,0,0,0.1));
+}
+
+.searchsubmit {
+	display: none;	
+}
+@media all and (min-width: $breakpoint-biggest) {
+	.js .searchform {
+		width: 100px;
+		overflow: hidden;
+		top: -124px;
+		right: 0px;
+		position: absolute;
+		z-index: 200;
+		input.s {
+			padding: 8px 5px 8px 90px;
+			width: 0px;
+			float: right;
+			@include transition-property(width);
+  			@include transition-duration(.5s);
+  			@include transition-timing-function(ease);
+			background: transparent url('images/search2.png') no-repeat 10px 45%;
+			border-radius: 0; 
+			color: #999;
+			border: 0;
+			@include box-shadow(none);
+		}
+		input.s:hover {
+			background-color: #666;			
+		}
+		input.s:focus {
+			width: 60px;
+			background: transparent url('images/search2.png') no-repeat 5px 45%;
+			background-color: #fafafa;	
+			border-color: #2783e6;						
+		}
+	}
+}

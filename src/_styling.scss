@@ -1,34 +1,10 @@
-@import "styling-initial";
-@import "compass/utilities/tables";
-@import "home";
-@import "footer";
-
+/* _header */
 /* Text meant only for screen readers */
 .screen-reader-text {
 	position: absolute;
 	@include visually-hidden;
 }
-
-
-/* Logout Button for Password-protected posts */
-a.logout_btn {
-	border-radius: 5px;
- 	background: #fff;
- 	padding: 12px 9px;
- 	margin: 10px auto;
- 	width: 80%;
- 	display: block;
- 	font-size: 18px;
- 	}
-
- a.logout_btn:hover {
- 	background: #726B60;
- 	color: #333;
- 	}
-
-
-
- // =Logos  -------------------------------------------------------------- */
+// =Logos  -------------------------------------------------------------- */
 
 .site-title {
 	margin: 0;
@@ -51,7 +27,7 @@ a.logout_btn {
 #drop-section-nav {
 		background: white;
 		background: #500000;
-		padding: 1em 0;
+		padding: 1em 0 .7em 0;
 		ul {
 			margin: 0;
 			padding: 0 0 0 3%;
@@ -98,50 +74,6 @@ a.logout_btn {
 }
 
 
-/* =============================================================================
-   Search Form
-   ========================================================================== */
-.s {
-	width: 100%;
-	padding: 8px 0px;
-	background: #fff url('http://agrilife.org/wp-content/themes/AgriLife-Beta/images/search.png') no-repeat left 45%;
-	border-radius: 10px; 
-	color: #999;
-	border: 1px solid #ccc;
-	@include box-shadow(inset 1px 1px 1px rgba(0,0,0,0.1));
-}
-
-.searchsubmit {
-	display: none;	
-}
-
-
-/***** Search Page Template ********************/
-
-body.search div.entry-meta,
-body.search div.entry-utility {
-	display: none;
-}
-
-body.search h1.page-title{
-	margin-bottom: 20px;
-	font-style: italic;
-	font-weight: 600;
-}
-
-
-a {
-	color:#111;
-	text-decoration: underline;
-	&:active,
-	&:hover {
-		color: #500000;
-		text-decoration: underline;	
-	}
-}
-
-
-
 #breadcrumbs {
 	margin-bottom: 1.6em;
 	display: block;
@@ -154,11 +86,6 @@ a {
 #breadcrumbs a {
 	border: none;
 }
-/*
-#content {
-	padding-right: 10px;
-}
-*/
 body.home #breadcrumbs {
 	display: none;
 }
@@ -262,116 +189,6 @@ body.page h1.entry-title {
 	text-transform: uppercase;
 }
 
-// Widgets 		------------------------------------------------------------
-
-.widget-container {
-	padding: 0;
-	position: relative;
-	margin-bottom: 20px;	
-	background: #fff;
-	//border: 1px solid #e3e1d5;
-	.widget-wrap {
-		padding: 0;
-	}
-
-	h3.widget-title {
-		font-size: 1.2em;
-		font-family: $ornate-title-font-widgets;
-		font-weight: $ornate-title-font-weight-widgets;
-		//padding: 5% 3% 5% 5%;
-		padding: 4% 4% 4% 5%;
-		margin-bottom: 0;
-		//@include box-shadow(#666 0 20px 30px -8px);
-		letter-spacing: 1px;
-		line-height: 1em;
-		background: url('images/bg-titles2.png') top right no-repeat transparent;
-		background-size: 1024px 240px; 
-		@media all and (min-width: $breakpoint-medium) {
-			background-size: 2048px 480px; 
-		}
-		@media all and (min-width: $breakpoint-biggest) {
-			background-size: 1024px 240px; 
-		}
-		color: #fff;
-		text-align: left;
-		text-transform: uppercase;
-	}
-
-	&.widget_rss ul li,
-	&.widget_twitter ul li {
-		font-family: $widget-font;
-		font-size: $widget-font-size;	
-	}
-}
-
-#content-wrap .widget_nav_menu {
-	font-size: .8em;
-
-	h3.widget-title {
-		background: transparent;
-		color: #500000;
-		font-family: sans-serif;
-		text-transform: none;
-		@include box-shadow(none);
-		padding: 0;
-	}
-
-	li {
-		background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px .8em;
-		border-top: 0;
-		//border-bottom: 1px dashed #DAD6C7;
-		text-indent: 25px;
-		//-webkit-transition: .3s background ease;
-		//-moz-transition: .3s background ease;		
-		//transition: .3s background ease;
-		@include transition-property(all);
-  		@include transition-duration(.3s);
-  		@include transition-timing-function(ease);
-		margin: 0;
-		a {
-			border-bottom: 1px dashed #DAD6C7;
-			padding: 0;
-			padding: .4em 0;
-			font-style: italic;
-			display: block;
-			text-decoration: none;
-			&:hover {
-				//border-bottom: 1px dashed #666;
-				text-decoration: underline;
-			}
-		}
-		ul {
-			list-style: none;
-			padding: 0 0 3% 0;
-			a {
-				border-bottom: 0;
-				padding: 0;
-			}
-		}
-		li {
-			border: none;
-			overflow: hidden;
-			background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px .4em;
-			text-indent: 15px;
-			//li {
-			//	background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px .4em;
-			//	text-indent: 15px;
-			//}
-		}
-		&.down {	
-			background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 6px .8em; 
-			li.down { 
-				background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 16px .8em; 
-				li.down { 
-					background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 26px .8em; 
-				}
-			}
-		}
-	}
-	ul.sub-menu li { margin-left: 1em;}
-}
-
-// END Widgets 		--------------------------------------------------------	
 
 /* Columns CPT Events */
 
@@ -420,7 +237,6 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 		background: $body-background-color;
 	}
 	#bg-image-container {
-		background: url("images/backgrounds/algae-lab.jpg") no-repeat center 0; // 1142 px × 764 px
 		width: 100%;
 		top: 42px;
 		position: absolute;
@@ -439,7 +255,11 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 	#wrapper {
 		max-width: 100%;
 		margin: 0;
-		padding-top: 108px;
+		padding-top: 110px;
+	}
+
+	.college-department #wrapper {
+		padding-top: 170px;
 	}
 
 	.js #access {
@@ -500,45 +320,6 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 			}
 		}
 	}
-
-	/* =============================================================================
-	   Search Box
-	   ========================================================================== */
-	.js .searchform {
-		width: 100px;
-		overflow: hidden;
-		top: -121px;
-		right: 0px;
-		position: absolute;
-		z-index: 200;
-		input.s {
-			padding: 8px 5px 8px 90px;
-			width: 0px;
-			float: right;
-			@include transition-property(width);
-  			@include transition-duration(.5s);
-  			@include transition-timing-function(ease);
-			background: transparent url('images/search2.png') no-repeat 10px 45%;
-			border-radius: 0; 
-			color: #999;
-			border: 0;
-			@include box-shadow(none);
-		}
-		input.s:hover {
-			background-color: #666;			
-		}
-		input.s:focus {
-			width: 60px;
-			background: transparent url('images/search2.png') no-repeat 5px 45%;
-			background-color: #fafafa;	
-			border-color: #2783e6;						
-		}
-	}
-
-
-	
-
-
 
 
 	/* Agency Specific Styles */

@@ -24,6 +24,10 @@
 		overflow: hidden;
 	}
 
+	.widget ol {
+		list-style: none;
+	}
+
 }
 #sidebar-navigation-widgets  {
 	margin: 0 0 20px 0;
@@ -64,3 +68,19 @@
 #aside-widget-area-1 ul {
 	margin: 0;
 }
+
+/* Logout Button for Password-protected posts */
+a.logout_btn {
+	border-radius: 5px;
+ 	background: #fff;
+ 	padding: 12px 9px;
+ 	margin: 10px auto;
+ 	width: 80%;
+ 	display: block;
+ 	font-size: 18px;
+ }
+
+ a.logout_btn:hover {
+ 	background: #726B60;
+ 	color: #333;
+ }

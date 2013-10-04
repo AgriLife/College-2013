@@ -209,6 +209,20 @@ function homepageInit() {
 	jQuery("#challenge-international1").fitText(0.73);
 	jQuery("#challenge-international2").fitText(0.48);
 
+	jQuery("#former-students1").fitText(0.285);
+	jQuery('#former-students2').fitText(0.353);
+
+	jQuery("#current-students1").fitText(0.33);
+	jQuery("#current-students2").fitText(0.36);
+
+	jQuery("#future-students1").fitText(0.27);
+	jQuery("#future-students2").fitText(0.353);
+
+	jQuery("#faculty-staff1").fitText(0.315);
+	jQuery("#faculty-staff2").fitText(0.218);
+
+	jQuery("#giving1").fitText(0.24);
+
 	// @todo Load Soliloquy .js here
 
 }

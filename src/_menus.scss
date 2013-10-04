@@ -1,44 +1,40 @@
-@import "secondary-menu";
-@import "floating-menu";
-
 .menu-button {
-	//font-size: 1.2em;
+	font-size: 1.5em;
 	position: absolute;
 	z-index: 999;
-	top: .75em;
+	top: 0;
 	right: 0;
-	padding: 1.5em 1.25em 1em 1.25em;
-	padding: 0 0 0 1.25em;
-	//border-radius: .75em;
+	padding: .7em 3% .7em .9em;
 	color: white;
-	//background: #444;
-	//background: rgba(1,1,1,.3);
-	margin-right: 5%;
 	cursor: pointer;
+	letter-spacing: -2px;
 
 	&:before {
 	  content: "";
 	  position: absolute;
-	  top: 0.25em;
+	  top: 0.8em;
 	  left: 0;
-	  width: 1em;
+	  width: .7em;
 	  height: 0.125em;
 	  border-top: 0.375em double #fff;
 	  border-bottom: 0.125em solid #fff;
 	}
 }
 
+body.admin-bar .menu-button {
+	top: 2em;
+}
+
 
 [role="navigation"] li a {
 	padding: .7em 2em;
-	//border-left: solid 2px #500000;
 	border-top-color: #f9f9f9;
 	border-bottom-color: #dfdfdf;
 	border-width: 1px 0;
 	border-style: solid none;
 }
 
-#menu-primary-navigation {
+#access .menu {
 	padding: 0;
 	ul {
 		padding: 0;
@@ -76,6 +72,9 @@ body.touch #access .menu-header li ul.sub-menu {
 		padding: 0 10px;
 	}
 	/* main menu */
+	#access ul {
+		padding: 0 0 0 12px;
+	}
 	#access ul.menu li {
 		margin: 0;
 		// background: url('images/nav-divider.png') no-repeat right center;
@@ -99,13 +98,16 @@ body.touch #access .menu-header li ul.sub-menu {
 		/* background: #f1f0e7;	*/	
 	}	
 	#access ul.menu li a[title='home'] {
-		background-position: 10px 12px;
+		display: block;
+		text-indent: -999em;
+		background: url('images/home-college.png') no-repeat 50% 12px;
 		width: 20px;
 		padding: 1em 1em;
+		height: 10px;
 	}
 
 	#access ul.menu li a[title='home']:hover {
-		background-position: 10px -18px;
+		background-position: 50% -18px;
 	}	
 
 	#access ul.menu li a {

@@ -15,18 +15,24 @@
 			.featured-stories li {
 				margin: 10px auto;
 				width: 100%;
+
+
 			}
 		}
 	}
 
-	.challenge {
+	&.college-department .featured-content .featured-stories-container > h3 {
+		display: none;
+	}
+
+	.challenge, .audience {
 		width: 100%;
 
 		h2 {
 
-			font-family: "rosewood-std-fill",sans-serif; //$ornate-title-font;
+			font-family: $ornate-title-font-alt;
 			font-size: 1.2em;
-			text-transform: uppercase;
+			text-transform: $ornate-title-font-alt-transform;
 			line-height: .8em;
 
 			width : 80%;
@@ -44,8 +50,16 @@
 
 	}
 
+	.audience h2 {
+		margin-left: 0;
+	}
+
 	ul.featured-stories {
-		padding: 0 0 0 7px;
+		padding: 0 0 0 2px;
+	}
+
+	&.college-department ul.featured-stories {
+		padding: 10px 0 0;
 	}
 
 	.featured-content {
@@ -91,17 +105,30 @@
 			font-family: $ornate-title-font-widgets;
 			letter-spacing: 1px;
 		}
-		.srp-thumbnail-box {
-			width: 25%;
-		}
-		.srp-content-box {
-			width: 75%;
-		}
-		.srp-widget-singlepost {
-			margin: 2%;
-		}
 	}
 		
+	.program-row {
+
+		.single-program {
+			margin-bottom: 35px;
+
+			a {
+				text-decoration: none;
+
+				&:active {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.program-name {
+			margin: 5px 0;
+		}
+
+		.program-desc {
+			margin: 5px 0;
+		}
+	}
 	
 	.soliloquy-container {
 		width: 100%;
@@ -123,15 +150,42 @@
 		}
 	}
 
-	.widget-title.social-directory {
-		background-position-y: -120px;
-	}
-	#content .widget-title.srp-widget-title {
-		background-position-y: -180px;
+	#aside {
+		div:nth-child(4n+1) h3.widget-title {
+			background-position: right -120px;
+		}
+		div:nth-child(4n+2) h3.widget-title {
+			background-position: right -61px;
+		}
+		div:nth-child(4n+3) h3.widget-title{
+			background-position: right -180px;
+		}
 	}
 }
 
+.home-widget-left {
+	div:nth-child(4n+1) h3.widget-title {
+		background-position: right -120px;
+	}
+	div:nth-child(4n+2) h3.widget-title {
+		background-position: right -61px;
+	}
+	div:nth-child(4n+3) h3.widget-title{
+		background-position: right -180px;
+	}
+}
 
+.home-widget-right {
+	div:nth-child(4n+2) h3.widget-title {
+		background-position: right -180px;
+	}
+	div:nth-child(4n+3) h3.widget-title {
+		background-position: right -61px;
+	}
+	div:nth-child(4n+4) h3.widget-title{
+		background-position: right -120px;
+	}
+}
 
 .home #content-wrap .soliloquy-container .soliloquy-control-nav {
 	margin: 10px;
@@ -170,7 +224,7 @@
 				width: 90%;
 				border-bottom: 1px solid #7D3351;
 				padding: .2em 0 .5em 0;
-				&.challenge-international {
+				&:last-child {
 					border-bottom: none;
 				}
 		}
@@ -185,6 +239,10 @@
 			float: right;
 			width: 74%;
 			margin-top: 0;
+		}
+		#aside .widget-container h3.widget-title {
+		    background-size: 1024px 240px;
+		    padding: 1.5% 2%;
 		}
 	}
 
@@ -219,18 +277,18 @@
 			padding: 0 0 0 0;
 
 			h3.widget-title {
-				padding: 2% 2% 2% 3%;
+				padding: 3% 4% 3% 4%;
 			}
 
-			.srp-thumbnail-box {
-				width: 80px;
-			}
-			.srp-content-box {
-				width: 475px;
-			}
-			.srp-widget-singlepost {
-				margin: 3%;
-			}
+			// .srp-thumbnail-box {
+			// 	width: 80px;
+			// }
+			// .srp-content-box {
+			// 	width: 475px;
+			// }
+			// .srp-widget-singlepost {
+			// 	margin: 3%;
+			// }
 			.widget-container {
 				padding: 0 1.5%;
 			}
@@ -284,10 +342,53 @@
 				padding: 0;
 			}
 		}
+
+		#aside .widget-container h3.widget-title {
+		    padding: 3% 4% 3% 5%;
+		}
 		
+		.welcome, .programs {
+			float: left;
+			width: 98%;
+			padding-left: 2.5%;
+		}
+
+		.program-row {
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+
+			.single-program {
+				float: left;
+				width: 30%;
+				padding-right: 3%;
+				// margin-bottom: 35px;
+				border-bottom: none;
+
+				a {
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				h3 {
+					margin-top: 0;
+					margin-bottom: 8px;
+					font-size: 1.3em;
+				}
+
+				.program-desc {
+					margin-top: 0;
+				}
+			}
+		}
+
 	}
 	
 }
+
 
 @import "home/simpletabs";
 @import "home/socialtabs";

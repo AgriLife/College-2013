@@ -2,49 +2,49 @@
 $translucent-white: rgba(255,255,255,.5);
 
 .menu-secondary {
-
-	background-color: #9c7d0d;
-	width: 100%;
-	float: left;
-
-
-	ul, li {
-		float: left;
-	}
-	a {
-		color: #fff;
-		padding: 0.2em 0.3em;
-		text-decoration: none;
-		&:hover {
-			color: #fff;
-			text-decoration: underline;
-		}
+	display: none;
+}
+#wrapper #access .menu-secondary {
+	display: block;
+	ul {
+		padding: 0;
 	}
 }
 
-// @todo: move audience buttons to thumb areas for tablet (size and touch) users
-
 @media all and (min-width: $breakpoint-biggest) {
 	
+	body.admin-bar .menu-secondary {
+		top: 85px;
+	}
+	[role="navigation"] .menu-secondary li a {
+		padding: 0px;
+	}
+	#wrapper #access .menu-secondary {
+		display: none;
+	}
 	.menu-secondary {
-		background-color: transparent;
-		float: none;
-		position: absolute;
-		top: 67px;
-		margin-left: 287px;
-		width: 750px;
+		display: block;
+		width: 1024px;
+		margin: 0 auto;
 		ul {
-			margin: 0;
+			margin: 0 0 0 285px;
 			padding: 0;
+			text-align: center;
+			display: table;
+			overflow: hidden;
 		}
 		li {
 			float: left;
-			border: 1px solid $translucent-white;
+			margin: 0 auto;
+			padding: 2px;
+			border: 1px solid $translucent-white; //rgba(0,0,0,0.4);
+			list-style: none;
+			width: inherit;
 			& ~ li {
-				margin-left: 20px;
+				margin-left: 16px;
 			}
 			&:hover {
-				border: 1px solid white;
+				border: 1px solid rgba(255,255,255,1);
 				@include transition-property(all);
   				@include transition-duration(.15s);
   				@include transition-timing-function(ease-in);
@@ -52,19 +52,20 @@ $translucent-white: rgba(255,255,255,.5);
 		}
 
 		a {
-			font-size: .9em;
-			line-height: 1.9em;
+			font-size: 1em;
+			font-family: $ornate-title-font-alt;
+			text-transform: $ornate-title-font-alt-transform;
+			line-height: 2em;
 			text-align: center;
-			color: #000;
-			padding: 3px 2px;
+			color: rgba(0,0,0,0.6); //white;
 			display: block;
-			margin: 3px 4px;
-			background: $translucent-white;
-			height: 28px;
-			width: 155px;
+			margin-right: 1px;
+			background: $translucent-white; //rgba(0,0,0,0.4);
+			height: 35px;
+			width: 165px;
 			text-decoration: none;
 			&:hover {
-				background: #fff;
+				background: rgba(255,255,255,1);
 				color: #000;
 				text-decoration: none;
 				@include transition-property(all);
