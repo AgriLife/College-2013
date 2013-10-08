@@ -11,11 +11,3 @@ $('#menu-button').on('click', function() {
     });
     return false;
 });
-
-/*
-*	This causes iOS Chrome, and Facebook in-app, Twitter in-app to close sidebar when clicking in search box
-$(window).resize(function() {
-    $('body').removeClass('active-sidebar');
-    return false;
-});
-*/
