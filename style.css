@@ -3,8 +3,8 @@
  * Theme URI:      http://aglifesciences.tamu.edu/
  * Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
  * Author: 		Travis Ward
- * Template:		AgriFlex2
- * Version: 		1.1
+ * Template:		AgriFlex
+ * Version: 		1.0
  */
 /* line 32, src/h5bp/_normalize.scss */
 article,
@@ -2427,7 +2427,7 @@ body.search h1.page-title {
 }
 /* _header */
 /* Text meant only for screen readers */
-/* line 3, src/_styling.scss */
+/* line 4, src/_header.scss */
 .screen-reader-text {
   position: absolute;
   border: 0;
@@ -2449,11 +2449,11 @@ body.search h1.page-title {
   width: auto;
 }
 
-/* line 9, src/_styling.scss */
+/* line 11, src/_header.scss */
 .site-title {
   margin: 0;
 }
-/* line 11, src/_styling.scss */
+/* line 13, src/_header.scss */
 .site-title a {
   color: #500000;
   background-color: transparent;
@@ -2475,31 +2475,31 @@ body.search h1.page-title {
   width: 0;
   height: 100%;
 }
-/* line 21, src/_styling.scss */
+/* line 23, src/_header.scss */
 .site-title a:hover {
   color: #500000;
 }
 
-/* line 27, src/_styling.scss */
+/* line 29, src/_header.scss */
 #drop-section-nav {
   background: white;
   background: #500000;
   padding: 1em 0 .7em 0;
 }
-/* line 31, src/_styling.scss */
+/* line 33, src/_header.scss */
 #drop-section-nav ul {
   margin: 0;
   padding: 0 0 0 3%;
 }
 
-/* line 39, src/_styling.scss */
+/* line 41, src/_header.scss */
 #header {
   overflow: hidden;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-/* line 44, src/_styling.scss */
+/* line 46, src/_header.scss */
 #site-title {
   text-align: center;
   margin-top: .3em;
@@ -2508,7 +2508,7 @@ body.search h1.page-title {
   /* 14px / 16px */
 }
 
-/* line 51, src/_styling.scss */
+/* line 53, src/_header.scss */
 #site-title a {
   border: none;
   color: #443d3a;
@@ -2517,12 +2517,12 @@ body.search h1.page-title {
   /* 12px / 16px */
 }
 
-/* line 58, src/_styling.scss */
+/* line 60, src/_header.scss */
 #site-title a img {
   display: none;
 }
 
-/* line 62, src/_styling.scss */
+/* line 64, src/_header.scss */
 #site-title a em {
   display: block;
   overflow: hidden;
@@ -2533,348 +2533,30 @@ body.search h1.page-title {
   padding-bottom: 10px;
 }
 
-/* line 72, src/_styling.scss */
+/* line 74, src/_header.scss */
 #site-description {
   display: none;
 }
 
-/* line 77, src/_styling.scss */
-#breadcrumbs {
-  margin-bottom: 1.6em;
-  display: block;
-  width: 100%;
-  float: left;
-  padding: .8em 0;
-  line-height: 1.4em;
-}
-
-/* line 86, src/_styling.scss */
-#breadcrumbs a {
-  border: none;
-}
-
-/* line 89, src/_styling.scss */
-body.home #breadcrumbs {
-  display: none;
-}
-
-/* line 93, src/_styling.scss */
-.hentry {
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
-}
-
-/* line 98, src/_styling.scss */
-body.home .hentry {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  clear: both;
-}
-
-/* line 104, src/_styling.scss */
-body.home.blog .hentry {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-}
-
-/* line 108, src/_styling.scss */
-.entry-meta {
-  margin: 15px 0 25px;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* line 117, src/_styling.scss */
-#content .post h2,
-#content .post h2 a {
-  color: #B7A66D;
-  clear: right;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-/* line 123, src/_styling.scss */
-#content .post h2 a:hover {
-  text-decoration: underline;
-}
-
-/* line 2, src/_news-page.scss */
-.blog .entry-meta {
-  width: 10%;
-  display: inline-block;
-  float: left;
-  margin: 5px 0 0 0;
-  font-family: "quatro-slab", serif;
-  font-weight: 900;
-  font-size: .9em;
-  font-style: normal;
-  color: #500000;
-  text-align: center;
-}
-/* line 13, src/_news-page.scss */
-.blog .entry-meta .college-day {
-  font-size: 1.8em;
-}
-/* line 16, src/_news-page.scss */
-.blog .entry-meta .college-month {
-  text-transform: uppercase;
-}
-/* line 21, src/_news-page.scss */
-.blog .entry-content,
-.blog .entry-summary {
-  width: 87%;
-  margin-left: 13%;
-}
-
 @media all and (min-width: 636px) {
-  /* line 29, src/_news-page.scss */
-  .blog .entry-meta {
-    font-size: 1.1em;
-  }
-}
-@media all and (min-width: 840px) {
-  /* line 37, src/_news-page.scss */
-  .blog .entry-meta {
-    width: 8%;
-  }
-  /* line 41, src/_news-page.scss */
-  .blog .entry-content,
-  .blog .entry-summary {
-    width: 89%;
-    margin-left: 11%;
-  }
-}
-/* line 132, src/_styling.scss */
-#content ul {
-  list-style: circle;
-}
-
-/* line 136, src/_styling.scss */
-#content dl {
-  font-size: 1em;
-  line-height: 1.4em;
-  margin: 0 0 .5em 0;
-}
-
-/* line 143, src/_styling.scss */
-#content dd,
-#content dt {
-  margin-bottom: .5em;
-}
-
-/* line 147, src/_styling.scss */
-#content dt {
-  font-size: 1.2em;
-  margin-top: .2em;
-}
-
-/* line 152, src/_styling.scss */
-#content dl.attachments-large {
-  border: none;
-  border-bottom: 1px dashed #d2ca9c;
-}
-
-/* line 160, src/_styling.scss */
-#content .hentry footer.entry-meta,
-#content .hentry footer.entry-meta h2,
-#content .hentry footer.entry-meta #entry-author-info,
-#content .hentry footer.entry-meta .entry-utility {
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 1em;
-}
-
-/* line 166, src/_styling.scss */
-#content .hentry footer.entry-meta h2 {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 1em;
-}
-
-/* line 172, src/_styling.scss */
-.page-title {
-  margin-bottom: 1em;
-}
-
-/* Aside
--------------------------------------------------------------- */
-/* line 5, src/_aside.scss */
-#aside h4 {
-  font-size: 1.1em;
-  margin-bottom: .6em;
-}
-/* line 8, src/_aside.scss */
-#aside h4 a {
-  border: none;
-  color: #444;
-}
-/* line 13, src/_aside.scss */
-#aside .menu, #aside .blogroll, #aside .sidebar-widget-navigation {
-  margin: 0;
-}
-/* line 16, src/_aside.scss */
-#aside li embed {
-  width: 100%;
-}
-/* line 19, src/_aside.scss */
-#aside #event-bg {
-  padding: 10px;
-  margin-bottom: 20px;
-  background: #e5e0c5;
-  background: rgba(217, 208, 173, 0.5);
-  overflow: hidden;
-}
-/* line 27, src/_aside.scss */
-#aside .widget ol {
-  list-style: none;
-}
-
-/* line 32, src/_aside.scss */
-#sidebar-navigation-widgets {
-  margin: 0 0 20px 0;
-  padding: 0;
-  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-}
-/* line 37, src/_aside.scss */
-#sidebar-navigation-widgets .widget_nav_menu,
-#sidebar-navigation-widgets .widget_links {
-  background: #f1f0ec;
-}
-/* line 40, src/_aside.scss */
-#sidebar-navigation-widgets h3 {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  outline: none;
-}
-/* line 45, src/_aside.scss */
-#sidebar-navigation-widgets h3 a {
-  display: block;
-  margin: 0;
-  background-color: #edece4;
-  padding: 10px 10px 10px 27px;
-  border-bottom: 1px solid #E0DCBC;
-  border-top: 1px solid #F0EEDE;
-  cursor: pointer;
-  outline: none;
-  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
-  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
-  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
-}
-/* line 58, src/_aside.scss */
-#sidebar-navigation-widgets h3 a:hover {
-  background-color: #d9d6c6;
-}
-/* line 62, src/_aside.scss */
-#sidebar-navigation-widgets h3 .ui-state-active a {
-  background-position: -2px -26px;
-  background-color: #e3e1d5;
-}
-
-/* line 68, src/_aside.scss */
-#aside-widget-area-1 ul {
-  margin: 0;
-}
-
-/* Logout Button for Password-protected posts */
-/* line 73, src/_aside.scss */
-a.logout_btn {
-  border-radius: 5px;
-  background: #fff;
-  padding: 12px 9px;
-  margin: 10px auto;
-  width: 80%;
-  display: block;
-  font-size: 18px;
-}
-
-/* line 83, src/_aside.scss */
-a.logout_btn:hover {
-  background: #726B60;
-  color: #333;
-}
-
-/* line 184, src/_styling.scss */
-body.page h1.entry-title {
-  margin: 0 0 .6em 0;
-  font-family: "quatro-slab", serif;
-  font-weight: 900;
-  color: #500000;
-  text-transform: uppercase;
-}
-
-/* Columns CPT Events */
-/* line 195, src/_styling.scss */
-#tf_col_ev_date, th#tf_col_ev_cat {
-  width: 150px;
-}
-
-/* line 196, src/_styling.scss */
-td.tf_col_ev_date em {
-  color: gray;
-}
-
-/* line 197, src/_styling.scss */
-th#tf_col_ev_times {
-  width: 150px;
-}
-
-/* line 198, src/_styling.scss */
-th#tf_col_ev_thumb {
-  width: 100px;
-}
-
-/* Metabox */
-/* line 203, src/_styling.scss */
-body.wp-admin .tf-meta ul li {
-  height: 20px;
-  clear: both;
-  margin: 0 0 15px 0;
-}
-
-/* line 204, src/_styling.scss */
-body.wp-admin .tf-meta ul li label {
-  width: 100px;
-  display: block;
-  float: left;
-  padding-top: 4px;
-}
-
-/* line 205, src/_styling.scss */
-body.wp-admin .tf-meta ul li input {
-  width: 125px;
-  display: block;
-  float: left;
-}
-
-/* line 206, src/_styling.scss */
-body.wp-admin .tf-meta ul li em {
-  width: 200px;
-  display: block;
-  float: left;
-  color: gray;
-  margin-left: 10px;
-  padding-top: 4px;
-}
-
-@media all and (min-width: 636px) {
-  /* line 211, src/_styling.scss */
+  /* line 79, src/_header.scss */
   body {
     font-size: 110%;
   }
 
-  /* line 214, src/_styling.scss */
+  /* line 82, src/_header.scss */
   #site-title {
     margin: 20px 0;
   }
 
-  /* line 217, src/_styling.scss */
+  /* line 85, src/_header.scss */
   #site-title a {
     font-size: 1em;
     line-height: 1.125em;
     /* 18px / 16px */
   }
 
-  /* line 221, src/_styling.scss */
+  /* line 89, src/_header.scss */
   #breadcrumbs {
     width: 100%;
     margin-right: 25px;
@@ -2884,7 +2566,7 @@ body.wp-admin .tf-meta ul li em {
     padding: .8em 10px;
   }
 
-  /* line 230, src/_styling.scss */
+  /* line 98, src/_header.scss */
   #content-wrap {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -2892,12 +2574,12 @@ body.wp-admin .tf-meta ul li em {
   }
 }
 @media all and (min-width: 840px) {
-  /* line 236, src/_styling.scss */
+  /* line 104, src/_header.scss */
   body {
     background: #87817b;
   }
 
-  /* line 239, src/_styling.scss */
+  /* line 107, src/_header.scss */
   #bg-image-container {
     width: 100%;
     top: 42px;
@@ -2911,29 +2593,29 @@ body.wp-admin .tf-meta ul li em {
     min-height: 400px;
   }
 
-  /* line 251, src/_styling.scss */
+  /* line 119, src/_header.scss */
   .wrap {
     margin-top: 5%;
   }
 
-  /* line 255, src/_styling.scss */
+  /* line 123, src/_header.scss */
   #wrapper {
     max-width: 100%;
     margin: 0;
     padding-top: 110px;
   }
 
-  /* line 261, src/_styling.scss */
+  /* line 129, src/_header.scss */
   .college-department #wrapper {
     padding-top: 170px;
   }
 
-  /* line 265, src/_styling.scss */
+  /* line 133, src/_header.scss */
   .js #access {
     display: block;
   }
 
-  /* line 269, src/_styling.scss */
+  /* line 137, src/_header.scss */
   body {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 1700, color-stop(70.58824%, #d6d6d6), color-stop(100%, #87817b));
     background-image: -webkit-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
@@ -2942,24 +2624,24 @@ body.wp-admin .tf-meta ul li em {
     background-image: linear-gradient(#d6d6d6 1200px, #87817b 1700px);
   }
 
-  /* line 273, src/_styling.scss */
+  /* line 141, src/_header.scss */
   #content-wrap {
     background: url("images/bg-titles2.png") top right no-repeat transparent;
     background-size: 2048px;
     padding-top: 1px;
     margin-top: 15px;
   }
-  /* line 279, src/_styling.scss */
+  /* line 147, src/_header.scss */
   #content-wrap:before, #content-wrap:after {
     content: "";
     display: table;
   }
-  /* line 283, src/_styling.scss */
+  /* line 151, src/_header.scss */
   #content-wrap #content-wrap:after {
     clear: both;
   }
 
-  /* line 288, src/_styling.scss */
+  /* line 156, src/_header.scss */
   #drop-section-nav {
     width: 100%;
     background: #5E564E;
@@ -2968,21 +2650,21 @@ body.wp-admin .tf-meta ul li em {
     position: absolute;
     z-index: 3;
   }
-  /* line 295, src/_styling.scss */
+  /* line 163, src/_header.scss */
   #drop-section-nav ul {
     padding: 0;
   }
-  /* line 298, src/_styling.scss */
+  /* line 166, src/_header.scss */
   #drop-section-nav #drop-nav {
     width: 1024px;
     margin: 0 auto;
   }
 
-  /* line 304, src/_styling.scss */
+  /* line 172, src/_header.scss */
   .site-title {
     height: 42px;
   }
-  /* line 306, src/_styling.scss */
+  /* line 174, src/_header.scss */
   .site-title a {
     background-color: transparent;
     border: 0;
@@ -3005,7 +2687,7 @@ body.wp-admin .tf-meta ul li em {
     width: 0;
     height: 100%;
   }
-  /* line 317, src/_styling.scss */
+  /* line 185, src/_header.scss */
   .site-title a:hover {
     color: #500000;
     border-color: #fff;
@@ -3107,6 +2789,326 @@ body.wp-admin .tf-meta ul li em {
     background-position: -167px -168px;
   }
 }
+/* content styles */
+/* _content */
+/* line 4, src/_content.scss */
+#breadcrumbs {
+  margin-bottom: 1.6em;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: .8em 0;
+  line-height: 1.4em;
+}
+
+/* line 13, src/_content.scss */
+#breadcrumbs a {
+  border: none;
+}
+
+/* line 16, src/_content.scss */
+body.home #breadcrumbs {
+  display: none;
+}
+
+/* line 20, src/_content.scss */
+.hentry {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 25, src/_content.scss */
+body.home .hentry {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  clear: both;
+}
+
+/* line 31, src/_content.scss */
+body.home.blog .hentry {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+/* line 35, src/_content.scss */
+.entry-meta {
+  margin: 15px 0 25px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 44, src/_content.scss */
+#content .post h2,
+#content .post h2 a {
+  color: #B7A66D;
+  clear: right;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+/* line 50, src/_content.scss */
+#content .post h2 a:hover {
+  text-decoration: underline;
+}
+
+/* line 55, src/_content.scss */
+#content ul {
+  list-style: circle;
+}
+
+/* line 59, src/_content.scss */
+#content dl {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0 0 .5em 0;
+}
+
+/* line 66, src/_content.scss */
+#content dd,
+#content dt {
+  margin-bottom: .5em;
+}
+
+/* line 70, src/_content.scss */
+#content dt {
+  font-size: 1.2em;
+  margin-top: .2em;
+}
+
+/* line 75, src/_content.scss */
+#content dl.attachments-large {
+  border: none;
+  border-bottom: 1px dashed #d2ca9c;
+}
+
+/* line 83, src/_content.scss */
+#content .hentry footer.entry-meta,
+#content .hentry footer.entry-meta h2,
+#content .hentry footer.entry-meta #entry-author-info,
+#content .hentry footer.entry-meta .entry-utility {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 89, src/_content.scss */
+#content .hentry footer.entry-meta h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 95, src/_content.scss */
+.page-title {
+  margin-bottom: 1em;
+}
+
+/* line 101, src/_content.scss */
+body.page h1.entry-title {
+  margin: 0 0 .6em 0;
+  font-family: "quatro-slab", serif;
+  font-weight: 900;
+  color: #500000;
+  text-transform: uppercase;
+}
+
+/* Columns CPT Events */
+/* line 112, src/_content.scss */
+#tf_col_ev_date, th#tf_col_ev_cat {
+  width: 150px;
+}
+
+/* line 113, src/_content.scss */
+td.tf_col_ev_date em {
+  color: gray;
+}
+
+/* line 114, src/_content.scss */
+th#tf_col_ev_times {
+  width: 150px;
+}
+
+/* line 115, src/_content.scss */
+th#tf_col_ev_thumb {
+  width: 100px;
+}
+
+/* Metabox */
+/* line 120, src/_content.scss */
+body.wp-admin .tf-meta ul li {
+  height: 20px;
+  clear: both;
+  margin: 0 0 15px 0;
+}
+
+/* line 121, src/_content.scss */
+body.wp-admin .tf-meta ul li label {
+  width: 100px;
+  display: block;
+  float: left;
+  padding-top: 4px;
+}
+
+/* line 122, src/_content.scss */
+body.wp-admin .tf-meta ul li input {
+  width: 125px;
+  display: block;
+  float: left;
+}
+
+/* line 123, src/_content.scss */
+body.wp-admin .tf-meta ul li em {
+  width: 200px;
+  display: block;
+  float: left;
+  color: gray;
+  margin-left: 10px;
+  padding-top: 4px;
+}
+
+/* line 2, src/_news-page.scss */
+.blog .entry-meta {
+  width: 10%;
+  display: inline-block;
+  float: left;
+  margin: 5px 0 0 0;
+  font-family: "quatro-slab", serif;
+  font-weight: 900;
+  font-size: .9em;
+  font-style: normal;
+  color: #500000;
+  text-align: center;
+}
+/* line 13, src/_news-page.scss */
+.blog .entry-meta .college-day {
+  font-size: 1.8em;
+}
+/* line 16, src/_news-page.scss */
+.blog .entry-meta .college-month {
+  text-transform: uppercase;
+}
+/* line 21, src/_news-page.scss */
+.blog .entry-content,
+.blog .entry-summary {
+  width: 87%;
+  margin-left: 13%;
+}
+
+@media all and (min-width: 636px) {
+  /* line 29, src/_news-page.scss */
+  .blog .entry-meta {
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width: 840px) {
+  /* line 37, src/_news-page.scss */
+  .blog .entry-meta {
+    width: 8%;
+  }
+  /* line 41, src/_news-page.scss */
+  .blog .entry-content,
+  .blog .entry-summary {
+    width: 89%;
+    margin-left: 11%;
+  }
+}
+/* Aside
+-------------------------------------------------------------- */
+/* line 5, src/_aside.scss */
+#aside h4 {
+  font-size: 1.1em;
+  margin-bottom: .6em;
+}
+/* line 8, src/_aside.scss */
+#aside h4 a {
+  border: none;
+  color: #444;
+}
+/* line 13, src/_aside.scss */
+#aside .menu, #aside .blogroll, #aside .sidebar-widget-navigation {
+  margin: 0;
+}
+/* line 16, src/_aside.scss */
+#aside li embed {
+  width: 100%;
+}
+/* line 19, src/_aside.scss */
+#aside #event-bg {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #e5e0c5;
+  background: rgba(217, 208, 173, 0.5);
+  overflow: hidden;
+}
+/* line 27, src/_aside.scss */
+#aside .widget ol {
+  list-style: none;
+}
+
+/* line 32, src/_aside.scss */
+#sidebar-navigation-widgets {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+/* line 37, src/_aside.scss */
+#sidebar-navigation-widgets .widget_nav_menu,
+#sidebar-navigation-widgets .widget_links {
+  background: #f1f0ec;
+}
+/* line 40, src/_aside.scss */
+#sidebar-navigation-widgets h3 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+}
+/* line 45, src/_aside.scss */
+#sidebar-navigation-widgets h3 a {
+  display: block;
+  margin: 0;
+  background-color: #edece4;
+  padding: 10px 10px 10px 27px;
+  border-bottom: 1px solid #E0DCBC;
+  border-top: 1px solid #F0EEDE;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+}
+/* line 58, src/_aside.scss */
+#sidebar-navigation-widgets h3 a:hover {
+  background-color: #d9d6c6;
+}
+/* line 62, src/_aside.scss */
+#sidebar-navigation-widgets h3 .ui-state-active a {
+  background-position: -2px -26px;
+  background-color: #e3e1d5;
+}
+
+/* line 68, src/_aside.scss */
+#aside-widget-area-1 ul {
+  margin: 0;
+}
+
+/* Logout Button for Password-protected posts */
+/* line 73, src/_aside.scss */
+a.logout_btn {
+  border-radius: 5px;
+  background: #fff;
+  padding: 12px 9px;
+  margin: 10px auto;
+  width: 80%;
+  display: block;
+  font-size: 18px;
+}
+
+/* line 83, src/_aside.scss */
+a.logout_btn:hover {
+  background: #726B60;
+  color: #333;
+}
+
 /* line 1, src/_college-departments.scss */
 .college-department #department-title {
   background: #500000;

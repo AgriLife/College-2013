@@ -1,9 +1,11 @@
 /* _header */
+
 /* Text meant only for screen readers */
 .screen-reader-text {
 	position: absolute;
 	@include visually-hidden;
 }
+
 // =Logos  -------------------------------------------------------------- */
 
 .site-title {
@@ -72,140 +74,6 @@
 #site-description {
 	display: none;
 }
-
-
-#breadcrumbs {
-	margin-bottom: 1.6em;
-	display: block;
-	width: 100%;
-	float: left;	
-	padding: .8em 0;
-	line-height: 1.4em;	
-}
-
-#breadcrumbs a {
-	border: none;
-}
-body.home #breadcrumbs {
-	display: none;
-}
-
-.hentry {
-	margin-bottom: 1.5em;
-	padding-bottom: 1.5em;
-}
-
-body.home .hentry {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	clear: both;
-}
-
-body.home.blog .hentry {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-}
-.entry-meta {
-	margin: 15px 0 25px;
-	font-weight: 400;
-	font-style: italic;
-}
-
-// post Styles
-#content {
-	.post h2,
-	.post h2 a {
-		color: #B7A66D;
-		clear: right;
-		font-size: 1.1em;
-		text-decoration: none;
-	}
-	.post h2 a:hover {
-		text-decoration: underline;
-	}
-}
-
-@import "news-page";
-
-
-
-#content ul {
-	list-style: circle;	
-}
-
-#content dl {
-	font-size: 1em;
-	line-height: 1.4em;
-	margin: 0 0 .5em 0;
-}
-
-#content dd, 
-#content dt {
-	margin-bottom: .5em;
-}
-
-#content dt {
-	font-size: 1.2em;
-	margin-top: .2em;
-}
-
-#content dl.attachments-large {
-	border: none;
-	border-bottom: 1px dashed #d2ca9c;	
-}
-
-#content .hentry footer.entry-meta,
-#content .hentry footer.entry-meta h2,
-#content .hentry footer.entry-meta #entry-author-info,
-#content .hentry footer.entry-meta .entry-utility  {
-	font-size: 14px;
-	line-height: 22px;
-	margin-bottom: 1em;
-}
-
-#content .hentry footer.entry-meta h2 {
-	font-size: 16px;
-	line-height: 22px;
-	margin-bottom: 1em;
-}
-
-.page-title {
-	margin-bottom: 1em;
-}
-
-@import "aside";
-
-
-
-
-
-// Events 		------------------------------------------------------------
-
-body.page h1.entry-title {
-	margin: 0 0 .6em 0;
-	font-family: $ornate-title-font;
-	font-weight: $ornate-title-font-weight;
-	color: #500000;
-	text-transform: uppercase;
-}
-
-
-/* Columns CPT Events */
-
-#tf_col_ev_date, th#tf_col_ev_cat {width:150px}
-td.tf_col_ev_date em {color:gray;}
-th#tf_col_ev_times {width:150px}
-th#tf_col_ev_thumb {width:100px}
-
-/* Metabox */
-
-body.wp-admin .tf-meta {  }
-body.wp-admin .tf-meta ul li { height: 20px; clear:both; margin: 0 0 15px 0;}
-body.wp-admin .tf-meta ul li label { width: 100px; display:block; float:left; padding-top:4px; }
-body.wp-admin .tf-meta ul li input { width:125px; display:block; float:left; }
-body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color:gray; margin-left:10px; padding-top: 4px }
-
-
 
 @media all and (min-width: $breakpoint-medium) {
 	body {
@@ -332,6 +200,3 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 	
 
 }
-
-
-
