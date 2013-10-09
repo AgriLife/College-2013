@@ -102,111 +102,18 @@
 	top: 50px;
 	right: 3%;
 }	
-/* Site Menu */
-/*
-[role="navigation"] li {
-	list-style: none;
-	font-size: 18px;
-	width: 100%;	
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box;		
-}*/
+
 [role="navigation"] li a {
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;		
 	display: block;
 }
-/*
-.site-footer {
-	overflow: hidden;
-	padding: 5%;
-	width: 90%;
-	clear: both;
-	margin: 0 auto;
-	border-top: solid 1px #C9C9C9;
-	background: -moz-linear-gradient(top, rgba(235, 236, 234, 1) 0%, rgba(255, 255, 255, 1) 80%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235, 236, 234, 1)), color-stop(80%,rgba(255, 255, 255, 1)));
-	background: -webkit-linear-gradient(top, rgba(235, 236, 234, 1) 0%,rgba(255, 255, 255, 1) 80%);
-	background: linear-gradient(top, rgba(235, 236, 234, 1) 0%,rgba(255, 255, 255, 1) 80%);	
-}
-.site-footer ul {
-	list-style: none;
-}
-.site-footer li a {
-	margin: .5em .5em .5em 0;
-}
-*/
-@media all and (min-width: $breakpoint-medium) {
-	/*
-	#site-title { 	
-		font-size: 56px;
-		margin-left: 0;
-	}
-	#wrapper {
-		margin-bottom: 100px;
-	}				
-	.js .off-canvas-nav-links, .sidebar-button {
-		display: none;
-	} 				
-	.js [role="complementary"] {
-		position: relative;
-		width: 28%;	
-		margin-left: 0;
-		float: left;
-		padding: 3%
-	}
-	.js [role="document"] {
-		width: 60%;
-		padding: 3%;
-	}
-	[role="document"]:before {		
-	}	
-	.js [role="navigation"] {
-		width: 100%;	
-		margin: .75em 0 0 0;	
-		padding: 0;
-		margin-right: 0;
-		clear: both;
-		position: fixed;
-		bottom: 0;		
-		left: 0;
-	}	
-	.js [role="navigation"] li {	
-		width: 20%;
-		background: rgba(255,255,255,.95);
-		box-shadow: 0 0 5px rgba(0,0,0,.3);		
-	}	
-	.js [role="navigation"] li.first {
-		position: relative;
-		z-index: 2;				
-	}		
-	.js [role="navigation"] li.second {		
-	}
-	.js [role="navigation"] li.third {
-		position: absolute;
-		right: 0;
-		bottom: 50px;
-		z-index: 2;				
-	}		
-	.js [role="navigation"] li.last {	
-		position: absolute;
-		right: 0;
-		bottom: 0;			
-	}	
-	.js [role="navigation"] li.third a,
-	.js [role="navigation"] li.last a {
-		border-left: none;
-		border-right: solid 8px #9FB84C;		
-	}
-	.site-footer {
-		margin: 0 auto 100px;	
-	}	
-	*/								
-}
 
 @media all and (min-width: $breakpoint-biggest) {
+	.no-js .menu-button {
+		display: none;
+	}
 	.js .menu-button {
 		display: none;
 	}

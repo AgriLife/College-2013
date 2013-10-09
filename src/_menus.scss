@@ -8,6 +8,14 @@
 	color: white;
 	cursor: pointer;
 	letter-spacing: -2px;
+	a {
+		color: white;
+		text-decoration: none;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
 
 	&:before {
 	  content: "";

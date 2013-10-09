@@ -379,7 +379,7 @@ function agriflex_college_logo_retina() {
   $html .= '</li>';
 
   $html .= '<li class="explore right-align">';
-  $html .= '<div class="menu-button" id="menu-button">Menu</div>';
+  $html .= '<div class="menu-button" id="menu-button"><a href="#access">Menu</a></div>';
   $html .= '</li>';
 
   echo $html;
