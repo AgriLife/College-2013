@@ -2293,28 +2293,43 @@ body.search h1.page-title {
 
 /* line 32, src/_search.scss */
 .searchsubmit {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 35, src/_search.scss */
+#drop-nav .searchform {
   display: none;
+  visibility: hidden;
 }
 
 @media all and (min-width: 840px) {
-  /* line 36, src/_search.scss */
-  .js .searchform {
-    width: 100px;
-    overflow: hidden;
-    top: -124px;
-    right: 0px;
-    position: absolute;
-    z-index: 200;
+  /* line 40, src/_search.scss */
+  #access .searchform {
+    display: none !important;
+    visibility: hidden;
   }
-  /* line 43, src/_search.scss */
-  .js .searchform input.s {
-    padding: 8px 5px 8px 90px;
-    width: 0px;
+
+  /* line 44, src/_search.scss */
+  #drop-nav .searchform {
+    width: 100px;
+    top: 2px;
+    right: 0px;
+    position: relative;
+    z-index: 1;
     float: right;
-    -webkit-transition-property: width;
-    -moz-transition-property: width;
-    -o-transition-property: width;
-    transition-property: width;
+    overflow: hidden;
+    display: block;
+    visibility: visible;
+  }
+  /* line 55, src/_search.scss */
+  #drop-nav .s {
+    padding: 8px 5px 8px 100px;
+    width: 50px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -2331,16 +2346,19 @@ body.search h1.page-title {
     -moz-box-shadow: none;
     box-shadow: none;
   }
-  /* line 56, src/_search.scss */
-  .js .searchform input.s:hover {
+  /* line 67, src/_search.scss */
+  #drop-nav .s:hover {
     background-color: #666;
   }
-  /* line 59, src/_search.scss */
-  .js .searchform input.s:focus {
-    width: 60px;
-    background: transparent url("images/search2.png") no-repeat 5px 45%;
-    background-color: #fafafa;
-    border-color: #2783e6;
+  /* line 71, src/_search.scss */
+  #drop-nav .s:focus {
+    width: 66px;
+    padding: 8px 5px 8px 29px;
+    background: white url("images/search2.png") no-repeat -55px 45%;
+    /*padding: 8px 5px;
+    background: transparent url('images/search2.png') no-repeat 5px 45%;
+    background-color: #fafafa;	
+    border-color: #2783e6;		*/
   }
 }
 /* _header */
@@ -2581,8 +2599,9 @@ body.search h1.page-title {
   /* line 172, src/_header.scss */
   .site-title {
     height: 42px;
+    float: left;
   }
-  /* line 174, src/_header.scss */
+  /* line 175, src/_header.scss */
   .site-title a {
     background-color: transparent;
     border: 0;
@@ -2605,7 +2624,7 @@ body.search h1.page-title {
     width: 0;
     height: 100%;
   }
-  /* line 185, src/_header.scss */
+  /* line 186, src/_header.scss */
   .site-title a:hover {
     color: #500000;
     border-color: #fff;
@@ -3066,16 +3085,11 @@ a.logout_btn:hover {
     line-height: .5em;
   }
 
-  /* line 36, src/_college-departments.scss */
-  .js .college-department .searchform {
-    top: -232px;
-  }
-
-  /* line 41, src/_college-departments.scss */
+  /* line 37, src/_college-departments.scss */
   .biochemistry-and-biophysics.college-department #wrapper {
     padding-top: 67px;
   }
-  /* line 44, src/_college-departments.scss */
+  /* line 40, src/_college-departments.scss */
   .biochemistry-and-biophysics #department-title h1 {
     font-size: 3em;
   }

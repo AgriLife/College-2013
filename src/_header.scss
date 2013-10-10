@@ -171,6 +171,7 @@
 
 	.site-title {
 		height: 42px;
+		float: left;
 		a {
 			@include image-replacement;
 			border-bottom: #fff 10px solid;
