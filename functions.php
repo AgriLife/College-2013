@@ -379,12 +379,32 @@ function agriflex_college_logo_retina() {
   $html .= '</li>';
 
   $html .= '<li class="explore right-align">';
-  $html .= '<div class="menu-button" id="menu-button">Menu</div>';
+  $html .= '<div class="menu-button" id="menu-button"><a href="#access">Menu</a></div>';
   $html .= '</li>';
 
   echo $html;
 
 } // agriflex_college_logo
+
+// Add a new logo
+add_action( 'agriflex_before_header', 'agriflex_college_header_search', 15 );
+/**
+ * Add search for desktop
+ *
+ * @since College 2013
+ * @author Travis Ward <travis@travisward.com>
+ */
+function agriflex_college_header_search() {
+
+  $html = '<li class="search">';
+  $html .= get_search_form(false);
+  $html .= '</li>';
+
+  echo $html;
+
+} // agriflex_college_logo
+
+
 
 
 

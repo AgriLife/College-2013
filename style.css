@@ -4,7 +4,7 @@
  * Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
  * Author: 		Travis Ward
  * Template:		AgriFlex2
- * Version: 		1.1
+ * Version: 		1.1.1
  */
 /* line 32, src/h5bp/_normalize.scss */
 article,
@@ -533,17 +533,7 @@ table {
   right: 3%;
 }
 
-/* Site Menu */
-/*
-[role="navigation"] li {
-	list-style: none;
-	font-size: 18px;
-	width: 100%;	
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box;		
-}*/
-/* line 115, src/_off-canvas.scss */
+/* line 106, src/_off-canvas.scss */
 [role="navigation"] li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -551,100 +541,18 @@ table {
   display: block;
 }
 
-/*
-.site-footer {
-	overflow: hidden;
-	padding: 5%;
-	width: 90%;
-	clear: both;
-	margin: 0 auto;
-	border-top: solid 1px #C9C9C9;
-	background: -moz-linear-gradient(top, rgba(235, 236, 234, 1) 0%, rgba(255, 255, 255, 1) 80%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235, 236, 234, 1)), color-stop(80%,rgba(255, 255, 255, 1)));
-	background: -webkit-linear-gradient(top, rgba(235, 236, 234, 1) 0%,rgba(255, 255, 255, 1) 80%);
-	background: linear-gradient(top, rgba(235, 236, 234, 1) 0%,rgba(255, 255, 255, 1) 80%);	
-}
-.site-footer ul {
-	list-style: none;
-}
-.site-footer li a {
-	margin: .5em .5em .5em 0;
-}
-*/
-@media all and (min-width: 636px) {
-  /*
-  #site-title { 	
-  	font-size: 56px;
-  	margin-left: 0;
-  }
-  #wrapper {
-  	margin-bottom: 100px;
-  }				
-  .js .off-canvas-nav-links, .sidebar-button {
-  	display: none;
-  } 				
-  .js [role="complementary"] {
-  	position: relative;
-  	width: 28%;	
-  	margin-left: 0;
-  	float: left;
-  	padding: 3%
-  }
-  .js [role="document"] {
-  	width: 60%;
-  	padding: 3%;
-  }
-  [role="document"]:before {		
-  }	
-  .js [role="navigation"] {
-  	width: 100%;	
-  	margin: .75em 0 0 0;	
-  	padding: 0;
-  	margin-right: 0;
-  	clear: both;
-  	position: fixed;
-  	bottom: 0;		
-  	left: 0;
-  }	
-  .js [role="navigation"] li {	
-  	width: 20%;
-  	background: rgba(255,255,255,.95);
-  	box-shadow: 0 0 5px rgba(0,0,0,.3);		
-  }	
-  .js [role="navigation"] li.first {
-  	position: relative;
-  	z-index: 2;				
-  }		
-  .js [role="navigation"] li.second {		
-  }
-  .js [role="navigation"] li.third {
-  	position: absolute;
-  	right: 0;
-  	bottom: 50px;
-  	z-index: 2;				
-  }		
-  .js [role="navigation"] li.last {	
-  	position: absolute;
-  	right: 0;
-  	bottom: 0;			
-  }	
-  .js [role="navigation"] li.third a,
-  .js [role="navigation"] li.last a {
-  	border-left: none;
-  	border-right: solid 8px #9FB84C;		
-  }
-  .site-footer {
-  	margin: 0 auto 100px;	
-  }	
-  */
-}
 @media all and (min-width: 840px) {
-  /* line 210, src/_off-canvas.scss */
+  /* line 114, src/_off-canvas.scss */
+  .no-js .menu-button {
+    display: none;
+  }
+
+  /* line 117, src/_off-canvas.scss */
   .js .menu-button {
     display: none;
   }
 
-  /* line 215, src/_off-canvas.scss */
+  /* line 122, src/_off-canvas.scss */
   .js [role="document"],
   .js [role="navigation"],
   .js [role="contentinfo"] {
@@ -654,7 +562,7 @@ table {
     padding: 0;
   }
 
-  /* line 222, src/_off-canvas.scss */
+  /* line 129, src/_off-canvas.scss */
   .js [role="navigation"] {
     padding: 0;
   }
@@ -1033,7 +941,17 @@ table {
   cursor: pointer;
   letter-spacing: -2px;
 }
-/* line 12, src/_menus.scss */
+/* line 11, src/_menus.scss */
+.menu-button a {
+  color: white;
+  text-decoration: none;
+}
+/* line 14, src/_menus.scss */
+.menu-button a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 20, src/_menus.scss */
 .menu-button:before {
   content: "";
   position: absolute;
@@ -1045,12 +963,12 @@ table {
   border-bottom: 0.125em solid #fff;
 }
 
-/* line 24, src/_menus.scss */
+/* line 32, src/_menus.scss */
 body.admin-bar .menu-button {
   top: 2em;
 }
 
-/* line 29, src/_menus.scss */
+/* line 37, src/_menus.scss */
 [role="navigation"] li a {
   padding: .7em 2em;
   border-top-color: #f9f9f9;
@@ -1059,17 +977,17 @@ body.admin-bar .menu-button {
   border-style: solid none;
 }
 
-/* line 37, src/_menus.scss */
+/* line 45, src/_menus.scss */
 #access .menu {
   padding: 0;
 }
-/* line 39, src/_menus.scss */
+/* line 47, src/_menus.scss */
 #access .menu ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 49, src/_menus.scss */
+/* line 57, src/_menus.scss */
 body.no-touch #access ul.menu a {
   font-size: 1.6em;
   text-shadow: 0 1px 0 #fff;
@@ -1077,18 +995,18 @@ body.no-touch #access ul.menu a {
   text-shadow: none;
 }
 
-/* line 56, src/_menus.scss */
+/* line 64, src/_menus.scss */
 body.mobile #access .menu-header li ul.sub-menu {
   display: none;
 }
 
-/* line 60, src/_menus.scss */
+/* line 68, src/_menus.scss */
 body.touch #access .menu-header li ul.sub-menu {
   display: none;
 }
 
 @media all and (min-width: 840px) {
-  /* line 65, src/_menus.scss */
+  /* line 73, src/_menus.scss */
   .js #access {
     display: block;
     background-color: #333;
@@ -1100,47 +1018,47 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* main menu */
-  /* line 75, src/_menus.scss */
+  /* line 83, src/_menus.scss */
   #access ul {
     padding: 0 0 0 12px;
   }
 
-  /* line 78, src/_menus.scss */
+  /* line 86, src/_menus.scss */
   #access ul.menu li {
     margin: 0;
     padding: 0 18px 0 0;
     float: left;
   }
 
-  /* line 84, src/_menus.scss */
+  /* line 92, src/_menus.scss */
   #access .menu-header ul.sub-menu li {
     margin-left: 0;
   }
 
-  /* line 85, src/_menus.scss */
+  /* line 93, src/_menus.scss */
   #access ul.menu li li {
     border-radius: 0;
   }
 
-  /* line 89, src/_menus.scss */
+  /* line 97, src/_menus.scss */
   #access ul.menu li.current-menu-item,
   #access ul.menu li.current_page_parent {
     position: relative;
     z-index: 5;
   }
 
-  /* line 94, src/_menus.scss */
+  /* line 102, src/_menus.scss */
   #access ul.menu li.current-menu-item:hover,
   #access ul.menu li.current_page_parent:hover {
     /* background: #e3e1d5; */
   }
 
-  /* line 97, src/_menus.scss */
+  /* line 105, src/_menus.scss */
   #access ul.menu li.current-menu-item:first-child:hover {
     /* background: #f1f0e7;	*/
   }
 
-  /* line 100, src/_menus.scss */
+  /* line 108, src/_menus.scss */
   #access ul.menu li a[title='home'] {
     display: block;
     text-indent: -999em;
@@ -1150,12 +1068,12 @@ body.touch #access .menu-header li ul.sub-menu {
     height: 10px;
   }
 
-  /* line 109, src/_menus.scss */
+  /* line 117, src/_menus.scss */
   #access ul.menu li a[title='home']:hover {
     background-position: 50% -18px;
   }
 
-  /* line 113, src/_menus.scss */
+  /* line 121, src/_menus.scss */
   #access ul.menu li a {
     background: transparent;
     text-decoration: none;
@@ -1165,7 +1083,7 @@ body.touch #access .menu-header li ul.sub-menu {
     letter-spacing: 2px;
   }
 
-  /* line 122, src/_menus.scss */
+  /* line 130, src/_menus.scss */
   #access ul.menu li a:hover {
     color: #E5DABB;
     text-decoration: none;
@@ -1174,30 +1092,30 @@ body.touch #access .menu-header li ul.sub-menu {
     /* =============================================================================
 	   Dropdown Navigation Styles
 	   ========================================================================== */
-  /* line 132, src/_menus.scss */
+  /* line 140, src/_menus.scss */
   #access .sf-menu li {
     font: sans-serif;
     text-transform: uppercase;
     font-size: .8em;
     line-height: 2.8em;
   }
-  /* line 137, src/_menus.scss */
+  /* line 145, src/_menus.scss */
   #access .sf-menu li:hover a {
     position: relative;
     z-index: 7;
   }
-  /* line 142, src/_menus.scss */
+  /* line 150, src/_menus.scss */
   #access .sf-menu li a {
     padding: 0;
     border-top-right-radius: none;
   }
-  /* line 147, src/_menus.scss */
+  /* line 155, src/_menus.scss */
   #access .sf-menu li.current-menu-item,
   #access .sf-menu li.current_page_parent {
     position: relative;
     z-index: 2;
   }
-  /* line 151, src/_menus.scss */
+  /* line 159, src/_menus.scss */
   #access .sf-menu ul {
     position: absolute;
     background-color: #000;
@@ -1205,7 +1123,7 @@ body.touch #access .menu-header li ul.sub-menu {
     top: -999em;
     width: 14em;
   }
-  /* line 159, src/_menus.scss */
+  /* line 167, src/_menus.scss */
   #access .sf-menu li:hover ul,
   #access .sf-menu li.sfHover ul {
     left: 0;
@@ -1216,7 +1134,7 @@ body.touch #access .menu-header li ul.sub-menu {
     position: absolute;
   }
 
-  /* line 171, src/_menus.scss */
+  /* line 179, src/_menus.scss */
   #access .sf-menu li:hover {
     visibility: inherit;
     /* fixes IE7 'sticky bug' */
@@ -1234,14 +1152,14 @@ body.touch #access .menu-header li ul.sub-menu {
     transition-timing-function: ease;
   }
 
-  /* line 178, src/_menus.scss */
+  /* line 186, src/_menus.scss */
   #access .sf-menu li a[title='home'] {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
   }
 
-  /* line 184, src/_menus.scss */
+  /* line 192, src/_menus.scss */
   #access .sf-menu ul li:hover {
     visibility: inherit;
     /* fixes IE7 'sticky bug' */
@@ -1249,7 +1167,7 @@ body.touch #access .menu-header li ul.sub-menu {
     border-top-right-radius: none;
   }
 
-  /* line 189, src/_menus.scss */
+  /* line 197, src/_menus.scss */
   #access .sf-menu ul li {
     width: 100%;
     position: relative;
@@ -1261,21 +1179,21 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 0;
   }
 
-  /* line 200, src/_menus.scss */
+  /* line 208, src/_menus.scss */
   #access .sf-menu a {
     display: block;
     position: relative;
     background: transparent;
   }
 
-  /* line 206, src/_menus.scss */
+  /* line 214, src/_menus.scss */
   #access .sf-menu li:hover,
   #access .sf-menu li.sfHover {
     z-index: 7;
     position: relative;
   }
 
-  /* line 210, src/_menus.scss */
+  /* line 218, src/_menus.scss */
   #access ul.menu li li a {
     font-family: "camingodos-web",sans-serif;
     text-transform: none;
@@ -1287,13 +1205,13 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 15px;
   }
 
-  /* line 225, src/_menus.scss */
+  /* line 233, src/_menus.scss */
   #access ul.sf-menu li:hover li ul,
   #access ul.sf-menu li.sfHover li ul {
     top: -999em;
   }
 
-  /* line 229, src/_menus.scss */
+  /* line 237, src/_menus.scss */
   #access ul.sf-menu li li:hover ul,
   #access ul.sf-menu li li.sfHover ul {
     left: 15.2em;
@@ -1304,13 +1222,13 @@ body.touch #access .menu-header li ul.sub-menu {
     padding-top: 0;
   }
 
-  /* line 237, src/_menus.scss */
+  /* line 245, src/_menus.scss */
   #access ul.sf-menu li li:hover li ul,
   #access ul.sf-menu li li.sfHover li ul {
     top: -999em;
   }
 
-  /* line 241, src/_menus.scss */
+  /* line 249, src/_menus.scss */
   #access ul.sf-menu li li li:hover ul,
   #access ul.sf-menu li li li.sfHover ul {
     left: 13em;
@@ -1320,7 +1238,7 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /*** arrows **/
-  /* line 248, src/_menus.scss */
+  /* line 256, src/_menus.scss */
   #access .sf-menu li a.sf-with-ul {
     min-width: 1px;
     /* trigger IE7 hasLayout so spans position accurately */
@@ -1328,12 +1246,12 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 2em 1em 2em;
   }
 
-  /* line 253, src/_menus.scss */
+  /* line 261, src/_menus.scss */
   #access .sf-menu li a.sf-with-ul:hover {
     background-position: right -103px;
   }
 
-  /* line 257, src/_menus.scss */
+  /* line 265, src/_menus.scss */
   #access .sf-menu li li a.sf-with-ul {
     min-width: 1px;
     /* trigger IE7 hasLayout so spans position accurately */
@@ -1341,12 +1259,12 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 2em 1em 1.3em;
   }
 
-  /* line 262, src/_menus.scss */
+  /* line 270, src/_menus.scss */
   #access .sf-menu li li a.sf-with-ul:hover {
     background-position: left 58%;
   }
 
-  /* line 267, src/_menus.scss */
+  /* line 275, src/_menus.scss */
   #access .sf-sub-indicator {
     position: absolute;
     display: block;
@@ -1359,7 +1277,7 @@ body.touch #access .menu-header li ul.sub-menu {
     overflow: hidden;
   }
 
-  /* line 278, src/_menus.scss */
+  /* line 286, src/_menus.scss */
   #access a > .sf-sub-indicator {
     /* give all except IE6 the correct values */
     top: .8em;
@@ -1368,7 +1286,7 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* apply hovers to modern browsers */
-  /* line 287, src/_menus.scss */
+  /* line 295, src/_menus.scss */
   #access a:focus > .sf-sub-indicator,
   #access a:hover > .sf-sub-indicator,
   #access a:active > .sf-sub-indicator,
@@ -1379,18 +1297,18 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* point right for anchors in subs */
-  /* line 292, src/_menus.scss */
+  /* line 300, src/_menus.scss */
   #access .sf-menu ul .sf-sub-indicator {
     background-position: -10px 0;
   }
 
-  /* line 293, src/_menus.scss */
+  /* line 301, src/_menus.scss */
   #access .sf-menu ul a > .sf-sub-indicator {
     background-position: 0 0;
   }
 
   /* apply hovers to modern browsers */
-  /* line 299, src/_menus.scss */
+  /* line 307, src/_menus.scss */
   #access .sf-menu ul a:focus > .sf-sub-indicator,
   #access .sf-menu ul a:hover > .sf-sub-indicator,
   #access .sf-menu ul a:active > .sf-sub-indicator,
@@ -2375,28 +2293,43 @@ body.search h1.page-title {
 
 /* line 32, src/_search.scss */
 .searchsubmit {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 35, src/_search.scss */
+#drop-nav .searchform {
   display: none;
+  visibility: hidden;
 }
 
 @media all and (min-width: 840px) {
-  /* line 36, src/_search.scss */
-  .js .searchform {
-    width: 100px;
-    overflow: hidden;
-    top: -124px;
-    right: 0px;
-    position: absolute;
-    z-index: 200;
+  /* line 40, src/_search.scss */
+  #access .searchform {
+    display: none !important;
+    visibility: hidden;
   }
-  /* line 43, src/_search.scss */
-  .js .searchform input.s {
-    padding: 8px 5px 8px 90px;
-    width: 0px;
+
+  /* line 44, src/_search.scss */
+  #drop-nav .searchform {
+    width: 100px;
+    top: 2px;
+    right: 0px;
+    position: relative;
+    z-index: 1;
     float: right;
-    -webkit-transition-property: width;
-    -moz-transition-property: width;
-    -o-transition-property: width;
-    transition-property: width;
+    overflow: hidden;
+    display: block;
+    visibility: visible;
+  }
+  /* line 55, src/_search.scss */
+  #drop-nav .s {
+    padding: 8px 5px 8px 100px;
+    width: 50px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -2413,21 +2346,24 @@ body.search h1.page-title {
     -moz-box-shadow: none;
     box-shadow: none;
   }
-  /* line 56, src/_search.scss */
-  .js .searchform input.s:hover {
+  /* line 67, src/_search.scss */
+  #drop-nav .s:hover {
     background-color: #666;
   }
-  /* line 59, src/_search.scss */
-  .js .searchform input.s:focus {
-    width: 60px;
-    background: transparent url("images/search2.png") no-repeat 5px 45%;
-    background-color: #fafafa;
-    border-color: #2783e6;
+  /* line 71, src/_search.scss */
+  #drop-nav .s:focus {
+    width: 66px;
+    padding: 8px 5px 8px 29px;
+    background: white url("images/search2.png") no-repeat -55px 45%;
+    /*padding: 8px 5px;
+    background: transparent url('images/search2.png') no-repeat 5px 45%;
+    background-color: #fafafa;	
+    border-color: #2783e6;		*/
   }
 }
 /* _header */
 /* Text meant only for screen readers */
-/* line 3, src/_styling.scss */
+/* line 4, src/_header.scss */
 .screen-reader-text {
   position: absolute;
   border: 0;
@@ -2449,11 +2385,11 @@ body.search h1.page-title {
   width: auto;
 }
 
-/* line 9, src/_styling.scss */
+/* line 11, src/_header.scss */
 .site-title {
   margin: 0;
 }
-/* line 11, src/_styling.scss */
+/* line 13, src/_header.scss */
 .site-title a {
   color: #500000;
   background-color: transparent;
@@ -2475,31 +2411,31 @@ body.search h1.page-title {
   width: 0;
   height: 100%;
 }
-/* line 21, src/_styling.scss */
+/* line 23, src/_header.scss */
 .site-title a:hover {
   color: #500000;
 }
 
-/* line 27, src/_styling.scss */
+/* line 29, src/_header.scss */
 #drop-section-nav {
   background: white;
   background: #500000;
   padding: 1em 0 .7em 0;
 }
-/* line 31, src/_styling.scss */
+/* line 33, src/_header.scss */
 #drop-section-nav ul {
   margin: 0;
   padding: 0 0 0 3%;
 }
 
-/* line 39, src/_styling.scss */
+/* line 41, src/_header.scss */
 #header {
   overflow: hidden;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-/* line 44, src/_styling.scss */
+/* line 46, src/_header.scss */
 #site-title {
   text-align: center;
   margin-top: .3em;
@@ -2508,7 +2444,7 @@ body.search h1.page-title {
   /* 14px / 16px */
 }
 
-/* line 51, src/_styling.scss */
+/* line 53, src/_header.scss */
 #site-title a {
   border: none;
   color: #443d3a;
@@ -2517,12 +2453,12 @@ body.search h1.page-title {
   /* 12px / 16px */
 }
 
-/* line 58, src/_styling.scss */
+/* line 60, src/_header.scss */
 #site-title a img {
   display: none;
 }
 
-/* line 62, src/_styling.scss */
+/* line 64, src/_header.scss */
 #site-title a em {
   display: block;
   overflow: hidden;
@@ -2533,348 +2469,30 @@ body.search h1.page-title {
   padding-bottom: 10px;
 }
 
-/* line 72, src/_styling.scss */
+/* line 74, src/_header.scss */
 #site-description {
   display: none;
 }
 
-/* line 77, src/_styling.scss */
-#breadcrumbs {
-  margin-bottom: 1.6em;
-  display: block;
-  width: 100%;
-  float: left;
-  padding: .8em 0;
-  line-height: 1.4em;
-}
-
-/* line 86, src/_styling.scss */
-#breadcrumbs a {
-  border: none;
-}
-
-/* line 89, src/_styling.scss */
-body.home #breadcrumbs {
-  display: none;
-}
-
-/* line 93, src/_styling.scss */
-.hentry {
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
-}
-
-/* line 98, src/_styling.scss */
-body.home .hentry {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  clear: both;
-}
-
-/* line 104, src/_styling.scss */
-body.home.blog .hentry {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-}
-
-/* line 108, src/_styling.scss */
-.entry-meta {
-  margin: 15px 0 25px;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* line 117, src/_styling.scss */
-#content .post h2,
-#content .post h2 a {
-  color: #B7A66D;
-  clear: right;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-/* line 123, src/_styling.scss */
-#content .post h2 a:hover {
-  text-decoration: underline;
-}
-
-/* line 2, src/_news-page.scss */
-.blog .entry-meta {
-  width: 10%;
-  display: inline-block;
-  float: left;
-  margin: 5px 0 0 0;
-  font-family: "quatro-slab", serif;
-  font-weight: 900;
-  font-size: .9em;
-  font-style: normal;
-  color: #500000;
-  text-align: center;
-}
-/* line 13, src/_news-page.scss */
-.blog .entry-meta .college-day {
-  font-size: 1.8em;
-}
-/* line 16, src/_news-page.scss */
-.blog .entry-meta .college-month {
-  text-transform: uppercase;
-}
-/* line 21, src/_news-page.scss */
-.blog .entry-content,
-.blog .entry-summary {
-  width: 87%;
-  margin-left: 13%;
-}
-
 @media all and (min-width: 636px) {
-  /* line 29, src/_news-page.scss */
-  .blog .entry-meta {
-    font-size: 1.1em;
-  }
-}
-@media all and (min-width: 840px) {
-  /* line 37, src/_news-page.scss */
-  .blog .entry-meta {
-    width: 8%;
-  }
-  /* line 41, src/_news-page.scss */
-  .blog .entry-content,
-  .blog .entry-summary {
-    width: 89%;
-    margin-left: 11%;
-  }
-}
-/* line 132, src/_styling.scss */
-#content ul {
-  list-style: circle;
-}
-
-/* line 136, src/_styling.scss */
-#content dl {
-  font-size: 1em;
-  line-height: 1.4em;
-  margin: 0 0 .5em 0;
-}
-
-/* line 143, src/_styling.scss */
-#content dd,
-#content dt {
-  margin-bottom: .5em;
-}
-
-/* line 147, src/_styling.scss */
-#content dt {
-  font-size: 1.2em;
-  margin-top: .2em;
-}
-
-/* line 152, src/_styling.scss */
-#content dl.attachments-large {
-  border: none;
-  border-bottom: 1px dashed #d2ca9c;
-}
-
-/* line 160, src/_styling.scss */
-#content .hentry footer.entry-meta,
-#content .hentry footer.entry-meta h2,
-#content .hentry footer.entry-meta #entry-author-info,
-#content .hentry footer.entry-meta .entry-utility {
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 1em;
-}
-
-/* line 166, src/_styling.scss */
-#content .hentry footer.entry-meta h2 {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 1em;
-}
-
-/* line 172, src/_styling.scss */
-.page-title {
-  margin-bottom: 1em;
-}
-
-/* Aside
--------------------------------------------------------------- */
-/* line 5, src/_aside.scss */
-#aside h4 {
-  font-size: 1.1em;
-  margin-bottom: .6em;
-}
-/* line 8, src/_aside.scss */
-#aside h4 a {
-  border: none;
-  color: #444;
-}
-/* line 13, src/_aside.scss */
-#aside .menu, #aside .blogroll, #aside .sidebar-widget-navigation {
-  margin: 0;
-}
-/* line 16, src/_aside.scss */
-#aside li embed {
-  width: 100%;
-}
-/* line 19, src/_aside.scss */
-#aside #event-bg {
-  padding: 10px;
-  margin-bottom: 20px;
-  background: #e5e0c5;
-  background: rgba(217, 208, 173, 0.5);
-  overflow: hidden;
-}
-/* line 27, src/_aside.scss */
-#aside .widget ol {
-  list-style: none;
-}
-
-/* line 32, src/_aside.scss */
-#sidebar-navigation-widgets {
-  margin: 0 0 20px 0;
-  padding: 0;
-  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-}
-/* line 37, src/_aside.scss */
-#sidebar-navigation-widgets .widget_nav_menu,
-#sidebar-navigation-widgets .widget_links {
-  background: #f1f0ec;
-}
-/* line 40, src/_aside.scss */
-#sidebar-navigation-widgets h3 {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  outline: none;
-}
-/* line 45, src/_aside.scss */
-#sidebar-navigation-widgets h3 a {
-  display: block;
-  margin: 0;
-  background-color: #edece4;
-  padding: 10px 10px 10px 27px;
-  border-bottom: 1px solid #E0DCBC;
-  border-top: 1px solid #F0EEDE;
-  cursor: pointer;
-  outline: none;
-  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
-  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
-  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
-}
-/* line 58, src/_aside.scss */
-#sidebar-navigation-widgets h3 a:hover {
-  background-color: #d9d6c6;
-}
-/* line 62, src/_aside.scss */
-#sidebar-navigation-widgets h3 .ui-state-active a {
-  background-position: -2px -26px;
-  background-color: #e3e1d5;
-}
-
-/* line 68, src/_aside.scss */
-#aside-widget-area-1 ul {
-  margin: 0;
-}
-
-/* Logout Button for Password-protected posts */
-/* line 73, src/_aside.scss */
-a.logout_btn {
-  border-radius: 5px;
-  background: #fff;
-  padding: 12px 9px;
-  margin: 10px auto;
-  width: 80%;
-  display: block;
-  font-size: 18px;
-}
-
-/* line 83, src/_aside.scss */
-a.logout_btn:hover {
-  background: #726B60;
-  color: #333;
-}
-
-/* line 184, src/_styling.scss */
-body.page h1.entry-title {
-  margin: 0 0 .6em 0;
-  font-family: "quatro-slab", serif;
-  font-weight: 900;
-  color: #500000;
-  text-transform: uppercase;
-}
-
-/* Columns CPT Events */
-/* line 195, src/_styling.scss */
-#tf_col_ev_date, th#tf_col_ev_cat {
-  width: 150px;
-}
-
-/* line 196, src/_styling.scss */
-td.tf_col_ev_date em {
-  color: gray;
-}
-
-/* line 197, src/_styling.scss */
-th#tf_col_ev_times {
-  width: 150px;
-}
-
-/* line 198, src/_styling.scss */
-th#tf_col_ev_thumb {
-  width: 100px;
-}
-
-/* Metabox */
-/* line 203, src/_styling.scss */
-body.wp-admin .tf-meta ul li {
-  height: 20px;
-  clear: both;
-  margin: 0 0 15px 0;
-}
-
-/* line 204, src/_styling.scss */
-body.wp-admin .tf-meta ul li label {
-  width: 100px;
-  display: block;
-  float: left;
-  padding-top: 4px;
-}
-
-/* line 205, src/_styling.scss */
-body.wp-admin .tf-meta ul li input {
-  width: 125px;
-  display: block;
-  float: left;
-}
-
-/* line 206, src/_styling.scss */
-body.wp-admin .tf-meta ul li em {
-  width: 200px;
-  display: block;
-  float: left;
-  color: gray;
-  margin-left: 10px;
-  padding-top: 4px;
-}
-
-@media all and (min-width: 636px) {
-  /* line 211, src/_styling.scss */
+  /* line 79, src/_header.scss */
   body {
     font-size: 110%;
   }
 
-  /* line 214, src/_styling.scss */
+  /* line 82, src/_header.scss */
   #site-title {
     margin: 20px 0;
   }
 
-  /* line 217, src/_styling.scss */
+  /* line 85, src/_header.scss */
   #site-title a {
     font-size: 1em;
     line-height: 1.125em;
     /* 18px / 16px */
   }
 
-  /* line 221, src/_styling.scss */
+  /* line 89, src/_header.scss */
   #breadcrumbs {
     width: 100%;
     margin-right: 25px;
@@ -2884,7 +2502,7 @@ body.wp-admin .tf-meta ul li em {
     padding: .8em 10px;
   }
 
-  /* line 230, src/_styling.scss */
+  /* line 98, src/_header.scss */
   #content-wrap {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -2892,12 +2510,12 @@ body.wp-admin .tf-meta ul li em {
   }
 }
 @media all and (min-width: 840px) {
-  /* line 236, src/_styling.scss */
+  /* line 104, src/_header.scss */
   body {
     background: #87817b;
   }
 
-  /* line 239, src/_styling.scss */
+  /* line 107, src/_header.scss */
   #bg-image-container {
     width: 100%;
     top: 42px;
@@ -2911,29 +2529,29 @@ body.wp-admin .tf-meta ul li em {
     min-height: 400px;
   }
 
-  /* line 251, src/_styling.scss */
+  /* line 119, src/_header.scss */
   .wrap {
     margin-top: 5%;
   }
 
-  /* line 255, src/_styling.scss */
+  /* line 123, src/_header.scss */
   #wrapper {
     max-width: 100%;
     margin: 0;
     padding-top: 110px;
   }
 
-  /* line 261, src/_styling.scss */
+  /* line 129, src/_header.scss */
   .college-department #wrapper {
     padding-top: 170px;
   }
 
-  /* line 265, src/_styling.scss */
+  /* line 133, src/_header.scss */
   .js #access {
     display: block;
   }
 
-  /* line 269, src/_styling.scss */
+  /* line 137, src/_header.scss */
   body {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 1700, color-stop(70.58824%, #d6d6d6), color-stop(100%, #87817b));
     background-image: -webkit-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
@@ -2942,24 +2560,24 @@ body.wp-admin .tf-meta ul li em {
     background-image: linear-gradient(#d6d6d6 1200px, #87817b 1700px);
   }
 
-  /* line 273, src/_styling.scss */
+  /* line 141, src/_header.scss */
   #content-wrap {
     background: url("images/bg-titles2.png") top right no-repeat transparent;
     background-size: 2048px;
     padding-top: 1px;
     margin-top: 15px;
   }
-  /* line 279, src/_styling.scss */
+  /* line 147, src/_header.scss */
   #content-wrap:before, #content-wrap:after {
     content: "";
     display: table;
   }
-  /* line 283, src/_styling.scss */
+  /* line 151, src/_header.scss */
   #content-wrap #content-wrap:after {
     clear: both;
   }
 
-  /* line 288, src/_styling.scss */
+  /* line 156, src/_header.scss */
   #drop-section-nav {
     width: 100%;
     background: #5E564E;
@@ -2968,21 +2586,22 @@ body.wp-admin .tf-meta ul li em {
     position: absolute;
     z-index: 3;
   }
-  /* line 295, src/_styling.scss */
+  /* line 163, src/_header.scss */
   #drop-section-nav ul {
     padding: 0;
   }
-  /* line 298, src/_styling.scss */
+  /* line 166, src/_header.scss */
   #drop-section-nav #drop-nav {
     width: 1024px;
     margin: 0 auto;
   }
 
-  /* line 304, src/_styling.scss */
+  /* line 172, src/_header.scss */
   .site-title {
     height: 42px;
+    float: left;
   }
-  /* line 306, src/_styling.scss */
+  /* line 175, src/_header.scss */
   .site-title a {
     background-color: transparent;
     border: 0;
@@ -3005,7 +2624,7 @@ body.wp-admin .tf-meta ul li em {
     width: 0;
     height: 100%;
   }
-  /* line 317, src/_styling.scss */
+  /* line 186, src/_header.scss */
   .site-title a:hover {
     color: #500000;
     border-color: #fff;
@@ -3107,6 +2726,326 @@ body.wp-admin .tf-meta ul li em {
     background-position: -167px -168px;
   }
 }
+/* content styles */
+/* _content */
+/* line 4, src/_content.scss */
+#breadcrumbs {
+  margin-bottom: 1.6em;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: .8em 0;
+  line-height: 1.4em;
+}
+
+/* line 13, src/_content.scss */
+#breadcrumbs a {
+  border: none;
+}
+
+/* line 16, src/_content.scss */
+body.home #breadcrumbs {
+  display: none;
+}
+
+/* line 20, src/_content.scss */
+.hentry {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 25, src/_content.scss */
+body.home .hentry {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  clear: both;
+}
+
+/* line 31, src/_content.scss */
+body.home.blog .hentry {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+/* line 35, src/_content.scss */
+.entry-meta {
+  margin: 15px 0 25px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 44, src/_content.scss */
+#content .post h2,
+#content .post h2 a {
+  color: #B7A66D;
+  clear: right;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+/* line 50, src/_content.scss */
+#content .post h2 a:hover {
+  text-decoration: underline;
+}
+
+/* line 55, src/_content.scss */
+#content ul {
+  list-style: circle;
+}
+
+/* line 59, src/_content.scss */
+#content dl {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0 0 .5em 0;
+}
+
+/* line 66, src/_content.scss */
+#content dd,
+#content dt {
+  margin-bottom: .5em;
+}
+
+/* line 70, src/_content.scss */
+#content dt {
+  font-size: 1.2em;
+  margin-top: .2em;
+}
+
+/* line 75, src/_content.scss */
+#content dl.attachments-large {
+  border: none;
+  border-bottom: 1px dashed #d2ca9c;
+}
+
+/* line 83, src/_content.scss */
+#content .hentry footer.entry-meta,
+#content .hentry footer.entry-meta h2,
+#content .hentry footer.entry-meta #entry-author-info,
+#content .hentry footer.entry-meta .entry-utility {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 89, src/_content.scss */
+#content .hentry footer.entry-meta h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+/* line 95, src/_content.scss */
+.page-title {
+  margin-bottom: 1em;
+}
+
+/* line 101, src/_content.scss */
+body.page h1.entry-title {
+  margin: 0 0 .6em 0;
+  font-family: "quatro-slab", serif;
+  font-weight: 900;
+  color: #500000;
+  text-transform: uppercase;
+}
+
+/* Columns CPT Events */
+/* line 112, src/_content.scss */
+#tf_col_ev_date, th#tf_col_ev_cat {
+  width: 150px;
+}
+
+/* line 113, src/_content.scss */
+td.tf_col_ev_date em {
+  color: gray;
+}
+
+/* line 114, src/_content.scss */
+th#tf_col_ev_times {
+  width: 150px;
+}
+
+/* line 115, src/_content.scss */
+th#tf_col_ev_thumb {
+  width: 100px;
+}
+
+/* Metabox */
+/* line 120, src/_content.scss */
+body.wp-admin .tf-meta ul li {
+  height: 20px;
+  clear: both;
+  margin: 0 0 15px 0;
+}
+
+/* line 121, src/_content.scss */
+body.wp-admin .tf-meta ul li label {
+  width: 100px;
+  display: block;
+  float: left;
+  padding-top: 4px;
+}
+
+/* line 122, src/_content.scss */
+body.wp-admin .tf-meta ul li input {
+  width: 125px;
+  display: block;
+  float: left;
+}
+
+/* line 123, src/_content.scss */
+body.wp-admin .tf-meta ul li em {
+  width: 200px;
+  display: block;
+  float: left;
+  color: gray;
+  margin-left: 10px;
+  padding-top: 4px;
+}
+
+/* line 2, src/_news-page.scss */
+.blog .entry-meta {
+  width: 10%;
+  display: inline-block;
+  float: left;
+  margin: 5px 0 0 0;
+  font-family: "quatro-slab", serif;
+  font-weight: 900;
+  font-size: .9em;
+  font-style: normal;
+  color: #500000;
+  text-align: center;
+}
+/* line 13, src/_news-page.scss */
+.blog .entry-meta .college-day {
+  font-size: 1.8em;
+}
+/* line 16, src/_news-page.scss */
+.blog .entry-meta .college-month {
+  text-transform: uppercase;
+}
+/* line 21, src/_news-page.scss */
+.blog .entry-content,
+.blog .entry-summary {
+  width: 87%;
+  margin-left: 13%;
+}
+
+@media all and (min-width: 636px) {
+  /* line 29, src/_news-page.scss */
+  .blog .entry-meta {
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width: 840px) {
+  /* line 37, src/_news-page.scss */
+  .blog .entry-meta {
+    width: 8%;
+  }
+  /* line 41, src/_news-page.scss */
+  .blog .entry-content,
+  .blog .entry-summary {
+    width: 89%;
+    margin-left: 11%;
+  }
+}
+/* Aside
+-------------------------------------------------------------- */
+/* line 5, src/_aside.scss */
+#aside h4 {
+  font-size: 1.1em;
+  margin-bottom: .6em;
+}
+/* line 8, src/_aside.scss */
+#aside h4 a {
+  border: none;
+  color: #444;
+}
+/* line 13, src/_aside.scss */
+#aside .menu, #aside .blogroll, #aside .sidebar-widget-navigation {
+  margin: 0;
+}
+/* line 16, src/_aside.scss */
+#aside li embed {
+  width: 100%;
+}
+/* line 19, src/_aside.scss */
+#aside #event-bg {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #e5e0c5;
+  background: rgba(217, 208, 173, 0.5);
+  overflow: hidden;
+}
+/* line 27, src/_aside.scss */
+#aside .widget ol {
+  list-style: none;
+}
+
+/* line 32, src/_aside.scss */
+#sidebar-navigation-widgets {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+/* line 37, src/_aside.scss */
+#sidebar-navigation-widgets .widget_nav_menu,
+#sidebar-navigation-widgets .widget_links {
+  background: #f1f0ec;
+}
+/* line 40, src/_aside.scss */
+#sidebar-navigation-widgets h3 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+}
+/* line 45, src/_aside.scss */
+#sidebar-navigation-widgets h3 a {
+  display: block;
+  margin: 0;
+  background-color: #edece4;
+  padding: 10px 10px 10px 27px;
+  border-bottom: 1px solid #E0DCBC;
+  border-top: 1px solid #F0EEDE;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 0 3px rgba(10, 10, 10, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 0 2px rgba(100, 100, 100, 0.2);
+}
+/* line 58, src/_aside.scss */
+#sidebar-navigation-widgets h3 a:hover {
+  background-color: #d9d6c6;
+}
+/* line 62, src/_aside.scss */
+#sidebar-navigation-widgets h3 .ui-state-active a {
+  background-position: -2px -26px;
+  background-color: #e3e1d5;
+}
+
+/* line 68, src/_aside.scss */
+#aside-widget-area-1 ul {
+  margin: 0;
+}
+
+/* Logout Button for Password-protected posts */
+/* line 73, src/_aside.scss */
+a.logout_btn {
+  border-radius: 5px;
+  background: #fff;
+  padding: 12px 9px;
+  margin: 10px auto;
+  width: 80%;
+  display: block;
+  font-size: 18px;
+}
+
+/* line 83, src/_aside.scss */
+a.logout_btn:hover {
+  background: #726B60;
+  color: #333;
+}
+
 /* line 1, src/_college-departments.scss */
 .college-department #department-title {
   background: #500000;
@@ -3146,16 +3085,11 @@ body.wp-admin .tf-meta ul li em {
     line-height: .5em;
   }
 
-  /* line 36, src/_college-departments.scss */
-  .js .college-department .searchform {
-    top: -232px;
-  }
-
-  /* line 41, src/_college-departments.scss */
+  /* line 37, src/_college-departments.scss */
   .biochemistry-and-biophysics.college-department #wrapper {
     padding-top: 67px;
   }
-  /* line 44, src/_college-departments.scss */
+  /* line 40, src/_college-departments.scss */
   .biochemistry-and-biophysics #department-title h1 {
     font-size: 3em;
   }
