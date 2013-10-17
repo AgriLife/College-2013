@@ -4,7 +4,7 @@
  * Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
  * Author: 		Travis Ward
  * Template:		AgriFlex2
- * Version: 		1.1.1
+ * Version: 		1.0
  */
 /* line 32, src/h5bp/_normalize.scss */
 article,
@@ -3086,12 +3086,12 @@ a.logout_btn:hover {
   }
 
   /* line 37, src/_college-departments.scss */
-  .biochemistry-and-biophysics.college-department #wrapper {
+  .college-department #wrapper {
     padding-top: 67px;
   }
   /* line 40, src/_college-departments.scss */
-  .biochemistry-and-biophysics #department-title h1 {
-    font-size: 3em;
+  .college-department #department-title h1 {
+    font-size: 2.9em;
   }
 }
 /* Attachment pages -------------- */
