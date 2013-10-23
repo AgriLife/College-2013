@@ -18,6 +18,13 @@ function agriflex_add_meta_fields() {
 }
 add_action( 'init', 'agriflex_add_meta_fields' );
 
+// Remove 'featured' meta fields
+function agriflex_remove_featured() {
+  remove_meta_box( 'agrilife_featured_post', 'post', 'side' );
+  remove_meta_box( 'agrilife_featured_post', 'page', 'side' );
+}
+add_action( 'add_meta_boxes', 'agriflex_remove_featured', 99 );
+
 
 function agriflex_college_setup() {
 	// Remove things that get stuck up in the doc head that we don't need
