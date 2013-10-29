@@ -724,6 +724,7 @@ function college_add_options( $options ) {
   );
 
   if ( current_user_can( 'manage_network' ) ) {
+
     $options[] = array(
       'name' => __( 'Department Site', 'agriflex' ),
       'desc' => __( 'This is a department site', 'agriflex' ),
@@ -739,6 +740,15 @@ function college_add_options( $options ) {
       'id' => 'college-department-name',
       'options' => $departments,
     );
+
+    $options[] = array(
+      'name' => __( 'Auxiliary College Site', 'agriflex' ),
+      'desc' => __( 'This is an auxiliary college site', 'agriflex' ),
+      'type' => 'checkbox',
+      'id' => 'college-aux',
+      'std' => false,
+    );
+
   }
 
   $options[] = array(
