@@ -274,7 +274,7 @@ function agriflex_college_second_nav() {
   $urls = array(
     'college-former-students-url' => array(
       'label' => 'Former Students',
-      'url' => 'http://aglifesciences.tamu.edu/future-students/',
+      'url' => 'http://aglifesciences.tamu.edu/former-students/',
     ),
     'college-current-students-url' => array(
       'label' => 'Current Students',
@@ -282,7 +282,7 @@ function agriflex_college_second_nav() {
     ),
     'college-future-students-url' => array(
       'label' => 'Future Students',
-      'url' => 'http://aglifesciences.tamu.edu/former-students/',
+      'url' => 'http://aglifesciences.tamu.edu/future-students/',
     ),
     'college-faculty-staff-url' => array(
       'label' => 'Faculty/Staff',
