@@ -5,9 +5,9 @@
 		<?php $i = 1; ?>
 		<?php $programs = array_chunk( get_field( 'coals_program_units' ), 3 );
 			foreach ( $programs as $chunk ) {
-				echo '<div class="program-row">';
-				echo agriflex_display_programs( $chunk );
-				echo '</div><!-- .program-row -->';
+				printf( '<div class="program-row">%s</div><!-- .program-row -->',
+						agriflex_display_programs( $chunk )
+				);
 			}
 		?>
 	</div>

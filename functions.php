@@ -840,5 +840,17 @@ function college_department_body_class( $classes ) {
 
 }
 
+add_action( 'agriflex_after_loop', 'college_show_topics' );
+function college_show_topics() {
+
+  wp_reset_query();
+
+  if ( is_page() ) {
+    if ( get_field( 'page-topics' ) ) {
+      get_template_part( 'topics' );
+    }
+  }
+
+}
 
 ?>
