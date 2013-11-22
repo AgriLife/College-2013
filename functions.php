@@ -798,6 +798,29 @@ function college_add_options( $options ) {
   return $options;
 
 }
+add_action('optionsframework_custom_scripts', 'college_options_scripts');
+function college_options_scripts() {
+?>
+<script>
+  jQuery(document).ready( function() {
+    var audience = jQuery('#section-college-former-students-url, #section-college-current-students-url, #section-college-future-students-url, #section-college-faculty-staff-url, #section-college-giving-url');
+    if ( jQuery('#college-aux').is(':checked') ){
+      audience.hide();
+    }
+    jQuery('#college-aux').change(function() {
+      console.log('Changed');
+      if(jQuery('#college-aux').is(':checked') ){
+        audience.hide();
+      } else {
+        audience.show();
+      }
+    });
+  });
+</script>
+
+<?php
+}
+
 
 add_action( 'wp_footer', 'college_background_image', 50 );
 /**
