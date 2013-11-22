@@ -822,6 +822,7 @@ add_action( 'agriflex_header', 'college_department_name', 2 );
 function college_department_name() {
 
   $is_department = of_get_option( 'college-department' );
+  $is_aux = of_get_option( 'college-aux' );
 
   if ( $is_department ) {
     $department_name = of_get_option( 'college-department-name' );
@@ -831,6 +832,11 @@ function college_department_name() {
     echo $department_name;
     echo '</h1>';
     echo '</div>';
+  } elseif ( $is_aux ) {
+    printf( '<div id="site-title"><h1 class="site-name">%s</h1><h2 class="site-desc">%s</h2></div>',
+      get_bloginfo( 'name' ),
+      get_bloginfo( 'description' )
+    );
   }
 
 }
