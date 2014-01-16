@@ -703,7 +703,7 @@ function college_add_options( $options ) {
   $departments = array(
     '----',
     'Agricultural Economics' => 'Agricultural Economics',
-    'Agricultural Leadership, Education and Communications' => 'Agricultural Leadership, Education and Communications',
+    'Agricultural Leadership, Education, and Communications' => 'Agricultural Leadership, Education, and Communications',
     'Animal Science' => 'Animal Science',
     'Biochemistry and Biophysics' => 'Biochemistry and Biophysics',
     'Biological and Agricultural Engineering' => 'Biological and Agricultural Engineering',
