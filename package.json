@@ -1,0 +1,24 @@
+{
+  "name": "College-2013",
+  "version": "1.0.0",
+  "description": "Child theme for Texas A&M College of Agriculture and Life Sciences",
+  "main": "functions.php",
+  "dependencies": {
+    "grunt": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.3.1"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "repository": "",
+  "author": "Travis Ward and J. Aaron Eaton",
+  "license": "GPL2+"
+}

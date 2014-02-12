@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*!
+/*
  * Theme Name: 	College of Ag 2013
  * Theme URI:      http://aglifesciences.tamu.edu/
  * Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
@@ -926,7 +925,7 @@ table {
   .utility-nav li:before {
     content: '•';
     position: absolute;
-    left: -.75em;
+    left: -0.75em;
     top: 1em;
   }
 }
@@ -4186,20 +4185,36 @@ img {
 }
 
 /* line 10, src/widgets/_agrilife-today.scss */
+#content .widget.agrilifetoday ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 14, src/widgets/_agrilife-today.scss */
+#content .widget.agrilifetoday ul li {
+  padding: 0px 0px 2.8em 65px;
+  border-bottom: none;
+  border-top: none;
+}
+/* line 19, src/widgets/_agrilife-today.scss */
+#content .widget.agrilifetoday ul li .rss-title {
+  font-size: 1.1em;
+}
+
+/* line 24, src/widgets/_agrilife-today.scss */
 #aside .widget.agrilifetoday ul li {
   padding: 0px 0px 2.8em 65px;
   border-bottom: none;
   border-top: none;
 }
 
-/* line 15, src/widgets/_agrilife-today.scss */
+/* line 29, src/widgets/_agrilife-today.scss */
 #aside ul li.widget-container.agrilifetoday ul li {
   font-family: verdana, clean, sans-serif;
   font-size: 1.1em;
   line-height: 1.1em;
 }
 
-/* line 20, src/widgets/_agrilife-today.scss */
+/* line 34, src/widgets/_agrilife-today.scss */
 .widget.agrilifetoday ul li img {
   top: 0;
 }
@@ -4987,19 +5002,19 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 150, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_date_month input, .gform_wrapper .gfield_date_day input, .gform_wrapper .gfield_date_year input {
-  width: 85% !important;
+  width: 85%!important;
 }
 
 /* line 151, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_hover {
-  border: 1px dashed #2175a9 !important;
+  border: 1px dashed #2175A9!important;
   cursor: pointer;
 }
 
 /* line 152, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_selected {
   background-color: #DFEFFF;
-  border: 1px solid #c2d7ef !important;
+  border: 1px solid #C2D7EF!important;
 }
 
 /* line 153, src/plugins/_gravityforms.scss */
@@ -5015,17 +5030,17 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 155, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_name_first input, .gform_wrapper .ginput_complex .ginput_left input {
-  width: 90% !important;
+  width: 90%!important;
 }
 
 /* line 156, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_name_last input {
-  width: 93% !important;
+  width: 93%!important;
 }
 
 /* line 157, src/plugins/_gravityforms.scss */
 .gform_wrapper .datepicker {
-  width: 100px !important;
+  width: 100px!important;
 }
 
 /* line 158, src/plugins/_gravityforms.scss */
@@ -5041,17 +5056,17 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 160, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_error .ginput_complex .ginput_left input {
-  width: 90% !important;
+  width: 90%!important;
 }
 
 /* line 161, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_error .ginput_complex .ginput_right input {
-  width: 100% !important;
+  width: 100%!important;
 }
 
 /* line 162, src/plugins/_gravityforms.scss */
 .gform_wrapper .ginput_complex input, .gform_wrapper .ginput_complex select {
-  width: 92% !important;
+  width: 92%!important;
 }
 
 /* line 163, src/plugins/_gravityforms.scss */
@@ -5065,14 +5080,14 @@ html > body .entry ul, .gform_wrapper ul {
 /* line 164, src/plugins/_gravityforms.scss */
 .gform_wrapper .ginput_complex .name_prefix {
   float: left;
-  width: 30px !important;
+  width: 30px!important;
   margin-right: 14px;
 }
 
 /* line 165, src/plugins/_gravityforms.scss */
 .gform_wrapper .ginput_complex .name_suffix {
   float: left;
-  width: 30px !important;
+  width: 30px!important;
 }
 
 /* line 166, src/plugins/_gravityforms.scss */
@@ -5152,9 +5167,9 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 178, src/plugins/_gravityforms.scss */
 .gform_wrapper h2.gsection_title {
-  margin: 0 !important;
-  padding: 0 !important;
-  letter-spacing: normal !important;
+  margin: 0!important;
+  padding: 0!important;
+  letter-spacing: normal!important;
 }
 
 /* line 179, src/plugins/_gravityforms.scss */
@@ -5166,7 +5181,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 180, src/plugins/_gravityforms.scss */
 .gform_wrapper h3.gform_title {
-  letter-spacing: normal !important;
+  letter-spacing: normal!important;
   margin: 10px 0 6px 0;
 }
 
@@ -5184,7 +5199,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 183, src/plugins/_gravityforms.scss */
 .gform_wrapper .gsection {
-  border-bottom: 1px dotted #cccccc !important;
+  border-bottom: 1px dotted #ccc!important;
   padding: 0 0 8px 0;
   margin: 8px 0 16px 0;
 }
@@ -5310,7 +5325,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 210, src/plugins/_gravityforms.scss */
 .ginput_complex + .gfield_description {
-  padding-top: 0 !important;
+  padding-top: 0!important;
 }
 
 /* line 211, src/plugins/_gravityforms.scss */
@@ -5350,10 +5365,10 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 217, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_error {
-  background-color: #ffdfdf !important;
-  margin-top: 4px !important;
+  background-color: #FFDFDF!important;
+  margin-top: 4px!important;
   margin-bottom: 6px;
-  padding: 6px 6px 4px 6px !important;
+  padding: 6px 6px 4px 6px!important;
   border: 1px dotted #C89797;
 }
 
@@ -5394,7 +5409,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 224, src/plugins/_gravityforms.scss */
 .gform_wrapper .validation_message {
-  color: #790000 !important;
+  color: #790000!important;
   font-size: 11px;
   font-family: verdana, sans-serif;
   letter-spacing: normal;
@@ -5456,7 +5471,7 @@ html > body .entry ul, .gform_wrapper ul {
 /* line 232, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
   margin: 0 0 4px 0;
-  line-height: 130% !important;
+  line-height: 130%!important;
 }
 
 /* improve spacing and prevent descenders from getting cut off in IE */
@@ -5656,17 +5671,17 @@ img.ui-datepicker-trigger {
 /* additional spacing and padding tweaks --------------------------------------------*/
 /* line 270, src/plugins/_gravityforms.scss */
 .gform_wrapper .left_label .ginput_complex .ginput_right label, .gform_wrapper .left_label .ginput_complex .ginput_left label, .gform_wrapper .right_label .ginput_complex .ginput_right label, .gform_wrapper .right_label .ginput_complex .ginput_left label {
-  word-spacing: -.4em;
+  word-spacing: -0.4em;
 }
 
 /* line 271, src/plugins/_gravityforms.scss */
 .gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
-  padding: 0 !important;
+  padding: 0!important;
 }
 
 /* line 272, src/plugins/_gravityforms.scss */
 .gform_wrapper .top_label .ginput_complex + .gfield_description {
-  padding-bottom: 0 !important;
+  padding-bottom: 0!important;
 }
 
 /* line 273, src/plugins/_gravityforms.scss */
@@ -5678,13 +5693,13 @@ img.ui-datepicker-trigger {
 /* pretty specific inheritance but if your theme is structured just like the 2010 theme it may affect yours as well */
 /* line 278, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, .entry-content .gform_wrapper input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
-  margin: 0 !important;
+  margin: 0!important;
 }
 
 /* line 279, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
   font-size: 16px;
-  padding: 1px 2px !important;
+  padding: 1px 2px!important;
   background-color: #F9F9F9;
   border: 1px solid #CCC;
   color: #444;
@@ -5692,12 +5707,12 @@ img.ui-datepicker-trigger {
 
 /* line 280, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input[type=checkbox], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input {
-  margin-top: 2px !important;
+  margin-top: 2px!important;
 }
 
 /* line 281, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input[type=radio], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input {
-  margin-top: 1px !important;
+  margin-top: 1px!important;
 }
 
 /* line 282, src/plugins/_gravityforms.scss */
@@ -5717,7 +5732,7 @@ img.ui-datepicker-trigger {
 
 /* line 285, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li label, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li label {
-  *display: inline-block !important;
+  *display: inline-block!important;
   *margin: 2px 0 0 6px;
 }
 
@@ -5726,18 +5741,18 @@ img.ui-datepicker-trigger {
 /* pretty specific inheritance but if your theme is structured identical to the Thesis theme it will affect yours as well */
 /* line 290, src/plugins/_gravityforms.scss */
 body.custom #container #page #content_box .post_box .format_text ul.gfield_radio li input, body.custom #container #page #content_box .post_box .format_text ul.gfield_checkbox li input {
-  width: auto !important;
-  border: none !important;
-  border-color: none !important;
-  background-color: none !important;
-  background: none !important;
+  width: auto!important;
+  border: none!important;
+  border-color: none!important;
+  background-color: none!important;
+  background: none!important;
 }
 
 /* line 291, src/plugins/_gravityforms.scss */
 body.custom #container #page #content_box .post_box .format_text .gform_footer input[type=image] {
-  border: none !important;
-  border-color: none !important;
-  background-color: none !important;
+  border: none!important;
+  border-color: none!important;
+  background-color: none!important;
 }
 
 /* line 292, src/plugins/_gravityforms.scss */
@@ -5810,7 +5825,7 @@ body.custom #container #page #content_box .post_box .format_text .gform_wrapper 
 
 /* line 307, src/plugins/_gravityforms.scss */
 .gform_wrapper .gform_validation_container {
-  display: none !important;
+  display: none!important;
 }
 
 /* Simple Captcha ------------------------------------------------------*/
@@ -5841,11 +5856,11 @@ body.custom #container #page #content_box .post_box .format_text .gform_wrapper 
 
 /* line 317, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_captcha_container img.gfield_captcha {
-  border: none !important;
-  background: none !important;
-  float: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  border: none!important;
+  background: none!important;
+  float: none!important;
+  margin: 0!important;
+  padding: 0!important;
 }
 
 /* Math Challenge ------------------------------------------------------*/
@@ -6117,7 +6132,7 @@ div.event dl dd.title-loc p,
   font-weight: bold;
   display: block;
   font-size: 2em;
-  margin-top: -.1em;
+  margin-top: -0.1em;
 }
 
 /* line 179, src/plugins/_gigpress.scss */
