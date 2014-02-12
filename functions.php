@@ -723,7 +723,7 @@ function college_add_options( $options ) {
     'type' => 'heading',
   );
 
-  if ( current_user_can( 'manage_network' ) ) {
+  if ( current_user_can( 'manage_network' ) || !is_multisite() ) {
 
     $options[] = array(
       'name' => __( 'Department Site', 'agriflex' ),
