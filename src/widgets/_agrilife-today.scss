@@ -1,22 +1,44 @@
 .agrilifetoday a {
-	text-decoration: none;
+  text-decoration: none;
 }
+
 #content-wrap .agrilifetoday li {
-	margin: 0;
+  margin: 0;
 }
+
 #content-wrap ul .agrilifetoday ul {
-	margin: 0;
+  margin: 0;
 }
-#aside .widget.agrilifetoday ul li {
-	padding: 0px 0px 2.8em 65px;
-	border-bottom: none;
-	border-top: none;
+
+#content .widget.agrilifetoday ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 0px 0px 2.8em 65px;
+    border-bottom: none;
+    border-top: none;
+
+    .rss-title {
+      font-size: 1.1em;
+    }
+  }
 }
-#aside ul li.widget-container.agrilifetoday ul li {
-	font-family: $widget-font;
-	font-size: 1.1em;
-	line-height: 1.1em;
+
+#aside {
+  .widget.agrilifetoday ul li {
+    padding: 0px 0px 2.8em 65px;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  ul li.widget-container.agrilifetoday ul li {
+    font-family: $widget-font;
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
 }
+
 .widget.agrilifetoday ul li img {
-	top: 0;
+  top: 0;
 }
