@@ -16,6 +16,7 @@ add_action('after_setup_theme','remove_parent_theme_setup');
 function agriflex_add_meta_fields() {
   include( 'inc/acf-fields.php' );
 }
+
 add_action( 'init', 'agriflex_add_meta_fields' );
 
 // Remove 'featured' meta fields
