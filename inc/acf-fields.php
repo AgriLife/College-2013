@@ -189,4 +189,106 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+
+	register_field_group(array (
+		'id' => 'acf_topics',
+		'title' => 'Topics',
+		'fields' => array (
+			array (
+				'key' => 'field_5248dn121d79e',
+				'label' => 'Topics Header',
+				'name' => 'topics_header',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5270025250308',
+				'label' => 'Topics',
+				'name' => 'page-topics',
+				'type' => 'repeater',
+				'sub_fields' => array (
+					array (
+						'key' => 'field_5270029d50309',
+						'label' => 'Topic Name',
+						'name' => 'topic-name',
+						'type' => 'text',
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'none',
+						'maxlength' => '',
+					),
+					array (
+						'key' => 'field_527002b45030a',
+						'label' => 'Topic Image',
+						'name' => 'topic-image',
+						'type' => 'image',
+						'column_width' => '',
+						'save_format' => 'object',
+						'preview_size' => 'program-img',
+						'library' => 'all',
+					),
+					array (
+						'key' => 'field_527002d45030b',
+						'label' => 'Topic Link',
+						'name' => 'topic-link',
+						'type' => 'page_link',
+						'column_width' => '',
+						'post_type' => array (
+							0 => 'page',
+							1 => 'people',
+						),
+						'allow_null' => 0,
+						'multiple' => 0,
+					),
+					array (
+						'key' => 'field_527003045030c',
+						'label' => 'Topic Description',
+						'name' => 'topic-description',
+						'type' => 'wysiwyg',
+						'column_width' => '',
+						'default_value' => '',
+						'toolbar' => 'basic',
+						'media_upload' => 'no',
+					),
+				),
+				'row_min' => 0,
+				'row_limit' => '',
+				'layout' => 'row',
+				'button_label' => 'Add Topic',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+				array (
+					'param' => 'page_template',
+					'operator' => '!=',
+					'value' => 'page-home.php',
+					'order_no' => 1,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
