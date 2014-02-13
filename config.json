@@ -2,5 +2,5 @@
 	"servers" : [ "coals" ],
 	"bower" : false,
 	"composer" : false,
-	"grunt" : false
+	"grunt" : true
 }
