@@ -10,6 +10,7 @@
 function remove_parent_theme_setup() {
 	remove_action( 'after_setup_theme', 'agriflex_setup' );
 }
+
 add_action('after_setup_theme','remove_parent_theme_setup');
 
 // Add the meta fields
