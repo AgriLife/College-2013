@@ -25,6 +25,7 @@ function agriflex_remove_featured() {
   remove_meta_box( 'agrilife_featured_post', 'post', 'side' );
   remove_meta_box( 'agrilife_featured_post', 'page', 'side' );
 }
+
 add_action( 'add_meta_boxes', 'agriflex_remove_featured', 99 );
 
 
