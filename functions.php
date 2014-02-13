@@ -18,6 +18,13 @@ function agriflex_add_meta_fields() {
 }
 add_action( 'init', 'agriflex_add_meta_fields' );
 
+// Remove 'featured' meta fields
+function agriflex_remove_featured() {
+  remove_meta_box( 'agrilife_featured_post', 'post', 'side' );
+  remove_meta_box( 'agrilife_featured_post', 'page', 'side' );
+}
+add_action( 'add_meta_boxes', 'agriflex_remove_featured', 99 );
+
 
 function agriflex_college_setup() {
 	// Remove things that get stuck up in the doc head that we don't need
@@ -267,7 +274,7 @@ function agriflex_college_second_nav() {
   $urls = array(
     'college-former-students-url' => array(
       'label' => 'Former Students',
-      'url' => 'http://aglifesciences.tamu.edu/future-students/',
+      'url' => 'http://aglifesciences.tamu.edu/former-students/',
     ),
     'college-current-students-url' => array(
       'label' => 'Current Students',
@@ -275,7 +282,7 @@ function agriflex_college_second_nav() {
     ),
     'college-future-students-url' => array(
       'label' => 'Future Students',
-      'url' => 'http://aglifesciences.tamu.edu/former-students/',
+      'url' => 'http://aglifesciences.tamu.edu/future-students/',
     ),
     'college-faculty-staff-url' => array(
       'label' => 'Faculty/Staff',
@@ -696,7 +703,7 @@ function college_add_options( $options ) {
   $departments = array(
     '----',
     'Agricultural Economics' => 'Agricultural Economics',
-    'Agricultural Leadership, Education and Communities' => 'Agricultural Leadership, Education and Communities',
+    'Agricultural Leadership, Education, and Communications' => 'Agricultural Leadership, Education, and Communications',
     'Animal Science' => 'Animal Science',
     'Biochemistry and Biophysics' => 'Biochemistry and Biophysics',
     'Biological and Agricultural Engineering' => 'Biological and Agricultural Engineering',
@@ -716,7 +723,8 @@ function college_add_options( $options ) {
     'type' => 'heading',
   );
 
-  if ( current_user_can( 'manage_network' ) ) {
+  if ( current_user_can( 'manage_network' ) || !is_multisite() ) {
+
     $options[] = array(
       'name' => __( 'Department Site', 'agriflex' ),
       'desc' => __( 'This is a department site', 'agriflex' ),
@@ -732,6 +740,15 @@ function college_add_options( $options ) {
       'id' => 'college-department-name',
       'options' => $departments,
     );
+
+    $options[] = array(
+      'name' => __( 'Auxiliary College Site', 'agriflex' ),
+      'desc' => __( 'This is an auxiliary college site', 'agriflex' ),
+      'type' => 'checkbox',
+      'id' => 'college-aux',
+      'std' => false,
+    );
+
   }
 
   $options[] = array(
@@ -781,6 +798,29 @@ function college_add_options( $options ) {
   return $options;
 
 }
+add_action('optionsframework_custom_scripts', 'college_options_scripts');
+function college_options_scripts() {
+?>
+<script>
+  jQuery(document).ready( function() {
+    var audience = jQuery('#section-college-former-students-url, #section-college-current-students-url, #section-college-future-students-url, #section-college-faculty-staff-url, #section-college-giving-url');
+    if ( jQuery('#college-aux').is(':checked') ){
+      audience.hide();
+    }
+    jQuery('#college-aux').change(function() {
+      console.log('Changed');
+      if(jQuery('#college-aux').is(':checked') ){
+        audience.hide();
+      } else {
+        audience.show();
+      }
+    });
+  });
+</script>
+
+<?php
+}
+
 
 add_action( 'wp_footer', 'college_background_image', 50 );
 /**
@@ -805,6 +845,7 @@ add_action( 'agriflex_header', 'college_department_name', 2 );
 function college_department_name() {
 
   $is_department = of_get_option( 'college-department' );
+  $is_aux = of_get_option( 'college-aux' );
 
   if ( $is_department ) {
     $department_name = of_get_option( 'college-department-name' );
@@ -814,6 +855,11 @@ function college_department_name() {
     echo $department_name;
     echo '</h1>';
     echo '</div>';
+  } elseif ( $is_aux ) {
+    printf( '<div id="site-title"><h1 class="site-name">%s</h1><h2 class="site-desc">%s</h2></div>',
+      get_bloginfo( 'name' ),
+      get_bloginfo( 'description' )
+    );
   }
 
 }
@@ -833,5 +879,17 @@ function college_department_body_class( $classes ) {
 
 }
 
+add_action( 'agriflex_after_loop', 'college_show_topics' );
+function college_show_topics() {
+
+  wp_reset_query();
+
+  if ( is_page() ) {
+    if ( get_field( 'page-topics' ) ) {
+      get_template_part( 'topics' );
+    }
+  }
+
+}
 
 ?>
