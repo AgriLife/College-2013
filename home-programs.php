@@ -4,12 +4,9 @@
 	<div class="program-list">
 		<?php $i = 1; ?>
 		<?php $programs = array_chunk( get_field( 'coals_program_units' ), 3 );
-			foreach ( $programs as $chunk ) {
-				printf( '<div class="program-row">%s</div><!-- .program-row -->',
-						agriflex_display_programs( $chunk )
-				);
-			}
-		?>
+		foreach ( $programs as $chunk ) : ?>
+			<div class="program-row"><?php echo agriflex_display_programs( $chunk ); ?> </div><!-- .program-row -->
+		<?php endforeach; ?>
 	</div>
 </div>
 
@@ -18,7 +15,9 @@
 
 function agriflex_display_programs( $chunk ) {
 
+	ob_start();
 	foreach ( $chunk as $program ) : ?>
+
 
 		<div class="single-program">
 			<a href="<?php echo $program['program_page']; ?>">
@@ -34,5 +33,8 @@ function agriflex_display_programs( $chunk ) {
 		</div>
 
 	<?php endforeach;
-	
+	$output = ob_get_clean();
+
+	return $output;
+
 }
