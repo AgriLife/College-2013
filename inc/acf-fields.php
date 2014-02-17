@@ -1,10 +1,10 @@
 <?php
 /**
  *  Install Add-ons
- *  
+ *
  *  The following code will include all 4 premium Add-Ons in your theme.
  *  Please do not attempt to include a file which does not exist. This will produce an error.
- *  
+ *
  *  The following code assumes you have a folder 'add-ons' inside your theme.
  *
  *  IMPORTANT
@@ -12,9 +12,9 @@
  *  For more information, please read:
  *  - http://www.advancedcustomfields.com/terms-conditions/
  *  - http://www.advancedcustomfields.com/resources/getting-started/including-lite-mode-in-a-plugin-theme/
- */ 
+ */
 
-// Add-ons 
+// Add-ons
 // include_once('add-ons/acf-repeater/acf-repeater.php');
 // include_once('add-ons/acf-gallery/acf-gallery.php');
 // include_once('add-ons/acf-flexible-content/acf-flexible-content.php');
@@ -85,11 +85,10 @@ if(function_exists("register_field_group"))
 				'key' => 'field_522f398e2859a',
 				'label' => 'Welcome Text',
 				'name' => 'welcome_text',
-				'type' => 'textarea',
+				'type' => 'wysiwyg',
 				'default_value' => '',
-				'placeholder' => '',
-				'maxlength' => 1000,
-				'formatting' => 'br',
+				'toolbar' => 'basic',
+				'media_upload' => 'no',
 			),
 			array (
 				'key' => 'field_524066c71d79e',
