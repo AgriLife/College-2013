@@ -46,7 +46,7 @@ function agriflex_college_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// Add new image sizes
-	add_image_size( 'home-ss', 748, 494, true );  
+	add_image_size( 'home-ss', 748, 494, true );
   add_image_size( 'program-img', 215, 115, true );
 
 	// Register the menus
@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'agriflex_remove_home_bottom_sidebar', 11 );
 function agriflex_remove_home_bottom_sidebar() {
 
   unregister_sidebar( 'home-middle-1' );
-  
+
 }
 
 // register Category_Widget widget
@@ -129,9 +129,9 @@ add_action( 'after_setup_theme', 'agriflex_college_setup' );
 
 
 // Load New .js for College
-add_action(	'wp_enqueue_scripts', 'load_new_js' );    
+add_action(	'wp_enqueue_scripts', 'load_new_js' );
 function load_new_js() {
-  
+
   // drop fitvids
   wp_deregister_script( 'fitvids' );
 
@@ -145,7 +145,7 @@ function load_new_js() {
 		  '1.0',
 		  true);
 		wp_enqueue_script( 'college_scripts' );
-	}                
+	}
 }
 
 // Add specific CSS class by filter
@@ -193,7 +193,7 @@ function agriflex_add_ie_scripts() {
   $html .=   "\n<!--[if IE 8]>\n";
   $html .=  ' <script src="'.get_stylesheet_directory_uri().'/js/respond/respond.min.js"></script>';
   $html .=  "\n<![endif]-->\n";
-    
+
   echo $html;
 
 } // agriflex_add_ie_scripts
@@ -230,7 +230,7 @@ function agriflex_add_js_class() {
 	$html .= 		"doc.removeAttribute('class', 'no-js');";
 	$html .= 		"doc.setAttribute('class', 'js');";
 	$html .= 	'</script>';
-  	
+
   	echo $html;
 
 } // agriflex_add_js_class
@@ -473,7 +473,7 @@ function typekit_js_college() {
       /* Hide the blog title and post titles while web fonts are loading */
       visibility: hidden;
       }
-    </style>                        
+    </style>
   <?php
   endif;
 
@@ -520,9 +520,9 @@ function agriflex_college_footer() {
         <img src="<?php echo get_stylesheet_directory_uri() . '/images/tamu-white.png' ?>" alt="TAMU Logo" />
       </a>
     </div>
-	
+
 	<?php
-	
+
 	$html = ob_get_clean();
     echo $html;
 
@@ -558,12 +558,12 @@ function agriflex_college_post_thumbnail( $size = 'featured-mediabox' ) {
   if ( has_post_thumbnail( $post->ID ) ) {
   	// Show the post thumbnail
   	$html = '<a class="feature-img-excerpt" href="' . get_permalink( $post->ID ) . '">';
-    $html .= get_the_post_thumbnail( $post->ID, $size ); 
+    $html .= get_the_post_thumbnail( $post->ID, $size );
     $html .= '</a>';
-    
+
 	  echo $html;
-  } 
-  
+  }
+
 
 } // agriflex_post_thumbnail
 
@@ -579,7 +579,7 @@ add_action( 'widgets_init', 'remove_some_widgets', 20 );
 
 /**
  * This Conditional Tag checks if the main Blog page is being displayed.
- * 
+ *
  * @link https://gist.github.com/wesbos/1189639
  */
 function is_blog () {
@@ -591,7 +591,7 @@ function is_blog () {
 /**
  * Display navigation to next/previous pages/posts when applicable
  * Works on single entries and loops and main blog page
- * 
+ *
  * @since College 2013
  * @author Travis Ward <travis@travisward.com>
  * @global $wp_query
@@ -630,12 +630,12 @@ function agriflex_content_nav( $nav_id ) {
 
       <?php previous_post_link( '<div class="nav-previous">%link</div>',
         '<span class="meta-nav">' .
-        _x( '&larr;', 'Previous post', 'agriflex' ) . 
+        _x( '&larr;', 'Previous post', 'agriflex' ) .
         '</span> %title' ); ?>
 
       <?php next_post_link( '<div class="nav-next">%link</div>',
         '%title <span class="meta-nav">' .
-        _x( '&rarr;', 'Newer posts', 'agriflex' ) . 
+        _x( '&rarr;', 'Newer posts', 'agriflex' ) .
         '</span>' ); ?>
 
     <?php elseif ( $wp_query->max_num_pages > 1 && ( is_archive() || is_search() || is_blog() ) ) : ?>
@@ -672,7 +672,7 @@ function agriflex_college_after_primary_nav() {
  * Retrieves all sample images from the backgrounds folder
  * @since 1.0
  * @return array Array of image files
- * 
+ *
  */
 function college_get_background_images() {
 
@@ -726,8 +726,6 @@ function college_add_options( $options ) {
     'type' => 'heading',
   );
 
-  if ( current_user_can( 'manage_network' ) || !is_multisite() ) {
-
     $options[] = array(
       'name' => __( 'Department Site', 'agriflex' ),
       'desc' => __( 'This is a department site', 'agriflex' ),
@@ -751,8 +749,6 @@ function college_add_options( $options ) {
       'id' => 'college-aux',
       'std' => false,
     );
-
-  }
 
   $options[] = array(
     'name' => 'Background Image',
