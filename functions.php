@@ -750,6 +750,14 @@ function college_add_options( $options ) {
       'std' => false,
     );
 
+	$options[] = array(
+		'name' => __( 'Google Custom Search ID', 'agriflex' ),
+		'desc' => __( 'Default: 000100048838736456753:ykqhnacn-nc' ),
+		'type' => 'text',
+		'id' => 'google-search-id',
+		'std' => '000100048838736456753:ykqhnacn-nc',
+	);
+
   $options[] = array(
     'name' => 'Background Image',
     'desc' => 'Select a background image',

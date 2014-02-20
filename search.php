@@ -7,6 +7,10 @@
  * @since agrilifeorg 1.0
  */
 
+// Get the search ID. Set default if not specified.
+$search_id = of_get_option( 'google-search-id' );
+$search_id = $search_id ? $search_id : '000100048838736456753:ykqhnacn-nc';
+
 get_header(); ?>
 
 <div id="wrap">
@@ -21,7 +25,7 @@ get_header(); ?>
 		  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
 		  customSearchOptions['enableOrderBy'] = true;
 		  customSearchOptions['orderByOptions'] = orderByOptions;
-		  var customSearchControl =   new google.search.CustomSearchControl('000100048838736456753:ykqhnacn-nc', customSearchOptions);
+		  var customSearchControl =   new google.search.CustomSearchControl( '<?php echo $search_id; ?>', customSearchOptions);
 		  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 		  var options = new google.search.DrawOptions();
 		  options.enableSearchResultsOnly();
