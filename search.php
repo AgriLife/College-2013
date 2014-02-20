@@ -9,7 +9,9 @@
 
 // Get the search ID. Set default if not specified.
 $search_id = of_get_option( 'google-search-id' );
-$search_id = $search_id ? $search_id : '000100048838736456753:ykqhnacn-nc';
+if ( empty( $search_id ) ) {
+	$search_id = '000100048838736456753:ykqhnacn-nc';
+}
 
 get_header(); ?>
 
