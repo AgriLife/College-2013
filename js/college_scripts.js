@@ -94,25 +94,6 @@ jQuery(document).ready(function() {
 
     });
 
-/*
-    //  Patch for Mobile Safari's orientation change bug
-    //  Based on http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-	var viewport = $('meta[name="viewport"]');
-	var nua = navigator.userAgent;
-		if ((nua.match(/iPad/i)) || (nua.match(/iPhone/i)) || (nua.match(/iPod/i))) {
-			viewport.attr('content', 'width=device-width, minimum-scale=1.0, maximum-scale=1.0');
-		$('body')[0].addEventListener("gesturestart", gestureStart, false);
-		}
-		function gestureStart() {
-			viewport.attr('content', 'width=device-width, minimum-scale=0.25, maximum-scale=1.6');
-		}
-		
-	$.fn.fadeToggle = function(speed, easing, callback) {
-       return this.animate({opacity: "toggle"}, speed, easing, callback);
-    };
-*/
-
-
 	// Toggle click for sub-menus on touch screens
 	$('.touch .sf-with-ul').click(function() {
 		$(this).find('.sub-menu').hide.slideToggle('medium');
@@ -161,30 +142,6 @@ jQuery(document).ready(function() {
 	// @todo: Load only on /social page
 	// jQuery(".social-accounts").accordion();
 
-
-	// Collapse Side Menus
-	var timer = null;
-
-	$('.widget_nav_menu.widget-container .sub-menu').hide();
-
-	$('.widget_nav_menu.widget-container .menu-item').hover(
-		function() {
-			var theElement = this;
-			timer = setTimeout(function() {
-				timer = null;
-				$(theElement).has('ul').addClass('down');
-				$(theElement).children('ul').delay(50).slideDown('medium', function() {});
-			}, 500);
-		},
-		function() {
-			if (timer) {
-				clearTimeout(timer);
-				timer = null;
-			}
-			$(this).has('ul').removeClass('down');
-			$(this).children('ul').delay(50).slideUp('medium', function() {});
-		}
-    );
 });
 
 } // appInit
