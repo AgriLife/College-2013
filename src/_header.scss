@@ -2,202 +2,216 @@
 
 /* Text meant only for screen readers */
 .screen-reader-text {
-	position: absolute;
-	@include visually-hidden;
+  position: absolute;
+  @include visually-hidden;
 }
 
 // =Logos  -------------------------------------------------------------- */
 
 .site-title {
-	margin: 0;
-	a {
-		color: #500000;
-		@include image-replacement;
-		display: block;
-		background: url('images/logo-w@2x.png') no-repeat center;
-		background-size: 183px 34px;
-		position: relative;
-		width: 183px;
-		height: 34px;	
-		z-index: 99;
-		&:hover {
-			color: #500000;
-		}
-	}
+  margin: 0;
+  a {
+    color: #500000;
+    @include image-replacement;
+    display: block;
+    background: url('images/logo-w@2x.png') no-repeat center;
+    background-size: 183px 34px;
+    position: relative;
+    width: 183px;
+    height: 34px;
+    z-index: 99;
+    &:hover {
+      color: #500000;
+    }
+  }
 }
 
 #drop-section-nav {
-		background: white;
-		background: #500000;
-		padding: 1em 0 .7em 0;
-		ul {
-			margin: 0;
-			padding: 0 0 0 3%;
-		}
-	}
+  background: white;
+  background: #500000;
+  padding: 1em 0 .7em 0;
+  ul {
+    margin: 0;
+    padding: 0 0 0 3%;
+  }
+}
 
 // =Header -------------------------------------------------------------- */
 
 #header {
-	overflow: hidden;
-	padding-left: 5%;
-	padding-right: 5%;		
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
 #site-title {
-	text-align: center; 
-	margin-top: .3em;
-	margin-bottom: .3em;	
-	line-height: .875em; /* 14px / 16px */	
+  text-align: center;
+  margin-top: .3em;
+  margin-bottom: .3em;
+  line-height: .875em; /* 14px / 16px */
 }
 
 #site-title a {
-	border: none;
-	color: #443d3a;
-	padding: 0;
-	font-size: .75em; /* 12px / 16px */	
+  border: none;
+  color: #443d3a;
+  padding: 0;
+  font-size: .75em; /* 12px / 16px */
 }
 
 #site-title a img {
-	display: none;
+  display: none;
 }
 
 #site-title a em {
-	display: block;
-	overflow: hidden;
-	font-size: 1.3em;
-	font-style: normal;
-	font-weight: 400;
-	padding-left: 7px;
-	padding-bottom: 10px;
+  display: block;
+  overflow: hidden;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 7px;
+  padding-bottom: 10px;
 }
 
 #site-description {
-	display: none;
+  display: none;
+}
+
+#breadcrumbs {
+  margin-bottom: 1.6em;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 0;
+  line-height: 1.4em;
+  color: #ABAAAA;
+}
+
+#breadcrumbs a {
+  border: none;
+  color: #ABAAAA;
 }
 
 @media all and (min-width: $breakpoint-medium) {
-	body {
-		font-size: 110%;
-	}
-	#site-title {
-		margin: 20px 0;	
-	}
-	#site-title a {
-		font-size: 1em;		
-		line-height: 1.125em; /* 18px / 16px */		
-	}
-	#breadcrumbs {
-		width: 100%;
-		margin-right: 25px;
-		border-top: 2px solid #dcdace;
-		border-bottom: 2px solid #dcdace;	
-		background: #fff;	
-		padding: .8em 10px;		
-	}
-	
-	#content-wrap {
-		@include box-shadow(none);
-	}
-}		
+  body {
+    font-size: 110%;
+  }
+  #site-title {
+    margin: 20px 0;
+  }
+  #site-title a {
+    font-size: 1em;
+    line-height: 1.125em; /* 18px / 16px */
+  }
+
+  #content-wrap {
+    @include box-shadow(none);
+  }
+}
 
 @media all and (min-width: $breakpoint-biggest) {
-	body {
-		background: $body-background-color;
-	}
-	#bg-image-container {
-		width: 100%;
-		top: 42px;
-		position: absolute;
-		z-index: -1;
-		background-color: transparent;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 0;
-		padding-bottom: 25%;
-		min-height: 400px;
-	}
-	.wrap {
-		margin-top: 5%;
-	}
+  body {
+    background: $body-background-color;
+  }
+  #bg-image-container {
+    width: 100%;
+    top: 42px;
+    position: absolute;
+    z-index: -1;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 25%;
+    min-height: 400px;
+  }
+  .wrap {
+    margin-top: 5%;
+  }
 
-	#wrapper {
-		max-width: 100%;
-		margin: 0;
-		padding-top: 110px;
-	}
+  #wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding-top: 110px;
+  }
 
-	.college-department #wrapper {
-		padding-top: 170px;
-	}
+  .college-department #wrapper {
+    padding-top: 170px;
+  }
 
-	.js #access {
-		display: block;	
-	}
+  .js #access {
+    display: block;
+  }
 
-	body {
-		@include background-image(linear-gradient($upper-background-color 1200px, $body-background-color 1700px));
-	}
+  body {
+    @include background-image(linear-gradient($upper-background-color 1200px, $body-background-color 1700px));
+  }
 
-	#content-wrap {
-		background: url("images/bg-titles2.png") top right no-repeat transparent;
-		background-size: 2048px;
-		padding-top: 1px;
-		margin-top: 15px;
-		&:before,
-		&:after {
-    		content:"";
-    		display:table;
-		}
-		#content-wrap:after {
-    		clear:both;
-		}
-	}
-	
-	#drop-section-nav {
-		width: 100%;
-		background: #5E564E;
-		padding: 0;
-		height: 42px;
-		position: absolute;
-		z-index: 3;
-		ul {
-			padding: 0;
-		}
-		#drop-nav {
-			width: $desktop-stage-width;
-			margin: 0 auto;
-		}
-	}
+  #content-wrap {
+    background: url("images/bg-titles2.png") top right no-repeat transparent;
+    background-size: 2048px;
+    padding-top: 1px;
+    margin-top: 15px;
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+    #content-wrap:after {
+      clear: both;
+    }
+  }
 
-	.site-title {
-		height: 42px;
-		float: left;
-		a {
-			@include image-replacement;
-			border-bottom: #fff 10px solid;
-			border-right: #fff 13px solid;
-			border-left: #fff 13px solid;
-			padding: 27px 20px 37px 20px;
-			position: absolute;
-			background: url('images/logo-w@2x.png') no-repeat center #500000;
-			background-size: 200px 37px;
-			width: 200px;
-			height: 37px;
-			&:hover {
-				color: #500000;
-				border-color: #fff;
-			}
-		}
-	}
+  #drop-section-nav {
+    width: 100%;
+    background: #5E564E;
+    padding: 0;
+    height: 42px;
+    position: absolute;
+    z-index: 3;
+    ul {
+      padding: 0;
+    }
+    #drop-nav {
+      width: $desktop-stage-width;
+      margin: 0 auto;
+    }
+  }
 
+  .site-title {
+    height: 42px;
+    float: left;
+    a {
+      @include image-replacement;
+      border-bottom: #fff 10px solid;
+      border-right: #fff 13px solid;
+      border-left: #fff 13px solid;
+      padding: 27px 20px 37px 20px;
+      position: absolute;
+      background: url('images/logo-w@2x.png') no-repeat center #500000;
+      background-size: 200px 37px;
+      width: 200px;
+      height: 37px;
+      &:hover {
+        color: #500000;
+        border-color: #fff;
+      }
+    }
+  }
 
-	/* Agency Specific Styles */
-	/* @import "agencies/tvmdl"; */
-	/* @import "agencies/extension-county"; */
-	/* @import "agencies/fazd"; */
-	
-	
-	@import "agency-logorama";
-	
+  #breadcrumbs {
+    position: absolute;
+    top: -37px;
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    text-indent: 4%;
+  }
+
+  /* Agency Specific Styles */
+  /* @import "agencies/tvmdl"; */
+  /* @import "agencies/extension-county"; */
+  /* @import "agencies/fazd"; */
+
+  @import "agency-logorama";
 
 }

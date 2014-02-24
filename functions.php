@@ -529,6 +529,18 @@ function agriflex_college_footer() {
 } // agriflex_about_footer
 
 
+/**
+ * Print the breadcrumb trail when Yoast SEO plugin is activated
+ *
+ * @author Travis Ward <travis@travisward.com>
+ * @since College 2013
+ */
+function remove_agriflex_breadcrumbs() {
+    remove_action( 'agriflex_before_loop', 'agriflex_do_breadcrumbs' );
+    add_action('agriflex_content_wrap', 'agriflex_do_breadcrumbs');
+}
+add_action( 'init', 'remove_agriflex_breadcrumbs' );
+
 
 /**
  * Prints HTML with meta information for the current post—date/time and author.
