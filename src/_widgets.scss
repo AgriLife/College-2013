@@ -1,262 +1,208 @@
 .widget-container {
-	padding: 0;
-	position: relative;
-	margin-bottom: 20px;	
-	background: #fff;
-	.widget-wrap {
-		padding: 0;
-	}
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
+  background: #fff;
+  .widget-wrap {
+    padding: 0;
+  }
 
-	h3.widget-title {
-		font-size: 1.2em;
-		font-family: $ornate-title-font-widgets;
-		font-weight: $ornate-title-font-weight-widgets;
-		//padding: 5% 3% 5% 5%;
-		padding: 4% 4% 4% 5%;
-		margin-bottom: 0;
-		//@include box-shadow(#666 0 20px 30px -8px);
-		letter-spacing: 1px;
-		line-height: 1em;
-		background: url('images/bg-titles2.png') top right no-repeat transparent;
-		background-size: 1024px 240px; 
-		@media all and (min-width: $breakpoint-medium) {
-			background-size: 2048px 480px; 
-		}
-		@media all and (min-width: $breakpoint-biggest) {
-			background-size: 1024px 240px; 
-		}
-		color: #fff;
-		text-align: left;
-		text-transform: uppercase;
-	}
+  h3.widget-title {
+    font-size: 1.2em;
+    font-family: $ornate-title-font-widgets;
+    font-weight: $ornate-title-font-weight-widgets;
+    //padding: 5% 3% 5% 5%;
+    padding: 4% 4% 4% 5%;
+    margin-bottom: 0;
+    //@include box-shadow(#666 0 20px 30px -8px);
+    letter-spacing: 1px;
+    line-height: 1em;
+    background: url('images/bg-titles2.png') top right no-repeat transparent;
+    background-size: 1024px 240px;
+    @media all and (min-width: $breakpoint-medium) {
+      background-size: 2048px 480px;
+    }
+    @media all and (min-width: $breakpoint-biggest) {
+      background-size: 1024px 240px;
+    }
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+  }
 
-	&.widget_rss ul li,
-	&.widget_twitter ul li {
-		font-family: $widget-font;
-		font-size: $widget-font-size;	
-	}
+  &.widget_rss ul li,
+  &.widget_twitter ul li {
+    font-family: $widget-font;
+    font-size: $widget-font-size;
+  }
 }
 
-#content-wrap .widget_nav_menu {
-	font-size: .8em;
+#content-wrap .widget_nav_menu,
+.widget_jc_split_menu_widget {
 
-	h3.widget-title {
-		background: transparent;
-		color: #500000;
-		font-family: sans-serif;
-		text-transform: none;
-		@include box-shadow(none);
-		padding: 0;
-	}
+  .menu > li {
+    font-size: 1.2em;
+  }
 
-	li {
-		background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px .8em;
-		border-top: 0;
-		text-indent: 25px;
-		@include transition-property(all);
-  		@include transition-duration(.3s);
-  		@include transition-timing-function(ease);
-		margin: 0;
-		a {
-			border-bottom: 1px dashed #DAD6C7;
-			padding: 0;
-			padding: .4em 0;
-			font-style: italic;
-			display: block;
-			text-decoration: none;
-			&:hover {
-				//border-bottom: 1px dashed #666;
-				text-decoration: underline;
-			}
-		}
-		ul {
-			list-style: none;
-			padding: 0 0 3% 0;
-			a {
-				border-bottom: 0;
-				padding: 0;
-			}
-		}
-		li {
-			border: none;
-			overflow: hidden;
-			background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px .4em;
-			text-indent: 15px;
-		}
-		&.down {	
-			background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 6px .8em; 
-			li.down { 
-				background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 16px .8em; 
-				li.down { 
-					background: url(http://agrilife.org/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 26px .8em; 
-				}
-			}
-		}
-	}
-	ul.sub-menu li { margin-left: 1em;}
+  h3.widget-title {
+    background: transparent;
+    color: #500000;
+    font-family: sans-serif;
+    text-transform: none;
+    @include box-shadow(none);
+    padding: 0;
+  }
+
+  li > a:before {
+    border: none;
+    content: "\00bb";
+    margin-right: .5rem;
+    line-height: 1.2;
+  }
+
+
+  li {
+    border-top: 0;
+    text-indent: 5px;
+    margin: 0;
+    a {
+      padding: .2em 0;
+      font-style: italic;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        background-color: rgba(0,0,0,0.05);
+      }
+    }
+    ul {
+      list-style: none;
+
+      a {
+        border-bottom: 0;
+        padding: 0;
+      }
+    }
+  }
+  ul.sub-menu > li {
+    margin-left: 1em;
+    font-size: .9em;
+  }
+  .current-menu-item + a  {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
-
+#aside .widget-container .widget-wrap ul {
+  padding: 0 0 1% 0;
+}
 
 
 .widget-container {
-	padding: 0;
-	position: relative;
-	margin-bottom: 20px;	
-	background: #fff;
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
+  background: #fff;
 
-	.widget-wrap {
-		padding: 0;
-	}
+  .widget-wrap {
+    padding: 0;
+  }
 
-	h3.widget-title {
-		font-size: 1.2em;
-		font-family: $ornate-title-font-widgets;
-		font-weight: $ornate-title-font-weight-widgets;
-		padding: 3% 3% 3% 3%;
-		margin-bottom: 0;
-		letter-spacing: 1px;
-		line-height: 1em;
-		background: url('images/bg-titles2.png') top right no-repeat transparent;
-		background-size: 1024px 240px; 
-		/*@media all and (min-width: $breakpoint-medium) {
-			background-size: 2048px 480px; 
-		}
-		@media all and (min-width: $breakpoint-biggest) {
-			background-size: 1024px 240px; 
-		}*/
-		color: #fff;
-		text-align: left;
-		text-transform: uppercase;
-	}
+  h3.widget-title {
+    font-size: 1.2em;
+    font-family: $ornate-title-font-widgets;
+    font-weight: $ornate-title-font-weight-widgets;
+    padding: 3% 3% 3% 3%;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    line-height: 1em;
+    background: url('images/bg-titles2.png') top right no-repeat transparent;
+    background-size: 1024px 240px;
+    /*@media all and (min-width: $breakpoint-medium) {
+        background-size: 2048px 480px;
+    }
+    @media all and (min-width: $breakpoint-biggest) {
+        background-size: 1024px 240px;
+    }*/
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+  }
 
-	&.widget_rss ul li,
-	&.widget_twitter ul li {
-		font-family: $widget-font;
-		font-size: $widget-font-size;	
-	}
-}
-
-#content-wrap .widget_nav_menu {
-	font-size: .8em;
-
-	h3.widget-title {
-		background: transparent;
-		color: #500000;
-		font-family: sans-serif;
-		text-transform: none;
-		@include box-shadow(none);
-		padding: 0;
-	}
-
-	li {
-		background: url(//agrilifecdn.tamu.edu/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat 6px .8em;
-		border-top: 0;
-		text-indent: 25px;
-		@include transition-property(all);
-  		@include transition-duration(.3s);
-  		@include transition-timing-function(ease);
-		margin: 0;
-		a {
-			border-bottom: 1px dashed #DAD6C7;
-			padding: 0;
-			padding: .4em 0;
-			font-style: italic;
-			display: block;
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-		ul {
-			list-style: none;
-			padding: 0 0 3% 0;
-			a {
-				border-bottom: 0;
-				padding: 0;
-			}
-		}
-		li {
-			border: none;
-			overflow: hidden;
-			background: url(//agrilifecdn.tamu.edu/wp-content/themes/AgriLife-Beta/images/arrow-right-2.png) no-repeat -3px .4em;
-			text-indent: 15px;
-		}
-		&.down {	
-			background: url(//agrilifecdn.tamu.edu/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 6px .8em; 
-			li.down { 
-				background: url(//agrilifecdn.tamu.edu/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 16px .8em; 
-				li.down { 
-					background: url(//agrilifecdn.tamu.edu/wp-content/themes/AgriLife-Beta/images/arrow-down-2.png) no-repeat 26px .8em; 
-				}
-			}
-		}
-	}
-	ul.sub-menu li { margin-left: 1em;}
+  &.widget_rss ul li,
+  &.widget_twitter ul li {
+    font-family: $widget-font;
+    font-size: $widget-font-size;
+  }
 }
 
 .widget_twitter h3.widget-title {
-	background-position: right -180px;
+  background-position: right -180px;
 }
+
 .agrilife_today_twitter h3.widget-title,
 .home-widgets-lower .widget:first-child h3.widget-title {
-	background-position: right -120px;
+  background-position: right -120px;
 }
+
 .widget_twitter .widget-wrap ul {
-	padding: 0;
-	margin: 0 0 .5em;
+  padding: 0;
+  margin: 0 0 .5em;
 }
+
 .widget_twitter li {
-	padding: .5em 6% 1em;
-	border-bottom: 1px dashed #999;
+  padding: .5em 6% 1em;
+  border-bottom: 1px dashed #999;
 }
+
 .widget-container h3.widget-title a {
-	color: white;
+  color: white;
 }
+
 .home .widget h3.widget-title .rsswidget img {
-	display: none;
+  display: none;
 }
 
 .home-widgets {
-	width: 100%;
-	// padding: 1.5%;
+  width: 100%;
+  // padding: 1.5%;
 }
 
 .home-widget-left, .home-widget-right {
-	float: left;
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 
 #aside {
-	li:nth-child(4n+1) h3.widget-title {
-		background-position: right -120px;
-	}
-	li:nth-child(4n+2) h3.widget-title {
-		background-position: right -61px;
-	}
-	li:nth-child(4n+3) h3.widget-title{
-		background-position: right -180px;
-	}
+  li:nth-child(4n+1) h3.widget-title {
+    background-position: right -120px;
+  }
+  li:nth-child(4n+2) h3.widget-title {
+    background-position: right -61px;
+  }
+  li:nth-child(4n+3) h3.widget-title {
+    background-position: right -180px;
+  }
 }
 
 @media screen and (min-width: $breakpoint-medium) {
 
-	.home-widgets {
-		padding-right: 3%;
-	}
+  .home-widgets {
+    padding-right: 3%;
+  }
 
-	.home-widget-left, .home-widget-right {
-		float: left;
-		width: 47%;
-		margin: 0 1.5%;
-	}
+  .home-widget-left, .home-widget-right {
+    float: left;
+    width: 47%;
+    margin: 0 1.5%;
+  }
 
-	.widget-container h3.widget-title {
-		background-size: 1024px 240px;
-		padding: 1.5% 2%;
-	}
+  .widget-container h3.widget-title {
+    background-size: 1024px 240px;
+    padding: 1.5% 2%;
+  }
 
-	#aside h3.widget-title {
-			padding: 3% 4% 3% 5%;
-		}
+  #aside h3.widget-title {
+    padding: 3% 4% 3% 5%;
+  }
 
 }
