@@ -968,7 +968,7 @@ body.admin-bar .menu-button {
   top: 2em;
 }
 
-/* line 37, src/_menus.scss */
+/* line 36, src/_menus.scss */
 [role="navigation"] li a {
   padding: .7em 2em;
   border-top-color: #f9f9f9;
@@ -977,17 +977,17 @@ body.admin-bar .menu-button {
   border-style: solid none;
 }
 
-/* line 45, src/_menus.scss */
+/* line 44, src/_menus.scss */
 #access .menu {
   padding: 0;
 }
-/* line 47, src/_menus.scss */
+/* line 46, src/_menus.scss */
 #access .menu ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 57, src/_menus.scss */
+/* line 56, src/_menus.scss */
 body.no-touch #access ul.menu a {
   font-size: 1.6em;
   text-shadow: 0 1px 0 #fff;
@@ -995,18 +995,18 @@ body.no-touch #access ul.menu a {
   text-shadow: none;
 }
 
-/* line 64, src/_menus.scss */
+/* line 63, src/_menus.scss */
 body.mobile #access .menu-header li ul.sub-menu {
   display: none;
 }
 
-/* line 68, src/_menus.scss */
+/* line 67, src/_menus.scss */
 body.touch #access .menu-header li ul.sub-menu {
   display: none;
 }
 
 @media all and (min-width: 840px) {
-  /* line 73, src/_menus.scss */
+  /* line 72, src/_menus.scss */
   .js #access {
     display: block;
     background-color: #333;
@@ -1018,47 +1018,47 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* main menu */
-  /* line 83, src/_menus.scss */
+  /* line 82, src/_menus.scss */
   #access ul {
     padding: 0 0 0 12px;
   }
 
-  /* line 86, src/_menus.scss */
+  /* line 85, src/_menus.scss */
   #access ul.menu li {
     margin: 0;
     padding: 0 18px 0 0;
     float: left;
   }
 
-  /* line 92, src/_menus.scss */
+  /* line 91, src/_menus.scss */
   #access .menu-header ul.sub-menu li {
     margin-left: 0;
   }
 
-  /* line 93, src/_menus.scss */
+  /* line 94, src/_menus.scss */
   #access ul.menu li li {
     border-radius: 0;
   }
 
-  /* line 97, src/_menus.scss */
+  /* line 98, src/_menus.scss */
   #access ul.menu li.current-menu-item,
   #access ul.menu li.current_page_parent {
     position: relative;
     z-index: 5;
   }
 
-  /* line 102, src/_menus.scss */
+  /* line 103, src/_menus.scss */
   #access ul.menu li.current-menu-item:hover,
   #access ul.menu li.current_page_parent:hover {
     /* background: #e3e1d5; */
   }
 
-  /* line 105, src/_menus.scss */
+  /* line 106, src/_menus.scss */
   #access ul.menu li.current-menu-item:first-child:hover {
     /* background: #f1f0e7;	*/
   }
 
-  /* line 108, src/_menus.scss */
+  /* line 109, src/_menus.scss */
   #access ul.menu li a[title='home'] {
     display: block;
     text-indent: -999em;
@@ -1068,12 +1068,12 @@ body.touch #access .menu-header li ul.sub-menu {
     height: 10px;
   }
 
-  /* line 117, src/_menus.scss */
+  /* line 118, src/_menus.scss */
   #access ul.menu li a[title='home']:hover {
     background-position: 50% -18px;
   }
 
-  /* line 121, src/_menus.scss */
+  /* line 122, src/_menus.scss */
   #access ul.menu li a {
     background: transparent;
     text-decoration: none;
@@ -1083,39 +1083,71 @@ body.touch #access .menu-header li ul.sub-menu {
     letter-spacing: 2px;
   }
 
-  /* line 130, src/_menus.scss */
+  /* line 131, src/_menus.scss */
   #access ul.menu li a:hover {
     color: #E5DABB;
     text-decoration: none;
   }
 
-    /* =============================================================================
-	   Dropdown Navigation Styles
-	   ========================================================================== */
-  /* line 140, src/_menus.scss */
+  /* line 137, src/_menus.scss */
+  .menu-header .menu-item-has-children > a {
+    padding-right: 18px !important;
+  }
+  /* line 141, src/_menus.scss */
+  .menu-header .menu-item-has-children > a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -3.5px;
+    top: 22.5px;
+    position: absolute;
+    right: 0;
+  }
+  /* line 155, src/_menus.scss */
+  .menu-header .menu-item-has-children .sub-menu li.menu-item-has-children > a:after {
+    border: none;
+    content: "\00bb";
+    top: 1rem;
+    margin-top: -2px;
+    margin-right: 10px;
+    right: 5px;
+    line-height: 1.2;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  /* =============================================================================
+     Dropdown Navigation Styles
+     ========================================================================== */
+  /* line 174, src/_menus.scss */
   #access .sf-menu li {
     font: sans-serif;
     text-transform: uppercase;
     font-size: .8em;
     line-height: 2.8em;
   }
-  /* line 145, src/_menus.scss */
+  /* line 179, src/_menus.scss */
   #access .sf-menu li:hover a {
     position: relative;
     z-index: 7;
   }
-  /* line 150, src/_menus.scss */
+  /* line 184, src/_menus.scss */
   #access .sf-menu li a {
     padding: 0;
     border-top-right-radius: none;
   }
-  /* line 155, src/_menus.scss */
+  /* line 189, src/_menus.scss */
   #access .sf-menu li.current-menu-item,
   #access .sf-menu li.current_page_parent {
     position: relative;
     z-index: 2;
   }
-  /* line 159, src/_menus.scss */
+  /* line 193, src/_menus.scss */
   #access .sf-menu ul {
     position: absolute;
     background-color: #000;
@@ -1123,7 +1155,7 @@ body.touch #access .menu-header li ul.sub-menu {
     top: -999em;
     width: 14em;
   }
-  /* line 167, src/_menus.scss */
+  /* line 201, src/_menus.scss */
   #access .sf-menu li:hover ul,
   #access .sf-menu li.sfHover ul {
     left: 0;
@@ -1134,7 +1166,7 @@ body.touch #access .menu-header li ul.sub-menu {
     position: absolute;
   }
 
-  /* line 179, src/_menus.scss */
+  /* line 213, src/_menus.scss */
   #access .sf-menu li:hover {
     visibility: inherit;
     /* fixes IE7 'sticky bug' */
@@ -1152,14 +1184,14 @@ body.touch #access .menu-header li ul.sub-menu {
     transition-timing-function: ease;
   }
 
-  /* line 186, src/_menus.scss */
+  /* line 220, src/_menus.scss */
   #access .sf-menu li a[title='home'] {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
   }
 
-  /* line 192, src/_menus.scss */
+  /* line 226, src/_menus.scss */
   #access .sf-menu ul li:hover {
     visibility: inherit;
     /* fixes IE7 'sticky bug' */
@@ -1167,7 +1199,7 @@ body.touch #access .menu-header li ul.sub-menu {
     border-top-right-radius: none;
   }
 
-  /* line 197, src/_menus.scss */
+  /* line 231, src/_menus.scss */
   #access .sf-menu ul li {
     width: 100%;
     position: relative;
@@ -1179,23 +1211,23 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 0;
   }
 
-  /* line 208, src/_menus.scss */
+  /* line 242, src/_menus.scss */
   #access .sf-menu a {
     display: block;
     position: relative;
     background: transparent;
   }
 
-  /* line 214, src/_menus.scss */
+  /* line 248, src/_menus.scss */
   #access .sf-menu li:hover,
   #access .sf-menu li.sfHover {
     z-index: 7;
     position: relative;
   }
 
-  /* line 218, src/_menus.scss */
+  /* line 252, src/_menus.scss */
   #access ul.menu li li a {
-    font-family: "camingodos-web",sans-serif;
+    font-family: "camingodos-web", sans-serif;
     text-transform: none;
     letter-spacing: normal;
     line-height: normal;
@@ -1205,13 +1237,13 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 15px;
   }
 
-  /* line 233, src/_menus.scss */
+  /* line 265, src/_menus.scss */
   #access ul.sf-menu li:hover li ul,
   #access ul.sf-menu li.sfHover li ul {
     top: -999em;
   }
 
-  /* line 237, src/_menus.scss */
+  /* line 269, src/_menus.scss */
   #access ul.sf-menu li li:hover ul,
   #access ul.sf-menu li li.sfHover ul {
     left: 15.2em;
@@ -1222,13 +1254,13 @@ body.touch #access .menu-header li ul.sub-menu {
     padding-top: 0;
   }
 
-  /* line 245, src/_menus.scss */
+  /* line 277, src/_menus.scss */
   #access ul.sf-menu li li:hover li ul,
   #access ul.sf-menu li li.sfHover li ul {
     top: -999em;
   }
 
-  /* line 249, src/_menus.scss */
+  /* line 281, src/_menus.scss */
   #access ul.sf-menu li li li:hover ul,
   #access ul.sf-menu li li li.sfHover ul {
     left: 13em;
@@ -1238,7 +1270,7 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /*** arrows **/
-  /* line 256, src/_menus.scss */
+  /* line 288, src/_menus.scss */
   #access .sf-menu li a.sf-with-ul {
     min-width: 1px;
     /* trigger IE7 hasLayout so spans position accurately */
@@ -1246,12 +1278,12 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 2em 1em 2em;
   }
 
-  /* line 261, src/_menus.scss */
+  /* line 293, src/_menus.scss */
   #access .sf-menu li a.sf-with-ul:hover {
     background-position: right -103px;
   }
 
-  /* line 265, src/_menus.scss */
+  /* line 297, src/_menus.scss */
   #access .sf-menu li li a.sf-with-ul {
     min-width: 1px;
     /* trigger IE7 hasLayout so spans position accurately */
@@ -1259,12 +1291,12 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 2em 1em 1.3em;
   }
 
-  /* line 270, src/_menus.scss */
+  /* line 302, src/_menus.scss */
   #access .sf-menu li li a.sf-with-ul:hover {
     background-position: left 58%;
   }
 
-  /* line 275, src/_menus.scss */
+  /* line 306, src/_menus.scss */
   #access .sf-sub-indicator {
     position: absolute;
     display: block;
@@ -1277,7 +1309,7 @@ body.touch #access .menu-header li ul.sub-menu {
     overflow: hidden;
   }
 
-  /* line 286, src/_menus.scss */
+  /* line 317, src/_menus.scss */
   #access a > .sf-sub-indicator {
     /* give all except IE6 the correct values */
     top: .8em;
@@ -1286,7 +1318,7 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* apply hovers to modern browsers */
-  /* line 295, src/_menus.scss */
+  /* line 327, src/_menus.scss */
   #access a:focus > .sf-sub-indicator,
   #access a:hover > .sf-sub-indicator,
   #access a:active > .sf-sub-indicator,
@@ -1297,18 +1329,18 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* point right for anchors in subs */
-  /* line 300, src/_menus.scss */
+  /* line 332, src/_menus.scss */
   #access .sf-menu ul .sf-sub-indicator {
     background-position: -10px 0;
   }
 
-  /* line 301, src/_menus.scss */
+  /* line 335, src/_menus.scss */
   #access .sf-menu ul a > .sf-sub-indicator {
     background-position: 0 0;
   }
 
   /* apply hovers to modern browsers */
-  /* line 307, src/_menus.scss */
+  /* line 343, src/_menus.scss */
   #access .sf-menu ul a:focus > .sf-sub-indicator,
   #access .sf-menu ul a:hover > .sf-sub-indicator,
   #access .sf-menu ul a:active > .sf-sub-indicator,

@@ -1,314 +1,349 @@
 .menu-button {
-	font-size: 1.5em;
-	position: absolute;
-	z-index: 999;
-	top: 0;
-	right: 0;
-	padding: .7em 3% .7em .9em;
-	color: white;
-	cursor: pointer;
-	letter-spacing: -2px;
-	a {
-		color: white;
-		text-decoration: none;
-		&:hover {
-			color: white;
-			text-decoration: none;
-		}
-	}
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  padding: .7em 3% .7em .9em;
+  color: white;
+  cursor: pointer;
+  letter-spacing: -2px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 
-	&:before {
-	  content: "";
-	  position: absolute;
-	  top: 0.8em;
-	  left: 0;
-	  width: .7em;
-	  height: 0.125em;
-	  border-top: 0.375em double #fff;
-	  border-bottom: 0.125em solid #fff;
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    width: .7em;
+    height: 0.125em;
+    border-top: 0.375em double #fff;
+    border-bottom: 0.125em solid #fff;
+  }
 }
 
 body.admin-bar .menu-button {
-	top: 2em;
+  top: 2em;
 }
 
-
 [role="navigation"] li a {
-	padding: .7em 2em;
-	border-top-color: #f9f9f9;
-	border-bottom-color: #dfdfdf;
-	border-width: 1px 0;
-	border-style: solid none;
+  padding: .7em 2em;
+  border-top-color: #f9f9f9;
+  border-bottom-color: #dfdfdf;
+  border-width: 1px 0;
+  border-style: solid none;
 }
 
 #access .menu {
-	padding: 0;
-	ul {
-		padding: 0;
-		margin: 0;
-	}
-	.sub-menu a {
-		// @todo: some kind of indention indicator goes here
-		//border-left: solid 2px #500000;
-	}
+  padding: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  .sub-menu a {
+    // @todo: some kind of indention indicator goes here
+    //border-left: solid 2px #500000;
+  }
 }
 
 body.no-touch #access ul.menu a {
-	font-size: 1.6em;
-	text-shadow: 0 1px 0 #fff;
-	display: block;
-	text-shadow: none;
+  font-size: 1.6em;
+  text-shadow: 0 1px 0 #fff;
+  display: block;
+  text-shadow: none;
 }
 
 body.mobile #access .menu-header li ul.sub-menu {
-	display: none;
+  display: none;
 }
 
 body.touch #access .menu-header li ul.sub-menu {
-	display: none;
+  display: none;
 }
 
 @media all and (min-width: $breakpoint-biggest) {
-	.js #access {
-		display: block;
-		background-color: #333;
-		background-color: rgba(0,0,0,0.6);
-		height: 40px;
-		z-index: 99;
-		width: 1004px;
-		padding: 0 10px;
-	}
-	/* main menu */
-	#access ul {
-		padding: 0 0 0 12px;
-	}
-	#access ul.menu li {
-		margin: 0;
-		// background: url('images/nav-divider.png') no-repeat right center;
-		padding: 0 18px 0 0;
-		float: left;
-	}
-	#access .menu-header ul.sub-menu li { margin-left: 0;}
-	#access ul.menu li li{
-		border-radius: 0;	
-	}	
-	#access ul.menu li.current-menu-item,
-	#access ul.menu li.current_page_parent {
-		position: relative;
-		z-index: 5;
-	}
-	#access ul.menu li.current-menu-item:hover,
-	#access ul.menu li.current_page_parent:hover {
-		/* background: #e3e1d5; */
-	}
-	#access ul.menu li.current-menu-item:first-child:hover {
-		/* background: #f1f0e7;	*/	
-	}	
-	#access ul.menu li a[title='home'] {
-		display: block;
-		text-indent: -999em;
-		background: url('images/home-college.png') no-repeat 50% 12px;
-		width: 20px;
-		padding: 1em 1em;
-		height: 10px;
-	}
+  .js #access {
+    display: block;
+    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    z-index: 99;
+    width: 1004px;
+    padding: 0 10px;
+  }
+  /* main menu */
+  #access ul {
+    padding: 0 0 0 12px;
+  }
+  #access ul.menu li {
+    margin: 0;
+    // background: url('images/nav-divider.png') no-repeat right center;
+    padding: 0 18px 0 0;
+    float: left;
+  }
+  #access .menu-header ul.sub-menu li {
+    margin-left: 0;
+  }
+  #access ul.menu li li {
+    border-radius: 0;
+  }
+  #access ul.menu li.current-menu-item,
+  #access ul.menu li.current_page_parent {
+    position: relative;
+    z-index: 5;
+  }
+  #access ul.menu li.current-menu-item:hover,
+  #access ul.menu li.current_page_parent:hover {
+    /* background: #e3e1d5; */
+  }
+  #access ul.menu li.current-menu-item:first-child:hover {
+    /* background: #f1f0e7;	*/
+  }
+  #access ul.menu li a[title='home'] {
+    display: block;
+    text-indent: -999em;
+    background: url('images/home-college.png') no-repeat 50% 12px;
+    width: 20px;
+    padding: 1em 1em;
+    height: 10px;
+  }
 
-	#access ul.menu li a[title='home']:hover {
-		background-position: 50% -18px;
-	}	
+  #access ul.menu li a[title='home']:hover {
+    background-position: 50% -18px;
+  }
 
-	#access ul.menu li a {
-		background: transparent;
-		text-decoration: none;
-		color: #fff;
-		border: 0;
-		padding: 0 .5em;
-		letter-spacing: 2px;	
-	}	
+  #access ul.menu li a {
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    padding: 0 .5em;
+    letter-spacing: 2px;
+  }
 
-	#access ul.menu li a:hover {
-		color: #E5DABB;
-		text-decoration: none;
-	}
+  #access ul.menu li a:hover {
+    color: #E5DABB;
+    text-decoration: none;
+  }
 
-    /* =============================================================================
-	   Dropdown Navigation Styles
-	   ========================================================================== */
+  .menu-header .menu-item-has-children {
+    & > a {
+      padding-right: 18px !important;
+    }
 
-	#access .sf-menu {
-		li {
-			font: sans-serif;
-			text-transform: uppercase;
-			font-size: .8em;	
-			line-height: 2.8em;
-			&:hover a {
-				position: relative;
-				z-index: 7;					
-			}
-		}
-		li a {
-			padding: 0;
-			border-top-right-radius: none;			
-		}
-		li.current-menu-item,
-		li.current_page_parent {
-			position: relative;
-			z-index: 2;	
-		}
-		ul {
-			position:	absolute;
-			background-color: #000;
-			background-color: rgba(0,0,0,0.8);
-			top: -999em;
-			width: 14em; // /* left offset of submenus need to match (see below) */						
-		}
-		li:hover ul,
-		li.sfHover ul {
-			left: 0;
-			margin-left: 1px;
-			margin-top: -1px;
-			top: 2.9em; // /* match top ul list item height */
-			z-index: 6;
-			position: absolute;	
-		}
-	}	
+    & > a:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border: inset 5px;
+      border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+      border-top-style: solid;
+      margin-top: -3.5px;
+      top: 22.5px;
+      position: absolute;
+      right: 0;
+    }
 
-	// @todo: Continue to refactor 
+    .sub-menu li.menu-item-has-children > a:after {
+      border: none;
+      content: "\00bb";
+      top: 1rem;
+      margin-top: -2px;
+      margin-right: 10px;
+      right: 5px;
+      line-height: 1.2;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+  }
 
-	#access .sf-menu li:hover {
-		visibility:		inherit; /* fixes IE7 'sticky bug' */
-		@include transition-property(background);
-		@include transition-duration(.3s);
-		@include transition-timing-function(ease);	
-	}
+  /* =============================================================================
+     Dropdown Navigation Styles
+     ========================================================================== */
 
-	#access .sf-menu li a[title='home'] {
-		-webkit-transition: none;
-		-moz-transition: none;		
-		transition: none;
-	}
+  #access .sf-menu {
+    li {
+      font: sans-serif;
+      text-transform: uppercase;
+      font-size: .8em;
+      line-height: 2.8em;
+      &:hover a {
+        position: relative;
+        z-index: 7;
+      }
+    }
+    li a {
+      padding: 0;
+      border-top-right-radius: none;
+    }
+    li.current-menu-item,
+    li.current_page_parent {
+      position: relative;
+      z-index: 2;
+    }
+    ul {
+      position: absolute;
+      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.8);
+      top: -999em;
+      width: 14em; // /* left offset of submenus need to match (see below) */
+    }
+    li:hover ul,
+    li.sfHover ul {
+      left: 0;
+      margin-left: 1px;
+      margin-top: -1px;
+      top: 2.9em; // /* match top ul list item height */
+      z-index: 6;
+      position: absolute;
+    }
+  }
 
-	#access .sf-menu ul li:hover {
-		visibility:		inherit; /* fixes IE7 'sticky bug' */
-		background: transparent;
-		border-top-right-radius: none;	
-	}	
-	#access .sf-menu ul li {
-		width:	100%;
-		position: relative;
-		z-index: 4;	
-		border: none;
-		font-size: 12px;
-		border-bottom: 1px dashed #000;	
-		background: transparent;
-		padding: 0;					
-	}	
+  // @todo: Continue to refactor
 
-	#access .sf-menu a {
-		display: block;
-		position: relative;
-		background: transparent;
-	}
-	#access .sf-menu li:hover,
-	#access .sf-menu li.sfHover {
-		z-index: 7;
-		position: relative;					
-	}
-	#access ul.menu li li a {
-		font-family: "camingodos-web",sans-serif;
-		text-transform: none;
-		letter-spacing: normal;
-		line-height: normal;
-		border: none;	
-		overflow: hidden;
-		margin: 0 0 -1px 0;		
-		padding: 1em 15px;	
-			
-	}
-	
-	
+  #access .sf-menu li:hover {
+    visibility: inherit; /* fixes IE7 'sticky bug' */
+    @include transition-property(background);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease);
+  }
 
-	#access ul.sf-menu li:hover li ul,
-	#access ul.sf-menu li.sfHover li ul {
-		top: -999em;		
-	}
-	#access ul.sf-menu li li:hover ul,
-	#access ul.sf-menu li li.sfHover ul {
-		left: 15.2em; /* match ul width */
-		top: 0;
-		margin-left: 0;
-		margin-top: 0;
-		padding-top: 0;				
-	}
-	#access ul.sf-menu li li:hover li ul,
-	#access ul.sf-menu li li.sfHover li ul {
-		top: -999em;
-	}
-	#access ul.sf-menu li li li:hover ul,
-	#access ul.sf-menu li li li.sfHover ul {
-		left: 13em; /* match ul width */
-		top: 0;
-		margin-left: 0px;	
-	}
-	
-	/*** arrows **/
-	#access .sf-menu li a.sf-with-ul {
-		min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
-		background: url(images/down-arrow4.png) no-repeat right 13px transparent; 
-		padding: 1em 2em 1em 2em;				
-	}
-	#access .sf-menu li a.sf-with-ul:hover {
-		background-position: right -103px;
-	}
+  #access .sf-menu li a[title='home'] {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
 
-	#access .sf-menu li li a.sf-with-ul {
-		min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
-		background: url(images/right-arrow.png) no-repeat left 58% transparent;
-		padding: 1em 2em 1em 1.3em;
-	}
-	#access .sf-menu li li a.sf-with-ul:hover {
-		background-position: left 58%;
-	}
+  #access .sf-menu ul li:hover {
+    visibility: inherit; /* fixes IE7 'sticky bug' */
+    background: transparent;
+    border-top-right-radius: none;
+  }
+  #access .sf-menu ul li {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px dashed #000;
+    background: transparent;
+    padding: 0;
+  }
 
+  #access .sf-menu a {
+    display: block;
+    position: relative;
+    background: transparent;
+  }
+  #access .sf-menu li:hover,
+  #access .sf-menu li.sfHover {
+    z-index: 7;
+    position: relative;
+  }
+  #access ul.menu li li a {
+    font-family: "camingodos-web", sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: normal;
+    border: none;
+    overflow: hidden;
+    margin: 0 0 -1px 0;
+    padding: 1em 15px;
 
-	#access	.sf-sub-indicator {
-		position:		absolute;
-		display:		block;
-		right:			0;
-		top:			.55em; /* IE6 only */
-		width:			8px;
-		height:			11px;
-		text-indent: 	-999em;
-		overflow:		hidden;
+  }
 
-	}
-	#access a > .sf-sub-indicator {  /* give all except IE6 the correct values */
-		top:			.8em;
-		background-position: 0 -100px; /* use translucent arrow for modern browsers*/
-	}
-	/* apply hovers to modern browsers */
-	#access a:focus > .sf-sub-indicator,
-	#access a:hover > .sf-sub-indicator,
-	#access a:active > .sf-sub-indicator,
-	#access li:hover > a > .sf-sub-indicator,
-	#access li.sfHover > a > .sf-sub-indicator {
-		background-position: -10px -100px; /* arrow hovers for modern browsers*/
-	}
+  #access ul.sf-menu li:hover li ul,
+  #access ul.sf-menu li.sfHover li ul {
+    top: -999em;
+  }
+  #access ul.sf-menu li li:hover ul,
+  #access ul.sf-menu li li.sfHover ul {
+    left: 15.2em; /* match ul width */
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  #access ul.sf-menu li li:hover li ul,
+  #access ul.sf-menu li li.sfHover li ul {
+    top: -999em;
+  }
+  #access ul.sf-menu li li li:hover ul,
+  #access ul.sf-menu li li li.sfHover ul {
+    left: 13em; /* match ul width */
+    top: 0;
+    margin-left: 0px;
+  }
 
-	/* point right for anchors in subs */
-	#access .sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
-	#access .sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
-	/* apply hovers to modern browsers */
-	#access .sf-menu ul a:focus > .sf-sub-indicator,
-	#access .sf-menu ul a:hover > .sf-sub-indicator,
-	#access .sf-menu ul a:active > .sf-sub-indicator,
-	#access .sf-menu ul li:hover > a > .sf-sub-indicator,
-	#access .sf-menu ul li.sfHover > a > .sf-sub-indicator {
-		background-position: -10px 0; /* arrow hovers for modern browsers*/
-	}
+  /*** arrows **/
+  #access .sf-menu li a.sf-with-ul {
+    min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+    background: url(images/down-arrow4.png) no-repeat right 13px transparent;
+    padding: 1em 2em 1em 2em;
+  }
+  #access .sf-menu li a.sf-with-ul:hover {
+    background-position: right -103px;
+  }
 
-	/* End main menu */
+  #access .sf-menu li li a.sf-with-ul {
+    min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+    background: url(images/right-arrow.png) no-repeat left 58% transparent;
+    padding: 1em 2em 1em 1.3em;
+  }
+  #access .sf-menu li li a.sf-with-ul:hover {
+    background-position: left 58%;
+  }
 
+  #access .sf-sub-indicator {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: .55em; /* IE6 only */
+    width: 8px;
+    height: 11px;
+    text-indent: -999em;
+    overflow: hidden;
+
+  }
+  #access a > .sf-sub-indicator {
+    /* give all except IE6 the correct values */
+    top: .8em;
+    background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+  }
+  /* apply hovers to modern browsers */
+  #access a:focus > .sf-sub-indicator,
+  #access a:hover > .sf-sub-indicator,
+  #access a:active > .sf-sub-indicator,
+  #access li:hover > a > .sf-sub-indicator,
+  #access li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px -100px; /* arrow hovers for modern browsers*/
+  }
+
+  /* point right for anchors in subs */
+  #access .sf-menu ul .sf-sub-indicator {
+    background-position: -10px 0;
+  }
+  #access .sf-menu ul a > .sf-sub-indicator {
+    background-position: 0 0;
+  }
+  /* apply hovers to modern browsers */
+  #access .sf-menu ul a:focus > .sf-sub-indicator,
+  #access .sf-menu ul a:hover > .sf-sub-indicator,
+  #access .sf-menu ul a:active > .sf-sub-indicator,
+  #access .sf-menu ul li:hover > a > .sf-sub-indicator,
+  #access .sf-menu ul li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px 0; /* arrow hovers for modern browsers*/
+  }
+
+  /* End main menu */
 
 }
