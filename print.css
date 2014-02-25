@@ -1,0 +1,144 @@
+@media print {
+  /* line 2, src/print.scss */
+  body {
+    background: none !important;
+  }
+
+  /* line 5, src/print.scss */
+  #wrapper {
+    float: none !important;
+    clear: both !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  /* line 11, src/print.scss */
+  #header {
+    border-bottom: 2pt solid #000;
+    padding-bottom: 18pt;
+  }
+
+  /* line 15, src/print.scss */
+  #colophon {
+    border-top: 2pt solid #000;
+  }
+
+  /* line 19, src/print.scss */
+  #site-title,
+  #site-description {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 24, src/print.scss */
+  #site-title {
+    font-size: 13pt;
+  }
+
+  /* line 27, src/print.scss */
+  .entry-content {
+    font-size: 14pt;
+  }
+
+  /* line 30, src/print.scss */
+  .entry-title {
+    font-size: 21pt;
+  }
+
+  /* line 49, src/print.scss */
+  #access,
+  #branding img,
+  #respond,
+  #footer,
+  #aside,
+  #agency-nav-container,
+  #drop-nav .search,
+  #drop-nav .explore,
+  #bg-image-container,
+  #menu-button,
+  .comment-edit-link,
+  .edit-link,
+  .navigation,
+  .page-link,
+  .widget-area,
+  .menu-secondary,
+  #drop-section-nav {
+    display: none !important;
+  }
+
+  /* line 52, src/print.scss */
+  .college-department #wrapper {
+    padding-top: 0;
+  }
+
+  /* line 55, src/print.scss */
+  .college-department #department-title {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+
+  /* line 61, src/print.scss */
+  #container,
+  #header,
+  .wrap #wrap {
+    width: 100% !important;
+    margin: 0 !important;
+    float: none !important;
+  }
+
+  /* line 67, src/print.scss */
+  #content,
+  .one-column #content {
+    width: 100%;
+    margin: 24pt 0 0;
+  }
+
+  /* line 71, src/print.scss */
+  .wp-caption p {
+    font-size: 11pt;
+  }
+
+  /* line 75, src/print.scss */
+  #site-info,
+  #site-generator {
+    float: none;
+    width: auto;
+  }
+
+  /* line 79, src/print.scss */
+  #colophon {
+    width: auto;
+  }
+
+  /* line 82, src/print.scss */
+  img#wpstats {
+    display: none;
+  }
+
+  /* line 85, src/print.scss */
+  #site-generator a {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 89, src/print.scss */
+  #entry-author-info {
+    border: 1px solid #e7e7e7;
+  }
+
+  /* line 92, src/print.scss */
+  #main {
+    display: inline;
+  }
+
+  /* line 95, src/print.scss */
+  .home .sticky {
+    border: none;
+  }
+
+  /* line 98, src/print.scss */
+  .js [role="document"] {
+    width: 100% !important;
+  }
+}

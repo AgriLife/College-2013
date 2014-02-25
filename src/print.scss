@@ -33,18 +33,35 @@
 	#access,
 	#branding img,
 	#respond,
-	.comment-edit-link,
+    #footer,
+    #aside,
+    #agency-nav-container,
+    #drop-nav .search,
+    #drop-nav .explore,
+    #bg-image-container,
+    #menu-button,
+    .comment-edit-link,
 	.edit-link,
 	.navigation,
 	.page-link,
-	.widget-area {
-		display: none !important;
+	.widget-area,
+    .menu-secondary,
+    #drop-section-nav {
+	  display: none !important;
 	}
+    .college-department #wrapper {
+      padding-top: 0;
+    }
+    .college-department #department-title {
+      margin: 0 auto;
+      width: 100% !important;
+    }
 	#container,
 	#header,
-	#footer {
-		width: 100%;
-		margin: 0;
+    .wrap #wrap {
+		width: 100% !important;
+		margin: 0 !important;
+        float: none !important;
 	}
 	#content,
 	.one-column #content {
@@ -78,4 +95,8 @@
 	.home .sticky {
 		border: none;
 	}
+    .js [role="document"] {
+      width: 100% !important;
+
+    }
 }
