@@ -6424,11 +6424,16 @@ abbr {
 /* Social Media Icons
 ******************************/
 /* line 4, src/plugins/_socialmedia.scss */
+#aside .widget-container .widget-wrap ul.social-media-list {
+  padding: 3%;
+}
+
+/* line 8, src/plugins/_socialmedia.scss */
 .widget_social_media.widget-container h3.widget-title {
   background-position: right -120px;
 }
 
-/* line 8, src/plugins/_socialmedia.scss */
+/* line 12, src/plugins/_socialmedia.scss */
 .search-widget {
   border: none;
   margin: 0 0 .5em;
@@ -6437,21 +6442,21 @@ abbr {
   border-top-right-radius: 3px;
 }
 
-/* line 16, src/plugins/_socialmedia.scss */
+/* line 20, src/plugins/_socialmedia.scss */
 #content-wrap .widget_social_media ul {
   width: 100%;
   margin: 0 auto;
   padding: 1em 0 .5em;
 }
 
-/* line 22, src/plugins/_socialmedia.scss */
+/* line 26, src/plugins/_socialmedia.scss */
 .social-media-item {
   float: left;
   width: 16.666666666666667%;
   margin-bottom: 0;
 }
 
-/* line 28, src/plugins/_socialmedia.scss */
+/* line 32, src/plugins/_socialmedia.scss */
 .social-media-item a {
   display: block;
   height: 36px;
@@ -6465,62 +6470,62 @@ abbr {
   margin: auto;
 }
 
-/* line 41, src/plugins/_socialmedia.scss */
+/* line 45, src/plugins/_socialmedia.scss */
 .social-media-item a:hover {
   background-position: left bottom;
 }
 
-/* line 44, src/plugins/_socialmedia.scss */
+/* line 48, src/plugins/_socialmedia.scss */
 a.googleplus {
   background-position: left top;
 }
 
-/* line 47, src/plugins/_socialmedia.scss */
+/* line 51, src/plugins/_socialmedia.scss */
 a.facebook {
   background-position: -43px top;
 }
 
-/* line 50, src/plugins/_socialmedia.scss */
+/* line 54, src/plugins/_socialmedia.scss */
 a.facebook:hover {
   background-position: -43px bottom;
 }
 
-/* line 53, src/plugins/_socialmedia.scss */
+/* line 57, src/plugins/_socialmedia.scss */
 a.twitter {
   background-position: -86px top;
 }
 
-/* line 56, src/plugins/_socialmedia.scss */
+/* line 60, src/plugins/_socialmedia.scss */
 a.twitter:hover {
   background-position: -86px bottom;
 }
 
-/* line 59, src/plugins/_socialmedia.scss */
+/* line 63, src/plugins/_socialmedia.scss */
 a.flickr {
   background-position: -129px top;
 }
 
-/* line 62, src/plugins/_socialmedia.scss */
+/* line 66, src/plugins/_socialmedia.scss */
 a.flickr:hover {
   background-position: -129px bottom;
 }
 
-/* line 65, src/plugins/_socialmedia.scss */
+/* line 69, src/plugins/_socialmedia.scss */
 a.youtube {
   background-position: -172px top;
 }
 
-/* line 68, src/plugins/_socialmedia.scss */
+/* line 72, src/plugins/_socialmedia.scss */
 a.youtube:hover {
   background-position: -172px bottom;
 }
 
-/* line 71, src/plugins/_socialmedia.scss */
+/* line 75, src/plugins/_socialmedia.scss */
 a.rss {
   background-position: -215px top;
 }
 
-/* line 74, src/plugins/_socialmedia.scss */
+/* line 78, src/plugins/_socialmedia.scss */
 a.rss:hover {
   background-position: -215px bottom;
 }
