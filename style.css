@@ -1091,7 +1091,7 @@ body.touch #access .menu-header li ul.sub-menu {
 
   /* line 137, src/_menus.scss */
   .menu-header .menu-item-has-children > a {
-    padding-right: 18px !important;
+    padding-right: 14px !important;
   }
   /* line 141, src/_menus.scss */
   .menu-header .menu-item-has-children > a:after {
