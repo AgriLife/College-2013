@@ -41,10 +41,14 @@ module.exports = (grunt) ->
       src: ['css/*.css']
     concat:
       presentationaljs:
-        src: ['js/presentational.js', 'js/superfish-menu.js', 'js/lettering.js', 'js/fitvids.js', 'js/jquery.fittext.js']
+        src: [
+            'bower_components/superfish/dist/js/superfish.js', 
+            'bower_components/letteringjs/jquery.lettering.js', 
+            'bower_components/fitvids/jquery.fitvids.js', 
+            'bower_components/fittext/jquery.fittext.js']
         dest: 'js/presentational-ck.js'
       publicjs:
-        src: ['js/college_scripts.js', 'js/off-canvas.js', 'js/simpletabs_1.3.js']
+        src: ['js/college_scripts.js', 'js/off-canvas.js']
         dest: 'js/college_scripts-ck.js'
     uglify:
       options:
