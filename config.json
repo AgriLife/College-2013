@@ -1,5 +1,5 @@
 {
 	"servers" : [ "coals" ],
-	"bower" : false,
+	"bower" : true,
 	"composer" : false
 }
