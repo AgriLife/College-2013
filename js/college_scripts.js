@@ -21,7 +21,6 @@ jQuery(document).ready(function() {
 	logoRama	+= '</div><!-- #agency-nav -->';
 
 	var agencyNavContainer = '<div id="agency-nav-container"></div>';
-	var bgImageContainer = '<div id="bg-image-container"></div>';
 
 	if ($(window).width() > bigScreen) {
 
@@ -34,14 +33,12 @@ jQuery(document).ready(function() {
 		$(".utility-nav").appendTo("#wrapper");
 
 		// Add background image 
-		// @todo: load for screen size draggers
-		$("#wrapper").append(bgImageContainer);
+        var src = $('#bg-image-container').attr('data-src');
+        $('#bg-image-container').attr('style','background-image:url(' + src + ');');
 
-		// activate embed class areas
-        var src = $('.embed').attr('data-src');
-        $('.embed').html('<script type="text/javascript" src="'+src+'"></script>');
 	}
 
+	// Utility Classes
 	if ($(window).width() < bigScreen) {
 		$("body").addClass("mobile");
 	}

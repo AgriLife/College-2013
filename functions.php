@@ -849,14 +849,9 @@ add_action( 'wp_footer', 'college_background_image', 50 );
 function college_background_image() {
 
   $image_path = get_stylesheet_directory_uri() . '/images/backgrounds/' . of_get_option('college-background-image');
+  $dom_element = '<div id="bg-image-container" data-src="'.$image_path .'"></div>';
 
-  $script = '<script type="text/javascript">';
-  $script .= 'jQuery(window).load( function() {';
-  $script .= 'jQuery("#bg-image-container").css("background-image", "url(' . $image_path . ')");';
-  $script .= '});';
-  $script .= '</script>';
-
-  echo $script;
+  echo $dom_element;
 
 }
 
