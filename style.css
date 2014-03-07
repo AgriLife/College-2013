@@ -1678,23 +1678,19 @@ body a:hover {
   color: #fff;
 }
 /* line 53, src/_home.scss */
-.home .audience h2 {
-  margin-left: 0;
-}
-/* line 57, src/_home.scss */
 .home ul.featured-stories {
   padding: 0 0 0 2px;
 }
-/* line 61, src/_home.scss */
+/* line 57, src/_home.scss */
 .home.college-department ul.featured-stories {
   padding: 10px 0 0;
 }
-/* line 65, src/_home.scss */
+/* line 61, src/_home.scss */
 .home .featured-content {
   background: #fff;
   padding: 10px;
 }
-/* line 69, src/_home.scss */
+/* line 65, src/_home.scss */
 .home .featured-content h3 {
   font-size: .8em;
   color: #fff;
@@ -1703,28 +1699,28 @@ body a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 78, src/_home.scss */
+/* line 74, src/_home.scss */
 .home .featured-stories-container {
   background: #500000;
   clear: left;
 }
-/* line 82, src/_home.scss */
+/* line 78, src/_home.scss */
 .home .one-of-3 {
   margin-bottom: 0;
   padding: 0;
   width: 100%;
 }
-/* line 88, src/_home.scss */
+/* line 84, src/_home.scss */
 .home .home-content {
   background: transparent;
   background: #f9f9f9;
 }
-/* line 94, src/_home.scss */
+/* line 90, src/_home.scss */
 .home .widget-container {
   background: transparent;
   background: #f9f9f9;
 }
-/* line 101, src/_home.scss */
+/* line 97, src/_home.scss */
 .home #content h3.widget-title {
   font-size: 1.2em;
   font-weight: 700;
@@ -1732,37 +1728,37 @@ body a:hover {
   font-family: "quatro-slab", serif;
   letter-spacing: 1px;
 }
-/* line 112, src/_home.scss */
+/* line 108, src/_home.scss */
 .home .program-row .single-program {
   margin-bottom: 35px;
 }
-/* line 115, src/_home.scss */
+/* line 111, src/_home.scss */
 .home .program-row .single-program a {
   text-decoration: none;
 }
-/* line 118, src/_home.scss */
+/* line 114, src/_home.scss */
 .home .program-row .single-program a:active {
   text-decoration: none;
 }
-/* line 124, src/_home.scss */
+/* line 120, src/_home.scss */
 .home .program-row .program-name {
   margin: 5px 0;
 }
-/* line 128, src/_home.scss */
+/* line 124, src/_home.scss */
 .home .program-row .program-desc {
   margin: 5px 0;
 }
-/* line 133, src/_home.scss */
+/* line 129, src/_home.scss */
 .home .soliloquy-container {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 139, src/_home.scss */
+/* line 135, src/_home.scss */
 .home #content-wrap .social-accounts ul {
   list-style: none;
   margin: 0 0 0 25px;
 }
-/* line 142, src/_home.scss */
+/* line 138, src/_home.scss */
 .home #content-wrap .social-accounts ul ul {
   margin-left: 3em;
   background-color: #f5f0e4;
@@ -1771,51 +1767,51 @@ body a:hover {
   width: 80%;
   padding: .1em 1em;
 }
-/* line 154, src/_home.scss */
+/* line 150, src/_home.scss */
 .home #aside div:nth-child(4n+1) h3.widget-title {
   background-position: right -120px;
 }
-/* line 157, src/_home.scss */
+/* line 153, src/_home.scss */
 .home #aside div:nth-child(4n+2) h3.widget-title {
   background-position: right -61px;
 }
-/* line 160, src/_home.scss */
+/* line 156, src/_home.scss */
 .home #aside div:nth-child(4n+3) h3.widget-title {
   background-position: right -180px;
 }
 
-/* line 166, src/_home.scss */
+/* line 162, src/_home.scss */
 .welcome {
   font-size: 1.2em;
 }
 
-/* line 171, src/_home.scss */
+/* line 167, src/_home.scss */
 .home-widget-left div:nth-child(4n+1) h3.widget-title {
   background-position: right -120px;
 }
-/* line 174, src/_home.scss */
+/* line 170, src/_home.scss */
 .home-widget-left div:nth-child(4n+2) h3.widget-title {
   background-position: right -61px;
 }
-/* line 177, src/_home.scss */
+/* line 173, src/_home.scss */
 .home-widget-left div:nth-child(4n+3) h3.widget-title {
   background-position: right -180px;
 }
 
-/* line 183, src/_home.scss */
+/* line 179, src/_home.scss */
 .home-widget-right div:nth-child(4n+2) h3.widget-title {
   background-position: right -180px;
 }
-/* line 186, src/_home.scss */
+/* line 182, src/_home.scss */
 .home-widget-right div:nth-child(4n+3) h3.widget-title {
   background-position: right -61px;
 }
-/* line 189, src/_home.scss */
+/* line 185, src/_home.scss */
 .home-widget-right div:nth-child(4n+4) h3.widget-title {
   background-position: right -120px;
 }
 
-/* line 194, src/_home.scss */
+/* line 190, src/_home.scss */
 .home #content-wrap .soliloquy-container .soliloquy-control-nav {
   margin: 10px;
   float: right;
@@ -1823,7 +1819,7 @@ body a:hover {
   bottom: 35px;
 }
 
-/* line 200, src/_home.scss */
+/* line 196, src/_home.scss */
 .home .soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
   ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
   background: rgba(0, 0, 0, 0.5);
@@ -1840,123 +1836,123 @@ body a:hover {
 }
 
 @media all and (min-width: 636px) {
-  /* line 217, src/_home.scss */
+  /* line 213, src/_home.scss */
   .home .featured-content {
     padding: 10px;
   }
-  /* line 220, src/_home.scss */
+  /* line 216, src/_home.scss */
   .home .featured-content h3 {
     font-size: .7em;
     letter-spacing: normal;
     margin: .7em 0;
   }
-  /* line 226, src/_home.scss */
+  /* line 222, src/_home.scss */
   .home #content-wrap .featured-content .featured-stories li {
     margin: 10px auto;
     width: 90%;
     border-bottom: 1px solid #7D3351;
     padding: .2em 0 .5em 0;
   }
-  /* line 231, src/_home.scss */
+  /* line 227, src/_home.scss */
   .home #content-wrap .featured-content .featured-stories li:last-child {
     border-bottom: none;
   }
-  /* line 235, src/_home.scss */
+  /* line 231, src/_home.scss */
   .home .one-of-3 {
     margin-bottom: 0;
     padding: 0;
     width: 25%;
     float: left;
   }
-  /* line 242, src/_home.scss */
+  /* line 238, src/_home.scss */
   .home .soliloquy-container {
     float: right;
     width: 74%;
     margin-top: 0;
   }
-  /* line 247, src/_home.scss */
+  /* line 243, src/_home.scss */
   .home #aside .widget-container h3.widget-title {
     background-size: 1024px 240px;
     padding: 1.5% 2%;
   }
 }
 @media all and (min-width: 840px) {
-  /* line 257, src/_home.scss */
+  /* line 253, src/_home.scss */
   .home .one-of-3 {
     width: 243px;
     height: 494px;
   }
-  /* line 261, src/_home.scss */
+  /* line 257, src/_home.scss */
   .home .featured-content {
     background: #fff;
     padding: 10px;
   }
-  /* line 265, src/_home.scss */
+  /* line 261, src/_home.scss */
   .home .featured-content h3 {
     font-size: .8em;
     letter-spacing: 2px;
     margin: 1em 0;
   }
-  /* line 272, src/_home.scss */
+  /* line 268, src/_home.scss */
   .home .home-content {
     width: 100%;
     float: left;
     background: #fff;
     background: #f9f9f9;
   }
-  /* line 278, src/_home.scss */
+  /* line 274, src/_home.scss */
   .home #content {
     width: 71.5%;
     float: left;
     padding: 0 0 0 0;
   }
-  /* line 283, src/_home.scss */
+  /* line 279, src/_home.scss */
   .home #content h3.widget-title {
     padding: 3% 4% 3% 4%;
   }
-  /* line 296, src/_home.scss */
+  /* line 292, src/_home.scss */
   .home #content .widget-container {
     padding: 0 1.5%;
   }
-  /* line 300, src/_home.scss */
+  /* line 296, src/_home.scss */
   .home .widget-container {
     background: #fff;
     background: #f9f9f9;
   }
-  /* line 305, src/_home.scss */
+  /* line 301, src/_home.scss */
   .home #postano {
     margin-top: 2%;
     background: #f9f9f9;
   }
-  /* line 309, src/_home.scss */
+  /* line 305, src/_home.scss */
   .home #pst_isotopediv {
     background: #f00;
   }
-  /* line 312, src/_home.scss */
+  /* line 308, src/_home.scss */
   .home .fspreviewout {
     background: #f00;
   }
-  /* line 317, src/_home.scss */
+  /* line 313, src/_home.scss */
   .home #content-wrap .featured-content .featured-stories li {
     width: 165px;
     border-bottom: 3px solid #7D3351;
     padding: 5px 0 14px 0;
   }
-  /* line 322, src/_home.scss */
-  .home .challenge {
+  /* line 318, src/_home.scss */
+  .home .challenge, .home .audience {
     width: 195px;
   }
-  /* line 326, src/_home.scss */
-  .home .challenge h2 {
+  /* line 322, src/_home.scss */
+  .home .challenge h2, .home .audience h2 {
     font-size: 16px;
     width: 100%;
     line-height: 0.9em;
   }
-  /* line 334, src/_home.scss */
+  /* line 330, src/_home.scss */
   .home .soliloquy-container {
     width: 748px;
   }
-  /* line 338, src/_home.scss */
+  /* line 334, src/_home.scss */
   .home #aside {
     clear: none;
     float: right;
@@ -1965,48 +1961,48 @@ body a:hover {
     width: 26%;
     padding: 0 1.5% 0 0;
   }
-  /* line 345, src/_home.scss */
+  /* line 341, src/_home.scss */
   .home #aside .widget-container {
     padding: 0;
   }
-  /* line 350, src/_home.scss */
+  /* line 346, src/_home.scss */
   .home #aside .widget-container h3.widget-title {
     padding: 3% 4% 3% 5%;
   }
-  /* line 354, src/_home.scss */
+  /* line 350, src/_home.scss */
   .home .welcome, .home .programs {
     float: left;
     width: 98%;
     padding-left: 2.5%;
   }
-  /* line 360, src/_home.scss */
+  /* line 356, src/_home.scss */
   .home .program-row {
     float: left;
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 365, src/_home.scss */
+  /* line 361, src/_home.scss */
   .home .program-row .single-program {
     float: left;
     width: 30%;
     padding-right: 3%;
     border-bottom: none;
   }
-  /* line 372, src/_home.scss */
+  /* line 368, src/_home.scss */
   .home .program-row .single-program a {
     text-decoration: none;
   }
-  /* line 375, src/_home.scss */
+  /* line 371, src/_home.scss */
   .home .program-row .single-program a:hover {
     text-decoration: none;
   }
-  /* line 380, src/_home.scss */
+  /* line 376, src/_home.scss */
   .home .program-row .single-program h3 {
     margin-top: 0;
     margin-bottom: 8px;
     font-size: 1.3em;
   }
-  /* line 386, src/_home.scss */
+  /* line 382, src/_home.scss */
   .home .program-row .single-program .program-desc {
     margin-top: 0;
   }

@@ -50,10 +50,6 @@
 
 	}
 
-	.audience h2 {
-		margin-left: 0;
-	}
-
 	ul.featured-stories {
 		padding: 0 0 0 2px;
 	}
@@ -319,7 +315,7 @@
 				border-bottom: 3px solid #7D3351;
 				padding: 5px 0 14px 0;
 		}
-		.challenge {
+		.challenge, .audience {
 			width: 195px;
 			//background: #666;
 

@@ -163,19 +163,20 @@ function homepageInit() {
 	jQuery("#challenge-international1").fitText(0.73);
 	jQuery("#challenge-international2").fitText(0.48);
 
-	jQuery("#former-students1").fitText(0.285);
-	jQuery('#former-students2').fitText(0.353);
+	// Department Audiences
+	jQuery("#former-students1").fitText(0.39);
+	jQuery('#former-students2').fitText(0.49);
 
-	jQuery("#current-students1").fitText(0.33);
-	jQuery("#current-students2").fitText(0.36);
+	jQuery("#current-students1").fitText(0.45);
+	jQuery("#current-students2").fitText(0.49);
 
-	jQuery("#future-students1").fitText(0.27);
-	jQuery("#future-students2").fitText(0.353);
+	jQuery("#future-students1").fitText(0.37);
+	jQuery("#future-students2").fitText(0.49);
 
-	jQuery("#faculty-staff1").fitText(0.315);
-	jQuery("#faculty-staff2").fitText(0.218);
+	jQuery("#faculty-staff1").fitText(0.44);
+	jQuery("#faculty-staff2").fitText(0.29);
 
-	jQuery("#giving1").fitText(0.24);
+	jQuery("#giving1").fitText(0.321);
 
 	// @todo Load Soliloquy .js here
 
