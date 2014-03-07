@@ -1,7 +1,5 @@
 .sass-cache/
 .DS_Store
-.bowerrc
 .idea/
 bower_components/
-bower.json
 node_modules/

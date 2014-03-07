@@ -1,0 +1,12 @@
+{
+  "name": "College2013",
+  "version": "1.0",
+  "dependencies": {
+    "picturefill": 	"scottjehl/picturefill",
+    "respond": 		"scottjehl/Respond",
+    "letteringjs": 	"davatron5000/Lettering.js",
+    "fittext": 		"davatron5000/FitText.js",
+    "fitvids": 		"davatron5000/FitVids.js",
+    "superfish":	"joeldbirch/superfish"
+  }
+}
