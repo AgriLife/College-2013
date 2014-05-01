@@ -189,7 +189,7 @@ var Modernizr;
 var path = "/wp-content/themes/college-2013/";
 
 // Give Modernizr.load a string, an object, or an array of strings and objects
-Modernizr.load([
+window.Modernizr.load([
 	{
     load: [ path + 'js/presentational-ck.js'],
 
