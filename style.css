@@ -1967,41 +1967,42 @@ body a:hover {
   /* line 346, src/_home.scss */
   .home #aside .widget-container h3.widget-title {
     padding: 3% 4% 3% 5%;
+    margin-bottom: 1em;
   }
-  /* line 350, src/_home.scss */
+  /* line 351, src/_home.scss */
   .home .welcome, .home .programs {
     float: left;
     width: 98%;
     padding-left: 2.5%;
   }
-  /* line 356, src/_home.scss */
+  /* line 357, src/_home.scss */
   .home .program-row {
     float: left;
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 361, src/_home.scss */
+  /* line 362, src/_home.scss */
   .home .program-row .single-program {
     float: left;
     width: 30%;
     padding-right: 3%;
     border-bottom: none;
   }
-  /* line 368, src/_home.scss */
+  /* line 369, src/_home.scss */
   .home .program-row .single-program a {
     text-decoration: none;
   }
-  /* line 371, src/_home.scss */
+  /* line 372, src/_home.scss */
   .home .program-row .single-program a:hover {
     text-decoration: none;
   }
-  /* line 376, src/_home.scss */
+  /* line 377, src/_home.scss */
   .home .program-row .single-program h3 {
     margin-top: 0;
     margin-bottom: 8px;
     font-size: 1.3em;
   }
-  /* line 382, src/_home.scss */
+  /* line 383, src/_home.scss */
   .home .program-row .single-program .program-desc {
     margin-top: 0;
   }
