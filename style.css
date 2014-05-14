@@ -6778,6 +6778,16 @@ p.flex-caption a:hover {
   margin: 0;
 }
 
+/* Special Recent Posts */
+/* line 2, src/plugins/_special-recent-posts.scss */
+.srp-widget-container {
+  margin: 1em 0;
+}
+/* line 5, src/plugins/_special-recent-posts.scss */
+.srp-widget-container div.srp-widget-singlepost {
+  border-bottom: none;
+}
+
 /* line 1, src/plugins/_randomtext.scss */
 #aside .widget-container.randomtext {
   margin-bottom: 2em;
