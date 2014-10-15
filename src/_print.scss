@@ -7,7 +7,14 @@
 		clear: both !important;
 		display: block !important;
 		position: relative !important;
+        padding-top: 0;
 	}
+    #content-wrap,
+    .wrap {
+      background: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
 	#header {
 		border-bottom: 2pt solid #000;
 		padding-bottom: 18pt;
@@ -35,7 +42,6 @@
 	#respond,
     #footer,
     #aside,
-    #agency-nav-container,
     #drop-nav .search,
     #drop-nav .explore,
     #bg-image-container,
@@ -46,9 +52,21 @@
 	.page-link,
 	.widget-area,
     .menu-secondary,
-    #drop-section-nav {
+    #drop-section-nav
+    {
 	  display: none !important;
 	}
+    .site-title{
+      position: fixed;
+      left: 0;
+      display: none;
+    }
+    #agency-nav {
+      position: fixed;
+      left: 270px;
+      top: 0;
+      display: none;
+    }
     .college-department #wrapper {
       padding-top: 0;
     }
@@ -98,5 +116,9 @@
     .js [role="document"] {
       width: 100% !important;
 
+    }
+    [role="navigation"],
+    [role="document"] {
+      padding: 0;
     }
 }
