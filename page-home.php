@@ -27,7 +27,7 @@ get_header(); ?>
 						</a>		
 					</li>				
 					<li class="challenge-grand challenge">
-						<a href="<?php echo site_url('/about/grand-challenges/') ?>" id="l3" class="challenge-link">
+						<a href="http://grandchallenges.tamu.edu/" id="l3" class="challenge-link">
 							<h2 id="challenge-grand1">Grand</h2> 
 							<h2 id="challenge-grand2">Challenges</h2>
 						</a>		

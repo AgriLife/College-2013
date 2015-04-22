@@ -697,12 +697,11 @@ table {
   /* line 118, src/_layout.scss */
   #aside .widget-container {
     padding: 0 4%;
-    position: relative;
     margin-bottom: 20px;
     background: transparent;
     border: 0;
   }
-  /* line 125, src/_layout.scss */
+  /* line 124, src/_layout.scss */
   #aside .widget-container .widget-wrap ul,
   #aside .widget-container .textwidget {
     padding: 3%;
@@ -3711,12 +3710,12 @@ img {
   line-height: 1.9em;
   text-align: center;
   color: #000;
-  padding: 5px 2px 3px 2px;
+  padding: 5px 12px 3px 12px;
   display: block;
   margin: 3px 4px;
   background: rgba(255, 255, 255, 0.5);
   height: 28px;
-  width: 155px;
+  min-width: 155px;
   background: #5d0025;
   color: #fff;
   text-decoration: none;
@@ -3725,7 +3724,7 @@ img {
   -moz-box-shadow: inset 0px 25px 25px #752645, inset 0px 20px 2px rgba(240, 150, 69, 0.5);
   box-shadow: inset 0px 25px 25px #752645, inset 0px 20px 2px rgba(240, 150, 69, 0.5);
 }
-/* line 91, src/_user-styles.scss */
+/* line 89, src/_user-styles.scss */
 .button:hover {
   text-decoration: none;
   color: #fff;
@@ -3733,21 +3732,21 @@ img {
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #752645;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #752645;
 }
-/* line 98, src/_user-styles.scss */
+/* line 96, src/_user-styles.scss */
 .button.grey {
   background: #5f574f;
   -webkit-box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
   -moz-box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
   box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
 }
-/* line 102, src/_user-styles.scss */
+/* line 100, src/_user-styles.scss */
 .button.grey:hover {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
 }
 
-/* line 110, src/_user-styles.scss */
+/* line 108, src/_user-styles.scss */
 #content-wrap .callout {
   background-color: #f5f0e4;
   clear: both;
@@ -3756,31 +3755,31 @@ img {
   float: left;
   margin: 1.25em 0;
 }
-/* line 118, src/_user-styles.scss */
+/* line 116, src/_user-styles.scss */
 #content-wrap .callout h1, #content-wrap .callout h2, #content-wrap .callout h3, #content-wrap .callout h4, #content-wrap .callout h5 {
   font-size: 1.3em;
   color: #500000;
   margin: 0;
 }
-/* line 123, src/_user-styles.scss */
+/* line 121, src/_user-styles.scss */
 #content-wrap .callout ul, #content-wrap .callout ol {
   margin: 1.2em 0 1.2em 1em;
 }
-/* line 129, src/_user-styles.scss */
+/* line 127, src/_user-styles.scss */
 #content-wrap .callout .button-wrap {
   border-color: #5f574f;
 }
 @media all and (min-width: 840px) {
-  /* line 129, src/_user-styles.scss */
+  /* line 127, src/_user-styles.scss */
   #content-wrap .callout .button-wrap {
     float: left;
   }
 }
-/* line 135, src/_user-styles.scss */
+/* line 133, src/_user-styles.scss */
 #content-wrap .callout .button {
   float: left;
 }
-/* line 139, src/_user-styles.scss */
+/* line 137, src/_user-styles.scss */
 #content-wrap .callout img {
   border: 5px solid #fff;
   -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
@@ -3788,7 +3787,7 @@ img {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* line 148, src/_user-styles.scss */
+/* line 146, src/_user-styles.scss */
 .embed-container {
   position: relative;
   padding-bottom: 80%;
@@ -3799,7 +3798,7 @@ img {
   overflow: scroll;
 }
 
-/* line 158, src/_user-styles.scss */
+/* line 156, src/_user-styles.scss */
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -3811,7 +3810,7 @@ img {
 }
 
 @media all and (min-width: 840px) {
-  /* line 168, src/_user-styles.scss */
+  /* line 166, src/_user-styles.scss */
   .one-of-2 {
     width: 48%;
     clear: both;
@@ -3820,7 +3819,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 175, src/_user-styles.scss */
+  /* line 173, src/_user-styles.scss */
   .two-of-2 {
     width: 48%;
     float: left;
@@ -3828,13 +3827,13 @@ img {
     padding-right: 2%;
   }
 
-  /* line 182, src/_user-styles.scss */
+  /* line 180, src/_user-styles.scss */
   .two-of-2 ul, .one-of-2 ul,
   .one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
     margin-left: 1em;
   }
 
-  /* line 185, src/_user-styles.scss */
+  /* line 183, src/_user-styles.scss */
   .one-of-3 {
     width: 30%;
     clear: both;
@@ -3843,7 +3842,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 193, src/_user-styles.scss */
+  /* line 191, src/_user-styles.scss */
   .two-of-3 {
     width: 30%;
     float: left;
@@ -3851,7 +3850,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 200, src/_user-styles.scss */
+  /* line 198, src/_user-styles.scss */
   .three-of-3 {
     width: 30%;
     float: left;
@@ -3868,15 +3867,14 @@ img {
 /* line 1, src/_widgets.scss */
 .widget-container {
   padding: 0;
-  position: relative;
   margin-bottom: 20px;
   background: #fff;
 }
-/* line 6, src/_widgets.scss */
+/* line 5, src/_widgets.scss */
 .widget-container .widget-wrap {
   padding: 0;
 }
-/* line 10, src/_widgets.scss */
+/* line 9, src/_widgets.scss */
 .widget-container h3.widget-title {
   font-size: 1.2em;
   font-family: "quatro-slab", serif;
@@ -3892,29 +3890,29 @@ img {
   text-transform: uppercase;
 }
 @media all and (min-width: 636px) {
-  /* line 10, src/_widgets.scss */
+  /* line 9, src/_widgets.scss */
   .widget-container h3.widget-title {
     background-size: 2048px 480px;
   }
 }
 @media all and (min-width: 840px) {
-  /* line 10, src/_widgets.scss */
+  /* line 9, src/_widgets.scss */
   .widget-container h3.widget-title {
     background-size: 1024px 240px;
   }
 }
-/* line 34, src/_widgets.scss */
+/* line 33, src/_widgets.scss */
 .widget-container.widget_rss ul li, .widget-container.widget_twitter ul li {
   font-family: verdana, clean, sans-serif;
   font-size: 13px;
 }
 
-/* line 43, src/_widgets.scss */
+/* line 42, src/_widgets.scss */
 #content-wrap .widget_nav_menu .menu > li,
 .widget_jc_split_menu_widget .menu > li {
   font-size: 1.2em;
 }
-/* line 47, src/_widgets.scss */
+/* line 46, src/_widgets.scss */
 #content-wrap .widget_nav_menu h3.widget-title,
 .widget_jc_split_menu_widget h3.widget-title {
   background: transparent;
@@ -3926,7 +3924,7 @@ img {
   box-shadow: none;
   padding: 0;
 }
-/* line 56, src/_widgets.scss */
+/* line 55, src/_widgets.scss */
 #content-wrap .widget_nav_menu li > a:before,
 .widget_jc_split_menu_widget li > a:before {
   border: none;
@@ -3934,14 +3932,14 @@ img {
   margin-right: .5rem;
   line-height: 1.2;
 }
-/* line 64, src/_widgets.scss */
+/* line 63, src/_widgets.scss */
 #content-wrap .widget_nav_menu li,
 .widget_jc_split_menu_widget li {
   border-top: 0;
   text-indent: 5px;
   margin: 0;
 }
-/* line 68, src/_widgets.scss */
+/* line 67, src/_widgets.scss */
 #content-wrap .widget_nav_menu li a,
 .widget_jc_split_menu_widget li a {
   padding: .2em 0;
@@ -3949,52 +3947,51 @@ img {
   display: block;
   text-decoration: none;
 }
-/* line 73, src/_widgets.scss */
+/* line 72, src/_widgets.scss */
 #content-wrap .widget_nav_menu li a:hover,
 .widget_jc_split_menu_widget li a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-/* line 77, src/_widgets.scss */
+/* line 76, src/_widgets.scss */
 #content-wrap .widget_nav_menu li ul,
 .widget_jc_split_menu_widget li ul {
   list-style: none;
 }
-/* line 80, src/_widgets.scss */
+/* line 79, src/_widgets.scss */
 #content-wrap .widget_nav_menu li ul a,
 .widget_jc_split_menu_widget li ul a {
   border-bottom: 0;
   padding: 0;
 }
-/* line 86, src/_widgets.scss */
+/* line 85, src/_widgets.scss */
 #content-wrap .widget_nav_menu ul.sub-menu > li,
 .widget_jc_split_menu_widget ul.sub-menu > li {
   margin-left: 1em;
   font-size: .9em;
 }
-/* line 90, src/_widgets.scss */
+/* line 89, src/_widgets.scss */
 #content-wrap .widget_nav_menu .current-menu-item + a,
 .widget_jc_split_menu_widget .current-menu-item + a {
   text-decoration: underline;
   font-weight: bold;
 }
 
-/* line 95, src/_widgets.scss */
+/* line 94, src/_widgets.scss */
 #aside .widget-container .widget-wrap ul {
   padding: 0 0 1% 0;
 }
 
-/* line 100, src/_widgets.scss */
+/* line 99, src/_widgets.scss */
 .widget-container {
   padding: 0;
-  position: relative;
   margin-bottom: 20px;
   background: #fff;
 }
-/* line 106, src/_widgets.scss */
+/* line 104, src/_widgets.scss */
 .widget-container .widget-wrap {
   padding: 0;
 }
-/* line 110, src/_widgets.scss */
+/* line 108, src/_widgets.scss */
 .widget-container h3.widget-title {
   font-size: 1.2em;
   font-family: "quatro-slab", serif;
@@ -4015,89 +4012,89 @@ img {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 132, src/_widgets.scss */
+/* line 130, src/_widgets.scss */
 .widget-container.widget_rss ul li, .widget-container.widget_twitter ul li {
   font-family: verdana, clean, sans-serif;
   font-size: 13px;
 }
 
-/* line 138, src/_widgets.scss */
+/* line 136, src/_widgets.scss */
 .widget_twitter h3.widget-title {
   background-position: right -180px;
 }
 
-/* line 143, src/_widgets.scss */
+/* line 141, src/_widgets.scss */
 .agrilife_today_twitter h3.widget-title,
 .home-widgets-lower .widget:first-child h3.widget-title {
   background-position: right -120px;
 }
 
-/* line 147, src/_widgets.scss */
+/* line 145, src/_widgets.scss */
 .widget_twitter .widget-wrap ul {
   padding: 0;
   margin: 0 0 .5em;
 }
 
-/* line 152, src/_widgets.scss */
+/* line 150, src/_widgets.scss */
 .widget_twitter li {
   padding: .5em 6% 1em;
   border-bottom: 1px dashed #999;
 }
 
-/* line 157, src/_widgets.scss */
+/* line 155, src/_widgets.scss */
 .widget-container h3.widget-title a {
   color: white;
 }
 
-/* line 161, src/_widgets.scss */
+/* line 159, src/_widgets.scss */
 .home .widget h3.widget-title .rsswidget img {
   display: none;
 }
 
-/* line 165, src/_widgets.scss */
+/* line 163, src/_widgets.scss */
 .home-widgets {
   width: 100%;
 }
 
-/* line 170, src/_widgets.scss */
+/* line 168, src/_widgets.scss */
 .home-widget-left, .home-widget-right {
   float: left;
   width: 100%;
 }
 
-/* line 176, src/_widgets.scss */
+/* line 174, src/_widgets.scss */
 #aside li:nth-child(4n+1) h3.widget-title {
   background-position: right -120px;
 }
-/* line 179, src/_widgets.scss */
+/* line 177, src/_widgets.scss */
 #aside li:nth-child(4n+2) h3.widget-title {
   background-position: right -61px;
 }
-/* line 182, src/_widgets.scss */
+/* line 180, src/_widgets.scss */
 #aside li:nth-child(4n+3) h3.widget-title {
   background-position: right -180px;
 }
 
 @media screen and (min-width: 636px) {
-  /* line 189, src/_widgets.scss */
+  /* line 187, src/_widgets.scss */
   .home-widgets {
     padding-right: 3%;
   }
 
-  /* line 193, src/_widgets.scss */
+  /* line 191, src/_widgets.scss */
   .home-widget-left, .home-widget-right {
     float: left;
     width: 47%;
     margin: 0 1.5%;
   }
 
-  /* line 199, src/_widgets.scss */
+  /* line 197, src/_widgets.scss */
   .widget-container h3.widget-title {
     background-size: 1024px 240px;
     padding: 1.5% 2%;
   }
 
-  /* line 204, src/_widgets.scss */
+  /* line 202, src/_widgets.scss */
   #aside h3.widget-title {
     padding: 3% 4% 3% 5%;
   }
@@ -6779,6 +6776,16 @@ p.flex-caption a:hover {
 #aside .widget-container .widget-wrap ul.soliloquy-slides {
   padding: 0;
   margin: 0;
+}
+
+/* Special Recent Posts */
+/* line 2, src/plugins/_special-recent-posts.scss */
+.srp-widget-container {
+  margin: 1em 0;
+}
+/* line 5, src/plugins/_special-recent-posts.scss */
+.srp-widget-container div.srp-widget-singlepost {
+  border-bottom: none;
 }
 
 /* line 1, src/plugins/_randomtext.scss */
