@@ -273,18 +273,11 @@ if(function_exists("register_field_group"))
 					'order_no' => 0,
 					'group_no' => 0,
 				),
-                array (
-                    'param' => 'page_template',
-                    'operator' => '==',
-                    'value' => 'onecolumn-page.php',
-                    'order_no' => 1,
-                    'group_no' => 0,
-                ),
-                array (
+				array (
 					'param' => 'page_template',
 					'operator' => '!=',
 					'value' => 'page-home.php',
-					'order_no' => 2,
+					'order_no' => 1,
 					'group_no' => 0,
 				),
 			),
