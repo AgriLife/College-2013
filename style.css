@@ -1,4 +1,5 @@
-/*
+@charset "UTF-8";
+/*!
  * Theme Name: 	College of Ag 2013
  * Theme URI:      http://aglifesciences.tamu.edu/
  * Description: 	Custom theme created for Texas A&M University College of Agriculture and Life Sciences.
@@ -6,7 +7,7 @@
  * Template:		AgriFlex2
  * Version: 		1.0
  */
-/* line 32, src/h5bp/_normalize.scss */
+/* line 22, src/h5bp/_normalize.scss */
 article,
 aside,
 details,
@@ -21,7 +22,7 @@ summary {
   display: block;
 }
 
-/* line 39, src/h5bp/_normalize.scss */
+/* line 37, src/h5bp/_normalize.scss */
 audio,
 canvas,
 video {
@@ -48,7 +49,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 82, src/h5bp/_normalize.scss */
+/* line 78, src/h5bp/_normalize.scss */
 html,
 button,
 input,
@@ -67,7 +68,7 @@ a:focus {
   outline: thin dotted;
 }
 
-/* line 109, src/h5bp/_normalize.scss */
+/* line 108, src/h5bp/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -114,7 +115,7 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 159, src/h5bp/_normalize.scss */
+/* line 158, src/h5bp/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -136,13 +137,13 @@ mark {
   color: #000;
 }
 
-/* line 180, src/h5bp/_normalize.scss */
+/* line 179, src/h5bp/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
 }
 
-/* line 188, src/h5bp/_normalize.scss */
+/* line 185, src/h5bp/_normalize.scss */
 code,
 kbd,
 pre,
@@ -164,7 +165,7 @@ q {
   quotes: none;
 }
 
-/* line 208, src/h5bp/_normalize.scss */
+/* line 207, src/h5bp/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -176,7 +177,7 @@ small {
   font-size: 80%;
 }
 
-/* line 220, src/h5bp/_normalize.scss */
+/* line 219, src/h5bp/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -195,7 +196,7 @@ sub {
   bottom: -0.25em;
 }
 
-/* line 245, src/h5bp/_normalize.scss */
+/* line 242, src/h5bp/_normalize.scss */
 dl,
 menu,
 ol,
@@ -208,7 +209,7 @@ dd {
   margin: 0 0 0 40px;
 }
 
-/* line 256, src/h5bp/_normalize.scss */
+/* line 254, src/h5bp/_normalize.scss */
 menu,
 ol,
 ul {
@@ -253,7 +254,7 @@ legend {
   *margin-left: -7px;
 }
 
-/* line 323, src/h5bp/_normalize.scss */
+/* line 321, src/h5bp/_normalize.scss */
 input,
 select,
 textarea {
@@ -263,13 +264,13 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 333, src/h5bp/_normalize.scss */
+/* line 332, src/h5bp/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 347, src/h5bp/_normalize.scss */
+/* line 344, src/h5bp/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -279,13 +280,13 @@ input[type="submit"] {
   *overflow: visible;
 }
 
-/* line 355, src/h5bp/_normalize.scss */
+/* line 354, src/h5bp/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 364, src/h5bp/_normalize.scss */
+/* line 363, src/h5bp/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -302,13 +303,13 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 384, src/h5bp/_normalize.scss */
+/* line 383, src/h5bp/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 390, src/h5bp/_normalize.scss */
+/* line 389, src/h5bp/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -359,7 +360,7 @@ table {
   position: absolute;
   width: 1px;
 }
-/* line 67, src/h5bp/_helpers.scss */
+/* line 66, src/h5bp/_helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -374,7 +375,7 @@ table {
   visibility: hidden;
 }
 
-/* line 93, src/h5bp/_helpers.scss */
+/* line 92, src/h5bp/_helpers.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -415,25 +416,25 @@ table {
   height: 100%;
 }
 
-/* line 24, src/_off-canvas.scss */
+/* line 22, src/_off-canvas.scss */
 [role="navigation"],
 [role="document"],
 #header {
-  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
+  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
 
-/* line 30, src/_off-canvas.scss */
+/* line 29, src/_off-canvas.scss */
 [role="navigation"],
 [role="document"] {
   width: 90%;
@@ -552,7 +553,7 @@ table {
     display: none;
   }
 
-  /* line 122, src/_off-canvas.scss */
+  /* line 120, src/_off-canvas.scss */
   .js [role="document"],
   .js [role="navigation"],
   .js [role="contentinfo"] {
@@ -683,7 +684,7 @@ table {
 
   /* line 105, src/_layout.scss */
   .wrap #wrap.one-column {
-    width: 90%;
+    width: 96%;
     margin: 2.5% 0% 2% 0%;
     padding: 0 2% 1% 2%;
     float: left;
@@ -701,7 +702,7 @@ table {
     background: transparent;
     border: 0;
   }
-  /* line 124, src/_layout.scss */
+  /* line 123, src/_layout.scss */
   #aside .widget-container .widget-wrap ul,
   #aside .widget-container .textwidget {
     padding: 3%;
@@ -767,17 +768,17 @@ table {
   /* line 46, src/_secondary-menu.scss */
   .menu-secondary li:hover {
     border: 1px solid white;
-    -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
+    -webkit-transition-property: all;
     transition-property: all;
-    -webkit-transition-duration: 0.15s;
     -moz-transition-duration: 0.15s;
     -o-transition-duration: 0.15s;
+    -webkit-transition-duration: 0.15s;
     transition-duration: 0.15s;
-    -webkit-transition-timing-function: ease-in;
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
   /* line 54, src/_secondary-menu.scss */
@@ -800,17 +801,17 @@ table {
     background: white;
     color: #000;
     text-decoration: none;
-    -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
+    -webkit-transition-property: all;
     transition-property: all;
-    -webkit-transition-duration: 0.15s;
     -moz-transition-duration: 0.15s;
     -o-transition-duration: 0.15s;
+    -webkit-transition-duration: 0.15s;
     transition-duration: 0.15s;
-    -webkit-transition-timing-function: ease-in;
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
 }
@@ -835,21 +836,21 @@ table {
     z-index: 2000;
     font-size: .8em;
     color: #818181;
-    -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
+    -webkit-transition-property: all;
     transition-property: all;
-    -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    -webkit-transition-delay: 2s;
     -moz-transition-delay: 2s;
     -o-transition-delay: 2s;
+    -webkit-transition-delay: 2s;
     transition-delay: 2s;
-    -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
   }
   /* line 35, src/_floating-menu.scss */
@@ -876,7 +877,7 @@ table {
     background: transparent;
     padding: 0;
   }
-  /* line 61, src/_floating-menu.scss */
+  /* line 60, src/_floating-menu.scss */
   .utility-nav .menu-nav-audience,
   .utility-nav .menu-nav-general {
     position: relative;
@@ -924,7 +925,7 @@ table {
   .utility-nav li:before {
     content: '•';
     position: absolute;
-    left: -0.75em;
+    left: -.75em;
     top: 1em;
   }
 }
@@ -1039,14 +1040,14 @@ body.touch #access .menu-header li ul.sub-menu {
     border-radius: 0;
   }
 
-  /* line 98, src/_menus.scss */
+  /* line 97, src/_menus.scss */
   #access ul.menu li.current-menu-item,
   #access ul.menu li.current_page_parent {
     position: relative;
     z-index: 5;
   }
 
-  /* line 103, src/_menus.scss */
+  /* line 102, src/_menus.scss */
   #access ul.menu li.current-menu-item:hover,
   #access ul.menu li.current_page_parent:hover {
     /* background: #e3e1d5; */
@@ -1140,7 +1141,7 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 0;
     border-top-right-radius: none;
   }
-  /* line 189, src/_menus.scss */
+  /* line 188, src/_menus.scss */
   #access .sf-menu li.current-menu-item,
   #access .sf-menu li.current_page_parent {
     position: relative;
@@ -1154,7 +1155,7 @@ body.touch #access .menu-header li ul.sub-menu {
     top: -999em;
     width: 14em;
   }
-  /* line 201, src/_menus.scss */
+  /* line 200, src/_menus.scss */
   #access .sf-menu li:hover ul,
   #access .sf-menu li.sfHover ul {
     left: 0;
@@ -1169,17 +1170,17 @@ body.touch #access .menu-header li ul.sub-menu {
   #access .sf-menu li:hover {
     visibility: inherit;
     /* fixes IE7 'sticky bug' */
-    -webkit-transition-property: background;
     -moz-transition-property: background;
     -o-transition-property: background;
+    -webkit-transition-property: background;
     transition-property: background;
-    -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
   }
 
@@ -1217,7 +1218,7 @@ body.touch #access .menu-header li ul.sub-menu {
     background: transparent;
   }
 
-  /* line 248, src/_menus.scss */
+  /* line 247, src/_menus.scss */
   #access .sf-menu li:hover,
   #access .sf-menu li.sfHover {
     z-index: 7;
@@ -1236,13 +1237,13 @@ body.touch #access .menu-header li ul.sub-menu {
     padding: 1em 15px;
   }
 
-  /* line 265, src/_menus.scss */
+  /* line 264, src/_menus.scss */
   #access ul.sf-menu li:hover li ul,
   #access ul.sf-menu li.sfHover li ul {
     top: -999em;
   }
 
-  /* line 269, src/_menus.scss */
+  /* line 268, src/_menus.scss */
   #access ul.sf-menu li li:hover ul,
   #access ul.sf-menu li li.sfHover ul {
     left: 15.2em;
@@ -1253,13 +1254,13 @@ body.touch #access .menu-header li ul.sub-menu {
     padding-top: 0;
   }
 
-  /* line 277, src/_menus.scss */
+  /* line 276, src/_menus.scss */
   #access ul.sf-menu li li:hover li ul,
   #access ul.sf-menu li li.sfHover li ul {
     top: -999em;
   }
 
-  /* line 281, src/_menus.scss */
+  /* line 280, src/_menus.scss */
   #access ul.sf-menu li li li:hover ul,
   #access ul.sf-menu li li li.sfHover ul {
     left: 13em;
@@ -1317,7 +1318,7 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* apply hovers to modern browsers */
-  /* line 327, src/_menus.scss */
+  /* line 323, src/_menus.scss */
   #access a:focus > .sf-sub-indicator,
   #access a:hover > .sf-sub-indicator,
   #access a:active > .sf-sub-indicator,
@@ -1339,7 +1340,7 @@ body.touch #access .menu-header li ul.sub-menu {
   }
 
   /* apply hovers to modern browsers */
-  /* line 343, src/_menus.scss */
+  /* line 339, src/_menus.scss */
   #access .sf-menu ul a:focus > .sf-sub-indicator,
   #access .sf-menu ul a:hover > .sf-sub-indicator,
   #access .sf-menu ul a:active > .sf-sub-indicator,
@@ -1449,7 +1450,7 @@ h6 {
   /* 16px */
 }
 
-/* line 56, src/_styling-initial.scss */
+/* line 55, src/_styling-initial.scss */
 ol,
 ul {
   list-style: none;
@@ -1478,8 +1479,8 @@ p {
 /* line 74, src/_styling-initial.scss */
 #content-wrap {
   background: #fff;
-  -webkit-box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
   box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
@@ -1504,14 +1505,14 @@ p {
 #content-wrap li {
   margin: 0 0 .6em 0;
 }
-/* line 97, src/_styling-initial.scss */
+/* line 94, src/_styling-initial.scss */
 #content-wrap ul ul,
 #content-wrap ol ol,
 #content-wrap ul ol,
 #content-wrap ol ul {
   margin: 0px 0px 0px 1em;
 }
-/* line 104, src/_styling-initial.scss */
+/* line 101, src/_styling-initial.scss */
 #content-wrap ul ul ul li,
 #content-wrap ol ol ol li,
 #content-wrap ul ol ul li,
@@ -1534,7 +1535,7 @@ strong {
   font-weight: bold;
 }
 
-/* line 126, src/_styling-initial.scss */
+/* line 124, src/_styling-initial.scss */
 cite,
 em,
 i {
@@ -1553,7 +1554,7 @@ blockquote {
   padding: 0 3em;
 }
 
-/* line 142, src/_styling-initial.scss */
+/* line 140, src/_styling-initial.scss */
 blockquote cite,
 blockquote em,
 blockquote i {
@@ -1611,7 +1612,7 @@ a {
   color: #111;
   text-decoration: underline;
 }
-/* line 178, src/_styling-initial.scss */
+/* line 177, src/_styling-initial.scss */
 a:active, a:hover {
   color: #500000;
   text-decoration: underline;
@@ -1623,7 +1624,7 @@ body a {
   border-color: #8d0002;
 }
 
-/* line 190, src/_styling-initial.scss */
+/* line 189, src/_styling-initial.scss */
 body a:active,
 body a:hover {
   color: #5b0125;
@@ -2032,9 +2033,9 @@ ul.simpleTabsNavigation li {
   margin: 0;
   padding: 0;
   line-height: 2.9em;
-  -webkit-box-shadow: #666666 10px 0 30px -8px true;
-  -moz-box-shadow: #666666 10px 0 30px -8px true;
-  box-shadow: #666666 10px 0 30px -8px true;
+  -moz-box-shadow: #666 10px 0 30px -8px true;
+  -webkit-box-shadow: #666 10px 0 30px -8px true;
+  box-shadow: #666 10px 0 30px -8px true;
 }
 /* line 19, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li.l1 a {
@@ -2043,30 +2044,30 @@ ul.simpleTabsNavigation li.l1 a {
 /* line 20, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li.l2 a {
   z-index: 98;
-  -webkit-box-shadow: #333333 68px 0px 44px -50px inset;
-  -moz-box-shadow: #333333 68px 0px 44px -50px inset;
-  box-shadow: #333333 68px 0px 44px -50px inset;
+  -moz-box-shadow: #333 68px 0px 44px -50px inset;
+  -webkit-box-shadow: #333 68px 0px 44px -50px inset;
+  box-shadow: #333 68px 0px 44px -50px inset;
 }
 /* line 21, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li.l3 a {
   z-index: 97;
-  -webkit-box-shadow: #333333 68px 0px 44px -50px inset;
-  -moz-box-shadow: #333333 68px 0px 44px -50px inset;
-  box-shadow: #333333 68px 0px 44px -50px inset;
+  -moz-box-shadow: #333 68px 0px 44px -50px inset;
+  -webkit-box-shadow: #333 68px 0px 44px -50px inset;
+  box-shadow: #333 68px 0px 44px -50px inset;
 }
 /* line 22, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li.l4 a {
   z-index: 96;
-  -webkit-box-shadow: #333333 68px 0px 44px -50px inset;
-  -moz-box-shadow: #333333 68px 0px 44px -50px inset;
-  box-shadow: #333333 68px 0px 44px -50px inset;
+  -moz-box-shadow: #333 68px 0px 44px -50px inset;
+  -webkit-box-shadow: #333 68px 0px 44px -50px inset;
+  box-shadow: #333 68px 0px 44px -50px inset;
 }
 /* line 23, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li.l5 a {
   z-index: 95;
-  -webkit-box-shadow: #333333 68px 0px 44px -50px inset;
-  -moz-box-shadow: #333333 68px 0px 44px -50px inset;
-  box-shadow: #333333 68px 0px 44px -50px inset;
+  -moz-box-shadow: #333 68px 0px 44px -50px inset;
+  -webkit-box-shadow: #333 68px 0px 44px -50px inset;
+  box-shadow: #333 68px 0px 44px -50px inset;
 }
 /* line 25, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li a {
@@ -2081,7 +2082,7 @@ ul.simpleTabsNavigation li a {
   position: relative;
   white-space: nowrap;
 }
-/* line 38, src/home/_simpletabs.scss */
+/* line 37, src/home/_simpletabs.scss */
 ul.simpleTabsNavigation li a:hover, ul.simpleTabsNavigation li a.current:hover {
   background-position-y: 0px;
 }
@@ -2280,7 +2281,7 @@ div.simpleTabsContent.currentTab {
   /* line 90, src/_footer.scss */
   #footer .wrap ul li a {
     font-size: .6em;
-    color: #9f6d56;
+    color: #9F6D56;
   }
   /* line 97, src/_footer.scss */
   #footer .wrap .tamu-lockup {
@@ -2294,7 +2295,7 @@ div.simpleTabsContent.currentTab {
 /* =============================================================================
    Search Page
    ========================================================================== */
-/* line 7, src/_search.scss */
+/* line 6, src/_search.scss */
 body.search div.entry-meta,
 body.search div.entry-utility {
   display: none;
@@ -2314,12 +2315,12 @@ body.search h1.page-title {
 .s {
   width: 90%;
   padding: 8px 0px 8px 30px;
-  background: white url("images/search.png") no-repeat 5px 45%;
+  background: #fff url("images/search.png") no-repeat 5px 45%;
   border-radius: 10px;
   color: #999;
   border: 1px solid #ccc;
-  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -2358,24 +2359,24 @@ body.search h1.page-title {
   #drop-nav .s {
     padding: 8px 5px 8px 100px;
     width: 50px;
-    -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
+    -webkit-transition-property: all;
     transition-property: all;
-    -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     background: transparent url("images/search2.png") no-repeat 10px 45%;
     border-radius: 0;
     color: #999;
     border: 0;
-    -webkit-box-shadow: none;
     -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
   /* line 67, src/_search.scss */
@@ -2407,7 +2408,7 @@ body.search h1.page-title {
   position: absolute;
   width: 1px;
 }
-/* line 67, src/h5bp/_helpers.scss */
+/* line 66, src/h5bp/_helpers.scss */
 .screen-reader-text.focusable:active, .screen-reader-text.focusable:focus {
   clip: auto;
   height: auto;
@@ -2543,15 +2544,15 @@ body.search h1.page-title {
 
   /* line 106, src/_header.scss */
   #content-wrap {
-    -webkit-box-shadow: none;
     -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 @media all and (min-width: 840px) {
   /* line 112, src/_header.scss */
   body {
-    background: #87817b;
+    background: #87817B;
   }
 
   /* line 115, src/_header.scss */
@@ -2592,10 +2593,11 @@ body.search h1.page-title {
 
   /* line 145, src/_header.scss */
   body {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI3MC41ODgyNCUiIHN0b3AtY29sb3I9IiNkNmQ2ZDYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NzgxN2IiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 1700, color-stop(70.58824%, #d6d6d6), color-stop(100%, #87817b));
-    background-image: -webkit-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
     background-image: -moz-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
-    background-image: -o-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
+    background-image: -webkit-linear-gradient(#d6d6d6 1200px, #87817b 1700px);
     background-image: linear-gradient(#d6d6d6 1200px, #87817b 1700px);
   }
 
@@ -2606,7 +2608,7 @@ body.search h1.page-title {
     padding-top: 1px;
     margin-top: 15px;
   }
-  /* line 155, src/_header.scss */
+  /* line 154, src/_header.scss */
   #content-wrap:before, #content-wrap:after {
     content: "";
     display: table;
@@ -2808,7 +2810,7 @@ body.home.blog .hentry {
   font-style: italic;
 }
 
-/* line 31, src/_content.scss */
+/* line 30, src/_content.scss */
 #content .post h2,
 #content .post h2 a {
   color: #B7A66D;
@@ -2833,7 +2835,7 @@ body.home.blog .hentry {
   margin: 0 0 .5em 0;
 }
 
-/* line 53, src/_content.scss */
+/* line 52, src/_content.scss */
 #content dd,
 #content dt {
   margin-bottom: .5em;
@@ -2851,7 +2853,7 @@ body.home.blog .hentry {
   border-bottom: 1px dashed #d2ca9c;
 }
 
-/* line 70, src/_content.scss */
+/* line 67, src/_content.scss */
 #content .hentry footer.entry-meta,
 #content .hentry footer.entry-meta h2,
 #content .hentry footer.entry-meta #entry-author-info,
@@ -3018,7 +3020,7 @@ body.wp-admin .tf-meta ul li em {
 .blog .entry-meta .college-month {
   text-transform: uppercase;
 }
-/* line 21, src/_news-page.scss */
+/* line 20, src/_news-page.scss */
 .blog .entry-content,
 .blog .entry-summary {
   width: 87%;
@@ -3036,7 +3038,7 @@ body.wp-admin .tf-meta ul li em {
   .blog .entry-meta {
     width: 8%;
   }
-  /* line 41, src/_news-page.scss */
+  /* line 40, src/_news-page.scss */
   .blog .entry-content,
   .blog .entry-summary {
     width: 89%;
@@ -3082,7 +3084,7 @@ body.wp-admin .tf-meta ul li em {
   padding: 0;
   font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
-/* line 37, src/_aside.scss */
+/* line 36, src/_aside.scss */
 #sidebar-navigation-widgets .widget_nav_menu,
 #sidebar-navigation-widgets .widget_links {
   background: #f1f0ec;
@@ -3210,7 +3212,7 @@ a.logout_btn:hover {
   padding: 0 0 18px 0;
 }
 
-/* line 9, src/wordpress/_comments.scss */
+/* line 8, src/wordpress/_comments.scss */
 h3#comments-title,
 h3#reply-title {
   color: #000;
@@ -3249,7 +3251,7 @@ h3#comments-title {
   margin-bottom: 0;
 }
 
-/* line 36, src/wordpress/_comments.scss */
+/* line 35, src/wordpress/_comments.scss */
 #comments .comment-body ul,
 #comments .comment-body ol {
   margin-bottom: 18px;
@@ -3295,14 +3297,14 @@ h3#comments-title {
   margin: 0 0 18px 0;
 }
 
-/* line 68, src/wordpress/_comments.scss */
+/* line 67, src/wordpress/_comments.scss */
 .comment-meta a:link,
 .comment-meta a:visited {
   color: #888;
   text-decoration: none;
 }
 
-/* line 73, src/wordpress/_comments.scss */
+/* line 72, src/wordpress/_comments.scss */
 .comment-meta a:active,
 .comment-meta a:hover {
   color: #FF4B33;
@@ -3314,13 +3316,13 @@ h3#comments-title {
   padding: 0 0 24px 0;
 }
 
-/* line 85, src/wordpress/_comments.scss */
+/* line 84, src/wordpress/_comments.scss */
 .reply a,
 a.comment-edit-link {
   color: #888;
 }
 
-/* line 89, src/wordpress/_comments.scss */
+/* line 88, src/wordpress/_comments.scss */
 .reply a:hover,
 a.comment-edit-link:hover {
   color: #FF4B33;
@@ -3338,7 +3340,7 @@ a.comment-edit-link:hover {
   margin: 0;
 }
 
-/* line 101, src/wordpress/_comments.scss */
+/* line 100, src/wordpress/_comments.scss */
 .nopassword,
 .nocomments {
   display: none;
@@ -3465,7 +3467,7 @@ h3#reply-title {
 }
 
 /* Images ------------- */
-/* line 10, src/wordpress/_images.scss */
+/* line 9, src/wordpress/_images.scss */
 #content .alignleft,
 #content img.alignleft {
   display: inline;
@@ -3473,7 +3475,7 @@ h3#reply-title {
   margin-top: 4px;
 }
 
-/* line 16, src/wordpress/_images.scss */
+/* line 15, src/wordpress/_images.scss */
 #content .alignright,
 #content img.alignright {
   display: inline;
@@ -3481,7 +3483,7 @@ h3#reply-title {
   margin-top: 4px;
 }
 
-/* line 22, src/wordpress/_images.scss */
+/* line 21, src/wordpress/_images.scss */
 #content .aligncenter,
 #content img.aligncenter {
   clear: both;
@@ -3490,7 +3492,7 @@ h3#reply-title {
   margin-right: auto;
 }
 
-/* line 30, src/wordpress/_images.scss */
+/* line 28, src/wordpress/_images.scss */
 #content img.alignleft,
 #content img.alignright,
 #content img.aligncenter {
@@ -3617,7 +3619,7 @@ img {
   float: right;
 }
 
-/* line 21, src/wordpress/_navigation.scss */
+/* line 20, src/wordpress/_navigation.scss */
 #nav-above,
 #nav-below {
   margin-bottom: 1.5em;
@@ -3720,29 +3722,29 @@ img {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-box-shadow: inset 0px 25px 25px #752645, inset 0px 20px 2px rgba(240, 150, 69, 0.5);
   -moz-box-shadow: inset 0px 25px 25px #752645, inset 0px 20px 2px rgba(240, 150, 69, 0.5);
+  -webkit-box-shadow: inset 0px 25px 25px #752645, inset 0px 20px 2px rgba(240, 150, 69, 0.5);
   box-shadow: inset 0px 25px 25px #752645, inset 0px 20px 2px rgba(240, 150, 69, 0.5);
 }
 /* line 89, src/_user-styles.scss */
 .button:hover {
   text-decoration: none;
   color: #fff;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #752645;
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #752645;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #752645;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #752645;
 }
 /* line 96, src/_user-styles.scss */
 .button.grey {
   background: #5f574f;
-  -webkit-box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
   -moz-box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
   box-shadow: inset 0px 25px 25px #686664, inset 0px 20px 2px rgba(255, 255, 255, 0.4);
 }
 /* line 100, src/_user-styles.scss */
 .button.grey:hover {
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1), inset 0px 10px 12px #686664;
 }
 
@@ -3782,8 +3784,8 @@ img {
 /* line 137, src/_user-styles.scss */
 #content-wrap .callout img {
   border: 5px solid #fff;
-  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -3798,7 +3800,7 @@ img {
   overflow: scroll;
 }
 
-/* line 156, src/_user-styles.scss */
+/* line 154, src/_user-styles.scss */
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -3827,7 +3829,7 @@ img {
     padding-right: 2%;
   }
 
-  /* line 180, src/_user-styles.scss */
+  /* line 179, src/_user-styles.scss */
   .two-of-2 ul, .one-of-2 ul,
   .one-of-3 ul, .two-of-3 ul, .three-of-3 ul {
     margin-left: 1em;
@@ -3901,7 +3903,7 @@ img {
     background-size: 1024px 240px;
   }
 }
-/* line 33, src/_widgets.scss */
+/* line 32, src/_widgets.scss */
 .widget-container.widget_rss ul li, .widget-container.widget_twitter ul li {
   font-family: verdana, clean, sans-serif;
   font-size: 13px;
@@ -3919,8 +3921,8 @@ img {
   color: #500000;
   font-family: sans-serif;
   text-transform: none;
-  -webkit-box-shadow: none;
   -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   padding: 0;
 }
@@ -4012,7 +4014,7 @@ img {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 130, src/_widgets.scss */
+/* line 129, src/_widgets.scss */
 .widget-container.widget_rss ul li, .widget-container.widget_twitter ul li {
   font-family: verdana, clean, sans-serif;
   font-size: 13px;
@@ -4023,7 +4025,7 @@ img {
   background-position: right -180px;
 }
 
-/* line 141, src/_widgets.scss */
+/* line 140, src/_widgets.scss */
 .agrilife_today_twitter h3.widget-title,
 .home-widgets-lower .widget:first-child h3.widget-title {
   background-position: right -120px;
@@ -4287,7 +4289,7 @@ img {
   border: none;
 }
 
-/* line 114, src/widgets/_agrilife-watch_read_listen.scss */
+/* line 113, src/widgets/_agrilife-watch_read_listen.scss */
 .intent-meta a:hover,
 .intent-meta a:active {
   background: rgba(255, 255, 255, 0.7);
@@ -4311,7 +4313,7 @@ img {
   position: relative;
 }
 
-/* line 6, src/widgets/_twitter.scss */
+/* line 5, src/widgets/_twitter.scss */
 .widget_twitter_hash_tag ul.twitter-hash-tag-widget li,
 .widget_twitter ul li {
   margin: 0;
@@ -4349,14 +4351,14 @@ img {
   margin: 20px 0;
 }
 
-/* line 41, src/widgets/_twitter.scss */
+/* line 39, src/widgets/_twitter.scss */
 .widget_twitter_hash_tag ul.twitter-hash-tag-widget > li:first-child,
 .widget_twitter ul > li:first-child,
 .agrilifetoday ul > li:first-child {
   border-top: none;
 }
 
-/* line 46, src/widgets/_twitter.scss */
+/* line 45, src/widgets/_twitter.scss */
 ul.twitter-hash-tag-widget li a img,
 .widget_twitter ul li a img {
   left: 0;
@@ -4397,8 +4399,8 @@ ul.twitter-hash-tag-widget li a img,
 /* line 86, src/widgets/_srp-widget.scss */
 .srp-widget-thmb {
   max-width: 100%;
-  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -4489,7 +4491,7 @@ ul.twitter-hash-tag-widget li a img,
   border-top: double #d5d1bf;
 }
 
-/* line 39, src/plugins/_job-postings-cpt.scss */
+/* line 38, src/plugins/_job-postings-cpt.scss */
 .staff-listing-ul,
 .staff-listing-item {
   list-style-type: none;
@@ -4530,7 +4532,7 @@ ul.twitter-hash-tag-widget li a img,
   margin-right: 0;
 }
 
-/* line 75, src/plugins/_job-postings-cpt.scss */
+/* line 74, src/plugins/_job-postings-cpt.scss */
 .staff-listing-item:hover,
 a.staff-listing-link:hover {
   background: #f1efce;
@@ -4545,7 +4547,7 @@ a.staff-listing-link:hover {
   margin-bottom: 10px;
 }
 
-/* line 87, src/plugins/_job-postings-cpt.scss */
+/* line 85, src/plugins/_job-postings-cpt.scss */
 .staff-phone,
 .staff-email,
 .staff-position {
@@ -4632,7 +4634,7 @@ a.accordion-title.down:hover {
 Flickr Gallery
 
 **********************************************************/
-/* line 8, src/plugins/_flickr-gallery.scss */
+/* line 7, src/plugins/_flickr-gallery.scss */
 body .flickr-gallery-next a,
 body .flickr-gallery-prev a {
   font-family: "ff-meta-web-pro", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
@@ -4647,7 +4649,7 @@ body .flickr-gallery-prev a {
   margin: 20px 0 20px 2px;
 }
 
-/* line 22, src/plugins/_flickr-gallery.scss */
+/* line 21, src/plugins/_flickr-gallery.scss */
 body .flickr-gallery-next a:hover,
 body .flickr-gallery-prev a:hover {
   background: #e2dbbf;
@@ -4656,14 +4658,14 @@ body .flickr-gallery-prev a:hover {
   box-shadow: 0 1px 1px #fff;
 }
 
-/* line 30, src/plugins/_flickr-gallery.scss */
+/* line 29, src/plugins/_flickr-gallery.scss */
 body.researchonly #content .flickr-gallery-next a,
 body.researchonly #content .flickr-gallery-prev a {
   color: #fff;
   background: #4e792f;
 }
 
-/* line 36, src/plugins/_flickr-gallery.scss */
+/* line 35, src/plugins/_flickr-gallery.scss */
 body.researchonly #content .flickr-gallery-next a:hover,
 body.researchonly #content .flickr-gallery-prev a:hover {
   background: #1f2f12;
@@ -4740,7 +4742,7 @@ div.flickr-gallery-next {
   margin-right: 50px;
 }
 
-/* line 106, src/plugins/_flickr-gallery.scss */
+/* line 105, src/plugins/_flickr-gallery.scss */
 div.flickr-gallery-next a,
 div.flickr-gallery-prev a {
   padding: 6px 8px;
@@ -4774,7 +4776,7 @@ div.gform_wrapper {
   max-width: 960px;
 }
 
-/* line 10, src/plugins/_gravityforms.scss */
+/* line 8, src/plugins/_gravityforms.scss */
 .gform_wrapper h1,
 .gform_wrapper h2,
 .gform_wrapper h3 {
@@ -4801,7 +4803,7 @@ div.gform_wrapper {
   text-transform: capitalize;
 }
 
-/* line 32, src/plugins/_gravityforms.scss */
+/* line 31, src/plugins/_gravityforms.scss */
 div.gform_wrapper input,
 div.gform_wrapper textarea {
   font-size: 14px;
@@ -4815,13 +4817,13 @@ div.gform_wrapper textarea {
   /* doesn't validate but added for Safari field resizing */
 }
 
-/* line 44, src/plugins/_gravityforms.scss */
+/* line 43, src/plugins/_gravityforms.scss */
 div.gform_wrapper input:hover,
 div.gform_wrapper textarea:hover {
   border: 1px solid #777;
 }
 
-/* line 49, src/plugins/_gravityforms.scss */
+/* line 48, src/plugins/_gravityforms.scss */
 div.gform_wrapper input:focus,
 div.gform_wrapper textarea:focus {
   border: 1px solid #6ea2b6;
@@ -4850,13 +4852,13 @@ html > body .entry ul, .gform_wrapper ul {
   margin-bottom: 10px;
 }
 
-/* line 74, src/plugins/_gravityforms.scss */
+/* line 73, src/plugins/_gravityforms.scss */
 .gform_wrapper ul.gfield_radio li,
 .gform_wrapper ul.gfield_checkbox li {
   overflow: visible;
 }
 
-/* line 81, src/plugins/_gravityforms.scss */
+/* line 78, src/plugins/_gravityforms.scss */
 .gform_wrapper ul.right_label li,
 .gform_wrapper form ul.right_label li,
 .gform_wrapper ul.left_label li,
@@ -4864,7 +4866,7 @@ html > body .entry ul, .gform_wrapper ul {
   margin-bottom: 14px;
 }
 
-/* line 88, src/plugins/_gravityforms.scss */
+/* line 85, src/plugins/_gravityforms.scss */
 .gform_wrapper ul li:before,
 .gform_wrapper ul li:after,
 .entry ul li:before,
@@ -4873,7 +4875,7 @@ html > body .entry ul, .gform_wrapper ul {
   /* for safari */
 }
 
-/* line 94, src/plugins/_gravityforms.scss */
+/* line 92, src/plugins/_gravityforms.scss */
 .gform_wrapper ul li:before,
 .gform_wrapper ul li:after,
 .entry ul li:before, .entry ul li:after {
@@ -4904,7 +4906,7 @@ html > body .entry ul, .gform_wrapper ul {
   margin-bottom: 18px;
 }
 
-/* line 120, src/plugins/_gravityforms.scss */
+/* line 117, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_time_hour,
 .gform_wrapper .gfield_time_minute,
 .gform_wrapper .gfield_date_month,
@@ -4913,7 +4915,7 @@ html > body .entry ul, .gform_wrapper ul {
   float: left;
 }
 
-/* line 127, src/plugins/_gravityforms.scss */
+/* line 125, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_date_month,
 .gform_wrapper .gfield_date_day,
 .gform_wrapper .gfield_date_year {
@@ -4925,7 +4927,7 @@ html > body .entry ul, .gform_wrapper ul {
   width: 60px !important;
 }
 
-/* line 139, src/plugins/_gravityforms.scss */
+/* line 135, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_time_hour input,
 .gform_wrapper .gfield_time_minute input,
 .gform_wrapper .gfield_date_month input,
@@ -4934,7 +4936,7 @@ html > body .entry ul, .gform_wrapper ul {
   width: 70% !important;
 }
 
-/* line 145, src/plugins/_gravityforms.scss */
+/* line 143, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_date_month,
 .gform_wrapper .gfield_date_day,
 .gform_wrapper .gfield_date_year {
@@ -4944,19 +4946,19 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 150, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_date_month input, .gform_wrapper .gfield_date_day input, .gform_wrapper .gfield_date_year input {
-  width: 85%!important;
+  width: 85% !important;
 }
 
 /* line 151, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_hover {
-  border: 1px dashed #2175A9!important;
+  border: 1px dashed #2175A9 !important;
   cursor: pointer;
 }
 
 /* line 152, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_selected {
   background-color: #DFEFFF;
-  border: 1px solid #C2D7EF!important;
+  border: 1px solid #C2D7EF !important;
 }
 
 /* line 153, src/plugins/_gravityforms.scss */
@@ -4972,17 +4974,17 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 155, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_name_first input, .gform_wrapper .ginput_complex .ginput_left input {
-  width: 90%!important;
+  width: 90% !important;
 }
 
 /* line 156, src/plugins/_gravityforms.scss */
 .gform_wrapper .field_name_last input {
-  width: 93%!important;
+  width: 93% !important;
 }
 
 /* line 157, src/plugins/_gravityforms.scss */
 .gform_wrapper .datepicker {
-  width: 100px!important;
+  width: 100px !important;
 }
 
 /* line 158, src/plugins/_gravityforms.scss */
@@ -4998,17 +5000,17 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 160, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_error .ginput_complex .ginput_left input {
-  width: 90%!important;
+  width: 90% !important;
 }
 
 /* line 161, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_error .ginput_complex .ginput_right input {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 /* line 162, src/plugins/_gravityforms.scss */
 .gform_wrapper .ginput_complex input, .gform_wrapper .ginput_complex select {
-  width: 92%!important;
+  width: 92% !important;
 }
 
 /* line 163, src/plugins/_gravityforms.scss */
@@ -5022,14 +5024,14 @@ html > body .entry ul, .gform_wrapper ul {
 /* line 164, src/plugins/_gravityforms.scss */
 .gform_wrapper .ginput_complex .name_prefix {
   float: left;
-  width: 30px!important;
+  width: 30px !important;
   margin-right: 14px;
 }
 
 /* line 165, src/plugins/_gravityforms.scss */
 .gform_wrapper .ginput_complex .name_suffix {
   float: left;
-  width: 30px!important;
+  width: 30px !important;
 }
 
 /* line 166, src/plugins/_gravityforms.scss */
@@ -5109,9 +5111,9 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 178, src/plugins/_gravityforms.scss */
 .gform_wrapper h2.gsection_title {
-  margin: 0!important;
-  padding: 0!important;
-  letter-spacing: normal!important;
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: normal !important;
 }
 
 /* line 179, src/plugins/_gravityforms.scss */
@@ -5123,7 +5125,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 180, src/plugins/_gravityforms.scss */
 .gform_wrapper h3.gform_title {
-  letter-spacing: normal!important;
+  letter-spacing: normal !important;
   margin: 10px 0 6px 0;
 }
 
@@ -5141,7 +5143,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 183, src/plugins/_gravityforms.scss */
 .gform_wrapper .gsection {
-  border-bottom: 1px dotted #ccc!important;
+  border-bottom: 1px dotted #ccc !important;
   padding: 0 0 8px 0;
   margin: 8px 0 16px 0;
 }
@@ -5267,7 +5269,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 210, src/plugins/_gravityforms.scss */
 .ginput_complex + .gfield_description {
-  padding-top: 0!important;
+  padding-top: 0 !important;
 }
 
 /* line 211, src/plugins/_gravityforms.scss */
@@ -5307,10 +5309,10 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 217, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_error {
-  background-color: #FFDFDF!important;
-  margin-top: 4px!important;
+  background-color: #FFDFDF !important;
+  margin-top: 4px !important;
   margin-bottom: 6px;
-  padding: 6px 6px 4px 6px!important;
+  padding: 6px 6px 4px 6px !important;
   border: 1px dotted #C89797;
 }
 
@@ -5351,7 +5353,7 @@ html > body .entry ul, .gform_wrapper ul {
 
 /* line 224, src/plugins/_gravityforms.scss */
 .gform_wrapper .validation_message {
-  color: #790000!important;
+  color: #790000 !important;
   font-size: 11px;
   font-family: verdana, sans-serif;
   letter-spacing: normal;
@@ -5413,7 +5415,7 @@ html > body .entry ul, .gform_wrapper ul {
 /* line 232, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
   margin: 0 0 4px 0;
-  line-height: 130%!important;
+  line-height: 130% !important;
 }
 
 /* improve spacing and prevent descenders from getting cut off in IE */
@@ -5613,17 +5615,17 @@ img.ui-datepicker-trigger {
 /* additional spacing and padding tweaks --------------------------------------------*/
 /* line 270, src/plugins/_gravityforms.scss */
 .gform_wrapper .left_label .ginput_complex .ginput_right label, .gform_wrapper .left_label .ginput_complex .ginput_left label, .gform_wrapper .right_label .ginput_complex .ginput_right label, .gform_wrapper .right_label .ginput_complex .ginput_left label {
-  word-spacing: -0.4em;
+  word-spacing: -.4em;
 }
 
 /* line 271, src/plugins/_gravityforms.scss */
 .gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 /* line 272, src/plugins/_gravityforms.scss */
 .gform_wrapper .top_label .ginput_complex + .gfield_description {
-  padding-bottom: 0!important;
+  padding-bottom: 0 !important;
 }
 
 /* line 273, src/plugins/_gravityforms.scss */
@@ -5635,13 +5637,13 @@ img.ui-datepicker-trigger {
 /* pretty specific inheritance but if your theme is structured just like the 2010 theme it may affect yours as well */
 /* line 278, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, .entry-content .gform_wrapper input, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 /* line 279, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .ginput_complex select, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper select {
   font-size: 16px;
-  padding: 1px 2px!important;
+  padding: 1px 2px !important;
   background-color: #F9F9F9;
   border: 1px solid #CCC;
   color: #444;
@@ -5649,12 +5651,12 @@ img.ui-datepicker-trigger {
 
 /* line 280, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input[type=checkbox], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li input {
-  margin-top: 2px!important;
+  margin-top: 2px !important;
 }
 
 /* line 281, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input[type=radio], #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li input {
-  margin-top: 1px!important;
+  margin-top: 1px !important;
 }
 
 /* line 282, src/plugins/_gravityforms.scss */
@@ -5674,7 +5676,7 @@ img.ui-datepicker-trigger {
 
 /* line 285, src/plugins/_gravityforms.scss */
 #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_checkbox li label, #wrapper.hfeed #main #container #content .entry-content .gform_wrapper .gfield_radio li label {
-  *display: inline-block!important;
+  *display: inline-block !important;
   *margin: 2px 0 0 6px;
 }
 
@@ -5683,18 +5685,18 @@ img.ui-datepicker-trigger {
 /* pretty specific inheritance but if your theme is structured identical to the Thesis theme it will affect yours as well */
 /* line 290, src/plugins/_gravityforms.scss */
 body.custom #container #page #content_box .post_box .format_text ul.gfield_radio li input, body.custom #container #page #content_box .post_box .format_text ul.gfield_checkbox li input {
-  width: auto!important;
-  border: none!important;
-  border-color: none!important;
-  background-color: none!important;
-  background: none!important;
+  width: auto !important;
+  border: none !important;
+  border-color: none !important;
+  background-color: none !important;
+  background: none !important;
 }
 
 /* line 291, src/plugins/_gravityforms.scss */
 body.custom #container #page #content_box .post_box .format_text .gform_footer input[type=image] {
-  border: none!important;
-  border-color: none!important;
-  background-color: none!important;
+  border: none !important;
+  border-color: none !important;
+  background-color: none !important;
 }
 
 /* line 292, src/plugins/_gravityforms.scss */
@@ -5767,7 +5769,7 @@ body.custom #container #page #content_box .post_box .format_text .gform_wrapper 
 
 /* line 307, src/plugins/_gravityforms.scss */
 .gform_wrapper .gform_validation_container {
-  display: none!important;
+  display: none !important;
 }
 
 /* Simple Captcha ------------------------------------------------------*/
@@ -5798,11 +5800,11 @@ body.custom #container #page #content_box .post_box .format_text .gform_wrapper 
 
 /* line 317, src/plugins/_gravityforms.scss */
 .gform_wrapper .gfield_captcha_container img.gfield_captcha {
-  border: none!important;
-  background: none!important;
-  float: none!important;
-  margin: 0!important;
-  padding: 0!important;
+  border: none !important;
+  background: none !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Math Challenge ------------------------------------------------------*/
@@ -6009,7 +6011,7 @@ body.researchonly span.gigpress-sidebar-status a, body.researchonly .btn a:activ
   background: -moz-linear-gradient(top, #5a8c37, #4e7a30);
 }
 
-/* line 119, src/plugins/_gigpress.scss */
+/* line 118, src/plugins/_gigpress.scss */
 div.event dl,
 .gigpress-listing dl {
   position: relative;
@@ -6020,13 +6022,13 @@ div.event dl,
   border-top: 1px solid white;
 }
 
-/* line 129, src/plugins/_gigpress.scss */
+/* line 128, src/plugins/_gigpress.scss */
 div.event dl:last-child,
 .gigpress-listing dl:last-child {
   border-bottom: 1px solid transparent;
 }
 
-/* line 134, src/plugins/_gigpress.scss */
+/* line 133, src/plugins/_gigpress.scss */
 div.event dt.date,
 span.gigpress-sidebar-date {
   position: relative;
@@ -6060,7 +6062,7 @@ dl dd.title-loc h4 {
   font-size: 1.5em;
 }
 
-/* line 166, src/plugins/_gigpress.scss */
+/* line 164, src/plugins/_gigpress.scss */
 div.event dl dd.title-loc h4,
 div.event dl dd.title-loc p,
 .gigpress-sidebar-notes {
@@ -6068,13 +6070,13 @@ div.event dl dd.title-loc p,
   margin-bottom: 0.5em;
 }
 
-/* line 172, src/plugins/_gigpress.scss */
+/* line 171, src/plugins/_gigpress.scss */
 #aside div.event dl dt.date strong,
 #aside span.word2 {
   font-weight: bold;
   display: block;
   font-size: 2em;
-  margin-top: -0.1em;
+  margin-top: -.1em;
 }
 
 /* line 179, src/plugins/_gigpress.scss */
@@ -6090,7 +6092,7 @@ dd.sign-up a {
   font-size: .7em;
 }
 
-/* line 191, src/plugins/_gigpress.scss */
+/* line 190, src/plugins/_gigpress.scss */
 div.event dl.first,
 .gigpress-listing dl:first-child {
   border-top: none;
@@ -6102,14 +6104,14 @@ div.event.last dl {
   border-bottom: none;
 }
 
-/* line 202, src/plugins/_gigpress.scss */
+/* line 200, src/plugins/_gigpress.scss */
 body.page .gigpress-table th,
 body.page tr.gigpress-info td,
 body.page .gigpress-table th {
   border: none;
 }
 
-/* line 208, src/plugins/_gigpress.scss */
+/* line 206, src/plugins/_gigpress.scss */
 body.page .gigpress-table th a,
 body.page tr.gigpress-info td a,
 body.page .gigpress-table th a {
@@ -6122,7 +6124,7 @@ body.page #content tr.gigpress-info td.description {
   width: 98%;
 }
 
-/* line 218, src/plugins/_gigpress.scss */
+/* line 217, src/plugins/_gigpress.scss */
 .gigpress-subscribe a,
 .gigpress-artist-subscriptions a {
   border: none;
@@ -6145,7 +6147,7 @@ body.page #content a.gigpress-tickets-link {
   margin: 15px;
 }
 
-/* line 242, src/plugins/_gigpress.scss */
+/* line 241, src/plugins/_gigpress.scss */
 body.page tr.gigpress-tour td,
 body.page th.gigpress-heading {
   background: none;
@@ -6569,7 +6571,7 @@ body.page-template-page-home-slideshow-2-php .flex-container {
   outline: none;
 }
 
-/* line 23, src/plugins/_flexslider.scss */
+/* line 21, src/plugins/_flexslider.scss */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -6809,20 +6811,29 @@ p.flex-caption a:hover {
     clear: both !important;
     display: block !important;
     position: relative !important;
+    padding-top: 0;
   }
 
-  /* line 11, src/_print.scss */
+  /* line 12, src/_print.scss */
+  #content-wrap,
+  .wrap {
+    background: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* line 18, src/_print.scss */
   #header {
     border-bottom: 2pt solid #000;
     padding-bottom: 18pt;
   }
 
-  /* line 15, src/_print.scss */
+  /* line 22, src/_print.scss */
   #colophon {
     border-top: 2pt solid #000;
   }
 
-  /* line 19, src/_print.scss */
+  /* line 25, src/_print.scss */
   #site-title,
   #site-description {
     float: none;
@@ -6830,28 +6841,27 @@ p.flex-caption a:hover {
     padding: 0;
   }
 
-  /* line 24, src/_print.scss */
+  /* line 31, src/_print.scss */
   #site-title {
     font-size: 13pt;
   }
 
-  /* line 27, src/_print.scss */
+  /* line 34, src/_print.scss */
   .entry-content {
     font-size: 14pt;
   }
 
-  /* line 30, src/_print.scss */
+  /* line 37, src/_print.scss */
   .entry-title {
     font-size: 21pt;
   }
 
-  /* line 49, src/_print.scss */
+  /* line 40, src/_print.scss */
   #access,
   #branding img,
   #respond,
   #footer,
   #aside,
-  #agency-nav-container,
   #drop-nav .search,
   #drop-nav .explore,
   #bg-image-container,
@@ -6866,18 +6876,33 @@ p.flex-caption a:hover {
     display: none !important;
   }
 
-  /* line 52, src/_print.scss */
+  /* line 59, src/_print.scss */
+  .site-title {
+    position: fixed;
+    left: 0;
+    display: none;
+  }
+
+  /* line 64, src/_print.scss */
+  #agency-nav {
+    position: fixed;
+    left: 270px;
+    top: 0;
+    display: none;
+  }
+
+  /* line 70, src/_print.scss */
   .college-department #wrapper {
     padding-top: 0;
   }
 
-  /* line 55, src/_print.scss */
+  /* line 73, src/_print.scss */
   .college-department #department-title {
     margin: 0 auto;
     width: 100% !important;
   }
 
-  /* line 61, src/_print.scss */
+  /* line 77, src/_print.scss */
   #container,
   #header,
   .wrap #wrap {
@@ -6886,58 +6911,64 @@ p.flex-caption a:hover {
     float: none !important;
   }
 
-  /* line 67, src/_print.scss */
+  /* line 84, src/_print.scss */
   #content,
   .one-column #content {
     width: 100%;
     margin: 24pt 0 0;
   }
 
-  /* line 71, src/_print.scss */
+  /* line 89, src/_print.scss */
   .wp-caption p {
     font-size: 11pt;
   }
 
-  /* line 75, src/_print.scss */
+  /* line 92, src/_print.scss */
   #site-info,
   #site-generator {
     float: none;
     width: auto;
   }
 
-  /* line 79, src/_print.scss */
+  /* line 97, src/_print.scss */
   #colophon {
     width: auto;
   }
 
-  /* line 82, src/_print.scss */
+  /* line 100, src/_print.scss */
   img#wpstats {
     display: none;
   }
 
-  /* line 85, src/_print.scss */
+  /* line 103, src/_print.scss */
   #site-generator a {
     padding: 0;
     margin: 0;
   }
 
-  /* line 89, src/_print.scss */
+  /* line 107, src/_print.scss */
   #entry-author-info {
     border: 1px solid #e7e7e7;
   }
 
-  /* line 92, src/_print.scss */
+  /* line 110, src/_print.scss */
   #main {
     display: inline;
   }
 
-  /* line 95, src/_print.scss */
+  /* line 113, src/_print.scss */
   .home .sticky {
     border: none;
   }
 
-  /* line 98, src/_print.scss */
+  /* line 116, src/_print.scss */
   .js [role="document"] {
     width: 100% !important;
+  }
+
+  /* line 120, src/_print.scss */
+  [role="navigation"],
+  [role="document"] {
+    padding: 0;
   }
 }
