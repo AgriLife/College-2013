@@ -1,124 +1,239 @@
 @media print {
-	body {
-		background:none !important;
-	}
-	#wrapper {
-		float: none !important;
-		clear: both !important;
-		display: block !important;
-		position: relative !important;
-        padding-top: 0;
-	}
-    #content-wrap,
-    .wrap {
-      background: none;
-      margin-top: 0;
-      padding-top: 0;
-    }
-	#header {
-		border-bottom: 2pt solid #000;
-		padding-bottom: 18pt;
-	}
-	#colophon {
-		border-top: 2pt solid #000;
-	}
-	#site-title,
-	#site-description {
-		float: none;
-		margin: 0;
-		padding:0;
-	}
-	#site-title {
-		font-size: 13pt;
-	}
-	.entry-content {
-		font-size: 14pt;
-	}
-	.entry-title {
-		font-size: 21pt;
-	}
-	#access,
-	#branding img,
-	#respond,
-    #footer,
-    #aside,
-    #drop-nav .search,
-    #drop-nav .explore,
-    #bg-image-container,
-    #menu-button,
-    .comment-edit-link,
-	.edit-link,
-	.navigation,
-	.page-link,
-	.widget-area,
-    .menu-secondary,
-    #drop-section-nav
-    {
-	  display: none !important;
-	}
-    .site-title{
-      position: fixed;
-      left: 0;
-      display: none;
-    }
-    #agency-nav {
-      position: fixed;
-      left: 270px;
-      top: 0;
-      display: none;
-    }
-    .college-department #wrapper {
-      padding-top: 0;
-    }
-    .college-department #department-title {
-      margin: 0 auto;
-      width: 100% !important;
-    }
-	#container,
-	#header,
-    .wrap #wrap {
-		width: 100% !important;
-		margin: 0 !important;
-        float: none !important;
-	}
-	#content,
-	.one-column #content {
-		width: 100%;
-		margin: 24pt 0 0;
-	}
-	.wp-caption p {
-		font-size: 11pt;
-	}
-	#site-info,
-	#site-generator {
-		float: none;
-		width: auto;
-	}
-	#colophon {
-		width: auto;
-	}
-	img#wpstats {
-		display:none
-	}
-	#site-generator a {
-		padding: 0;
-	margin: 0;
-	}
-	#entry-author-info {
-		border: 1px solid #e7e7e7;
-	}
-	#main {
-		display:inline;
-	}
-	.home .sticky {
-		border: none;
-	}
-    .js [role="document"] {
-      width: 100% !important;
+  %title {
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  %bgreset {
+    background: none transparent !important;
+  }
+  %mapareset {
+    margin: 0;
+    padding: 0;
+  }
 
+  #access,
+  #branding img,
+  img#wpstats,
+  #respond,
+  #footer,
+  #aside,
+  #agency-nav,
+  .navigation,
+  .menu-secondary,
+  #bg-image-container,
+  #menu-button,
+  .comment-edit-link,
+  .edit-link,
+  .page-link,
+  .widget-area,
+  .welcome-text:empty {
+    display: none !important;
+  }
+  #main {
+    display: inline;
+  }
+  .js [role="document"] {
+    width: 100% !important;
+  }
+  #site-info,
+  #site-generator,
+  #colophon {
+    width: auto;
+  }
+  h1.entry-title,
+  #site-generator a,
+  #site-title,
+  #site-description {
+    @extend %mapareset;
+  }
+  [role="navigation"],
+  [role="document"] {
+    padding: 0;
+  }
+  #site-title,
+  #site-description,
+  #site-info,
+  #site-generator {
+    float: none !important;
+  }
+  body,
+  #content-wrap {
+    @extend %bgreset;
+  }
+  .entry-title {
+    font-size: 21pt;
+  }
+  .entry-content {
+    font-size: 14pt;
+  }
+  #site-title {
+    font-size: 13pt;
+  }
+  .wp-caption p {
+    font-size: 11pt;
+  }
+  #container {
+    margin: 0;
+    width: 100%;
+    float: none;
+  }
+  #wrapper {
+    float: none !important;
+    clear: both !important;
+    position: relative !important;
+    padding-top: 0;
+    display: block !important;
+    #department-title {
+      @extend %mapareset;
     }
-    [role="navigation"],
-    [role="document"] {
+    body.content-sidebar & #content-wrap {
+      .wrap,
+      .wrap #wrap,
+      .wrap #wrap #content {
+        @extend %mapareset;
+      }
+    }
+  }
+  #content-wrap {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  #header {
+    float: none;
+    margin: 0;
+    width: 100%;
+    border-bottom: 2pt solid #000;
+    padding-bottom: 18pt;
+  }
+  #colophon {
+    border-top: 2pt solid #000;
+  }
+  #entry-author-info {
+    border: 1px solid #e7e7e7;
+  }
+
+  .wrap {
+    @extend %bgreset;
+    @extend %mapareset;
+    #wrap {
+      width: 100%;
+      margin: 0;
+      float: none;
+    }
+    .content-sidebar & #wrap {
       padding: 0;
     }
+  }
+
+  #content,
+  .one-column #content {
+    margin: 24pt 0 0;
+    width: 100%;
+  }
+
+  #drop-section-nav {
+    position: static;
+    padding: 0;
+    margin: 0 0 16px;
+    height: auto;
+    float: none;
+    background: transparent none;
+    * {
+      position: static;
+    }
+    li {
+      display: none;
+    }
+    li.top-agency {
+      display: block;
+      .site-title {
+        &, & a {
+          @extend %title;
+          @extend %mapareset;
+          @extend %bgreset;
+          border: 0 none;
+          display: block;
+          float: none;
+          height: auto;
+          width: 100%;
+        }
+        a {
+          overflow: visible;
+        }
+      }
+    }
+    #drop-nav {
+      width: 100%;
+      ul {
+        @extend %mapareset;
+      }
+      .search,
+      .explore {
+        display: none;
+      }
+    }
+  }
+
+  .home {
+    .welcome,
+    .programs {
+      width: 100% !important;
+    }
+    .home-content,
+    #content-wrap,
+    .widget-container {
+      @extend %bgreset;
+    }
+    .home-content #content {
+      @extend %mapareset;
+    }
+    #content .home-widgets .widget {
+      display: none;
+      &.tribe-events-adv-list-widget {
+        display: block;
+      }
+      h3.widget-title {
+        @extend %bgreset;
+        @extend %mapareset;
+        color: #000;
+      }
+    }
+    .featured-content {
+      display: none;
+    }
+    .program-row .single-program {
+      width: 31%;
+      float: left;
+      padding: 0 0 0 3%;
+      margin-bottom: 16px;
+      &:first-child {
+        padding: 0;
+      }
+    }
+    .sticky {
+      border: none;
+    }
+  }
+
+  .college-department {
+    #drop-section-nav {
+      display: none;
+    }
+    #department-title {
+      width: 100% !important;
+      h1 {
+        @extend %title;
+        color: #000;
+        span {
+          display: inline;
+          line-height: 1em;
+          font-size: 1em;
+        }
+      }
+    }
+    #wrapper {
+      padding-top: 0;
+    }
+  }
 }
