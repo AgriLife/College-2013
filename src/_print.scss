@@ -5,7 +5,7 @@
     text-decoration: underline;
   }
   %bgreset {
-    background: none transparent !important;
+    background: none transparent;
   }
   %mapareset {
     margin: 0;
@@ -13,6 +13,7 @@
   }
 
   #access,
+  .js #access,
   #branding img,
   img#wpstats,
   #respond,
@@ -28,13 +29,13 @@
   .page-link,
   .widget-area,
   .welcome-text:empty {
-    display: none !important;
+    display: none;
   }
   #main {
     display: inline;
   }
   .js [role="document"] {
-    width: 100% !important;
+    width: 100%;
   }
   #site-info,
   #site-generator,
@@ -55,7 +56,7 @@
   #site-description,
   #site-info,
   #site-generator {
-    float: none !important;
+    float: none;
   }
   body,
   #content-wrap {
@@ -79,11 +80,11 @@
     float: none;
   }
   #wrapper {
-    float: none !important;
-    clear: both !important;
-    position: relative !important;
+    float: none;
+    clear: both;
+    position: relative;
     padding-top: 0;
-    display: block !important;
+    display: block;
     #department-title {
       @extend %mapareset;
     }
@@ -93,6 +94,9 @@
       .wrap #wrap #content {
         @extend %mapareset;
       }
+    }
+    body & #content-wrap {
+      width: auto;
     }
   }
   #content-wrap {
@@ -116,7 +120,8 @@
   .wrap {
     @extend %bgreset;
     @extend %mapareset;
-    #wrap {
+    #wrap,
+    #wrap.one-column {
       width: 100%;
       margin: 0;
       float: none;
@@ -178,7 +183,9 @@
   .home {
     .welcome,
     .programs {
-      width: 100% !important;
+      width: 100%;
+      float: none;
+      padding-left: 0;
     }
     .home-content,
     #content-wrap,
@@ -187,6 +194,10 @@
     }
     .home-content #content {
       @extend %mapareset;
+    }
+    #content {
+      width: 100%;
+      float: none;
     }
     #content .home-widgets .widget {
       display: none;
@@ -221,7 +232,7 @@
       display: none;
     }
     #department-title {
-      width: 100% !important;
+      width: 100%;
       h1 {
         @extend %title;
         color: #000;
