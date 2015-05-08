@@ -28,13 +28,16 @@ body.home.blog .hentry {
 // post Styles
 #content {
 	.post h2,
-	.post h2 a {
+	.post h2 a,
+	.featured-wrap .entry-title,
+	.featured-wrap .entry-title a {
 		color: #B7A66D;
 		clear: right;
 		font-size: 1.1em;
 		text-decoration: none;
 	}
-	.post h2 a:hover {
+	.post h2 a:hover,
+	.featured-wrap .entry-title a:hover {
 		text-decoration: underline;
 	}
 }
@@ -171,10 +174,3 @@ body.wp-admin .tf-meta ul li em { width: 200px; display:block; float:left; color
 		}
 	}
 }
-
-
-
-
-
-
-
