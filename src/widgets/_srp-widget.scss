@@ -88,11 +88,11 @@
 	@include box-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.srp-content-box {
+.srp-post-content-container .srp-content-box {
 	width: 71%;
 	float: left;
 	display: block;
-	padding-left: 10px;
+	margin-left: 10px;
 
 	h4 {
 		font-size: 1em;
@@ -116,5 +116,33 @@
 		font-style: normal;
 		color: #500000;
 		text-align: center;
+	}
+}
+
+#aside .srp-post-content-container {
+  display: block;
+  
+	.srp-thumbnail-box {
+		width: 30%;
+		max-width: 100px;
+		margin-right: 15px;
+	}
+	
+	.srp-content-box {
+		width: 100%;
+		float: none;
+		flex: none;
+		-moz-box-flex: none;
+		margin-left: 0;
+
+		h4, .srp-post-date {
+			display: inline;
+		}
+		.srp-post-date:before {
+			content: " \2014  ";
+		}
+		.srp-post-content {
+			font-style: italic;
+		}
 	}
 }
