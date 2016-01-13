@@ -78,6 +78,12 @@ body.touch #access .menu-header li ul.sub-menu {
     width: 1004px;
     padding: 0 10px;
   }
+  
+  /* Solution to lightbox google search results */
+  .js .gsc-overflow-hidden #access {
+    z-index: 1;
+  }
+
   /* main menu */
   #access ul {
     padding: 0 0 0 12px;

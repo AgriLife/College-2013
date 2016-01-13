@@ -175,6 +175,10 @@
       width: $desktop-stage-width;
       margin: 0 auto;
     }
+    /* Solution to lightbox google search results */
+    .gsc-overflow-hidden & {
+      z-index: 1;
+    }
   }
 
   .site-title {
