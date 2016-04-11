@@ -4,7 +4,7 @@
   "description": "Child theme for Texas A&M College of Agriculture and Life Sciences",
   "main": "functions.php",
   "dependencies": {
-    "grunt": "latest"
+    "grunt": "~0.4.0"
   },
   "devDependencies": {
     "grunt-contrib-coffee": "~0.7.0",
