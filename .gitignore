@@ -3,3 +3,7 @@
 .idea/
 bower_components
 node_modules
+/iefix.css
+/style.css
+/js/college_scripts-ck.js
+/js/presentational-ck.js
