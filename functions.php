@@ -146,8 +146,8 @@ function load_new_js() {
 		  true);
 		wp_enqueue_script( 'college_scripts' );
 
-    wp_register_script( 'typekit', '//use.typekit.com/bbz1kzh.js' );
-    wp_enqueue_script( 'typekit' );
+    wp_register_script( 'typekittwo', '//use.typekit.com/bbz1kzh.js' );
+    wp_enqueue_script( 'typekittwo' );
 
 	}
 }
