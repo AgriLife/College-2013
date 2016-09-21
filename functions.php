@@ -145,6 +145,10 @@ function load_new_js() {
 		  '1.0',
 		  true);
 		wp_enqueue_script( 'college_scripts' );
+
+    wp_register_script( 'typekit', '//use.typekit.com/bbz1kzh.js' );
+    wp_enqueue_script( 'typekit' );
+
 	}
 }
 
@@ -462,10 +466,7 @@ add_action( 'agriflex_after_header', 'agriflex_main_nav_nomenu', 30 );
  */
 function typekit_js_college() {
 
-	$key = 'bbz1kzh';
-
   if( !is_admin() ) : ?>
-    <script type="text/javascript" src="http://use.typekit.com/<?php echo $key ?>.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <style type="text/css">
       .wf-loading #site-title,
