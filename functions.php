@@ -508,7 +508,7 @@ function agriflex_college_footer() {
   		<li><a href="http://publishingext.dir.texas.gov/portal/internal/resources/DocumentLibrary/State%20Website%20Linking%20and%20Privacy%20Policy.pdf" target="_blank">State Link Policy</a></li>
   		<li><a href="http://www.tsl.state.tx.us/trail" target="_blank">Statewide Search</a></li>
   		<li><a href="http://www.tamus.edu/veterans/" target="_blank">Veterans Benefits</a></li>
-  		<li><a href="http://fcs.tamu.edu/families/military_families/" target="_blank">Military Families</a></li>
+  		<li><a href="https://fch.tamu.edu/programs/military-programs/" target="_blank">Military Families</a></li>
   		<li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=19681" target="_blank">Risk, Fraud &amp; Misconduct Hotline</a></li>
   		<li><a href="http://governor.state.tx.us/homeland/" target="_blank">Texas Homeland Security</a></li>
       <li><a href="http://veterans.portal.texas.gov/">Texas Veteran&apos;s Portal</a></li>
