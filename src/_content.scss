@@ -29,6 +29,8 @@ body.home.blog .hentry {
 #content {
 	.post h2,
 	.post h2 a,
+	.page h2,
+	.page h2 a,
 	.featured-wrap .entry-title,
 	.featured-wrap .entry-title a {
 		color: #B7A66D;
@@ -37,6 +39,7 @@ body.home.blog .hentry {
 		text-decoration: none;
 	}
 	.post h2 a:hover,
+	.page h2 a:hover,
 	.featured-wrap .entry-title a:hover {
 		text-decoration: underline;
 	}
