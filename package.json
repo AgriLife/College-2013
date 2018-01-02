@@ -1,6 +1,6 @@
 {
   "name": "College-2013",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Child theme for Texas A&M College of Agriculture and Life Sciences",
   "main": "functions.php",
   "dependencies": {

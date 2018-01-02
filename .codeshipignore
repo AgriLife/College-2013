@@ -44,6 +44,8 @@ Thumbs.db
 
 # Directories that may or may not exist in repo AND should not be on the server
 package.json
+known-issues.json
+vipscan.json
 bower.json
 .bower.json
 .bowerrc
