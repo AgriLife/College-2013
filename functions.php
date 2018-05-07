@@ -359,7 +359,7 @@ function agriflex_home_links() {
         <?php $words = explode( ' ', $value['label'] ); ?>
         <?php $count = 1; ?>
         <?php foreach ( $words as $word ) : ?>
-          <h2 id="<?php echo $value['slug'] . $count; ?>"><?php echo $word; ?></h2>
+          <div class="featured-item-title" id="<?php echo $value['slug'] . $count; ?>"><?php echo $word; ?></div>
           <?php $count++; ?>
         <?php endforeach; ?>
       </a>
@@ -386,10 +386,10 @@ function agriflex_college_logo_retina() {
   //$html .= 'Texas A&amp;M College of Agriculture and Life Sciences';
   //$html .= '</span>';
 
-  $html .= '<h1 class="site-title"><a href="http://aglifesciences.tamu.edu/">Texas A&amp;M College of Agriculture and Life Sciences</a></h1>';
+  $html .= '<div class="site-title"><a href="http://aglifesciences.tamu.edu/">Texas A&amp;M College of Agriculture and Life Sciences</a></div>';
 
   //$html .= '<img src="' . get_stylesheet_directory_uri() . '/images/logo-w@2x.png" width="183" alt="Texas A&amp;M College of Agriculture and Life Sciences" />';
-  $html .= '</a></h1>';
+  // $html .= '</a></h1>';
   $html .= '</li>';
 
   $html .= '<li class="explore right-align">';
@@ -638,7 +638,7 @@ function agriflex_content_nav( $nav_id ) {
     $nav_class = 'navigation post-navigation';
   ?>
   <nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
-    <h1 class="assistive-text screen-reader-text"><?php _e ( 'Post navigation', 'agriflex' ); ?></h1>
+    <div class="assistive-text screen-reader-text"><?php _e ( 'Post navigation', 'agriflex' ); ?></div>
     <?php if ( is_single() ) : // navigation links for single posts ?>
 
       <?php previous_post_link( '<div class="nav-previous">%link</div>',
@@ -862,21 +862,29 @@ function college_department_name() {
   $is_department = of_get_option( 'college-department' );
   $is_aux = of_get_option( 'college-aux' );
 
+  $tag = is_home() ? 'h1' : 'div';
+
   if ( $is_department ) {
     $department_name = of_get_option( 'college-department-name' );
     echo '<div id="department-title">';
-    echo '<h1 class="department-name">';
+    echo '<' . $tag . ' class="department-name">';
     echo '<span class="dept-of">Department of </span>';
     echo $department_name;
-    echo '</h1>';
+    echo '</' . $tag . '>';
     echo '</div>';
   } elseif ( $is_aux ) {
-    printf( '<div id="site-title"><h1 class="site-name">%s</h1><h2 class="site-desc">%s</h2></div>',
+    printf( '<div id="site-title"><' . $tag . ' class="site-name">%s</' . $tag . '><h2 class="site-desc">%s</h2></div>',
       get_bloginfo( 'name' ),
       get_bloginfo( 'description' )
     );
   }
 
+}
+
+add_filter( 'soliloquy_tab_nav', 'college_solil_tab_nav' );
+function college_solil_tab_nav( $tabs ){
+  echo '<script>console.log("' . gettype($tabs) . '");</script>';
+  return $tabs;
 }
 
 add_filter( 'body_class', 'college_department_body_class' );

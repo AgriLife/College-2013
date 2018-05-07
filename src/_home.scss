@@ -1,5 +1,5 @@
 .home {
-	
+
 	.wrap {
 		margin-top: 0;
 	}
@@ -8,7 +8,7 @@
 		background: #f9f9f9;
 
 		.featured-content {
-			
+
 			ul, li {
 				margin: 0;
 			}
@@ -28,7 +28,7 @@
 	.challenge, .audience {
 		width: 100%;
 
-		h2 {
+		h2, .featured-item-title {
 
 			font-family: $ornate-title-font-alt;
 			font-size: 1.2em;
@@ -39,7 +39,7 @@
 			display: block;
 			text-align: center;
 			margin: 0 auto;
-		}	
+		}
 		a {
 			color: #CBB677;
 			text-decoration: none;
@@ -61,7 +61,7 @@
 	.featured-content {
 		background: #fff;
 		padding: 10px;
-		
+
 		h3 {
 			font-size: .8em;
 			color: #fff;
@@ -84,7 +84,7 @@
 	.home-content {
 		background: transparent;
 		background: rgb(249, 249, 249);
-		
+
 	}
 
 	.widget-container {
@@ -102,7 +102,15 @@
 			letter-spacing: 1px;
 		}
 	}
-		
+
+	.program-header {
+		font-size: 1.75em;
+    font-weight: normal;
+    line-height: 1.2em;
+    clear: both;
+    margin: 0.83em 0;
+	}
+
 	.program-row {
 
 		.single-program {
@@ -125,7 +133,7 @@
 			margin: 5px 0;
 		}
 	}
-	
+
 	.soliloquy-container {
 		width: 100%;
 		margin-bottom: 10px;
@@ -212,7 +220,7 @@
 	.home {
 		.featured-content {
 			padding: 10px;
-			
+
 			h3 {
 				font-size: .7em;
 				letter-spacing: normal;
@@ -257,7 +265,7 @@
 		.featured-content {
 			background: #fff;
 			padding: 10px;
-			
+
 			h3 {
 				font-size: .8em;
 				letter-spacing: 2px;
@@ -319,11 +327,11 @@
 			width: 195px;
 			//background: #666;
 
-			h2 {
+			.featured-item-title {
 				font-size: 16px;
 				width : 100%;
 				line-height: 0.9em;
-			}	
+			}
 
 		}
 
@@ -346,7 +354,7 @@
 		#aside .widget-container h3.widget-title {
 		    padding: 3% 4% 3% 5%;
 		}
-		
+
 		.welcome, .programs {
 			float: left;
 			width: 98%;
@@ -386,7 +394,7 @@
 		}
 
 	}
-	
+
 }
 
 
