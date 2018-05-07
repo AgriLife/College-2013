@@ -43,7 +43,7 @@ body.home.blog .hentry {
 }
 
 #content ul {
-	list-style: circle;	
+	list-style: circle;
 }
 
 #content dl {
@@ -52,7 +52,7 @@ body.home.blog .hentry {
 	margin: 0 0 .5em 0;
 }
 
-#content dd, 
+#content dd,
 #content dt {
 	margin-bottom: .5em;
 }
@@ -64,7 +64,7 @@ body.home.blog .hentry {
 
 #content dl.attachments-large {
 	border: none;
-	border-bottom: 1px dashed #d2ca9c;	
+	border-bottom: 1px dashed #d2ca9c;
 }
 
 #content .hentry footer.entry-meta,
@@ -88,7 +88,11 @@ body.home.blog .hentry {
 
 // Events 		------------------------------------------------------------
 
-body.page h1.entry-title {
+body.page h1.entry-title,
+body.page .h1-entry-title {
+	font-size: 2em;
+	line-height: 1.2em;
+	clear: both;
 	margin: 0 0 .6em 0;
 	font-family: $ornate-title-font;
 	font-weight: $ornate-title-font-weight;
