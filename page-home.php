@@ -16,36 +16,36 @@ get_header(); ?>
 					<?php ob_start(); ?>
 					<li class="challenge-hign challenge">
 						<a href="http://aglifesciences.tamu.edu/academics/high-impact-learning/" id="l1" class="challenge-link">
-							<div class="featured-item-title" id="challenge-high1">High-Impact</div>
-							<div class="featured-item-title" id="challenge-high2">Learning</div>
+							<h2 class="featured-item-title" id="challenge-high1">High-Impact</h2>
+							<h2 class="featured-item-title" id="challenge-high2">Learning</h2>
 						</a>
 					</li>
 					<li class="challenge-stem challenge">
 						<a href="http://aglifesciences.tamu.edu/about/stem/" id="l2" class="challenge-link">
-							<div class="featured-item-title" id="challenge-stem1">Science &bull; Technology</div>
-							<div class="featured-item-title" id="challenge-stem2">Engineering &bull; Math</div>
+							<h2 class="featured-item-title" id="challenge-stem1">Science &bull; Technology</h2>
+							<h2 class="featured-item-title" id="challenge-stem2">Engineering &bull; Math</h2>
 						</a>
 					</li>
 					<li class="challenge-grand challenge">
 						<a href="http://grandchallenges.tamu.edu/" id="l3" class="challenge-link">
-							<div class="featured-item-title" id="challenge-grand1">Grand</div>
-							<div class="featured-item-title" id="challenge-grand2">Challenges</div>
+							<h2 class="featured-item-title" id="challenge-grand1">Grand</h2>
+							<h2 class="featured-item-title" id="challenge-grand2">Challenges</h2>
 						</a>
 					</li>
 					<li class="challenge-diversity challenge">
 						<a href="http://aglifesciences.tamu.edu/about/diversity/" id="l4" class="challenge-link">
-							<div class="featured-item-title" id="challenge-diversity">Diversity</div>
+							<h2 class="featured-item-title" id="challenge-diversity">Diversity</h2>
 						</a>
 					</li>
 					<li class="challenge-accountability challenge">
 						<a href="http://aglifesciences.tamu.edu/about/accountability/" id="l5" class="challenge-link">
-							<div class="featured-item-title" id="challenge-accountability">Accountability</div>
+							<h2 class="featured-item-title" id="challenge-accountability">Accountability</h2>
 						</a>
 					</li>
 					<li class="challenge-international challenge">
 						<a href="http://aglifesciences.tamu.edu/academics/international-programs/" id="l6" class="challenge-link">
-							<div class="featured-item-title" id="challenge-international1">International</div>
-							<div class="featured-item-title" id="challenge-international2">Programs</div>
+							<h2 class="featured-item-title" id="challenge-international1">International</h2>
+							<h2 class="featured-item-title" id="challenge-international2">Programs</h2>
 						</a>
 					</li>
 					<?php $html = ob_get_contents(); ?>
