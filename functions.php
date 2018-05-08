@@ -386,7 +386,7 @@ function agriflex_college_logo_retina() {
   //$html .= 'Texas A&amp;M College of Agriculture and Life Sciences';
   //$html .= '</span>';
 
-  $html .= '<div class="site-title"><a href="http://aglifesciences.tamu.edu/">Texas A&amp;M College of Agriculture and Life Sciences</a></div>';
+  $html .= '<h1 class="site-title"><a href="http://aglifesciences.tamu.edu/">Texas A&amp;M College of Agriculture and Life Sciences</a></h1>';
 
   //$html .= '<img src="' . get_stylesheet_directory_uri() . '/images/logo-w@2x.png" width="183" alt="Texas A&amp;M College of Agriculture and Life Sciences" />';
   // $html .= '</a></h1>';
@@ -862,7 +862,7 @@ function college_department_name() {
   $is_department = of_get_option( 'college-department' );
   $is_aux = of_get_option( 'college-aux' );
 
-  $tag = is_home() ? 'h1' : 'div';
+  $tag = 'h1'; //is_home() ? 'h1' : 'div';
 
   if ( $is_department ) {
     $department_name = of_get_option( 'college-department-name' );
