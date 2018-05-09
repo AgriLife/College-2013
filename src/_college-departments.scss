@@ -1,5 +1,6 @@
 .college-department #department-title {
   background: #500000;
+  h1,
   .department-name {
     font-size: 1.3em;
     padding: 0 2% 2% 0;
@@ -12,15 +13,17 @@
 }
 
 @media all and (min-width: $breakpoint-medium) {
-  .college-department #department-title .department-name {
-    font-size: 1.5em;
+  .college-department #department-title {
+    h1, .department-name {
+      font-size: 1.5em;
+    }
   }
 }
 
 @media all and (min-width: $breakpoint-biggest) {
 
   .college-department #department-title {
-    .department-name {
+    h1, .department-name {
       text-align: left;
       color: #500000;
       padding: 0;
@@ -40,12 +43,16 @@
     #wrapper {
       padding-top: 67px;
     }
-    #department-title .department-name {
-      font-size: 2.9em;
+    #department-title {
+      h1, .department-name {
+        font-size: 2.9em;
+      }
     }
 
-    &.agricultural-leadership-education-and-communications #department-title .department-name {
-      font-size: 1.95em;
+    &.agricultural-leadership-education-and-communications #department-title {
+      h1, .department-name {
+        font-size: 1.95em;
+      }
     }
 
   }

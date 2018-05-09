@@ -34,7 +34,6 @@
 			font-size: 1.2em;
 			text-transform: $ornate-title-font-alt-transform;
 			line-height: .8em;
-
 			width : 80%;
 			display: block;
 			text-align: center;
@@ -105,10 +104,10 @@
 
 	.program-header {
 		font-size: 1.75em;
-    font-weight: normal;
-    line-height: 1.2em;
-    clear: both;
-    margin: 0.83em 0;
+		font-weight: normal;
+		line-height: 1.2em;
+		clear: both;
+		margin: 0.83em 0;
 	}
 
 	.program-row {
@@ -249,8 +248,8 @@
 			margin-top: 0;
 		}
 		#aside .widget-container h3.widget-title {
-		    background-size: 1024px 240px;
-		    padding: 1.5% 2%;
+			background-size: 1024px 240px;
+			padding: 1.5% 2%;
 		}
 	}
 
@@ -327,7 +326,7 @@
 			width: 195px;
 			//background: #666;
 
-			.featured-item-title {
+			h2, .featured-item-title {
 				font-size: 16px;
 				width : 100%;
 				line-height: 0.9em;
@@ -352,7 +351,7 @@
 		}
 
 		#aside .widget-container h3.widget-title {
-		    padding: 3% 4% 3% 5%;
+			padding: 3% 4% 3% 5%;
 		}
 
 		.welcome, .programs {
