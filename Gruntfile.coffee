@@ -63,9 +63,8 @@ module.exports = (grunt) ->
   @loadNpmTasks 'grunt-contrib-concat'
   @loadNpmTasks 'grunt-contrib-watch'
 
-  @registerTask 'default', ['compass', 'concat', 'uglify']
-  @registerTask 'develop', ['compass', 'jshint', 'concat']
-  @registerTask 'package', ['default', 'csslint', 'jshint']
+  @registerTask 'default', ['compass', 'csslint', 'jshint', 'concat', 'uglify']
+  @registerTask 'develop', ['compass', 'csslint', 'jshint', 'concat']
 
   @event.on 'watch', (action, filepath) =>
     @log.writeln('#{filepath} has #{action}')
