@@ -20,6 +20,13 @@ function agriflex_add_meta_fields() {
 
 add_action( 'init', 'agriflex_add_meta_fields' );
 
+// Speed up rss feed cache refresh to every 10 minutes.
+function agriflex_rss_widget_refresh_interval( $seconds ) {
+  return 600;
+}
+
+add_filter( 'wp_feed_cache_transient_lifetime', 'agriflex_rss_widget_refresh_interval' );
+
 // Remove 'featured' meta fields
 function agriflex_remove_featured() {
   remove_meta_box( 'agrilife_featured_post', 'post', 'side' );
